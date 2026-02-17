@@ -1,0 +1,19 @@
+{
+  "name": "regrid-lightbox-comparison",
+  "private": true,
+  "description": "Compare Regrid vs Lightbox data providers for parcel data",
+  "workspaces": [
+    "regrid-backend",
+    "lightbox-backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:regrid": "PORT=3001 npm run dev -w regrid-backend",
+    "dev:lightbox": "PORT=3002 npm run dev -w lightbox-backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev": "concurrently \"npm run dev:regrid\" \"npm run dev:lightbox\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

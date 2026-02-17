@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* react-split */
+.split-container {
+  height: 100% !important;
+}
+.split-container .gutter {
+  background: #ddd;
+  cursor: col-resize;
+}
+.split-container .gutter:hover {
+  background: #bbb;
+}
+.split-vertical {
+  height: 100% !important;
+}
+.split-vertical .gutter {
+  cursor: row-resize;
+}
