@@ -451,17 +451,25 @@ function ZoningReviewSection({ zoning, compareWith }: { zoning: ZoningFields | n
   add('Land use (normalized) code', z.landUseNormalizedCode, 'Normalized land use code. ' + landUseDetail, c.landUseNormalizedCode);
   add('Land use (normalized) description', z.landUseNormalizedDescription, 'Normalized land use description. ' + landUseDetail, c.landUseNormalizedDescription);
   add('Land use category', z.landUseCategoryDescription, 'Land use category (e.g. RESIDENTIAL). ' + landUseDetail, c.landUseCategoryDescription);
-  addNum('Min front setback (ft)', z.minFrontSetbackFt, 'Required distance from front lot line.', c.minFrontSetbackFt);
-  addNum('Min rear setback (ft)', z.minRearSetbackFt, 'Required distance from rear lot line.', c.minRearSetbackFt);
-  addNum('Min side setback (ft)', z.minSideSetbackFt, 'Required distance from side lot line.', c.minSideSetbackFt);
-  addNum('Max FAR', z.maxFar, 'Maximum floor area ratio.', c.maxFar, true);
-  addNum('Max building height (ft)', z.maxBuildingHeightFt, 'Maximum building height allowed.', c.maxBuildingHeightFt);
+  // Setbacks, heights, FAR, coverage — fall back to description text when numeric is null
+  const numOrDesc = (num: number | null | undefined, desc: string | undefined, suffix = '') => {
+    if (num != null) return `${num}${suffix}`;
+    if (desc) return desc;
+    return null;
+  };
+  add('Front setback', numOrDesc(z.minFrontSetbackFt, z.minFrontSetbackDesc, ' ft'), 'Required distance from front lot line.', numOrDesc(c.minFrontSetbackFt, c.minFrontSetbackDesc, ' ft'));
+  add('Side setback', numOrDesc(z.minSideSetbackFt, z.minSideSetbackDesc, ' ft'), 'Required distance from side lot line.', numOrDesc(c.minSideSetbackFt, c.minSideSetbackDesc, ' ft'));
+  add('Rear setback', numOrDesc(z.minRearSetbackFt, z.minRearSetbackDesc, ' ft'), 'Required distance from rear lot line.', numOrDesc(c.minRearSetbackFt, c.minRearSetbackDesc, ' ft'));
+  add('Max FAR', numOrDesc(z.maxFar, z.maxFarDesc), 'Maximum floor area ratio.', numOrDesc(c.maxFar, c.maxFarDesc), false, true);
+  add('Max building height', numOrDesc(z.maxBuildingHeightFt, z.maxBuildingHeightDesc, ' ft'), 'Maximum building height allowed.', numOrDesc(c.maxBuildingHeightFt, c.maxBuildingHeightDesc, ' ft'));
+  add('Max site coverage', numOrDesc(z.maxCoveragePct, z.maxCoverageDesc, '%'), 'Maximum percent of lot that can be covered by buildings.', numOrDesc(c.maxCoveragePct, c.maxCoverageDesc, '%'));
+  add('Min lot area', numOrDesc(z.minLotAreaSqFt, z.minLotAreaDesc, ' sqft'), 'Minimum lot size.', numOrDesc(c.minLotAreaSqFt, c.minLotAreaDesc, ' sqft'));
+  if (z.maxDensityDesc || z.maxDensityDuPerAcre != null) {
+    add('Residential density', numOrDesc(z.maxDensityDuPerAcre, z.maxDensityDesc, ' du/acre'), 'Maximum dwelling units per acre.', numOrDesc(c.maxDensityDuPerAcre, c.maxDensityDesc, ' du/acre'));
+  }
   addNum('Min open space (%)', z.minOpenSpacePct, 'Minimum percent of lot as open space.', c.minOpenSpacePct);
   addNum('Min landscaped space (%)', z.minLandscapedSpacePct, 'Minimum percent of lot as landscaped.', c.minLandscapedSpacePct);
-  addNum('Max coverage (%)', z.maxCoveragePct, 'Maximum percent of lot that can be covered by buildings.', c.maxCoveragePct);
   addNum('Max impervious coverage (%)', z.maxImperviousCoveragePct, 'Maximum percent covered by buildings and impervious surfaces.', c.maxImperviousCoveragePct);
-  addNum('Max density (du/acre)', z.maxDensityDuPerAcre, 'Maximum dwelling units per acre.', c.maxDensityDuPerAcre);
-  addNum('Min lot area (sqft)', z.minLotAreaSqFt, 'Minimum lot size for subdivision.', c.minLotAreaSqFt);
   addNum('Min lot width (ft)', z.minLotWidthFt, 'Minimum lot width for subdivision.', c.minLotWidthFt);
   add('Zoning objective', z.zoningObjective, 'Textual description of zone character and objectives.', c.zoningObjective);
   const zoningLink = z.zoningCodeLink ?? c.zoningCodeLink;
@@ -776,16 +784,24 @@ type ZoningFields = {
   zoningType?: string;
   zoningSubtype?: string;
   minFrontSetbackFt?: number | null;
+  minFrontSetbackDesc?: string;
   minRearSetbackFt?: number | null;
+  minRearSetbackDesc?: string;
   minSideSetbackFt?: number | null;
+  minSideSetbackDesc?: string;
   maxFar?: number | null;
+  maxFarDesc?: string;
   maxBuildingHeightFt?: number | null;
+  maxBuildingHeightDesc?: string;
   minOpenSpacePct?: number | null;
   minLandscapedSpacePct?: number | null;
   maxCoveragePct?: number | null;
+  maxCoverageDesc?: string;
   maxImperviousCoveragePct?: number | null;
   maxDensityDuPerAcre?: number | null;
+  maxDensityDesc?: string;
   minLotAreaSqFt?: number | null;
+  minLotAreaDesc?: string;
   minLotWidthFt?: number | null;
   zoningObjective?: string;
   zoningCodeLink?: string;
@@ -973,9 +989,9 @@ function extractLightboxZoning(data: unknown, zoningApiData?: { zonings?: Array<
     const front = zr.frontSetback as { distance?: number; description?: string } | undefined;
     const side = zr.sideSetback as { distance?: number; description?: string } | undefined;
     const rear = zr.rearSetback as { distance?: number; description?: string } | undefined;
-    const far = zr.densityFloorArea as { value?: string } | undefined;
+    const far = zr.densityFloorArea as { value?: string; description?: string } | undefined;
     const height = zr.maximumBuildingHeight as { height?: number; maxStories?: string; description?: string } | undefined;
-    const coverage = zr.maximumSiteCoverage as { percent?: number } | undefined;
+    const coverage = zr.maximumSiteCoverage as { percent?: number; description?: string } | undefined;
     const lotArea = zr.minimumLotArea as { perUnit?: number; perLot?: number; description?: string } | undefined;
     const meta = zr.$metadata as { ordinanceUrl?: string; vintage?: { ordinance?: string; zoning?: string } } | undefined;
     const farVal = far?.value != null && far.value !== '' ? parseFloat(String(far.value)) : null;
@@ -986,16 +1002,24 @@ function extractLightboxZoning(data: unknown, zoningApiData?: { zonings?: Array<
       zoningType: typeof zr.category === 'string' ? zr.category : (typeof zr.type === 'string' ? String(zr.type) : undefined),
       zoningSubtype: typeof zr.subcategory === 'string' ? zr.subcategory : undefined,
       minFrontSetbackFt: typeof front?.distance === 'number' ? front.distance : null,
+      minFrontSetbackDesc: typeof front?.description === 'string' ? front.description : undefined,
       minRearSetbackFt: typeof rear?.distance === 'number' ? rear.distance : null,
+      minRearSetbackDesc: typeof rear?.description === 'string' ? rear.description : undefined,
       minSideSetbackFt: typeof side?.distance === 'number' ? side.distance : null,
+      minSideSetbackDesc: typeof side?.description === 'string' ? side.description : undefined,
       maxFar: farVal != null && !isNaN(farVal) ? farVal : null,
+      maxFarDesc: typeof far?.description === 'string' ? far.description : undefined,
       maxBuildingHeightFt: typeof height?.height === 'number' ? height.height : null,
+      maxBuildingHeightDesc: typeof height?.description === 'string' ? height.description : undefined,
       minOpenSpacePct: null,
       minLandscapedSpacePct: null,
       maxCoveragePct: typeof coverage?.percent === 'number' ? coverage.percent * 100 : null,
+      maxCoverageDesc: typeof coverage?.description === 'string' ? coverage.description : undefined,
       maxImperviousCoveragePct: null,
       maxDensityDuPerAcre: null,
+      maxDensityDesc: typeof far?.description === 'string' && far.description.toLowerCase().includes('density') ? far.description : undefined,
       minLotAreaSqFt: typeof lotArea?.perLot === 'number' ? lotArea.perLot : null,
+      minLotAreaDesc: typeof lotArea?.description === 'string' ? lotArea.description : undefined,
       minLotWidthFt: null,
       zoningObjective: typeof summary?.value === 'string' ? summary.value : undefined,
       zoningCodeLink: typeof meta?.ordinanceUrl === 'string' ? meta.ordinanceUrl : undefined,
