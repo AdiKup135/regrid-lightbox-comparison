@@ -157,6 +157,181 @@ function longestEdgeFt(geom: unknown): number | null {
   return Math.max(...edges);
 }
 
+const SECTION_HEADER: React.CSSProperties = { fontSize: '0.8rem', fontWeight: 600, color: '#333', marginBottom: '0.35rem', marginTop: '0.75rem' };
+
+function LightboxDetailedReview({ data, femaData, riskIndexData, wetlandsData }: {
+  data: unknown;
+  femaData: { nfhls?: Array<Record<string, unknown>> } | null;
+  riskIndexData: Record<string, unknown> | null;
+  wetlandsData: Record<string, unknown> | null;
+}) {
+  if (!data || typeof data !== 'object') return null;
+  const parcels = (data as { parcels?: Array<Record<string, unknown>> }).parcels;
+  const p = parcels?.[0];
+  if (!p) return null;
+
+  const s = (v: unknown): string => (v != null && v !== '' ? String(v) : '—');
+  const money = (v: unknown): string => {
+    if (typeof v !== 'number') return '—';
+    return `$${v.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+  };
+  const pct = (v: unknown): string => (typeof v === 'number' ? `${v}%` : '—');
+
+  const owner = p.owner as { names?: Array<{ fullName?: string }>; streetAddress?: string; ownershipStatus?: { code?: string; description?: string } } | undefined;
+  const occupant = p.occupant as { owner?: boolean; company?: boolean } | undefined;
+  const assessment = p.assessment as Record<string, unknown> | undefined;
+  const lot = assessment?.lot as { lotNumber?: string; blockNumber?: string; size?: number } | undefined;
+  const av = assessment?.assessedValue as { total?: number; land?: number; improvements?: number; year?: string } | undefined;
+  const transaction = p.transaction as { lastMarketSale?: Record<string, unknown> } | undefined;
+  const sale = transaction?.lastMarketSale as Record<string, unknown> | undefined;
+  const loan = p.lastLoan as Record<string, unknown> | undefined;
+  const legal = p.legalDescription as string[] | undefined;
+  const census = p.census as { blockGroup?: string; tract?: string } | undefined;
+  const derived = p.derived as { calculatedLotArea?: number } | undefined;
+  const primary = p.primaryStructure as { yearBuilt?: string; yearRenovated?: string; livingArea?: number; units?: number } | undefined;
+
+  const nfhl = (femaData?.nfhls as Array<Record<string, unknown>> | undefined)?.[0];
+  const zones = nfhl?.zones as Array<{ zone?: string; description?: string; subtype?: string }> | undefined;
+  const panel = nfhl?.panel as Record<string, unknown> | undefined;
+
+  const nri = ((riskIndexData as Record<string, unknown>)?.nris as Array<Record<string, unknown>> | undefined)?.[0];
+  const eal = nri?.expectedAnnualLoss as Record<string, unknown> | undefined;
+  const sv = nri?.socialVulnerability as Record<string, unknown> | undefined;
+  const cr = nri?.communityResilience as Record<string, unknown> | undefined;
+
+  const hazardNames: [string, string][] = [
+    ['earthquake', 'Earthquake'], ['lightning', 'Lightning'], ['tornado', 'Tornado'],
+    ['heatWave', 'Heat Wave'], ['hail', 'Hail'], ['strongWind', 'Strong Wind'],
+    ['landslide', 'Landslide'], ['coastalFlooding', 'Coastal Flooding'], ['drought', 'Drought'],
+    ['riverineFlooding', 'Riverine Flooding'], ['tsunami', 'Tsunami'], ['wildfire', 'Wildfire'],
+    ['winterWeather', 'Winter Weather'], ['coldWave', 'Cold Wave'], ['avalanche', 'Avalanche'],
+    ['hurricane', 'Hurricane'], ['iceStorm', 'Ice Storm'], ['volcanicActivity', 'Volcanic Activity'],
+  ];
+
+  const wetlands = (wetlandsData as Record<string, unknown>)?.wetlands as Array<Record<string, unknown>> | undefined;
+
+  return (
+    <>
+      {/* Ownership */}
+      <div style={SECTION_HEADER}>Ownership</div>
+      <ExpandableField label="Owner(s)" value={owner?.names?.map((n) => n.fullName).filter(Boolean).join(' & ') || '—'} detail="From parcels[0].owner.names[].fullName" />
+      <ExpandableField label="Ownership status" value={owner?.ownershipStatus ? `${owner.ownershipStatus.description} (${owner.ownershipStatus.code})` : '—'} detail="From parcels[0].owner.ownershipStatus" />
+      <ExpandableField label="Owner-occupied" value={occupant?.owner != null ? (occupant.owner ? 'Yes' : 'No') : '—'} detail="From parcels[0].occupant.owner" />
+      <ExpandableField label="Company-owned" value={occupant?.company != null ? (occupant.company ? 'Yes' : 'No') : '—'} detail="From parcels[0].occupant.company" />
+
+      {/* Lot & Site */}
+      <div style={SECTION_HEADER}>Lot & Site</div>
+      <ExpandableField label="Lot / Block" value={lot?.lotNumber || lot?.blockNumber ? `Lot ${s(lot?.lotNumber)}, Block ${s(lot?.blockNumber)}` : '—'} detail="From assessment.lot.lotNumber / blockNumber" />
+      <ExpandableField label="Assessed lot size" value={lot?.size != null ? `${lot.size.toLocaleString()} sqm (${Math.round(lot.size * 10.7639).toLocaleString()} sqft)` : '—'} detail="From assessment.lot.size (in square meters)" />
+      <ExpandableField label="Calculated lot area" value={derived?.calculatedLotArea != null ? `${derived.calculatedLotArea.toLocaleString()} sqm (${Math.round(derived.calculatedLotArea * 10.7639).toLocaleString()} sqft)` : '—'} detail="From derived.calculatedLotArea" />
+      <ExpandableField label="Legal description" value={legal?.length ? legal.join('; ') : '—'} detail="From parcels[0].legalDescription" />
+      <ExpandableField label="Census tract / block group" value={census ? `${s(census.tract)} / ${s(census.blockGroup)}` : '—'} detail="From parcels[0].census" />
+      {primary?.yearBuilt && <ExpandableField label="Year built" value={s(primary.yearBuilt)} detail="From primaryStructure.yearBuilt" />}
+      {primary?.yearRenovated && <ExpandableField label="Year renovated" value={s(primary.yearRenovated)} detail="From primaryStructure.yearRenovated" />}
+
+      {/* Valuation & Assessment */}
+      {av && (
+        <>
+          <div style={SECTION_HEADER}>Valuation & Assessment {av.year ? `(${av.year})` : ''}</div>
+          <ExpandableField label="Total assessed value" value={money(av.total)} detail="From assessment.assessedValue.total" />
+          <ExpandableField label="Land value" value={money(av.land)} detail="From assessment.assessedValue.land" />
+          <ExpandableField label="Improvements" value={money(av.improvements)} detail="From assessment.assessedValue.improvements" />
+          <ExpandableField label="Improvement %" value={pct(assessment?.improvementPercent)} detail="From assessment.improvementPercent" />
+          {assessment?.avm && <ExpandableField label="AVM (Automated Valuation)" value={money(Number(assessment.avm))} detail="From assessment.avm" />}
+          {(p.tax as Record<string, unknown>)?.amount != null && <ExpandableField label="Annual tax" value={`${money((p.tax as Record<string, unknown>).amount)} (${s((p.tax as Record<string, unknown>).year)})`} detail="From parcels[0].tax.amount / year" />}
+        </>
+      )}
+
+      {/* Transaction History */}
+      {sale && (
+        <>
+          <div style={SECTION_HEADER}>Last Sale</div>
+          <ExpandableField label="Sale date" value={sale.transferDate ? new Date(String(sale.transferDate)).toLocaleDateString() : '—'} detail="From transaction.lastMarketSale.transferDate" />
+          <ExpandableField label="Sale price" value={money(sale.value)} detail="From transaction.lastMarketSale.value" />
+          <ExpandableField label="Seller" value={s(sale.seller)} detail="From transaction.lastMarketSale.seller" />
+          <ExpandableField label="Buyer" value={s(sale.buyer)} detail="From transaction.lastMarketSale.buyer" />
+          <ExpandableField label="Document type" value={s(sale.documentTypeDescription)} detail="From transaction.lastMarketSale.documentTypeDescription" />
+          {sale.titleCompany && <ExpandableField label="Title company" value={s(sale.titleCompany)} detail="From transaction.lastMarketSale.titleCompany" />}
+        </>
+      )}
+
+      {/* Last Loan */}
+      {loan && (loan.lender || loan.value) && (
+        <>
+          <div style={SECTION_HEADER}>Last Recorded Loan</div>
+          <ExpandableField label="Lender" value={s(loan.lender)} detail="From lastLoan.lender" />
+          <ExpandableField label="Loan amount" value={money(loan.value)} detail="From lastLoan.value" />
+          {loan.recordingDate && <ExpandableField label="Recording date" value={new Date(String(loan.recordingDate)).toLocaleDateString()} detail="From lastLoan.recordingDate" />}
+          {loan.dueDate && <ExpandableField label="Due date" value={new Date(String(loan.dueDate)).toLocaleDateString()} detail="From lastLoan.dueDate" />}
+        </>
+      )}
+
+      {/* Flood Hazard */}
+      {nfhl && (
+        <>
+          <div style={SECTION_HEADER}>Flood Hazard (FEMA NFHL)</div>
+          <ExpandableField label="Special Flood Hazard Area" value={nfhl.sfha != null ? (nfhl.sfha ? 'Yes' : 'No') : '—'} detail="SFHA designation. From nfhls[0].sfha" alwaysShow />
+          <ExpandableField label="In 100-year flood zone" value={nfhl.isIn100Year != null ? (nfhl.isIn100Year ? 'Yes' : 'No') : '—'} detail="From nfhls[0].isIn100Year" alwaysShow />
+          {zones?.[0] && <ExpandableField label="Flood zone" value={`${zones[0].zone} — ${zones[0].description ?? ''}${zones[0].subtype ? ` (${zones[0].subtype})` : ''}`} detail="From nfhls[0].zones[0]" />}
+          <ExpandableField label="Effective date" value={nfhl.effectiveDate ? new Date(String(nfhl.effectiveDate)).toLocaleDateString() : '—'} detail="DFIRM effective date" />
+          {panel?.panelId && <ExpandableField label="Panel / DFIRM" value={`${s(panel.panelId)} / ${s(nfhl.dfirmId)}`} detail="From nfhls[0].panel.panelId and dfirmId" />}
+        </>
+      )}
+
+      {/* FEMA Risk Index */}
+      {nri && (
+        <>
+          <div style={SECTION_HEADER}>Natural Hazard Risk (FEMA NRI)</div>
+          <ExpandableField label="Overall risk" value={`${s(nri.rating)} — Score ${s(nri.score)}`} detail={`National percentile: ${s(nri.nationalPercentile)}. State percentile: ${s(nri.statePercentile)}. County score: ${s(nri.countyScore)} (${s(nri.countyRating)}).`} alwaysShow />
+          {eal && <ExpandableField label="Expected annual loss" value={`${money(eal.total)} (${s(eal.rating)})`} detail={`EAL score: ${s(eal.score)}. National percentile: ${s(eal.nationalPercentile)}. State percentile: ${s(eal.statePercentile)}. County total: ${money(eal.countyTotal)}.`} />}
+          {sv && <ExpandableField label="Social vulnerability" value={`${s(sv.rating)} — Score ${s(sv.score)}`} detail={`National percentile: ${s(sv.nationalPercentile)}. State percentile: ${s(sv.statePercentile)}.`} />}
+          {cr && <ExpandableField label="Community resilience" value={`${s(cr.rating)} — Score ${s(cr.score)}`} detail={`National percentile: ${s(cr.nationalPercentile)}. State percentile: ${s(cr.statePercentile)}.`} />}
+          <ExpandableField label="Population (census tract)" value={typeof nri.population === 'number' ? nri.population.toLocaleString() : '—'} detail="From riskindexes.nris[0].population" />
+
+          <div style={{ ...SECTION_HEADER, fontSize: '0.75rem', marginTop: '0.5rem' }}>Hazard Breakdown</div>
+          <div style={{ fontSize: '0.75rem', lineHeight: 1.4, marginBottom: '0.5rem' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.72rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid #ddd', textAlign: 'left' }}>
+                  <th style={{ padding: '2px 4px' }}>Hazard</th>
+                  <th style={{ padding: '2px 4px' }}>Risk Rating</th>
+                  <th style={{ padding: '2px 4px', textAlign: 'right' }}>Annual Loss</th>
+                </tr>
+              </thead>
+              <tbody>
+                {hazardNames.map(([key, label]) => {
+                  const h = nri[key] as { annualLoss?: { total?: number; rating?: string }; hazardTypeRiskIndex?: { rating?: string } } | undefined;
+                  if (!h) return null;
+                  const rating = h.hazardTypeRiskIndex?.rating ?? h.annualLoss?.rating ?? '—';
+                  if (rating === 'Not Applicable') return null;
+                  const loss = h.annualLoss?.total;
+                  return (
+                    <tr key={key} style={{ borderBottom: '1px solid #f0f0f0' }}>
+                      <td style={{ padding: '2px 4px' }}>{label}</td>
+                      <td style={{ padding: '2px 4px', color: rating === 'Very High' ? '#c62828' : rating?.includes('High') ? '#e65100' : '#555' }}>{rating}</td>
+                      <td style={{ padding: '2px 4px', textAlign: 'right' }}>{loss != null ? money(loss) : '—'}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+
+      {/* Wetlands */}
+      <div style={SECTION_HEADER}>Wetlands</div>
+      {wetlands && wetlands.length > 0 ? (
+        wetlands.map((w, i) => (
+          <ExpandableField key={i} label={`Wetland ${i + 1}`} value={`${s(w.type)} — ${s(w.classificationCode)}`} detail={`Area: ${typeof w.wetlandArea === 'number' ? `${w.wetlandArea.toLocaleString()} sqm` : '—'}. Classification code: ${s(w.classificationCode)}.`} />
+        ))
+      ) : (
+        <ExpandableField label="Wetlands" value="None recorded" detail="No wetlands found on or intersecting this parcel (from LightBox Wetlands API)." alwaysShow />
+      )}
+    </>
+  );
+}
+
 function downloadJson(data: unknown, filename: string) {
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -423,8 +598,9 @@ function ReviewDataIdentifier({ apn, lotArea, fips, parcelId, fipsLabel = 'FIPS 
 
 type ViewState = { longitude: number; latitude: number; zoom: number };
 
-function MapPanel({ id, geoJson, buildingsGeoJson, transmissionLinesGeoJson, showTransmissionLines, viewState, onViewStateChange }: {
+function MapPanel({ id, geoJson, buildingsGeoJson, transmissionLinesGeoJson, showTransmissionLines, fireSafetyGeoJson, viewState, onViewStateChange }: {
   id: string; geoJson?: GeoJsonFC | null; buildingsGeoJson?: GeoJsonFC | null; transmissionLinesGeoJson?: GeoJsonFC | null; showTransmissionLines?: boolean;
+  fireSafetyGeoJson?: GeoJsonFC | null;
   viewState: ViewState; onViewStateChange: (vs: ViewState) => void;
 }) {
   return (
@@ -496,6 +672,36 @@ function MapPanel({ id, geoJson, buildingsGeoJson, transmissionLinesGeoJson, sho
               type="line"
               source="transmission-source"
               paint={{ 'line-color': '#f90', 'line-width': 2.5 }}
+            />
+          </>
+        ) : null}
+        {fireSafetyGeoJson?.features?.length ? (
+          <>
+            <Source id="fire-safety-source" type="geojson" data={fireSafetyGeoJson as GeoJSON.FeatureCollection} />
+            <Layer
+              id="fire-safety-circles"
+              type="circle"
+              source="fire-safety-source"
+              paint={{
+                'circle-radius': 6,
+                'circle-color': ['match', ['get', 'emergency'], 'fire_extinguisher', '#f57c00', '#d32f2f'],
+                'circle-stroke-color': '#fff',
+                'circle-stroke-width': 1.5,
+                'circle-opacity': 0.9,
+              }}
+            />
+            <Layer
+              id="fire-safety-labels"
+              type="symbol"
+              source="fire-safety-source"
+              minzoom={15}
+              layout={{
+                'text-field': ['match', ['get', 'emergency'], 'fire_extinguisher', 'EXT', 'FH'],
+                'text-size': 9,
+                'text-offset': [0, 1.5],
+                'text-allow-overlap': false,
+              }}
+              paint={{ 'text-color': '#333', 'text-halo-color': '#fff', 'text-halo-width': 1 }}
             />
           </>
         ) : null}
@@ -740,16 +946,73 @@ function extractRegridZoning(data: RegridParcel | null): ZoningFields | null {
   };
 }
 
-function extractLightboxZoning(data: unknown): ZoningFields | null {
+function extractLightboxZoning(data: unknown, zoningApiData?: { zonings?: Array<Record<string, unknown>> } | null): ZoningFields | null {
   if (!data || typeof data !== 'object') return null;
   const parcels = (data as { parcels?: Array<{ location?: { locality?: string; regionCode?: string }; county?: string; assessment?: { zoning?: unknown }; zoning?: { assessment?: string }; landUse?: { code?: string; description?: string; normalized?: { code?: string; description?: string; categoryDescription?: string } } }> }).parcels;
   const p0 = parcels?.[0];
   if (!p0) return null;
   const loc = p0.location;
-  const jurisdiction = typeof loc?.locality === 'string' ? loc.locality : undefined;
+  const parcelJurisdiction = typeof loc?.locality === 'string' ? loc.locality : undefined;
   const regionCode = typeof loc?.regionCode === 'string' ? loc.regionCode : undefined;
   const county = typeof p0.county === 'string' ? p0.county : undefined;
-  const jurisdictionStr = [jurisdiction, county, regionCode].filter(Boolean).join(', ') || undefined;
+  const jurisdictionStr = [parcelJurisdiction, county, regionCode].filter(Boolean).join(', ') || undefined;
+
+  // Land use from parcel response (always available)
+  const lu = p0.landUse as { code?: string; description?: string; normalized?: { code?: string; description?: string; categoryDescription?: string } } | undefined;
+  const landUseDesc = typeof lu?.description === 'string' ? lu.description : undefined;
+  const landUseNorm = lu?.normalized;
+
+  // Dedicated Zoning API data (rich fields)
+  const zr = zoningApiData?.zonings?.[0] as Record<string, unknown> | undefined;
+  if (zr) {
+    const jur = zr.jurisdiction as { name?: string; type?: string } | undefined;
+    const code = zr.code as { value?: string } | undefined;
+    const district = zr.district as { value?: string; label?: string } | undefined;
+    const desc = zr.description as { value?: string; label?: string } | undefined;
+    const summary = zr.summary as { value?: string; label?: string } | undefined;
+    const front = zr.frontSetback as { distance?: number; description?: string } | undefined;
+    const side = zr.sideSetback as { distance?: number; description?: string } | undefined;
+    const rear = zr.rearSetback as { distance?: number; description?: string } | undefined;
+    const far = zr.densityFloorArea as { value?: string } | undefined;
+    const height = zr.maximumBuildingHeight as { height?: number; maxStories?: string; description?: string } | undefined;
+    const coverage = zr.maximumSiteCoverage as { percent?: number } | undefined;
+    const lotArea = zr.minimumLotArea as { perUnit?: number; perLot?: number; description?: string } | undefined;
+    const meta = zr.$metadata as { ordinanceUrl?: string; vintage?: { ordinance?: string; zoning?: string } } | undefined;
+    const farVal = far?.value != null && far.value !== '' ? parseFloat(String(far.value)) : null;
+    return {
+      jurisdiction: typeof jur?.name === 'string' ? `${jur.name}${jur.type ? ` (${jur.type})` : ''}` : jurisdictionStr,
+      zoningCode: typeof code?.value === 'string' ? code.value : undefined,
+      zoningDescription: typeof desc?.value === 'string' ? desc.value : (typeof district?.value === 'string' ? district.value : undefined),
+      zoningType: typeof zr.category === 'string' ? zr.category : (typeof zr.type === 'string' ? String(zr.type) : undefined),
+      zoningSubtype: typeof zr.subcategory === 'string' ? zr.subcategory : undefined,
+      minFrontSetbackFt: typeof front?.distance === 'number' ? front.distance : null,
+      minRearSetbackFt: typeof rear?.distance === 'number' ? rear.distance : null,
+      minSideSetbackFt: typeof side?.distance === 'number' ? side.distance : null,
+      maxFar: farVal != null && !isNaN(farVal) ? farVal : null,
+      maxBuildingHeightFt: typeof height?.height === 'number' ? height.height : null,
+      minOpenSpacePct: null,
+      minLandscapedSpacePct: null,
+      maxCoveragePct: typeof coverage?.percent === 'number' ? coverage.percent * 100 : null,
+      maxImperviousCoveragePct: null,
+      maxDensityDuPerAcre: null,
+      minLotAreaSqFt: typeof lotArea?.perLot === 'number' ? lotArea.perLot : null,
+      minLotWidthFt: null,
+      zoningObjective: typeof summary?.value === 'string' ? summary.value : undefined,
+      zoningCodeLink: typeof meta?.ordinanceUrl === 'string' ? meta.ordinanceUrl : undefined,
+      permittedLandUses: typeof zr.permittedUse === 'string' ? zr.permittedUse : undefined,
+      permittedLandUsesAsOfRight: undefined,
+      permittedLandUsesConditional: undefined,
+      zoningDataDate: typeof meta?.vintage?.zoning === 'string' ? meta.vintage.zoning : (typeof meta?.vintage?.ordinance === 'string' ? meta.vintage.ordinance : undefined),
+      landUse: landUseDesc ?? (landUseNorm ? [landUseNorm.description, landUseNorm.categoryDescription].filter(Boolean).join(' — ') || undefined : undefined),
+      landUseCode: typeof lu?.code === 'string' ? lu.code : undefined,
+      landUseDescription: landUseDesc,
+      landUseNormalizedCode: typeof landUseNorm?.code === 'string' ? landUseNorm.code : undefined,
+      landUseNormalizedDescription: typeof landUseNorm?.description === 'string' ? landUseNorm.description : undefined,
+      landUseCategoryDescription: typeof landUseNorm?.categoryDescription === 'string' ? landUseNorm.categoryDescription : undefined,
+    };
+  }
+
+  // Fallback: parcel-embedded zoning fields
   const parcelZoning = p0.zoning as { assessment?: string } | undefined;
   const assessment = p0.assessment as { zoning?: { zoning?: string; zoningDescription?: string; assessment?: string } } | undefined;
   const z = assessment?.zoning;
@@ -757,9 +1020,6 @@ function extractLightboxZoning(data: unknown): ZoningFields | null {
     : (typeof z?.assessment === 'string' ? z.assessment : undefined)
     ?? (typeof z?.zoning === 'string' ? z.zoning : undefined);
   const zoningDescription = typeof z?.zoningDescription === 'string' ? z.zoningDescription : undefined;
-  const lu = p0.landUse as { code?: string; description?: string; normalized?: { code?: string; description?: string; categoryDescription?: string } } | undefined;
-  const landUseDesc = typeof lu?.description === 'string' ? lu.description : undefined;
-  const landUseNorm = lu?.normalized;
   return {
     jurisdiction: jurisdictionStr ?? regionCode,
     zoningCode,
@@ -890,12 +1150,14 @@ function extractRegridReviewFields(data: RegridParcel | null): { apn?: string; l
   return out;
 }
 
-function RegridPanel({ data, setData, lightboxData, lightboxStructuresData, lightboxFemaData, viewState, setViewState, transmissionLinesGeoJson, showTransmissionLines }: {
+function RegridPanel({ data, setData, lightboxData, lightboxStructuresData, lightboxFemaData, lightboxZoningData, viewState, setViewState, transmissionLinesGeoJson, showTransmissionLines, fireSafetyGeoJson }: {
   data: RegridParcel | null; setData: (d: RegridParcel | null) => void; lightboxData: unknown;
   lightboxStructuresData: LightboxStructuresData;
   lightboxFemaData: { nfhls?: Array<Record<string, unknown>> } | null;
+  lightboxZoningData: { zonings?: Array<Record<string, unknown>> } | null;
   viewState: ViewState; setViewState: (vs: ViewState | ((prev: ViewState) => ViewState)) => void;
   transmissionLinesGeoJson: GeoJsonFC | null; showTransmissionLines: boolean;
+  fireSafetyGeoJson: (GeoJsonFC & { nearestDistanceM?: number | null }) | null;
 }) {
   const [address, setAddress] = useState('');
   const [suggestions, setSuggestions] = useState<RegridSuggestion[]>([]);
@@ -1191,7 +1453,7 @@ function RegridPanel({ data, setData, lightboxData, lightboxStructuresData, ligh
       </div>
       <Split direction="vertical" sizes={[50, 50]} minSize={120} style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }} className="split-vertical">
         <div style={{ position: 'relative', minHeight: 200, flex: 1, background: '#e8e8e8' }}>
-          <MapPanel id="regrid-map" geoJson={geoJson} buildingsGeoJson={regridBuildingsGeoJson} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} viewState={viewState} onViewStateChange={setViewState} />
+          <MapPanel id="regrid-map" geoJson={geoJson} buildingsGeoJson={regridBuildingsGeoJson} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} viewState={viewState} onViewStateChange={setViewState} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: 120, overflow: 'hidden' }}>
           <div style={{ display: 'flex', gap: 0, borderBottom: '1px solid #ddd', background: '#eee', alignItems: 'center' }}>
@@ -1260,8 +1522,14 @@ function RegridPanel({ data, setData, lightboxData, lightboxStructuresData, ligh
                         detail="Distance from parcel to nearest electric power transmission line (HIFLD). Regrid provides transmission_line_distance in meters."
                         alwaysShow
                       />
+                      <ExpandableField
+                        label="Nearest fire hydrant / extinguisher"
+                        value={fireSafetyGeoJson?.nearestDistanceM != null ? `${fireSafetyGeoJson.nearestDistanceM.toLocaleString()} m (${Math.round(fireSafetyGeoJson.nearestDistanceM * 3.28084).toLocaleString()} ft)` : '—'}
+                        detail={`Distance to nearest fire hydrant or extinguisher from OpenStreetMap (500m search radius). ${fireSafetyGeoJson?.features?.length ?? 0} found nearby.`}
+                        alwaysShow
+                      />
                       <FederalDataReviewSection federal={extractRegridFederalData(data)} compareWith={extractLightboxFederalData(lightboxFemaData)} />
-                      <ZoningReviewSection zoning={extractRegridZoning(data)} compareWith={extractLightboxZoning(lightboxData)} />
+                      <ZoningReviewSection zoning={extractRegridZoning(data)} compareWith={extractLightboxZoning(lightboxData, lightboxZoningData)} />
                       <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#333', marginBottom: '0.35rem' }}>Existing structures</div>
                       <ExpandableStructuresSource
                         label="Source"
@@ -1309,12 +1577,16 @@ function RegridPanel({ data, setData, lightboxData, lightboxStructuresData, ligh
   );
 }
 
-function LightboxPanel({ data, setData, regridData, structuresData, setStructuresData, femaData, setFemaData, viewState, setViewState, transmissionLinesGeoJson, showTransmissionLines }: {
+function LightboxPanel({ data, setData, regridData, structuresData, setStructuresData, femaData, setFemaData, zoningData, setZoningData, riskIndexData, setRiskIndexData, wetlandsData, setWetlandsData, viewState, setViewState, transmissionLinesGeoJson, showTransmissionLines, fireSafetyGeoJson }: {
   data: unknown; setData: (d: unknown) => void; regridData: RegridParcel | null;
   structuresData: LightboxStructuresData; setStructuresData: (d: LightboxStructuresData) => void;
   femaData: { nfhls?: Array<Record<string, unknown>> } | null; setFemaData: (d: { nfhls?: Array<Record<string, unknown>> } | null) => void;
+  zoningData: { zonings?: Array<Record<string, unknown>> } | null; setZoningData: (d: { zonings?: Array<Record<string, unknown>> } | null) => void;
+  riskIndexData: Record<string, unknown> | null; setRiskIndexData: (d: Record<string, unknown> | null) => void;
+  wetlandsData: Record<string, unknown> | null; setWetlandsData: (d: Record<string, unknown> | null) => void;
   viewState: ViewState; setViewState: (vs: ViewState | ((prev: ViewState) => ViewState)) => void;
   transmissionLinesGeoJson: GeoJsonFC | null; showTransmissionLines: boolean;
+  fireSafetyGeoJson: (GeoJsonFC & { nearestDistanceM?: number | null }) | null;
 }) {
   const [address, setAddress] = useState('');
   const [suggestions, setSuggestions] = useState<LightboxSuggestion[]>([]);
@@ -1338,6 +1610,9 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
     if (!parcelId) {
       setStructuresData(null);
       setFemaData(null);
+      setZoningData(null);
+      setRiskIndexData(null);
+      setWetlandsData(null);
       return;
     }
     let cancelled = false;
@@ -1371,6 +1646,36 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
     return () => { cancelled = true; };
   }, [parcelId, setFemaData]);
 
+  useEffect(() => {
+    if (!parcelId) { setZoningData(null); return; }
+    let cancelled = false;
+    fetch(`/api/lightbox/zoning/_on/parcel/us/${encodeURIComponent(parcelId)}`)
+      .then((r) => r.ok ? r.json() : null)
+      .then((d) => { if (!cancelled) setZoningData(d); })
+      .catch(() => { if (!cancelled) setZoningData(null); });
+    return () => { cancelled = true; };
+  }, [parcelId, setZoningData]);
+
+  useEffect(() => {
+    if (!parcelId) { setRiskIndexData(null); return; }
+    let cancelled = false;
+    fetch(`/api/lightbox/riskindexes/_on/parcel/us/${encodeURIComponent(parcelId)}`)
+      .then((r) => r.ok ? r.json() : null)
+      .then((d) => { if (!cancelled) setRiskIndexData(d); })
+      .catch(() => { if (!cancelled) setRiskIndexData(null); });
+    return () => { cancelled = true; };
+  }, [parcelId, setRiskIndexData]);
+
+  useEffect(() => {
+    if (!parcelId) { setWetlandsData(null); return; }
+    let cancelled = false;
+    fetch(`/api/lightbox/wetlands/_on/parcel/us/${encodeURIComponent(parcelId)}`)
+      .then((r) => r.ok ? r.json() : null)
+      .then((d) => { if (!cancelled) setWetlandsData(d); })
+      .catch(() => { if (!cancelled) setWetlandsData(null); });
+    return () => { cancelled = true; };
+  }, [parcelId, setWetlandsData]);
+
   const lightboxStructureAttrs = useMemo(() => {
     const structures = structuresData?.structures ?? [];
     if (!structures.length) return null;
@@ -1395,8 +1700,15 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
 
   const lightboxRawData = useMemo(() => {
     const base = data && typeof data === 'object' ? { ...(data as object) } : {};
-    return { ...base, structures: structuresData ?? { structures: [] } };
-  }, [data, structuresData]);
+    return {
+      ...base,
+      structures: structuresData ?? { structures: [] },
+      ...(femaData ? { nfhls: femaData } : {}),
+      ...(zoningData ? { zoning: zoningData } : {}),
+      ...(riskIndexData ? { riskindexes: riskIndexData } : {}),
+      ...(wetlandsData ? { wetlands: wetlandsData } : {}),
+    };
+  }, [data, structuresData, femaData, zoningData, riskIndexData, wetlandsData]);
 
   const lightboxBuildingsGeoJson = useMemo((): GeoJsonFC | null => {
     const structures = structuresData?.structures ?? [];
@@ -1621,7 +1933,7 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
       </div>
       <Split direction="vertical" sizes={[50, 50]} minSize={120} style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }} className="split-vertical">
         <div style={{ position: 'relative', minHeight: 200, flex: 1, background: '#e0e0e0' }}>
-          <MapPanel id="lightbox-map" geoJson={geoJson} buildingsGeoJson={lightboxBuildingsGeoJson} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} viewState={viewState} onViewStateChange={setViewState} />
+          <MapPanel id="lightbox-map" geoJson={geoJson} buildingsGeoJson={lightboxBuildingsGeoJson} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} viewState={viewState} onViewStateChange={setViewState} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: 120, overflow: 'hidden' }}>
           <div style={{ display: 'flex', gap: 0, borderBottom: '1px solid #ddd', background: '#eee', alignItems: 'center' }}>
@@ -1682,8 +1994,15 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
                         lotAreaDetail="From derived.calculatedLotArea or assessment.lot.size, in square meters."
                         compareWith={extractRegridReviewFields(regridData) ?? undefined}
                       />
+                      <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#333', marginBottom: '0.35rem' }}>Infrastructure</div>
+                      <ExpandableField
+                        label="Nearest fire hydrant / extinguisher"
+                        value={fireSafetyGeoJson?.nearestDistanceM != null ? `${fireSafetyGeoJson.nearestDistanceM.toLocaleString()} m (${Math.round(fireSafetyGeoJson.nearestDistanceM * 3.28084).toLocaleString()} ft)` : '—'}
+                        detail={`Distance to nearest fire hydrant or extinguisher from OpenStreetMap (500m search radius). ${fireSafetyGeoJson?.features?.length ?? 0} found nearby.`}
+                        alwaysShow
+                      />
                       <FederalDataReviewSection federal={extractLightboxFederalData(femaData)} compareWith={extractRegridFederalData(regridData)} />
-                      <ZoningReviewSection zoning={extractLightboxZoning(data)} compareWith={extractRegridZoning(regridData)} />
+                      <ZoningReviewSection zoning={extractLightboxZoning(data, zoningData)} compareWith={extractRegridZoning(regridData)} />
                       <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#333', marginBottom: '0.35rem' }}>Existing structures</div>
                       <ExpandableStructuresSource
                         label="Source"
@@ -1715,6 +2034,7 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
                           </div>
                         );
                       })()}
+                      <LightboxDetailedReview data={data} femaData={femaData} riskIndexData={riskIndexData} wetlandsData={wetlandsData} />
                     </>
                   ) : (
                     <p style={{ margin: 0, color: '#666' }}>No parcel identifier data available.</p>
@@ -1738,9 +2058,29 @@ export default function App() {
   const [lightboxData, setLightboxData] = useState<unknown>(null);
   const [lightboxStructuresData, setLightboxStructuresData] = useState<LightboxStructuresData>(null);
   const [lightboxFemaData, setLightboxFemaData] = useState<{ nfhls?: Array<Record<string, unknown>> } | null>(null);
+  const [lightboxZoningData, setLightboxZoningData] = useState<{ zonings?: Array<Record<string, unknown>> } | null>(null);
+  const [lightboxRiskIndexData, setLightboxRiskIndexData] = useState<Record<string, unknown> | null>(null);
+  const [lightboxWetlandsData, setLightboxWetlandsData] = useState<Record<string, unknown> | null>(null);
   const [viewState, setViewState] = useState<ViewState>(DEFAULT_VIEW);
   const [transmissionLinesGeoJson, setTransmissionLinesGeoJson] = useState<GeoJsonFC | null>(null);
   const [showTransmissionLines, setShowTransmissionLines] = useState(true);
+  const [fireSafetyGeoJson, setFireSafetyGeoJson] = useState<(GeoJsonFC & { nearestDistanceM?: number | null }) | null>(null);
+
+  // Fetch fire hydrants/extinguishers when parcel is loaded (use viewState center as parcel location)
+  useEffect(() => {
+    const hasParcel = !!(regridData || lightboxData);
+    if (!hasParcel) { setFireSafetyGeoJson(null); return; }
+    let cancelled = false;
+    fetch(`/api/regrid/osm/fire-safety?lat=${viewState.latitude}&lon=${viewState.longitude}&radius=500`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (cancelled) return;
+        if (d?.type === 'FeatureCollection') setFireSafetyGeoJson(d);
+        else setFireSafetyGeoJson(null);
+      })
+      .catch(() => { if (!cancelled) setFireSafetyGeoJson(null); });
+    return () => { cancelled = true; };
+  }, [regridData, lightboxData]);
 
   useEffect(() => {
     const [minLon, minLat, maxLon, maxLat] = viewStateBbox(viewState);
@@ -1773,8 +2113,8 @@ export default function App() {
         </div>
       </header>
       <Split sizes={[50, 50]} minSize={200} style={{ flex: 1, display: 'flex', minHeight: 0 }} className="split-container">
-        <RegridPanel data={regridData} setData={setRegridData} lightboxData={lightboxData} lightboxStructuresData={lightboxStructuresData} lightboxFemaData={lightboxFemaData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} />
-        <LightboxPanel data={lightboxData} setData={setLightboxData} regridData={regridData} structuresData={lightboxStructuresData} setStructuresData={setLightboxStructuresData} femaData={lightboxFemaData} setFemaData={setLightboxFemaData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} />
+        <RegridPanel data={regridData} setData={setRegridData} lightboxData={lightboxData} lightboxStructuresData={lightboxStructuresData} lightboxFemaData={lightboxFemaData} lightboxZoningData={lightboxZoningData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
+        <LightboxPanel data={lightboxData} setData={setLightboxData} regridData={regridData} structuresData={lightboxStructuresData} setStructuresData={setLightboxStructuresData} femaData={lightboxFemaData} setFemaData={setLightboxFemaData} zoningData={lightboxZoningData} setZoningData={setLightboxZoningData} riskIndexData={lightboxRiskIndexData} setRiskIndexData={setLightboxRiskIndexData} wetlandsData={lightboxWetlandsData} setWetlandsData={setLightboxWetlandsData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
       </Split>
     </div>
   );

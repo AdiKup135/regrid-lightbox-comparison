@@ -151,6 +151,60 @@ router.get('/nfhls/_on/parcel/us/:id', async (req, res) => {
   }
 });
 
+router.get('/zoning/_on/parcel/us/:id', async (req, res) => {
+  const { id } = req.params;
+  if (!id || typeof id !== 'string') {
+    return res.status(400).json({ error: 'id parameter required (parcel LightBox ID)' });
+  }
+  try {
+    const { ok, status, data } = await lightboxFetch(`/zoning/_on/parcel/us/${encodeURIComponent(id)}`);
+    if (!ok && status === 404) {
+      return res.json({ zonings: [], $ref: '', $metadata: { recordSet: { totalRecords: 0, bbox: {} } } });
+    }
+    if (!ok) return res.status(status).json(data);
+    res.json(data);
+  } catch (err) {
+    console.error('Lightbox zoning on parcel error:', err);
+    res.status(500).json({ error: 'Lightbox zoning request failed' });
+  }
+});
+
+router.get('/riskindexes/_on/parcel/us/:id', async (req, res) => {
+  const { id } = req.params;
+  if (!id || typeof id !== 'string') {
+    return res.status(400).json({ error: 'id parameter required (parcel LightBox ID)' });
+  }
+  try {
+    const { ok, status, data } = await lightboxFetch(`/riskindexes/_on/parcel/us/${encodeURIComponent(id)}`);
+    if (!ok && status === 404) {
+      return res.json({ riskindexes: [], $ref: '', $metadata: { recordSet: { totalRecords: 0, bbox: {} } } });
+    }
+    if (!ok) return res.status(status).json(data);
+    res.json(data);
+  } catch (err) {
+    console.error('Lightbox FEMA risk index on parcel error:', err);
+    res.status(500).json({ error: 'FEMA risk index request failed' });
+  }
+});
+
+router.get('/wetlands/_on/parcel/us/:id', async (req, res) => {
+  const { id } = req.params;
+  if (!id || typeof id !== 'string') {
+    return res.status(400).json({ error: 'id parameter required (parcel LightBox ID)' });
+  }
+  try {
+    const { ok, status, data } = await lightboxFetch(`/wetlands/_on/parcel/us/${encodeURIComponent(id)}`);
+    if (!ok && status === 404) {
+      return res.json({ wetlands: [], $ref: '', $metadata: { recordSet: { totalRecords: 0, bbox: {} } } });
+    }
+    if (!ok) return res.status(status).json(data);
+    res.json(data);
+  } catch (err) {
+    console.error('Lightbox wetlands on parcel error:', err);
+    res.status(500).json({ error: 'Wetlands request failed' });
+  }
+});
+
 router.get('/parcels/address', async (req, res) => {
   const { text } = req.query;
   if (!text || typeof text !== 'string') {

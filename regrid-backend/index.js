@@ -182,6 +182,49 @@ router.get('/parcels/point', async (req, res) => {
   }
 });
 
+// OSM fire hydrants & extinguishers via Overpass API
+const OVERPASS_URL = 'https://overpass-api.de/api/interpreter';
+
+function haversineM(lat1, lon1, lat2, lon2) {
+  const R = 6371000;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+router.get('/osm/fire-safety', async (req, res) => {
+  const { lat, lon, radius = 500 } = req.query;
+  if (lat == null || lon == null) {
+    return res.status(400).json({ error: 'lat and lon required' });
+  }
+  try {
+    const query = `[out:json][timeout:10];(node["emergency"="fire_hydrant"](around:${+radius},${+lat},${+lon});node["emergency"="fire_extinguisher"](around:${+radius},${+lat},${+lon}););out body;`;
+    const r = await fetch(OVERPASS_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `data=${encodeURIComponent(query)}`,
+    });
+    const data = await r.json();
+    const elements = data?.elements ?? [];
+    let nearestDistanceM = null;
+    const features = elements.map((el) => {
+      const dist = haversineM(+lat, +lon, el.lat, el.lon);
+      if (nearestDistanceM === null || dist < nearestDistanceM) nearestDistanceM = dist;
+      return {
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [el.lon, el.lat] },
+        properties: { ...el.tags, osmId: el.id, distanceM: Math.round(dist) },
+      };
+    });
+    res.json({ type: 'FeatureCollection', features, nearestDistanceM: nearestDistanceM != null ? Math.round(nearestDistanceM) : null });
+  } catch (err) {
+    console.error('OSM fire-safety error:', err);
+    res.status(500).json({ error: 'OSM fire-safety request failed' });
+  }
+});
+
 // Standalone mode for local dev
 const _isMain = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
 if (_isMain) {

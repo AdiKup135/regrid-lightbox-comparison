@@ -1,0 +1,912 @@
+{
+  "$ref": "https://api.lightboxre.com/v1/parcels/address?text=1590%20Madrono%20Ave%2C%20Palo%20Alto%2C%20CA%2094306-1015%2C%20US",
+  "$metadata": {
+    "geogcs": {
+      "epsg": "4269"
+    },
+    "currency": {
+      "code": "USD"
+    },
+    "units": {
+      "length": "m",
+      "area": "sqm"
+    },
+    "recordSet": {
+      "totalRecords": 1,
+      "offset": null,
+      "limit": null,
+      "bbox": {
+        "xMax": -122.152016,
+        "xMin": -122.152403,
+        "yMax": 37.432572,
+        "yMin": 37.432256
+      }
+    }
+  },
+  "parcels": [
+    {
+      "$ref": "https://api.lightboxre.com/v1/parcels/us/0205EZSFR4477LK2QOO114",
+      "id": "0205EZSFR4477LK2QOO114",
+      "$metadata": {
+        "geocode": {
+          "confidence": {
+            "streetNumber": 1,
+            "streetName": 1,
+            "locality": 1,
+            "postalCode": 1,
+            "score": 1
+          },
+          "precisionCode": 10
+        }
+      },
+      "fips": "06085",
+      "parcelApn": "12424051",
+      "assessment": {
+        "alternateApn": null,
+        "apn": "124-24-051",
+        "assessedValue": {
+          "total": 2768681,
+          "land": 2253583,
+          "improvements": 515098,
+          "year": "2025"
+        },
+        "marketValue": {
+          "total": null,
+          "land": null,
+          "improvements": null,
+          "year": null
+        },
+        "improvementPercent": 18.6,
+        "lot": {
+          "lotNumber": "6",
+          "blockNumber": "C",
+          "depth": 0,
+          "width": 0,
+          "size": 566.5604000000001
+        },
+        "poolIndicator": null,
+        "zoning": {
+          "assessment": "R1"
+        },
+        "book": null,
+        "page": null,
+        "avm": "4049000"
+      },
+      "cbsa": {
+        "code": "41940"
+      },
+      "census": {
+        "blockGroup": "1",
+        "tract": "511501"
+      },
+      "county": "SANTA CLARA",
+      "derived": {
+        "calculatedLotArea": 600
+      },
+      "landUse": {
+        "code": "01",
+        "description": "SINGLE FAMILY",
+        "normalized": {
+          "code": "1001",
+          "description": "SINGLE FAMILY RESIDENTIAL",
+          "categoryDescription": "RESIDENTIAL"
+        }
+      },
+      "lastLoan": {
+        "recordingDate": "2015-04-03T00:00:00.000Z",
+        "dueDate": "2045-04-01T00:00:00.000Z",
+        "lender": "MORGAN STANLEY PRIVATE BANK NA",
+        "value": 1150000,
+        "transactionId": "",
+        "interestRates": null
+      },
+      "legalDescription": [
+        "BLK C LOT 6 BOOK R PAGE 28"
+      ],
+      "location": {
+        "streetAddress": "1590 MADRONO AVE",
+        "countryCode": "US",
+        "locality": "PALO ALTO",
+        "regionCode": "CA",
+        "postalCode": "94306",
+        "postalCodeExt": null,
+        "geometry": {
+          "wkt": "POLYGON ((-122.152264006957 37.432256388949, -122.152040733388 37.43240390422, -122.152027743749 37.432415285337, -122.152022873982 37.432421949942, -122.152019221432 37.432429093901, -122.152016178838 37.432440394408, -122.152016169855 37.432451953138, -122.152019985 37.432465082609, -122.152026368429 37.432475459354, -122.152033675325 37.432483136875, -122.152135081646 37.432572219032, -122.152402885602 37.432378409941, -122.152264006957 37.432256388949))"
+        },
+        "representativePoint": {
+          "longitude": -122.152198,
+          "latitude": 37.432413,
+          "geometry": {
+            "wkt": "POINT (-122.152198 37.432413)"
+          }
+        }
+      },
+      "neighborhood": null,
+      "occupant": {
+        "owner": true,
+        "company": false
+      },
+      "owner": {
+        "names": [
+          {
+            "fullName": "USICH, JONATHAN D",
+            "firstName": "JONATHAN",
+            "middleName": "D",
+            "lastName": "USICH"
+          },
+          {
+            "fullName": "USICH, LARISA E",
+            "firstName": "LARISA",
+            "middleName": "E",
+            "lastName": "USICH"
+          }
+        ],
+        "streetAddress": "1590 MADRONO AVE",
+        "countryCode": "US",
+        "locality": "PALO ALTO",
+        "regionCode": "CA",
+        "postalCode": "94306",
+        "postalCodeExt": null,
+        "ownerNameStd": null,
+        "ownershipStatus": {
+          "code": "TR",
+          "description": "TRUSTEE"
+        }
+      },
+      "opportunityZone": false,
+      "primaryStructure": {
+        "yearBuilt": "1948",
+        "yearRenovated": "1980",
+        "units": null,
+        "livingArea": 188.94052044609666
+      },
+      "related": {
+        "commonOwnership": {
+          "aggregateLotSize": 566.5604000000001,
+          "id": "100660192_176979914",
+          "count": 1,
+          "subdivision": null,
+          "lotWidthMedian": null,
+          "lotWidthSummary": null
+        },
+        "associatePropertyCount": 1
+      },
+      "subdivision": null,
+      "tax": {
+        "year": "2025",
+        "yearDelinquent": null,
+        "amount": 34300,
+        "taxRateAreaCode": null,
+        "id": null,
+        "taxAccountNumber": null,
+        "exemption": null
+      },
+      "topography": null,
+      "transaction": {
+        "lastMarketSale": {
+          "pricePerArea": 98.3271375464684,
+          "value": 2150000,
+          "seller": "FURLONG, JAY P; FURLONG, LAURA ANNE",
+          "buyer": "USICH, JONATHAN D; USICH, LARISA E",
+          "filingDate": "2008-09-30T00:00:00.000Z",
+          "transferDate": "2008-09-30T00:00:00.000Z",
+          "documentNumber": "20001643",
+          "documentTypeCode": "GD",
+          "documentTypeDescription": "GRANT DEED",
+          "lender": null,
+          "loan": {
+            "code": "U",
+            "description": "UNKNOWN",
+            "first": 1000000,
+            "second": 0
+          },
+          "sale": {
+            "code": "U",
+            "description": "SALES PRICE COMPUTED FROM TRANSFER TAX"
+          },
+          "titleCompany": "FIRST AMERICAN TITLE",
+          "tdDocumentNumber": "20001644",
+          "deedTransactionType": "2",
+          "lenderType": "B"
+        },
+        "priorMarketSale": {
+          "transferDate": null,
+          "lender": ""
+        },
+        "multipleApnFlag": null
+      },
+      "usplss": {
+        "township": null,
+        "range": null,
+        "section": null,
+        "quarter": null
+      },
+      "structures": [
+        {
+          "$ref": "https://api.lightboxre.com/v1/structures/0503FLUCJ0XK6NB6OXD6II",
+          "id": "0503FLUCJ0XK6NB6OXD6II",
+          "isPrimary": true
+        },
+        {
+          "$ref": "https://api.lightboxre.com/v1/structures/0506H44OK9FSAKDM4ERA4T",
+          "id": "0506H44OK9FSAKDM4ERA4T",
+          "isPrimary": false
+        }
+      ]
+    }
+  ],
+  "structures": {
+    "$ref": "https://api.lightboxre.com/v1/structures/_on/parcel/us/0205EZSFR4477LK2QOO114",
+    "$metadata": {
+      "geogcs": {
+        "epsg": "4269"
+      },
+      "recordSet": {
+        "totalRecords": 2,
+        "offset": null,
+        "limit": null,
+        "bbox": {
+          "xMax": -122.152084,
+          "xMin": -122.152377,
+          "yMax": 37.432536,
+          "yMin": 37.432292
+        }
+      },
+      "currency": {
+        "code": "usd"
+      },
+      "units": {
+        "area": "sqm",
+        "length": "m"
+      }
+    },
+    "structures": [
+      {
+        "$ref": "https://api.lightboxre.com/v1/structures/us/0503FLUCJ0XK6NB6OXD6II",
+        "id": "0503FLUCJ0XK6NB6OXD6II",
+        "fips": "06085",
+        "ubid": "849VCRJX+X4F-4-4-4-3",
+        "location": {
+          "streetAddress": "1590 MADRONO AVE",
+          "locality": "PALO ALTO",
+          "regionCode": "CA",
+          "postalCode": "94306",
+          "postalCodeExt": null,
+          "unit": null,
+          "countryCode": "US",
+          "representativePoint": {
+            "longitude": -122.15218112963,
+            "latitude": 37.432421,
+            "geometry": {
+              "wkt": "POINT(-122.15218112963 37.432421)"
+            }
+          },
+          "geometry": {
+            "wkt": "MULTIPOLYGON (((-122.152273 37.432368, -122.152228 37.432401, -122.152296 37.432461, -122.152192 37.432536, -122.152084 37.432441, -122.152233 37.432333, -122.152273 37.432368)))"
+          }
+        },
+        "physicalFeatures": {
+          "area": {
+            "footprintArea": 205.43
+          },
+          "height": {
+            "average": 4.49,
+            "max": 7.11,
+            "min": 0.72
+          },
+          "groundElevation": {
+            "average": 14.02,
+            "max": 14.16,
+            "min": 13.91
+          },
+          "numberOfStories": 2
+        },
+        "propertyClass": null,
+        "business": false,
+        "parcelCount": 1,
+        "parcels": [
+          {
+            "$ref": "https://api.lightboxre.com/v1/parcels/us/0205EZSFR4477LK2QOO114",
+            "id": "0205EZSFR4477LK2QOO114",
+            "primaryBuilding": true
+          }
+        ]
+      },
+      {
+        "$ref": "https://api.lightboxre.com/v1/structures/us/0506H44OK9FSAKDM4ERA4T",
+        "id": "0506H44OK9FSAKDM4ERA4T",
+        "fips": "06085",
+        "ubid": "849VCRJX+W3M-2-2-2-2",
+        "location": {
+          "streetAddress": "1590 MADRONO AVE",
+          "locality": "PALO ALTO",
+          "regionCode": "CA",
+          "postalCode": "94306",
+          "postalCodeExt": null,
+          "unit": null,
+          "countryCode": "US",
+          "representativePoint": {
+            "longitude": -122.152318,
+            "latitude": 37.432341,
+            "geometry": {
+              "wkt": "POINT(-122.152318 37.432341)"
+            }
+          },
+          "geometry": {
+            "wkt": "MULTIPOLYGON (((-122.152377 37.432359, -122.152334 37.43239, -122.152259 37.432323, -122.152302 37.432292, -122.152377 37.432359)))"
+          }
+        },
+        "physicalFeatures": {
+          "area": {
+            "footprintArea": 51.14
+          },
+          "height": {
+            "average": 2.65,
+            "max": 3.17,
+            "min": 2.03
+          },
+          "groundElevation": {
+            "average": 14.05,
+            "max": 14.18,
+            "min": 13.97
+          },
+          "numberOfStories": 1
+        },
+        "propertyClass": null,
+        "business": false,
+        "parcelCount": 1,
+        "parcels": [
+          {
+            "$ref": "https://api.lightboxre.com/v1/parcels/us/0205EZSFR4477LK2QOO114",
+            "id": "0205EZSFR4477LK2QOO114",
+            "primaryBuilding": false
+          }
+        ]
+      }
+    ]
+  },
+  "nfhls": {
+    "$ref": "https://api.lightboxre.com/v1/nfhls/_on/parcel/us/0205EZSFR4477LK2QOO114",
+    "$metadata": {
+      "geogcs": {
+        "epsg": "4269"
+      },
+      "units": {
+        "length": "m",
+        "area": "sqm"
+      },
+      "geocode": null,
+      "recordSet": {
+        "totalRecords": 1,
+        "bbox": {
+          "xMax": -122.152016,
+          "xMin": -122.152403,
+          "yMax": 37.432572,
+          "yMin": 37.432256
+        }
+      }
+    },
+    "nfhls": [
+      {
+        "fips": "06085",
+        "location": {
+          "streetAddress": null,
+          "locality": null,
+          "regionCode": null,
+          "postalCode": null,
+          "postalCodeExt": null,
+          "unit": null,
+          "countryCode": null,
+          "geometry": "POINT(-122.152198 37.432413)",
+          "representativePoint": {
+            "latitude": 37.432413,
+            "longitude": -122.152198,
+            "geometry": {
+              "wkt": "POINT(-122.152198 37.432413)"
+            }
+          }
+        },
+        "dfirmId": "06085C",
+        "sfha": false,
+        "effectiveDate": "2009-05-17T00:00:00.000Z",
+        "sourceCitation": "06085C_FIRM11",
+        "studyType": "NP",
+        "isIn100Year": false,
+        "zones": [
+          {
+            "description": "Areas inundated by 500-year flooding",
+            "zone": "X",
+            "subtype": "0.2 PCT ANNUAL CHANCE FLOOD HAZARD"
+          }
+        ],
+        "panel": {
+          "firmId": "06085C",
+          "effectiveDate": "2009-05-18T00:00:00.000Z",
+          "panelId": "06085C0017H",
+          "sourceCitation": "06085C_BASE8"
+        }
+      }
+    ]
+  },
+  "zoning": {
+    "$ref": "https://api.lightboxre.com/v1/zoning/_on/parcel/us/0205EZSFR4477LK2QOO114",
+    "$metadata": {
+      "geogcs": {
+        "epsg": "4269"
+      },
+      "currency": {
+        "code": "usd"
+      },
+      "units": {
+        "length": "ft",
+        "area": "sqft"
+      },
+      "recordSet": {
+        "totalRecords": 1
+      }
+    },
+    "zonings": [
+      {
+        "$ref": "https://api.lightboxre.com/v1/zoning/_on/parcel/us/0205EZSFR4477LK2QOO114",
+        "$metadata": {
+          "intersect": 1,
+          "vintage": {
+            "ordinance": "2025-03-10T00:00:00.000Z",
+            "zoning": "2025-04-21T00:00:00.000Z"
+          },
+          "ordinanceUrl": "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76269"
+        },
+        "parcel": {
+          "$ref": "https://api.lightboxre.com/v1/parcels/us/0205EZSFR4477LK2QOO114",
+          "fips": "06085",
+          "id": "0205EZSFR4477LK2QOO114"
+        },
+        "jurisdiction": {
+          "id": "0655282",
+          "type": "PLACE",
+          "name": "PALO ALTO CITY"
+        },
+        "type": "BASE",
+        "category": "RESIDENTIAL",
+        "subcategory": "SINGLE FAMILY RESIDENTIAL",
+        "permittedUse": "PERMITTED USES INCLUDE BUT ARE NOT LIMITED TO: HOUSING - SINGLE UNIT, HOUSING - MULTIPLE UNITS, HOUSING - SENIOR, HOUSING - MOBILE HOME PARK",
+        "code": {
+          "value": "R-1",
+          "valueUnformatted": "r1",
+          "label": "CODE"
+        },
+        "district": {
+          "value": "RESIDENTIAL",
+          "label": "DISTRICT"
+        },
+        "description": {
+          "value": "Single Family Residential District",
+          "label": "DESCRIPTION"
+        },
+        "summary": {
+          "value": "The R-1 single family residential district is intended to create, preserve, and enhance areas suitable for detached dwellings with a strong presence of nature and with open area affording maximum privacy and opportunities for outdoor living and childrens play. Minimum site area requirements are established to create and preserve variety among neighborhoods, to provide adequate open area, and to encourage quality design. Accessory du, junior accessory du and accessory structures or buildings are appropriate. Community uses and facilities, such as churches and schools, should be limited unless no net loss of housing would result.",
+          "label": "PURPOSE"
+        },
+        "densityFloorArea": {
+          "value": null,
+          "description": "First 5,000 sq ft of lot size: 0.45; Sq footage of lot size in excess of 5,000 sq ft: 0.30; Residential Density: 1 unit, except as provided in Section 18.12.090",
+          "label": "MAXIMUM FLOOR AREA RATIO"
+        },
+        "maximumSiteCoverage": {
+          "percent": null,
+          "description": "Single story development and With S Combining: Equivalent to maximum allowable floor area ratio, The covering of a court is exempt from the calculation of site coverage provided that the court existed prior to July 20, 1978; Multiple story development: 35 Percent",
+          "label": "MAXIMUM SITE COVERAGE"
+        },
+        "minimumLotArea": {
+          "perUnit": null,
+          "perLot": 6000,
+          "description": "6,000 sq ft",
+          "label": "MINIMUM SITE AREA"
+        },
+        "frontSetback": {
+          "distance": null,
+          "description": "The minimum front yard setback shall be the greater of 20 ft or the average setback, if the average front setback is 30 ft or more. Average setback means the average distance between the front property line and the first main structural element, including covered porches, on sites on the same side of the block, including existing structures on the subject parcel. This calculation shall exclude flag lots and existing multifamily developments of 3 units or more. For calculation purposes, if 5 or more properties on the block are counted, the single greatest and the single least setbacks shall be excluded. The street sideyard setback of corner lots that have the front side of their parcel the narrowest street-facing lot line facing another street shall be excluded from the calculations. For blocks longer than 600 ft, the average setback shall be based on no more than ten sites located on the same side of the street and nearest to the subject property, plus the subject site, and for a distance no greater than 600 ft. Blocks with 3 or fewer eligible parcels are not subject to contextual setbacks. Structures on the site in no case may be located closer than 20 ft from the front property line.",
+          "label": "MINIMUM FRONT SETBACK"
+        },
+        "sideSetback": {
+          "distance": null,
+          "description": "Interior Side Yard: 6 ft; Street Side Yard: 16 ft",
+          "label": "MINIMUM SIDE SETBACK"
+        },
+        "rearSetback": {
+          "distance": 20,
+          "description": "20 ft",
+          "label": "MINIMUM REAR SETBACK"
+        },
+        "maximumBuildingHeight": {
+          "height": null,
+          "maxStories": null,
+          "timesBuildableArea": null,
+          "description": "Standard: 30 ft; Maximum Height for buildings with a roof pitch of 12.00 or greater: 33 ft; R-1 Floodzone Heights: Provided, in a special flood hazard area as defined in Chapter 16.52, the maximum heights are increased by one-half of the increase in elevation required to reach base flood elevation, up to a maximum building height of 33 ft.",
+          "label": "MAXIMUM HEIGHT"
+        }
+      }
+    ]
+  },
+  "riskindexes": {
+    "$ref": "https://api.lightboxre.com/v1/riskindexes/_on/parcel/us/0205EZSFR4477LK2QOO114",
+    "$metadata": {
+      "geogcs": {
+        "epsg": "4269"
+      },
+      "units": {
+        "length": "m",
+        "area": "sqm"
+      },
+      "recordSet": {
+        "totalRecords": 1,
+        "bbox": {
+          "xMax": -122.152016,
+          "xMin": -122.152403,
+          "yMax": 37.432572,
+          "yMin": 37.432256
+        }
+      }
+    },
+    "nris": [
+      {
+        "$ref": "https://api.lightboxre.com/v1/riskindexes/us/T06085511500",
+        "id": "T06085511500",
+        "fips": "06085",
+        "location": {
+          "regionCode": null,
+          "countryCode": "US",
+          "representativePoint": {
+            "latitude": 37.4382082685557,
+            "longitude": -122.156386470419,
+            "geometry": {
+              "wkt": "POINT(-122.156386470419 37.4382082685557)"
+            }
+          },
+          "geometry": {
+            "wkt": "POLYGON ((-122.156153137216 37.438264935537, -122.15525713689 37.4377139350951, -122.154623137404 37.4373249357382, -122.153163137013 37.4363949351313, -122.152586135632 37.4360379357403, -122.151693136577 37.4354849352239, -122.151440135959 37.4353249354603, -122.150683136449 37.4348469356451, -122.150431135655 37.4346879345703, -122.149687135666 37.4342179354388, -122.147456134623 37.4328099347584, -122.146713135357 37.4323409353316, -122.146204134646 37.4320199354854, -122.144680134681 37.431056934821, -122.144172135591 37.4307369352808, -122.143806134995 37.4305059355272, -122.14271113358 37.4298149350784, -122.142347133532 37.4295849354538, -122.142253134719 37.4295249353115, -122.142122133401 37.429442935277, -122.141447134805 37.4290199349424, -122.141222133775 37.4288799353812, -122.141063132868 37.4287799351267, -122.140586134639 37.4284829353952, -122.14057313422 37.4284749357367, -122.140429133382 37.4283819351867, -122.140349133914 37.4283299351817, -122.14011213319 37.4281759359426, -122.140063134582 37.4281449351727, -122.140033134445 37.4281249352214, -122.140053133638 37.4278449353432, -122.140053133638 37.4277249350748, -122.140113133014 37.4268049351872, -122.140113133913 37.4266949355605, -122.140287133092 37.4257439355194, -122.140302134059 37.4256799351736, -122.140308133906 37.4256209349289, -122.140301133335 37.425528935289, -122.140272133023 37.4253039348014, -122.140303132985 37.4252249356747, -122.140383133351 37.4250849354372, -122.140453132773 37.424954935339, -122.140823132669 37.4245249347231, -122.141081132412 37.4242229349844, -122.141723133193 37.4234749349364, -122.14185813381 37.4233199347805, -122.142013133621 37.4231449351625, -122.142073132997 37.4230749349154, -122.142123133226 37.423024934495, -122.142264133691 37.4231029350221, -122.14268913294 37.4233399345886, -122.142733133321 37.4233649346977, -122.14283313288 37.4234149348911, -122.142978133543 37.4234819342132, -122.144000133367 37.4239799348984, -122.144483134139 37.4242349344397, -122.144916134683 37.4244679353736, -122.145111134677 37.4245729344796, -122.145413133902 37.4247349347683, -122.14549113372 37.4247779348918, -122.145697133584 37.4248899348485, -122.145833134925 37.4249649343119, -122.145893134301 37.4249949347896, -122.146035133693 37.424828934326, -122.146143133648 37.4247049348998, -122.146343134563 37.4244549343393, -122.146452133444 37.4243229349052, -122.146593134808 37.4241549347051, -122.146708134436 37.4240119347346, -122.147054134042 37.4235849350134, -122.147063134263 37.4235749351428, -122.147173133868 37.4234449345631, -122.147287134569 37.4233039343596, -122.147613133186 37.4229049343486, -122.147633134175 37.4228809350097, -122.14769313445 37.4228149346477, -122.147753134724 37.4227449348055, -122.147873134375 37.4225989343533, -122.148003134071 37.4224449340272, -122.148233134225 37.4221609341425, -122.148353134774 37.4220149346919, -122.148470134052 37.421871934915, -122.148823133331 37.4214459346345, -122.148883134503 37.4213749339954, -122.14894313388 37.4213049342339, -122.148963133971 37.4212849345958, -122.149060134954 37.4211679345012, -122.149407133487 37.4207529342707, -122.149523133838 37.4206149340008, -122.149644134211 37.420467934147, -122.150010134808 37.4200299335998, -122.150023134328 37.420014933438, -122.150133133933 37.4198849345255, -122.15016313407 37.4198549341407, -122.150253134482 37.4197479336217, -122.150605133936 37.4193329340831, -122.150723133937 37.4191949340502, -122.15052313392 37.419094933702, -122.14998013467 37.418791933915, -122.149733134798 37.4186549338655, -122.149593134158 37.4185849344153, -122.148883133605 37.4182049337099, -122.148763133954 37.4181449337227, -122.147740134306 37.4176069336632, -122.146993133943 37.4172149345518, -122.147443134205 37.4166849337247, -122.147544134487 37.4165599340735, -122.148143133813 37.4158249335024, -122.148443132491 37.415464933547, -122.148809133985 37.4150339330586, -122.149053132586 37.4147449341529, -122.149183134079 37.4145859331932, -122.149613133351 37.4140649338401, -122.149726133329 37.4139259337591, -122.149963134054 37.4136349334781, -122.150037133674 37.4135439337172, -122.150979133132 37.4124039332802, -122.151293133849 37.4120249336777, -122.151533133151 37.4117349327922, -122.15170113338 37.411535933095, -122.152263133795 37.4108749335297, -122.152920132847 37.4100679332184, -122.153323134152 37.4095749332926, -122.15383313379 37.4089649330839, -122.153843132937 37.4089519329259, -122.154533134297 37.4080849331087, -122.155123134301 37.4073849332071, -122.155386133168 37.4070679329502, -122.155763133635 37.40661493254, -122.155775133331 37.4065979331171, -122.155893133331 37.4064349324105, -122.155913133423 37.4064139319391, -122.15594313356 37.4063849330114, -122.15596713385 37.4063479320502, -122.155983133743 37.4063249321185, -122.15633813357 37.4065909322623, -122.156383134675 37.4066249325345, -122.157193133888 37.407304932598, -122.157364133592 37.4074459329541, -122.157593133921 37.4076349329544, -122.157703134424 37.4077349321916, -122.158358133827 37.4082209321066, -122.158943133808 37.4086549323259, -122.160329134579 37.4096759324678, -122.160463135371 37.4097749321629, -122.160983134157 37.4101649323486, -122.161780134748 37.4107429322777, -122.162408135285 37.4111989330869, -122.162843135478 37.4115149319128, -122.163193135283 37.4117349320787, -122.163733135058 37.4120149322633, -122.16418313532 37.412214932468, -122.164306136242 37.4122589322844, -122.164573135307 37.4123549325076, -122.165113135082 37.4125249327645, -122.165193135448 37.4125449326014, -122.165243135677 37.4125649324331, -122.165553136196 37.4126649322247, -122.165898135978 37.4127469320826, -122.166013135606 37.4127749317699, -122.16645313672 37.4128649321208, -122.167043135826 37.4129649322254, -122.167833135846 37.4131449323627, -122.167895136669 37.4131659316608, -122.168293136154 37.4133049324386, -122.168533137251 37.4134049319558, -122.1687831357 37.413504932053, -122.169263136997 37.4137449323123, -122.169753136544 37.4140549319847, -122.170303136365 37.4144249326762, -122.170487136488 37.4145499323232, -122.171063136248 37.4149449320627, -122.171300136074 37.4151109323196, -122.172033137092 37.4156249322346, -122.172873137341 37.4162249315821, -122.173893137515 37.4169349316879, -122.174293137548 37.4172449324268, -122.174803137186 37.4177549322773, -122.174913137689 37.4178849327469, -122.175273137539 37.4183649322517, -122.175563137968 37.4188049323652, -122.175630138813 37.4189189317945, -122.175663138425 37.4189749315383, -122.175893138579 37.4193349324583, -122.175933138762 37.4194249320612, -122.176163138017 37.41970493275, -122.176483137684 37.4199949327419, -122.17687313857 37.4202749320129, -122.17723313842 37.4204649327055, -122.176883137717 37.4203349324339, -122.176508137799 37.4201169323389, -122.176333137897 37.4200149320111, -122.175783138076 37.4196749330065, -122.175508138614 37.4194909318439, -122.175483137602 37.4194749320317, -122.175343136961 37.4193749320574, -122.174873138405 37.4191949326233, -122.17460313717 37.4191349320023, -122.174347137077 37.4190999328664, -122.174233138172 37.4190849325183, -122.173803138002 37.4190549325265, -122.173543137711 37.4190649322873, -122.172883137387 37.4190849318048, -122.172695137066 37.4191089330739, -122.172043137137 37.4191949319098, -122.171433137042 37.4193349331718, -122.170753136627 37.4195249319687, -122.17026313708 37.4197349331949, -122.170242137164 37.419746932656, -122.169923137321 37.4199449331186, -122.169563136573 37.4202529330355, -122.169507136497 37.420299932432, -122.169363137455 37.4204249322618, -122.169341137714 37.4204439326001, -122.169288136213 37.4204939326036, -122.169097137316 37.4206699329497, -122.168963137422 37.4207949328755, -122.1686531378 37.4211649330878, -122.168574137259 37.4212429334121, -122.168483137023 37.4213349326109, -122.168373137418 37.4214049330579, -122.16822313763 37.4215149333221, -122.168207137737 37.4215239332393, -122.167733136287 37.4218149328324, -122.167683137855 37.4218399327373, -122.167503137032 37.4219349332988, -122.167388136505 37.4219919324363, -122.167303136117 37.4220349327082, -122.167039137424 37.422151932875, -122.166923137073 37.4222049331099, -122.166809136372 37.4222569330886, -122.166467136964 37.4224129328079, -122.166353137161 37.4224649333555, -122.166238137533 37.4225179333689, -122.165896137226 37.4226809326096, -122.165783137249 37.4227349326825, -122.165673136745 37.4227949332726, -122.165649136456 37.422800933115, -122.165403137307 37.4228649330681, -122.165211136788 37.4228839335006, -122.16506313665 37.4228649330681, -122.165023136467 37.4228649330681, -122.164878136702 37.4228419332139, -122.164833136496 37.4228349331637, -122.164640137051 37.4227469330897, -122.164613136388 37.4227349326825, -122.164513135931 37.422674933471, -122.16439313628 37.4226149334981, -122.164061136918 37.4224959329102, -122.163863136551 37.4224249339802, -122.163833136414 37.4224149339546, -122.163455136122 37.4223289331092, -122.163393137096 37.4223149329124, -122.163083135678 37.4222849335012, -122.162723136726 37.4222849327877, -122.162433136298 37.422294933544, -122.162202135421 37.4223179328529, -122.162033136265 37.4223349337023, -122.161793136065 37.4224019332774, -122.161713136598 37.4224249332667, -122.161523135728 37.4225049334229, -122.161492136665 37.4225229337316, -122.161423136169 37.422564933484, -122.161223136153 37.4223749338391, -122.16094313577 37.4220649336464, -122.160826136493 37.4219479333437, -122.160693135525 37.4218149335458, -122.160613136057 37.4217549335972, -122.16058313592 37.4217249332482, -122.160383136802 37.4215449337553, -122.159853135276 37.4211349332158, -122.159403135912 37.4208149333579, -122.158781136122 37.4203879332414, -122.158733135543 37.4203549337526, -122.158353135601 37.4201149332711, -122.158053136025 37.4199349327619, -122.158047135279 37.4199449331186, -122.158029135736 37.4199749334673, -122.158023135888 37.4199849331053, -122.157843135065 37.4198749334473, -122.157699135125 37.4197989336281, -122.157043134999 37.4194549333317, -122.156705135788 37.4192829340178, -122.156373135527 37.419114933925, -122.156261134476 37.4192549331962, -122.155928135288 37.419676933513, -122.155883135082 37.4197349339083, -122.15581313566 37.4198149333711, -122.155691134563 37.4199589344719, -122.155493135095 37.4201949337549, -122.155325134865 37.4203909332591, -122.155203134667 37.4205349339657, -122.155086135389 37.420673933196, -122.15473913506 37.4210939336092, -122.154623135607 37.4212349336936, -122.154559135135 37.4213109341957, -122.154367134616 37.4215389345257, -122.15430313594 37.4216149340058, -122.15424413549 37.4216859337039, -122.154068134865 37.4219009335547, -122.154013135512 37.4219749343627, -122.153899135709 37.4221149339945, -122.153557135402 37.4225349341728, -122.153443134701 37.4226749341844, -122.153373135279 37.4227649340536, -122.15332713435 37.4228199342772, -122.152971134698 37.4232509341891, -122.152853134697 37.4233949343897, -122.152736135419 37.4235339340185, -122.152388134367 37.4239549342811, -122.152273135637 37.4240949337779, -122.152156134563 37.4242339342474, -122.151808135307 37.4246549341411, -122.151693135679 37.4247949344693, -122.151572134407 37.4249389338406, -122.15121313528 37.4253709345734, -122.151093134731 37.4255149342637, -122.150975135629 37.4256529347772, -122.150621135626 37.4260669347914, -122.150503134727 37.4262049342874, -122.150254134307 37.4265039348197, -122.149913134723 37.4269149346522, -122.149834134182 37.4270049344185, -122.149543134827 37.4273449343825, -122.149501134995 37.4273949347715, -122.149253134399 37.4276949349776, -122.149429134126 37.4278469342046, -122.149623135193 37.4280149353942, -122.149952135081 37.4283149352558, -122.150083135501 37.4284349345785, -122.150126135159 37.4284719346162, -122.150293135563 37.42861793503, -122.150794135879 37.4290589349468, -122.15096213521 37.4292059343418, -122.151063135492 37.429294934796, -122.151136136185 37.4293559352466, -122.151666135017 37.429796935096, -122.151843135467 37.4299449352979, -122.152172135355 37.4302279347921, -122.153160135742 37.4310789341907, -122.153423135508 37.4313049352536, -122.153489136528 37.4313639352988, -122.153737136225 37.4315839349365, -122.15397813625 37.4317969347154, -122.154484136588 37.4322439342499, -122.15473313611 37.4324649349502, -122.155199137164 37.432885934211, -122.155763137228 37.433394935172, -122.156610136252 37.4341389350189, -122.157083136978 37.4345549345783, -122.157684136853 37.4350829350788, -122.158233136849 37.4355649349774, -122.15935313748 37.4365549347472, -122.159487137375 37.4366709350217, -122.159780137278 37.4369239355132, -122.16009313817 37.4371949354968, -122.160163137592 37.4372449350128, -122.160203137775 37.4372849350296, -122.160093137272 37.4373249350249, -122.160013137804 37.4373649349989, -122.159793137696 37.4374549350404, -122.159413136857 37.4375539351038, -122.158693137156 37.4377449347552, -122.158543138267 37.4377849352179, -122.158313138113 37.437854935263, -122.157933137273 37.4379049350514, -122.157643137743 37.4379249352426, -122.157343137269 37.4379649348959, -122.156983137419 37.4380449348516, -122.156961136779 37.4380509348983, -122.156643136762 37.4381449348542, -122.156363137278 37.4382149352759, -122.156153137216 37.438264935537))"
+          }
+        },
+        "state": "California",
+        "county": "Santa Clara",
+        "census": {
+          "code": "511500",
+          "geoId": "06085511500"
+        },
+        "population": 7513,
+        "value": {
+          "building": 1309051000,
+          "agriculture": 0
+        },
+        "score": 27.01,
+        "countyScore": 22.95,
+        "stateAverageScore": 22.57,
+        "nationalAverageScore": 16.91,
+        "rating": "Relatively High",
+        "countyRating": "Relatively High",
+        "nationalPercentile": 91.14,
+        "statePercentile": 81.57,
+        "expectedAnnualLoss": {
+          "score": 35.2,
+          "stateAverageScore": 23.29,
+          "nationalAverageScore": 18.03,
+          "rating": "Relatively High",
+          "nationalPercentile": 97.64,
+          "statePercentile": 95.15,
+          "total": 2195536.89,
+          "countyTotal": 426259812.54,
+          "value": {
+            "building": 1953160.85,
+            "agriculture": 0
+          },
+          "population": 0.03,
+          "populationEquivalence": 242376.04
+        },
+        "socialVulnerability": {
+          "score": 25.17,
+          "countyScore": 15.85,
+          "stateAverageScore": 31.9,
+          "nationalAverageScore": 31.89,
+          "rating": "Very Low",
+          "countyRating": "Very Low",
+          "nationalPercentile": 5.14,
+          "statePercentile": 6.47,
+          "value": -4.2,
+          "countyValue": -5.71
+        },
+        "communityResilience": {
+          "score": 52.77,
+          "countyScore": 52.77,
+          "stateAverageScore": 52.62,
+          "nationalAverageScore": 54.91,
+          "rating": "Relatively Low",
+          "countyRating": "Relatively Low",
+          "nationalPercentile": 26.76,
+          "statePercentile": 50,
+          "value": 2.64,
+          "cuntyValue": 2.64
+        },
+        "avalanche": {
+          "events": null,
+          "annualizedFrequency": null,
+          "exposure": null,
+          "annualLoss": {
+            "total": null,
+            "score": null,
+            "rating": "Not Applicable",
+            "historicLossRatioTotalRating": "Not Applicable"
+          },
+          "hazardTypeRiskIndex": {
+            "score": null,
+            "rating": "Not Applicable"
+          }
+        },
+        "coastalFlooding": {
+          "events": null,
+          "annualizedFrequency": 1.5,
+          "exposure": 27572402332.7,
+          "annualLoss": {
+            "total": 7.53,
+            "score": 0.65,
+            "rating": "Very Low",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0.5,
+            "rating": "Very Low"
+          }
+        },
+        "coldWave": {
+          "events": 0,
+          "annualizedFrequency": 0,
+          "exposure": 0,
+          "annualLoss": {
+            "total": 0,
+            "score": 0,
+            "rating": "No Expected Annual Losses",
+            "historicLossRatioTotalRating": "No Rating"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0,
+            "rating": "No Rating"
+          }
+        },
+        "drought": {
+          "events": 651,
+          "annualizedFrequency": 36.17,
+          "exposure": 0,
+          "annualLoss": {
+            "total": 0,
+            "score": 0,
+            "rating": "No Expected Annual Losses",
+            "historicLossRatioTotalRating": "No Rating"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0,
+            "rating": "No Rating"
+          }
+        },
+        "earthquake": {
+          "events": null,
+          "annualizedFrequency": 0.01,
+          "exposure": 58407851000,
+          "annualLoss": {
+            "total": 2187622.1,
+            "score": 53.76,
+            "rating": "Very High",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 46.51,
+            "rating": "Very High"
+          }
+        },
+        "hail": {
+          "events": 2,
+          "annualizedFrequency": 0.04,
+          "exposure": 58407851000,
+          "annualLoss": {
+            "total": 433.09,
+            "score": 4.86,
+            "rating": "Very Low",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 3.98,
+            "rating": "Very Low"
+          }
+        },
+        "heatWave": {
+          "events": 5,
+          "annualizedFrequency": 0.41,
+          "exposure": 58407851000,
+          "annualLoss": {
+            "total": 558.52,
+            "score": 8.87,
+            "rating": "Relatively Low",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 6.52,
+            "rating": "Relatively Low"
+          }
+        },
+        "hurricane": {
+          "events": null,
+          "annualizedFrequency": null,
+          "exposure": null,
+          "annualLoss": {
+            "total": null,
+            "score": null,
+            "rating": "Not Applicable",
+            "historicLossRatioTotalRating": "Not Applicable"
+          },
+          "hazardTypeRiskIndex": {
+            "score": null,
+            "rating": "Not Applicable"
+          }
+        },
+        "iceStorm": {
+          "events": null,
+          "annualizedFrequency": null,
+          "exposure": null,
+          "annualLoss": {
+            "total": null,
+            "score": null,
+            "rating": "Not Applicable",
+            "historicLossRatioTotalRating": "Not Applicable"
+          },
+          "hazardTypeRiskIndex": {
+            "score": null,
+            "rating": "Not Applicable"
+          }
+        },
+        "landslide": {
+          "events": 0,
+          "annualizedFrequency": 0.01,
+          "exposure": 6962052008.17,
+          "annualLoss": {
+            "total": 39.68,
+            "score": 1.66,
+            "rating": "Very Low",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 1.1,
+            "rating": "Very Low"
+          }
+        },
+        "lightning": {
+          "events": 9,
+          "annualizedFrequency": 0.39,
+          "exposure": 58407851000,
+          "annualLoss": {
+            "total": 2072.27,
+            "score": 20.81,
+            "rating": "Relatively Low",
+            "historicLossRatioTotalRating": "Relatively High"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 12.77,
+            "rating": "Relatively Low"
+          }
+        },
+        "riverineFlooding": {
+          "events": 0,
+          "annualizedFrequency": 0,
+          "exposure": 0,
+          "annualLoss": {
+            "total": 0,
+            "score": 0,
+            "rating": "No Expected Annual Losses",
+            "historicLossRatioTotalRating": "No Rating"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0,
+            "rating": "No Rating"
+          }
+        },
+        "strongWind": {
+          "events": 1,
+          "annualizedFrequency": 0.03,
+          "exposure": 58407851000,
+          "annualLoss": {
+            "total": 56.93,
+            "score": 3.71,
+            "rating": "Very Low",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 3.25,
+            "rating": "Very Low"
+          }
+        },
+        "tornado": {
+          "events": 0,
+          "annualizedFrequency": 0,
+          "exposure": 58407851000,
+          "annualLoss": {
+            "total": 4746.76,
+            "score": 11.97,
+            "rating": "Very Low",
+            "historicLossRatioTotalRating": "Very Low"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 10.88,
+            "rating": "Very Low"
+          }
+        },
+        "tsunami": {
+          "events": 0,
+          "annualizedFrequency": 0,
+          "exposure": 0,
+          "annualLoss": {
+            "total": 0,
+            "score": 0,
+            "rating": "No Expected Annual Losses",
+            "historicLossRatioTotalRating": "No Rating"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0,
+            "rating": "No Rating"
+          }
+        },
+        "volcanicActivity": {
+          "events": null,
+          "annualizedFrequency": null,
+          "exposure": null,
+          "annualLoss": {
+            "total": null,
+            "score": null,
+            "rating": "Not Applicable",
+            "historicLossRatioTotalRating": "Not Applicable"
+          },
+          "hazardTypeRiskIndex": {
+            "score": null,
+            "rating": "Not Applicable"
+          }
+        },
+        "wildfire": {
+          "events": null,
+          "annualizedFrequency": 0,
+          "exposure": 0,
+          "annualLoss": {
+            "total": 0,
+            "score": 0,
+            "rating": "No Expected Annual Losses",
+            "historicLossRatioTotalRating": "No Rating"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0,
+            "rating": "No Rating"
+          }
+        },
+        "winterWeather": {
+          "events": 0,
+          "annualizedFrequency": 0,
+          "exposure": 0,
+          "annualLoss": {
+            "total": 0,
+            "score": 0,
+            "rating": "No Expected Annual Losses",
+            "historicLossRatioTotalRating": "No Rating"
+          },
+          "hazardTypeRiskIndex": {
+            "score": 0,
+            "rating": "No Rating"
+          }
+        }
+      }
+    ]
+  },
+  "wetlands": {
+    "wetlands": [],
+    "$ref": "",
+    "$metadata": {
+      "recordSet": {
+        "totalRecords": 0,
+        "bbox": {}
+      }
+    }
+  }
+}
