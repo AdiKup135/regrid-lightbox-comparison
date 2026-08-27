@@ -312,7 +312,7 @@ interface RawEdge {
 
 export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
   const cfg: EdgeLabelingConfig = { ...DEFAULT_CONFIG, ...(input.config ?? {}) };
-  const frontRule: FrontRule = input.frontRule ?? 'shortest_frontage';
+  const frontRule: FrontRule = input.frontRule ?? 'address_street'; // silent-code default: the addressed street is the front
   const globalFlags = new Set<string>();
 
   /* ---- 5.1 Parse, project, sample ------------------------------------------
@@ -725,7 +725,7 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
  *     const d3 = await get(`lat=${p.lat}&lng=${p.lng}`);
  *     return (d3.data.parcels ?? []).find((q: ZoneomicsParcel) => q.apn === p.apn) ?? null;
  *   }))).filter(Boolean);
- *   const frontRule = (rules as any)[cityId]?.front_rule ?? 'shortest_frontage';
+ *   const frontRule = (rules as any)[cityId]?.front_rule ?? 'address_street';
  *   return labelEdges({ subject, neighbors, frontRule });
  * }
  *
