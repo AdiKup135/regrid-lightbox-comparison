@@ -228,6 +228,11 @@ export default function EdgesPanel() {
                   <span style={{ background: TAG_COLORS[e.tag], color: '#fff', borderRadius: 4, padding: '1px 7px', fontSize: '0.7rem', letterSpacing: '0.06em', textTransform: 'uppercase', minWidth: 78, textAlign: 'center' }}>
                     {e.tag}
                   </span>
+                  {e.flags.includes('second_front') && (
+                    <span style={{ background: '#E8A33D', color: '#fff', borderRadius: 4, padding: '1px 7px', fontSize: '0.7rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                      also front
+                    </span>
+                  )}
                   <span style={{ flex: 1 }}>{abutsText(e)}</span>
                   <span style={{ color: '#888', fontVariantNumeric: 'tabular-nums' }}>{Math.round(e.lengthFt)} ft</span>
                 </button>

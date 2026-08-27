@@ -206,7 +206,10 @@ export interface LotEdge {
   /** How the tag was decided. */
   basis: 'single_frontage' | 'address_match' | 'jurisdiction_rule' | 'geometry' | 'user_override';
   confidence: 'high' | 'medium' | 'low';
-  /** e.g. 'owner_electable', 'through_lot' */
+  /** e.g. 'owner_electable', 'through_lot', 'second_front' (this street_side
+   *  edge is legally a front too — all_fronts jurisdictions; the primary
+   *  front keeps the 'front' tag because the two often carry different
+   *  setbacks, e.g. Sunnyvale's reducible long frontage). */
   flags: string[];
 }
 
@@ -810,7 +813,12 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
       tagOf.set(e, { tag: 'rear', basis: 'geometry', confidence: 'medium', flags: ['through_lot', ...(electable ? ['owner_electable'] : [])] });
       globalFlags.add('through_lot');
     } else {
-      tagOf.set(e, { tag: 'street_side', basis: front ? basis : 'geometry', confidence: e.streetName ? confidence : 'medium', flags: electable ? ['owner_electable'] : [] });
+      // Under all_fronts every street frontage is legally a front; the tag
+      // stays street_side (one anchor front keeps rear/side orientation and
+      // the primary/secondary distinction, which carries different setbacks),
+      // but the edge itself now says so.
+      const sf = frontRule === 'all_fronts' ? ['second_front'] : [];
+      tagOf.set(e, { tag: 'street_side', basis: front ? basis : 'geometry', confidence: e.streetName ? confidence : 'medium', flags: [...sf, ...(electable ? ['owner_electable'] : [])] });
     }
   }
   if (front && ![...tagOf.values()].some((t) => t.tag === 'rear')) {
