@@ -115,7 +115,7 @@ function cachePut(parcel) {
 }
 
 /**
- * GET /edges?address=<free-form>&radius=<m, default 60>&maxNeighbors=<default 12>
+ * GET /edges?address=<free-form>&radius=<m, default auto from parcel size>&maxNeighbors=<default 12>
  *
  * Orchestrates the three Zoneomics call shapes for edge-labeling:
  *  1. address -> subject parcel WITH boundary (data.parcels[0])
@@ -127,7 +127,7 @@ function cachePut(parcel) {
  */
 router.get('/edges', async (req, res) => {
   const { address } = req.query;
-  const radius = Math.min(Number(req.query.radius) || 60, 200);
+  const explicitRadius = Number(req.query.radius) || 0; // 0 = auto (from subject parcel size)
   const maxNeighbors = Math.min(Number(req.query.maxNeighbors) || 12, 20);
   if (!address || typeof address !== 'string') {
     return res.status(400).json({ error: 'address query param required' });
@@ -147,15 +147,36 @@ router.get('/edges', async (req, res) => {
     }
     cachePut(subject);
 
-    // 2) radius -> neighbor centroid stubs (GeoJSON shape)
-    const r2 = await zoneomicsFetch('/v2/zoneDetail', { lat: subject.lat, lng: subject.lng, radius: String(radius), output_fields: 'parcels' });
-    callCount++;
-    const features = r2.ok ? (r2.data?.data?.features ?? []) : [];
-    const stubs = features
-      .flatMap((f) => f?.properties?.parcels ?? [])
-      .filter((p) => p && p.apn && p.apn !== subject.apn && typeof p.lat === 'number' && typeof p.lng === 'number');
-    const seen = new Set();
-    const unique = stubs.filter((p) => (seen.has(p.apn) ? false : (seen.add(p.apn), true)));
+    // 2) radius -> neighbor centroid stubs (GeoJSON shape).
+    // The radius query matches parcel CENTROIDS, not geometry — a bordering
+    // parcel as large as the subject has its centroid roughly (subject reach +
+    // its own reach) away. Auto radius = 2x the subject's max centroid->vertex
+    // distance + 20 m buffer, clamped to [60, 200]. One doubling retry covers
+    // neighborhoods where the borderers are much larger than the subject.
+    let radius = Math.min(explicitRadius, 200);
+    if (!radius) {
+      const ringM = subject.boundary.match(/\(\(([^()]+)\)/);
+      const reachM = ringM
+        ? Math.max(...ringM[1].split(',').map((s) => {
+            const [lng, lat] = s.trim().split(/\s+/).map(Number);
+            return Math.hypot((lng - subject.lng) * 111320 * Math.cos((subject.lat * Math.PI) / 180), (lat - subject.lat) * 111320);
+          }))
+        : 0;
+      radius = Math.min(200, Math.max(60, Math.ceil(2 * reachM + 20)));
+    }
+    let unique = [];
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const r2 = await zoneomicsFetch('/v2/zoneDetail', { lat: subject.lat, lng: subject.lng, radius: String(radius), output_fields: 'parcels' });
+      callCount++;
+      const features = r2.ok ? (r2.data?.data?.features ?? []) : [];
+      const stubs = features
+        .flatMap((f) => f?.properties?.parcels ?? [])
+        .filter((p) => p && p.apn && p.apn !== subject.apn && typeof p.lat === 'number' && typeof p.lng === 'number');
+      const seen = new Set();
+      unique = stubs.filter((p) => (seen.has(p.apn) ? false : (seen.add(p.apn), true)));
+      if (unique.length >= 3 || radius >= 200 || explicitRadius) break;
+      radius = Math.min(200, radius * 2);
+    }
     unique.sort((a, b) => ((a.lat - subject.lat) ** 2 + (a.lng - subject.lng) ** 2) - ((b.lat - subject.lat) ** 2 + (b.lng - subject.lng) ** 2));
     const targets = unique.slice(0, maxNeighbors);
 
