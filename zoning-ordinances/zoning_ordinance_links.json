@@ -1,0 +1,239 @@
+{
+  "title": "Bay Area zoning ordinance links (via Zoneomics)",
+  "generated": "2026-08-24",
+  "source": "Zoneomics v2/zoneDetail API (zone_details.link), queried with FormX ZONEOMICS_API_KEY",
+  "note": "ordinance_link is the link Zoneomics attaches to the zone at a representative point in each jurisdiction. Where the platform is 'Zoneomics code viewer', Zoneomics hosts the code text on its own site instead of linking to Municode/eCode360 directly.",
+  "count": 23,
+  "jurisdictions": [
+    {
+      "jurisdiction": "Lafayette",
+      "county": "Contra Costa",
+      "zoneomics_city_name": "Lafayette",
+      "zoneomics_city_id": 2653,
+      "zoneomics_last_updated": "2026-07-21",
+      "sample_zone_code_at_query_point": "MRA",
+      "ordinance_link": "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS",
+      "code_platform": "Municode"
+    },
+    {
+      "jurisdiction": "Moraga",
+      "county": "Contra Costa",
+      "zoneomics_city_name": "Moraga",
+      "zoneomics_city_id": 3985,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "MCSP-C",
+      "ordinance_link": "https://www.zoneomics.com/code/moraga-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Orinda",
+      "county": "Contra Costa",
+      "zoneomics_city_name": "Orinda",
+      "zoneomics_city_id": 3361,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "RL-20",
+      "ordinance_link": "https://www.zoneomics.com/code/orinda-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Fairfax",
+      "county": "Marin",
+      "zoneomics_city_name": "Fairfax",
+      "zoneomics_city_id": 1498,
+      "zoneomics_last_updated": "2026-08-09",
+      "sample_zone_code_at_query_point": "CH",
+      "ordinance_link": "https://www.zoneomics.com/code/fairfax-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Mill Valley",
+      "county": "Marin",
+      "zoneomics_city_name": "Mill Valley",
+      "zoneomics_city_id": 1508,
+      "zoneomics_last_updated": "2026-08-09",
+      "sample_zone_code_at_query_point": "C-D",
+      "ordinance_link": "https://www.zoneomics.com/code/mill-valley-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Sausalito",
+      "county": "Marin",
+      "zoneomics_city_name": "Sausalito",
+      "zoneomics_city_id": 1526,
+      "zoneomics_last_updated": "2026-08-09",
+      "sample_zone_code_at_query_point": "CR",
+      "ordinance_link": "https://www.zoneomics.com/code/sausalito-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Napa",
+      "county": "Napa",
+      "zoneomics_city_name": "Napa",
+      "zoneomics_city_id": 1933,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "RS-5",
+      "ordinance_link": "https://www.zoneomics.com/code/napa-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Atherton",
+      "county": "San Mateo",
+      "zoneomics_city_name": "Atherton",
+      "zoneomics_city_id": 1485,
+      "zoneomics_last_updated": "2026-08-09",
+      "sample_zone_code_at_query_point": "R-1B",
+      "ordinance_link": "https://atherton.municipal.codes/Code/17",
+      "code_platform": "Municipal.codes (OpenGov)"
+    },
+    {
+      "jurisdiction": "Hillsborough",
+      "county": "San Mateo",
+      "zoneomics_city_name": "Hillsborough",
+      "zoneomics_city_id": 3892,
+      "zoneomics_last_updated": "2026-08-15",
+      "sample_zone_code_at_query_point": "RD-1",
+      "ordinance_link": "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO",
+      "code_platform": "Municode"
+    },
+    {
+      "jurisdiction": "Menlo Park",
+      "county": "San Mateo",
+      "zoneomics_city_name": "Menlo Park",
+      "zoneomics_city_id": 1507,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "RE",
+      "ordinance_link": "https://www.codepublishing.com/CA/MenloPark/html/MenloPark16/MenloPark16.html",
+      "code_platform": "Code Publishing"
+    },
+    {
+      "jurisdiction": "Portola Valley",
+      "county": "San Mateo",
+      "zoneomics_city_name": "Portola Valley",
+      "zoneomics_city_id": 1515,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "R-E/3.5A/SD-2/D-R",
+      "ordinance_link": "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO",
+      "code_platform": "Municode"
+    },
+    {
+      "jurisdiction": "San Carlos",
+      "county": "San Mateo",
+      "zoneomics_city_name": "San Carlos",
+      "zoneomics_city_id": 1520,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "MU-DC-100",
+      "ordinance_link": "https://zoneomics.com/code/san-carlos-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "San Mateo",
+      "county": "San Mateo",
+      "zoneomics_city_name": "San Mateo",
+      "zoneomics_city_id": 1522,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "CBD",
+      "ordinance_link": "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27",
+      "code_platform": "City-hosted"
+    },
+    {
+      "jurisdiction": "San Mateo County (unincorporated)",
+      "county": "San Mateo",
+      "zoneomics_city_name": "San Mateo County Unincorporated",
+      "zoneomics_city_id": 3893,
+      "zoneomics_last_updated": "2026-08-15",
+      "sample_zone_code_at_query_point": "R-1/S-73",
+      "ordinance_link": "https://www.zoneomics.com/code/san-mateo-county-unincorporated-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Los Altos",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "Los Altos",
+      "zoneomics_city_id": 1505,
+      "zoneomics_last_updated": "2026-07-21",
+      "sample_zone_code_at_query_point": "R1-10",
+      "ordinance_link": "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO",
+      "code_platform": "Municode"
+    },
+    {
+      "jurisdiction": "Los Altos Hills",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "Los Altos Hills",
+      "zoneomics_city_id": 8903,
+      "zoneomics_last_updated": "2026-07-13",
+      "sample_zone_code_at_query_point": "R-A",
+      "ordinance_link": "https://www.zoneomics.com/code/los-altos-hills-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Mountain View",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "Mountain View",
+      "zoneomics_city_id": 296,
+      "zoneomics_last_updated": "2026-07-21",
+      "sample_zone_code_at_query_point": "R2",
+      "ordinance_link": "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO",
+      "code_platform": "Municode"
+    },
+    {
+      "jurisdiction": "Palo Alto",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "Palo Alto",
+      "zoneomics_city_id": 295,
+      "zoneomics_last_updated": "2026-07-21",
+      "sample_zone_code_at_query_point": "R-1",
+      "ordinance_link": "https://www.zoneomics.com/code/palo-alto-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "San Jose",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "San Jose",
+      "zoneomics_city_id": 148,
+      "zoneomics_last_updated": "2026-08-13",
+      "sample_zone_code_at_query_point": "CP",
+      "ordinance_link": "https://www.zoneomics.com/code/san-jose-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Saratoga",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "Saratoga",
+      "zoneomics_city_id": 1525,
+      "zoneomics_last_updated": "2026-07-09",
+      "sample_zone_code_at_query_point": "R-1-20000",
+      "ordinance_link": "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE",
+      "code_platform": "Municode"
+    },
+    {
+      "jurisdiction": "Sunnyvale",
+      "county": "Santa Clara",
+      "zoneomics_city_name": "Sunnyvale",
+      "zoneomics_city_id": 359,
+      "zoneomics_last_updated": "2026-08-21",
+      "sample_zone_code_at_query_point": "ECR",
+      "ordinance_link": "https://ecode360.com/42729480",
+      "code_platform": "eCode360 (General Code)"
+    },
+    {
+      "jurisdiction": "Healdsburg",
+      "county": "Sonoma",
+      "zoneomics_city_name": "Healdsburg",
+      "zoneomics_city_id": 6095,
+      "zoneomics_last_updated": "2026-07-10",
+      "sample_zone_code_at_query_point": "PR",
+      "ordinance_link": "https://www.zoneomics.com/code/healdsburg-CA",
+      "code_platform": "Zoneomics code viewer"
+    },
+    {
+      "jurisdiction": "Windsor",
+      "county": "Sonoma",
+      "zoneomics_city_name": "Windsor",
+      "zoneomics_city_id": 6101,
+      "zoneomics_last_updated": "2026-07-10",
+      "sample_zone_code_at_query_point": "TC",
+      "ordinance_link": "https://www.zoneomics.com/code/windsor-CA",
+      "code_platform": "Zoneomics code viewer"
+    }
+  ]
+}

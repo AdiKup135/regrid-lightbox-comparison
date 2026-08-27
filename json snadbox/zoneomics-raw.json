@@ -1,0 +1,362 @@
+{
+  "conditionalControls": {
+    "statusCode": 200,
+    "success": true,
+    "data": {
+      "meta": {
+        "city_id": 295,
+        "city_name": "Palo Alto",
+        "last_updated": "2026-03-16"
+      },
+      "zone_details": {
+        "zone_code": "R-1",
+        "zone_name": "Single Family Residential",
+        "zone_type": "Residential",
+        "zone_sub_type": "Single Family",
+        "zone_guide": "The R-1 single family residential district is intended to create, preserve, and enhance areas suitable for detached dwellings with a strong presence of nature and with open area affording maximum privacy and opportunities for outdoor living and childrens play",
+        "link": "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76269"
+      },
+      "controls": {
+        "max_far": {
+          "type": "conditional",
+          "conditions": [
+            {
+              "value": 0.45,
+              "condition": "First 5,000 sq ft of lot"
+            },
+            {
+              "value": 0.3,
+              "condition": "Lot area in excess of 5,000 sq ft"
+            }
+          ],
+          "best_case_value": 0.45,
+          "worst_case_value": 0.3
+        },
+        "max_coverage": {
+          "type": "conditional",
+          "conditions": [
+            {
+              "value": "Equivalent to maximum allowable floor area ratio",
+              "condition": "Single story development"
+            },
+            {
+              "value": "Equivalent to maximum allowable floor area ratio",
+              "condition": "With (S) Combining"
+            },
+            {
+              "value": null,
+              "condition": "The covering of a court is exempt from the calculation of site coverage provided that the court existed prior to July 20, 1978"
+            },
+            {
+              "value": 35,
+              "condition": "Multiple story development"
+            },
+            {
+              "value": 5,
+              "condition": "Additional area permitted to be covered by a patio or overhang"
+            }
+          ],
+          "best_case_value": 35,
+          "worst_case_value": 5
+        },
+        "min_lot_width_ft": {
+          "type": "fixed",
+          "value": "60"
+        },
+        "min_rear_yard_ft": {
+          "type": "fixed",
+          "value": "20"
+        },
+        "min_side_yard_ft": {
+          "type": "conditional",
+          "conditions": [
+            {
+              "value": 6,
+              "condition": "Interior side"
+            },
+            {
+              "value": 16,
+              "condition": "Street side"
+            }
+          ],
+          "best_case_value": 6,
+          "worst_case_value": 16
+        },
+        "min_front_yard_ft": {
+          "type": "fixed",
+          "value": "NA"
+        },
+        "min_lot_area_sq_ft": {
+          "type": "fixed",
+          "value": "9999"
+        },
+        "min_side_yard_both_ft": {
+          "type": "fixed",
+          "value": "NA"
+        },
+        "open_space_percentage": {
+          "type": "fixed",
+          "value": "NA"
+        },
+        "max_building_height_ft": {
+          "type": "conditional",
+          "conditions": [
+            {
+              "value": 30,
+              "condition": "base height"
+            },
+            {
+              "value": 33,
+              "condition": "Maximum Height for buildings with a roof pitch of 12:12 or greater"
+            },
+            {
+              "value": 33,
+              "condition": "special flood hazard area - max (context 1)"
+            },
+            {
+              "value": 17,
+              "condition": "(S) Combining"
+            },
+            {
+              "value": 20,
+              "condition": "special flood hazard area - max (context 2)"
+            }
+          ],
+          "best_case_value": 33,
+          "worst_case_value": 17
+        },
+        "max_density_du_per_acre": {
+          "type": "fixed",
+          "value": "1"
+        },
+        "min_side_yard_at_least_one_ft": {
+          "type": "fixed",
+          "value": "NA"
+        },
+        "private_open_space_percentage": {
+          "type": "fixed",
+          "value": "NA"
+        },
+        "min_landscaped_space_percentage": {
+          "type": "fixed",
+          "value": "NA"
+        },
+        "max_impervious_coverage_percentage": {
+          "type": "fixed",
+          "value": "NA"
+        }
+      },
+      "lat": 37.4324303,
+      "lng": -122.1521906
+    },
+    "message": []
+  },
+  "zoneDetail": {
+    "statusCode": 200,
+    "success": true,
+    "data": {
+      "meta": {
+        "city_id": 295,
+        "city_name": "Palo Alto",
+        "last_updated": "2026-03-16"
+      },
+      "zone_details": {
+        "zone_code": "R-1",
+        "zone_name": "Single Family Residential",
+        "zone_type": "Residential",
+        "zone_sub_type": "Single Family",
+        "zone_guide": "The R-1 single family residential district is intended to create, preserve, and enhance areas suitable for detached dwellings with a strong presence of nature and with open area affording maximum privacy and opportunities for outdoor living and childrens play",
+        "link": "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76269"
+      },
+      "permitted_land_uses": {
+        "as_of_right": [
+          "Accessory dwelling units",
+          "Accessory facilities and uses customarily incidental to permitted uses with no more than two plumbing fixtures and no kitchen facility or of a size less than or equal to 200 square feet",
+          "Home occupations when accessory to permitted residential uses",
+          "Horticulture gardening and growing of food products for consumption by occupants of the site",
+          "Junior accessory dwelling unit",
+          "Large family day care homes",
+          "Mobile homes",
+          "Multiple family",
+          "Residential care homes",
+          "Single family",
+          "Small adult day care homes",
+          "Small family day care homes",
+          "Two family use under one ownership"
+        ],
+        "conditional_uses": [
+          "Accessory facilities and uses customarily incidental to permitted uses with more than two plumbing fixtures (but with no kitchen) and in excess of 200 square feet in size but excluding second dwelling units",
+          "Churches and religious institutions",
+          "Community centers",
+          "Day care centers",
+          "Large adult day care homes",
+          "Outdoor recreation services",
+          "Private educational facilities",
+          "Utility facilities essential to provision of utility services to the neighborhood but excluding business offices construction or storage yards maintenance facilities or corporation yards"
+        ],
+        "prohibited": [
+          "Safe parking"
+        ],
+        "single_family_permitted": true,
+        "two_family_permitted": true,
+        "multi_family_permitted": true,
+        "commercial_uses_permitted": false,
+        "industrial_uses_permitted": false,
+        "adu_local_permitted": true,
+        "adu_state_permitted": null,
+        "short_term_rentals_permitted": null
+      },
+      "controls": {
+        "assorted": {
+          "standard": {},
+          "non-standard": {
+            "daylight_plane_ft": "Side Yard Daylight Plane excludes street side yards: (Initial height: 10 feet at interior side lot line, , Angles: 45, If the site is in a special flood hazard area and is entitled to an increase in the maximum height, the heights for the daylight planes shall be adjusted by the same amount), Rear Yard Daylight Plane: (Initial height: 16 feet at rear setback line, Angle: 60, If the site is in a special flood hazard area and is entitled to an increase in the maximum height, the heights for the daylight planes shall be adjusted by the same amount),",
+            "maximum_floor_area_sq_ft": "NA",
+            "maximum_house_size_sq_ft": "6000, The gross floor area of attached garages are included in the calculation of maximum house size, If there is no garage attached to the house, then the square footage of one detached covered parking space shall be included in the calculation",
+            "additional_floor_area_sq_ft": "NA",
+            "maximum_weighted_residential_unit_sq_ft": "NA"
+          }
+        },
+        "far_standard": {
+          "standard": {
+            "max_far": "STF"
+          },
+          "non-standard": {
+            "maximum_floor_area_ratio": "First 5000 square feet of lot size: 0.45, Square footage of lot size in excess of 5000 square feet: 0.30"
+          }
+        },
+        "lot_standard": {
+          "standard": {
+            "min_lot_area_sq_ft": "9999"
+          },
+          "non-standard": {
+            "minimum_site_depth_ft": "100",
+            "minimum_lot_area_sq_ft": "Site Area: (All lots except flag lots: 6000), Lot area: 9999"
+          }
+        },
+        "multi_standard": {
+          "standard": {},
+          "non-standard": {
+            "minimum_setback_ft": "NA",
+            "minimum_built_to_line": "NA"
+          }
+        },
+        "density_standard": {
+          "standard": {
+            "max_density_du_per_acre": "1"
+          },
+          "non-standard": {
+            "maximum_density_du_per_acre": "1 du",
+            "minimum_residential_density_sq_ft": "NA"
+          }
+        },
+        "coverage_standard": {
+          "standard": {
+            "max_coverage": "STF",
+            "max_impervious_coverage_percentage": "NA"
+          },
+          "non-standard": {
+            "maximum_coverage_percent": "Single story development: Equivalent to maximum allowable floor area ratio, With (S) Combining: Equivalent to maximum allowable floor area ratio, The covering of a court is exempt from the calculation of site coverage provided that the court existed prior to July 20, 1978, Multiple story development: 35, Additional area permitted to be covered by a patio or overhang: 5",
+            "maximum_impervious_coverage_percentage": "NA"
+          }
+        },
+        "pervious_standard": {
+          "standard": {
+            "open_space_percentage": "NA",
+            "private_open_space_percentage": "NA",
+            "min_landscaped_space_percentage": "NA"
+          },
+          "non-standard": {
+            "minimum_usable_open_space_sq_ft": "NA",
+            "minimum_common_open_space_percent": "NA",
+            "minimum_private_open_space_percent": "NA",
+            "minimum_landscaped_space_percentage": "NA"
+          }
+        },
+        "lot_width_standard": {
+          "standard": {
+            "min_lot_width_ft": "60"
+          },
+          "non-standard": {
+            "minimum_lot_width_ft": "60"
+          }
+        },
+        "rear_setback_standard": {
+          "standard": {
+            "min_rear_yard_ft": "20"
+          },
+          "non-standard": {
+            "minimum_rear_yard_ft": "20"
+          }
+        },
+        "side_setback_standard": {
+          "standard": {
+            "min_side_yard_ft": "STF",
+            "min_side_yard_both_ft": "NA",
+            "min_side_yard_at_least_one_ft": "NA"
+          },
+          "non-standard": {
+            "minimum_side_yard_ft": "Interior side: 6, Street side: 16"
+          }
+        },
+        "front_setback_standard": {
+          "standard": {
+            "min_front_yard_ft": "STF"
+          },
+          "non-standard": {
+            "minimum_front_yard_ft": "Contextual"
+          }
+        },
+        "building_height_standard": {
+          "standard": {
+            "max_building_height_ft": "STF"
+          },
+          "non-standard": {
+            "maximum_building_height_ft": "30, Maximum Height for buildings with a roof pitch of 12:12 or greater: 33, In a special flood hazard area the maximum heights are increased by one-half of the increase in elevation required to reach base flood elevation, up to a maximum building height of 33, With (S) Combining: 17, limited to one habitable floor, Habitable floors include lofts, mezzanines, and similar areas with interior heights of 5 or more from the roof to the floor, but shall exclude finished basements and shall exclude attics that have no stairway or built-in access, special flood hazard area, the maximum height is increased by one-half of the increase in elevation required to reach base flood elevations, up to a maximum building height of 20 feet"
+          }
+        }
+      },
+      "lat": 37.4324303,
+      "lng": -122.1521906
+    },
+    "message": []
+  },
+  "zoneDetailParcels": {
+    "statusCode": 200,
+    "success": true,
+    "data": {
+      "meta": {
+        "city_id": 295,
+        "city_name": "Palo Alto",
+        "last_updated": "2026-03-16"
+      },
+      "zone_details": {
+        "zone_code": "R-1",
+        "zone_name": "Single Family Residential",
+        "zone_type": "Residential",
+        "zone_sub_type": "Single Family",
+        "zone_guide": "The R-1 single family residential district is intended to create, preserve, and enhance areas suitable for detached dwellings with a strong presence of nature and with open area affording maximum privacy and opportunities for outdoor living and childrens play",
+        "link": "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76269"
+      },
+      "parcels": [
+        {
+          "lat": 37.432407733295996,
+          "lng": -122.15218469089903,
+          "apn": "12424051",
+          "address": "1590 Madrono AV",
+          "land_use": null,
+          "area": 718.42,
+          "area_unit": "sq.yds",
+          "boundary": "MULTIPOLYGON(((-122.15225087089284 37.43225145414937,-122.15238974953745 37.43237347443554,-122.15212194558158 37.43256728425317,-122.15202053926073 37.432478201377116,-122.15201894385278 37.43247674975996,-122.15201741492017 37.43247525462986,-122.15201595066625 37.43247371812685,-122.15201455648092 37.43247214025099,-122.15201323236421 37.43247052456883,-122.1520119801127 37.432468873220344,-122.15201080062474 37.432467188345484,-122.15200969749357 37.43246547065766,-122.15200866982089 37.43246372301013,-122.15200771940333 37.432461947542826,-122.1520068489358 37.43246014782247,-122.15200605752003 37.43245832313564,-122.15200534695266 37.432456478475615,-122.15200471813196 37.432454614555795,-122.15200417195625 37.43245273494278,-122.15200370842557 37.432450839636495,-122.15200332933651 37.432448933630305,-122.15200303379079 37.432447018350885,-122.15200282358501 37.432445096651435,-122.15200269782089 37.432443168532,-122.15200265560004 37.43244123898584,-122.15200270051584 37.43243930943968,-122.1520028289749 37.432437382033434,-122.15200304367227 37.43243545962039,-122.15200334191293 37.43243354434058,-122.15200372459526 37.43243163833395,-122.15200419082089 37.43242974516715,-122.15200473969152 37.43242786555349,-122.15200537210548 37.4324260030596,-122.1520060853678 37.43242415839884,-122.15200688037683 37.432422335137744,-122.1520077544376 37.432420536129726,-122.15200870755012 37.43241876137478,-122.15200973791775 37.43241701515279,-122.15201084374385 37.43241529889042,-122.15201202592677 37.43241361472776,-122.15201328087323 37.43241196409136,-122.1520146076849 37.432410350547855,-122.15201600456518 37.43240877409728,-122.1520174706157 37.43240723901959,-122.1520190031416 37.432405745314725,-122.15202060034616 37.43240429512278,-122.15202226133113 37.43240289058371,-122.15202398160491 37.4324015345507,-122.15202759732392 37.432398968716605,-122.15225087089284 37.43225145414937)))",
+          "owner_info": {
+            "owner_name": "NA",
+            "owner_address": "NA"
+          }
+        }
+      ],
+      "lat": "37.4324303",
+      "lng": "-122.1521906"
+    },
+    "message": []
+  }
+}

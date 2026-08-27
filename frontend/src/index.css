@@ -26,5 +26,9 @@ body {
   height: 100% !important;
 }
 .split-vertical .gutter {
+  background: #ddd;
   cursor: row-resize;
+}
+.split-vertical .gutter:hover {
+  background: #bbb;
 }

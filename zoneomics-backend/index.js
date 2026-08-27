@@ -9,7 +9,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const router = express.Router();
 
-const ZONEOMICS_BASE = 'https://api.zoneomics.com/v2';
+const ZONEOMICS_BASE = (process.env.ZONEOMICS_BASE_URL || 'https://api.zoneomics.com').replace(/\/$/, '');
 
 function getApiKey() {
   const key = (process.env.ZONEOMICS_API_KEY ?? '').trim();
@@ -19,33 +19,21 @@ function getApiKey() {
   return key;
 }
 
+/**
+ * Call Zoneomics API. Auth via query param `api_key`.
+ */
 async function zoneomicsFetch(reqPath, searchParams = {}) {
   const key = getApiKey();
   if (!key) throw new Error('ZONEOMICS_API_KEY not set');
   const url = new URL(`${ZONEOMICS_BASE}${reqPath}`);
   url.searchParams.set('api_key', key);
   Object.entries(searchParams).forEach(([k, v]) => {
-    if (v != null && v !== '') url.searchParams.set(k, v);
+    if (v != null && v !== '') url.searchParams.set(k, String(v));
   });
   const r = await fetch(url.toString());
   const data = await r.json().catch(() => ({}));
   if (!r.ok) return { ok: false, status: r.status, data };
   return { ok: true, status: r.status, data };
-}
-
-// Per-neighbor point queries are the expensive part (~1 call per neighbor).
-// Cache full parcels by APN so same-block lookups reuse them.
-const parcelCacheByApn = new Map(); // apn -> { parcel, ts }
-const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
-
-function cacheGet(apn) {
-  const hit = parcelCacheByApn.get(apn);
-  if (!hit) return null;
-  if (Date.now() - hit.ts > CACHE_TTL_MS) { parcelCacheByApn.delete(apn); return null; }
-  return hit.parcel;
-}
-function cachePut(parcel) {
-  if (parcel?.apn && parcel?.boundary) parcelCacheByApn.set(parcel.apn, { parcel, ts: Date.now() });
 }
 
 router.get('/health', (req, res) => {
@@ -60,16 +48,82 @@ router.get('/ready', (req, res) => {
   });
 });
 
+router.get('/verify-key', async (req, res) => {
+  try {
+    const { ok, status, data } = await zoneomicsFetch('/v2/zoneDetail', {
+      lat: 33.8158919,
+      lng: -118.3888138,
+    });
+    if (ok && (data?.zoning != null || data?.controls != null || Array.isArray(data?.features) || data?.data != null)) {
+      return res.json({ ok: true, message: 'Zoneomics key works' });
+    }
+    return res.status(401).json({
+      ok: false,
+      error: data?.error?.message || data?.message || `Zoneomics API returned ${status}`,
+      hint: 'Check ZONEOMICS_API_KEY in .env.',
+    });
+  } catch (err) {
+    return res.status(500).json({ ok: false, error: String(err.message) });
+  }
+});
+
+// Proxy v2/conditionalControls – forward query params (e.g. lat, lng or address)
+router.get('/v2/conditionalControls', async (req, res) => {
+  try {
+    const params = { ...req.query };
+    const { ok, status, data } = await zoneomicsFetch('/v2/conditionalControls', params);
+    if (!ok) return res.status(status).json(data);
+    res.json(data);
+  } catch (err) {
+    const errMsg = err?.message ?? String(err);
+    const causeMsg = err?.cause?.message ?? err?.cause?.code;
+    console.error('Zoneomics conditionalControls error:', err);
+    const fullMsg = [errMsg, causeMsg].filter(Boolean).join('; ');
+    res.status(500).json({ error: `Zoneomics conditional controls request failed: ${fullMsg || 'unknown'}`, detail: fullMsg || errMsg });
+  }
+});
+
+// Proxy v2/zoneDetail for zoning comparison (lat/lng or address, optional output_fields)
+router.get('/v2/zoneDetail', async (req, res) => {
+  try {
+    const params = { ...req.query };
+    const { ok, status, data } = await zoneomicsFetch('/v2/zoneDetail', params);
+    if (!ok) return res.status(status).json(data);
+    res.json(data);
+  } catch (err) {
+    const errMsg = err?.message ?? String(err);
+    const causeMsg = err?.cause?.message ?? err?.cause?.code;
+    console.error('Zoneomics zoneDetail error:', err);
+    const fullMsg = [errMsg, causeMsg].filter(Boolean).join('; ');
+    res.status(500).json({ error: `Zoneomics zone detail request failed: ${fullMsg || 'unknown'}`, detail: fullMsg || errMsg });
+  }
+});
+
+// Per-neighbor point queries are the expensive part of /edges (~1 call per
+// neighbor). Cache full parcels by APN so same-block lookups reuse them.
+const parcelCacheByApn = new Map(); // apn -> { parcel, ts }
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+
+function cacheGet(apn) {
+  const hit = parcelCacheByApn.get(apn);
+  if (!hit) return null;
+  if (Date.now() - hit.ts > CACHE_TTL_MS) { parcelCacheByApn.delete(apn); return null; }
+  return hit.parcel;
+}
+function cachePut(parcel) {
+  if (parcel?.apn && parcel?.boundary) parcelCacheByApn.set(parcel.apn, { parcel, ts: Date.now() });
+}
+
 /**
  * GET /edges?address=<free-form>&radius=<m, default 60>&maxNeighbors=<default 12>
  *
- * Orchestrates the three Zoneomics call shapes (verified live 2026-08-27):
+ * Orchestrates the three Zoneomics call shapes for edge-labeling:
  *  1. address -> subject parcel WITH boundary (data.parcels[0])
  *  2. lat/lng+radius -> neighbor centroids, NO boundaries
  *     (data.features[0].properties.parcels[])
  *  3. point query per neighbor centroid -> full parcel WITH boundary
- * Returns { geocode, subject, neighbors, meta, callCount } — exactly the
- * input contract of edge-labeling/edge-labeling.ts (labelEdges).
+ * Returns { geocode, subject, neighbors, meta, zone, callCount } — the input
+ * contract of edge-labeling/edge-labeling.ts (labelEdges).
  */
 router.get('/edges', async (req, res) => {
   const { address } = req.query;
@@ -81,12 +135,12 @@ router.get('/edges', async (req, res) => {
   let callCount = 0;
   try {
     // 1) address -> subject
-    const r1 = await zoneomicsFetch('/zoneDetail', { address: address.trim(), output_fields: 'parcels' });
+    const r1 = await zoneomicsFetch('/v2/zoneDetail', { address: address.trim(), output_fields: 'parcels' });
     callCount++;
     if (!r1.ok) return res.status(r1.status).json({ error: 'Zoneomics address lookup failed', detail: r1.data });
     const subject = r1.data?.data?.parcels?.[0];
     const geocode = { lat: r1.data?.data?.lat, lng: r1.data?.data?.lng };
-    const meta = r1.data?.data?.meta ?? null; // city_id / city_name / last_updated -> jurisdiction match
+    const meta = r1.data?.data?.meta ?? null; // city_id / city_name -> jurisdiction rules lookup
     const zone = r1.data?.data?.zone_details ?? null;
     if (!subject?.boundary) {
       return res.status(404).json({ error: 'No parcel with boundary at this address (parcels output requires Enterprise tier)', detail: r1.data?.data ?? null });
@@ -94,13 +148,12 @@ router.get('/edges', async (req, res) => {
     cachePut(subject);
 
     // 2) radius -> neighbor centroid stubs (GeoJSON shape)
-    const r2 = await zoneomicsFetch('/zoneDetail', { lat: subject.lat, lng: subject.lng, radius: String(radius), output_fields: 'parcels' });
+    const r2 = await zoneomicsFetch('/v2/zoneDetail', { lat: subject.lat, lng: subject.lng, radius: String(radius), output_fields: 'parcels' });
     callCount++;
     const features = r2.ok ? (r2.data?.data?.features ?? []) : [];
     const stubs = features
       .flatMap((f) => f?.properties?.parcels ?? [])
       .filter((p) => p && p.apn && p.apn !== subject.apn && typeof p.lat === 'number' && typeof p.lng === 'number');
-    // De-dup by APN, sort by distance to subject centroid, cap the fan-out.
     const seen = new Set();
     const unique = stubs.filter((p) => (seen.has(p.apn) ? false : (seen.add(p.apn), true)));
     unique.sort((a, b) => ((a.lat - subject.lat) ** 2 + (a.lng - subject.lng) ** 2) - ((b.lat - subject.lat) ** 2 + (b.lng - subject.lng) ** 2));
@@ -110,7 +163,7 @@ router.get('/edges', async (req, res) => {
     const neighbors = (await Promise.all(targets.map(async (stub) => {
       const cached = cacheGet(stub.apn);
       if (cached) return cached;
-      const r3 = await zoneomicsFetch('/zoneDetail', { lat: stub.lat, lng: stub.lng, output_fields: 'parcels' });
+      const r3 = await zoneomicsFetch('/v2/zoneDetail', { lat: stub.lat, lng: stub.lng, output_fields: 'parcels' });
       callCount++;
       if (!r3.ok) return null;
       const parcels = r3.data?.data?.parcels ?? [];
