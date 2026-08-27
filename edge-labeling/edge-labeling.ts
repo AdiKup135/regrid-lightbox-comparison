@@ -75,8 +75,10 @@ export type FrontRule =
  * unified jurisdiction db). Field names are snake_case so db records can be
  * passed in verbatim. Evaluated in order; the first override whose condition
  * holds replaces the base rule. A condition the engine cannot evaluate
- * (missing zone info, unknown condition kind) is skipped and surfaced via the
- * 'front_rule_override_unevaluated' lot flag rather than silently ignored.
+ * (missing zone info, unknown condition kind) is skipped; if no other
+ * override applies, the engine falls back to the 'address_street' default —
+ * the base rule is in doubt when an override might have applied. The
+ * 'front_rule_override_unevaluated' lot flag records this for logs/debugging.
  */
 export interface FrontRuleOverride {
   rule: FrontRule;
@@ -86,7 +88,9 @@ export interface FrontRuleOverride {
    *  name; unnamed street edges count individually.
    *  'pedestrian_oriented_district' — the subject's zone_code is one of
    *  zone_codes (e.g. SJMC 20.200.670(B): MS-G, MS-C).
-   *  Unknown condition kinds are skipped with the unevaluated flag. */
+   *  An unevaluable or unknown condition is skipped; unless another
+   *  override applies, the base rule then yields to 'address_street'
+   *  (flagged 'front_rule_override_unevaluated' for logs/debugging). */
   condition: string;
   citation?: string;
   description?: string;
@@ -633,6 +637,8 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
    * on multi-frontage lots — a single frontage is the front under any rule.
    * First override whose condition holds wins and replaces the base rule. */
   if (streetEdges.length > 1) {
+    let applied = false;
+    let unresolved = false;
     for (const o of input.frontRuleOverrides ?? []) {
       let applies: boolean | null = null; // null = condition not evaluable here
       if (o.condition === 'oversized_corner_lot' && o.thresholds_ft) {
@@ -655,9 +661,13 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
         const zc = input.zone?.zone_code?.toUpperCase();
         if (zc) applies = o.zone_codes.some((c) => c.toUpperCase() === zc);
       }
-      if (applies === null) { globalFlags.add('front_rule_override_unevaluated'); continue; }
-      if (applies) { frontRule = o.rule; globalFlags.add('front_rule_override_applied'); break; }
+      if (applies === null) { globalFlags.add('front_rule_override_unevaluated'); unresolved = true; continue; }
+      if (applies) { frontRule = o.rule; globalFlags.add('front_rule_override_applied'); applied = true; break; }
     }
+    // An unevaluable condition puts the base rule itself in doubt — the
+    // override might have applied. Fall back to the engine's address-street
+    // default; the flag above records why, for logs/debugging only.
+    if (unresolved && !applied) frontRule = 'address_street';
   }
 
   let front: RawEdge | null = null;

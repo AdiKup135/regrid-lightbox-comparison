@@ -211,8 +211,9 @@ absent the field, `front_rule.rule` applies unconditionally. `front_rule_note` i
 is evaluated from per-street frontage sums the engine already computes — note the SJMC condition is on
 **frontage lengths**, not lot area, so the parcel `area` field was never needed. `pedestrian_oriented_district`
 is evaluated from `zone_code` against the override's `zone_codes` (MS-G, MS-C — the Ch. 20.75 districts;
-see the ambiguity note on DC/DC-NT1 and CP in the data file's override description). Unevaluable conditions
-flag `front_rule_override_unevaluated` instead of silently falling back. `EdgesPanel.tsx` passes both through.
+see the ambiguity note on DC/DC-NT1 and CP in the data file's override description). An unevaluable condition makes the
+engine fall back to the `address_street` default (not the base rule, which is in doubt when an override
+might have applied), with `front_rule_override_unevaluated` flagged for logs/debugging. `EdgesPanel.tsx` passes both through.
 The historical analysis below is kept for the record.
 
 #### Original finding (historical)
