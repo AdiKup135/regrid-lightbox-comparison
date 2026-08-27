@@ -8,6 +8,7 @@ import {
   type ZoneomicsParcel,
   type EdgeLabelingResult,
   type FrontRule,
+  type FrontRuleOverride,
 } from '../../edge-labeling/edge-labeling';
 import jurisdictionDb from '../../zoning-ordinances/zoning_ordinance_links.json';
 
@@ -31,17 +32,17 @@ interface EdgesApiResponse {
   subject: ZoneomicsParcel;
   neighbors: ZoneomicsParcel[];
   meta: { city_id?: number; city_name?: string; last_updated?: string } | null;
-  zone: { zone_code?: string } | null;
+  zone: { zone_code?: string; zone_type?: string } | null;
   callCount: number;
   droppedStubs: number;
 }
 
 type FC = GeoJSON.FeatureCollection;
 
-function lookupFrontRule(cityId: number | undefined): FrontRule | undefined {
+function lookupFrontRule(cityId: number | undefined): { rule: FrontRule; overrides?: FrontRuleOverride[] } | undefined {
   if (cityId == null) return undefined;
-  const recs = (jurisdictionDb as unknown as { jurisdictions: Array<{ zoneomics_city_id: number; front_rule?: { rule: FrontRule } }> }).jurisdictions;
-  return recs.find((r) => r.zoneomics_city_id === cityId)?.front_rule?.rule;
+  const recs = (jurisdictionDb as unknown as { jurisdictions: Array<{ zoneomics_city_id: number; front_rule?: { rule: FrontRule; overrides?: FrontRuleOverride[] } }> }).jurisdictions;
+  return recs.find((r) => r.zoneomics_city_id === cityId)?.front_rule;
 }
 
 function parcelPolygonFeature(p: ZoneomicsParcel, kind: 'subject' | 'neighbor'): GeoJSON.Feature | null {
@@ -79,8 +80,14 @@ export default function EdgesPanel() {
       const data = d as EdgesApiResponse;
       const fr = lookupFrontRule(data.meta?.city_id);
       setApi(data);
-      setRule(fr);
-      setResult(labelEdges({ subject: data.subject, neighbors: data.neighbors, frontRule: fr }));
+      setRule(fr?.rule);
+      setResult(labelEdges({
+        subject: data.subject,
+        neighbors: data.neighbors,
+        frontRule: fr?.rule,
+        frontRuleOverrides: fr?.overrides,
+        zone: data.zone ?? undefined,
+      }));
       setVs({ longitude: data.subject.lng, latitude: data.subject.lat, zoom: 17.5 });
     } catch (e) {
       setApi(null);

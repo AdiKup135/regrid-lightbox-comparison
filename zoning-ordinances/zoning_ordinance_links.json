@@ -303,7 +303,11 @@
             "rule": "all_fronts",
             "condition": "pedestrian_oriented_district",
             "citation": "SJMC 20.200.670(B)",
-            "description": "In a pedestrian oriented zoning district a corner lot has a minimum of two front lot lines regardless of the dimensions of the lot. Applies notwithstanding 20.200.670(A), so it is not gated on lot size."
+            "description": "In a pedestrian oriented zoning district a corner lot has a minimum of two front lot lines regardless of the dimensions of the lot. Applies notwithstanding 20.200.670(A), so it is not gated on lot size. zone_codes lists the districts: Ch. 20.75 regulates the MS main street districts (MS-G, MS-C), established in Table 20-20 of 20.10.060 and applicable only within the Alum Rock Neighborhood Business District (20.75.020(A)). Ambiguity not resolved: DC/DC-NT1 (downtown, Ch. 20.70) and CP \"Commercial Pedestrian\" (Ch. 20.40) are NOT treated as pedestrian oriented districts here, since 20.75.010 is the chapter that carries the label; revisit if the city applies 20.200.670(B) more broadly.",
+            "zone_codes": [
+              "MS-G",
+              "MS-C"
+            ]
           }
         ]
       }

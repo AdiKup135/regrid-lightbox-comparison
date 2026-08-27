@@ -70,6 +70,32 @@ export type FrontRule =
                         //   tagged front (addressed street) and the rest
                         //   street_side; the rules engine maps them back
 
+/**
+ * A conditional exception to the base front rule (front_rule.overrides in the
+ * unified jurisdiction db). Field names are snake_case so db records can be
+ * passed in verbatim. Evaluated in order; the first override whose condition
+ * holds replaces the base rule. A condition the engine cannot evaluate
+ * (missing zone info, unknown condition kind) is skipped and surfaced via the
+ * 'front_rule_override_unevaluated' lot flag rather than silently ignored.
+ */
+export interface FrontRuleOverride {
+  rule: FrontRule;
+  /** 'oversized_corner_lot' — every street frontage exceeds the zone-type
+   *  threshold (e.g. SJMC 20.200.670(A): 120 ft residential / 150 ft
+   *  commercial, BOTH frontages must exceed). Frontage is summed per street
+   *  name; unnamed street edges count individually.
+   *  'pedestrian_oriented_district' — the subject's zone_code is one of
+   *  zone_codes (e.g. SJMC 20.200.670(B): MS-G, MS-C).
+   *  Unknown condition kinds are skipped with the unevaluated flag. */
+  condition: string;
+  citation?: string;
+  description?: string;
+  /** oversized_corner_lot only: per-zone-type frontage thresholds (ft). */
+  thresholds_ft?: { residential?: number; commercial?: number };
+  /** pedestrian_oriented_district only: zone codes the condition matches. */
+  zone_codes?: string[];
+}
+
 export interface EdgeLabelingConfig {
   /** Max distance (ft) between the subject boundary and a neighbor boundary
    *  to consider them the same line. Parcel fabrics have small slivers. */
@@ -135,6 +161,13 @@ export interface EdgeLabelingInput {
   neighbors: ZoneomicsParcel[];
   /** From the unified jurisdiction db (front_rule.rule), matched by city_id. */
   frontRule?: FrontRule;
+  /** From the unified jurisdiction db (front_rule.overrides), matched by
+   *  city_id. Pass the db array verbatim. */
+  frontRuleOverrides?: FrontRuleOverride[];
+  /** Subject zone, exactly as it appears in zoneDetail -> data.zone_details.
+   *  Feeds override conditions only; absent zone info never changes the base
+   *  rule, it only leaves overrides unevaluated (flagged). */
+  zone?: { zone_code?: string; zone_type?: string };
   /** Owner's election of the front edge (index into the returned edges).
    *  Only meaningful where frontRule is 'owner_elected'. */
   userFrontOverrideEdgeIndex?: number;
@@ -166,7 +199,8 @@ export interface LotEdge {
 export interface EdgeLabelingResult {
   edges: LotEdge[];
   /** Lot-level flags: 'no_street_frontage', 'front_requires_review',
-   *  'second_front_jurisdiction', 'through_lot', 'unknown_street_name'. */
+   *  'second_front_jurisdiction', 'through_lot', 'unknown_street_name',
+   *  'front_rule_override_applied', 'front_rule_override_unevaluated'. */
   flags: string[];
   stats: { roadGaps: number; streetNames: string[]; neighborsTouching: number };
 }
@@ -313,7 +347,7 @@ interface RawEdge {
 
 export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
   const cfg: EdgeLabelingConfig = { ...DEFAULT_CONFIG, ...(input.config ?? {}) };
-  const frontRule: FrontRule = input.frontRule ?? 'address_street'; // silent-code default: the addressed street is the front
+  let frontRule: FrontRule = input.frontRule ?? 'address_street'; // silent-code default: the addressed street is the front; overrides may replace it in 5.5
   const globalFlags = new Set<string>();
 
   /* ---- 5.1 Parse, project, sample ------------------------------------------
@@ -595,6 +629,37 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
   const addrMatch = addressed.length === 1 ? addressed[0] : null;
   const shortest = streetEdges.length ? streetEdges.reduce((a, b) => (a.lengthFt <= b.lengthFt ? a : b)) : null;
 
+  /* Jurisdiction conditional overrides (front_rule.overrides). Only relevant
+   * on multi-frontage lots — a single frontage is the front under any rule.
+   * First override whose condition holds wins and replaces the base rule. */
+  if (streetEdges.length > 1) {
+    for (const o of input.frontRuleOverrides ?? []) {
+      let applies: boolean | null = null; // null = condition not evaluable here
+      if (o.condition === 'oversized_corner_lot' && o.thresholds_ft) {
+        const zt = input.zone?.zone_type?.toLowerCase();
+        const threshold =
+          zt === 'residential' ? o.thresholds_ft.residential :
+          zt === 'commercial' ? o.thresholds_ft.commercial : undefined;
+        if (threshold != null) {
+          // Frontage per STREET, not per edge: a frontage split into several
+          // edges (corner clip, mid-edge break) is one street's frontage.
+          const byStreet = new Map<string, number>();
+          streetEdges.forEach((e, i) => {
+            const key = e.streetName ?? `__unnamed_${i}`;
+            byStreet.set(key, (byStreet.get(key) ?? 0) + e.lengthFt);
+          });
+          // "BOTH street frontages exceed" generalized: every frontage must.
+          applies = byStreet.size > 1 && [...byStreet.values()].every((ft) => ft > threshold);
+        }
+      } else if (o.condition === 'pedestrian_oriented_district' && o.zone_codes?.length) {
+        const zc = input.zone?.zone_code?.toUpperCase();
+        if (zc) applies = o.zone_codes.some((c) => c.toUpperCase() === zc);
+      }
+      if (applies === null) { globalFlags.add('front_rule_override_unevaluated'); continue; }
+      if (applies) { frontRule = o.rule; globalFlags.add('front_rule_override_applied'); break; }
+    }
+  }
+
   let front: RawEdge | null = null;
   let basis: LotEdge['basis'] = 'geometry';
   let confidence: LotEdge['confidence'] = 'low';
@@ -726,8 +791,13 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
  *     const d3 = await get(`lat=${p.lat}&lng=${p.lng}`);
  *     return (d3.data.parcels ?? []).find((q: ZoneomicsParcel) => q.apn === p.apn) ?? null;
  *   }))).filter(Boolean);
- *   const frontRule = db.jurisdictions.find((j: any) => j.zoneomics_city_id === Number(cityId))?.front_rule?.rule ?? 'address_street';
- *   return labelEdges({ subject, neighbors, frontRule });
+ *   const rec = db.jurisdictions.find((j: any) => j.zoneomics_city_id === Number(cityId));
+ *   return labelEdges({
+ *     subject, neighbors,
+ *     frontRule: rec?.front_rule?.rule ?? 'address_street',
+ *     frontRuleOverrides: rec?.front_rule?.overrides,   // conditional exceptions (e.g. San Jose)
+ *     zone: d1.data.zone_details,                       // feeds override conditions
+ *   });
  * }
  *
  * Production notes: keep the API key server-side; cache neighbor parcels by

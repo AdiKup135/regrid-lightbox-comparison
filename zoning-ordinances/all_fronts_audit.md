@@ -204,7 +204,18 @@ entries (plus `thresholds_ft` where numeric). Evaluate overrides before falling 
 absent the field, `front_rule.rule` applies unconditionally. `front_rule_note` in the data file documents this.
 **San Jose is currently the only entry using it.**
 
-### ⚠️ Known regression until the engine honors `overrides`
+### ~~⚠️ Known regression until the engine honors `overrides`~~ — CLOSED
+
+**Closed same day:** `labelEdges` now accepts `frontRuleOverrides` (the db array verbatim) and `zone`
+(Zoneomics `zone_details`), and resolves overrides before the front-rule switch. `oversized_corner_lot`
+is evaluated from per-street frontage sums the engine already computes — note the SJMC condition is on
+**frontage lengths**, not lot area, so the parcel `area` field was never needed. `pedestrian_oriented_district`
+is evaluated from `zone_code` against the override's `zone_codes` (MS-G, MS-C — the Ch. 20.75 districts;
+see the ambiguity note on DC/DC-NT1 and CP in the data file's override description). Unevaluable conditions
+flag `front_rule_override_unevaluated` instead of silently falling back. `EdgesPanel.tsx` passes both through.
+The historical analysis below is kept for the record.
+
+#### Original finding (historical)
 
 `edge-labeling/edge-labeling.ts` reads the rule as `?.front_rule?.rule ?? 'address_street'`
 (see the documented lookup at `edge-labeling.ts:729`). It takes a single `FrontRule` string and has no
@@ -220,9 +231,9 @@ Concretely, in that switch (`edge-labeling.ts:607`) the `all_fronts` branch rais
 | Pedestrian-oriented district | `all_fronts` — right | `shortest_frontage` — wrong | ❌ regressed |
 
 Net accuracy improves, because the common case is now correct and the override cases are the minority.
-But this is a **real regression for that minority**, and it is not self-announcing —
-`second_front_jurisdiction` simply stops being raised for those lots. Wiring `overrides` into
-`labelEdges` closes it.
+But this was a **real regression for that minority**, and it was not self-announcing —
+`second_front_jurisdiction` simply stopped being raised for those lots. Wiring `overrides` into
+`labelEdges` (done, see above) closed it.
 
 ### Still open
 
