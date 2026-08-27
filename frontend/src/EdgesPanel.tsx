@@ -34,6 +34,7 @@ interface EdgesApiResponse {
   meta: { city_id?: number; city_name?: string; last_updated?: string } | null;
   zone: { zone_code?: string; zone_type?: string } | null;
   callCount: number;
+  radius: number;
   droppedStubs: number;
 }
 
@@ -81,13 +82,30 @@ export default function EdgesPanel() {
       const fr = lookupFrontRule(data.meta?.city_id);
       setApi(data);
       setRule(fr?.rule);
-      setResult(labelEdges({
+      const labeled = labelEdges({
         subject: data.subject,
         neighbors: data.neighbors,
         frontRule: fr?.rule,
         frontRuleOverrides: fr?.overrides,
         zone: data.zone ?? undefined,
-      }));
+      });
+      setResult(labeled);
+      // One greppable summary line per lookup (mirrors the UI status line),
+      // plus the labeled edges as a table.
+      console.info(
+        `[edge-labeling] ${data.meta?.city_name ?? '?'} · zone ${data.zone?.zone_code ?? '?'} (${data.zone?.zone_type ?? '?'}) · APN ${data.subject.apn} · ` +
+        `front rule: ${fr?.rule ?? 'default (address_street)'} · ${data.callCount} API calls · radius ${data.radius}m · ` +
+        `${labeled.stats.roadGaps} road gap(s) · streets: ${labeled.stats.streetNames.join(', ') || '(unnamed)'} · ` +
+        `flags: ${labeled.flags.join(', ') || '(none)'}`,
+      );
+      console.table(labeled.edges.map((e) => ({
+        tag: e.tag,
+        lengthFt: e.lengthFt,
+        abuts: e.abuts.kind === 'street' ? `street: ${e.abuts.streetName ?? '?'}` : `APN ${e.abuts.apns.join(', ')}`,
+        basis: e.basis,
+        confidence: e.confidence,
+        flags: e.flags.join(', '),
+      })));
       setVs({ longitude: data.subject.lng, latitude: data.subject.lat, zoom: 17.5 });
     } catch (e) {
       setApi(null);
