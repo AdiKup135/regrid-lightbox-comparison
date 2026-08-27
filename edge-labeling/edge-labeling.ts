@@ -12,8 +12,11 @@
  *  2. Census the surroundings: how many separate road gaps, and which street
  *     name(s) the neighbors along each gap carry.
  *  3. Build edges: breaks occur ONLY at street/neighbor transitions, at sharp
- *     corners inside shared stretches, and at census-confirmed street splits
- *     inside a road gap (split at the virtual corner / bisector crossing).
+ *     corners inside shared stretches, and at street splits inside a road gap
+ *     (split at the virtual corner / bisector crossing) — census-confirmed by
+ *     two street names, or, when situs addresses are missing and the census
+ *     is blind, a geometric CONVEX turn between long straight sections (a lot
+ *     wrapping a block corner; concave cul-de-sac bulbs never split).
  *     A change of neighbor along a straight line does NOT break an edge; a
  *     curved single-street frontage (cul-de-sac) stays ONE edge.
  *  4. Label in a single pass: the front is decided once, from the first
@@ -129,6 +132,12 @@ export interface EdgeLabelingConfig {
   /** Rear tie-break: candidates within this of the best anti-parallel score
    *  are tied; the longest tied candidate wins. */
   rearTieEpsilon: number;       // default 0.1
+  /** Road-gap corner fallback: when the street-name census cannot resolve two
+   *  names, a gap still splits at a CONVEX turn of at least this many degrees
+   *  between long straight sections (a lot wrapping a rounded block corner).
+   *  Concave turns — cul-de-sac bulbs — never split, and a turn whose flanking
+   *  sections carry the SAME census name (a street bend) never splits. */
+  roadGapCornerMinDeg: number;  // default 60
   /** A straight section of a road gap must be at least this long (ft) to
    *  take part in the street-name census. */
   minWingFt: number;            // default 25
@@ -152,6 +161,7 @@ export const DEFAULT_CONFIG: EdgeLabelingConfig = {
   cornerMaxDeg: 170,
   gapProbeFt: 8,
   rearTieEpsilon: 0.1,
+  roadGapCornerMinDeg: 60,
   minWingFt: 25,
   blockFaceLateralFt: 12,
   blockFaceAngleDeg: 15,
@@ -480,6 +490,11 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
     const pe = samples[idx[sec.end]].pt;
     const dlen = dist(p0, pe) || 1;
     const d: Pt = [(pe[0] - p0[0]) / dlen, (pe[1] - p0[1]) / dlen];
+    // Inward = toward the subject's interior. A block-face continuation lies
+    // on the SAME side of the street line as the subject; a parcel across the
+    // street (whose own address names a different street at a corner) fails
+    // the inward probe and must not vote.
+    const [ox, oy] = outwardNormal(p0, pe, ring);
     const counts = new Map<string, number>();
     for (const n2 of neighbors) {
       let faces = false;
@@ -490,7 +505,15 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
         const dirDot = Math.abs(((b[0] - a[0]) / segLen) * d[0] + ((b[1] - a[1]) / segLen) * d[1]);
         const latA = Math.abs((a[0] - p0[0]) * -d[1] + (a[1] - p0[1]) * d[0]);
         const latB = Math.abs((b[0] - p0[0]) * -d[1] + (b[1] - p0[1]) * d[0]);
-        if (dirDot > Math.cos((cfg.blockFaceAngleDeg * Math.PI) / 180) && latA <= cfg.blockFaceLateralFt && latB <= cfg.blockFaceLateralFt) faces = true;
+        // Curvature tolerance: the near end must sit on the street line; the
+        // far end may drift as the street curves away from the section's
+        // straight extension (up to 3x the lateral band at 15 degrees).
+        const laterallyOk = Math.min(latA, latB) <= cfg.blockFaceLateralFt && Math.max(latA, latB) <= 3 * cfg.blockFaceLateralFt;
+        if (dirDot <= Math.cos((cfg.blockFaceAngleDeg * Math.PI) / 180) || !laterallyOk) continue;
+        // Same-side probe: step inward from the segment midpoint; a same-side
+        // continuation contains that point, an across-the-street parcel does not.
+        const q: Pt = [(a[0] + b[0]) / 2 - ox * cfg.blockFaceLateralFt, (a[1] + b[1]) / 2 - oy * cfg.blockFaceLateralFt];
+        if (pointInRing(q, n2.ringFt)) faces = true;
       }
       if (!faces) continue;
       const sn = extractStreetName(n2.address);
@@ -593,13 +616,24 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
     finishEdge(chain.slice(s0), false, null);
   }
 
+  // Ring winding sign: with interior on the left of travel (CCW, +1) a lot
+  // corner turns left (+) and a cul-de-sac bulb wraps right (−); mirrored for
+  // CW rings. This is what lets the geometric fallback split block corners
+  // without ever splitting bulbs.
+  let ringArea2 = 0;
+  for (let i = 0; i < ring.length; i++) {
+    const [x1, y1] = ring[i];
+    const [x2, y2] = ring[(i + 1) % ring.length];
+    ringArea2 += x1 * y2 - x2 * y1;
+  }
+  const ringSign = Math.sign(ringArea2) || 1;
+
   for (const gap of gaps) {
     const idx = gap.idx;
     const named = [...gap.names.keys()];
-    if (named.length >= 2) {
-      const secA = gap.names.get(named[0])![0];
-      const secsB = gap.names.get(named[named.length - 1])!;
-      const secB = secsB[secsB.length - 1];
+    // Boundary sample nearest the virtual corner (intersection of the two
+    // section lines; for a rounded fillet, where the bisector crosses).
+    const splitPoint = (secA: Section, secB: Section): number => {
       const dA: Pt = [Math.cos((secA.dir * Math.PI) / 180), Math.sin((secA.dir * Math.PI) / 180)];
       const dB: Pt = [Math.cos((secB.dir * Math.PI) / 180), Math.sin((secB.dir * Math.PI) / 180)];
       const vc = lineIntersect(samples[idx[secA.start]].pt, dA, samples[idx[secB.start]].pt, dB);
@@ -611,11 +645,54 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
           if (d < bd) { bd = d; splitAt = k; }
         }
       }
+      return splitAt;
+    };
+    if (named.length >= 2) {
+      const secA = gap.names.get(named[0])![0];
+      const secsB = gap.names.get(named[named.length - 1])!;
+      const splitAt = splitPoint(secA, secsB[secsB.length - 1]);
       finishEdge(idx.slice(0, splitAt + 1), true, named[0]);
       finishEdge(idx.slice(splitAt), true, named[named.length - 1]);
     } else {
-      finishEdge(idx, true, named[0] ?? null);
-      if (!named[0]) globalFlags.add('unknown_street_name');
+      // Census resolved fewer than two names (situs addresses are missing in
+      // some county fabrics). Geometric fallback: split at convex turns of at
+      // least roadGapCornerMinDeg between long straight sections. A turn whose
+      // flanking sections both carry the (single) census name is a street
+      // bend, not a corner — never split it.
+      const secName = new Map<Section, string>();
+      for (const [nm, secs] of gap.names) for (const s of secs) secName.set(s, nm);
+      const longs = gap.sections.filter((s) => s.lengthFt >= cfg.minWingFt);
+      const cuts: number[] = [];
+      for (let k = 1; k < longs.length; k++) {
+        const a = longs[k - 1], b = longs[k];
+        const delta = ((b.dir - a.dir + 540) % 360) - 180;
+        const sameStreet = secName.get(a) !== undefined && secName.get(a) === secName.get(b);
+        if (Math.abs(delta) >= cfg.roadGapCornerMinDeg && Math.sign(delta) === ringSign && !sameStreet) {
+          cuts.push(splitPoint(a, b));
+        }
+      }
+      // Name each resulting piece by the census name with the most section
+      // length inside it (usually one piece gets the single name, the rest none).
+      const nameOf = (from: number, to: number): string | null => {
+        let best: string | null = null;
+        let bl = 0;
+        for (const [nm, secs] of gap.names) {
+          let l = 0;
+          for (const s of secs) if (s.start >= from && s.end <= to) l += s.lengthFt;
+          if (l > bl) { bl = l; best = nm; }
+        }
+        return best;
+      };
+      let prev = 0;
+      let anyUnnamed = false;
+      for (const cut of [...cuts, idx.length - 1]) {
+        if (cut <= prev) continue;
+        const nm = nameOf(prev, cut);
+        finishEdge(idx.slice(prev, cut + 1), true, nm);
+        if (!nm) anyUnnamed = true;
+        prev = cut;
+      }
+      if (anyUnnamed) globalFlags.add('unknown_street_name');
     }
   }
 
