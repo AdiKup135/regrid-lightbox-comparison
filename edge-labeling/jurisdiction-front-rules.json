@@ -13,7 +13,7 @@
   "1933": { "city": "Napa",                     "front_rule": "shortest_frontage", "source": "default", "citation": "code silent; NMC 17.06 defines street-facing side lot line as a side" },
   "1485": { "city": "Atherton",                 "front_rule": "address_street",    "source": "code",    "citation": "AMC 17.52.040(F)(7) - front designated by the address street on corner/double-frontage lots" },
   "1507": { "city": "Menlo Park",               "front_rule": "owner_elected",     "source": "code",    "citation": "MPMC 16.04.405 - owner may elect the front lot line on corner lots" },
-  "1515": { "city": "Portola Valley",           "front_rule": "shortest_frontage", "source": "default", "citation": "code silent" },
+  "1515": { "city": "Portola Valley",           "front_rule": "owner_elected",     "source": "code",    "citation": "PVMC 18.04.350 - owner may elect any street parcel line as front, with town planner concurrence; flag lots: line nearest and most nearly parallel to the street" },
   "1520": { "city": "San Carlos",               "front_rule": "shortest_frontage", "source": "default", "citation": "code silent; reversed-corner rules in SCMC 18.04.030(H)" },
   "1522": { "city": "San Mateo",                "front_rule": "shortest_frontage", "source": "default", "citation": "code silent in ADU chapter" },
   "3893": { "city": "San Mateo County (uninc)", "front_rule": "shortest_frontage", "source": "code",    "citation": "County zoning Def. 80 - front lot line = the narrowest lot frontage" },
