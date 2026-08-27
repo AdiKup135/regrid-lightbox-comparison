@@ -3,6 +3,7 @@ import Split from 'react-split';
 import Map, { Source, Layer } from 'react-map-gl';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import EdgesPanel from './EdgesPanel';
 
 interface RegridSuggestion {
   type: 'Feature';
@@ -2080,6 +2081,7 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
 const DEFAULT_VIEW: ViewState = { longitude: -95, latitude: 40, zoom: 15 };
 
 export default function App() {
+  const [mode, setMode] = useState<'compare' | 'edges'>('compare');
   const [regridData, setRegridData] = useState<RegridParcel | null>(null);
   const [lightboxData, setLightboxData] = useState<unknown>(null);
   const [lightboxStructuresData, setLightboxStructuresData] = useState<LightboxStructuresData>(null);
@@ -2130,6 +2132,13 @@ export default function App() {
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <header style={{ padding: '1rem', borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <h1 style={{ margin: 0, fontSize: '1.25rem' }}>Regrid vs Lightbox</h1>
+        <div style={{ display: 'flex', border: '1px solid #ccc', borderRadius: 6, overflow: 'hidden' }}>
+          {(['compare', 'edges'] as const).map((m) => (
+            <button key={m} onClick={() => setMode(m)} style={{ padding: '0.35rem 0.9rem', border: 'none', cursor: 'pointer', fontSize: '0.85rem', background: mode === m ? '#24312B' : '#fff', color: mode === m ? '#fff' : '#555' }}>
+              {m === 'compare' ? 'Compare' : 'Edges (Zoneomics)'}
+            </button>
+          ))}
+        </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginLeft: 'auto' }}>
           <span style={{ fontSize: '0.8rem', color: '#666', fontWeight: 500 }}>Map layers</span>
           <label style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.9rem', cursor: 'pointer' }}>
@@ -2138,10 +2147,12 @@ export default function App() {
           </label>
         </div>
       </header>
+      {mode === 'edges' ? <EdgesPanel /> : (
       <Split sizes={[50, 50]} minSize={200} style={{ flex: 1, display: 'flex', minHeight: 0 }} className="split-container">
         <RegridPanel data={regridData} setData={setRegridData} lightboxData={lightboxData} lightboxStructuresData={lightboxStructuresData} lightboxFemaData={lightboxFemaData} lightboxZoningData={lightboxZoningData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
         <LightboxPanel data={lightboxData} setData={setLightboxData} regridData={regridData} structuresData={lightboxStructuresData} setStructuresData={setLightboxStructuresData} femaData={lightboxFemaData} setFemaData={setLightboxFemaData} zoningData={lightboxZoningData} setZoningData={setLightboxZoningData} riskIndexData={lightboxRiskIndexData} setRiskIndexData={setLightboxRiskIndexData} wetlandsData={lightboxWetlandsData} setWetlandsData={setLightboxWetlandsData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
       </Split>
+      )}
     </div>
   );
 }

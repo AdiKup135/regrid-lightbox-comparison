@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 // Import backend routers
 import regridRouter from './regrid-backend/index.js';
 import lightboxRouter from './lightbox-backend/index.js';
+import zoneomicsRouter from './zoneomics-backend/index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json());
 // Mount API routers
 app.use('/api/regrid', regridRouter);
 app.use('/api/lightbox', lightboxRouter);
+app.use('/api/zoneomics', zoneomicsRouter);
 
 // Serve static frontend
 const distPath = path.join(__dirname, 'frontend', 'dist');

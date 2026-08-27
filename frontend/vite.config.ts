@@ -8,7 +8,7 @@ export default defineConfig({
     include: ['mapbox-gl'],
   },
   server: {
-    port: 5173,
+    port: Number(process.env.PORT) || 5173,
     proxy: {
       '/api/regrid': {
         target: 'http://localhost:3001',
@@ -19,6 +19,11 @@ export default defineConfig({
         target: 'http://localhost:3002',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/lightbox/, '/'),
+      },
+      '/api/zoneomics': {
+        target: 'http://localhost:3003',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/zoneomics/, '/'),
       },
     },
   },

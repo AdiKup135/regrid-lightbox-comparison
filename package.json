@@ -6,13 +6,15 @@
   "workspaces": [
     "regrid-backend",
     "lightbox-backend",
+    "zoneomics-backend",
     "frontend"
   ],
   "scripts": {
     "dev:regrid": "PORT=3001 npm run dev -w regrid-backend",
     "dev:lightbox": "PORT=3002 npm run dev -w lightbox-backend",
+    "dev:zoneomics": "PORT=3003 npm run dev -w zoneomics-backend",
     "dev:frontend": "npm run dev -w frontend",
-    "dev": "concurrently \"npm run dev:regrid\" \"npm run dev:lightbox\" \"npm run dev:frontend\"",
+    "dev": "concurrently \"npm run dev:regrid\" \"npm run dev:lightbox\" \"npm run dev:zoneomics\" \"npm run dev:frontend\"",
     "build": "cd frontend && npx vite build",
     "start": "node server.js"
   },
