@@ -9,14 +9,15 @@ import {
   type EdgeLabelingResult,
   type FrontRule,
 } from '../../edge-labeling/edge-labeling';
-import frontRules from '../../edge-labeling/jurisdiction-front-rules.json';
+import jurisdictionDb from '../../zoning-ordinances/zoning_ordinance_links.json';
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN ?? '';
 
 // Live tester for edge-labeling/edge-labeling.ts: type an address, the
 // zoneomics-backend pulls subject + neighbor parcels, and the module labels
-// the lot's edges client-side. The jurisdiction's front rule comes from
-// jurisdiction-front-rules.json, keyed by Zoneomics city_id.
+// the lot's edges client-side. The jurisdiction's front rule comes from the
+// unified jurisdiction db (zoning-ordinances/zoning_ordinance_links.json),
+// matched by Zoneomics city_id.
 
 const TAG_COLORS: Record<string, string> = {
   front: '#CE3A2E',
@@ -39,8 +40,8 @@ type FC = GeoJSON.FeatureCollection;
 
 function lookupFrontRule(cityId: number | undefined): FrontRule | undefined {
   if (cityId == null) return undefined;
-  const entry = (frontRules as unknown as Record<string, { front_rule?: FrontRule }>)[String(cityId)];
-  return entry?.front_rule;
+  const recs = (jurisdictionDb as unknown as { jurisdictions: Array<{ zoneomics_city_id: number; front_rule?: { rule: FrontRule } }> }).jurisdictions;
+  return recs.find((r) => r.zoneomics_city_id === cityId)?.front_rule?.rule;
 }
 
 function parcelPolygonFeature(p: ZoneomicsParcel, kind: 'subject' | 'neighbor'): GeoJSON.Feature | null {

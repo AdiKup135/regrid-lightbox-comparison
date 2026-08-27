@@ -1,6 +1,6 @@
 {
   "title": "Bay Area zoning ordinance links (via Zoneomics)",
-  "generated": "2026-08-24",
+  "generated": "2026-08-27",
   "source": "Zoneomics v2/zoneDetail API (zone_details.link), queried with FormX ZONEOMICS_API_KEY",
   "note": "ordinance_link is the link Zoneomics attaches to the zone at a representative point in each jurisdiction. Where the platform is 'Zoneomics code viewer', Zoneomics hosts the code text on its own site instead of linking to Municode/eCode360 directly.",
   "count": 23,
@@ -13,7 +13,12 @@
       "zoneomics_last_updated": "2026-07-21",
       "sample_zone_code_at_query_point": "MRA",
       "ordinance_link": "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS",
-      "code_platform": "Municode"
+      "code_platform": "Municode",
+      "front_rule": {
+        "rule": "designated",
+        "source": "code",
+        "citation": "LMC 6-566(b)(2) - principal frontage per district; secondary frontage 4 ft for Class C ADUs"
+      }
     },
     {
       "jurisdiction": "Moraga",
@@ -23,7 +28,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "MCSP-C",
       "ordinance_link": "https://www.zoneomics.com/code/moraga-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "designated",
+        "source": "code",
+        "citation": "MMC 8.68.090 - front lot line = principal street"
+      }
     },
     {
       "jurisdiction": "Orinda",
@@ -33,7 +43,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "RL-20",
       "ordinance_link": "https://www.zoneomics.com/code/orinda-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "OMC 17.4.8 - shorter frontage is generally the front"
+      }
     },
     {
       "jurisdiction": "Fairfax",
@@ -43,7 +58,12 @@
       "zoneomics_last_updated": "2026-08-09",
       "sample_zone_code_at_query_point": "CH",
       "ordinance_link": "https://www.zoneomics.com/code/fairfax-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "all_fronts",
+        "source": "code",
+        "citation": "TC 17.040.020(D) - 10 ft on every street frontage of a corner lot"
+      }
     },
     {
       "jurisdiction": "Mill Valley",
@@ -53,7 +73,12 @@
       "zoneomics_last_updated": "2026-08-09",
       "sample_zone_code_at_query_point": "C-D",
       "ordinance_link": "https://www.zoneomics.com/code/mill-valley-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "designated",
+        "source": "code",
+        "citation": "MMC 20.90.030(A)(12) - primary frontage by driveway/home orientation; remaining street frontage is the side yard"
+      }
     },
     {
       "jurisdiction": "Sausalito",
@@ -63,7 +88,12 @@
       "zoneomics_last_updated": "2026-08-09",
       "sample_zone_code_at_query_point": "CR",
       "ordinance_link": "https://www.zoneomics.com/code/sausalito-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "owner_elected",
+        "source": "code",
+        "citation": "SMC 10.88 - owner elects the front street line with Director concurrence"
+      }
     },
     {
       "jurisdiction": "Napa",
@@ -73,7 +103,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "RS-5",
       "ordinance_link": "https://www.zoneomics.com/code/napa-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "NMC 17.06.030 - on a corner lot the front line is the shorter of any two adjacent street lot lines"
+      }
     },
     {
       "jurisdiction": "Atherton",
@@ -83,7 +118,12 @@
       "zoneomics_last_updated": "2026-08-09",
       "sample_zone_code_at_query_point": "R-1B",
       "ordinance_link": "https://atherton.municipal.codes/Code/17",
-      "code_platform": "Municipal.codes (OpenGov)"
+      "code_platform": "Municipal.codes (OpenGov)",
+      "front_rule": {
+        "rule": "address_street",
+        "source": "code",
+        "citation": "AMC 17.52.040(F)(7) - front designated by the address street on corner/double-frontage lots"
+      }
     },
     {
       "jurisdiction": "Hillsborough",
@@ -93,7 +133,12 @@
       "zoneomics_last_updated": "2026-08-15",
       "sample_zone_code_at_query_point": "RD-1",
       "ordinance_link": "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO",
-      "code_platform": "Municode"
+      "code_platform": "Municode",
+      "front_rule": {
+        "rule": "all_fronts",
+        "source": "code",
+        "citation": "HMC 17.24.020(A) - 25 ft street-line setback on every street frontage; no front concept"
+      }
     },
     {
       "jurisdiction": "Menlo Park",
@@ -103,7 +148,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "RE",
       "ordinance_link": "https://www.codepublishing.com/CA/MenloPark/html/MenloPark16/MenloPark16.html",
-      "code_platform": "Code Publishing"
+      "code_platform": "Code Publishing",
+      "front_rule": {
+        "rule": "owner_elected",
+        "source": "code",
+        "citation": "MPMC 16.04.405 - owner may elect the front lot line on corner lots"
+      }
     },
     {
       "jurisdiction": "Portola Valley",
@@ -113,7 +163,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "R-E/3.5A/SD-2/D-R",
       "ordinance_link": "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO",
-      "code_platform": "Municode"
+      "code_platform": "Municode",
+      "front_rule": {
+        "rule": "owner_elected",
+        "source": "code",
+        "citation": "PVMC 18.04.350 - owner may elect any street parcel line as front, with town planner concurrence; flag lots: line nearest and most nearly parallel to the street"
+      }
     },
     {
       "jurisdiction": "San Carlos",
@@ -123,7 +178,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "MU-DC-100",
       "ordinance_link": "https://zoneomics.com/code/san-carlos-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "SCMC 18.41.020 - corner lot front = the shorter lot line abutting a street; flag lots: interior line nearest and most parallel to the access street"
+      }
     },
     {
       "jurisdiction": "San Mateo",
@@ -133,7 +193,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "CBD",
       "ordinance_link": "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27",
-      "code_platform": "City-hosted"
+      "code_platform": "City-hosted",
+      "front_rule": {
+        "rule": "owner_elected",
+        "source": "code",
+        "citation": "SMMC 27.04.300(a) - on a corner lot the owner may elect either street property line as the front; through lots: both street lines are fronts (27.04.275(d))"
+      }
     },
     {
       "jurisdiction": "San Mateo County (unincorporated)",
@@ -143,7 +208,12 @@
       "zoneomics_last_updated": "2026-08-15",
       "sample_zone_code_at_query_point": "R-1/S-73",
       "ordinance_link": "https://www.zoneomics.com/code/san-mateo-county-unincorporated-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "County zoning Def. 80 - front lot line = the narrowest lot frontage"
+      }
     },
     {
       "jurisdiction": "Los Altos",
@@ -153,7 +223,12 @@
       "zoneomics_last_updated": "2026-07-21",
       "sample_zone_code_at_query_point": "R1-10",
       "ordinance_link": "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO",
-      "code_platform": "Municode"
+      "code_platform": "Municode",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "LAMC 14.02.010 Lot line - corner lot front = shortest dimension fronting the street; either line allowed only if both remain conforming; flag lots: interior line nearest and most parallel to the access street"
+      }
     },
     {
       "jurisdiction": "Los Altos Hills",
@@ -163,7 +238,12 @@
       "zoneomics_last_updated": "2026-07-13",
       "sample_zone_code_at_query_point": "R-A",
       "ordinance_link": "https://www.zoneomics.com/code/los-altos-hills-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "designated",
+        "source": "code",
+        "citation": "LAHMC 10-1.505(c)(2) - Planning Commission designates the 40-ft street on multi-street lots"
+      }
     },
     {
       "jurisdiction": "Mountain View",
@@ -173,7 +253,12 @@
       "zoneomics_last_updated": "2026-07-21",
       "sample_zone_code_at_query_point": "R2",
       "ordinance_link": "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO",
-      "code_platform": "Municode"
+      "code_platform": "Municode",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "MVCC 36.60.27 - corner lot front = shortest frontage unless the owner designates the longer at time of development; through lots: both lines are fronts"
+      }
     },
     {
       "jurisdiction": "Palo Alto",
@@ -183,7 +268,12 @@
       "zoneomics_last_updated": "2026-07-21",
       "sample_zone_code_at_query_point": "R-1",
       "ordinance_link": "https://www.zoneomics.com/code/palo-alto-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "owner_elected",
+        "source": "code",
+        "citation": "PAMC 18.09.040(j)(4) corner-lot election (10 ft street side / 16 ft front)"
+      }
     },
     {
       "jurisdiction": "San Jose",
@@ -193,7 +283,12 @@
       "zoneomics_last_updated": "2026-08-13",
       "sample_zone_code_at_query_point": "CP",
       "ordinance_link": "https://www.zoneomics.com/code/san-jose-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "all_fronts",
+        "source": "code",
+        "citation": "SJMC 20.30.210(A) - oversized corner lots deemed two front property lines"
+      }
     },
     {
       "jurisdiction": "Saratoga",
@@ -203,7 +298,12 @@
       "zoneomics_last_updated": "2026-07-09",
       "sample_zone_code_at_query_point": "R-1-20000",
       "ordinance_link": "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE",
-      "code_platform": "Municode"
+      "code_platform": "Municode",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "SMC 15-06.430(a) - corner lot front = shortest dimension fronting the street; flag lots: interior line nearest the access street; Director assigns lines on irregular lots"
+      }
     },
     {
       "jurisdiction": "Sunnyvale",
@@ -213,7 +313,12 @@
       "zoneomics_last_updated": "2026-08-21",
       "sample_zone_code_at_query_point": "ECR",
       "ordinance_link": "https://ecode360.com/42729480",
-      "code_platform": "eCode360 (General Code)"
+      "code_platform": "eCode360 (General Code)",
+      "front_rule": {
+        "rule": "all_fronts",
+        "source": "code",
+        "citation": "SMC 19.34 / 19.79.070 - corner lots have two front yards; longer frontage reducible to ~9 ft"
+      }
     },
     {
       "jurisdiction": "Healdsburg",
@@ -223,7 +328,12 @@
       "zoneomics_last_updated": "2026-07-10",
       "sample_zone_code_at_query_point": "PR",
       "ordinance_link": "https://www.zoneomics.com/code/healdsburg-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "HMC 20.28.310 - front = line separating the narrower street frontage of a corner lot from a street (verified from Nov 2024 archive; live eCode360 gated)"
+      }
     },
     {
       "jurisdiction": "Windsor",
@@ -233,7 +343,13 @@
       "zoneomics_last_updated": "2026-07-10",
       "sample_zone_code_at_query_point": "TC",
       "ordinance_link": "https://www.zoneomics.com/code/windsor-CA",
-      "code_platform": "Zoneomics code viewer"
+      "code_platform": "Zoneomics code viewer",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "Zoning Ord. 27.60.020 - corner-lot front = shortest frontage (Director decides ties); through lots: both street lines are fronts; flag-lot front setback Director-determined (27.20.070(C)(1))"
+      }
     }
-  ]
+  ],
+  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id)."
 }

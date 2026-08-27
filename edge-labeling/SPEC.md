@@ -1,6 +1,6 @@
 # Parcel edge labeling — spec
 
-Labels each edge of a subject parcel as **front / street_side / side / rear** using only Zoneomics data. Implementation: `edge-labeling.ts` (self-contained TypeScript, no dependencies — copy the file plus `jurisdiction-front-rules.json` into any repo). This module does not compute setback values; the rules engine consumes its labels downstream.
+Labels each edge of a subject parcel as **front / street_side / side / rear** using only Zoneomics data. Implementation: `edge-labeling.ts` (self-contained TypeScript, no dependencies — copy the file (plus the jurisdiction db, `zoning-ordinances/zoning_ordinance_links.json`) into any repo). This module does not compute setback values; the rules engine consumes its labels downstream.
 
 ## Terminology
 
@@ -20,7 +20,7 @@ Flat label set — no subtags. `street_side` is the canonical term (the most com
    - radius query (60 m) → neighbor **centroids only** (GeoJSON `features[0].properties.parcels[]`);
    - one point query per neighbor centroid → its boundary. ~2 + N calls per address; parallelize and cache by APN.
    - `parcels[].lat/lng` is the exact polygon centroid; the top-level address geocode is rooftop-style and is never used to pick the front.
-2. **`frontRule`** for the jurisdiction, looked up in `jurisdiction-front-rules.json` by Zoneomics `city_id`: `shortest_frontage | address_street | designated | owner_elected | all_fronts`. The dictionary lives outside the module by design.
+2. **`frontRule`** for the jurisdiction, looked up in the unified jurisdiction db (`zoning-ordinances/zoning_ordinance_links.json`, `front_rule.rule` per record) by Zoneomics `city_id`: `shortest_frontage | address_street | designated | owner_elected | all_fronts`. The db lives outside the module by design; unlisted jurisdictions default to `address_street`.
 3. Optional **user election** of the front edge (`userFrontOverrideEdgeIndex`) — legally meaningful where the rule is `owner_elected`.
 
 ## Algorithm (identity over geometry)

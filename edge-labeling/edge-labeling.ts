@@ -19,9 +19,10 @@
  *  4. Label in a single pass: the front is decided once, from the first
  *     evidence source that yields an answer, and never revised.
  *
- * The per-jurisdiction front-declaration method lives OUTSIDE this module in
- * jurisdiction-front-rules.json (keyed by Zoneomics city_id). The caller
- * looks the rule up and passes it in as `frontRule`.
+ * The per-jurisdiction front-declaration method lives OUTSIDE this module, in
+ * the unified jurisdiction db (zoning-ordinances/zoning_ordinance_links.json,
+ * front_rule per record, matched by Zoneomics city_id). The caller looks the
+ * rule up and passes it in as `frontRule`.
  *
  * This module does not compute setback values — that is the rules engine's
  * job, downstream of these labels.
@@ -132,7 +133,7 @@ export interface EdgeLabelingInput {
   /** All parcels from the radius pull except the subject (same-APN entries
    *  are skipped defensively). */
   neighbors: ZoneomicsParcel[];
-  /** From jurisdiction-front-rules.json, keyed by Zoneomics city_id. */
+  /** From the unified jurisdiction db (front_rule.rule), matched by city_id. */
   frontRule?: FrontRule;
   /** Owner's election of the front edge (index into the returned edges).
    *  Only meaningful where frontRule is 'owner_elected'. */
@@ -710,7 +711,7 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
 /* ============================================================================
  * USAGE
  * ============================================================================
- * import rules from './jurisdiction-front-rules.json';
+ * import db from './zoning_ordinance_links.json'; // the unified jurisdiction db
  *
  * async function labelAddress(address: string, apiKey: string) {
  *   const base = 'https://api.zoneomics.com/v2/zoneDetail';
@@ -725,7 +726,7 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
  *     const d3 = await get(`lat=${p.lat}&lng=${p.lng}`);
  *     return (d3.data.parcels ?? []).find((q: ZoneomicsParcel) => q.apn === p.apn) ?? null;
  *   }))).filter(Boolean);
- *   const frontRule = (rules as any)[cityId]?.front_rule ?? 'address_street';
+ *   const frontRule = db.jurisdictions.find((j: any) => j.zoneomics_city_id === Number(cityId))?.front_rule?.rule ?? 'address_street';
  *   return labelEdges({ subject, neighbors, frontRule });
  * }
  *
