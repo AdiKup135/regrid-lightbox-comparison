@@ -60,9 +60,9 @@
       "ordinance_link": "https://www.zoneomics.com/code/fairfax-CA",
       "code_platform": "Zoneomics code viewer",
       "front_rule": {
-        "rule": "all_fronts",
+        "rule": "shortest_frontage",
         "source": "code",
-        "citation": "TC 17.040.020(D) - 10 ft on every street frontage of a corner lot"
+        "citation": "TC 17.010.110(B) (Ord. 885, 11-1-2023) - \"The front of a corner lot is the narrowest dimension of the lot with street frontage\"; this is the operative front declaration. 17.010.120(B) refers to a \"corner side yard\", confirming one front plus one street side. Street-side treatment: 17.040.020(D) gives all street frontage of any corner lot a 10 ft setback, which equals the 10 ft front yard setback in 17.040.020(A), so the numeric outcome is identical either way - this entry was previously labeled all_fronts on the strength of 17.040.020(D), but that is a setback rule, not a front declaration. Ch. 17.008 defines CORNER LOT as \"a lot in the junction of and fronting on two or more intersecting streets\" (locational, not operative) and never defines \"front lot line\"; 17.010.110(B) fills that gap. Caveat: 17.040.020 preamble is ambiguously drafted (\"no accessory structure or building...\") and per-district primary-dwelling setbacks were not traced."
       }
     },
     {
@@ -285,9 +285,27 @@
       "ordinance_link": "https://www.zoneomics.com/code/san-jose-CA",
       "code_platform": "Zoneomics code viewer",
       "front_rule": {
-        "rule": "all_fronts",
+        "rule": "shortest_frontage",
         "source": "code",
-        "citation": "SJMC 20.30.210(A) - oversized corner lots deemed two front property lines"
+        "citation": "SJMC 20.200.700 - \"Front lot line of a corner lot\" is the narrower lot line abutting a public or private right-of-way; \"Side corner lot line of a corner lot\" is the longer of the two. This is the default and it governs the ordinary corner lot. The entry was previously labeled all_fronts on the strength of 20.30.210(A), but that section is conditional (\"If a lot exceeds the defined dimensions of a corner lot\") and describes the exception, not the rule - see front_rule.overrides. 20.30.210(B) gives the director of planning final say on irregular or greater-than-four-sided lots, with a floor of one front and one rear property line.",
+        "overrides": [
+          {
+            "rule": "all_fronts",
+            "condition": "oversized_corner_lot",
+            "citation": "SJMC 20.200.670(A); restated at 20.30.210(A)",
+            "description": "A lot that exceeds the corner-lot dimension thresholds is not a corner lot and is deemed to have two front property lines. Thresholds: 120 ft in residential districts, 150 ft in commercial districts. BOTH street frontages must exceed the threshold; a lot exceeding on only one frontage remains an ordinary corner lot with a single (narrower) front.",
+            "thresholds_ft": {
+              "residential": 120,
+              "commercial": 150
+            }
+          },
+          {
+            "rule": "all_fronts",
+            "condition": "pedestrian_oriented_district",
+            "citation": "SJMC 20.200.670(B)",
+            "description": "In a pedestrian oriented zoning district a corner lot has a minimum of two front lot lines regardless of the dimensions of the lot. Applies notwithstanding 20.200.670(A), so it is not gated on lot size."
+          }
+        ]
       }
     },
     {
@@ -351,5 +369,5 @@
       }
     }
   ],
-  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id)."
+  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id). front_rule.overrides is optional: an ordered list of conditions under which a different rule applies, each with its own citation. Evaluate overrides before falling back to front_rule.rule. Absent the field, front_rule.rule applies unconditionally."
 }
