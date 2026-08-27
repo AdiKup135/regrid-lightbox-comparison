@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @media print {
+    body { background: white; margin: 0; padding: 20px; }
+    .no-print { display: none; }
+    h2 { break-after: avoid; }
+    table { break-inside: avoid; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, serif; max-width: 860px; margin: 40px auto; color: #1a1a1a; background: #f9f8f6; padding: 0 28px 56px; }
+  h1 { font-size: 1.65rem; margin-bottom: 4px; }
+  .subtitle { color: #666; font-size: 0.92rem; margin-bottom: 8px; }
+  .meta { color: #888; font-size: 0.82rem; margin-bottom: 28px; border-bottom: 2px solid #222; padding-bottom: 14px; }
+  h2 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.09em; color: #444; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px; margin-bottom: 12px; }
+  h3 { font-size: 0.88rem; color: #333; margin: 16px 0 8px; font-style: italic; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-bottom: 10px; }
+  td, th { padding: 7px 10px; border-bottom: 1px solid #eee; text-align: left; vertical-align: top; }
+  th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #999; font-weight: 600; background: #fafafa; }
+  tr:last-child td { border-bottom: none; }
+  .label { width: 42%; color: #555; }
+  .note { background: #fff; border-left: 3px solid #ccc; padding: 9px 13px; font-size: 0.86rem; color: #444; border-radius: 0 5px 5px 0; margin: 8px 0 14px; line-height: 1.65; }
+  ul { margin: 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.85; }
+  .badge { display: inline-block; border-radius: 3px; padding: 1px 8px; font-size: 0.78rem; font-weight: 700; font-family: sans-serif; }
+  .yes { background: #e6f4ec; color: #267a47; }
+  .no { background: #fdecea; color: #b03030; }
+  .na { background: #f0f0f0; color: #888; }
+  .stf { background: #fff3e0; color: #b06000; }
+  .source { margin-top: 40px; font-size: 0.75rem; color: #bbb; border-top: 1px solid #eee; padding-top: 12px; }
+  .print-btn { display: inline-block; margin-bottom: 24px; padding: 8px 18px; background: #222; color: #fff; border: none; border-radius: 5px; font-size: 0.88rem; cursor: pointer; font-family: sans-serif; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  .two-col table { margin-bottom: 0; }
+</style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">🖨 Print / Save as PDF</button>
+
+<h1>Zoneomics Report: 1590 Madrono AV</h1>
+<div class="subtitle">Zone R-1 · Single Family Residential · Residential / Single Family</div>
+<div class="meta">City: Palo Alto &nbsp;·&nbsp; City ID: 295 &nbsp;·&nbsp; Last Updated: 2026-03-16 &nbsp;·&nbsp; Lat: 37.4324303 &nbsp;·&nbsp; Lng: -122.1521906</div>
+
+<!-- ZONE DETAILS -->
+<h2>Zone Details</h2>
+<table>
+  <tr><td class="label">Zone Code</td><td>R-1</td></tr>
+  <tr><td class="label">Zone Name</td><td>Single Family Residential</td></tr>
+  <tr><td class="label">Zone Type</td><td>Residential</td></tr>
+  <tr><td class="label">Zone Sub-Type</td><td>Single Family</td></tr>
+  <tr><td class="label">Ordinance Link</td><td><a href="https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76269">https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76269</a></td></tr>
+</table>
+<div class="note">The R-1 single family residential district is intended to create, preserve, and enhance areas suitable for detached dwellings with a strong presence of nature and with open area affording maximum privacy and opportunities for outdoor living and childrens play.</div>
+
+<!-- PERMITTED LAND USES -->
+<h2>Permitted Land Uses</h2>
+<h3>as_of_right</h3>
+<ul>
+  <li>Accessory dwelling units</li>
+  <li>Accessory facilities and uses customarily incidental to permitted uses with no more than two plumbing fixtures and no kitchen facility or of a size less than or equal to 200 square feet</li>
+  <li>Home occupations when accessory to permitted residential uses</li>
+  <li>Horticulture gardening and growing of food products for consumption by occupants of the site</li>
+  <li>Junior accessory dwelling unit</li>
+  <li>Large family day care homes</li>
+  <li>Mobile homes</li>
+  <li>Multiple family</li>
+  <li>Residential care homes</li>
+  <li>Single family</li>
+  <li>Small adult day care homes</li>
+  <li>Small family day care homes</li>
+  <li>Two family use under one ownership</li>
+</ul>
+<h3>conditional_uses</h3>
+<ul>
+  <li>Accessory facilities and uses customarily incidental to permitted uses with more than two plumbing fixtures (but with no kitchen) and in excess of 200 square feet in size but excluding second dwelling units</li>
+  <li>Churches and religious institutions</li>
+  <li>Community centers</li>
+  <li>Day care centers</li>
+  <li>Large adult day care homes</li>
+  <li>Outdoor recreation services</li>
+  <li>Private educational facilities</li>
+  <li>Utility facilities essential to provision of utility services to the neighborhood but excluding business offices construction or storage yards maintenance facilities or corporation yards</li>
+</ul>
+<h3>prohibited</h3>
+<ul>
+  <li>Safe parking</li>
+</ul>
+
+<h3>Use Flags</h3>
+<table>
+  <tr><th>Field</th><th>Value</th></tr>
+  <tr><td class="label">single_family_permitted</td><td><span class="badge yes">true</span></td></tr>
+  <tr><td class="label">two_family_permitted</td><td><span class="badge yes">true</span></td></tr>
+  <tr><td class="label">multi_family_permitted</td><td><span class="badge yes">true</span></td></tr>
+  <tr><td class="label">commercial_uses_permitted</td><td><span class="badge no">false</span></td></tr>
+  <tr><td class="label">industrial_uses_permitted</td><td><span class="badge no">false</span></td></tr>
+  <tr><td class="label">adu_local_permitted</td><td><span class="badge yes">true</span></td></tr>
+  <tr><td class="label">adu_state_permitted</td><td><span class="badge na">null</span></td></tr>
+  <tr><td class="label">short_term_rentals_permitted</td><td><span class="badge na">null</span></td></tr>
+</table>
+
+<!-- CONDITIONAL CONTROLS -->
+<h2>Conditional Controls</h2>
+
+<h3>max_far <span style="font-style:normal;font-weight:400;color:#888;font-size:0.8rem;">type: conditional</span></h3>
+<table>
+  <tr><th>condition</th><th>value</th></tr>
+  <tr><td>First 5,000 sq ft of lot</td><td>0.45</td></tr>
+  <tr><td>Lot area in excess of 5,000 sq ft</td><td>0.3</td></tr>
+</table>
+<table style="margin-top:4px;">
+  <tr><td class="label">best_case_value</td><td>0.45</td></tr>
+  <tr><td class="label">worst_case_value</td><td>0.3</td></tr>
+</table>
+
+<h3>max_coverage <span style="font-style:normal;font-weight:400;color:#888;font-size:0.8rem;">type: conditional</span></h3>
+<table>
+  <tr><th>condition</th><th>value</th></tr>
+  <tr><td>Single story development</td><td>Equivalent to maximum allowable floor area ratio</td></tr>
+  <tr><td>With (S) Combining</td><td>Equivalent to maximum allowable floor area ratio</td></tr>
+  <tr><td>The covering of a court is exempt from the calculation of site coverage provided that the court existed prior to July 20, 1978</td><td>null</td></tr>
+  <tr><td>Multiple story development</td><td>35</td></tr>
+  <tr><td>Additional area permitted to be covered by a patio or overhang</td><td>5</td></tr>
+</table>
+<table style="margin-top:4px;">
+  <tr><td class="label">best_case_value</td><td>35</td></tr>
+  <tr><td class="label">worst_case_value</td><td>5</td></tr>
+</table>
+
+<h3>min_side_yard_ft <span style="font-style:normal;font-weight:400;color:#888;font-size:0.8rem;">type: conditional</span></h3>
+<table>
+  <tr><th>condition</th><th>value</th></tr>
+  <tr><td>Interior side</td><td>6</td></tr>
+  <tr><td>Street side</td><td>16</td></tr>
+</table>
+<table style="margin-top:4px;">
+  <tr><td class="label">best_case_value</td><td>6</td></tr>
+  <tr><td class="label">worst_case_value</td><td>16</td></tr>
+</table>
+
+<h3>max_building_height_ft <span style="font-style:normal;font-weight:400;color:#888;font-size:0.8rem;">type: conditional</span></h3>
+<table>
+  <tr><th>condition</th><th>value</th></tr>
+  <tr><td>base height</td><td>30</td></tr>
+  <tr><td>Maximum Height for buildings with a roof pitch of 12:12 or greater</td><td>33</td></tr>
+  <tr><td>special flood hazard area - max (context 1)</td><td>33</td></tr>
+  <tr><td>(S) Combining</td><td>17</td></tr>
+  <tr><td>special flood hazard area - max (context 2)</td><td>20</td></tr>
+</table>
+<table style="margin-top:4px;">
+  <tr><td class="label">best_case_value</td><td>33</td></tr>
+  <tr><td class="label">worst_case_value</td><td>17</td></tr>
+</table>
+
+<h3>Fixed Controls</h3>
+<table>
+  <tr><th>Field</th><th>type</th><th>value</th></tr>
+  <tr><td>min_lot_width_ft</td><td>fixed</td><td>60</td></tr>
+  <tr><td>min_rear_yard_ft</td><td>fixed</td><td>20</td></tr>
+  <tr><td>min_front_yard_ft</td><td>fixed</td><td>NA</td></tr>
+  <tr><td>min_lot_area_sq_ft</td><td>fixed</td><td>9999</td></tr>
+  <tr><td>min_side_yard_both_ft</td><td>fixed</td><td>NA</td></tr>
+  <tr><td>open_space_percentage</td><td>fixed</td><td>NA</td></tr>
+  <tr><td>max_density_du_per_acre</td><td>fixed</td><td>1</td></tr>
+  <tr><td>min_side_yard_at_least_one_ft</td><td>fixed</td><td>NA</td></tr>
+  <tr><td>private_open_space_percentage</td><td>fixed</td><td>NA</td></tr>
+  <tr><td>min_landscaped_space_percentage</td><td>fixed</td><td>NA</td></tr>
+  <tr><td>max_impervious_coverage_percentage</td><td>fixed</td><td>NA</td></tr>
+</table>
+
+<!-- ZONE DETAIL CONTROLS -->
+<h2>Zone Detail Controls</h2>
+
+<h3>far_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>max_far</td><td><span class="badge stf">STF</span></td></tr>
+  <tr><td>non-standard</td><td>maximum_floor_area_ratio</td><td>First 5000 square feet of lot size: 0.45, Square footage of lot size in excess of 5000 square feet: 0.30</td></tr>
+</table>
+
+<h3>lot_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>min_lot_area_sq_ft</td><td>9999</td></tr>
+  <tr><td>non-standard</td><td>minimum_site_depth_ft</td><td>100</td></tr>
+  <tr><td>non-standard</td><td>minimum_lot_area_sq_ft</td><td>Site Area: (All lots except flag lots: 6000), Lot area: 9999</td></tr>
+</table>
+
+<h3>density_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>max_density_du_per_acre</td><td>1</td></tr>
+  <tr><td>non-standard</td><td>maximum_density_du_per_acre</td><td>1 du</td></tr>
+  <tr><td>non-standard</td><td>minimum_residential_density_sq_ft</td><td>NA</td></tr>
+</table>
+
+<h3>coverage_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>max_coverage</td><td><span class="badge stf">STF</span></td></tr>
+  <tr><td>standard</td><td>max_impervious_coverage_percentage</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>maximum_coverage_percent</td><td>Single story development: Equivalent to maximum allowable floor area ratio, With (S) Combining: Equivalent to maximum allowable floor area ratio, The covering of a court is exempt from the calculation of site coverage provided that the court existed prior to July 20, 1978, Multiple story development: 35, Additional area permitted to be covered by a patio or overhang: 5</td></tr>
+  <tr><td>non-standard</td><td>maximum_impervious_coverage_percentage</td><td>NA</td></tr>
+</table>
+
+<h3>building_height_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>max_building_height_ft</td><td><span class="badge stf">STF</span></td></tr>
+  <tr><td>non-standard</td><td>maximum_building_height_ft</td><td>30, Maximum Height for buildings with a roof pitch of 12:12 or greater: 33, In a special flood hazard area the maximum heights are increased by one-half of the increase in elevation required to reach base flood elevation, up to a maximum building height of 33, With (S) Combining: 17, limited to one habitable floor, Habitable floors include lofts, mezzanines, and similar areas with interior heights of 5 or more from the roof to the floor, but shall exclude finished basements and shall exclude attics that have no stairway or built-in access, special flood hazard area, the maximum height is increased by one-half of the increase in elevation required to reach base flood elevations, up to a maximum building height of 20 feet</td></tr>
+</table>
+
+<h3>front_setback_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>min_front_yard_ft</td><td><span class="badge stf">STF</span></td></tr>
+  <tr><td>non-standard</td><td>minimum_front_yard_ft</td><td>Contextual</td></tr>
+</table>
+
+<h3>rear_setback_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>min_rear_yard_ft</td><td>20</td></tr>
+  <tr><td>non-standard</td><td>minimum_rear_yard_ft</td><td>20</td></tr>
+</table>
+
+<h3>side_setback_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>min_side_yard_ft</td><td><span class="badge stf">STF</span></td></tr>
+  <tr><td>standard</td><td>min_side_yard_both_ft</td><td>NA</td></tr>
+  <tr><td>standard</td><td>min_side_yard_at_least_one_ft</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>minimum_side_yard_ft</td><td>Interior side: 6, Street side: 16</td></tr>
+</table>
+
+<h3>lot_width_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>min_lot_width_ft</td><td>60</td></tr>
+  <tr><td>non-standard</td><td>minimum_lot_width_ft</td><td>60</td></tr>
+</table>
+
+<h3>multi_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>non-standard</td><td>minimum_setback_ft</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>minimum_built_to_line</td><td>NA</td></tr>
+</table>
+
+<h3>pervious_standard</h3>
+<table>
+  <tr><th>sub-field</th><th>Field</th><th>Value</th></tr>
+  <tr><td>standard</td><td>open_space_percentage</td><td>NA</td></tr>
+  <tr><td>standard</td><td>private_open_space_percentage</td><td>NA</td></tr>
+  <tr><td>standard</td><td>min_landscaped_space_percentage</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>minimum_usable_open_space_sq_ft</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>minimum_common_open_space_percent</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>minimum_private_open_space_percent</td><td>NA</td></tr>
+  <tr><td>non-standard</td><td>minimum_landscaped_space_percentage</td><td>NA</td></tr>
+</table>
+
+<h3>assorted – non-standard</h3>
+<table>
+  <tr><th>Field</th><th>Value</th></tr>
+  <tr><td>daylight_plane_ft</td><td>Side Yard Daylight Plane excludes street side yards: (Initial height: 10 feet at interior side lot line, Angles: 45, If the site is in a special flood hazard area and is entitled to an increase in the maximum height, the heights for the daylight planes shall be adjusted by the same amount), Rear Yard Daylight Plane: (Initial height: 16 feet at rear setback line, Angle: 60, If the site is in a special flood hazard area and is entitled to an increase in the maximum height, the heights for the daylight planes shall be adjusted by the same amount)</td></tr>
+  <tr><td>maximum_floor_area_sq_ft</td><td>NA</td></tr>
+  <tr><td>maximum_house_size_sq_ft</td><td>6000, The gross floor area of attached garages are included in the calculation of maximum house size, If there is no garage attached to the house, then the square footage of one detached covered parking space shall be included in the calculation</td></tr>
+  <tr><td>additional_floor_area_sq_ft</td><td>NA</td></tr>
+  <tr><td>maximum_weighted_residential_unit_sq_ft</td><td>NA</td></tr>
+</table>
+
+<!-- PARCEL -->
+<h2>Parcel (zoneDetailParcels)</h2>
+<table>
+  <tr><th>Field</th><th>Value</th></tr>
+  <tr><td class="label">apn</td><td>12424051</td></tr>
+  <tr><td class="label">address</td><td>1590 Madrono AV</td></tr>
+  <tr><td class="label">lat</td><td>37.432407733295996</td></tr>
+  <tr><td class="label">lng</td><td>-122.15218469089903</td></tr>
+  <tr><td class="label">area</td><td>718.42</td></tr>
+  <tr><td class="label">area_unit</td><td>sq.yds</td></tr>
+  <tr><td class="label">land_use</td><td>null</td></tr>
+  <tr><td class="label">owner_info.owner_name</td><td>NA</td></tr>
+  <tr><td class="label">owner_info.owner_address</td><td>NA</td></tr>
+</table>
+
+<div class="source">Source: Zoneomics API · conditionalControls, zoneDetail, zoneDetailParcels · Last updated: 2026-03-16 · City ID: 295</div>
+</body>
+</html>

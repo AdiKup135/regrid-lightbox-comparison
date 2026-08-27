@@ -1079,33 +1079,78 @@ function extractLightboxZoning(data: unknown, zoningApiData?: { zonings?: Array<
   };
 }
 
-function findElevInObj(obj: unknown, path: string): { highest?: number; lowest?: number; path: string } | null {
-  if (obj == null || typeof obj !== 'object') return null;
-  const o = obj as Record<string, unknown>;
-  const h = typeof o.highest_parcel_elevation === 'number' ? o.highest_parcel_elevation : undefined;
-  const l = typeof o.lowest_parcel_elevation === 'number' ? o.lowest_parcel_elevation : undefined;
-  if (h != null || l != null) return { highest: h, lowest: l, path };
-  return null;
+/** Map Zoneomics zoneDetail or conditionalControls API response to ZoningFields for comparison with Lightbox. */
+function extractZoneomicsZoning(zoneDetailOrConditionalControls: unknown): ZoningFields | null {
+  if (!zoneDetailOrConditionalControls || typeof zoneDetailOrConditionalControls !== 'object') return null;
+  const d = zoneDetailOrConditionalControls as Record<string, unknown>;
+  const data = d.data as Record<string, unknown> | undefined;
+  const zoneDetails = data?.zone_details as Record<string, unknown> | undefined;
+  const code = typeof zoneDetails?.zone_code === 'string' ? zoneDetails.zone_code : undefined;
+  const description = typeof zoneDetails?.zone_name === 'string' ? zoneDetails.zone_name : undefined;
+  const type = typeof zoneDetails?.zone_type === 'string' ? zoneDetails.zone_type : undefined;
+  const subtype = typeof zoneDetails?.zone_sub_type === 'string' ? zoneDetails.zone_sub_type : undefined;
+  const zoneGuide = typeof zoneDetails?.zone_guide === 'string' ? zoneDetails.zone_guide : undefined;
+  const link = typeof zoneDetails?.link === 'string' ? zoneDetails.link : undefined;
+  let minFrontSetbackFt: number | null = null;
+  let minRearSetbackFt: number | null = null;
+  let minSideSetbackFt: number | null = null;
+  let maxFar: number | null = null;
+  let maxBuildingHeightFt: number | null = null;
+  let minLotAreaSqFt: number | null = null;
+  const controls = data?.controls as Record<string, { type?: string; value?: unknown; best_case_value?: number; worst_case_value?: number }> | undefined;
+  if (controls && typeof controls === 'object') {
+    const numFrom = (v: unknown): number | null => {
+      if (typeof v === 'number' && !Number.isNaN(v)) return v;
+      if (typeof v === 'string') { const n = parseFloat(v); return !Number.isNaN(n) ? n : null; }
+      return null;
+    };
+    const takeNum = (o: { value?: unknown; best_case_value?: number } | undefined): number | null =>
+      o?.value != null ? numFrom(o.value) : (typeof o?.best_case_value === 'number' ? o.best_case_value : null);
+    if (controls.min_front_yard_ft != null) minFrontSetbackFt = takeNum(controls.min_front_yard_ft as { value?: unknown; best_case_value?: number });
+    if (controls.min_rear_yard_ft != null) minRearSetbackFt = takeNum(controls.min_rear_yard_ft as { value?: unknown; best_case_value?: number });
+    if (controls.min_side_yard_ft != null) minSideSetbackFt = takeNum(controls.min_side_yard_ft as { value?: unknown; best_case_value?: number });
+    if (controls.max_far != null) maxFar = takeNum(controls.max_far as { value?: unknown; best_case_value?: number });
+    if (controls.max_building_height_ft != null) maxBuildingHeightFt = takeNum(controls.max_building_height_ft as { value?: unknown; best_case_value?: number });
+    if (controls.min_lot_area_sq_ft != null) minLotAreaSqFt = takeNum(controls.min_lot_area_sq_ft as { value?: unknown; best_case_value?: number });
+  }
+  const hasAny = code ?? description ?? type ?? subtype ?? zoneGuide ?? link ?? minFrontSetbackFt ?? minRearSetbackFt ?? minSideSetbackFt ?? maxFar ?? maxBuildingHeightFt ?? minLotAreaSqFt;
+  if (!hasAny) return null;
+  return {
+    jurisdiction: undefined,
+    zoningCode: code,
+    zoningDescription: description,
+    zoningType: type,
+    zoningSubtype: subtype,
+    minFrontSetbackFt,
+    minRearSetbackFt,
+    minSideSetbackFt,
+    maxFar,
+    maxBuildingHeightFt,
+    minLotAreaSqFt,
+    minOpenSpacePct: null,
+    minLandscapedSpacePct: null,
+    maxCoveragePct: null,
+    maxImperviousCoveragePct: null,
+    maxDensityDuPerAcre: null,
+    minLotWidthFt: null,
+    zoningObjective: zoneGuide,
+    zoningCodeLink: link,
+    permittedLandUses: undefined,
+    permittedLandUsesAsOfRight: undefined,
+    permittedLandUsesConditional: undefined,
+    zoningDataDate: undefined,
+    landUse: undefined,
+    landUseCode: undefined,
+    landUseDescription: undefined,
+    landUseNormalizedCode: undefined,
+    landUseNormalizedDescription: undefined,
+    landUseCategoryDescription: undefined,
+  };
 }
+
 function extractRegridReviewFields(data: RegridParcel | null): { apn?: string; lotArea?: string; fips?: string; parcelId?: string; totalFootprint?: number; maxHeight?: number; minGroundElev?: number; maxGroundElev?: number; slopePct?: number; transmissionLineDistanceM?: number } | null {
   if (!data) return null;
   const d = data as Record<string, unknown>;
-  // #region agent log
-  (() => {
-    const found: Array<{ path: string; highest?: number; lowest?: number }> = [];
-    const check = (o: unknown, p: string) => { const r = findElevInObj(o, p); if (r) found.push({ path: r.path, highest: r.highest, lowest: r.lowest }); };
-    const parcels = d.parcels as { features?: Array<{ properties?: Record<string, unknown> }> } | undefined;
-    const f0 = parcels?.features?.[0];
-    check(f0?.properties, 'parcels.features[0].properties');
-    check((f0?.properties as Record<string, unknown>)?.fields, 'parcels.features[0].properties.fields');
-    const parcel = d.parcel as { properties?: Record<string, unknown> } | undefined;
-    check(parcel?.properties, 'parcel.properties');
-    check((parcel?.properties as Record<string, unknown>)?.fields, 'parcel.properties.fields');
-    check(d.properties, 'data.properties');
-    check((d.properties as Record<string, unknown>)?.fields, 'data.properties.fields');
-    fetch('http://127.0.0.1:7243/ingest/4a8aba0b-6ab5-4d83-94b8-8f39b144cc00',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'App.tsx:extractRegridScan',message:'Scan for elevation',data:{found},timestamp:Date.now(),hypothesisId:'E2'})}).catch(()=>{});
-  })();
-  // #endregion
   const parcels = d.parcels as { features?: Array<{ properties?: Record<string, unknown> }> } | undefined;
   const parcelCentroids = d.parcel_centroids as { features?: Array<{ properties?: Record<string, unknown> }> } | undefined;
   const features = parcels?.features ?? parcelCentroids?.features ?? (d.features as Array<{ properties?: Record<string, unknown> }>);
@@ -1113,9 +1158,6 @@ function extractRegridReviewFields(data: RegridParcel | null): { apn?: string; l
   const props = features?.[0]?.properties ?? parcel?.properties ?? (d.properties as Record<string, unknown>);
   if (!props) return null;
   const fields = props.fields as Record<string, unknown> | undefined;
-  // #region agent log
-  fetch('http://127.0.0.1:7243/ingest/4a8aba0b-6ab5-4d83-94b8-8f39b144cc00',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'App.tsx:extractRegridReviewFields',message:'Regrid parcel elevation lookup',data:{propsKeys:props?Object.keys(props):[],fieldsKeys:fields?Object.keys(fields):[],highestInProps:props?.highest_parcel_elevation,lowestInProps:props?.lowest_parcel_elevation,highestInFields:fields?.highest_parcel_elevation,lowestInFields:fields?.lowest_parcel_elevation,topLevelKeys:d?Object.keys(d):[]},timestamp:Date.now(),hypothesisId:'E1'})}).catch(()=>{});
-  // #endregion
   const apn = (typeof fields?.parcelnumb === 'string' ? fields.parcelnumb : undefined)
     ?? (typeof fields?.parcelnumb_no_formatting === 'string' ? fields.parcelnumb_no_formatting : undefined)
     ?? (typeof props.parcelnumb === 'string' ? props.parcelnumb : undefined);
@@ -1603,6 +1645,284 @@ function RegridPanel({ data, setData, lightboxData, lightboxStructuresData, ligh
   );
 }
 
+type ZoneomicsData = {
+  conditionalControls?: unknown;
+  zoneDetail?: unknown;
+  /** zoneDetail with output_fields=parcels (parcel boundary only; point-based, no radius). */
+  zoneDetailParcels?: unknown;
+};
+
+/** Parse Google Maps paste format: "37.433394125165, -122.15103561670455" → { lat, lng }. */
+function parseGoogleLatLng(raw: string): { lat: string; lng: string } | null {
+  const m = raw.trim().match(/^(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)$/);
+  if (!m) return null;
+  return { lat: m[1], lng: m[2] };
+}
+
+function ZoneomicsPanel({ data, setData, lightboxData, lightboxZoningData, viewState, setViewState, transmissionLinesGeoJson, showTransmissionLines, fireSafetyGeoJson }: {
+  data: ZoneomicsData | null; setData: (d: ZoneomicsData | null) => void;
+  lightboxData: unknown; lightboxZoningData: { zonings?: Array<Record<string, unknown>> } | null;
+  viewState: ViewState; setViewState: (vs: ViewState | ((prev: ViewState) => ViewState)) => void;
+  transmissionLinesGeoJson: GeoJsonFC | null; showTransmissionLines: boolean;
+  fireSafetyGeoJson: (GeoJsonFC & { nearestDistanceM?: number | null }) | null;
+}) {
+  const [address, setAddress] = useState('');
+  const [latStr, setLatStr] = useState('');
+  const [lngStr, setLngStr] = useState('');
+  const [dataLoading, setDataLoading] = useState(false);
+  const [dataError, setDataError] = useState<string | null>(null);
+  const [dataTab, setDataTab] = useState<'raw' | 'review'>('raw');
+
+  const onLatLngChange = (which: 'lat' | 'lng', value: string) => {
+    const parsed = parseGoogleLatLng(value);
+    if (parsed) {
+      setLatStr(parsed.lat);
+      setLngStr(parsed.lng);
+      return;
+    }
+    if (which === 'lat') setLatStr(value);
+    else setLngStr(value);
+  };
+
+  /** Parcel boundary from zoneDetail parcels response (boundary = lat/lng pairs). Only parcel polygons are shown; no lat/lng point. */
+  const parcelBoundaryGeoJson = useMemo((): GeoJsonFC | null => {
+    const zdParcels = data?.zoneDetailParcels as { data?: { parcels?: Array<{ boundary?: string | number[][] }> } } | undefined;
+    const parcels = zdParcels?.data?.parcels;
+    if (!Array.isArray(parcels) || !parcels.length) return null;
+    const features: GeoJsonFC['features'] = [];
+    const isValidCoord = (c: number) => Number.isFinite(c) && Math.abs(c) <= 180;
+    for (const parcel of parcels) {
+      const boundary = parcel?.boundary;
+      if (boundary == null) continue;
+      let ring: number[][];
+      if (Array.isArray(boundary)) {
+        ring = boundary
+          .map((p) => Array.isArray(p) && p.length >= 2 ? [Number(p[0]), Number(p[1])] : null)
+          .filter((p): p is number[] => p != null && isValidCoord(p[0]) && isValidCoord(p[1]));
+        if (ring.length < 3) continue;
+        if (ring[0][0] !== ring[ring.length - 1][0] || ring[0][1] !== ring[ring.length - 1][1]) ring.push([ring[0][0], ring[0][1]]);
+      } else if (typeof boundary === 'string') {
+        // WKT (e.g. MULTIPOLYGON(((-119.29 34.28,...))) — extract all "x y" pairs (GeoJSON order: lon, lat)
+        const coordRegex = /(-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s+(-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)/gi;
+        const raw: number[][] = [];
+        let m;
+        while ((m = coordRegex.exec(boundary)) !== null) raw.push([parseFloat(m[1]), parseFloat(m[2])]);
+        ring = raw.filter((p) => isValidCoord(p[0]) && isValidCoord(p[1]));
+        if (ring.length < 3) continue;
+        if (ring[0][0] !== ring[ring.length - 1][0] || ring[0][1] !== ring[ring.length - 1][1]) ring.push([ring[0][0], ring[0][1]]);
+      } else continue;
+      if (ring.length < 4) continue; // GeoJSON Polygon needs closed ring (min 4 points)
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'Polygon', coordinates: [ring] },
+        properties: {},
+      } as GeoJsonFC['features'][0]);
+    }
+    if (!features.length) return null;
+    // Plain object for Mapbox (avoids "not a valid GeoJSON object" from react-map-gl)
+    const fc: GeoJsonFC = { type: 'FeatureCollection', features };
+    return fc;
+  }, [data?.zoneDetailParcels]);
+
+  /** Map shows only parcel boundaries, never a point. */
+  const mapGeoJson = parcelBoundaryGeoJson;
+
+  const onLoad = async () => {
+    const addr = address.trim();
+    const latNum = parseFloat(latStr.trim());
+    const lngNum = parseFloat(lngStr.trim());
+    const useLatLng = !Number.isNaN(latNum) && !Number.isNaN(lngNum);
+    if (!useLatLng && !addr) {
+      setDataError('Enter an address or both lat and lng.');
+      return;
+    }
+    setData(null);
+    setDataError(null);
+    setDataLoading(true);
+    try {
+      let ccRes: Response;
+      let zdRes: Response;
+      if (useLatLng) {
+        [ccRes, zdRes] = await Promise.all([
+          fetch(`/api/zoneomics/v2/conditionalControls?lat=${latNum}&lng=${lngNum}`),
+          fetch(`/api/zoneomics/v2/zoneDetail?lat=${latNum}&lng=${lngNum}&output_fields=controls,plu&replace_STF=True`),
+        ]);
+      } else {
+        const addressParam = encodeURIComponent(addr);
+        [ccRes, zdRes] = await Promise.all([
+          fetch(`/api/zoneomics/v2/conditionalControls?address=${addressParam}`),
+          fetch(`/api/zoneomics/v2/zoneDetail?address=${addressParam}&output_fields=controls,plu&replace_STF=True`),
+        ]);
+      }
+      const conditionalControls = ccRes.ok ? await ccRes.json() : undefined;
+      const zoneDetail = zdRes.ok ? await zdRes.json() : undefined;
+      const ccOk = ccRes.ok && conditionalControls?.success !== false;
+      const zdOk = zdRes.ok && zoneDetail?.success !== false;
+      let zoneDetailParcels: typeof zoneDetail = undefined;
+      const rawLatFromApi = (ccOk && conditionalControls?.data != null) ? (conditionalControls as { data?: { lat?: number | string } }).data?.lat : (zdOk && zoneDetail?.data != null) ? (zoneDetail as { data?: { lat?: number | string } }).data?.lat : undefined;
+      const rawLngFromApi = (ccOk && conditionalControls?.data != null) ? (conditionalControls as { data?: { lng?: number | string } }).data?.lng : (zdOk && zoneDetail?.data != null) ? (zoneDetail as { data?: { lng?: number | string } }).data?.lng : undefined;
+      const lat = useLatLng ? latNum : (rawLatFromApi != null ? (typeof rawLatFromApi === 'number' ? rawLatFromApi : parseFloat(String(rawLatFromApi))) : undefined);
+      const lng = useLatLng ? lngNum : (rawLngFromApi != null ? (typeof rawLngFromApi === 'number' ? rawLngFromApi : parseFloat(String(rawLngFromApi))) : undefined);
+      if (typeof lat === 'number' && typeof lng === 'number') {
+        const zdParcelsRes = await fetch(`/api/zoneomics/v2/zoneDetail?lat=${lat}&lng=${lng}&output_fields=parcels`);
+        if (zdParcelsRes.ok) {
+          const json = await zdParcelsRes.json();
+          if (json?.success !== false) zoneDetailParcels = json;
+        }
+      }
+      const zdParcelsOk = zoneDetailParcels != null;
+      if (!ccOk && !zdOk) {
+        const errBody = ccRes.ok ? await zdRes.json().catch(() => ({})) : await ccRes.json().catch(() => ({}));
+        setDataError(errBody?.error ?? errBody?.message ?? (errBody?.detail ? `${errBody.error || 'Error'}: ${errBody.detail}` : null) ?? `Zoneomics: ${ccRes.status}/${zdRes.status}`);
+      } else {
+        setData({
+          conditionalControls: ccOk ? conditionalControls : undefined,
+          zoneDetail: zdOk ? zoneDetail : undefined,
+          zoneDetailParcels: zdParcelsOk ? zoneDetailParcels : undefined,
+        });
+        const rawCenterLat = lat ?? (zdParcelsOk && zoneDetailParcels?.data != null) ? (zoneDetailParcels as { data?: { lat?: number | string } }).data?.lat : undefined;
+        const rawCenterLng = lng ?? (zdParcelsOk && zoneDetailParcels?.data != null) ? (zoneDetailParcels as { data?: { lng?: number | string } }).data?.lng : undefined;
+        const centerLat = typeof rawCenterLat === 'number' ? rawCenterLat : (rawCenterLat != null ? parseFloat(String(rawCenterLat)) : undefined);
+        const centerLng = typeof rawCenterLng === 'number' ? rawCenterLng : (rawCenterLng != null ? parseFloat(String(rawCenterLng)) : undefined);
+        if (typeof centerLat === 'number' && typeof centerLng === 'number') {
+          setViewState((s) => ({ ...s, latitude: centerLat, longitude: centerLng }));
+        }
+      }
+    } catch (err) {
+      setDataError(String(err));
+    } finally {
+      setDataLoading(false);
+    }
+  };
+
+  const zoneomicsZoning = useMemo(() => extractZoneomicsZoning(data?.conditionalControls ?? data?.zoneDetail), [data?.conditionalControls, data?.zoneDetail]);
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, overflow: 'hidden' }}>
+      <div style={{ position: 'sticky', top: 0, zIndex: 10, padding: '0.75rem 1rem', background: '#fafafa', borderBottom: '1px solid #eee' }}>
+        <h2 style={{ margin: '0 0 0.5rem 0', fontSize: '1rem' }}>Zoneomics</h2>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <input
+            type="text"
+            placeholder="Lat (or paste lat, lng)"
+            value={latStr}
+            onChange={(e) => onLatLngChange('lat', e.target.value)}
+            style={{ width: '9rem', padding: '0.5rem', border: '1px solid #ccc', borderRadius: '4px' }}
+          />
+          <input
+            type="text"
+            placeholder="Lng"
+            value={lngStr}
+            onChange={(e) => onLatLngChange('lng', e.target.value)}
+            style={{ width: '9rem', padding: '0.5rem', border: '1px solid #ccc', borderRadius: '4px' }}
+          />
+          <input
+            type="text"
+            placeholder="Or address"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            style={{ flex: 1, minWidth: '10rem', padding: '0.5rem', border: '1px solid #ccc', borderRadius: '4px' }}
+          />
+          <button
+            type="button"
+            onClick={onLoad}
+            disabled={dataLoading}
+            style={{
+              padding: '0.5rem 1rem', background: !dataLoading ? '#007bff' : '#ccc',
+              color: 'white', border: 'none', borderRadius: '4px', cursor: !dataLoading ? 'pointer' : 'not-allowed', fontSize: '0.9rem',
+            }}
+          >
+            {dataLoading ? 'Loading…' : 'Load'}
+          </button>
+        </div>
+        {dataError && <div style={{ marginTop: '4px', fontSize: '0.8rem', color: '#721c24' }}>{dataError}</div>}
+      </div>
+      <Split direction="vertical" sizes={[50, 50]} minSize={120} gutterSize={8} style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }} className="split-vertical">
+        <div style={{ position: 'relative', minHeight: 200, flex: 1, background: '#e8e8e8' }}>
+          <MapPanel id="zoneomics-map" geoJson={mapGeoJson} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} viewState={viewState} onViewStateChange={setViewState} />
+          {data && !mapGeoJson?.features?.length && (
+            <div style={{ position: 'absolute', bottom: 8, left: 8, right: 8, fontSize: '0.75rem', color: '#555', background: 'rgba(255,255,255,0.9)', padding: '6px 8px', borderRadius: 4 }}>
+              Parcel boundaries are not available for this location. The Zoneomics parcels endpoint may require a different API plan.
+            </div>
+          )}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: 120, overflow: 'hidden' }}>
+          <div style={{ display: 'flex', gap: 0, borderBottom: '1px solid #ddd', background: '#eee', alignItems: 'center' }}>
+            <button
+              type="button"
+              onClick={() => setDataTab('raw')}
+              style={{
+                padding: '0.5rem 1rem', fontSize: '0.85rem', border: 'none', background: dataTab === 'raw' ? '#fafafa' : 'transparent',
+                cursor: 'pointer', borderBottom: dataTab === 'raw' ? '2px solid #007bff' : '2px solid transparent',
+              }}
+            >
+              Raw
+            </button>
+            <button
+              type="button"
+              onClick={() => setDataTab('review')}
+              style={{
+                padding: '0.5rem 1rem', fontSize: '0.85rem', border: 'none', background: dataTab === 'review' ? '#fafafa' : 'transparent',
+                cursor: 'pointer', borderBottom: dataTab === 'review' ? '2px solid #007bff' : '2px solid transparent',
+              }}
+            >
+              Review Data
+            </button>
+            <button
+              type="button"
+              onClick={() => data && downloadJson(data, 'zoneomics-raw.json')}
+              disabled={!data}
+              style={{
+                marginLeft: 'auto',
+                marginRight: '0.5rem',
+                padding: '0.35rem 0.75rem',
+                fontSize: '0.8rem',
+                border: '1px solid #ccc',
+                borderRadius: '4px',
+                background: data ? '#fff' : '#eee',
+                cursor: data ? 'pointer' : 'not-allowed',
+                color: data ? '#333' : '#999',
+              }}
+            >
+              Download
+            </button>
+          </div>
+          <div style={{ padding: '1rem', overflow: 'auto', background: '#fafafa', flex: 1 }}>
+            {dataLoading ? <p>Loading…</p> : data ? (
+              dataTab === 'raw' ? (
+                <pre style={{ fontSize: '0.75rem', whiteSpace: 'pre-wrap', wordBreak: 'break-word', margin: 0 }}>{JSON.stringify(data, null, 2)}</pre>
+              ) : (
+                <div>
+                  {((data.conditionalControls as { data?: { controls?: unknown } })?.data?.controls != null || (data.zoneDetail as { data?: { controls?: unknown } })?.data?.controls != null) && (
+                    <>
+                      <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#333', marginBottom: '0.35rem' }}>Controls</div>
+                      <pre style={{ fontSize: '0.75rem', whiteSpace: 'pre-wrap', wordBreak: 'break-word', margin: 0, background: '#fff', padding: '0.5rem', border: '1px solid #eee', borderRadius: '4px' }}>{JSON.stringify((data.conditionalControls as { data?: { controls?: unknown } })?.data?.controls ?? (data.zoneDetail as { data?: { controls?: unknown } })?.data?.controls ?? {}, null, 2)}</pre>
+                    </>
+                  )}
+                  {((data.conditionalControls as { data?: { zone_details?: unknown } })?.data?.zone_details != null || (data.zoneDetail as { data?: { zone_details?: unknown } })?.data?.zone_details != null) && (
+                    <>
+                      <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#333', marginBottom: '0.35rem' }}>Zone details</div>
+                      <pre style={{ fontSize: '0.75rem', whiteSpace: 'pre-wrap', wordBreak: 'break-word', margin: 0, background: '#fff', padding: '0.5rem', border: '1px solid #eee', borderRadius: '4px' }}>{JSON.stringify((data.conditionalControls as { data?: { zone_details?: unknown } })?.data?.zone_details ?? (data.zoneDetail as { data?: { zone_details?: unknown } })?.data?.zone_details ?? {}, null, 2)}</pre>
+                    </>
+                  )}
+                  {zoneomicsZoning && (
+                    <ZoningReviewSection zoning={zoneomicsZoning} compareWith={extractLightboxZoning(lightboxData, lightboxZoningData)} />
+                  )}
+                  {!(data.conditionalControls as { data?: { controls?: unknown } })?.data?.controls && !(data.zoneDetail as { data?: { controls?: unknown } })?.data?.controls && !(data.conditionalControls as { data?: { zone_details?: unknown } })?.data?.zone_details && !(data.zoneDetail as { data?: { zone_details?: unknown } })?.data?.zone_details && !zoneomicsZoning && (
+                    <p style={{ margin: 0, color: '#666' }}>No controls or zone details in response.</p>
+                  )}
+                </div>
+              )
+            ) : (
+              <p style={{ margin: 0 }}>Enter lat/lng or an address, then Load.</p>
+            )}
+          </div>
+        </div>
+      </Split>
+    </div>
+  );
+}
+
 function LightboxPanel({ data, setData, regridData, structuresData, setStructuresData, femaData, setFemaData, zoningData, setZoningData, riskIndexData, setRiskIndexData, wetlandsData, setWetlandsData, viewState, setViewState, transmissionLinesGeoJson, showTransmissionLines, fireSafetyGeoJson }: {
   data: unknown; setData: (d: unknown) => void; regridData: RegridParcel | null;
   structuresData: LightboxStructuresData; setStructuresData: (d: LightboxStructuresData) => void;
@@ -2079,8 +2399,12 @@ function LightboxPanel({ data, setData, regridData, structuresData, setStructure
 
 const DEFAULT_VIEW: ViewState = { longitude: -95, latitude: 40, zoom: 15 };
 
+type LeftPanelProvider = 'regrid' | 'zoneomics';
+
 export default function App() {
+  const [leftPanelProvider, setLeftPanelProvider] = useState<LeftPanelProvider>('regrid');
   const [regridData, setRegridData] = useState<RegridParcel | null>(null);
+  const [zoneomicsData, setZoneomicsData] = useState<ZoneomicsData | null>(null);
   const [lightboxData, setLightboxData] = useState<unknown>(null);
   const [lightboxStructuresData, setLightboxStructuresData] = useState<LightboxStructuresData>(null);
   const [lightboxFemaData, setLightboxFemaData] = useState<{ nfhls?: Array<Record<string, unknown>> } | null>(null);
@@ -2130,6 +2454,29 @@ export default function App() {
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <header style={{ padding: '1rem', borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <h1 style={{ margin: 0, fontSize: '1.25rem' }}>Regrid vs Lightbox</h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem' }}>
+          <span style={{ fontSize: '0.8rem', color: '#666', fontWeight: 500 }}>Left panel:</span>
+          <button
+            type="button"
+            onClick={() => setLeftPanelProvider('regrid')}
+            style={{
+              padding: '0.35rem 0.75rem', fontSize: '0.85rem', border: '1px solid #ccc', borderRadius: '4px',
+              background: leftPanelProvider === 'regrid' ? '#e7f1ff' : '#fff', cursor: 'pointer', fontWeight: leftPanelProvider === 'regrid' ? 600 : 400,
+            }}
+          >
+            Regrid
+          </button>
+          <button
+            type="button"
+            onClick={() => setLeftPanelProvider('zoneomics')}
+            style={{
+              padding: '0.35rem 0.75rem', fontSize: '0.85rem', border: '1px solid #ccc', borderRadius: '4px',
+              background: leftPanelProvider === 'zoneomics' ? '#e7f1ff' : '#fff', cursor: 'pointer', fontWeight: leftPanelProvider === 'zoneomics' ? 600 : 400,
+            }}
+          >
+            Zoneomics
+          </button>
+        </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginLeft: 'auto' }}>
           <span style={{ fontSize: '0.8rem', color: '#666', fontWeight: 500 }}>Map layers</span>
           <label style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.9rem', cursor: 'pointer' }}>
@@ -2139,7 +2486,13 @@ export default function App() {
         </div>
       </header>
       <Split sizes={[50, 50]} minSize={200} style={{ flex: 1, display: 'flex', minHeight: 0 }} className="split-container">
-        <RegridPanel data={regridData} setData={setRegridData} lightboxData={lightboxData} lightboxStructuresData={lightboxStructuresData} lightboxFemaData={lightboxFemaData} lightboxZoningData={lightboxZoningData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
+        <div style={{ minWidth: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
+          {leftPanelProvider === 'regrid' ? (
+            <RegridPanel data={regridData} setData={setRegridData} lightboxData={lightboxData} lightboxStructuresData={lightboxStructuresData} lightboxFemaData={lightboxFemaData} lightboxZoningData={lightboxZoningData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
+          ) : (
+            <ZoneomicsPanel data={zoneomicsData} setData={setZoneomicsData} lightboxData={lightboxData} lightboxZoningData={lightboxZoningData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
+          )}
+        </div>
         <LightboxPanel data={lightboxData} setData={setLightboxData} regridData={regridData} structuresData={lightboxStructuresData} setStructuresData={setLightboxStructuresData} femaData={lightboxFemaData} setFemaData={setLightboxFemaData} zoningData={lightboxZoningData} setZoningData={setLightboxZoningData} riskIndexData={lightboxRiskIndexData} setRiskIndexData={setLightboxRiskIndexData} wetlandsData={lightboxWetlandsData} setWetlandsData={setLightboxWetlandsData} viewState={viewState} setViewState={setViewState} transmissionLinesGeoJson={transmissionLinesGeoJson} showTransmissionLines={showTransmissionLines} fireSafetyGeoJson={fireSafetyGeoJson} />
       </Split>
     </div>
