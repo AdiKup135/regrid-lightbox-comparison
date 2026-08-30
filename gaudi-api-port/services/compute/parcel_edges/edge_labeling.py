@@ -923,13 +923,24 @@ def label_edges(data: EdgeLabelingInput) -> EdgeLabelingResult:
   electable = front_rule == FRONT_RULE_OWNER_ELECTED and len(street_edges) > 1
   tags: Dict[int, Tuple[str, str, str, List[str]]] = {}
 
+  def ring_adjacent(a: _RawEdge, b: _RawEdge) -> bool:
+    """Do two edges meet at a corner? Edges tile the ring and corner points are
+    pinned to shared samples, so touching edges share an endpoint index."""
+    return bool({a.sample_idx[0], a.sample_idx[-1]} & {b.sample_idx[0], b.sample_idx[-1]})
+
   if front is not None:
     tags[id(front)] = ("front", basis, confidence, ["owner_electable"] if electable else [])
   for e in street_edges:
     if e is front:
       continue
     dot = (e.normal[0] * front.normal[0] + e.normal[1] * front.normal[1]) if front else 0.0
-    if dot < -0.5:
+    # A through lot has streets on OPPOSITE sides, so opposed normals are
+    # necessary but not sufficient: a diagonal or curved frontage meeting a
+    # side street at an obtuse corner also opposes (the merged front's
+    # aggregate normal can sit ~135° from the side street's). Street edges
+    # that MEET are a corner lot; a true through pair never touches — so
+    # adjacency breaks the tie.
+    if dot < -0.5 and front is not None and not ring_adjacent(e, front):
       extra = ["owner_electable"] if electable else []
       tags[id(e)] = ("rear", "geometry", "medium", ["through_lot"] + extra)
       flag("through_lot")

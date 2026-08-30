@@ -805,11 +805,24 @@ export function labelEdges(input: EdgeLabelingInput): EdgeLabelingResult {
   const electable = frontRule === 'owner_elected' && streetEdges.length > 1;
   const tagOf = new Map<RawEdge, { tag: LotEdge['tag']; basis: LotEdge['basis']; confidence: LotEdge['confidence']; flags: string[] }>();
 
+  // Do two edges meet at a corner? Edges tile the ring and corner points are
+  // pinned to shared samples, so touching edges share an endpoint index.
+  const ringAdjacent = (a: RawEdge, b: RawEdge): boolean => {
+    const endsB = new Set([b.sampleIdx[0], b.sampleIdx[b.sampleIdx.length - 1]]);
+    return endsB.has(a.sampleIdx[0]) || endsB.has(a.sampleIdx[a.sampleIdx.length - 1]);
+  };
+
   if (front) tagOf.set(front, { tag: 'front', basis, confidence, flags: electable ? ['owner_electable'] : [] });
   for (const e of streetEdges) {
     if (e === front) continue;
     const dot = front ? e.normal[0] * front.normal[0] + e.normal[1] * front.normal[1] : 0;
-    if (dot < -0.5) {
+    // A through lot has streets on OPPOSITE sides, so opposed normals are
+    // necessary but not sufficient: a diagonal or curved frontage meeting a
+    // side street at an obtuse corner also opposes (the merged front's
+    // aggregate normal can sit ~135° from the side street's). Street edges
+    // that MEET are a corner lot; a true through pair never touches — so
+    // adjacency breaks the tie.
+    if (dot < -0.5 && front && !ringAdjacent(e, front)) {
       tagOf.set(e, { tag: 'rear', basis: 'geometry', confidence: 'medium', flags: ['through_lot', ...(electable ? ['owner_electable'] : [])] });
       globalFlags.add('through_lot');
     } else {

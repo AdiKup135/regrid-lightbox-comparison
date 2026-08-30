@@ -338,6 +338,37 @@ def test_through_lot_tags_the_opposite_frontage_rear() -> None:
   assert rear.abuts.kind == "street"
 
 
+def test_obtuse_corner_lot_is_not_a_through_lot() -> None:
+  """Adjacent street frontages meeting at an obtuse corner stay a corner lot.
+
+  Regression (2026-08-30, 1200 Birch Ave San Mateo): a diagonal frontage's
+  aggregate normal sits ~130° from the side street's, so the normals-only test
+  read the pair as opposite sides and tagged the side street rear/through_lot.
+  Street edges that MEET at a corner are a corner lot; rear must fall to the
+  shared edge most opposite the front instead.
+
+        D (-50, 80)
+         \\            <- diagonal street frontage D-C
+    street|  \\
+     D-A  |    C (50, 0)
+          |    | neighbour E-2
+        A +----+ B
+          neighbour S-2 below A-B
+  """
+  subject = _parcel("SUBJ", "100 Diag St Sunnyvale CA",
+                    [(-50, -60), (50, -60), (50, 0), (-50, 80)])
+  south = _parcel("S-2", "80 Main St Sunnyvale CA", _rect(-50, -180, 50, -60))
+  east = _parcel("E-2", "110 Oak Ave Sunnyvale CA", _rect(50, -60, 150, 0))
+  result = _label([south, east], subject=subject)
+
+  assert "through_lot" not in result.flags
+  assert not [e for e in _by_tag(result, "rear") if e.abuts.kind == "street"]
+  street_tags = sorted(e.tag for e in result.edges if e.abuts.kind == "street")
+  assert street_tags == ["front", "street_side"]
+  rear = _by_tag(result, "rear")
+  assert rear and rear[0].abuts.kind == "parcels"
+
+
 # --- landlocked lot -----------------------------------------------------------
 
 def test_landlocked_lot_is_flagged_and_still_returns_edges() -> None:
