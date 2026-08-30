@@ -1,5 +1,9 @@
 # Regrid vs Lightbox Data Provider Comparison
 
+> **This README describes the original comparison POC only.** The repo has since
+> grown the edge-labeling pipeline and its data providers — see
+> [ARCHITECTURE.md](ARCHITECTURE.md) for the current map.
+
 Compare parcel data from Regrid and Lightbox side-by-side on a split-screen map.
 
 ## Structure

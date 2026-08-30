@@ -2459,7 +2459,7 @@ export default function App() {
         <div style={{ display: 'flex', border: '1px solid #ccc', borderRadius: 6, overflow: 'hidden' }}>
           {(['compare', 'edges'] as const).map((m) => (
             <button key={m} onClick={() => setMode(m)} style={{ padding: '0.35rem 0.9rem', border: 'none', cursor: 'pointer', fontSize: '0.85rem', background: mode === m ? '#24312B' : '#fff', color: mode === m ? '#fff' : '#555' }}>
-              {m === 'compare' ? 'Compare' : 'Edges (Zoneomics)'}
+              {m === 'compare' ? 'Compare' : 'Edges'}
             </button>
           ))}
         </div>

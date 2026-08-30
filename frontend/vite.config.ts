@@ -25,6 +25,13 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/zoneomics/, '/'),
       },
+      // Free open-data provider (Flask, gaudi-api-port/app_poc.py).
+      // Rewrite to '' (not '/'): Flask 404s the double slash Express tolerates.
+      '/api/opendata': {
+        target: 'http://localhost:3004',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/opendata/, ''),
+      },
     },
   },
 });

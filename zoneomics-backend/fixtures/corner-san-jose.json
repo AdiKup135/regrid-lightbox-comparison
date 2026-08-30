@@ -1,0 +1,78 @@
+{
+  "fixture_note": "Synthetic corner lot placed in San Jose (city_id 148) so the jurisdiction rule and overrides resolve. Offline \u2014 no API calls.",
+  "geocode": {
+    "lat": 37.33,
+    "lng": -121.9
+  },
+  "subject": {
+    "apn": "FIX-SUBJ",
+    "address": "100 Main St San Jose CA",
+    "lat": 37.33,
+    "lng": -121.9,
+    "area": 0,
+    "area_unit": "sq.yds",
+    "land_use": null,
+    "owner_info": {
+      "owner_name": "NA",
+      "owner_address": "NA"
+    },
+    "boundary": "MULTIPOLYGON(((-121.9001724805106 37.329835421288585, -121.8998275194894 37.329835421288585, -121.8998275194894 37.33016457871141, -121.9001724805106 37.33016457871141, -121.9001724805106 37.329835421288585)))"
+  },
+  "neighbors": [
+    {
+      "apn": "FIX-E",
+      "address": "110 Main St San Jose CA",
+      "lat": 37.33,
+      "lng": -121.89965503897879,
+      "area": 0,
+      "area_unit": "sq.yds",
+      "land_use": null,
+      "owner_info": {
+        "owner_name": "NA",
+        "owner_address": "NA"
+      },
+      "boundary": "MULTIPOLYGON(((-121.8998275194894 37.329835421288585, -121.8994825584682 37.329835421288585, -121.8994825584682 37.33016457871141, -121.8998275194894 37.33016457871141, -121.8998275194894 37.329835421288585)))"
+    },
+    {
+      "apn": "FIX-N",
+      "address": "101 Oak Ave San Jose CA",
+      "lat": 37.330329157422824,
+      "lng": -121.9,
+      "area": 0,
+      "area_unit": "sq.yds",
+      "land_use": null,
+      "owner_info": {
+        "owner_name": "NA",
+        "owner_address": "NA"
+      },
+      "boundary": "MULTIPOLYGON(((-121.9001724805106 37.33016457871141, -121.8998275194894 37.33016457871141, -121.8998275194894 37.330493736134244, -121.9001724805106 37.330493736134244, -121.9001724805106 37.33016457871141)))"
+    },
+    {
+      "apn": "FIX-NE",
+      "address": "111 Oak Ave San Jose CA",
+      "lat": 37.330329157422824,
+      "lng": -121.89965503897879,
+      "area": 0,
+      "area_unit": "sq.yds",
+      "land_use": null,
+      "owner_info": {
+        "owner_name": "NA",
+        "owner_address": "NA"
+      },
+      "boundary": "MULTIPOLYGON(((-121.8998275194894 37.33016457871141, -121.8994825584682 37.33016457871141, -121.8994825584682 37.330493736134244, -121.8998275194894 37.330493736134244, -121.8998275194894 37.33016457871141)))"
+    }
+  ],
+  "meta": {
+    "city_id": 148,
+    "city_name": "San Jose",
+    "last_updated": "fixture"
+  },
+  "zone": {
+    "zone_code": "R-1",
+    "zone_type": "residential"
+  },
+  "callCount": 0,
+  "radius": 0,
+  "discovery": "fixture",
+  "droppedStubs": 0
+}

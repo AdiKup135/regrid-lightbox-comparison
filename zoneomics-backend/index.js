@@ -114,6 +114,55 @@ function cachePut(parcel) {
   if (parcel?.apn && parcel?.boundary) parcelCacheByApn.set(parcel.apn, { parcel, ts: Date.now() });
 }
 
+// ---------------------------------------------------------------------------
+// Call budget: a per-process ceiling on live Zoneomics calls, so a debugging
+// session cannot silently burn the account quota (learned the hard way —
+// 2026-08-30, probing ate the remaining credits and overage is disabled).
+// Set ZONEOMICS_CALL_BUDGET=0 to disable live calls entirely (fixtures only).
+const CALL_BUDGET = process.env.ZONEOMICS_CALL_BUDGET === undefined ? 40 : Number(process.env.ZONEOMICS_CALL_BUDGET);
+let budgetSpent = 0;
+function spendBudget(n = 1) {
+  if (budgetSpent + n > CALL_BUDGET) {
+    const err = new Error(`Zoneomics call budget exhausted (${budgetSpent}/${CALL_BUDGET} this process). Restart the server or raise ZONEOMICS_CALL_BUDGET.`);
+    err.budget = true;
+    throw err;
+  }
+  budgetSpent += n;
+}
+
+/**
+ * Neighbor discovery via bbox (subject extent + marginM), INTERSECT-based.
+ * Verified against the live API (2026-08-30): the bbox query returns every
+ * parcel whose GEOMETRY intersects the box, while the radius query matches
+ * parcel CENTROIDS only — a large bordering parcel whose centroid sits beyond
+ * the radius is silently dropped by radius and caught by bbox. This is why
+ * discovery is bbox-first with the old radius flow kept as a fallback.
+ */
+async function discoverByBbox(subject, marginM, countCall) {
+  const ringM = subject.boundary.match(/\(\(([^()]+)\)/);
+  if (!ringM) return null;
+  const pts = ringM[1].split(',').map((s2) => s2.trim().split(/\s+/).map(Number));
+  const lngs = pts.map((p2) => p2[0]);
+  const lats = pts.map((p2) => p2[1]);
+  const mPerDegLat = 111320;
+  const mPerDegLng = mPerDegLat * Math.cos((subject.lat * Math.PI) / 180);
+  const dLat = marginM / mPerDegLat;
+  const dLng = marginM / mPerDegLng;
+  const r = await zoneomicsFetch('/v2/zoneDetail', {
+    top_left_lat: String(Math.max(...lats) + dLat),
+    top_left_lng: String(Math.min(...lngs) - dLng),
+    bottom_right_lat: String(Math.min(...lats) - dLat),
+    bottom_right_lng: String(Math.max(...lngs) + dLng),
+    output_fields: 'parcels',
+  });
+  countCall();
+  if (!r.ok) return null;
+  const features = r.data?.data?.features ?? [];
+  return features
+    .flatMap((f) => f?.properties?.parcels ?? [])
+    .filter((p2) => p2 && p2.apn && p2.apn !== subject.apn && typeof p2.lat === 'number' && typeof p2.lng === 'number');
+}
+
 /**
  * GET /edges?address=<free-form>&radius=<m, default auto from parcel size>&maxNeighbors=<default 12>
  *
@@ -135,6 +184,7 @@ router.get('/edges', async (req, res) => {
   let callCount = 0;
   try {
     // 1) address -> subject
+    spendBudget();
     const r1 = await zoneomicsFetch('/v2/zoneDetail', { address: address.trim(), output_fields: 'parcels' });
     callCount++;
     if (!r1.ok) return res.status(r1.status).json({ error: 'Zoneomics address lookup failed', detail: r1.data });
@@ -153,7 +203,18 @@ router.get('/edges', async (req, res) => {
     // its own reach) away. Auto radius = 2x the subject's max centroid->vertex
     // distance + 20 m buffer, clamped to [60, 200]. One doubling retry covers
     // neighborhoods where the borderers are much larger than the subject.
+    // Discovery: bbox-first (intersect-based — see discoverByBbox), radius
+    // fallback preserved for ?radius= and for a failed bbox call.
+    let discovery = 'bbox';
+    let bboxStubs = null;
+    if (!explicitRadius) {
+      spendBudget();
+      bboxStubs = await discoverByBbox(subject, 15, () => { callCount++; });
+    }
     let radius = Math.min(explicitRadius, 200);
+    if (bboxStubs === null) {
+      discovery = 'radius';
+    }
     if (!radius) {
       const ringM = subject.boundary.match(/\(\(([^()]+)\)/);
       const reachM = ringM
@@ -165,7 +226,13 @@ router.get('/edges', async (req, res) => {
       radius = Math.min(200, Math.max(60, Math.ceil(2 * reachM + 20)));
     }
     let unique = [];
-    for (let attempt = 0; attempt < 2; attempt++) {
+    if (bboxStubs !== null) {
+      const seen = new Set();
+      unique = bboxStubs.filter((p) => (seen.has(p.apn) ? false : (seen.add(p.apn), true)));
+    }
+    for (let attempt = 0; unique.length === 0 && attempt < 2; attempt++) {
+      discovery = 'radius';
+      spendBudget();
       const r2 = await zoneomicsFetch('/v2/zoneDetail', { lat: subject.lat, lng: subject.lng, radius: String(radius), output_fields: 'parcels' });
       callCount++;
       const features = r2.ok ? (r2.data?.data?.features ?? []) : [];
@@ -184,6 +251,7 @@ router.get('/edges', async (req, res) => {
     const neighbors = (await Promise.all(targets.map(async (stub) => {
       const cached = cacheGet(stub.apn);
       if (cached) return cached;
+      spendBudget();
       const r3 = await zoneomicsFetch('/v2/zoneDetail', { lat: stub.lat, lng: stub.lng, output_fields: 'parcels' });
       callCount++;
       if (!r3.ok) return null;
@@ -193,14 +261,105 @@ router.get('/edges', async (req, res) => {
       return null;
     }))).filter(Boolean);
 
-    res.json({ geocode, subject, neighbors, meta, zone, callCount, radius, droppedStubs: unique.length - targets.length });
+    res.json({ geocode, subject, neighbors, meta, zone, callCount, radius, discovery, droppedStubs: unique.length - targets.length });
   } catch (err) {
+    if (err?.budget) return res.status(429).json({ error: err.message, callCount });
     console.error('Zoneomics edges error:', err);
     res.status(500).json({ error: 'Zoneomics edges request failed', callCount });
   }
 });
 
 // Standalone mode for local dev
+// ---------------------------------------------------------------------------
+// POST /edges/label — run the PYTHON engine server-side, wired the way
+// gaudi-api will wire it: Zoneomics parcels + jurisdiction db rule + zone in,
+// labeled edges out. The gaudi-api Flask route will do this same assembly
+// in-process; here it shells to the package's CLI so the site UI can debug the
+// exact production engine.
+//
+// Body: either { fixture: "<name>" } (offline, no API calls), or the /edges
+// response passed back verbatim: { subject, neighbors, meta, zone } plus
+// optional { subject_street_name, user_front_override_edge_index }.
+// GOOGLE_API_KEY in .env enables the Roads street namer; absent = census-only.
+import { spawn } from 'child_process';
+import { readFileSync } from 'fs';
+
+const PORT_PKG_DIR = path.resolve(__dirname, '../gaudi-api-port');
+const JURISDICTION_DB = JSON.parse(
+  readFileSync(path.resolve(__dirname, '../zoning-ordinances/zoning_ordinance_links.json'), 'utf8'),
+);
+const FIXTURES_DIR = path.resolve(__dirname, 'fixtures');
+
+function frontRuleForCity(cityId) {
+  if (cityId == null) return null;
+  const rec = JURISDICTION_DB.jurisdictions.find((j) => j.zoneomics_city_id === Number(cityId));
+  return rec?.front_rule ?? null;
+}
+
+function runPythonEngine(request) {
+  return new Promise((resolve, reject) => {
+    const proc = spawn('python3', ['-m', 'services.compute.parcel_edges.cli'], { cwd: PORT_PKG_DIR });
+    let out = '';
+    let errOut = '';
+    proc.stdout.on('data', (d) => { out += d; });
+    proc.stderr.on('data', (d) => { errOut += d; });
+    proc.on('error', reject);
+    proc.on('close', () => {
+      try { resolve(JSON.parse(out)); }
+      catch { reject(new Error(`engine produced no JSON: ${errOut.slice(0, 300)}`)); }
+    });
+    proc.stdin.write(JSON.stringify(request));
+    proc.stdin.end();
+  });
+}
+
+// GET /edges/fixture/:name — serve a canned offline fixture in the /edges
+// wire shape, so the debug UI can draw parcels without any live API call.
+router.get('/edges/fixture/:name', (req, res) => {
+  try {
+    const name = String(req.params.name).replace(/[^a-z0-9-]/gi, '');
+    res.json(JSON.parse(readFileSync(path.join(FIXTURES_DIR, `${name}.json`), 'utf8')));
+  } catch {
+    res.status(404).json({ error: 'unknown fixture' });
+  }
+});
+
+router.post('/edges/label', async (req, res) => {
+  try {
+    let body = req.body ?? {};
+    if (body.fixture) {
+      const name = String(body.fixture).replace(/[^a-z0-9-]/gi, '');
+      body = { ...JSON.parse(readFileSync(path.join(FIXTURES_DIR, `${name}.json`), 'utf8')), ...body };
+    }
+    if (!body.subject?.boundary) {
+      return res.status(400).json({ error: 'subject parcel with boundary required (pass the /edges response, or a fixture name)' });
+    }
+    const front = body.front_rule ? { rule: body.front_rule, overrides: body.front_rule_overrides }
+      : (frontRuleForCity(body.meta?.city_id) ?? {});
+    const request = {
+      subject: body.subject,
+      neighbors: body.neighbors ?? [],
+      front_rule: front.rule ?? null,
+      front_rule_overrides: front.overrides ?? null,
+      zone: body.zone ?? null,
+      subject_street_name: body.subject_street_name ?? null,
+      user_front_override_edge_index: body.user_front_override_edge_index ?? null,
+      google_api_key: (process.env.GOOGLE_API_KEY ?? '').trim() || null,
+    };
+    const result = await runPythonEngine(request);
+    if (result?.error) return res.status(500).json({ error: `engine: ${result.error}` });
+    res.json({
+      result,
+      engine: 'python',
+      front_rule_used: request.front_rule ?? 'address_street (engine default)',
+      roads_namer: !!request.google_api_key,
+    });
+  } catch (err) {
+    console.error('edges/label error:', err);
+    res.status(500).json({ error: String(err.message ?? err) });
+  }
+});
+
 const _isMain = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
 if (_isMain) {
   const app = express();

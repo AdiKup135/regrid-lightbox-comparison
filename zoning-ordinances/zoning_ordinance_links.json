@@ -2,8 +2,8 @@
   "title": "Bay Area zoning ordinance links (via Zoneomics)",
   "generated": "2026-08-27",
   "source": "Zoneomics v2/zoneDetail API (zone_details.link), queried with FormX ZONEOMICS_API_KEY",
-  "note": "ordinance_link is the link Zoneomics attaches to the zone at a representative point in each jurisdiction. Where the platform is 'Zoneomics code viewer', Zoneomics hosts the code text on its own site instead of linking to Municode/eCode360 directly.",
-  "count": 23,
+  "note": "ordinance_link is the link Zoneomics attaches to the zone at a representative point in each jurisdiction. Where the platform is 'Zoneomics code viewer', Zoneomics hosts the code text on its own site instead of linking to Municode/eCode360 directly. The five '<County> County (unincorporated)' records added 2026-08-30 are NOT from Zoneomics (no city_id): they come from direct county-code research (see each record's research_source) and link to Municode directly.",
+  "count": 28,
   "jurisdictions": [
     {
       "jurisdiction": "Lafayette",
@@ -371,7 +371,87 @@
         "source": "code",
         "citation": "Zoning Ord. 27.60.020 - corner-lot front = shortest frontage (Director decides ties); through lots: both street lines are fronts; flag-lot front setback Director-determined (27.20.070(C)(1))"
       }
+    },
+    {
+      "jurisdiction": "Contra Costa County (unincorporated)",
+      "county": "Contra Costa",
+      "zoneomics_city_name": null,
+      "zoneomics_city_id": null,
+      "zoneomics_last_updated": null,
+      "sample_zone_code_at_query_point": "R-B -CE -S-2",
+      "ordinance_link": "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-12SE",
+      "code_platform": "Municode",
+      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+      "front_rule": {
+        "rule": "all_fronts",
+        "source": "code",
+        "citation": "CCC Ord. Code 82-12.202 - on a corner lot the district setback requirements apply to ALL state highway, public road, and street frontages of the lot. District chapters then split the value: the 'principal frontage' gets the full front setback and the other a reduced one (84-4.1004 R-6: 20 ft principal / 15 ft other; Ch. 84-14 R-20: 25/20) - the second_front pattern, both frontages binding. CAVEAT: 'principal frontage' is not defined in Title 8 (82-4.250 presupposes it); in practice the address street. Through lots: no county provision found - 82-12.202's all-frontages language governs by its plain terms. Private roads: setbacks measured from easement edge for lots <40k sf (82-4.244). ADU (82-24.012): defers to the zone's yard requirements; Gov. Code 66321(b)(3) softens front for <=800 sf ADUs."
+      }
+    },
+    {
+      "jurisdiction": "Marin County (unincorporated)",
+      "county": "Marin",
+      "zoneomics_city_name": null,
+      "zoneomics_city_id": null,
+      "zoneomics_last_updated": null,
+      "sample_zone_code_at_query_point": "RSP-1",
+      "ordinance_link": "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTVIIIDECODE_CH22.130DE",
+      "code_platform": "Municode",
+      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+      "front_rule": {
+        "rule": "address_street",
+        "source": "code",
+        "citation": "MCC 22.130.030 'Lot Line, Front' - on a corner lot, the line bounding the street to which the property is addressed and from which access is taken (same formulation in 22.20.090(B)(1)(b)). When address street and access street differ, the code literally makes both lines front lot lines - flag such corners. Through lots: both lot lines are front lot lines, no rear lot line (rear-setback carve-out for accessory structures: 20% of depth, max 25 ft). Irregular lots: Director determines the lines. Non-coastal Development Code (Title 22) only - the Coastal Zoning Code (Title 20, Ch. 20.130) has its own definitions, not reviewed. ADU (22.32.120(A), Category 1 <=800 sf): 4 ft side/rear, 'a front yard setback is not required'."
+      }
+    },
+    {
+      "jurisdiction": "Napa County (unincorporated)",
+      "county": "Napa",
+      "zoneomics_city_name": null,
+      "zoneomics_city_id": null,
+      "zoneomics_last_updated": null,
+      "sample_zone_code_at_query_point": "RS:B-5",
+      "ordinance_link": "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.190COLO",
+      "code_platform": "Municode",
+      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "NCC 18.08.190 'Corner lot' - the shortest street frontage constitutes the front of the lot, OR as designated by the director based on structure orientation, topography, other structures, and access location (a discretionary escape hatch on the geometric default; 18.08.650(A) gives the director the same role on irregular lots). Street side of a corner lot: min 10 ft (18.104.010 fn C). Front yard measured from the Ch. 18.112 road setback where the lot fronts a road (18.08.650(A)). Through lots: not addressed textually. ADU (18.104.180(C), through Ord. 1495 9-2024): front setback waived as needed to allow an 800 sf ADU with 4 ft side/rear."
+      }
+    },
+    {
+      "jurisdiction": "Santa Clara County (unincorporated)",
+      "county": "Santa Clara",
+      "zoneomics_city_name": null,
+      "zoneomics_city_id": null,
+      "zoneomics_last_updated": null,
+      "sample_zone_code_at_query_point": "A1",
+      "ordinance_link": "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO",
+      "code_platform": "Municode",
+      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+      "front_rule": {
+        "rule": "shortest_frontage",
+        "source": "code",
+        "citation": "SCC Zoning Ordinance (County Code Title C, Appendix I) 1.30.030 'Lot lines' - the front lot line of a corner lot is normally the shorter of the two street-abutting lines, UNLESS the lot's depth-to-width orientation makes the longer line yield the larger building envelope (a geometric tiebreak, not owner election). Flag lots: front = line at the interior terminus of the access corridor (fee corridors >25 ft wide: the street frontage instead). Unusually configured lots: zoning administrator classifies. Through lots: no provision found. Setbacks measured to right-of-way edge / official plan line where applicable. ADU (4.10.015(C)(2),(D)(2)): same front yard as the primary residence; Gov. Code 66321(b)(3) softens front for <=800 sf."
+      }
+    },
+    {
+      "jurisdiction": "Sonoma County (unincorporated)",
+      "county": "Sonoma",
+      "zoneomics_city_name": null,
+      "zoneomics_city_id": null,
+      "zoneomics_last_updated": null,
+      "sample_zone_code_at_query_point": "RR B7",
+      "ordinance_link": "https://library.municode.com/ca/sonoma_county/codes/code_of_ordinances?nodeId=CH26SOCOZORE_ART04GL_S26-04-020DE",
+      "code_platform": "Municode",
+      "research_source": "county code research 2026-08-30 (web, verified against current post-reorganization code text); not from Zoneomics",
+      "front_rule": {
+        "rule": "owner_elected",
+        "source": "code",
+        "citation": "SCC 26-04-020 (Art. 04 Glossary) 'Lot Line, Front' - on a corner lot, 'either one or the other' of the two street lot lines (no geometric test and no designating official named - classic election formulation; staff may fix the choice at permit time). Interior AND through lots: EACH street lot line is a front lot line, and 26-88-040(a) bars encroachment on the required front yard on either street of a through lot (all_fronts behavior for through lots). Election is largely moot in magnitude: 26-08-040 residential tables set the street-side setback EQUAL to the front setback (30/30, 20/20, 15/15); it still matters for garage openings (26-16-060.C) and front-only averaging (26-16-060.E). Recorded setback/official plan lines supersede (26-88-040(d),(e); 26-88-050). ADU (26-88-060(3)(i)): front per base district unless it would preclude an 800 sf ADU with 4 ft side/rear."
+      }
     }
   ],
-  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id). front_rule.overrides is optional: an ordered list of conditions under which a different rule applies, each with its own citation. Evaluate overrides before falling back to front_rule.rule. Absent the field, front_rule.rule applies unconditionally. If an override condition cannot be evaluated (e.g. zone info missing) and no other override applies, the engine falls back to the address_street default rather than the base rule, flagging front_rule_override_unevaluated for logs/debugging."
+  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id, or by jurisdiction name for opendata-provider payloads (gaudi-api-port services/parcel_data/front_rules.py)). front_rule.overrides is optional: an ordered list of conditions under which a different rule applies, each with its own citation. Evaluate overrides before falling back to front_rule.rule. Absent the field, front_rule.rule applies unconditionally. If an override condition cannot be evaluated (e.g. zone info missing) and no other override applies, the engine falls back to the address_street default rather than the base rule, flagging front_rule_override_unevaluated for logs/debugging."
 }

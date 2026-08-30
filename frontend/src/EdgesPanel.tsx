@@ -14,11 +14,15 @@ import jurisdictionDb from '../../zoning-ordinances/zoning_ordinance_links.json'
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN ?? '';
 
-// Live tester for edge-labeling/edge-labeling.ts: type an address, the
-// zoneomics-backend pulls subject + neighbor parcels, and the module labels
-// the lot's edges client-side. The jurisdiction's front rule comes from the
-// unified jurisdiction db (zoning-ordinances/zoning_ordinance_links.json),
-// matched by Zoneomics city_id.
+// Live tester for the edge-labeling pipeline: type an address, the selected
+// data provider pulls subject + neighbor parcels, and the engine labels the
+// lot's edges. Two providers, same wire shape:
+//   zoneomics — the Express zoneomics-backend (quota-limited)
+//   opendata  — the free stack (Census/Google geocode + county parcel fabrics
+//               + CA statewide zoning), served by gaudi-api-port/app_poc.py
+// The jurisdiction's front rule comes from the unified jurisdiction db
+// (zoning-ordinances/zoning_ordinance_links.json), matched by Zoneomics
+// city_id or by jurisdiction name (opendata payloads).
 
 const TAG_COLORS: Record<string, string> = {
   front: '#CE3A2E',
@@ -31,19 +35,56 @@ interface EdgesApiResponse {
   geocode: { lat: number; lng: number };
   subject: ZoneomicsParcel;
   neighbors: ZoneomicsParcel[];
-  meta: { city_id?: number; city_name?: string; last_updated?: string } | null;
+  meta: {
+    city_id?: number; city_name?: string; last_updated?: string;
+    // opendata provider only:
+    county_name?: string; geocode_source?: string; source?: string; zoning_vintage?: string;
+  } | null;
   zone: { zone_code?: string; zone_type?: string } | null;
   callCount: number;
-  radius: number;
-  droppedStubs: number;
+  radius?: number; // zoneomics only
+  discovery?: string;
+  droppedStubs?: number; // zoneomics only
+  subject_street_name?: string | null; // opendata only (Google route)
+  flags?: string[]; // opendata only (fetch-side degradation flags)
 }
+
+/** POST /edges/label response: the PYTHON engine (the gaudi-api production
+ *  port) run server-side. Same wire shape as the TS result, plus
+ *  streetNameSource provenance on street edges. */
+interface LabelApiResponse {
+  result: EdgeLabelingResult & {
+    edges: Array<EdgeLabelingResult['edges'][number] & { abuts: { streetNameSource?: string } }>;
+  };
+  engine: string;
+  front_rule_used: string;
+  roads_namer: boolean;
+}
+
+type Engine = 'ts-client' | 'python-server';
+type DataSource = 'opendata' | 'zoneomics';
+const FIXTURES = ['corner-san-jose', 'madrono-palo-alto'] as const;
 
 type FC = GeoJSON.FeatureCollection;
 
-function lookupFrontRule(cityId: number | undefined): { rule: FrontRule; overrides?: FrontRuleOverride[] } | undefined {
-  if (cityId == null) return undefined;
-  const recs = (jurisdictionDb as unknown as { jurisdictions: Array<{ zoneomics_city_id: number; front_rule?: { rule: FrontRule; overrides?: FrontRuleOverride[] } }> }).jurisdictions;
-  return recs.find((r) => r.zoneomics_city_id === cityId)?.front_rule;
+type FrontRuleRecord = { rule: FrontRule; overrides?: FrontRuleOverride[] };
+type JurisdictionRecord = { jurisdiction: string; zoneomics_city_id: number; front_rule?: FrontRuleRecord };
+
+const normalizeName = (name: string) => name.toLowerCase().split(/\s+/).filter(Boolean).join(' ');
+
+/** Front rule by Zoneomics city_id (zoneomics payloads) or jurisdiction name
+ *  (opendata payloads, from the Census place) — the client twin of
+ *  gaudi-api-port/services/parcel_data/front_rules.py. */
+function lookupFrontRule(cityId: number | undefined, cityName?: string): FrontRuleRecord | undefined {
+  const recs = (jurisdictionDb as unknown as { jurisdictions: JurisdictionRecord[] }).jurisdictions;
+  if (cityId != null) {
+    const byId = recs.find((r) => r.zoneomics_city_id === cityId)?.front_rule;
+    if (byId) return byId;
+  }
+  if (cityName) {
+    return recs.find((r) => normalizeName(r.jurisdiction) === normalizeName(cityName))?.front_rule;
+  }
+  return undefined;
 }
 
 function parcelPolygonFeature(p: ZoneomicsParcel, kind: 'subject' | 'neighbor'): GeoJSON.Feature | null {
@@ -68,6 +109,76 @@ export default function EdgesPanel() {
   const [rule, setRule] = useState<FrontRule | undefined>(undefined);
   const [selected, setSelected] = useState<number>(-1);
   const [vs, setVs] = useState({ longitude: -122.15, latitude: 37.43, zoom: 12 });
+  const [engine, setEngine] = useState<Engine>('python-server');
+  const [source, setSource] = useState<DataSource>('opendata');
+  const [engineInfo, setEngineInfo] = useState<string | null>(null);
+
+  /** Label `data` with the selected engine and push the result into state. */
+  const runEngine = async (data: EdgesApiResponse, fixture?: string) => {
+    const fr = lookupFrontRule(data.meta?.city_id, data.meta?.city_name);
+    setApi(data);
+    setRule(fr?.rule);
+    let labeled: EdgeLabelingResult;
+    if (engine === 'python-server') {
+      // The production path: gaudi-api's Python engine, run server-side.
+      // Fixtures only exist on the zoneomics backend; live payloads label on
+      // the backend that produced them (both routes share the wire contract).
+      const labelBase = fixture ? 'zoneomics' : source;
+      const r = await fetch(`/api/${labelBase}/edges/label`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(fixture ? { fixture } : {
+          subject: data.subject, neighbors: data.neighbors, meta: data.meta, zone: data.zone,
+          subject_street_name: data.subject_street_name ?? null,
+        }),
+      });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d?.error ?? `HTTP ${r.status}`);
+      const lr = d as LabelApiResponse;
+      labeled = lr.result;
+      setEngineInfo(`python engine · rule: ${lr.front_rule_used} · roads namer: ${lr.roads_namer ? 'on' : 'off (census only)'}`);
+    } else {
+      labeled = labelEdges({
+        subject: data.subject,
+        neighbors: data.neighbors,
+        frontRule: fr?.rule,
+        frontRuleOverrides: fr?.overrides,
+        zone: data.zone ?? undefined,
+      });
+      setEngineInfo('typescript engine (client, reference)');
+    }
+    setResult(labeled);
+    return labeled;
+  };
+
+  /** Offline path: a canned fixture labeled by the server-side Python engine. */
+  const runFixture = async (name: string) => {
+    if (loading) return;
+    setLoading(true);
+    setError(null);
+    setSelected(-1);
+    try {
+      const r = await fetch('/api/zoneomics/edges/label', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fixture: name }),
+      });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d?.error ?? `HTTP ${r.status}`);
+      // Fixtures embed the /edges wire shape; fetch it for the map layers.
+      const fx = await (await fetch(`/api/zoneomics/edges/fixture/${name}`)).json();
+      const lr = d as LabelApiResponse;
+      setApi(fx);
+      setRule(undefined);
+      setResult(lr.result);
+      setEngineInfo(`python engine · fixture ${name} · rule: ${lr.front_rule_used} · roads namer: ${lr.roads_namer ? 'on' : 'off (census only)'}`);
+      setVs({ longitude: fx.subject.lng, latitude: fx.subject.lat, zoom: 17.5 });
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'fixture failed');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const search = async () => {
     if (!address.trim() || loading) return;
@@ -75,28 +186,20 @@ export default function EdgesPanel() {
     setError(null);
     setSelected(-1);
     try {
-      const r = await fetch(`/api/zoneomics/edges?address=${encodeURIComponent(address.trim())}`);
+      const r = await fetch(`/api/${source}/edges?address=${encodeURIComponent(address.trim())}`);
       const d = await r.json();
       if (!r.ok) throw new Error(d?.error ?? `HTTP ${r.status}`);
       const data = d as EdgesApiResponse;
-      const fr = lookupFrontRule(data.meta?.city_id);
-      setApi(data);
-      setRule(fr?.rule);
-      const labeled = labelEdges({
-        subject: data.subject,
-        neighbors: data.neighbors,
-        frontRule: fr?.rule,
-        frontRuleOverrides: fr?.overrides,
-        zone: data.zone ?? undefined,
-      });
-      setResult(labeled);
+      const labeled = await runEngine(data);
+      const fr = lookupFrontRule(data.meta?.city_id, data.meta?.city_name);
       // One greppable summary line per lookup (mirrors the UI status line),
       // plus the labeled edges as a table.
       console.info(
         `[edge-labeling] ${data.meta?.city_name ?? '?'} · zone ${data.zone?.zone_code ?? '?'} (${data.zone?.zone_type ?? '?'}) · APN ${data.subject.apn} · ` +
-        `front rule: ${fr?.rule ?? 'default (address_street)'} · ${data.callCount} API calls · radius ${data.radius}m · ` +
+        `front rule: ${fr?.rule ?? 'default (address_street)'} · source: ${source}${data.meta?.geocode_source ? ` (geocode: ${data.meta.geocode_source})` : ''} · engine: ${engine} · ` +
+        `${data.callCount} API calls · discovery ${data.discovery ?? 'radius'} · ` +
         `${labeled.stats.roadGaps} road gap(s) · streets: ${labeled.stats.streetNames.join(', ') || '(unnamed)'} · ` +
-        `flags: ${labeled.flags.join(', ') || '(none)'}`,
+        `flags: ${[...(data.flags ?? []), ...labeled.flags].join(', ') || '(none)'}`,
       );
       console.table(labeled.edges.map((e) => ({
         tag: e.tag,
@@ -150,8 +253,11 @@ export default function EdgesPanel() {
     }
   };
 
-  const abutsText = (e: EdgeLabelingResult['edges'][number]) =>
-    e.abuts.kind === 'street' ? `street: ${e.abuts.streetName ?? '?'}` : `APN ${e.abuts.apns.join(', ')}`;
+  const abutsText = (e: EdgeLabelingResult['edges'][number]) => {
+    if (e.abuts.kind !== 'street') return `APN ${e.abuts.apns.join(', ')}`;
+    const src = (e.abuts as { streetNameSource?: string }).streetNameSource;
+    return `street: ${e.abuts.streetName ?? '?'}${src ? ` (${src})` : ''}`;
+  };
 
   return (
     <div style={{ flex: 1, display: 'flex', minHeight: 0 }}>
@@ -211,6 +317,47 @@ export default function EdgesPanel() {
         </Map>
       </div>
       <div style={{ flex: 1, minWidth: 340, maxWidth: 460, overflowY: 'auto', borderLeft: '1px solid #eee', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontSize: '0.8rem', flexWrap: 'wrap' }}>
+          <span style={{ color: '#888' }}>source:</span>
+          {(['opendata', 'zoneomics'] as DataSource[]).map((src) => (
+            <button
+              key={src}
+              onClick={() => setSource(src)}
+              style={{
+                padding: '0.25rem 0.6rem', borderRadius: 6, cursor: 'pointer', fontSize: '0.78rem',
+                border: source === src ? '1.5px solid #24312B' : '1px solid #ccc',
+                background: source === src ? '#24312B' : '#fff', color: source === src ? '#fff' : '#444',
+              }}
+            >
+              {src === 'opendata' ? 'Open data (free)' : 'Zoneomics (quota)'}
+            </button>
+          ))}
+          <span style={{ color: '#888', marginLeft: '0.5rem' }}>engine:</span>
+          {(['python-server', 'ts-client'] as Engine[]).map((eng) => (
+            <button
+              key={eng}
+              onClick={() => setEngine(eng)}
+              style={{
+                padding: '0.25rem 0.6rem', borderRadius: 6, cursor: 'pointer', fontSize: '0.78rem',
+                border: engine === eng ? '1.5px solid #24312B' : '1px solid #ccc',
+                background: engine === eng ? '#24312B' : '#fff', color: engine === eng ? '#fff' : '#444',
+              }}
+            >
+              {eng === 'python-server' ? 'Python (server, production port)' : 'TypeScript (client, reference)'}
+            </button>
+          ))}
+          <span style={{ color: '#888', marginLeft: '0.5rem' }}>offline fixtures:</span>
+          {FIXTURES.map((fx) => (
+            <button
+              key={fx}
+              onClick={() => runFixture(fx)}
+              disabled={loading}
+              style={{ padding: '0.25rem 0.6rem', borderRadius: 6, border: '1px dashed #999', background: '#fff', color: '#444', cursor: 'pointer', fontSize: '0.78rem' }}
+            >
+              {fx}
+            </button>
+          ))}
+        </div>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
           <input
             value={address}
@@ -226,11 +373,16 @@ export default function EdgesPanel() {
         {error && <div style={{ color: '#CE3A2E', fontSize: '0.85rem' }}>{error}</div>}
         {api && result && (
           <>
+            {engineInfo && <div style={{ fontSize: '0.78rem', color: '#24312B', background: '#eef2ee', borderRadius: 6, padding: '0.3rem 0.6rem' }}>{engineInfo}</div>}
             <div style={{ fontSize: '0.8rem', color: '#666' }}>
-              {api.meta?.city_name ?? '?'} · zone {api.zone?.zone_code ?? '?'} · APN {api.subject.apn} · front rule: {rule ?? 'default (shortest)'} ·{' '}
-              {api.callCount} API calls · {result.stats.roadGaps} road gap{result.stats.roadGaps === 1 ? '' : 's'}
+              {api.meta?.city_name ?? '?'} · zone {api.zone?.zone_code ?? '?'} · APN {api.subject.apn} · front rule: {rule ?? 'default (address_street)'} ·{' '}
+              {api.callCount} API calls · discovery {api.discovery ?? 'radius'}
+              {api.meta?.geocode_source && <> · geocode: {api.meta.geocode_source}</>}
+              {' '}· {result.stats.roadGaps} road gap{result.stats.roadGaps === 1 ? '' : 's'}
               {result.stats.streetNames.length > 0 && <> · streets: {result.stats.streetNames.join(', ')}</>}
-              {result.flags.length > 0 && <> · flags: {result.flags.join(', ')}</>}
+              {((api.flags?.length ?? 0) > 0 || result.flags.length > 0) && (
+                <> · flags: {[...(api.flags ?? []), ...result.flags].join(', ')}</>
+              )}
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
               {result.edges.map((e, idx) => (
@@ -269,8 +421,8 @@ export default function EdgesPanel() {
         )}
         {!api && !error && (
           <div style={{ color: '#888', fontSize: '0.85rem' }}>
-            Enter an address to pull the parcel and its neighbors from Zoneomics and label the lot's edges
-            (front / street_side / side / rear). Click an edge on the map or in the list to inspect it.
+            Enter an address to pull the parcel and its neighbors from the selected source and label the lot's
+            edges (front / street_side / side / rear). Click an edge on the map or in the list to inspect it.
           </div>
         )}
       </div>
