@@ -1,0 +1,407 @@
+{
+  "Webster St & Coleridge Ave, Palo Alto, CA": {
+    "lat": 37.440901,
+    "lng": -122.1443445,
+    "formatted_address": "Coleridge Ave & Webster St, Palo Alto, CA 94301, USA"
+  },
+  "Moraga Blvd & Second St, Lafayette, CA": {
+    "lat": 37.8908911,
+    "lng": -122.1135533,
+    "formatted_address": "Second St & Moraga Blvd, Lafayette, CA 94549, USA"
+  },
+  "Moraga Way & Camino Ricardo, Moraga, CA": {
+    "lat": 37.8372696,
+    "lng": -122.1348816,
+    "formatted_address": "Moraga Way & Cam Ricardo, Moraga, CA 94556, USA"
+  },
+  "Orinda Way & Santa Maria Way, Orinda, CA": {
+    "lat": 37.8809097,
+    "lng": -122.1861308,
+    "formatted_address": "Santa Maria Way & Orinda Way, Orinda, CA 94563, USA"
+  },
+  "Bolinas Rd & Center Blvd, Fairfax, CA": {
+    "lat": 37.985987,
+    "lng": -122.5833232,
+    "formatted_address": "Center Blvd, Fairfax, CA, USA"
+  },
+  "Miller Ave & Reed St, Mill Valley, CA": {
+    "lat": 37.8952549,
+    "lng": -122.5345707,
+    "formatted_address": "Reed St & Miller Ave, Mill Valley, CA 94941, USA"
+  },
+  "Caledonia St & Turney St, Sausalito, CA": {
+    "lat": 37.8590897,
+    "lng": -122.4862616,
+    "formatted_address": "Caledonia St & Turney St, Sausalito, CA 94965, USA"
+  },
+  "Jefferson St & Lincoln Ave, Napa, CA": {
+    "lat": 38.3084195,
+    "lng": -122.2957592,
+    "formatted_address": "Lincoln Ave & Jefferson St, Napa, CA 94558, USA"
+  },
+  "Selby Ln & Middlefield Rd, Atherton, CA": {
+    "lat": 37.465558,
+    "lng": -122.185811,
+    "formatted_address": "Middlefield Rd, Atherton, CA, USA"
+  },
+  "Barbara Way & Chateau Dr, Hillsborough, CA": {
+    "lat": 37.5604267,
+    "lng": -122.3714971,
+    "formatted_address": "Chateau Dr, Hillsborough, CA 94010, USA"
+  },
+  "Santa Cruz Ave & University Dr, Menlo Park, CA": {
+    "lat": 37.4494145,
+    "lng": -122.1863978,
+    "formatted_address": "University Dr & Santa Cruz Ave, Menlo Park, CA 94025, USA"
+  },
+  "Portola Rd & Alpine Rd, Portola Valley, CA": {
+    "lat": 37.3717453,
+    "lng": -122.208201,
+    "formatted_address": "Portola Rd & Alpine Rd, Portola Valley, CA 94028, USA"
+  },
+  "Arroyo Ave & Cedar St, San Carlos, CA": {
+    "lat": 37.4982191,
+    "lng": -122.2605345,
+    "formatted_address": "Arroyo Ave & Cedar St, San Carlos, CA 94070, USA"
+  },
+  "Barneson Ave & Alameda de las Pulgas, San Mateo, CA": {
+    "lat": 37.54878739999999,
+    "lng": -122.3246843,
+    "formatted_address": "Barneson Ave & Alameda de las Pulgas, San Mateo, CA 94402, USA"
+  },
+  "Middlefield Rd & 5th Ave, North Fair Oaks, CA": {
+    "lat": 37.4721258,
+    "lng": -122.2045361,
+    "formatted_address": "Middlefield Rd & Fifth Ave, North Fair Oaks, CA 94063, USA"
+  },
+  "University Ave & Edith Ave, Los Altos, CA": {
+    "lat": 37.3813239,
+    "lng": -122.1218973,
+    "formatted_address": "University Ave & W Edith Ave, Los Altos, CA 94022, USA"
+  },
+  "Fremont Rd & Concepcion Rd, Los Altos Hills, CA": {
+    "lat": 37.3826493,
+    "lng": -122.1376915,
+    "formatted_address": "Fremont Rd & Concepcion Rd, Los Altos Hills, CA 94022, USA"
+  },
+  "Castro St & Church St, Mountain View, CA": {
+    "lat": 37.3883461,
+    "lng": -122.0823743,
+    "formatted_address": "Church St & Castro St, Mountain View, CA 94041, USA"
+  },
+  "Lincoln Ave & Willow St, San Jose, CA": {
+    "lat": 37.3084776,
+    "lng": -121.9010911,
+    "formatted_address": "Willow St & Lincoln Ave, San Jose, CA 95125, USA"
+  },
+  "Oak St & 4th St, Saratoga, CA": {
+    "lat": 36.778261,
+    "lng": -119.4179324,
+    "formatted_address": "California, USA"
+  },
+  "Saratoga, CA": {
+    "lat": 37.2717475,
+    "lng": -122.0184265,
+    "formatted_address": "Saratoga, CA, USA"
+  },
+  "Murphy Ave & Olive Ave, Sunnyvale, CA": {
+    "lat": 37.3709952,
+    "lng": -122.032101,
+    "formatted_address": "E Olive Ave & S Murphy Ave, Sunnyvale, CA 94086, USA"
+  },
+  "Matheson St & Fitch St, Healdsburg, CA": {
+    "lat": 38.6109854,
+    "lng": -122.8669098,
+    "formatted_address": "Matheson St & Fitch St, Healdsburg, CA 95448, USA"
+  },
+  "Windsor River Rd & Bell Rd, Windsor, CA": {
+    "lat": 38.5473174,
+    "lng": -122.8136902,
+    "formatted_address": "Bell Rd & Windsor River Rd, Windsor, CA 95492, USA"
+  },
+  "Arlington Ave & Coventry Rd, Kensington, CA": {
+    "lat": 37.9038929,
+    "lng": -122.2782813,
+    "formatted_address": "Coventry Rd & Arlington Ave, Kensington, CA 94707, USA"
+  },
+  "Sir Francis Drake Blvd & College Ave, Kentfield, CA": {
+    "lat": 37.9558973,
+    "lng": -122.5477018,
+    "formatted_address": "Sir Francis Drake Blvd & College Ave, Kentfield, CA 94904, USA"
+  },
+  "College Ave & Howell Mountain Rd, Angwin, CA": {
+    "lat": 38.5727909,
+    "lng": -122.4420679,
+    "formatted_address": "Howell Mountain Rd & College Ave, Angwin, CA 94508, USA"
+  },
+  "Bascom Ave & Naglee Ave, San Jose, CA 95128": {
+    "lat": 37.3279027,
+    "lng": -121.9320021,
+    "formatted_address": "Naglee Ave & N Bascom Ave, San Jose, CA 95128, USA"
+  },
+  "Burbank, Santa Clara County, CA": {
+    "lat": 37.319877,
+    "lng": -121.9319604,
+    "formatted_address": "Burbank, CA 95128, USA"
+  },
+  "Highway 12 & Central Ave, Boyes Hot Springs, CA": {
+    "lat": 38.3149583,
+    "lng": -122.482123,
+    "formatted_address": "CA-12 & Central Ave, Boyes Hot Springs, CA 95476, USA"
+  },
+  "Boyes Hot Springs, CA": {
+    "lat": 38.3138029,
+    "lng": -122.4819253,
+    "formatted_address": "Boyes Hot Springs, CA 95476, USA"
+  },
+  "Penngrove, CA": {
+    "lat": 38.29975,
+    "lng": -122.6664251,
+    "formatted_address": "Penngrove, CA, USA"
+  },
+  "Hamlin Rd & Los Palos Dr, Lafayette, CA": {
+    "lat": 37.8757555,
+    "lng": -122.0961251,
+    "formatted_address": "Los Palos Dr, Lafayette, CA 94549, USA"
+  },
+  "Lafayette, CA": {
+    "lat": 37.8857582,
+    "lng": -122.1180201,
+    "formatted_address": "Lafayette, CA, USA"
+  },
+  "Camino Ricardo & Ascot Dr, Moraga, CA": {
+    "lat": 37.8444769,
+    "lng": -122.1347526,
+    "formatted_address": "Cam Ricardo, Moraga, CA 94556, USA"
+  },
+  "Moraga, CA": {
+    "lat": 37.8349263,
+    "lng": -122.1296871,
+    "formatted_address": "Moraga, CA, USA"
+  },
+  "Brookwood Rd & Moraga Way, Orinda, CA": {
+    "lat": 37.8787776,
+    "lng": -122.1815965,
+    "formatted_address": "Moraga Way & Brookwood Rd, Orinda, CA 94563, USA"
+  },
+  "Orinda, CA": {
+    "lat": 37.8771476,
+    "lng": -122.1796888,
+    "formatted_address": "Orinda, CA, USA"
+  },
+  "Scenic Rd & Manor Rd, Fairfax, CA": {
+    "lat": 37.9903452,
+    "lng": -122.5951545,
+    "formatted_address": "Manor Rd & Scenic Rd, Fairfax, CA 94930, USA"
+  },
+  "Ethel Ave & Marion Ave, Mill Valley, CA": {
+    "lat": 37.9008284,
+    "lng": -122.5436731,
+    "formatted_address": "Ethel Ave, Mill Valley, CA 94941, USA"
+  },
+  "Mill Valley, CA": {
+    "lat": 37.9003469,
+    "lng": -122.5286567,
+    "formatted_address": "Mill Valley, CA 94941, USA"
+  },
+  "Filbert Ave & Glen Dr, Sausalito, CA": {
+    "lat": 37.8573895,
+    "lng": -122.4893939,
+    "formatted_address": "Glen Dr & Filbert Ave, Sausalito, CA 94965, USA"
+  },
+  "Sausalito, CA": {
+    "lat": 37.8590937,
+    "lng": -122.4852507,
+    "formatted_address": "Sausalito, CA 94965, USA"
+  },
+  "Laurel St & Jefferson St, Napa, CA": {
+    "lat": 38.2926672,
+    "lng": -122.2942382,
+    "formatted_address": "Laurel St & Jefferson St, Napa, CA 94559, USA"
+  },
+  "Ralston Ave & Chateau Dr, Hillsborough, CA": {
+    "lat": 37.5651908,
+    "lng": -122.3634073,
+    "formatted_address": "Ralston Ave & Chateau Dr, Hillsborough, CA 94010, USA"
+  },
+  "Oak Grove Ave & Laurel St, Menlo Park, CA": {
+    "lat": 37.4571652,
+    "lng": -122.1821715,
+    "formatted_address": "Oak Grove Ave & Laurel St, Menlo Park, CA 94025, USA"
+  },
+  "Cedar St & Cordilleras Ave, San Carlos, CA": {
+    "lat": 37.4955115,
+    "lng": -122.2619858,
+    "formatted_address": "Cordilleras Ave, San Carlos, CA 94070, USA"
+  },
+  "5th Ave & Bay Rd, Redwood City, CA 94063": {
+    "lat": 37.4816302,
+    "lng": -122.1986352,
+    "formatted_address": "Bay Rd & Fifth Ave, Redwood City, CA 94063, USA"
+  },
+  "Edith Ave & Lyell St, Los Altos, CA": {
+    "lat": 37.3754445,
+    "lng": -122.1117803,
+    "formatted_address": "Lyell St, Los Altos, CA 94022, USA"
+  },
+  "Church St & Calderon Ave, Mountain View, CA": {
+    "lat": 37.3850768,
+    "lng": -122.0758021,
+    "formatted_address": "Calderon Ave & Church St, Mountain View, CA 94041, USA"
+  },
+  "Minnesota Ave & Lincoln Ave, San Jose, CA": {
+    "lat": 37.3036335,
+    "lng": -121.8973143,
+    "formatted_address": "Minnesota Ave & Lincoln Ave, San Jose, CA 95125, USA"
+  },
+  "Bayview Ave & Iowa Ave, Sunnyvale, CA": {
+    "lat": 37.3823733,
+    "lng": -122.0246747,
+    "formatted_address": "Bayview Ave, Sunnyvale, CA 94086, USA"
+  },
+  "Johnson St & North St, Healdsburg, CA": {
+    "lat": 38.6124476,
+    "lng": -122.8654068,
+    "formatted_address": "North St, Healdsburg, CA 95448, USA"
+  },
+  "Natalie Dr & Windsor Rd, Windsor, CA": {
+    "lat": 38.5583322,
+    "lng": -122.8113596,
+    "formatted_address": "Natalie Dr, Windsor, CA 95492, USA"
+  },
+  "Woodland Rd & Ross Ave, Kentfield, CA": {
+    "lat": 37.9495011,
+    "lng": -122.5581995,
+    "formatted_address": "Woodland Rd, Kentfield, CA 94904, USA"
+  },
+  "White Cottage Rd & College Ave, Angwin, CA": {
+    "lat": 38.5810778,
+    "lng": -122.4510594,
+    "formatted_address": "White Cottage Rd N & College Ave, Angwin, CA 94508, USA"
+  },
+  "Glenn Ave & Michael Dr, San Jose, CA 95125": {
+    "lat": 37.3046743,
+    "lng": -121.9046015,
+    "formatted_address": "Glenn Ave, San Jose, CA 95125, USA"
+  },
+  "San Martin Ave & Murphy Ave, San Martin, CA": {
+    "lat": 37.0878128,
+    "lng": -121.6023928,
+    "formatted_address": "Murphy Ave & E San Martin Ave, San Martin, CA 95046, USA"
+  },
+  "Stanford, CA": {
+    "lat": 37.42410599999999,
+    "lng": -122.1660756,
+    "formatted_address": "Stanford, CA, USA"
+  },
+  "Vallejo Ave & Riverside Dr, Boyes Hot Springs, CA": {
+    "lat": 38.3134981,
+    "lng": -122.4784792,
+    "formatted_address": "Vallejo Ave, Boyes Hot Springs, CA 95476, USA"
+  },
+  "Wikiup Dr & Yuba Dr, Santa Rosa, CA 95403": {
+    "lat": 38.4071533,
+    "lng": -122.7401383,
+    "formatted_address": "Yuba Dr, Santa Rosa, CA 95407, USA"
+  },
+  "Old Adobe Rd & Casa Grande Rd, Penngrove, CA": {
+    "lat": 38.2553193,
+    "lng": -122.5850145,
+    "formatted_address": "Casa Grande Rd & Old Adobe Rd, California 94954, USA"
+  },
+  "El Verano, CA": {
+    "lat": 38.2976922,
+    "lng": -122.491648,
+    "formatted_address": "El Verano, CA 95476, USA"
+  },
+  "Ravensbury Ave & Miramonte Ave, Los Altos, CA": {
+    "lat": 37.3591879,
+    "lng": -122.0874685,
+    "formatted_address": "Miramonte Ave, Los Altos, CA, USA"
+  },
+  "Dorothy Ave & Fruitdale Ave, San Jose, CA 95128": {
+    "lat": 37.3103833,
+    "lng": -121.931908,
+    "formatted_address": "Fruitdale Ave, San Jose, CA 95128, USA"
+  },
+  "Burbank Dr & Douglas Ave, San Jose, CA 95128": {
+    "lat": 37.340669,
+    "lng": -121.9948173,
+    "formatted_address": "Burbank Dr, Santa Clara, CA 95051, USA"
+  },
+  "Arnold Dr & Verano Ave, El Verano, CA": {
+    "lat": 38.2998072,
+    "lng": -122.492478,
+    "formatted_address": "Verano Ave & Arnold Dr, El Verano, CA 95476, USA"
+  },
+  "Graton Rd & Edison St, Graton, CA": {
+    "lat": 38.4363687,
+    "lng": -122.8685246,
+    "formatted_address": "Graton Rd & Edison St, Graton, CA 95444, USA"
+  },
+  "Mill St & Church St, Guerneville, CA": {
+    "lat": 38.5037867,
+    "lng": -123.0003161,
+    "formatted_address": "Mill St, Guerneville, CA 95446, USA"
+  },
+  "Front St & Covey Rd, Forestville, CA": {
+    "lat": 38.4736422,
+    "lng": -122.8902133,
+    "formatted_address": "Covey Rd & Front St, Forestville, CA 95436, USA"
+  },
+  "Old Adobe Rd & Main St, Penngrove, CA": {
+    "lat": 38.2997899,
+    "lng": -122.6664598,
+    "formatted_address": "Old Adobe Rd & Main St, Penngrove, CA 94951, USA"
+  },
+  "Burbank Dr & Malone Ave, San Jose, CA 95128": {
+    "lat": 37.3250444,
+    "lng": -121.9360366,
+    "formatted_address": "Burbank, CA 95128, USA"
+  },
+  "Dorothy Ave & Ramona Ave, San Jose, CA 95128": {
+    "lat": 37.3121851,
+    "lng": -121.9021404,
+    "formatted_address": "Ramona Ave, San Jose, CA 95125, USA"
+  },
+  "Cleveland Ave & Burbank Dr, San Jose, CA 95128": {
+    "lat": 37.3252357,
+    "lng": -121.9299368,
+    "formatted_address": "Cleveland Ave, Burbank, CA, USA"
+  },
+  "Woodard Rd & Ross Ave, San Jose, CA 95124": {
+    "lat": 37.2602372,
+    "lng": -121.9406677,
+    "formatted_address": "Woodard Rd, San Jose, CA 95124, USA"
+  },
+  "Camden Ave & Woodard Rd, San Jose, CA 95124": {
+    "lat": 37.2602372,
+    "lng": -121.9406677,
+    "formatted_address": "Woodard Rd, San Jose, CA 95124, USA"
+  },
+  "Mayfield Ave & Salvatierra St, Stanford, CA": {
+    "lat": 37.4201006,
+    "lng": -122.1653175,
+    "formatted_address": "Salvatierra St, Stanford, CA 94305, USA"
+  },
+  "Mirada Ave & Miramonte Ave, Los Altos, CA 94024": {
+    "lat": 37.3591879,
+    "lng": -122.0874685,
+    "formatted_address": "Miramonte Ave, Los Altos, CA 94024, USA"
+  },
+  "Berry Ave & Fremont Ave, Los Altos, CA 94024": {
+    "lat": 37.3614617,
+    "lng": -122.0927474,
+    "formatted_address": "Berry Ave, Los Altos, CA 94024, USA"
+  },
+  "Center Ave & San Martin Ave, San Martin, CA": {
+    "lat": 37.0932518,
+    "lng": -121.586878,
+    "formatted_address": "Center Ave & E San Martin Ave, San Martin, CA 95046, USA"
+  },
+  "Lupine Ave & Loyola Dr, Los Altos, CA 94024": {
+    "lat": 37.349778,
+    "lng": -122.0911876,
+    "formatted_address": "Loyola Dr, Los Altos, CA 94024, USA"
+  }
+}

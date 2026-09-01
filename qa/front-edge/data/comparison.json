@@ -1,0 +1,3274 @@
+[
+  {
+    "jurisdiction": "Lafayette",
+    "address": "680  GLENSIDE DR, Lafayette, CA",
+    "apn": "238102008",
+    "front_rule": "designated",
+    "zone": "R-10",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 16.9,
+    "futurelot_area_sqft": 8968,
+    "same_lot": true,
+    "futurelot_apn": "2381020086",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 6613124,
+    "futurelot_zone": "R-10",
+    "area_ratio": 0.903,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 21.5,
+        "length_ft": 96.1,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 27.0,
+        "length_ft": 78.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 102.3,
+        "length_ft": 79.4,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "glenside dr",
+    "engine_street_names": [
+      "augustine ln",
+      "glenside dr"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 78.1,
+        "engine": "front",
+        "engine_street": "glenside dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 96.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.0
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 16.9,
+        "engine": "front",
+        "engine_street": "glenside dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 96.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.9
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 17.1,
+        "engine": "street_side",
+        "engine_street": "augustine ln",
+        "engine_abuts": "street",
+        "engine_len_ft": 96.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.6
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 79.4,
+        "engine": "street_side",
+        "engine_street": "augustine ln",
+        "engine_abuts": "street",
+        "engine_len_ft": 96.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.3
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 99.4,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 99.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.4
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 79.5,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 79.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "4/6",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 20,
+      "side_val": 4,
+      "rear_val": 3
+    },
+    "lot_flags": [
+      "front_requires_review"
+    ],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "augustine ln",
+      "glenside dr"
+    ]
+  },
+  {
+    "jurisdiction": "Moraga",
+    "address": "838  CAMINO RICARDO, Moraga, CA",
+    "apn": "255404003",
+    "front_rule": "designated",
+    "zone": "3-DUA",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 23.6,
+    "futurelot_area_sqft": 11437,
+    "same_lot": true,
+    "futurelot_apn": "2554040036",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 6601651,
+    "futurelot_zone": "3-DUA",
+    "area_ratio": 0.998,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 80.5,
+        "length_ft": 119.4,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 173.0,
+        "length_ft": 87.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 101.6,
+        "length_ft": 116.7,
+        "edges": 2
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "camino ricardo",
+    "engine_street_names": [
+      "camino ricardo",
+      "corliss dr"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 118.4,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 118.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 87.1,
+        "engine": "street_side",
+        "engine_street": "corliss dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 97.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.0
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 12.4,
+        "engine": "street_side",
+        "engine_street": "corliss dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 97.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.7
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 8.5,
+        "engine": "front",
+        "engine_street": "camino ricardo",
+        "engine_abuts": "street",
+        "engine_len_ft": 119.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.2
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 108.2,
+        "engine": "front",
+        "engine_street": "camino ricardo",
+        "engine_abuts": "street",
+        "engine_len_ft": 119.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.3
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 90.8,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 90.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.9
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "4/6",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 20,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [
+      "front_requires_review"
+    ],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "camino ricardo",
+      "corliss dr"
+    ]
+  },
+  {
+    "jurisdiction": "Orinda",
+    "address": "9  NORTHWOOD DR, Orinda, CA",
+    "apn": "268163002",
+    "front_rule": "shortest_frontage",
+    "zone": "RL-20",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 14.6,
+    "futurelot_area_sqft": 11589,
+    "same_lot": true,
+    "futurelot_apn": "2681630022",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 6614058,
+    "futurelot_zone": "RL-20",
+    "area_ratio": 1.001,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 161.7,
+        "length_ft": 78.0,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 162.8,
+        "length_ft": 75.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 106.1,
+        "length_ft": 139.0,
+        "edges": 2
+      }
+    ],
+    "futurelot_front_edge_count": 3,
+    "engine_front_street": "northwood ct",
+    "engine_street_names": [
+      "northwood dr",
+      "northwood ct"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 139.8,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 140.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 75.1,
+        "engine": "front",
+        "engine_street": "northwood ct",
+        "engine_abuts": "street",
+        "engine_len_ft": 78.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 15.5,
+        "engine": "street_side",
+        "engine_street": "northwood dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 137.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.0
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 123.5,
+        "engine": "street_side",
+        "engine_street": "northwood dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 137.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 89.3,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 89.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "1/5",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 25,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "northwood dr",
+      "northwood ct"
+    ]
+  },
+  {
+    "jurisdiction": "Fairfax",
+    "address": "73 SCENIC RD, Fairfax, CA",
+    "apn": "00112226",
+    "front_rule": "shortest_frontage",
+    "zone": "RD-5.5-7",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 5.0,
+    "futurelot_area_sqft": 7126,
+    "same_lot": true,
+    "futurelot_apn": "00112226",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 10747130,
+    "futurelot_zone": "RD 5.5-7",
+    "area_ratio": 1.26,
+    "lot_shape_mismatch": true,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 1,
+    "futurelot_front_count": 3,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 112.4,
+        "length_ft": 67.2,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 22.4,
+        "length_ft": 73.8,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 159.9,
+        "length_ft": 56.6,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 95.5,
+        "length_ft": 48.3,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 3,
+    "engine_front_street": "manor rd",
+    "engine_street_names": [
+      "scenic rd",
+      "manor rd"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 73.8,
+        "engine": "street_side",
+        "engine_street": "scenic rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 111.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.3
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 56.6,
+        "engine": "street_side",
+        "engine_street": "scenic rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 111.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.6
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 48.3,
+        "engine": "front",
+        "engine_street": "manor rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 67.2,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.4
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 114.9,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 114.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.1
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 49.8,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 49.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "1/5",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 10,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "scenic rd",
+      "manor rd"
+    ]
+  },
+  {
+    "jurisdiction": "Mill Valley",
+    "address": "329 ETHEL AVE, Mill Valley, CA",
+    "apn": "02818111",
+    "front_rule": "designated",
+    "zone": "RS-6",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 8.9,
+    "futurelot_area_sqft": 4565,
+    "same_lot": true,
+    "futurelot_apn": "02818111",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 10730542,
+    "futurelot_zone": "RS-6",
+    "area_ratio": 0.995,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 2,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 1,
+    "futurelot_front_count": 0,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 156.5,
+        "length_ft": 185.1,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [],
+    "futurelot_front_edge_count": 0,
+    "engine_front_street": "ethel ave",
+    "engine_street_names": [
+      "ethel ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 32.6,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 123.9,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 123.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.1
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 48.1,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 14.1,
+        "engine": "front",
+        "engine_street": "ethel ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 185.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.3
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 90.5,
+        "engine": "front",
+        "engine_street": "ethel ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 185.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.6
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "side"
+    ],
+    "verdict": "no_front",
+    "edge_tag_agreement": "0/3",
+    "unmatched_futurelot_edges": 2,
+    "unmatched_futurelot_edges_significant": 2,
+    "geometry_disagreement": true,
+    "adu_setbacks_futurelot": {
+      "front_val": 15,
+      "side_val": 0,
+      "rear_val": 0
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": true,
+    "engine_street_names_census": [
+      "ethel ave"
+    ]
+  },
+  {
+    "jurisdiction": "Sausalito",
+    "address": "299 GLEN DR, Sausalito, CA",
+    "apn": "06421307",
+    "front_rule": "owner_elected",
+    "zone": "R-1-6",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 4.9,
+    "futurelot_area_sqft": 4493,
+    "same_lot": true,
+    "futurelot_apn": "06421307",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 10768373,
+    "futurelot_zone": "R-1",
+    "area_ratio": 1.083,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 1,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 107.6,
+        "length_ft": 66.6,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 107.5,
+        "length_ft": 66.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 1,
+    "engine_front_street": "glen dr",
+    "engine_street_names": [
+      "currey ave",
+      "glen dr"
+    ],
+    "edges": [
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 75.7,
+        "engine": "street_side",
+        "engine_street": "currey ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 74.8,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 3.1
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 66.9,
+        "engine": "front",
+        "engine_street": "glen dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 66.6,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 3.1
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 61.8,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 61.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.2
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 65,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 65.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.4
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "agree",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 10,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "currey ave",
+      "cazneau ave"
+    ]
+  },
+  {
+    "jurisdiction": "Napa",
+    "address": "1795 LAUREL ST, Napa, CA",
+    "apn": "005021001000",
+    "front_rule": "shortest_frontage",
+    "zone": "RT 5",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 4.4,
+    "futurelot_area_sqft": 8054,
+    "same_lot": true,
+    "futurelot_apn": "005021001000",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 11133606,
+    "futurelot_zone": "RT 5",
+    "area_ratio": 1.003,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 178.3,
+        "length_ft": 61.0,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 82.1,
+        "length_ft": 120.2,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 178.3,
+        "length_ft": 61,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "laurel st",
+    "engine_street_names": [
+      "jefferson st",
+      "laurel st"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 120.2,
+        "engine": "street_side",
+        "engine_street": "jefferson st",
+        "engine_abuts": "street",
+        "engine_len_ft": 120.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.9
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 61,
+        "engine": "front",
+        "engine_street": "laurel st",
+        "engine_abuts": "street",
+        "engine_len_ft": 61.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.3
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 117.6,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 117.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 75.3,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 75.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.4
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 20,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "jefferson st",
+      "laurel st"
+    ]
+  },
+  {
+    "jurisdiction": "Atherton",
+    "address": "256 PRIOR LN, Atherton, CA",
+    "apn": "061330140",
+    "front_rule": "address_street",
+    "zone": "R-1A",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 53.3,
+    "futurelot_area_sqft": 56606,
+    "same_lot": true,
+    "futurelot_apn": "061330140",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16650695,
+    "futurelot_zone": "R-1A",
+    "area_ratio": 1.0,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 59.5,
+        "length_ft": 245.5,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 147.7,
+        "length_ft": 207.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 79.1,
+        "length_ft": 245.0,
+        "edges": 2
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "prior ln",
+    "engine_street_names": [
+      "middlefield rd",
+      "prior ln"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 251.3,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 250.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 207.1,
+        "engine": "street_side",
+        "engine_street": "middlefield rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 224.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.6
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 16.9,
+        "engine": "street_side",
+        "engine_street": "middlefield rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 224.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.6
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 13.6,
+        "engine": "front",
+        "engine_street": "prior ln",
+        "engine_abuts": "street",
+        "engine_len_ft": 245.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.3
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 231.4,
+        "engine": "front",
+        "engine_street": "prior ln",
+        "engine_abuts": "street",
+        "engine_len_ft": 245.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.8
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 227.3,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 227.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "4/6",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 120,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "ln",
+      "prior ln"
+    ]
+  },
+  {
+    "jurisdiction": "Hillsborough",
+    "address": "5 HOMEPLACE CT, Hillsborough, CA",
+    "apn": "031382050",
+    "front_rule": "all_fronts",
+    "zone": "R",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 23.3,
+    "futurelot_area_sqft": 22836,
+    "same_lot": true,
+    "futurelot_apn": "031382050",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16571242,
+    "futurelot_zone": "RD-1",
+    "area_ratio": 1.004,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 2,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 146.7,
+        "length_ft": 105.8,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 61.6,
+        "length_ft": 177.5,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 60.4,
+        "length_ft": 157.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 149.5,
+        "length_ft": 88.2,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 3,
+    "engine_front_street": "homeplace ct",
+    "engine_street_names": [
+      "homeplace ct",
+      "barroilhet ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 157.1,
+        "engine": "street_side",
+        "engine_street": "barroilhet ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 177.5,
+        "engine_flags": [
+          "second_front"
+        ],
+        "midpoint_offset_ft": 7.4
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 171,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 170.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.0
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 180.5,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 160.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 88.2,
+        "engine": "front",
+        "engine_street": "homeplace ct",
+        "engine_abuts": "street",
+        "engine_len_ft": 105.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.2
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 18.1,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "agree",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 1,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 25,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [
+      "second_front_jurisdiction"
+    ],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "homeplace ct",
+      "barroilhet ave"
+    ]
+  },
+  {
+    "jurisdiction": "Menlo Park",
+    "address": "385 OAK GROVE AVE, Menlo Park, CA",
+    "apn": "061383160",
+    "front_rule": "owner_elected",
+    "zone": "R3",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 10.7,
+    "futurelot_area_sqft": 7685,
+    "same_lot": true,
+    "futurelot_apn": "061383160",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16662686,
+    "futurelot_zone": "R-3",
+    "area_ratio": 1.001,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 58.1,
+        "length_ft": 128.3,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 58.3,
+        "length_ft": 128.5,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 148.1,
+        "length_ft": 60,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "oak grove ave",
+    "engine_street_names": [
+      "laurel st",
+      "oak grove ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 128.5,
+        "engine": "front",
+        "engine_street": "oak grove ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 128.3,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 10.3
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 60,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 59.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.5
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 128.5,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 128.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 10.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 60,
+        "engine": "street_side",
+        "engine_street": "laurel st",
+        "engine_abuts": "street",
+        "engine_len_ft": 60.0,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 2.6
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 1000000,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "laurel st",
+      "oak grove ave"
+    ]
+  },
+  {
+    "jurisdiction": "Portola Valley",
+    "address": "247 ECHO LN, Portola Valley, CA",
+    "apn": "079171130",
+    "front_rule": "owner_elected",
+    "zone": "R-1/15M",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 8.6,
+    "futurelot_area_sqft": 15962,
+    "same_lot": true,
+    "futurelot_apn": "079171130",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16681833,
+    "futurelot_zone": "R-1",
+    "area_ratio": 1.004,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 145.9,
+        "length_ft": 67.6,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 40.4,
+        "length_ft": 199.9,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 146.0,
+        "length_ft": 67.3,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "echo ln",
+    "engine_street_names": [
+      "alpine rd",
+      "echo ln"
+    ],
+    "edges": [
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 200.1,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 199.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.2
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 95.7,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 95.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.7
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 199.9,
+        "engine": "street_side",
+        "engine_street": "alpine rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 199.5,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 2.3
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 67.3,
+        "engine": "front",
+        "engine_street": "echo ln",
+        "engine_abuts": "street",
+        "engine_len_ft": 67.6,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 2.8
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 0,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "portola rd",
+      "echo ln"
+    ]
+  },
+  {
+    "jurisdiction": "San Carlos",
+    "address": "2000 BIRCH AVE, San Carlos, CA",
+    "apn": "050282120",
+    "front_rule": "shortest_frontage",
+    "zone": "Single Family",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 3.9,
+    "futurelot_area_sqft": 7119,
+    "same_lot": true,
+    "futurelot_apn": "050282120",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16624033,
+    "futurelot_zone": "RS-6",
+    "area_ratio": 1.017,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 42.6,
+        "length_ft": 75.4,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 136.4,
+        "length_ft": 100.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 42.9,
+        "length_ft": 75.1,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "birch ave",
+    "engine_street_names": [
+      "cordilleras ave",
+      "birch ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 68.5,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 69.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.7
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 100.1,
+        "engine": "street_side",
+        "engine_street": "cordilleras ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 100.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 75.1,
+        "engine": "front",
+        "engine_street": "birch ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 75.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.0
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 100,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 100.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.4
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 15,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "cordilleras ave",
+      "birch ave"
+    ]
+  },
+  {
+    "jurisdiction": "San Mateo",
+    "address": "550 BARNESON AVE, San Mateo, CA",
+    "apn": "034363230",
+    "front_rule": "owner_elected",
+    "zone": "R1C",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 6.1,
+    "futurelot_area_sqft": 6026,
+    "same_lot": true,
+    "futurelot_apn": "034363230",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16585794,
+    "futurelot_zone": "R1",
+    "area_ratio": 0.989,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 41.3,
+        "length_ft": 68.5,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 41.1,
+        "length_ft": 69.4,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 130.9,
+        "length_ft": 87,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "barneson ave",
+    "engine_street_names": [
+      "barneson ave",
+      "alameda de las"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 69.6,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 68.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.3
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 87.1,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 86.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.7
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 69.4,
+        "engine": "front",
+        "engine_street": "barneson ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 68.5,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 4.5
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 87,
+        "engine": "street_side",
+        "engine_street": "alameda de las",
+        "engine_abuts": "street",
+        "engine_len_ft": 87.2,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 3.8
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 25,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "barneson ave",
+      "alameda de las"
+    ]
+  },
+  {
+    "jurisdiction": "San Mateo County (unincorporated)",
+    "address": "843 6TH AVE, REDWOOD CITY, CA",
+    "apn": "055082030",
+    "front_rule": "shortest_frontage",
+    "zone": "R-1/S-73",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 9.7,
+    "futurelot_area_sqft": 5669,
+    "same_lot": true,
+    "futurelot_apn": "055082030",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16634661,
+    "futurelot_zone": "R-1",
+    "area_ratio": 1.002,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 1,
+    "futurelot_front_count": 1,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 147.6,
+        "length_ft": 55.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 64.5,
+        "length_ft": 83.1,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "bay rd",
+    "engine_street_names": [
+      "bay rd",
+      "sixth ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 100,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 99.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.2
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 50.8,
+        "engine": "front",
+        "engine_street": "bay rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 55.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 15.4,
+        "engine": "street_side",
+        "engine_street": "sixth ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 95.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.3
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 83.1,
+        "engine": "street_side",
+        "engine_street": "sixth ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 95.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.8
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 58.9,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 58.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.1
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "side"
+    ],
+    "verdict": "different_front",
+    "edge_tag_agreement": "0/5",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 2000000,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "bay rd",
+      "6th ave"
+    ]
+  },
+  {
+    "jurisdiction": "Los Altos",
+    "address": "58 LYELL ST, Los Altos, CA",
+    "apn": "17039026",
+    "front_rule": "shortest_frontage",
+    "zone": "R3-1.8",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 4.2,
+    "futurelot_area_sqft": 7028,
+    "same_lot": true,
+    "futurelot_apn": "17039026",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17053015,
+    "futurelot_zone": "R3-1.8",
+    "area_ratio": 1.021,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 3,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 36.3,
+        "length_ft": 118.2,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 90.0,
+        "length_ft": 50.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 0.0,
+        "length_ft": 141.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "tyndall st",
+    "engine_street_names": [
+      "tyndall st",
+      "unnamed rd"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 50.1,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 141.9,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 141.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 48.0
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 49.9,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 141.9,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 141.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.6
+      }
+    ],
+    "futurelot_label_on_engine_front": [],
+    "verdict": "different_front",
+    "edge_tag_agreement": "1/2",
+    "unmatched_futurelot_edges": 2,
+    "unmatched_futurelot_edges_significant": 2,
+    "geometry_disagreement": true,
+    "adu_setbacks_futurelot": {
+      "front_val": 1000000,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "tyndall st",
+      "lassen st"
+    ]
+  },
+  {
+    "jurisdiction": "Los Altos Hills",
+    "address": "14100 DONELSON PL, Los Altos Hills, CA",
+    "apn": "17534040",
+    "front_rule": "designated",
+    "zone": "R-A",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 43.4,
+    "futurelot_area_sqft": 43939,
+    "same_lot": true,
+    "futurelot_apn": "17534040",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17127698,
+    "futurelot_zone": "R-A",
+    "area_ratio": 1.022,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 86.0,
+        "length_ft": 161.8,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 83.4,
+        "length_ft": 146.2,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 177.2,
+        "length_ft": 262.8,
+        "edges": 2
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "donelson pl",
+    "engine_street_names": [
+      "fremont rd",
+      "donelson pl"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 146.2,
+        "engine": "front",
+        "engine_street": "donelson pl",
+        "engine_abuts": "street",
+        "engine_len_ft": 161.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 6.2
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 259.5,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 259.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.6
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 167.2,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 167.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 245.7,
+        "engine": "street_side",
+        "engine_street": "fremont rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 264.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.5
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 17.1,
+        "engine": "street_side",
+        "engine_street": "fremont rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 264.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.0
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 16.5,
+        "engine": "front",
+        "engine_street": "donelson pl",
+        "engine_abuts": "street",
+        "engine_len_ft": 161.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "4/6",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 40,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [
+      "front_requires_review"
+    ],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "catharine ct",
+      "donelson pl"
+    ]
+  },
+  {
+    "jurisdiction": "Mountain View",
+    "address": "120 CHURCH ST, Mountain View, CA",
+    "apn": "15825062",
+    "front_rule": "shortest_frontage",
+    "zone": "R3-1",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 14.4,
+    "futurelot_area_sqft": 8283,
+    "same_lot": true,
+    "futurelot_apn": "15825062",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17022380,
+    "futurelot_zone": "R3",
+    "area_ratio": 1.028,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 60.6,
+        "length_ft": 86.3,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 63.5,
+        "length_ft": 77.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 149.7,
+        "length_ft": 99.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 3,
+    "engine_front_street": "calderon ave",
+    "engine_street_names": [
+      "calderon ave",
+      "church st"
+    ],
+    "edges": [
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 77.3,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 77.2,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.3
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 103.1,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 103.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.1
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 77.1,
+        "engine": "front",
+        "engine_street": "calderon ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 86.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.2
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 7.9,
+        "engine": "front",
+        "engine_street": "calderon ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 86.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 99.9,
+        "engine": "street_side",
+        "engine_street": "church st",
+        "engine_abuts": "street",
+        "engine_len_ft": 99.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "2/5",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 15,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "calderon ave",
+      "church st"
+    ]
+  },
+  {
+    "jurisdiction": "Palo Alto",
+    "address": "589 COLERIDGE AV, Palo Alto, CA",
+    "apn": "12401016",
+    "front_rule": "owner_elected",
+    "zone": "R-1 (10000)",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 4.3,
+    "futurelot_area_sqft": 11928,
+    "same_lot": true,
+    "futurelot_apn": "12401016",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17055751,
+    "futurelot_zone": "R-1",
+    "area_ratio": 1.023,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 51.7,
+        "length_ft": 99.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 141.6,
+        "length_ft": 120,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 51.9,
+        "length_ft": 100,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "coleridge ave",
+    "engine_street_names": [
+      "webster st",
+      "coleridge ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 100,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 100.2,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.1
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 120,
+        "engine": "street_side",
+        "engine_street": "webster st",
+        "engine_abuts": "street",
+        "engine_len_ft": 119.9,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 1.1
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 100,
+        "engine": "front",
+        "engine_street": "coleridge ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 99.9,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 4.1
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 120,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 119.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 1000000,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "webster st",
+      "coleridge ave"
+    ]
+  },
+  {
+    "jurisdiction": "San Jose",
+    "address": "1098 MICHIGAN AV, San Jose, CA",
+    "apn": "42918062",
+    "front_rule": "shortest_frontage",
+    "zone": "R-2",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 18.3,
+    "futurelot_area_sqft": 6568,
+    "same_lot": true,
+    "futurelot_apn": "42918062",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17151342,
+    "futurelot_zone": "R-2",
+    "area_ratio": 0.933,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 1,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 40.2,
+        "length_ft": 133.6,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 37.7,
+        "length_ft": 120,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "michigan ave",
+    "engine_street_names": [
+      "lincoln ave",
+      "michigan ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 16.8,
+        "engine": "front",
+        "engine_street": "michigan ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 133.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 5.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 120,
+        "engine": "front",
+        "engine_street": "michigan ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 133.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.6
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 47.4,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 47.2,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.4
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 142,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 141.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.0
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 28.1,
+        "engine": "street_side",
+        "engine_street": "lincoln ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 44.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.5
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 12.1,
+        "engine": "street_side",
+        "engine_street": "lincoln ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 44.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "agree",
+    "edge_tag_agreement": "4/6",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 15,
+      "side_val": 0,
+      "rear_val": 0
+    },
+    "lot_flags": [
+      "front_rule_override_unevaluated"
+    ],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "lincoln ave",
+      "michigan ave"
+    ]
+  },
+  {
+    "jurisdiction": "Saratoga",
+    "address": "19740 BRAEMAR DR, Saratoga, CA",
+    "apn": "39325001",
+    "front_rule": "shortest_frontage",
+    "zone": "R-1-10",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 11.6,
+    "futurelot_area_sqft": 12260,
+    "same_lot": true,
+    "futurelot_apn": "39325001",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 16912347,
+    "futurelot_zone": "R-1-10,000",
+    "area_ratio": 1.022,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 35.0,
+        "length_ft": 95.4,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 31.7,
+        "length_ft": 82.8,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 123.6,
+        "length_ft": 109.7,
+        "edges": 2
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "braemar dr",
+    "engine_street_names": [
+      "crestbrook dr",
+      "braemar dr"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 19.1,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 82.8,
+        "engine": "front",
+        "engine_street": "braemar dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 95.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.6
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 117.8,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 118.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 2.5
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 106.4,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 106.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.5
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 50.7,
+        "engine": "street_side",
+        "engine_street": "crestbrook dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 117.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.6
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 59,
+        "engine": "street_side",
+        "engine_street": "crestbrook dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 117.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.0
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/5",
+    "unmatched_futurelot_edges": 1,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 25,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "crestbrook dr",
+      "braemar dr"
+    ]
+  },
+  {
+    "jurisdiction": "Sunnyvale",
+    "address": "274 JACKSON ST, Sunnyvale, CA",
+    "apn": "20445057",
+    "front_rule": "all_fronts",
+    "zone": "R0",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 4.9,
+    "futurelot_area_sqft": 5341,
+    "same_lot": true,
+    "futurelot_apn": "20445057",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17090088,
+    "futurelot_zone": "R-0",
+    "area_ratio": 0.967,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 2,
+    "futurelot_front_count": 3,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 64.6,
+        "length_ft": 45.7,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 169.0,
+        "length_ft": 106.4,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 72.1,
+        "length_ft": 33.1,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 30.5,
+        "length_ft": 21.7,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 166.1,
+        "length_ft": 96,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 3,
+    "engine_front_street": "jackson st",
+    "engine_street_names": [
+      "jackson st",
+      "bayview ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 33.1,
+        "engine": "front",
+        "engine_street": "jackson st",
+        "engine_abuts": "street",
+        "engine_len_ft": 45.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 5.0
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 21.7,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 96,
+        "engine": "street_side",
+        "engine_street": "bayview ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 106.4,
+        "engine_flags": [
+          "second_front"
+        ],
+        "midpoint_offset_ft": 1.6
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 50.1,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 50.1,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.1
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 113,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 112.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.6
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "1/4",
+    "unmatched_futurelot_edges": 1,
+    "unmatched_futurelot_edges_significant": 1,
+    "geometry_disagreement": true,
+    "adu_setbacks_futurelot": {
+      "front_val": 0,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [
+      "second_front_jurisdiction"
+    ],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "jackson st",
+      "n bayview ave"
+    ]
+  },
+  {
+    "jurisdiction": "Healdsburg",
+    "address": "407 MATHESON ST, Healdsburg, CA",
+    "apn": "002-201-045",
+    "front_rule": "shortest_frontage",
+    "zone": "R-1-6000",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 3.7,
+    "futurelot_area_sqft": 14242,
+    "same_lot": true,
+    "futurelot_apn": "002201045000",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17769145,
+    "futurelot_zone": "R-1-6,000",
+    "area_ratio": 0.988,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 5,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 1,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 0.0,
+        "length_ft": 49.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 0.0,
+        "length_ft": 50,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 1,
+    "engine_front_street": "matheson st",
+    "engine_street_names": [
+      "matheson st",
+      "n st"
+    ],
+    "edges": [
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 286.8,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 287.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.5
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 50,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 49.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.3
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 286.1,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 194.0,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.6
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 50,
+        "engine": "front",
+        "engine_street": "matheson st",
+        "engine_abuts": "street",
+        "engine_len_ft": 49.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.1
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "agree",
+    "edge_tag_agreement": "4/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 20,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "matheson st",
+      "n st"
+    ]
+  },
+  {
+    "jurisdiction": "Windsor",
+    "address": "491 MALLORY AVE, Windsor, CA",
+    "apn": "161-190-060",
+    "front_rule": "shortest_frontage",
+    "zone": "SR",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 8.5,
+    "futurelot_area_sqft": 6744,
+    "same_lot": true,
+    "futurelot_apn": "161190060000",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17926707,
+    "futurelot_zone": "SR",
+    "area_ratio": 1.001,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 5,
+    "engine_front_count": 1,
+    "futurelot_front_count": 1,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 169.0,
+        "length_ft": 62.6,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 1.4,
+        "length_ft": 44.8,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 1,
+    "engine_front_street": "mallory ave",
+    "engine_street_names": [
+      "natalie dr",
+      "mallory ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 76.5,
+        "engine": "street_side",
+        "engine_street": "natalie dr",
+        "engine_abuts": "street",
+        "engine_len_ft": 94.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 70.5,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 70.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.5
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 100,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 100.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 44.8,
+        "engine": "front",
+        "engine_street": "mallory ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 62.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.4
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 35.8,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "agree",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 1,
+    "unmatched_futurelot_edges_significant": 1,
+    "geometry_disagreement": true,
+    "adu_setbacks_futurelot": {
+      "front_val": 15,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "natalie dr",
+      "mallory ave"
+    ]
+  },
+  {
+    "jurisdiction": "Contra Costa County (unincorporated)",
+    "address": "845  COVENTRY RD, KENSINGTON, CA",
+    "apn": "571080001",
+    "front_rule": "all_fronts",
+    "zone": "R-6 -TOV -K",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 20.5,
+    "futurelot_area_sqft": 10804,
+    "same_lot": true,
+    "futurelot_apn": "5710800011",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 6680643,
+    "futurelot_zone": "R-6",
+    "area_ratio": 0.998,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 3,
+    "futurelot_edge_count": 6,
+    "engine_front_count": 1,
+    "futurelot_front_count": 3,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 157.8,
+        "length_ft": 237.7,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 9.8,
+        "length_ft": 141.4,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 116.2,
+        "length_ft": 44.2,
+        "edges": 2
+      },
+      {
+        "bearing_deg": 77.7,
+        "length_ft": 52.7,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "ardmore path",
+    "engine_street_names": [
+      "ardmore path"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 141.4,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 21.4,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 22.8,
+        "engine": "front",
+        "engine_street": "ardmore path",
+        "engine_abuts": "street",
+        "engine_len_ft": 237.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.9
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 52.7,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 146.1,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 145.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.9
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 54.3,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 54.2,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.5
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "1/3",
+    "unmatched_futurelot_edges": 3,
+    "unmatched_futurelot_edges_significant": 3,
+    "geometry_disagreement": true,
+    "adu_setbacks_futurelot": {
+      "front_val": 0,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": true,
+    "engine_street_names_census": [
+      "coventry rd",
+      "ardmore path"
+    ]
+  },
+  {
+    "jurisdiction": "Marin County (unincorporated)",
+    "address": "233 WOODLAND RD, KENTFIELD, CA",
+    "apn": "07503112",
+    "front_rule": "address_street",
+    "zone": "RSP-1",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 16.7,
+    "futurelot_area_sqft": 74490,
+    "same_lot": true,
+    "futurelot_apn": "07503112",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 10746703,
+    "futurelot_zone": "RSP",
+    "area_ratio": 0.961,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 8,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 176.3,
+        "length_ft": 275.5,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 71.8,
+        "length_ft": 246.5,
+        "edges": 2
+      },
+      {
+        "bearing_deg": 12.8,
+        "length_ft": 275.4,
+        "edges": 2
+      }
+    ],
+    "futurelot_front_edge_count": 4,
+    "engine_front_street": "woodland rd",
+    "engine_street_names": [
+      "s ridgewood rd",
+      "woodland rd"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 218.4,
+        "engine": "street_side",
+        "engine_street": "s ridgewood rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 246.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.2
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 28.1,
+        "engine": "street_side",
+        "engine_street": "s ridgewood rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 246.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 6.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 24.7,
+        "engine": "front",
+        "engine_street": "woodland rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 275.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.4
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 250.7,
+        "engine": "front",
+        "engine_street": "woodland rd",
+        "engine_abuts": "street",
+        "engine_len_ft": 275.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.7
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 185.8,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 265.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 4.0
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 79.6,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 265.8,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.9
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 181.2,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 276.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.6
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 95.6,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 276.3,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.5
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "6/8",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 0,
+      "side_val": 0,
+      "rear_val": 0
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "s ridgewood rd",
+      "woodland rd"
+    ]
+  },
+  {
+    "jurisdiction": "Napa County (unincorporated)",
+    "address": "481 NEWTON WAY, ANG, CA",
+    "apn": "024114001000",
+    "front_rule": "shortest_frontage",
+    "zone": "RS:B-5",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 3.7,
+    "futurelot_area_sqft": 4895,
+    "same_lot": true,
+    "futurelot_apn": "024114001000",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 11144839,
+    "futurelot_zone": "RS",
+    "area_ratio": 1.024,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 3,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 1,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 17.7,
+        "length_ft": 139.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 66.4,
+        "length_ft": 65.5,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 1,
+    "engine_front_street": "toyon st",
+    "engine_street_names": [
+      "toyon st"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 65.5,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 74.9,
+        "engine": null,
+        "engine_street": null,
+        "engine_abuts": null,
+        "engine_len_ft": null,
+        "engine_flags": null,
+        "midpoint_offset_ft": null
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 65.5,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 65.5,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.7
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 74.9,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 74.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 0.2
+      }
+    ],
+    "futurelot_label_on_engine_front": [],
+    "verdict": "different_front",
+    "edge_tag_agreement": "0/2",
+    "unmatched_futurelot_edges": 2,
+    "unmatched_futurelot_edges_significant": 2,
+    "geometry_disagreement": true,
+    "adu_setbacks_futurelot": {
+      "front_val": 20,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": true,
+    "engine_street_names_census": [
+      "toyon st",
+      "newton way"
+    ]
+  },
+  {
+    "jurisdiction": "Santa Clara County (unincorporated)",
+    "address": "99 CLEVELAND AV, SAN JOSE, CA",
+    "apn": "27417030",
+    "front_rule": "shortest_frontage",
+    "zone": "R1-n2",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 4.5,
+    "futurelot_area_sqft": 5732,
+    "same_lot": true,
+    "futurelot_apn": "27417030",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17183228,
+    "futurelot_zone": "R1",
+    "area_ratio": 1.02,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 90.4,
+        "length_ft": 45.6,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 0.5,
+        "length_ft": 124.9,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 90.7,
+        "length_ft": 45.3,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "cleveland ave",
+    "engine_street_names": [
+      "olive ave",
+      "cleveland ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 124.9,
+        "engine": "street_side",
+        "engine_street": "olive ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 124.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.9
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 45.3,
+        "engine": "front",
+        "engine_street": "cleveland ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 45.6,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.9
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 125.1,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 124.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.9
+      },
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 46.6,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 46.7,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.9
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 0,
+      "side_val": 0,
+      "rear_val": 0
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "olive ave",
+      "cleveland ave"
+    ]
+  },
+  {
+    "jurisdiction": "Sonoma County (unincorporated)",
+    "address": "365 CALLE DEL MONTE, BOYES HOT SPRINGS, CA",
+    "apn": "056-415-013",
+    "front_rule": "owner_elected",
+    "zone": "R1 B6 5 DU",
+    "engine_used": "address",
+    "lot_centroid_offset_ft": 3.5,
+    "futurelot_area_sqft": 3120,
+    "same_lot": true,
+    "futurelot_apn": "056415013000",
+    "apn_match_futurelot": true,
+    "futurelot_property_id": 17843754,
+    "futurelot_zone": "R1",
+    "area_ratio": 0.867,
+    "lot_shape_mismatch": false,
+    "engine_edge_count": 4,
+    "futurelot_edge_count": 4,
+    "engine_front_count": 1,
+    "futurelot_front_count": 2,
+    "engine_front_groups": [
+      {
+        "bearing_deg": 43.5,
+        "length_ft": 45.0,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_groups": [
+      {
+        "bearing_deg": 151.8,
+        "length_ft": 81.5,
+        "edges": 1
+      },
+      {
+        "bearing_deg": 43.5,
+        "length_ft": 44.9,
+        "edges": 1
+      }
+    ],
+    "futurelot_front_edge_count": 2,
+    "engine_front_street": "calle del monte",
+    "engine_street_names": [
+      "calle del monte",
+      "vallejo ave"
+    ],
+    "edges": [
+      {
+        "futurelot": "rear",
+        "futurelot_len_ft": 42.3,
+        "engine": "rear",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 42.4,
+        "engine_flags": [],
+        "midpoint_offset_ft": 3.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 81.5,
+        "engine": "street_side",
+        "engine_street": "vallejo ave",
+        "engine_abuts": "street",
+        "engine_len_ft": 81.4,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 0.8
+      },
+      {
+        "futurelot": "front",
+        "futurelot_len_ft": 44.9,
+        "engine": "front",
+        "engine_street": "calle del monte",
+        "engine_abuts": "street",
+        "engine_len_ft": 45.0,
+        "engine_flags": [
+          "owner_electable"
+        ],
+        "midpoint_offset_ft": 3.1
+      },
+      {
+        "futurelot": "side",
+        "futurelot_len_ft": 67,
+        "engine": "side",
+        "engine_street": null,
+        "engine_abuts": "parcels",
+        "engine_len_ft": 66.9,
+        "engine_flags": [],
+        "midpoint_offset_ft": 1.0
+      }
+    ],
+    "futurelot_label_on_engine_front": [
+      "front"
+    ],
+    "verdict": "futurelot_extra_front",
+    "edge_tag_agreement": "3/4",
+    "unmatched_futurelot_edges": 0,
+    "unmatched_futurelot_edges_significant": 0,
+    "geometry_disagreement": false,
+    "adu_setbacks_futurelot": {
+      "front_val": 20,
+      "side_val": 4,
+      "rear_val": 4
+    },
+    "lot_flags": [],
+    "roads_collapsed_frontage": false,
+    "engine_street_names_census": [
+      "calle del monte",
+      "vallejo ave"
+    ]
+  }
+]

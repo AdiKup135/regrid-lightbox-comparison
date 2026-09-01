@@ -1,0 +1,1839 @@
+{
+  "Lafayette": {
+    "jurisdiction": "Lafayette",
+    "apn": "238102008",
+    "address": "680  GLENSIDE DR",
+    "situs_city": "LAFAYETTE",
+    "lat": 37.874296294253924,
+    "lng": -122.09515383174625,
+    "area_sqft": 9045,
+    "seed_distance_m": 183,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "augustine ln",
+        "glenside dr"
+      ],
+      "max_frontage_angle_deg": 85.1,
+      "front": {
+        "street_name": "glenside dr",
+        "street_name_source": "census",
+        "length_ft": 96.1,
+        "bearing_deg": 21.5,
+        "midpoint": [
+          -122.095204,
+          37.874417
+        ],
+        "basis": "address_match",
+        "confidence": "low",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "augustine ln",
+          "length_ft": 96.3,
+          "bearing_deg": 106.6,
+          "midpoint": [
+            -122.094993,
+            37.874331
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": [
+        "front_requires_review"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Hamlin Rd & Los Palos Dr, Lafayette, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Lafayette",
+      "county_name": "Contra Costa",
+      "county_fips": "06013",
+      "rule_resolved": "designated",
+      "zone_code": "R-10",
+      "zone_type": "R-10",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Moraga": {
+    "jurisdiction": "Moraga",
+    "apn": "255404003",
+    "address": "838  CAMINO RICARDO",
+    "situs_city": "MORAGA",
+    "lat": 37.8443731390192,
+    "lng": -122.13504367341022,
+    "area_sqft": 11486,
+    "seed_distance_m": 28,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "camino ricardo",
+        "corliss dr"
+      ],
+      "max_frontage_angle_deg": 89.4,
+      "front": {
+        "street_name": "camino ricardo",
+        "street_name_source": "census",
+        "length_ft": 119.4,
+        "bearing_deg": 80.5,
+        "midpoint": [
+          -122.134881,
+          37.844349
+        ],
+        "basis": "address_match",
+        "confidence": "low",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "corliss dr",
+          "length_ft": 97.9,
+          "bearing_deg": 171.1,
+          "midpoint": [
+            -122.135017,
+            37.844534
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": [
+        "front_requires_review"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Camino Ricardo & Ascot Dr, Moraga, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Moraga",
+      "county_name": "Contra Costa",
+      "county_fips": "06013",
+      "rule_resolved": "designated",
+      "zone_code": "3-DUA",
+      "zone_type": "3-DUA",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Orinda": {
+    "jurisdiction": "Orinda",
+    "apn": "268163002",
+    "address": "9  NORTHWOOD DR",
+    "situs_city": "ORINDA",
+    "lat": 37.87904988060497,
+    "lng": -122.18038871070985,
+    "area_sqft": 11830,
+    "seed_distance_m": 110,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "northwood dr",
+        "northwood ct"
+      ],
+      "max_frontage_angle_deg": 76.4,
+      "front": {
+        "street_name": "northwood ct",
+        "street_name_source": "census",
+        "length_ft": 78.0,
+        "bearing_deg": 161.7,
+        "midpoint": [
+          -122.180356,
+          37.879245
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "northwood dr",
+          "length_ft": 137.3,
+          "bearing_deg": 85.3,
+          "midpoint": [
+            -122.180245,
+            37.87902
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Brookwood Rd & Moraga Way, Orinda, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Orinda",
+      "county_name": "Contra Costa",
+      "county_fips": "06013",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "RL-20",
+      "zone_type": "RL-20",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Fairfax": {
+    "jurisdiction": "Fairfax",
+    "apn": "00112226",
+    "address": "73 SCENIC RD",
+    "situs_city": "FAIRFAX",
+    "lat": 37.99027068821864,
+    "lng": -122.59543091207028,
+    "area_sqft": 7204,
+    "seed_distance_m": 26,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "scenic rd",
+        "manor rd"
+      ],
+      "max_frontage_angle_deg": 76.1,
+      "front": {
+        "street_name": "manor rd",
+        "street_name_source": "census",
+        "length_ft": 67.2,
+        "bearing_deg": 112.4,
+        "midpoint": [
+          -122.595228,
+          37.990291
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "scenic rd",
+          "length_ft": 111.4,
+          "bearing_deg": 8.4,
+          "midpoint": [
+            -122.595475,
+            37.990366
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Scenic Rd & Manor Rd, Fairfax, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Fairfax",
+      "county_name": "Marin",
+      "county_fips": "06041",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "RD-5.5-7",
+      "zone_type": "RD-5.5-7 Residential",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Mill Valley": {
+    "jurisdiction": "Mill Valley",
+    "apn": "02818111",
+    "address": "329 ETHEL AVE",
+    "situs_city": "MILL VALLEY",
+    "lat": 37.90080994968165,
+    "lng": -122.54340493062618,
+    "area_sqft": 4596,
+    "seed_distance_m": 24,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "una way",
+        "ethel ave"
+      ],
+      "max_frontage_angle_deg": 78.5,
+      "front": {
+        "street_name": "ethel ave",
+        "street_name_source": "census",
+        "length_ft": 56.6,
+        "bearing_deg": 97.8,
+        "midpoint": [
+          -122.543608,
+          37.900854
+        ],
+        "basis": "address_match",
+        "confidence": "low",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "una way",
+          "length_ft": 128.4,
+          "bearing_deg": 176.3,
+          "midpoint": [
+            -122.543356,
+            37.900715
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": [
+        "front_requires_review"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Ethel Ave & Marion Ave, Mill Valley, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Mill Valley",
+      "county_name": "Marin",
+      "county_fips": "06041",
+      "rule_resolved": "designated",
+      "zone_code": "RS-6",
+      "zone_type": "Single Fam Res (min 6000 SF)",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Sausalito": {
+    "jurisdiction": "Sausalito",
+    "apn": "06421307",
+    "address": "299 GLEN DR",
+    "situs_city": "SAUSALITO",
+    "lat": 37.85710115603731,
+    "lng": -122.48953788552284,
+    "area_sqft": 4511,
+    "seed_distance_m": 35,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "currey ave",
+        "cazneau ave"
+      ],
+      "max_frontage_angle_deg": 82.8,
+      "front": {
+        "street_name": "cazneau ave",
+        "street_name_source": "census",
+        "length_ft": 66.6,
+        "bearing_deg": 107.6,
+        "midpoint": [
+          -122.489428,
+          37.857137
+        ],
+        "basis": "geometry",
+        "confidence": "low",
+        "flags": [
+          "owner_electable"
+        ]
+      },
+      "street_sides": [
+        {
+          "street_name": "currey ave",
+          "length_ft": 74.8,
+          "bearing_deg": 24.8,
+          "midpoint": [
+            -122.489581,
+            37.857181
+          ],
+          "flags": [
+            "owner_electable"
+          ]
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Filbert Ave & Glen Dr, Sausalito, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Sausalito",
+      "county_name": "Marin",
+      "county_fips": "06041",
+      "rule_resolved": "owner_elected",
+      "zone_code": "R-1-6",
+      "zone_type": "R-1-6",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Napa": {
+    "jurisdiction": "Napa",
+    "apn": "005021001000",
+    "address": "1795 LAUREL ST",
+    "situs_city": "NAP",
+    "lat": 38.292425135440396,
+    "lng": -122.29405129846872,
+    "area_sqft": 8203,
+    "seed_distance_m": 32,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "jefferson st",
+        "laurel st"
+      ],
+      "max_frontage_angle_deg": 83.8,
+      "front": {
+        "street_name": "laurel st",
+        "street_name_source": "census",
+        "length_ft": 61.0,
+        "bearing_deg": 178.3,
+        "midpoint": [
+          -122.294032,
+          38.292593
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "jefferson st",
+          "length_ft": 120.4,
+          "bearing_deg": 82.1,
+          "midpoint": [
+            -122.294172,
+            38.292433
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Laurel St & Jefferson St, Napa, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Napa",
+      "county_name": "Napa",
+      "county_fips": "06055",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "RT 5",
+      "zone_type": "Traditional Residential Infill Minimum Lot Size 5000 Sq Ft",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Atherton": {
+    "jurisdiction": "Atherton",
+    "apn": "061330140",
+    "address": "256 PRIOR LN",
+    "situs_city": "ATHERTON",
+    "lat": 37.46575481067775,
+    "lng": -122.18720549755135,
+    "area_sqft": 57152,
+    "seed_distance_m": 125,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "ln",
+        "prior ln"
+      ],
+      "max_frontage_angle_deg": 86.4,
+      "front": {
+        "street_name": "prior ln",
+        "street_name_source": "census",
+        "length_ft": 245.5,
+        "bearing_deg": 59.5,
+        "midpoint": [
+          -122.186878,
+          37.465581
+        ],
+        "basis": "address_match",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "ln",
+          "length_ft": 224.3,
+          "bearing_deg": 145.8,
+          "midpoint": [
+            -122.186981,
+            37.46605
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 100.0,
+    "seed_query": "Selby Ln & Middlefield Rd, Atherton, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Atherton",
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "address_street",
+      "zone_code": "R-1A",
+      "zone_type": "Residential District R-1A",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Hillsborough": {
+    "jurisdiction": "Hillsborough",
+    "apn": "031382050",
+    "address": "5 HOMEPLACE CT",
+    "situs_city": "HILLSBOROUGH",
+    "lat": 37.56395720824809,
+    "lng": -122.36245992335151,
+    "area_sqft": 23207,
+    "seed_distance_m": 161,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "homeplace ct",
+        "barroilhet ave"
+      ],
+      "max_frontage_angle_deg": 85.0,
+      "front": {
+        "street_name": "homeplace ct",
+        "street_name_source": "census",
+        "length_ft": 105.8,
+        "bearing_deg": 146.7,
+        "midpoint": [
+          -122.362652,
+          37.563763
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "barroilhet ave",
+          "length_ft": 177.5,
+          "bearing_deg": 61.6,
+          "midpoint": [
+            -122.362658,
+            37.56406
+          ],
+          "flags": [
+            "second_front"
+          ]
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": [
+        "second_front_jurisdiction"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Ralston Ave & Chateau Dr, Hillsborough, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Hillsborough",
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "all_fronts",
+      "zone_code": "R",
+      "zone_type": "Residential",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Menlo Park": {
+    "jurisdiction": "Menlo Park",
+    "apn": "061383160",
+    "address": "385 OAK GROVE AVE",
+    "situs_city": "MENLO PARK",
+    "lat": 37.457299652366096,
+    "lng": -122.18180252758935,
+    "area_sqft": 7718,
+    "seed_distance_m": 36,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "laurel st",
+        "oak grove ave"
+      ],
+      "max_frontage_angle_deg": 89.5,
+      "front": {
+        "street_name": "oak grove ave",
+        "street_name_source": "census",
+        "length_ft": 128.3,
+        "bearing_deg": 58.1,
+        "midpoint": [
+          -122.18189,
+          37.457343
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": [
+          "owner_electable"
+        ]
+      },
+      "street_sides": [
+        {
+          "street_name": "laurel st",
+          "length_ft": 60.0,
+          "bearing_deg": 147.6,
+          "midpoint": [
+            -122.181919,
+            37.45715
+          ],
+          "flags": [
+            "owner_electable"
+          ]
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Oak Grove Ave & Laurel St, Menlo Park, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Menlo Park",
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "owner_elected",
+      "zone_code": "R3",
+      "zone_type": "R3",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Portola Valley": {
+    "jurisdiction": "Portola Valley",
+    "apn": "079171130",
+    "address": "247 ECHO LN",
+    "situs_city": "PORTOLA VALLEY",
+    "lat": 37.37131116008305,
+    "lng": -122.20924277601118,
+    "area_sqft": 16108,
+    "seed_distance_m": 104,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "portola rd",
+        "echo ln"
+      ],
+      "max_frontage_angle_deg": 74.9,
+      "front": {
+        "street_name": "echo ln",
+        "street_name_source": "census",
+        "length_ft": 67.6,
+        "bearing_deg": 145.9,
+        "midpoint": [
+          -122.2095,
+          37.371107
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": [
+          "owner_electable"
+        ]
+      },
+      "street_sides": [
+        {
+          "street_name": "portola rd",
+          "length_ft": 199.5,
+          "bearing_deg": 40.7,
+          "midpoint": [
+            -122.209143,
+            37.371233
+          ],
+          "flags": [
+            "owner_electable"
+          ]
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Portola Rd & Alpine Rd, Portola Valley, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Portola Valley",
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "owner_elected",
+      "zone_code": "R-1/15M",
+      "zone_type": "R-1/15M",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "San Carlos": {
+    "jurisdiction": "San Carlos",
+    "apn": "050313170",
+    "address": "1975 BIRCH AVE",
+    "situs_city": "SAN CARLOS",
+    "lat": 37.49560914582985,
+    "lng": -122.26161293204574,
+    "area_sqft": 5074,
+    "seed_distance_m": 35,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "eucalyptus ave",
+        "birch ave"
+      ],
+      "max_frontage_angle_deg": 89.6,
+      "front": {
+        "street_name": "birch ave",
+        "street_name_source": "census",
+        "length_ft": 50.0,
+        "bearing_deg": 42.7,
+        "midpoint": [
+          -122.261731,
+          37.495711
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "eucalyptus ave",
+          "length_ft": 101.0,
+          "bearing_deg": 132.3,
+          "midpoint": [
+            -122.261676,
+            37.495562
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Cedar St & Cordilleras Ave, San Carlos, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "San Carlos",
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "Single Family",
+      "zone_type": "Single Family",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "San Mateo": {
+    "jurisdiction": "San Mateo",
+    "apn": "034363230",
+    "address": "550 BARNESON AVE",
+    "situs_city": "SAN MATEO",
+    "lat": 37.54903919071645,
+    "lng": -122.32465632488892,
+    "area_sqft": 5974,
+    "seed_distance_m": 28,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "barneson ave",
+        "alameda de las"
+      ],
+      "max_frontage_angle_deg": 89.5,
+      "front": {
+        "street_name": "barneson ave",
+        "street_name_source": "census",
+        "length_ft": 68.5,
+        "bearing_deg": 41.3,
+        "midpoint": [
+          -122.324558,
+          37.548949
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": [
+          "owner_electable"
+        ]
+      },
+      "street_sides": [
+        {
+          "street_name": "alameda de las",
+          "length_ft": 87.2,
+          "bearing_deg": 130.8,
+          "midpoint": [
+            -122.324745,
+            37.548977
+          ],
+          "flags": [
+            "owner_electable"
+          ]
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Barneson Ave & Alameda de las Pulgas, San Mateo, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "San Mateo",
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "owner_elected",
+      "zone_code": "R1C",
+      "zone_type": "R1C",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "San Mateo County (unincorporated)": {
+    "jurisdiction": "San Mateo County (unincorporated)",
+    "apn": "055082030",
+    "address": "843 6TH AVE",
+    "situs_city": "REDWOOD CITY",
+    "lat": 37.48112581924497,
+    "lng": -122.19805582795851,
+    "area_sqft": 5823,
+    "seed_distance_m": 76,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "bay rd",
+        "6th ave"
+      ],
+      "max_frontage_angle_deg": 80.1,
+      "front": {
+        "street_name": "bay rd",
+        "street_name_source": "census",
+        "length_ft": 55.9,
+        "bearing_deg": 147.6,
+        "midpoint": [
+          -122.197985,
+          37.481253
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "6th ave",
+          "length_ft": 95.0,
+          "bearing_deg": 67.5,
+          "midpoint": [
+            -122.197966,
+            37.481085
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "5th Ave & Bay Rd, Redwood City, CA 94063",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": null,
+      "county_name": "San Mateo",
+      "county_fips": "06081",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R-1/S-73",
+      "zone_type": "One Family Residential District/Residential Density District 73",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Los Altos": {
+    "jurisdiction": "Los Altos",
+    "apn": "17040084",
+    "address": "124 MARVIN AV",
+    "situs_city": "LOS ALTOS",
+    "lat": 37.37615399959121,
+    "lng": -122.11147831016487,
+    "area_sqft": 14088,
+    "seed_distance_m": 83,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "marvin ave",
+        "lyell st"
+      ],
+      "max_frontage_angle_deg": 89.7,
+      "front": {
+        "street_name": "marvin ave",
+        "street_name_source": "census",
+        "length_ft": 97.6,
+        "bearing_deg": 0.0,
+        "midpoint": [
+          -122.11148,
+          37.376351
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "lyell st",
+          "length_ft": 143.3,
+          "bearing_deg": 90.3,
+          "midpoint": [
+            -122.111309,
+            37.376154
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Edith Ave & Lyell St, Los Altos, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Los Altos",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R1-10",
+      "zone_type": "R1-10",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Los Altos Hills": {
+    "jurisdiction": "Los Altos Hills",
+    "apn": "17534040",
+    "address": "14100 DONELSON PL",
+    "situs_city": "LOS ALTOS HILLS",
+    "lat": 37.38285943750908,
+    "lng": -122.13540116695513,
+    "area_sqft": 44516,
+    "seed_distance_m": 204,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "donelson pl",
+        "catharine ct"
+      ],
+      "max_frontage_angle_deg": 57.1,
+      "front": {
+        "street_name": "donelson pl",
+        "street_name_source": "census",
+        "length_ft": 167.6,
+        "bearing_deg": 87.0,
+        "midpoint": [
+          -122.134945,
+          37.382841
+        ],
+        "basis": "address_match",
+        "confidence": "low",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "catharine ct",
+          "length_ft": 426.2,
+          "bearing_deg": 144.1,
+          "midpoint": [
+            -122.135695,
+            37.382642
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": [
+        "front_requires_review"
+      ]
+    },
+    "score": 91.3,
+    "seed_query": "Fremont Rd & Concepcion Rd, Los Altos Hills, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Los Altos Hills",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "designated",
+      "zone_code": "R-A",
+      "zone_type": null,
+      "residential": null
+    },
+    "jurisdiction_ok": true
+  },
+  "Mountain View": {
+    "jurisdiction": "Mountain View",
+    "apn": "15825062",
+    "address": "120 CHURCH ST",
+    "situs_city": "MOUNTAIN VIEW",
+    "lat": 37.38535401653355,
+    "lng": -122.07592877932156,
+    "area_sqft": 8505,
+    "seed_distance_m": 33,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "calderon ave",
+        "church st"
+      ],
+      "max_frontage_angle_deg": 88.7,
+      "front": {
+        "street_name": "calderon ave",
+        "street_name_source": "census",
+        "length_ft": 86.3,
+        "bearing_deg": 60.6,
+        "midpoint": [
+          -122.075775,
+          37.385288
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "church st",
+          "length_ft": 99.4,
+          "bearing_deg": 149.3,
+          "midpoint": [
+            -122.076001,
+            37.385256
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Church St & Calderon Ave, Mountain View, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Mountain View",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R3-1",
+      "zone_type": "R3-1",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Palo Alto": {
+    "jurisdiction": "Palo Alto",
+    "apn": "12401016",
+    "address": "589 COLERIDGE AV",
+    "situs_city": "PALO ALTO",
+    "lat": 37.4408778324456,
+    "lng": -122.1447500434183,
+    "area_sqft": 12030,
+    "seed_distance_m": 36,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "webster st",
+        "coleridge ave"
+      ],
+      "max_frontage_angle_deg": 89.8,
+      "front": {
+        "street_name": "coleridge ave",
+        "street_name_source": "census",
+        "length_ft": 99.9,
+        "bearing_deg": 51.7,
+        "midpoint": [
+          -122.144588,
+          37.440775
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": [
+          "owner_electable"
+        ]
+      },
+      "street_sides": [
+        {
+          "street_name": "webster st",
+          "length_ft": 119.9,
+          "bearing_deg": 141.4,
+          "midpoint": [
+            -122.144643,
+            37.440985
+          ],
+          "flags": [
+            "owner_electable"
+          ]
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Webster St & Coleridge Ave, Palo Alto, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Palo Alto",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "owner_elected",
+      "zone_code": "R-1 (10000)",
+      "zone_type": "Residential Single-Family",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "San Jose": {
+    "jurisdiction": "San Jose",
+    "apn": "42918062",
+    "address": "1098 MICHIGAN AV",
+    "situs_city": "SAN JOSE",
+    "lat": 37.30302259337178,
+    "lng": -121.89600850507478,
+    "area_sqft": 6607,
+    "seed_distance_m": 134,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "lincoln ave",
+        "michigan ave"
+      ],
+      "max_frontage_angle_deg": 83.4,
+      "front": {
+        "street_name": "michigan ave",
+        "street_name_source": "census",
+        "length_ft": 133.6,
+        "bearing_deg": 40.2,
+        "midpoint": [
+          -121.896061,
+          37.303074
+        ],
+        "basis": "address_match",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "lincoln ave",
+          "length_ft": 44.0,
+          "bearing_deg": 123.6,
+          "midpoint": [
+            -121.896197,
+            37.302899
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": [
+        "front_rule_override_unevaluated"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Minnesota Ave & Lincoln Ave, San Jose, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "San Jose",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R-2",
+      "zone_type": "R-2",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Saratoga": {
+    "jurisdiction": "Saratoga",
+    "apn": "39325001",
+    "address": "19740 BRAEMAR DR",
+    "situs_city": "SARATOGA",
+    "lat": 37.27164130615458,
+    "lng": -122.01805626891664,
+    "area_sqft": 12466,
+    "seed_distance_m": 35,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "crestbrook dr",
+        "braemar dr"
+      ],
+      "max_frontage_angle_deg": 80.6,
+      "front": {
+        "street_name": "braemar dr",
+        "street_name_source": "census",
+        "length_ft": 95.4,
+        "bearing_deg": 35.0,
+        "midpoint": [
+          -122.018152,
+          37.27179
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "crestbrook dr",
+          "length_ft": 117.0,
+          "bearing_deg": 115.5,
+          "midpoint": [
+            -122.018215,
+            37.271561
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Saratoga, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Saratoga",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R-1-10",
+      "zone_type": "R-1-10",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Sunnyvale": {
+    "jurisdiction": "Sunnyvale",
+    "apn": "20445057",
+    "address": "274 JACKSON ST",
+    "situs_city": "SUNNYVALE",
+    "lat": 37.382246781790975,
+    "lng": -122.02477402653322,
+    "area_sqft": 5529,
+    "seed_distance_m": 17,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "jackson st",
+        "n bayview ave"
+      ],
+      "max_frontage_angle_deg": 75.7,
+      "front": {
+        "street_name": "jackson st",
+        "street_name_source": "census",
+        "length_ft": 45.7,
+        "bearing_deg": 64.6,
+        "midpoint": [
+          -122.024968,
+          37.382283
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "n bayview ave",
+          "length_ft": 106.4,
+          "bearing_deg": 169.0,
+          "midpoint": [
+            -122.024746,
+            37.382313
+          ],
+          "flags": [
+            "second_front"
+          ]
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": [
+        "second_front_jurisdiction"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Bayview Ave & Iowa Ave, Sunnyvale, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Sunnyvale",
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "all_fronts",
+      "zone_code": "R0",
+      "zone_type": "R0",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Healdsburg": {
+    "jurisdiction": "Healdsburg",
+    "apn": "002-201-045",
+    "address": "407 MATHESON ST",
+    "situs_city": "HE",
+    "lat": 38.61147623571785,
+    "lng": -122.86465930430411,
+    "area_sqft": 14329,
+    "seed_distance_m": 126,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "matheson st",
+        "n st"
+      ],
+      "max_frontage_angle_deg": 89.1,
+      "front": {
+        "street_name": "matheson st",
+        "street_name_source": "census",
+        "length_ft": 49.9,
+        "bearing_deg": 0.0,
+        "midpoint": [
+          -122.864666,
+          38.611083
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "n st",
+          "length_ft": 92.6,
+          "bearing_deg": 89.1,
+          "midpoint": [
+            -122.864568,
+            38.611742
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Johnson St & North St, Healdsburg, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Healdsburg",
+      "county_name": "Sonoma",
+      "county_fips": "06097",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R-1-6000",
+      "zone_type": "R-1-6000",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Windsor": {
+    "jurisdiction": "Windsor",
+    "apn": "161-190-060",
+    "address": "491 MALLORY AVE",
+    "situs_city": "WI",
+    "lat": 38.55892674580479,
+    "lng": -122.81111537255488,
+    "area_sqft": 6828,
+    "seed_distance_m": 70,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "natalie dr",
+        "mallory ave"
+      ],
+      "max_frontage_angle_deg": 70.8,
+      "front": {
+        "street_name": "mallory ave",
+        "street_name_source": "census",
+        "length_ft": 62.6,
+        "bearing_deg": 169.0,
+        "midpoint": [
+          -122.811106,
+          38.558782
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "natalie dr",
+          "length_ft": 94.6,
+          "bearing_deg": 98.3,
+          "midpoint": [
+            -122.811243,
+            38.55893
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Natalie Dr & Windsor Rd, Windsor, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": "Windsor",
+      "county_name": "Sonoma",
+      "county_fips": "06097",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "SR",
+      "zone_type": "SR",
+      "residential": null
+    },
+    "jurisdiction_ok": true
+  },
+  "Contra Costa County (unincorporated)": {
+    "jurisdiction": "Contra Costa County (unincorporated)",
+    "apn": "571080001",
+    "address": "845  COVENTRY RD",
+    "situs_city": "KENSINGTON",
+    "lat": 37.90388502392029,
+    "lng": -122.27878826245878,
+    "area_sqft": 10905,
+    "seed_distance_m": 45,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "coventry rd",
+        "ardmore path"
+      ],
+      "max_frontage_angle_deg": 88.9,
+      "front": {
+        "street_name": "coventry rd",
+        "street_name_source": "census",
+        "length_ft": 88.1,
+        "bearing_deg": 97.6,
+        "midpoint": [
+          -122.278521,
+          37.903893
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "ardmore path",
+          "length_ft": 149.6,
+          "bearing_deg": 6.5,
+          "midpoint": [
+            -122.278831,
+            37.903982
+          ],
+          "flags": [
+            "second_front"
+          ]
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": [
+        "second_front_jurisdiction"
+      ]
+    },
+    "score": 115.0,
+    "seed_query": "Arlington Ave & Coventry Rd, Kensington, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": null,
+      "county_name": "Contra Costa",
+      "county_fips": "06013",
+      "rule_resolved": "all_fronts",
+      "zone_code": "R-6 -TOV -K",
+      "zone_type": "Single Family Residential Tree Obstruction of View Ordinance and Kensington Combining District",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Marin County (unincorporated)": {
+    "jurisdiction": "Marin County (unincorporated)",
+    "apn": "07503112",
+    "address": "233 WOODLAND RD",
+    "situs_city": "KENTFIELD",
+    "lat": 37.94900567847645,
+    "lng": -122.55796988490943,
+    "area_sqft": 74954,
+    "seed_distance_m": 59,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "s ridgewood rd",
+        "woodland rd"
+      ],
+      "max_frontage_angle_deg": 73.3,
+      "front": {
+        "street_name": "woodland rd",
+        "street_name_source": "census",
+        "length_ft": 275.5,
+        "bearing_deg": 176.3,
+        "midpoint": [
+          -122.557835,
+          37.949351
+        ],
+        "basis": "address_match",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "s ridgewood rd",
+          "length_ft": 246.7,
+          "bearing_deg": 69.6,
+          "midpoint": [
+            -122.558471,
+            37.949058
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 100.0,
+    "seed_query": "Woodland Rd & Ross Ave, Kentfield, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": null,
+      "county_name": "Marin",
+      "county_fips": "06041",
+      "rule_resolved": "address_street",
+      "zone_code": "RSP-1",
+      "zone_type": "Residential Single Family Planned",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Napa County (unincorporated)": {
+    "jurisdiction": "Napa County (unincorporated)",
+    "apn": "024114001000",
+    "address": "481 NEWTON WAY",
+    "situs_city": "ANG",
+    "lat": 38.58138318871252,
+    "lng": -122.44882491181659,
+    "area_sqft": 4907,
+    "seed_distance_m": 197,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "toyon st",
+        "newton way"
+      ],
+      "max_frontage_angle_deg": 89.8,
+      "front": {
+        "street_name": "toyon st",
+        "street_name_source": "census",
+        "length_ft": 65.2,
+        "bearing_deg": 66.6,
+        "midpoint": [
+          -122.448946,
+          38.581424
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "medium",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "newton way",
+          "length_ft": 74.8,
+          "bearing_deg": 156.7,
+          "midpoint": [
+            -122.448779,
+            38.581465
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "White Cottage Rd & College Ave, Angwin, CA",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": null,
+      "county_name": "Napa",
+      "county_fips": "06055",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "RS:B-5",
+      "zone_type": "RS:B-5",
+      "residential": null
+    },
+    "jurisdiction_ok": true
+  },
+  "Santa Clara County (unincorporated)": {
+    "jurisdiction": "Santa Clara County (unincorporated)",
+    "apn": "27417030",
+    "address": "99 CLEVELAND AV",
+    "situs_city": "SAN JOSE",
+    "lat": 37.32517830633294,
+    "lng": -121.9301993376059,
+    "area_sqft": 5776,
+    "seed_distance_m": 24,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "olive ave",
+        "cleveland ave"
+      ],
+      "max_frontage_angle_deg": 89.9,
+      "front": {
+        "street_name": "cleveland ave",
+        "street_name_source": "census",
+        "length_ft": 45.6,
+        "bearing_deg": 90.4,
+        "midpoint": [
+          -121.929983,
+          37.325181
+        ],
+        "basis": "jurisdiction_rule",
+        "confidence": "high",
+        "flags": []
+      },
+      "street_sides": [
+        {
+          "street_name": "olive ave",
+          "length_ft": 124.7,
+          "bearing_deg": 0.5,
+          "midpoint": [
+            -121.930199,
+            37.325242
+          ],
+          "flags": []
+        }
+      ],
+      "tags": [
+        "side",
+        "rear",
+        "street_side",
+        "front"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Cleveland Ave & Burbank Dr, San Jose, CA 95128",
+    "county_layer_override": false,
+    "jurisdiction_check": {
+      "place_name": null,
+      "county_name": "Santa Clara",
+      "county_fips": "06085",
+      "rule_resolved": "shortest_frontage",
+      "zone_code": "R1-n2",
+      "zone_type": "R1-n2",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  },
+  "Sonoma County (unincorporated)": {
+    "jurisdiction": "Sonoma County (unincorporated)",
+    "apn": "056-415-013",
+    "address": "365 CALLE DEL MONTE",
+    "situs_city": "BOYES HOT SPRINGS, CA",
+    "lat": 38.31355989336423,
+    "lng": -122.47895570673509,
+    "area_sqft": 3162,
+    "seed_distance_m": 42,
+    "analysis": {
+      "is_corner": true,
+      "street_frontage_count": 2,
+      "street_names": [
+        "calle del monte",
+        "vallejo ave"
+      ],
+      "max_frontage_angle_deg": 71.6,
+      "front": {
+        "street_name": "calle del monte",
+        "street_name_source": "census",
+        "length_ft": 45.0,
+        "bearing_deg": 43.5,
+        "midpoint": [
+          -122.478843,
+          38.31351
+        ],
+        "basis": "address_match",
+        "confidence": "medium",
+        "flags": [
+          "owner_electable"
+        ]
+      },
+      "street_sides": [
+        {
+          "street_name": "vallejo ave",
+          "length_ft": 81.4,
+          "bearing_deg": 151.9,
+          "midpoint": [
+            -122.478912,
+            38.313605
+          ],
+          "flags": [
+            "owner_electable"
+          ]
+        }
+      ],
+      "tags": [
+        "rear",
+        "side",
+        "front",
+        "street_side"
+      ],
+      "lot_flags": []
+    },
+    "score": 120.0,
+    "seed_query": "Vallejo Ave & Riverside Dr, Boyes Hot Springs, CA",
+    "county_layer_override": true,
+    "jurisdiction_check": {
+      "place_name": null,
+      "county_name": "Sonoma",
+      "county_fips": "06097",
+      "rule_resolved": "owner_elected",
+      "zone_code": "R1 B6 5 DU",
+      "zone_type": "R1 B6 5 DU",
+      "residential": true
+    },
+    "jurisdiction_ok": true
+  }
+}

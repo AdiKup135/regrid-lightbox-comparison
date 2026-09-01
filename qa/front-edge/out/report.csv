@@ -1,0 +1,29 @@
+jurisdiction,front_rule,address,apn,futurelot_apn,apn_match_futurelot,zone,same_lot,lot_shape_mismatch,area_ratio,engine_front_street,engine_front_count,futurelot_front_count,futurelot_label_on_engine_front,verdict,roads_collapsed_frontage,edge_tag_agreement,lot_flags
+Lafayette,designated,"680  GLENSIDE DR, Lafayette, CA",238102008,2381020086,True,R-10,True,False,0.903,glenside dr,1,2,"[""front""]",futurelot_extra_front,False,4/6,"[""front_requires_review""]"
+Moraga,designated,"838  CAMINO RICARDO, Moraga, CA",255404003,2554040036,True,3-DUA,True,False,0.998,camino ricardo,1,2,"[""front""]",futurelot_extra_front,False,4/6,"[""front_requires_review""]"
+Orinda,shortest_frontage,"9  NORTHWOOD DR, Orinda, CA",268163002,2681630022,True,RL-20,True,False,1.001,northwood ct,1,2,"[""front""]",futurelot_extra_front,False,1/5,[]
+Fairfax,shortest_frontage,"73 SCENIC RD, Fairfax, CA",00112226,00112226,True,RD-5.5-7,True,True,1.26,manor rd,1,3,"[""front""]",futurelot_extra_front,False,1/5,[]
+Mill Valley,designated,"329 ETHEL AVE, Mill Valley, CA",02818111,02818111,True,RS-6,True,False,0.995,ethel ave,1,0,"[""side""]",no_front,True,0/3,[]
+Sausalito,owner_elected,"299 GLEN DR, Sausalito, CA",06421307,06421307,True,R-1-6,True,False,1.083,glen dr,1,1,"[""front""]",agree,False,3/4,[]
+Napa,shortest_frontage,"1795 LAUREL ST, Napa, CA",005021001000,005021001000,True,RT 5,True,False,1.003,laurel st,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+Atherton,address_street,"256 PRIOR LN, Atherton, CA",061330140,061330140,True,R-1A,True,False,1.0,prior ln,1,2,"[""front""]",futurelot_extra_front,False,4/6,[]
+Hillsborough,all_fronts,"5 HOMEPLACE CT, Hillsborough, CA",031382050,031382050,True,R,True,False,1.004,homeplace ct,2,2,"[""front""]",agree,False,3/4,"[""second_front_jurisdiction""]"
+Menlo Park,owner_elected,"385 OAK GROVE AVE, Menlo Park, CA",061383160,061383160,True,R3,True,False,1.001,oak grove ave,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+Portola Valley,owner_elected,"247 ECHO LN, Portola Valley, CA",079171130,079171130,True,R-1/15M,True,False,1.004,echo ln,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+San Carlos,shortest_frontage,"2000 BIRCH AVE, San Carlos, CA",050282120,050282120,True,Single Family,True,False,1.017,birch ave,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+San Mateo,owner_elected,"550 BARNESON AVE, San Mateo, CA",034363230,034363230,True,R1C,True,False,0.989,barneson ave,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+San Mateo County (unincorporated),shortest_frontage,"843 6TH AVE, REDWOOD CITY, CA",055082030,055082030,True,R-1/S-73,True,False,1.002,bay rd,1,1,"[""side""]",different_front,False,0/5,[]
+Los Altos,shortest_frontage,"58 LYELL ST, Los Altos, CA",17039026,17039026,True,R3-1.8,True,False,1.021,tyndall st,1,2,[],different_front,False,1/2,[]
+Los Altos Hills,designated,"14100 DONELSON PL, Los Altos Hills, CA",17534040,17534040,True,R-A,True,False,1.022,donelson pl,1,2,"[""front""]",futurelot_extra_front,False,4/6,"[""front_requires_review""]"
+Mountain View,shortest_frontage,"120 CHURCH ST, Mountain View, CA",15825062,15825062,True,R3-1,True,False,1.028,calderon ave,1,2,"[""front""]",futurelot_extra_front,False,2/5,[]
+Palo Alto,owner_elected,"589 COLERIDGE AV, Palo Alto, CA",12401016,12401016,True,R-1 (10000),True,False,1.023,coleridge ave,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+San Jose,shortest_frontage,"1098 MICHIGAN AV, San Jose, CA",42918062,42918062,True,R-2,True,False,0.933,michigan ave,1,1,"[""front""]",agree,False,4/6,"[""front_rule_override_unevaluated""]"
+Saratoga,shortest_frontage,"19740 BRAEMAR DR, Saratoga, CA",39325001,39325001,True,R-1-10,True,False,1.022,braemar dr,1,2,"[""front""]",futurelot_extra_front,False,3/5,[]
+Sunnyvale,all_fronts,"274 JACKSON ST, Sunnyvale, CA",20445057,20445057,True,R0,True,False,0.967,jackson st,2,3,"[""front""]",futurelot_extra_front,False,1/4,"[""second_front_jurisdiction""]"
+Healdsburg,shortest_frontage,"407 MATHESON ST, Healdsburg, CA",002-201-045,002201045000,True,R-1-6000,True,False,0.988,matheson st,1,1,"[""front""]",agree,False,4/4,[]
+Windsor,shortest_frontage,"491 MALLORY AVE, Windsor, CA",161-190-060,161190060000,True,SR,True,False,1.001,mallory ave,1,1,"[""front""]",agree,False,3/4,[]
+Contra Costa County (unincorporated),all_fronts,"845  COVENTRY RD, KENSINGTON, CA",571080001,5710800011,True,R-6 -TOV -K,True,False,0.998,ardmore path,1,3,"[""front""]",futurelot_extra_front,True,1/3,[]
+Marin County (unincorporated),address_street,"233 WOODLAND RD, KENTFIELD, CA",07503112,07503112,True,RSP-1,True,False,0.961,woodland rd,1,2,"[""front""]",futurelot_extra_front,False,6/8,[]
+Napa County (unincorporated),shortest_frontage,"481 NEWTON WAY, ANG, CA",024114001000,024114001000,True,RS:B-5,True,False,1.024,toyon st,1,1,[],different_front,True,0/2,[]
+Santa Clara County (unincorporated),shortest_frontage,"99 CLEVELAND AV, SAN JOSE, CA",27417030,27417030,True,R1-n2,True,False,1.02,cleveland ave,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]
+Sonoma County (unincorporated),owner_elected,"365 CALLE DEL MONTE, BOYES HOT SPRINGS, CA",056-415-013,056415013000,True,R1 B6 5 DU,True,False,0.867,calle del monte,1,2,"[""front""]",futurelot_extra_front,False,3/4,[]

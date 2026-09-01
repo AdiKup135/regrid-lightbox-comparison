@@ -1,0 +1,225 @@
+{
+  "note": "Seed queries per jurisdiction, tried in order until a corner lot passes the Census + zoning confirmation. Each is geocoded (cached) and an envelope of the county parcel fabric is scanned around it. Seeds lead with single-family residential intersections rather than the town's main commercial corner: the densest street grid in a small city is usually its downtown, and a commercial corner is the wrong specimen \u2014 FutureLot reports on residential lots, and the ADU setback question the front rule feeds is a residential one. Later seeds widen the search. The five unincorporated-county records are seeded at named unincorporated CDPs \u2014 territory outside any incorporated place, which is what makes the Census place lookup resolve to '<County> County (unincorporated)'.",
+  "seeds": [
+    {
+      "jurisdiction": "Lafayette",
+      "queries": [
+        "Hamlin Rd & Los Palos Dr, Lafayette, CA",
+        "Moraga Blvd & Second St, Lafayette, CA",
+        "Lafayette, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Moraga",
+      "queries": [
+        "Camino Ricardo & Ascot Dr, Moraga, CA",
+        "Moraga Way & Camino Ricardo, Moraga, CA",
+        "Moraga, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Orinda",
+      "queries": [
+        "Brookwood Rd & Moraga Way, Orinda, CA",
+        "Orinda Way & Santa Maria Way, Orinda, CA",
+        "Orinda, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Fairfax",
+      "queries": [
+        "Scenic Rd & Manor Rd, Fairfax, CA",
+        "Bolinas Rd & Center Blvd, Fairfax, CA",
+        "Fairfax, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Mill Valley",
+      "queries": [
+        "Ethel Ave & Marion Ave, Mill Valley, CA",
+        "Miller Ave & Reed St, Mill Valley, CA",
+        "Mill Valley, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Sausalito",
+      "queries": [
+        "Filbert Ave & Glen Dr, Sausalito, CA",
+        "Caledonia St & Turney St, Sausalito, CA",
+        "Sausalito, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Napa",
+      "queries": [
+        "Laurel St & Jefferson St, Napa, CA",
+        "Seminary St & Franklin St, Napa, CA",
+        "Jefferson St & Lincoln Ave, Napa, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Atherton",
+      "queries": [
+        "Selby Ln & Middlefield Rd, Atherton, CA",
+        "Atherton, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Hillsborough",
+      "queries": [
+        "Ralston Ave & Chateau Dr, Hillsborough, CA",
+        "Barbara Way & Chateau Dr, Hillsborough, CA",
+        "Hillsborough, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Menlo Park",
+      "queries": [
+        "Oak Grove Ave & Laurel St, Menlo Park, CA",
+        "Santa Cruz Ave & University Dr, Menlo Park, CA",
+        "Menlo Park, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Portola Valley",
+      "queries": [
+        "Portola Rd & Alpine Rd, Portola Valley, CA",
+        "Portola Valley, CA"
+      ]
+    },
+    {
+      "jurisdiction": "San Carlos",
+      "queries": [
+        "Cedar St & Cordilleras Ave, San Carlos, CA",
+        "Arroyo Ave & Cedar St, San Carlos, CA",
+        "San Carlos, CA"
+      ]
+    },
+    {
+      "jurisdiction": "San Mateo",
+      "queries": [
+        "Barneson Ave & Alameda de las Pulgas, San Mateo, CA",
+        "San Mateo, CA"
+      ]
+    },
+    {
+      "jurisdiction": "San Mateo County (unincorporated)",
+      "queries": [
+        "5th Ave & Bay Rd, Redwood City, CA 94063",
+        "Middlefield Rd & 5th Ave, North Fair Oaks, CA",
+        "Emerald Hills, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Los Altos",
+      "queries": [
+        "Edith Ave & Lyell St, Los Altos, CA",
+        "University Ave & Edith Ave, Los Altos, CA",
+        "Los Altos, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Los Altos Hills",
+      "queries": [
+        "Fremont Rd & Concepcion Rd, Los Altos Hills, CA",
+        "Los Altos Hills, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Mountain View",
+      "queries": [
+        "Church St & Calderon Ave, Mountain View, CA",
+        "Castro St & Church St, Mountain View, CA",
+        "Mountain View, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Palo Alto",
+      "queries": [
+        "Webster St & Coleridge Ave, Palo Alto, CA",
+        "Palo Alto, CA"
+      ]
+    },
+    {
+      "jurisdiction": "San Jose",
+      "queries": [
+        "Minnesota Ave & Lincoln Ave, San Jose, CA",
+        "Lincoln Ave & Willow St, San Jose, CA",
+        "San Jose, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Saratoga",
+      "queries": [
+        "Oak St & 4th St, Saratoga, CA",
+        "Saratoga, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Sunnyvale",
+      "queries": [
+        "Bayview Ave & Iowa Ave, Sunnyvale, CA",
+        "Murphy Ave & Olive Ave, Sunnyvale, CA",
+        "Sunnyvale, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Healdsburg",
+      "queries": [
+        "Johnson St & North St, Healdsburg, CA",
+        "Matheson St & Fitch St, Healdsburg, CA",
+        "Healdsburg, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Windsor",
+      "queries": [
+        "Natalie Dr & Windsor Rd, Windsor, CA",
+        "Windsor River Rd & Bell Rd, Windsor, CA",
+        "Windsor, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Contra Costa County (unincorporated)",
+      "queries": [
+        "Arlington Ave & Coventry Rd, Kensington, CA",
+        "Kensington, CA",
+        "Danville Blvd & Las Trampas Rd, Alamo, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Marin County (unincorporated)",
+      "queries": [
+        "Woodland Rd & Ross Ave, Kentfield, CA",
+        "Sir Francis Drake Blvd & College Ave, Kentfield, CA",
+        "Marin City, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Napa County (unincorporated)",
+      "queries": [
+        "White Cottage Rd & College Ave, Angwin, CA",
+        "College Ave & Howell Mountain Rd, Angwin, CA",
+        "Deer Park, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Santa Clara County (unincorporated)",
+      "queries": [
+        "Cleveland Ave & Burbank Dr, San Jose, CA 95128",
+        "Lupine Ave & Loyola Dr, Los Altos, CA 94024",
+        "Mayfield Ave & Salvatierra St, Stanford, CA",
+        "San Martin Ave & Murphy Ave, San Martin, CA"
+      ]
+    },
+    {
+      "jurisdiction": "Sonoma County (unincorporated)",
+      "queries": [
+        "Vallejo Ave & Riverside Dr, Boyes Hot Springs, CA",
+        "Arnold Dr & Verano Ave, El Verano, CA",
+        "Mill St & Church St, Guerneville, CA",
+        "Graton Rd & Edison St, Graton, CA"
+      ]
+    }
+  ]
+}
