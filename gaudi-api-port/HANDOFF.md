@@ -162,6 +162,46 @@ hardcoded at config.py:144, worth rotating to env while you're in the file);
 in production prefer passing `Project.address`'s persisted lat/lng + street to
 `fetch_parcel_context(lat=, lng=, ...)` — zero geocoding calls per lookup.
 
+## Added 2026-09-23: ADU setbacks, Phase 1 — the state track (FOR-1418)
+
+What it does: for a detached, new-construction ADU on a single-family lot, decide
+whether the unit qualifies for California's state-mandated approval path
+(Gov. Code § 66323(a)(2)) and, if it does, give every lot edge its setback and
+draw the buildable envelope. On that path the values are the statute's, not the
+city's: 4 ft side and rear, no front setback, and the second street line of a
+corner lot counts as a side unless the jurisdiction treats every street as a
+front (`all_fronts`). Larger or taller units fall to the local-ordinance path,
+which is Phase 2 — the engine says so and draws nothing.
+
+Inputs, all from the user for now (gaudi-api has no unit height yet):
+`unit_size` (sq ft, the EstimatorParameters name), `unit_height_in_feet`, and
+two yes/no facts defaulting to no — SB 9 split parcel, detached ADU already on
+the lot. The 18 ft height allowance near transit is decided from Caltrans' HQ
+Transit Areas layer, fetched alongside zoning.
+
+Where it lives (copy with the rest, same layout):
+
+| From (here) | To (`gaudi-api/`) |
+| --- | --- |
+| `services/compute/adu_setbacks/` — `track.py`, `state_track.py`, `offset.py`, `evaluate.py` | `services/compute/adu_setbacks/` |
+| `services/parcel_data/ca_transit_client.py` (+ the `transit` block in `fetch_parcel_context.py`) | `services/parcel_data/` |
+| `routes/adu_setbacks.py` — `POST /adu/evaluate`; reuses `routes.parcel_edges.label_from_body` | `routes/adu_setbacks.py` (+ `@login_required`, register) |
+| `tests/unit/services/adu_setbacks/`, `tests/unit/routes/test_adu_setbacks.py` | same paths |
+
+`POST /adu/evaluate` takes the `/edges` response plus the unit fields and returns
+`track`, per-edge `setback_ft` with its legal basis, `setback_polygon` (WKT), the
+envelope area, and `flags` — every assumption the engine made is a flag, never
+silent. The drawing follows FOR-438: one closed offset polygon, 1 px red
+`#FF3333`, the band between parcel line and setback filled red; the debug UI
+(`frontend/src/EdgesPanel.tsx`) is the reference rendering.
+
+Decisions behind it (with the reasoning) are on the "ADU Setback Decision Tree"
+page linked from FOR-1418. Two legal questions are with counsel and carried as
+flags meanwhile: the `second_front` edge in `all_fronts` cities (interim 0 ft,
+`SECOND_FRONT_INTERIM_FT`), and walking distance vs. the transit buffers
+(FOR-1422). Deferred gates: FOR-1419 (residential / single-family check),
+FOR-1420 (SB 9), FOR-1421 (existing ADU).
+
 ## Not done, deliberately left to the Gaudi side
 - ~~Flask route/blueprint wiring, request parsing, auth, response mapping~~ —
   done above for the opendata path; only auth + registration remain.

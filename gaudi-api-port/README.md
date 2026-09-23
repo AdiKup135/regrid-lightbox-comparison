@@ -19,6 +19,10 @@ Copy these paths into `gaudi-api/`, preserving the layout:
 | `tests/unit/services/test_edge_labeling.py` | `tests/unit/services/test_edge_labeling.py` |
 | `tests/unit/services/parcel_data/` | `tests/unit/services/parcel_data/` |
 | `tests/unit/routes/test_parcel_edges.py` | `tests/unit/routes/test_parcel_edges.py` |
+| `services/compute/adu_setbacks/` (Phase 1 setbacks, see HANDOFF.md) | `services/compute/adu_setbacks/` |
+| `services/parcel_data/ca_transit_client.py` | `services/parcel_data/ca_transit_client.py` |
+| `routes/adu_setbacks.py` | `routes/adu_setbacks.py` (+ `@login_required`, register) |
+| `tests/unit/services/adu_setbacks/`, `tests/unit/routes/test_adu_setbacks.py` | same paths |
 
 Do **not** copy `pytest.ini` (gaudi-api has its own, and its `pythonpath = . sheets`
 already covers these imports), `verification/` (a dev tool, see below), or

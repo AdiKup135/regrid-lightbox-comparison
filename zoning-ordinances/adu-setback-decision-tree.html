@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Source of the "ADU Setback Decision Tree" (https://claude.ai/artifact/3MW6ozwfZmwYwiEuFZXjWP).
+     Edit here; to republish the artifact, publish everything from <title> onward (the host adds the document skeleton).
+     Run make_decision_tree_exports.py for the PDF/PNGs. Open with #lean, #extended, or #all (both views, print layout). -->
+<title>ADU Setback Decision Tree</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #F3F5F2;
+    --paper: #FFFFFF;
+    --ink: #24312B;
+    --muted: #5E6B64;
+    --line: #C7CFC9;
+    --state: #2F6B4F;
+    --state-fill: #E6F0EA;
+    --local: #9A6A17;
+    --local-fill: #F7EEDC;
+    --stop: #CE3A2E;
+    --stop-fill: #F9E5E2;
+    --assume: #B9832A;
+    --assume-fill: #FBF3E3;
+    --pending: #7C877F;
+    --pending-fill: #EEF1EE;
+    --issue: #3B5BA9;
+    --issue-fill: #E6EBF7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #1A211D; --paper: #232C27; --ink: #E6ECE8; --muted: #9DAAA2; --line: #3B4741;
+      --state: #7FC39B; --state-fill: #22392D; --local: #E2B15C; --local-fill: #3A3020;
+      --stop: #F0736A; --stop-fill: #45272A; --assume: #E0A64A; --assume-fill: #3B3222;
+      --pending: #98A49C; --pending-fill: #2A332E; --issue: #8FA8E8; --issue-fill: #27304A;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #1A211D; --paper: #232C27; --ink: #E6ECE8; --muted: #9DAAA2; --line: #3B4741;
+    --state: #7FC39B; --state-fill: #22392D; --local: #E2B15C; --local-fill: #3A3020;
+    --stop: #F0736A; --stop-fill: #45272A; --assume: #E0A64A; --assume-fill: #3B3222;
+    --pending: #98A49C; --pending-fill: #2A332E; --issue: #8FA8E8; --issue-fill: #27304A;
+  }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px; line-height: 1.5;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-block: 28px 48px; padding-inline: 20px; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 24px; margin-bottom: 18px; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+  .status { color: var(--muted); font-size: 12.5px; font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; }
+  .tabs { display: flex; gap: 6px; }
+  .tabs button {
+    font: inherit; font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--paper); color: var(--muted);
+  }
+  .tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .tabs button:focus-visible { outline: 2px solid var(--issue); outline-offset: 2px; }
+  .note { color: var(--muted); font-size: 13px; max-width: 68ch; margin: 0 0 16px; }
+  figure { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 18px; overflow-x: auto; }
+  figure svg { display: block; max-width: 100%; height: auto; font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; }
+  figcaption { color: var(--muted); font-size: 12.5px; margin-top: 12px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 14px 0 0; font-size: 12.5px; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 14px; height: 10px; border-radius: 2px; border: 1.5px solid; display: inline-block; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 22px; }
+  .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; }
+  .panel h2 { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .panel ul { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 8px; }
+  .panel li { font-size: 13px; display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; }
+  .chip { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 11.5px; padding: 1px 7px; border-radius: 4px; white-space: nowrap; }
+  .chip.issue { background: var(--issue-fill); color: var(--issue); }
+  .chip.flag { background: var(--assume-fill); color: var(--assume); }
+  .chip.pending { background: var(--pending-fill); color: var(--pending); }
+  .chip.done { background: var(--state-fill); color: var(--state); }
+  .panel a { color: var(--issue); text-decoration: none; border-bottom: 1px solid currentColor; }
+  code { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 12px; }
+  @media (prefers-reduced-motion: no-preference) { .tabs button { transition: background .15s, color .15s; } }
+  /* Print / export (#all): both views stacked, one per page, panels after. */
+  :root[data-view="all"] .tabs { display: none; }
+  :root[data-view="all"] figure { break-inside: avoid; margin-bottom: 18px; }
+  :root[data-view="all"] figure + figure { break-before: page; }
+  :root[data-view="all"] .cols { break-before: page; }
+  @media print {
+    /* One diagram per A4 page, under the header on page 1. */
+    :root[data-view="all"] figure svg { max-height: 205mm; width: auto; margin: 0 auto; }
+  }
+  @page { size: A4 portrait; margin: 12mm; }
+  @media print {
+    body { background: #fff; }
+    .wrap { max-width: none; padding-block: 0; }
+    figure, .panel { border-color: #bbb; box-shadow: none; }
+    .cols { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>ADU Setback Decision Tree</h1>
+      <div class="status">as of 2026-09-23 · Q1–Q2 assumed · Q3, Q4, Q2c decided · Q5, Q6 pending · Phase A prototyped in site repo · B, C next</div>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Diagram version">
+      <button id="tab-lean" role="tab" aria-selected="true" aria-controls="fig">Lean — decisions made</button>
+      <button id="tab-ext" role="tab" aria-selected="false" aria-controls="fig">Extended — with scope assumptions</button>
+    </div>
+  </header>
+  <p class="note" id="note">The decisions the engine actually makes for one detached, new-construction ADU on a lot with an existing house. Inputs are the labeled lot edges, the jurisdiction's published ordinance, and two unit facts.</p>
+
+  <figure>
+    <svg id="fig" role="img" aria-label="Decision tree for ADU setbacks: lot eligibility, jurisdiction regime, state track versus local track, then the setback polygon"></svg>
+    <figcaption id="cap"></figcaption>
+    <div class="legend">
+      <span><i style="border-color:var(--ink)"></i> decision</span>
+      <span><i style="border-color:var(--state);background:var(--state-fill)"></i> state track §66323</span>
+      <span><i style="border-color:var(--local);background:var(--local-fill)"></i> local track §66314</span>
+      <span><i style="border-color:var(--stop);background:var(--stop-fill)"></i> hard stop</span>
+      <span><i style="border-color:var(--assume);background:var(--assume-fill);border-style:dashed"></i> assumed yes — not evaluated, surfaced as a flag</span>
+      <span><i style="border-color:var(--pending);background:var(--pending-fill);border-style:dashed"></i> not yet decided</span>
+    </div>
+  </figure>
+
+  <div class="cols">
+    <section class="panel">
+      <h2>Scope assumptions → Linear</h2>
+      <ul>
+        <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1419/setbacks-accounting-for-non-residential-lots">FOR-1419</a><span>Zone allows residential use, and the lot holds a single-family dwelling. Flags <code>zone_use_assumed_residential</code>, <code>dwelling_type_assumed_sfr</code>. Multifamily = out of scope.</span></li>
+        <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1420/setbacks-accounting-for-sb-9-splits">FOR-1420</a><span>Parcel is not an SB 9 lot split at its two-unit cap. Manual yes/no, default no. Flag <code>sb9_split_assumed_no</code>.</span></li>
+        <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1421/setbacks-accounting-for-a-2nd-adu-on-the-lot">FOR-1421</a><span>No detached ADU exists on the lot yet, so the §66323(a)(2) entitlement is open. Manual yes/no, default no. Flag <code>existing_detached_adu_assumed_no</code>.</span></li>
+        <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1422/setbacks-transit-proximity-walking-distance-refinement-for-the-18-ft">FOR-1422</a><span>Transit proximity is tested against the Caltrans HQ Transit Area half-mile <em>straight-line</em> buffers (existing stops only); the statute says walking distance. Flag <code>transit_straight_line_buffer</code>. Refinement: Google walking distance to the nearest HQ stops.</span></li>
+        <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1418/setbacks-values-extraction">FOR-1418</a><span>Parent: values extraction. Full-ordinance corpus scrape (3 tiers) running in a separate session.</span></li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Decided, and what was rejected</h2>
+      <ul>
+        <li><span class="chip flag">Q1 · assumed yes</span><span>The lot is eligible. Detached, new construction only — conversions, attached ADUs and JADUs are not FormX products.</span></li>
+        <li><span class="chip flag">Q2 · assumed yes</span><span>A published ADU ordinance is in effect; no status lookup. Sources of truth: the codified ordinance and Gov. Code §§ 66310–66342 read with the HCD Handbook (Mar 2026). <strong>Rejected as sources:</strong> HCD review letters, Zoneomics data.</span></li>
+        <li><span class="chip done">Q3</span><span>Size fork at 800 sf of interior livable space. Height: ≤ 16 ft anywhere; 16–18 ft inside a CA HQ Transit Area; &gt; 18 ft → local track. The 20 ft roof-pitch allowance is left to a human override in the Gaudi UI. Both unit inputs manual and required; names follow Gaudi: <code>unit_size</code>, <code>unit_height_in_feet</code>.</span></li>
+        <li><span class="chip done">Phase A</span><span>Prototyped in the site repo (2026-09-23): <code>services/compute/adu_setbacks/</code>, <code>services/parcel_data/ca_transit_client.py</code>, <code>POST /adu/evaluate</code>, debug-UI inputs and the FOR-438 red band. 126 unit tests green; verified on a live Sunnyvale lot.</span></li>
+        <li><span class="chip done">Q4</span><span>Inside the local track, a unit ≤ 800 sf and ≤ 16 ft is shielded: front setback, coverage, FAR and open space cannot preclude it (§66321(b)(3)).</span></li>
+        <li><span class="chip done">Street side</span><span>A <code>street_side</code> edge is a side (state 4 ft cap applies) unless the jurisdiction is <code>all_fronts</code>, where the labeler's <code>second_front</code> flag makes it a front. No per-jurisdiction field needed.</span></li>
+        <li><span class="chip done">Tracks</span><span>Envelopes are computed as packages — no cherry-picking provisions across the state and local tracks. Build order: Phase A state track → Phase B local track → Phase C choice.</span></li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Still to decide</h2>
+      <ul>
+        <li><span class="chip pending">Q2c</span><span>Per-provision preemption: local value vs. state rule for each edge, computed from the corpus.</span></li>
+        <li><span class="chip pending">Q3</span><span>State track, <code>all_fronts</code> jurisdictions only (Hillsborough, Sunnyvale, Contra Costa County): does a <code>second_front</code> edge get 0 ft under §66323, or the local front? Asked Hila. Interim: one constant (0 ft) + flag <code>second_front_pending_counsel</code>; no soft lines.</span></li>
+        <li><span class="chip pending">Hila</span><span>Do planning counters measure transit walking distance, or accept the HQTA buffers? (FOR-1422)</span></li>
+        <li><span class="chip pending">Q4</span><span>Does the 800 sf shield protect a second detached unit, or is it spent once per lot?</span></li>
+        <li><span class="chip pending">Q5</span><span>Overlays: coastal LCP setbacks, fire/building-code separation, recorded easements, creek/riparian setbacks.</span></li>
+        <li><span class="chip pending">Q6</span><span>How to present the owner's choice when both tracks are open — both envelopes, or the larger buildable area.</span></li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<script>
+(function () {
+  const svg = document.getElementById('fig');
+  const cap = document.getElementById('cap');
+  const note = document.getElementById('note');
+  const NS = 'http://www.w3.org/2000/svg';
+  const C = getComputedStyle(document.documentElement);
+  const col = (n) => C.getPropertyValue(n).trim();
+
+  const KIND = {
+    input:    { stroke: 'ink',   fill: 'paper' },
+    decision: { stroke: 'ink',   fill: 'paper' },
+    state:    { stroke: 'state', fill: 'state-fill' },
+    local:    { stroke: 'local', fill: 'local-fill' },
+    stop:     { stroke: 'stop',  fill: 'stop-fill' },
+    assume:   { stroke: 'assume', fill: 'assume-fill', dash: true },
+    pending:  { stroke: 'pending', fill: 'pending-fill', dash: true },
+    plain:    { stroke: 'line', fill: 'paper' },
+  };
+
+  // ---- Lean: the decisions the engine actually makes -------------------------------
+  const LEAN = {
+    w: 780, h: 1010,
+    nodes: [
+      { id: 'in', kind: 'input', x: 230, y: 20, w: 320, h: 78,
+        lines: [['b', 'Lot in → edges out (built)'], ['', 'address → parcel, neighbors, jurisdiction, zone code'], ['m', 'edges labeled: front · street_side · side · rear']] },
+      { id: 'q1', kind: 'assume', x: 230, y: 138, w: 320, h: 66,
+        lines: [['b', 'Q1 · Can an ADU go on this lot?  →  ASSUMED YES'], ['', 'residential zone · single-family dwelling · not SB 9-capped'], ['m', 'not evaluated by the engine; surfaced as flags']] },
+      { id: 'stop', kind: 'stop', x: 660, y: 138, w: 110, h: 66, lines: [['b', 'No ADU'], ['m', 'hard stop'], ['m', '(never reached)']] },
+      { id: 'q2', kind: 'assume', x: 230, y: 236, w: 320, h: 70,
+        lines: [['b', 'Q2 · Ordinance in effect?  →  ASSUMED YES'], ['', 'if the jurisdiction publishes an ADU ordinance, it is valid'], ['m', 'state law prevails per provision (Q2c, pending)']] },
+      { id: 'q3', kind: 'decision', x: 230, y: 352, w: 320, h: 86,
+        lines: [['b', 'Q3 · Does the unit fit §66323(a)(2)?'], ['', 'detached · new construction · first on the lot'], ['c', 'unit_size ≤ 800 sf'], ['c', 'unit_height_in_feet ≤ 16 ft (18 near transit)']] },
+      { id: 'st', kind: 'state', x: 40, y: 496, w: 320, h: 122,
+        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: no setback may be imposed'], ['', 'street_side = side (4 ft), unless all_fronts → front'], ['m', 'no coverage, FAR, lot size or design standards']] },
+      { id: 'lo', kind: 'local', x: 420, y: 496, w: 320, h: 88,
+        lines: [['b', 'Local track · §66314  →  Phase B'], ['', 'ordinance values per edge, clamped (Q2c):'], ['m', 'side/rear ≤ 4 ft · height ≥ state floor · size ≥ 850/1,000']] },
+      { id: 'q4', kind: 'decision', x: 420, y: 630, w: 320, h: 52,
+        lines: [['b', 'Q4 · ≤ 800 sf and ≤ 16 ft?'], ['m', 'the 800 sf shield, §66321(b)(3)']] },
+      { id: 'sh', kind: 'local', x: 420, y: 728, w: 150, h: 70,
+        lines: [['b', 'Shielded'], ['m', 'front, coverage, FAR'], ['m', 'cannot preclude it']] },
+      { id: 'nsh', kind: 'local', x: 590, y: 728, w: 150, h: 70,
+        lines: [['b', 'Unshielded'], ['m', 'local standards'], ['m', 'bind in full']] },
+      { id: 'q5', kind: 'pending', x: 40, y: 846, w: 700, h: 46,
+        lines: [['b', 'Q5 · Overlays — coastal LCP setbacks · fire/building separation · easements'], ['m', 'not yet decided']] },
+      { id: 'q6', kind: 'decision', x: 180, y: 934, w: 420, h: 56,
+        lines: [['b', 'Q6 · Owner picks the more favorable open envelope  →  Phase C'], ['m', 'envelopes are packages, no cherry-picking → setback polygon']] },
+    ],
+    edges: [
+      { from: 'in', to: 'q1' },
+      { from: 'q1', to: 'stop', side: true, label: 'no — not evaluated', dash: true },
+      { from: 'q1', to: 'q2', label: 'assumed yes' },
+      { from: 'q2', to: 'q3', label: 'assumed yes' },
+      { from: 'q3', to: 'st', label: 'yes' },
+      { from: 'q3', to: 'lo', label: 'no' },
+      { from: 'lo', to: 'q4' },
+      { from: 'q4', to: 'sh', label: 'yes' },
+      { from: 'q4', to: 'nsh', label: 'no' },
+      { from: 'st', to: 'q5' },
+      { from: 'sh', to: 'q5' },
+      { from: 'nsh', to: 'q5' },
+      { from: 'q5', to: 'q6' },
+    ],
+    cap: 'Lean view: the tree as the engine will walk it. Two regimes can be open at once; the owner chooses.',
+    note: 'The decisions the engine actually makes for one detached, new-construction ADU on a lot with an existing house. Inputs are the labeled lot edges, the jurisdiction’s published ordinance, and two unit facts.',
+  };
+
+  // ---- Extended: plus the assumptions that reduced scope, and their issues -----------
+  const EXT = {
+    w: 1040, h: 1130,
+    nodes: [
+      { id: 'in', kind: 'input', x: 40, y: 20, w: 320, h: 78,
+        lines: [['b', 'Lot in → edges out (built)'], ['', 'address → parcel, neighbors, jurisdiction, zone code'], ['m', 'edges labeled: front · street_side · side · rear']] },
+      { id: 'q1', kind: 'assume', x: 40, y: 138, w: 320, h: 66,
+        lines: [['b', 'Q1 · Can an ADU go on this lot?  →  ASSUMED YES'], ['', 'five gates, all assumed or manual for now →'], ['m', 'not evaluated by the engine; surfaced as flags']] },
+      { id: 'stop', kind: 'stop', x: 40, y: 250, w: 130, h: 46, lines: [['b', 'No ADU'], ['m', 'never reached']] },
+      { id: 'g1', kind: 'assume', x: 420, y: 118, w: 580, h: 44,
+        lines: [['b', 'Zone allows residential use — assumed'], ['c', 'zone_use_assumed_residential · FOR-1419']] },
+      { id: 'g2', kind: 'assume', x: 420, y: 170, w: 580, h: 44,
+        lines: [['b', 'Single-family dwelling on the lot — assumed; multifamily is out of scope'], ['c', 'dwelling_type_assumed_sfr · FOR-1419']] },
+      { id: 'g3', kind: 'assume', x: 420, y: 222, w: 580, h: 44,
+        lines: [['b', 'Not an SB 9 lot split at its 2-unit cap — manual, default no'], ['c', 'sb9_split_assumed_no · FOR-1420']] },
+      { id: 'g4', kind: 'assume', x: 420, y: 274, w: 580, h: 44,
+        lines: [['b', 'No detached ADU on the lot yet — manual, default no · fails → state track closed, not a stop'], ['c', 'existing_detached_adu_assumed_no · FOR-1421']] },
+      { id: 'g5', kind: 'plain', x: 420, y: 326, w: 580, h: 36,
+        lines: [['', 'Detached, new construction — given by the product; conversions, attached ADUs, JADUs out of scope']] },
+      { id: 'q2', kind: 'assume', x: 40, y: 330, w: 320, h: 70,
+        lines: [['b', 'Q2 · Ordinance in effect?  →  ASSUMED YES'], ['', 'if the jurisdiction publishes an ADU ordinance, it is valid'], ['m', 'state law prevails per provision (Q2c, pending)']] },
+      { id: 'q2n', kind: 'plain', x: 420, y: 392, w: 580, h: 64,
+        lines: [['b', 'Sources of truth: the codified ordinance + state law'], ['', 'Gov. Code §§ 66310–66342 read with the HCD Handbook (Mar 2026) · rejected: HCD review letters, Zoneomics'], ['c', 'full-ordinance corpus, 3 tiers → FOR-1418']] },
+      { id: 'q3', kind: 'decision', x: 40, y: 448, w: 320, h: 86,
+        lines: [['b', 'Q3 · Does the unit fit §66323(a)(2)?'], ['', 'detached · new construction · first on the lot'], ['c', 'unit_size ≤ 800 sf   (manual, required)'], ['c', 'unit_height_in_feet   (manual, required)']] },
+      { id: 'h1', kind: 'plain', x: 420, y: 470, w: 580, h: 44,
+        lines: [['b', '≤ 16 ft → state track anywhere · 16–18 ft → iff inside a CA HQ Transit Area'], ['c', 'Caltrans/Cal-ITP layer · existing stops only · transit_straight_line_buffer · FOR-1422']] },
+      { id: 'h2', kind: 'assume', x: 420, y: 520, w: 580, h: 56,
+        lines: [['b', '> 18 ft → local track. The 20 ft roof-pitch allowance is NOT modelled'], ['c', 'humans adjust via a setback override field in the Gaudi UI'], ['m', 'transit lookup failed → only 16 ft granted, flag transit_lookup_failed']] },
+      { id: 'st', kind: 'state', x: 40, y: 640, w: 320, h: 122,
+        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: no setback may be imposed'], ['', 'street_side = side (4 ft), unless all_fronts → front'], ['m', 'no coverage, FAR, lot size or design standards']] },
+      { id: 'stn', kind: 'pending', x: 40, y: 774, w: 320, h: 40,
+        lines: [['b', 'open (all_fronts): second_front under §66323'], ['m', 'asked Hila · interim 0 ft + flag, no soft lines']] },
+      { id: 'lo', kind: 'local', x: 420, y: 640, w: 320, h: 88,
+        lines: [['b', 'Local track · §66314  →  Phase B'], ['', 'ordinance values per edge, clamped (Q2c):'], ['m', 'side/rear ≤ 4 ft · height ≥ state floor · size ≥ 850/1,000']] },
+      { id: 'lon', kind: 'plain', x: 760, y: 640, w: 240, h: 88,
+        lines: [['b', '~20 of 28 ordinances say'], ['', '“front per underlying district”'], ['m', '→ corpus tier 3: single-family'], ['m', 'district standards tables']] },
+      { id: 'q4', kind: 'decision', x: 420, y: 774, w: 320, h: 52,
+        lines: [['b', 'Q4 · ≤ 800 sf and ≤ 16 ft?'], ['m', 'the 800 sf shield, §66321(b)(3)']] },
+      { id: 'sh', kind: 'local', x: 420, y: 872, w: 150, h: 70,
+        lines: [['b', 'Shielded'], ['m', 'front, coverage, FAR'], ['m', 'cannot preclude it']] },
+      { id: 'nsh', kind: 'local', x: 590, y: 872, w: 150, h: 70,
+        lines: [['b', 'Unshielded'], ['m', 'local standards'], ['m', 'bind in full']] },
+      { id: 'shn', kind: 'pending', x: 760, y: 872, w: 240, h: 70,
+        lines: [['b', 'open: does the shield protect'], ['', 'a 2nd detached unit, or is it'], ['m', 'spent once per lot?']] },
+      { id: 'q5', kind: 'pending', x: 40, y: 986, w: 960, h: 46,
+        lines: [['b', 'Q5 · Overlays — coastal LCP setbacks · fire/building separation · easements · creek/riparian'], ['m', 'not yet decided; modifiers, not tracks']] },
+      { id: 'q6', kind: 'decision', x: 230, y: 1070, w: 580, h: 50,
+        lines: [['b', 'Q6 · Owner picks the more favorable open envelope  →  Phase C  → setback polygon'], ['m', 'envelopes are packages, no cherry-picking · presentation open: both, or the larger buildable area']] },
+    ],
+    edges: [
+      { from: 'in', to: 'q1' },
+      { from: 'q1', to: 'stop', label: 'no — not evaluated', dash: true },
+      { from: 'q1', to: 'g1', side: true },
+      { from: 'stop', to: 'q2', label: 'assumed yes', fromNode: 'q1', bypass: true },
+      { from: 'q2', to: 'q2n', side: true },
+      { from: 'q2', to: 'q3', label: 'assumed yes' },
+      { from: 'q3', to: 'h1', side: true },
+      { from: 'q3', to: 'st', label: 'yes' },
+      { from: 'q3', to: 'lo', label: 'no' },
+      { from: 'lo', to: 'lon', side: true },
+      { from: 'st', to: 'stn' },
+      { from: 'lo', to: 'q4' },
+      { from: 'q4', to: 'sh', label: 'yes' },
+      { from: 'q4', to: 'nsh', label: 'no' },
+      { from: 'stn', to: 'q5' },
+      { from: 'sh', to: 'q5' },
+      { from: 'nsh', to: 'q5' },
+      { from: 'q5', to: 'q6' },
+    ],
+    cap: 'Extended view: every gate the engine assumes or asks the user for, the flag it raises, and the Linear issue that will replace the assumption.',
+    note: 'The same tree with the scope-reducing assumptions made on 2026-09-22/23. Each assumption is surfaced to the UI as a flag and tracked as a sub-issue of FOR-1418.',
+  };
+
+  function el(name, attrs, parent) {
+    const e = document.createElementNS(NS, name);
+    for (const k in attrs) if (attrs[k] != null) e.setAttribute(k, attrs[k]);
+    (parent || svg).appendChild(e);
+    return e;
+  }
+
+  function drawNode(n) {
+    const k = KIND[n.kind];
+    const g = el('g', {});
+    el('rect', { x: n.x, y: n.y, width: n.w, height: n.h, rx: 5, ry: 5,
+      fill: col('--' + k.fill), stroke: col('--' + k.stroke), 'stroke-width': n.kind === 'decision' || n.kind === 'input' ? 1.6 : 1.3,
+      'stroke-dasharray': k.dash ? '5 4' : 'none' }, g);
+    const lineH = 15;
+    const total = n.lines.length * lineH;
+    let y = n.y + (n.h - total) / 2 + 11;
+    for (const [style, text] of n.lines) {
+      const t = el('text', { x: n.x + n.w / 2, y, 'text-anchor': 'middle',
+        'font-size': style === 'b' ? 12.5 : 11.5,
+        'font-weight': style === 'b' ? 600 : 400,
+        'font-family': style === 'c' ? '"IBM Plex Mono", ui-monospace, Menlo, monospace' : null,
+        fill: style === 'm' || style === 'c' ? col('--muted') : col('--ink') }, g);
+      if (style === 'c') t.setAttribute('font-size', 11);
+      if (style === 'b' && (n.kind === 'state' || n.kind === 'local' || n.kind === 'stop' || n.kind === 'assume' || n.kind === 'pending')) t.setAttribute('fill', col('--' + k.stroke));
+      t.textContent = text;
+      y += lineH;
+    }
+  }
+
+  function mid(n) { return { cx: n.x + n.w / 2, cy: n.y + n.h / 2 }; }
+
+  function drawEdge(e, byId) {
+    const a = byId[e.fromNode || e.from], b = byId[e.to];
+    const stroke = col('--ink');
+    let d, lx, ly;
+    if (e.side) {
+      // right-mid of a → left-mid of b (horizontal, with an elbow if heights differ)
+      const y1 = mid(a).cy, y2 = mid(b).cy, x1 = a.x + a.w, x2 = b.x;
+      const xm = x1 + (x2 - x1) / 2;
+      d = `M${x1},${y1} H${xm} V${y2} H${x2}`;
+      lx = xm; ly = Math.min(y1, y2) - 6; e._anchor = 'middle';
+    } else if (e.bypass) {
+      // a's bottom → down past a sibling → b's top, routed along a's center
+      const x = mid(a).cx;
+      d = `M${x},${a.y + a.h} V${b.y}`;
+      lx = x + 8; ly = a.y + a.h + 16;
+    } else {
+      const x1 = mid(a).cx, x2 = mid(b).cx, y1 = a.y + a.h, y2 = b.y;
+      if (Math.abs(x1 - x2) < 1) { d = `M${x1},${y1} V${y2}`; lx = x1 + 8; ly = y1 + (y2 - y1) / 2 + 4; }
+      else { const ym = y1 + (y2 - y1) / 2; d = `M${x1},${y1} V${ym} H${x2} V${y2}`; lx = x2 + 8; ly = ym + 16; }
+    }
+    el('path', { d, fill: 'none', stroke: e.dash ? col('--muted') : stroke, 'stroke-width': 1.3, 'marker-end': 'url(#arrow)', 'stroke-dasharray': e.dash ? '4 4' : 'none' });
+    if (e.label) {
+      const t = el('text', { x: lx, y: ly, 'font-size': 11, 'font-weight': 500, fill: e.dash ? col('--muted') : col('--ink'),
+        'text-anchor': e._anchor || null });
+      t.textContent = e.label;
+    }
+  }
+
+  // Rendering targets: the main figure, or (in #all mode) a second figure appended for the extended view.
+  let target = { svg, cap };
+  function withTarget(t, fn) { const prev = target; target = t; try { fn(); } finally { target = prev; } }
+  const _el = el;
+  el = function (name, attrs, parent) { return _el(name, attrs, parent || target.svg); };
+
+  function render(spec) {
+    const s = target.svg;
+    s.innerHTML = '';
+    s.setAttribute('viewBox', `0 0 ${spec.w} ${spec.h}`);
+    s.setAttribute('width', spec.w);
+    const defs = el('defs', {});
+    const markerId = 'arrow-' + (s.id || 'fig');
+    const m = el('marker', { id: markerId, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+    el('path', { d: 'M0,0 L10,5 L0,10 z', fill: col('--ink') }, m);
+    const byId = {};
+    spec.nodes.forEach((n) => (byId[n.id] = n));
+    spec.edges.forEach((e) => drawEdge(e, byId));
+    // Point every arrowhead at this figure's own marker (two figures coexist in #all mode).
+    s.querySelectorAll('path[marker-end]').forEach((p) => p.setAttribute('marker-end', `url(#${markerId})`));
+    spec.nodes.forEach(drawNode);
+    target.cap.textContent = spec.cap;
+    if (target.svg === svg) note.textContent = spec.note;
+  }
+
+  // In the extended layout the "no" stop sits directly under Q1; give the "yes" edge its own lane.
+  EXT.edges = EXT.edges.map((e) => {
+    if (e.bypass) return { from: 'q1', to: 'q2', label: e.label, lane: true };
+    return e;
+  });
+  // Lane edge: from q1 bottom-right area down to q2 top, offset so it clears the stop box.
+  const _drawEdge = drawEdge;
+  drawEdge = function (e, byId) {
+    if (e.lane) {
+      const a = byId[e.from], b = byId[e.to];
+      const x = a.x + a.w - 60;
+      const d = `M${x},${a.y + a.h} V${b.y}`;
+      el('path', { d, fill: 'none', stroke: col('--ink'), 'stroke-width': 1.3, 'marker-end': 'url(#arrow)' });
+      const t = el('text', { x: x + 8, y: a.y + a.h + 18, 'font-size': 11, 'font-weight': 500, fill: col('--ink') });
+      t.textContent = e.label;
+      return;
+    }
+    if (e.to === 'stop' && !e.side) {
+      // stop sits under Q1's left part: drop from Q1 bottom-left area
+      const a = byId[e.from], b = byId[e.to];
+      const x = b.x + b.w / 2;
+      const d = `M${x},${a.y + a.h} V${b.y}`;
+      el('path', { d, fill: 'none', stroke: col('--muted'), 'stroke-width': 1.3, 'marker-end': 'url(#arrow)', 'stroke-dasharray': '4 4' });
+      const t = el('text', { x: x + 8, y: a.y + a.h + 18, 'font-size': 11, 'font-weight': 500, fill: col('--muted') });
+      t.textContent = e.label;
+      return;
+    }
+    _drawEdge(e, byId);
+  };
+
+  const tabs = { 'tab-lean': LEAN, 'tab-ext': EXT };
+  let current = 'tab-lean';
+  try { const saved = localStorage.getItem('adu-tree-tab'); if (saved && tabs[saved]) current = saved; } catch (_) {}
+  // Deep links: #lean, #extended, or #all (export mode: both views stacked, used for the PDF in the repo).
+  const hash = (location.hash || '').replace('#', '');
+  if (hash === 'lean') current = 'tab-lean';
+  if (hash === 'extended') current = 'tab-ext';
+  const exportAll = hash === 'all';
+
+  let extTarget = null;
+  function renderAll() {
+    render(LEAN);
+    if (!extTarget) {
+      const fig = document.querySelector('figure');
+      const fig2 = fig.cloneNode(false);
+      const svg2 = document.createElementNS(NS, 'svg');
+      svg2.id = 'fig-ext'; svg2.setAttribute('role', 'img');
+      svg2.setAttribute('aria-label', 'Extended decision tree with scope assumptions and their Linear issues');
+      const cap2 = document.createElement('figcaption');
+      fig2.appendChild(svg2); fig2.appendChild(cap2);
+      fig.parentNode.insertBefore(fig2, fig.nextSibling);
+      extTarget = { svg: svg2, cap: cap2 };
+    }
+    withTarget(extTarget, () => render(EXT));
+    note.textContent = 'Both views. Lean: the decisions the engine makes. Extended: the assumptions that reduced scope, each surfaced as a flag and tracked in Linear.';
+  }
+
+  function select(id) {
+    current = id;
+    for (const k in tabs) document.getElementById(k).setAttribute('aria-selected', String(k === id));
+    render(tabs[id]);
+    try { localStorage.setItem('adu-tree-tab', id); } catch (_) {}
+  }
+  const rerender = () => (exportAll ? renderAll() : render(tabs[current]));
+  for (const k in tabs) document.getElementById(k).addEventListener('click', () => select(k));
+  if (exportAll) { document.documentElement.setAttribute('data-view', 'all'); renderAll(); } else { select(current); }
+  // Re-render on theme flips so SVG colors follow the tokens.
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  if (mq.addEventListener) mq.addEventListener('change', rerender);
+  new MutationObserver(rerender).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>
+
+</body>
+</html>
