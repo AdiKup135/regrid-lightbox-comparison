@@ -1,0 +1,10 @@
+# Python deps of the gaudi-api port (the edge labeler + Phase A setbacks + the
+# free parcel provider). Pinned to what gaudi-api already ships.
+#
+# Render (Node web service): add to the Build Command so the Express server's
+# python3 subprocess (zoneomics-backend runPythonEngine) can import shapely:
+#   npm install && npm run build && pip install -r gaudi-api-port/requirements.txt
+# and set PYTHON_VERSION=3.12 in the service's environment.
+shapely==2.1.2
+requests>=2.31
+flask>=3.0

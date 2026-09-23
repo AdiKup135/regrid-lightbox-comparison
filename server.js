@@ -38,6 +38,11 @@ app.use('/api/opendata', async (req, res) => {
 const distPath = path.join(__dirname, 'frontend', 'dist');
 app.use(express.static(distPath));
 
+// Project documents (the ADU setback decision tree + its PDF/PNG exports, the
+// front-rule summaries) at /docs/<file>, straight from zoning-ordinances/, so a
+// Linear ticket can link the live page and it stays current with the repo.
+app.use('/docs', express.static(path.join(__dirname, 'zoning-ordinances'), { index: false }));
+
 // SPA fallback: serve index.html for any non-API route
 app.get('*', (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
