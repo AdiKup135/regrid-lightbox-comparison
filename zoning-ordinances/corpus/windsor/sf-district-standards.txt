@@ -1,0 +1,204 @@
+17.10.040 - Residential Zones Development Standards.
+
+A. Table 17.10-02 Development Standards—Residential Zones. Subdivisions, new land uses and structures, and alterations to existing land uses and structures, shall be designed, constructed, and established in compliance with the requirements in Table 17.10-02 (Development Standards—Residential Zones). [Source: 17.08.040, modified]
+
+B. Specific Regulations. The far-right column in Table 17.10-02 (Development Standards—Residential Zones) indicates additional regulations that apply to the specific development feature or zone listed. Development standards in other sections of this Zoning Code may also apply. [Source: NEW]
+
+C. Other Applicable Regulations. The "Other Applicable Regulations" section of Table 17.10-02 (Development Standards—Residential Zones) indicates the location of additional development standards that apply to the residential zones. Other regulations in this Zoning Code may also apply. [Source: NEW]
+
+Table 17.10-02
+Development Standards—Residential Zones
+
+| Development Feature (minimum unless otherwise specified) | Zone | | | | | | Specific Regulations |
+| Development Feature (minimum unless otherwise specified) | RR | ER | SR | VR | MDR | CR | Specific Regulations |
+| Parcel Dimensions | | | | | | | |
+| Area (sq. ft.) | 5 acres | 10,000 | 5,500 | 4,500 | 2,700 | 1,300 | |
+| Width (ft.) | 100 | 70 | 50 | 45 | 35 | 20 | |
+| Depth (ft.) | 85 | 85 | 75 | 70 | 65 | 50 | 17.10.050.B (Lot Depth and Building Envelope) |
+| Block Perimeter (max. ft.) | N/A | N/A | N/A | N/A | N/A | 1,600 | |
+| Density and Parcel Coverage | | | | | | | |
+| Minimum (du/ac.) | 0 | 0.2 | 3 | 5 | 8 | 16 | |
+| Maximum (du/ac.) | 0.2 | 3 | 6 | 8 | 16 | 32 | |
+| Parcel Coverage (max. percentage of total parcel area covered by structures) | 30 | 35 | 50 | 55 | 60 | 100 | |
+| Height (max. ft.) | | | | | | | |
+| Primary Structure | 35 | 35 | 35 | 35 | 35 | 4 stories | |
+| Accessory Structure | 15 | 15 | 15 | 15 | 15 | 15 | |
+| Accessory Structure, Agricultural | 25 | N/A | N/A | N/A | N/A | N/A | |
+| Setbacks (ft.) | | | | | | | |
+| Front | | | | | | | |
+| New Development (min.) | 25 | 20 | 15 | 10 | 10 | 5 | 17.10.050.E (Garage Locations) |
+| New Development (max.) | 35 | 30 | 25 | 20 | 20 | 10 | 17.10.050.E (Garage Locations) |
+| Garage | 40 | 35 | 25 | 18 | N/A | N/A | 17.10.050.E (Garage Locations) |
+| Rear | | | | | | | |
+| Primary Building | 30 | 20 | 20 | 20 | 15 | 5 | |
+| Garage | 5 | 5 | 5 | 5 | 5 | 5 | 17.10.050.E (Garage Locations) |
+| Side | | | | | | | |
+| Interior Side | 15 | 5 | 5 | 5 | 5 | 0 | 17.10.050.F (Upper Floor Side Setbacks Adjacent to Single-Story Residential) |
+| Street Side | 20 | 10 | 10 | 10 | 10 | 0 | 17.10.050.F (Upper Floor Side Setbacks Adjacent to Single-Story Residential) |
+
+| Other Applicable Regulations | |
+| Land Use or Development Feature | Chapter or Section |
+| Accessory Dwelling Units | Chapter 17.82 and Chapter 17.84 |
+| Environmental Preservation Standards | Chapter 17.22 |
+| Fences, Wall, and Hedges | Chapter 17.26 |
+| Height Measurement and Exceptions | Section 17.20.030 |
+| Landscaping | Chapter 17.28 |
+| Parking, Loading, and Access | Chapter 17.30 |
+| Performance Standards | Chapter 17.32 |
+| Setback Measurement and Exceptions | Section 17.20.040 |
+| Sign Regulations | Chapter 17.36 |
+
+17.10.050 - Additional Development Standards—Residential Zones.
+
+A. Encroachment Into Easements. Regardless of the setback standards established for a given zone, no structure shall encroach on any recorded easement. [Source: NEW]
+
+B. Lot Depth and Building Envelope. In no case shall the depth of a lot created by a new subdivision be greater than three (3) times the average lot width. Usable building envelopes for residential parcels shall not be less than forty-five (45) feet in depth unless approved otherwise by the Director. [Source: Subdivision Ordinance]
+
+C. Alternative Development Standards. Parcel widths, parcel sizes, and setbacks may be authorized by Conditional Use Permit approval or through rezoning to apply the PD zone where the review authority finds that a lesser parcel width, parcel size, or setback will be adequate after first reviewing the design and layout of the proposed housing units. [Source: Table 2-3 Notes (1), modified]
+
+D. Zero Lot Line Development. In the Surrounding Residential, Village Residential, Medium Density Residential, and Compact Residential zoning districts, projects with no side setback may be authorized by Conditional Use Permit. Zero lot line development is prohibited in the Rural Residential and Estate Residential zoning districts.
+
+E. Garage Design and Locations. Garage design and locations shall comply with the following:
+
+1. Design. In the RR, ER, SR, and VR zones, garages for single-unit dwellings, duplexes and townhouses shall not make up more than fifty (50) percent of the street-facing width of the residence. However, where parcel widths are less than forty-five (45) feet, wider garage doors may be allowed with a Minor Use Permit if garage door dominance is minimized through innovative parcel patterns, deeper garage setbacks, or architectural excellence. There shall be a minimum of three (3) different garage configurations or setbacks within each subdivision of ten (10) or more units. [Source: Table 2-3 Notes (11) and (9), modified]
+
+2. Location. The location of garages shall comply with the following:
+
+a. RR, ER, and SR Zones. Garage in the RR, ER, and SR zones shall not be less than ten (10) feet further from the street than the facade of the residence. [Source: Table 2-3 Notes (4), modified]
+
+b. VR Zone. Garages in the VR zone shall not be less than five (5) feet further from the street than the facade of the residence.
+
+The garage setback in the RR, ER, SR, and VR zoning districts may be modified with a Minor Use Permit.
+
+F. Upper Floor Side Setbacks Adjacent to Single-Story Residential. Side setbacks for upper floors shall comply with the following:
+
+1. Two- and Three-Story Structures. Two- and three-story structures adjacent to a single unit, single-story residential dwelling unit(s) shall use a minimum of one (1) of the following techniques (see Figure 2.10-01 (Upper Floor Setbacks: Two- and Three-Story Structures)): [Source: NEW]
+
+a. Step back floors above the ground floor by a minimum depth of five (5) feet along sides where the ground floor wall plane lies within twenty (20) feet of the side property line. [Source: NEW]
+
+b. Increase the required side setback by one (1) foot for each three (3) feet of structure height in excess of fifteen (15) feet of total height. [Source: NEW]
+
+Figure 17.10-01
+Upper Floor Side Setbacks: Two- and Three-Story Structures
+
+2. Structures Taller than Three (3) Stories. Structures taller than three (3) stories adjacent to a single-unit, single-story residential dwelling unit(s) shall use a minimum of one (1) of the following techniques: [Source: NEW]
+
+a. Step back the walls of each floor above the ground floor be a minimum of ten (10) feet along sides where the ground floor wall plane lies within twenty (20) feet of the side property line. [Source: NEW]
+
+b. Increase the required side setback by one (1) foot for each two (2) feet of structure height in excess of fifteen (15) feet of the total height. [Source: NEW]
+
+G. Walkability.
+
+1. Single-Unit Dwellings. Entrances to single-unit dwellings, but not including accessory dwelling units, shall be located on the front facade and directly face the street or public sidewalk. A maximum of twenty-five (25) percent of the total dwelling units along a block face of a residential street may have a side entrance but must include a front porch meeting the standards in Section 17.10.050.E (Porch Design and Location).
+
+2. Muti-Unit Dwellings. Ground floor entrances on multi-unit dwellings shall be provided as front doors or common entries that face a street or a courtyard that provides a direct walkway to a street. [Source: Table 2-3 Notes (10), modified]
+
+a. Frontage Type. The recommended frontage type for ground floor residences are stoop, common stoop, and terrace. ADA units and adaptable units may use other frontage types. When a different frontage type is used, it should be elevated from the sidewalk to provide privacy and be covered. [CPTED]
+
+b. Entries. Entries to upper floor units that face a public street or public driveway shall be framed by an entry that is covered and:
+
+i. Provides a direct connection to the street or driveway.
+
+ii. Is oriented parallel to the street or driveway.
+
+iii. Includes architectural details, such as columns, a recess, or other feature that delineates the entry.
+
+H. Porch Design and Location. New dwellings shall provide a usable covered front porch that complies with all of the following: [CPTED]
+
+1. A minimum of forty-eight (48) square feet; [Source: NEW]
+
+2. A minimum width and depth of six (6) feet, exclusive of railings and supports. The depth and square footage shall not include any area that is used for entry to the unit; and that covers a minimum of twenty (20) percent of the street facing width of the dwelling, inclusive of an attached garage; and [Source: NEW]
+
+3. A maximum of twenty (20) percent of all units within a project may substitute arbors, courtyards, trellises, or similar architectural features for the covered front porch when the entry door is protected from the rain. [Source: NEW]
+
+4. Porches shall be open on three (3) sides. A porch may be open on less than three (3) sides with approval of a Minor Use Permit. If a porch is open on less than three (3) sides, the design of the home and porch shall demonstrate compliance with the CPTED principles included in Section 17.20.030. [CPTED]
+
+I. Corner Parcel Design. Corner parcels shall have a wraparound porch that meets the requirements of Section 17.10.050.H (Porch Design and Location). The portion of the wraparound porch located on street side of the parcel may have a minimum width and depth of four (4) feet. [CPTED] The requirement to provide a wraparound porch may be modified with a minor use permit. [Source: Table 2-3 Notes (13), modified]
+
+J. Frontage Types. Stoop, common stoop, and terrace frontage types are recommended for multi-unit dwellings in the MDR and CR zoning districts.
+
+17.20.050 - Setback Measurement and Exceptions.
+
+A. Purpose. This section provides standards for the use and minimum size of setbacks. These standards provide open areas around structures for: access to and around structures; access to natural light, ventilation, and direct sunlight; emergency access; separation of incompatible land uses; and space for privacy, landscaping, and recreation. [Source: 17.20.070.A, modified]
+
+B. Setback Requirements. All required setbacks shall comply with the following:
+
+1. General Requirement. All structures shall comply with the setback requirements of each zone and with any setbacks established for specific uses by this Code, except as otherwise provided by this section. No portion of any structure, including eaves or roof overhangs, shall extend beyond a property line; or into an access easement or street right-of-way, without first securing an Encroachment Permit. Greater setbacks than required by this Code may be required based on local or State requirements. [Source: 17.20.070.B]
+
+2. Infill Development Within Previously Approved Projects. Where setbacks have been established for individual vacant parcels by a Specific Plan, a PD zone, an approved subdivision map, other entitlement, or to protect an environmental resource, the established setbacks shall continue to apply to continuing development unless circumstances have changed substantially from the time that setbacks were established, as determined by the Director, in which case the setbacks required by this Zoning Ordinance shall be applicable. [Source: 17.20.070.B, modified]
+
+3. Setbacks Required from Environmental Assessment. In the event a setback(s) is required based on an environmental assessment or determination, the property owner or applicant shall be required to provide updated studies or reports at the Director's discretion to revise the required setback. [Source: NEW]
+
+C. Measurement of Setbacks. Setbacks shall be measured as follows, except that the Director may require different setback measurement methods where they determine that unusual parcel configuration makes the following infeasible or ineffective. See Figure 17.20-05 (Location and Measurement of Setbacks). For streets with detached planter strips, the property line is assumed to be the back of the sidewalk for the purposes of setback measurement. [Source: 17.20.070.C, modified]
+
+1. Front Yard Setbacks. The front yard setback shall be measured at right angles from the nearest point on the front property line of the parcel (or edge of access easement on a private street) to the nearest point of the wall of the structure, except as provided in Subparagraphs C.1.a, and C.1.b, below. The front property line is the narrowest dimension of a lot adjacent to a street. [Source: 17.20.070.C.1]
+
+a. Flag Lots. For a parcel with a fee ownership strip extending from a street or rightof-way to the building area of the parcel, area of the required front setback shall be determined by the Director. [Source: 17.20.070.C.1.a]
+
+b. Corner Lots. The measurement shall be taken from the nearest point of the structure to the nearest point of the narrowest street frontage property line. If the property lines on both street frontages are of the same length, the property line to be used for setback measurement shall be determined by the Director. [Source: 17.20.070.C.1.b]
+
+2. Side Yard Setbacks. The side yard setback shall be measured at right angles from the nearest point on the side property line of the parcel to the nearest line of the structure; establishing a setback line parallel to the side property line, which extends between the front and rear yards. [Source: 17.20.070.C.2]
+
+3. Street Side Yard Setbacks. The side yard on the street side of a corner parcel shall be measured from the nearest point of the side property line bounding the street, or the easement for a private road. [Source: 17.20.070.C.3]
+
+4. Rear Yard Setbacks. The rear yard shall be measured at right angles from the nearest point on the rear property line to the nearest line of the structure, establishing a setback line parallel to the rear property line. The Director shall determine the location of the required rear yard setback on a double-frontage parcel. [Source: 17.20.070.C.4]
+
+Figure 17.20-05
+Location and Measurement of Setbacks
+
+D. Exemptions From Setback Requirements. The minimum setback requirements established in this Zoning Code shall apply to all development and new land uses, except the following: [Source: 17.20.070.D, modified]
+
+1. Fences shall comply with the requirements included in Table 17.26-01 (Maximum Height of Fences, Walls, and Hedges); [Source: 17.20.070.D.1]
+
+2. Decks, earthworks, steps, terraces, and other site design elements that are placed directly upon grade and do not exceed a height of eighteen (18) inches above the surrounding grade at any point. Parcel coverage requirements may still apply for these features; and [Source: 17.20.070.D.2, modified]
+
+3. Retaining walls less than thirty (30) inches in height above finish grade. Embankments to be retained that are over forty-eight (48) inches in height shall be benched so that no individual retaining wall exceeds a height of thirty-six (36) inches. [Source: 17.20.070.D]
+
+E. Limitations on Uses of Setbacks. The use of required setback areas shall comply with the following.
+
+1. Structures. Required setback areas shall not be occupied by structures other than: [Source: 17.20.070.E.1]
+
+a. The fences, walls, and hedges permitted by Chapter 17.26 (Fences, Walls, and Hedges); and [Source: 17.20.070.E.1.a]
+
+b. The projections into setbacks allowed by Subsection 17.20.040.F (Allowed Projections into Setbacks). [Source: 17.20.070.E.1.b]
+
+2. Storage. No front or street side setback shall be used for the storage of scrap or junk. [Source: 17.20.070.E.2]
+
+3. Parking. Required residential parking spaces shall not be located within the front setback area other than in the driveway or carport. Temporary (less than seventy-two (72) hours) parking is allowable within required setback areas only on paved driveways. Storage (seventy-two (72) hours or more) of vehicles, including recreational vehicles, boats, trailers, and ATVs, in required setbacks is prohibited. [Source: 17.20.070.E.3, modified]
+
+F. Allowed Projections into Setbacks. Attached architectural features and certain detached structures may project beyond the wall of the structure and into the front, side, street side, and rear yard setbacks, in compliance with the following requirements: [Source: 17.20.070.F, modified]
+
+1. Architectural Features. Architectural features attached to the primary structure and detached structures may extend beyond the wall of the structure and into the front, side, street side, and rear yard setbacks, in compliance with Table 17.20-01 (Allowed Projections into Setbacks). See also Figure 17.20-06 (Examples of Allowed Projections into Side Setbacks). [Source: 17.20.070.F.1, modified]
+
+2. Equipment. Air conditioning, heating, emergency generators, and similar equipment may extend up to thirty (30) inches into side and rear yards, but to no closer than thirty-six (36) inches to any property line. Swimming pool, hot tub, and spa equipment are instead subject to Subsection 17.20.040.G (Setback Requirements for Specific Structures), below. [Source: 17.20.070.F.2]
+
+Table 17.20-01
+Allowed Projections into Setbacks
+
+| Projecting Feature | Allowed Projection into Specific Setback | | | |
+| Projecting Feature | Front Setback | Side Setback | Street Side Setback | Rear Setback |
+| Bay windows, and similar projecting windows | 36 in. | 20 percent of setback (2) | 36 in. | 36 in. |
+| Chimney/fireplace, six feet or less in width | 24 in. ^ (1) | 24 in. ^ (1) | 24 in. ^ (1) | 24 in. ^ (1) |
+| Cornice, eave, awning, roof overhang | 24 in. | 24 in. ^ (2) | 24 in. | 24 in. ^ (2) |
+| Balcony, deck, porch, which may be roofed but is otherwise unenclosed | 25 percent of setback to a maximum of six feet, and no closer than five feet to the property line. Limited to a maximum height of 42 inches. | 20 percent of side setback. Limited to a maximum height of 42 inches. | Five feet or 40 percent of the street side setback. Limited to a maximum height of 42 inches. | 20 percent of setback and no closer than five feet to the property line. Limited to a maximum height of 42 inches. |
+| Deck, porch, stairway - Uncovered, and 18 inches or less. ^ (3) | May project to property line | | | |
+| Deck, balcony, stairway - Enclosed | Not allowed | | | |
+
+Notes
+
+^ (1) Feature may project no closer than thirty-six (36) inches to any property line.
+
+^ (2) Feature may project no closer than twenty-four (24) inches to any property line.
+
+^ (3) Features over eighteen (18) inches in height shall comply with Subsection 17.20.040.G.2.
+
+Figure 17.20-06
+Examples of Allowed Projections into Side Setbacks
+
+G. Setback Requirements for Specific Structures. Setbacks for specific structures shall comply with the following standards:
+
+1. Fences. See Chapter 17.26 (Fences, Hedges, and Walls). [Source: 17.20.070.G.2]
+
+2. Decks and Other Site Design Elements. Detached decks, attached decks, steps, terraces, and other site design elements which are placed directly upon the grade, and which exceed a height of eighteen (18) inches above the surrounding grade at any point, shall conform to the setback requirements of this Code for detached accessory structures. (Note: site design elements less than eighteen (18) inches above grade are exempt.) [Source: 17.20.070.G.3]
+
+3. Swimming Pools, Hot Tubs, etc. Swimming pools, hot tubs, spas, and associated equipment shall be set back a minimum of three (3) feet from side and rear property lines and shall not be located within a front or street side setback. [Source: 17.20.070.G.4]

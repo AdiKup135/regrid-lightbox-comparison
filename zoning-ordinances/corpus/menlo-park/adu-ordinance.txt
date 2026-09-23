@@ -1,0 +1,293 @@
+§ 16.79.010 Purpose.
+
+(a) Provide for the creation of accessory dwelling units and junior accessory dwelling units in a manner consistent with state law;
+
+(b) Establish local objective standards for accessory dwelling units not mandated by state law ("66314 Units") to ensure that they are compatible with existing neighborhoods; and
+
+(c) Expand the opportunity to provide a variety of housing opportunities, specifically smaller units and rental housing units.
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.020 Definitions.
+
+In addition to the terms defined in Chapter 16.04 (Definitions), terms in this chapter shall have the following meanings:
+
+"Accessory dwelling unit" ("ADU") means an attached or a detached residential dwelling unit that provides complete independent living facilities for one or more persons and is located on a lot with a proposed or existing primary dwelling unit defined in Section 16.04.240. The unit shall include permanent provisions for living; sleeping; eating; cooking; and sanitation. The following units are also considered ADUs:
+
+(a) An efficiency unit as defined in Health and Safety Code Section 17958.1; and
+
+(b) A manufactured home, as defined in Health and Safety Code Section 18007.
+
+"Attached accessory dwelling unit" ("attached ADU") means an ADU that expands and/or adds any square footage to the primary dwelling unit structure or to an accessory structure.
+
+"Business day" means a day that the City Hall Administration building is open to the public.
+
+"Detached accessory dwelling unit" ("detached ADU") means an ADU that is constructed as a separate structure from the primary dwelling unit on the lot.
+
+"Efficiency unit" has the same meaning as defined in Health and Safety Code Section 17958.1.
+
+"Internal accessory dwelling unit" ("internal ADU" or "conversion ADU") means an ADU that is contained within the proposed space of a single-family residence or existing space of a single-family residence or accessory building or accessory structure, has independent exterior access, and adds no more than 150 square feet of floor area to an existing accessory building or structure for ingress and egress and is greater than 500 square feet in size.
+
+"Junior accessory dwelling unit" ("JADU") means a unit that is no more than 500 square feet of interior livable space in size and contained entirely within a single-family residence. A junior accessory dwelling unit may include separate sanitation facilities or may share sanitation facilities with the existing structure.
+
+"Livable space" means the interior space in a dwelling intended for human habitation, including living, sleeping, eating, cooking, or sanitation. Notwithstanding this definition, ADUs and JADUs shall count towards the floor area or gross floor area maximums for a development set by the underlying the zoning district, pursuant to Sections 16.04.313 and 16.04.325, respectively.
+
+"Living area" means the interior habitable area of a dwelling unit, including basements and attics, but does not include a garage or any accessory building or accessory structure.
+
+"Major transit stop" as defined in Public Resources Code Section 21155, is:
+
+(a) A high-quality transit corridor with fixed route bus service with service intervals no longer than 15 minutes during peak commute hours;
+
+(b) A major transit stop included in the Bay Area regional transportation plan;
+
+(c) An existing rail or bus rapid transit station;
+
+(d) A ferry terminal served by either a bus or rail transit service; or
+
+(e) The intersection of two or more major bus routes with a frequency of service interval of 20 minutes or less during the morning and afternoon peak commute periods.
+
+"Multifamily dwelling" means a structure with two or more attached dwellings on a single lot. Multiple detached single-unit dwellings on the same lot are not considered multifamily dwellings for the purpose of this chapter.
+
+"Objective development standards" means standards that involve no personal or subjective judgment by a public official and are uniformly verifiable by reference to an external and uniform benchmark or criterion available and knowable by both the development applicant or proponent and the public official prior to submittal.
+
+"Passageway" means a pathway that is unobstructed clear to the sky and extends from a street to one entrance of the ADU.
+
+"Public transit" means a location, including, but not limited to, a bus stop or train station, where the public may access buses, trains, subways, and other forms of transportation that charge set fares, run on fixed routes, and are available to the public.
+
+"Tandem parking" means two or more automobiles parked on a driveway or in any other location on a lot, lined up behind one another.
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.030 Permitted uses.
+
+(a) Attached, internal, or detached ADUs subject to the development regulations in Sections 16.79.050 and 16.79.070 are a permitted use in all zoning districts that allow single-, multi-family, allownd mixed-use residential uses.
+
+(b) JADUs subject to the development regulations in Section 16.79.060 are a permitted use in all single-family zoning districts.
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.040 Conditional uses.
+
+ADUs subject to local objective standards (pursuant to Government Code Section 66314) and Section 16.79.070 of this chapter that require modification to the development regulations set forth in this chapter are conditionally permitted subject to the use permit requirements of Chapter 16.82. A conditional use permit cannot be used to modify Section 16.79.070(a).
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.050 Units subject to limited standards ("66323 Units").
+
+Government Code Section 66323 provides that certain units shall be ministerially approved notwithstanding local regulations that may otherwise apply. This section sets forth three types of ADUs that constitute "66323 Units." 66323 Units need only comply with the development standards set forth in this subsection. Lots with existing or proposed single-family developments are entitled to no more than three 66323 Units: one internal ADU, one JADU, and one detached ADU, as more specifically described below.
+
+(a) Single-Family Developments.
+
+(1) One internal ADU and one JADU. For a lot with an existing or proposed single-family dwelling, one internal ADU and/or one JADU if all of the following requirements are met:
+
+(A) The ADU or JADU is within the proposed space of a single-family dwelling or existing space of a single-family dwelling, accessory building, or accessory structure. ADUs converted from an accessory building or structure are eligible for a 150-square-foot expansion. An expansion beyond the physical dimensions of the existing accessory building or structure shall be limited to accommodating ingress and egress.
+
+(B) The space has exterior access from the proposed or existing single-family dwelling.
+
+(C) The side and rear setbacks are sufficient for fire and safety.
+
+(D) The JADU complies with the requirements of Government Code Section 66333 et seq.
+
+(E) Internal ADUs and JADUs, constructed concurrently with the primary dwelling unit, shall not exceed the maximum allowed floor area limit or floor area ratio of the zoning district.
+
+(2) One detached ADU. For a lot with an existing or proposed single-family dwelling, one detached, new construction ADU that meets all the following requirements:
+
+(A) Maximum Floor Area. The ADU shall not exceed 800 square feet of interior livable space.
+
+(B) Minimum Rear and Side Setbacks. Four feet.
+
+(C) Maximum Height:
+
+(i) 16 feet for a detached ADU on a lot with an existing or proposed single-family unit.
+
+(ii) 18 feet for a detached ADU on a lot with an existing or proposed single-family or multifamily dwelling unit that is within one-half of one mile walking distance of a major transit stop or a high-quality transit corridor, as defined in Public Resources Code Section 21155. An additional two feet in height is allowed to accommodate a roof pitch on an ADU that is aligned with the roof pitch of the primary dwelling unit.
+
+(b) Multifamily Developments.
+
+(1) Internal Multifamily ADUs. ADUs are permitted within portions of existing multifamily residential structures not used as livable space, including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements, or garages, provided each unit complies with building standards. At least one internal ADU and up to 25% of the existing number of multifamily dwelling units are permitted.
+
+(2) Detached Multifamily ADUs. ADUs that are located on a lot that has an existing or proposed multifamily dwelling, but are detached from that multifamily dwelling, are subject to the following:
+
+(A) Maximum Number.
+
+(i) On a lot with an existing multifamily dwelling, not more than eight detached ADUs. However, the number of ADUs allowable pursuant to this clause shall not exceed the number of existing units on the lot.
+
+(ii) On a lot with a proposed multifamily dwelling, not more than two detached ADUs. Once two detached ADUs have been constructed as part of a new or proposed multifamily development, no additional detached ADUs can be constructed on site.
+
+(B) Maximum Height.
+
+(i) A height of 16 feet for a detached ADU on a lot with an existing or proposed multifamily dwelling unit.
+
+(ii) A height of 18 feet on a lot within one-half of one mile walking distance of a major transit stop or a high-quality transit corridor, as defined in of the Public Resources Code Section 21155. An additional two feet in height shall be allowed to accommodate a roof pitch on the ADU that is aligned with the roof pitch of the primary dwelling unit.
+
+(iii) A height of 18 feet for a detached ADU on a lot with an existing or proposed multifamily, multistory dwelling.
+
+(C) Setbacks.
+
+(i) Minimum rear and side setbacks: four feet.
+
+(ii) If the existing multifamily dwelling has a rear or side setback of less than four feet, no modification of the existing multifamily dwelling shall be required as a condition of approving the application to construct an ADU that satisfies the requirements of this subsection.
+
+(c) Rental. ADUs and JADUs approved under this section shall not be rented for a term shorter than 30 days, consistent with Government Code Section 66323(e).
+
+(d) No objective development or design standard shall be imposed on an ADU authorized by this section unless expressly authorized by Government Code Section 66323(b). Correction of nonconforming zoning conditions shall not be required as a condition of ministerial ADU or JADU approval, consistent with Government Code Section 66323(c). The installation of fire sprinklers shall not be required in an ADU or JADU if sprinklers are not required for the primary dwelling unit, consistent with Government Code Section 66323(d).
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.060 Junior accessory dwelling unit (JADU) development standards.
+
+Development standards for JADUs are located in Table 16.79.060(1) and shall be subject to objective standards listed in this section.
+
+| Table 16.79.060(1): JADU Objective Development Standards | | |
+| Minimum Floor Area | | 150 square feet of interior livable space |
+| Maximum Floor Area | | 500 square feet of interior livable space^1 |
+| Lot Coverage Maximum | | N/A |
+| Setbacks | (Minimum) | |
+| | Front | N/A |
+| | Side | N/A |
+| | Rear | N/A |
+| Maximum Height | | N/A |
+| Parking | | None |
+| Separate independent entrance required? | | Yes |
+| Interior access allowed? | | Yes |
+| Separate sanitary facility required | | No^2 |
+| Kitchen required | | Yes^3 |
+
+| Notes: | |
+| 1. | The JADU may include an expansion of not more than 150 square feet beyond the physical dimensions of the existing single-family residence. The expansion shall be limited to accommodating ingress and egress. |
+| 2. | If a JADU does not include a separate bathroom, the JADU must include both a separate entrance from the main entrance to the structure, and an interior entry to the main living area. |
+| 3. | The JADU shall have a permanent efficiency kitchen as defined in Section 16.79.060(c). Only one kitchen is allowed per junior accessory dwelling unit. |
+
+(a) Maximum Size. JADUs shall be no greater than 500 square feet of interior livable space and contained entirely within a single-family residence. The JADU may include an expansion of not more than 150 square feet beyond the physical dimensions as the existing single-family home. The expansion shall be limited to accommodating ingress and egress.
+
+(b) Location. No more than one JADU is permitted on a residential lot within an existing single-family dwelling. No setbacks apply to fully internal JADUs.
+
+(c) Kitchen. The JADU shall have a permanent efficiency kitchen, which shall include a cooking facility with appliances that do not require electrical service greater than 120 volts, a food preparation area, a sink with a minimum 16-inch diameter, and storage cabinets that are of reasonable size in relation to the size of the unit. Only one kitchen is allowed per JADU.
+
+(d) Sanitation Facilities. A JADU may include separate sanitation facilities or may share sanitation facilities with the existing single-family dwelling. If a JADU does not include a separate bathroom, the JADU must include a separate entrance from the main entrance to the single-family dwelling, with an interior entry to the main living area.
+
+(e) Owner Occupancy. When a JADU shares sanitation facilities with the existing single-family residence, the property owner shall occupy either: (1) the remaining portion of the single-family residence; or (2) the junior accessory dwelling unit. Owner-occupancy shall be maintained for the duration of the JADU's use. Owner occupancy shall not be required when the JADU provides separate sanitation facilities from the primary dwelling unit. For purposes of this standard, "owner" is defined as a person or entity with a majority (i.e., 51% or greater) interest in the property. Property owned in joint tenancy shall be considered a single ownership for any party named. Property owned in tenancy in common shall be considered a single ownership for the party named, unless shares are specified, in which case ownership requires a majority interest. Owner-occupancy shall not be required if the property owner is: a governmental agency, a land trust, or a housing organization.
+
+(f) Prohibition on Sale. JADUs shall not be sold separately and the owner must record a deed restriction, which shall run with the land, and shall include both of the following: (1) a prohibition on the sale of the JADU separate from the sale of the single-family residence, including a statement that the deed restriction may be enforced against future purchasers; and (2) a restriction on the size and attributes of the junior accessory dwelling unit that conforms with this chapter.
+
+(g) Rental. The JADU may be rented separate from the primary dwelling unit but may not be rented for a period of less than 30 consecutive days.
+
+(h) Fire and Safety Regulations. A JADU shall not be considered a separate or new dwelling unit for any purposes of any fire or life safety ordinance in regulation. Nothing in this chapter prohibits the city or the Menlo Park Fire Protection District from applying fire and life safety requirements that apply uniformly to all single-family residences within the same zone, provided that such requirements do not impose standards solely by reason or the existence or construction of a JADU, consistent with Government Code Section 66337.
+
+(i) No objective development or design standard shall be imposed on a JADU authorized by this section unless expressly authorized by Government Code Section 66323(b). Correction of nonconforming zoning conditions shall not be required as a condition of ministerial ADU or JADU approval, consistent with Government Code Section 66323(c). The installation of fire sprinklers shall not be required in an ADU or JADU if sprinklers are not required for the primary dwelling unit, consistent with Government Code Section 66323(d).
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.070 Units subject to local standards ("66314 Units").
+
+This section sets forth local objective standards for ADUs that do not qualify as 66323 Units, such as attached ADUs added to existing primary dwelling units, and constitute "66314 Units." 66314 Units shall be ministerially approved and need only comply with the development standards set forth Table 16.79.070(1) and this section. The standards in this section shall not be applied to impose any restriction that precludes the construction of an ADU that meets the requirements of Section 16.79.050 or 16.79.060 of this chapter.
+
+| Table 16.79.070(1): 66314 Units Objective Development Standards | | | | |
+| | | Attached ADU^1,2 | Detached ADU^1 | Internal ADU^1 |
+| Minimum Floor Area | | 150 square feet | | |
+| Maximum Floor Area | | | | Greater than 500 square feet but no more than 1,000 square feet of interior livable space^4 |
+| | One Bedroom or Less | 850 square feet of interior livable space^2 | | Greater than 500 square feet but no more than 1,000 square feet of interior livable space^4 |
+| | More than One Bedroom | 1,000 square feet of interior livable space^3 | | Greater than 500 square feet but no more than 1,000 square feet of interior livable space^4 |
+| Maximum Building Coverage | | Based on zoning district^5 | | |
+| Setbacks^6 | (Minimum) | | | |
+| | Front | Front setback per zoning district; setback must yield to the extent necessary to enable the construction of an 800-square-foot ADU with four-foot side- and rear-yard setbacks | | |
+| | Side | 4 feet | | |
+| | Rear | 4 feet | | |
+| Maximum Height | | 25 feet from grade^7 | 16 feet from grade^8,9 | N/A |
+| Daylight Plane | | Per Chapter 16.67 of this title | N/A | N/A |
+| Building Profile | | If applicable, subject to zoning district requirements | N/A^10 | If applicable, subject to zoning district |
+| Architectural Feature Encroachments | | Permitted 18 inches into side and rear yard setbacks | | |
+| Stair and Landing Encroachments | | All stair landings and balconies shall have minimum 4-foot side- and rear-yard setbacks^11 | | |
+| Parking | | None^12 | | None |
+| Separate independent entrance required | | Yes | | |
+| Separate sanitary facility required | | Yes | | |
+| Kitchen required? | | Yes | | |
+| Interior access allowed? | | Yes, per Section 16.79.070(c) | | |
+
+| Notes: | |
+| 1. | All types of 66314 ADUs shall be granted an additional 100 sq. ft. exceedance if the ADU meets the accessibility requirements of the California Building Code. An accessible ADU shall also include an accessible access pathway from the on-site parking space or if no parking space is required to be provided, then from the street, a publicly accessible right-of-way, or an access easement. |
+| 2. | The total interior livable space of an attached ADU may not exceed 50% of an existing primary dwelling unit, notwithstanding the guaranteed allowance. |
+| 3. | For lots greater than 10,000 sq. ft, the total interior livable space shall not exceed 1,000 sq. ft. |
+| 4. | Internal ADUs that are equal to or less than 500 sq. ft. of interior livable space are defined as JADUs, and are subject to the requirements in Section 16.79.060, unless subject to the requirements in Section 16.79.070. |
+| 5. | Lot coverage limits may be exceeded only to accommodate one detached ADU of at least 800 square feet of interior livable space. |
+| 6. | No setback shall be required for an existing living area or accessory building, or a structure constructed in the same location and to the same dimensions as an existing structure that is converted to an ADU or to a portion of an ADU, and a setback of no more than four feet from the side and rear lot lines shall be required for an ADU that is not converted from an existing building. ADU conversions of existing accessory buildings or accessory structures may result in an ADU with a smaller footprint than the existing building and the resulting ADU may include greater setbacks than the existing building, including less than the required four-foot minimum setback for an ADU that is not converted from an existing building. The ADU conversion shall be within the same footprint of the existing building and any additions (up to the maximum of 150 square feet ingress and egress) beyond the footprint must have a minimum four-foot side and rear setback and comply with the provisions of this chapter. The height of the ADU, even if the footprint is modified, shall be the same height or lower than the existing height (including the wall height and overall height). |
+| 7. | The height restriction for an attached ADU is 25 feet or the zoning ordinance height limit, whichever is lower. Where the zoning district allows a height limit greater than 25 feet, the primary dwelling unit may go up to the maximum height but the attached ADU would be limited to a maximum of 25 feet in height. |
+| 8. | A detached accessory dwelling unit on a lot with an existing single-family residence, one-half of one mile walking distance away from a major transit stop (as defined in Public Resources Code Section 21155) shall not exceed a max height of 18 feet. An additional two feet in height is permitted to accommodate a roof pitch on the accessory dwelling unit that is aligned with the roof pitch of the primary dwelling unit. |
+| 9. | An ADU on a lot with an existing or proposed multifamily, multistory dwelling unit shall not exceed a max height of 18 feet. |
+| 10. | Detached ADUs are not subject to building profile requirements. |
+| 11. | For access to a second-story ADU, the stairs and landing shall not exceed the minimum required for building code-compliant egress, unless the second level landing meets the minimum requires balcony setbacks in Chapter 16.60 (Encroachments and Balconies). |
+| 12. | When a garage, carport, or covered parking structure is demolished in conjunction with the construction of an accessory dwelling unit or converted to an accessory dwelling unit, those off-street parking spaces need not be replaced. If desired, parking may be provided as tandem parking on a driveway. |
+
+(a) Maximum Number. Only one 66314 Unit is allowed on a lot.
+
+(b) Guaranteed Allowance. Maximum floor area limit, floor area ratio, building coverage, open space, and parking standards shall not prohibit a 66314 Unit of at least 800 square feet of interior livable space, a height not to exceed the limits established by Section 16.79.050 of this chapter, and four-foot side and rear yard setbacks. Exceedance can occur over multiple phases for the unit identified in this Section 16.79.070.
+
+(c) Internal Access. Internal access between a 66314 Unit and a primary dwelling unit shall comply with the applicable requirements of the California Building Standards Code, and the two units shall be separated by two fire-rated doors with independent locking mechanisms.
+
+(d) Exterior Access. ADUs shall have independent exterior access separate from the primary dwelling unit.
+
+(e) Exterior Access Pathway. An all-weather pathway from the street or publicly accessible right-of-way or access easements shall be provided.
+
+(f) Parking. No parking spaces are required for units identified in this Section 16.79.070.
+
+(g) Encroachments. Encroachments are permitted into yards, subject to the following requirements.
+
+(1) Exterior stairs or elevated access pathway attached to an ADU shall be a minimum of four feet from a side or rear property line and shall be designed to be no greater in size than the minimum size required to comply with the minimum building code egress/access requirement.
+
+(2) Eaves or cornices may encroach no more than 18 inches into a required side or rear setback.
+
+(h) Covered Porches and Accessory Structures. Covered porches or other similar non-habitable accessory structures may be attached to a detached ADU and shall not be included in the calculation of the ADU's "interior living space." When the total area of such structures does not exceed 20% of the ADU's floor area, they shall be regulated by the provisions of this chapter as part of the ADU. When the total area of such structures exceeds 20% of the ADU's floor area, they shall be regulated as accessory structures under Section 16.68.030. The standards of Section 16.68.030 shall not be applied to impose any restriction that precludes the construction of an ADU that meets the requirements of Section 16.79.050 of this chapter.
+
+(i) Lighting. Lighting shall be shielded and/or directed such that it does not produce glare visible from off site or illuminate adjacent or nearby property. All proposed exterior lighting shall have shielded downlighting.
+
+(j) Rental. The ADU may be rented separate from the primary dwelling unit but may not be rented for a period of less than 30 consecutive days.
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.080 Administration.
+
+This section provides for the establishment and regulation of ADUs and JADUs in order to encourage housing opportunities for all segments of the population while ensuring the public health, safety, and welfare of the city.
+
+(a) Application and Fee. Applications for an ADU shall be processed ministerially and shall be accompanied by the appropriate fee. An ADU shall be permitted through issuance of a building permit.
+
+(b) Completeness Review. Upon receiving an ADU or JADU application, the Community development director or designee shall, within 15 business days, provide written notice to the applicant stating whether the application is complete; if the application is determined to be incomplete, the community development director or designee shall identify all incomplete items and describe how the application may be made complete. Upon resubmittal the community development director or designee shall not require items beyond those identified in the original notice and shall issue a new completeness determination within 15 business days. If completeness notice is not issued within 15 business days, the application is deemed complete.
+
+(c) Processing. Once a completed ADU or JADU application on a lot with an existing single-family or multifamily dwelling is received, the community development director or designee must approve or deny the building permit application in writing within 60 calendar days. If a decision is not made within this 60-day period, the application is deemed approved. For an ADU or JADU application submitted concurrently with a permit for a new primary dwelling unit, the city may act on the ADU or JADU at the same time it acts on the primary dwelling unit permit provided review remains ministerial for the ADU or JADU. If the applicant requests a delay, the 60-day time period shall be tolled for the period of the requested delay.
+
+(d) Right to Appeal. An applicant may appeal a completeness determination pursuant to 16.79.080(b) or a denial pursuant to Section 16.79.080(c) in writing to the Planning Commission, no later than 15 calendar days from either action. Following the receipt of the applicant's written appeal, the Planning Commission must issue a written determination on the appeal within 60 business days of the City's receipt of the written appeal, and this deadline cannot be extended. The Planning Commission's decision is final.
+
+(e) Unpermitted ADUs and JADUs. Any permit for an unpermitted ADU or JADU that was constructed before Jan. 31, 2023, shall not be denied due to the ADU or JADU's violation of building standards or its noncompliance with this chapter unless community development director or their designee makes a finding that correction is necessary to protect the health and safety of the public or occupants of the structure, consistent with Health and Safety Code Section 17920.3.
+
+(1) Prior to submission of an ADU or JADU application, the community development director or designee shall inform homeowners that they may obtain a confidential third-party code inspection from a licensed contractor to determine the unit's existing condition or potential scope of building improvements before submitting an application for a permit.
+
+(2) A homeowner applying for a permit for a previously unpermitted ADU or JADU constructed before Jan. 31, 2023, shall not be required to pay impact fees or connection or capacity charges except when utility infrastructure is required to comply with Health and Safety Code Section 17920.3 and when such a fee is authorized by Government Code Section 66311.5, subdivision (e).
+
+(3) Upon receiving an application to permit a previously unpermitted ADU or JADU constructed before Jan. 31, 2023, an inspector from the local agency may inspect the unit for compliance with health and safety standards and provide recommendations to comply with the standards necessary to obtain a permit. If the inspector finds noncompliance with health and safety standards, an applicant shall not be penalized for having an unpermitted ADU or JADU and shall approve necessary permits to correct noncompliance with health and safety standards.
+
+(4) Documentation required to demonstrate that an unpermitted ADU or JADU was constructed before Jan. 31, 2023, could include, but is not limited to, utility records, assessor records, aerial imagery, dated photographs, contractor invoices, rental agreements, and insurance records.
+
+(f) Administrative Review. If the ADU meets the objective design standards outlined in this chapter, the decision of the director granting or denying an ADU permit is a ministerial decision as required by state law, and not subject to a public hearing.
+
+(1) For an ADU incorporating the guaranteed allowance as specified in Section 16.79.070(b) of this chapter, the building permit for the primary dwelling unit shall receive final inspection before the final inspection of the ADU.
+
+(g) Density. Pursuant to California Government Code Section 66319, no ADU approved under these provisions shall be considered in calculating the density of the lot allowed by the land use designation contained in the land use element of the General Plan, and ADUs are deemed a residential use that is consistent with the existing general plan and zoning for the lot.
+
+(h) Fire District Regulations. The ADU shall comply with all applicable Menlo Park Fire Protection District regulations, subject to provisions and limitations set forth in Government Code Section 66314.
+
+(i) Sanitary Service. Adequate sanitary service capacity for the additional increment of effluent resulting from the ADU shall be available. If the lot is connected to the public sewer system, the applicant shall submit a letter from the appropriate sanitary district to that effect. If the lot is not connected to the public sewer system, the applicant shall submit a letter from the West Bay Sanitary District confirming that the individual or alternative sewage disposal system serving the lot has adequate capacity to accommodate the proposed ADU.
+
+(j) Separate Utility Connection. New and separate utility connections shall be required directly between the ADU and the utility when the ADU is constructed with a new single-family dwelling. Consistent with Government Code Section 66013, the connection may be subject to a connection fee or capacity charge that shall be proportionate to the burden of the proposed ADU, based upon either its square feet or the number of its drainage fixture unit (DFU) values, as defined in the Uniform Plumbing Code adopted and published by the International Association of Plumbing and Mechanical Officials, upon the water or sewer system. This fee or charge shall not exceed the reasonable cost of providing this service.
+
+(k) Exception. An ADU or JADU described in Government Code Section 66323(a)(1) (i.e., 66323 Units) shall not be required to install a new or separate utility connection directly between the ADU and the utility or be required to pay a related connection fee or capacity charge, unless the ADU was constructed with a new single-family dwelling or the ADU is approved for separate conveyance pursuant to Government Code Section 66342.
+
+(l) Rental and Sale. The ADU may be rented separate from the primary dwelling unit but may not be rented for a period of less than 30 consecutive days. The ADU may not be sold separately from the primary dwelling unit unless the conditions in Government Code Section 66341 are met.
+
+(Ord. 1129, 6/9/2026)
+
+§ 16.79.090 Two-unit housing developments and urban lot splits (SB 9).
+
+(a) Pursuant to the authority provided by Section 65852.21(f) of the Government Code, no accessory dwelling unit or junior accessory dwelling unit shall be permitted on any lot in a single-family zoning district if: (1) an urban lot split has been approved pursuant to Chapter 15.31; and (2) a two-unit housing development has been approved for construction pursuant to Chapter 16.77.
+
+(b) Accessory dwelling units and junior accessory dwelling units shall be permitted on lots with two-unit housing developments, subject to the provisions of this chapter, and where the lot has not been created through an urban lot split pursuant to Chapter 15.31.
+
+(Ord. 1129, 6/9/2026)

@@ -1,0 +1,81 @@
+15-06.290 - Frontage.
+
+"Frontage" means the property line of a site abutting on a street. In the case of a corner lot, the frontage shall be that property line with the shortest dimension of the lot fronting a street which does not result in the creation of a nonconforming lot with respect to frontage, width or depth. (Amended by Ord. 223 § 2 (part), 2003)
+
+(Amended by Ord. No. 272, § 2(Exh. A), 9-16-2009)
+
+15-06.420 - Lot.
+
+"Lot" means a parcel of land consisting of a single lot of record.
+
+(a) Lot of record means a lot which is part of a subdivision and shown on a map thereof as recorded in the office of the County Recorder, or a legally created parcel of land described by metes and bounds or shown on a parcel map which has been so recorded.
+
+(b) Corner lot means a lot situated at the intersection of two or more streets, or bounded on two or more connected sides by street lines.
+
+(c) Interior lot means a lot other than a corner lot.
+
+(d) Flag lot means a lot having access to a street by means of a private driveway or corridor of land not otherwise meeting the requirements of this Chapter for site width.
+
+(e) Hillside lot means a lot having an average slope of ten percent or greater.
+
+(f) In-fill lot means a lot surrounded by other developed lots in at least three out of four northern, southern, eastern or western directions.
+
+(g) Reversed corner lot means a corner lot, the side lot line of which is substantially a continuation of the front lot line of the first lot to its rear.
+
+(h) Double frontage lot means an interior lot having frontage on two parallel or approximately parallel streets.
+
+(Amended by Ord. 223 § 2 (part), 2003; Ord. No. 272, § 2(Exh. A), 9-16-2009; Ord. No. 294, § 1.A.2., 9-5-2012; Ord. No. 320, § 1.F.11, 11-5-2014)
+
+15-06.430 - Lot line.
+
+"Lot line" means any boundary of a lot.
+
+(a) Front lot line means, on an interior lot, the lot line abutting a street, or, on a corner lot, the shortest dimension of the lot fronting the street, or, on a double frontage lot, the lot line abutting the street providing the primary means of access to the lot, or, on a flag lot, the interior lot line most parallel to and nearest the street providing site access unless the average width of the lot exceeds its average depth in which case the front lot line shall be the interior lot line with the shortest dimension.
+
+(b) Rear lot line means the lot line not intersecting a front lot line which is most distant from and most closely parallel to the front lot line. A lot bounded by only three lot lines will not have a rear lot line.
+
+(c) Side lot line means any lot line which is not a front or rear lot line.
+
+(d) Interior lot line means any lot line not abutting a street.
+
+(e) Exterior lot line or street lot line means any lot line abutting a street.
+
+(f) The Community Development Director may assign or designate lot lines for irregular-shaped parcels or lots that do not have frontage, as defined in Section 15-06.290. (Amended by Ord. 223 § 2 (part), 2003)
+
+(Amended by Ord. No. 272, § 2(Exh. A), 9-16-2009; Ord. No. 320, § 1.F.12, 11-5-2014)
+
+15-06.520 - Property line.
+
+"Property line" means lot line, as defined in Section 15-06.430.
+
+(Amended by Ord. 223 § 2 (part), 2003)
+
+(Amended by Ord. No. 272, § 2(Exh. A), 9-16-2009)
+
+15-06.587 - Setback.
+
+"Setback" means the minimum distance between the structure and any lot line. Where a street line is located within the boundaries of a site, the required setback shall be measured from such street line instead of the lot line. (Amended by Ord. 223 § 2 (part), 2003)
+
+(Amended by Ord. No. 272, § 2(Exh. A), 9-16-2009)
+
+15-06.588 - Setback area.
+
+(a) Front setback area means that portion of a site bounded by the side lot lines, the front lot line, and the front setback line, located the required minimum distance from the front lot line.
+
+(b) Side setback area means that portion of a site bounded by the front setback area, the rear setback area, the side lot line, and the side setback line, located the required minimum distance from the side lot line.
+
+(1) Exterior side setback area means that portion of a site bounded by the front setback area, the rear setback area, the exterior side lot line, and the exterior side setback line, located the required minimum distance from the exterior side lot line of a corner lot. Exterior side setback areas exist only on corner lots.
+
+(2) Interior side setback area means that portion of a site bounded by the front setback area, the rear setback area, the interior side lot line, and the interior side setback line, located the required minimum distance from the interior side lot line.
+
+(c) Rear setback area means that portion of a site bounded by the side lot lines, the rear lot line or the rearmost portion of the lot if there is no rear lot line, and the rear setback line, located the required minimum distance from the rear lot line or the rearmost portion of the lot if there is no rear lot line.
+
+(d) [Lot line located in street.] When a lot line is located in a street, the setback area shall be measured from the right-of-way line, street line, or the plan line of a street (if any, and defined as the ultimate City-determined improvement line for a specific street segment), instead of the lot line.
+
+(Ord. 245 § 2 (Att. A) (part), 2006; Amended by Ord. No. 272, § 2(Exh. A), 9-16-2009)
+
+15-06.590 - Setback line.
+
+"Setback line" means a line that is located at the required minimum distance from any lot line, which establishes area within which the principal structure, a fence or a wall greater than six feet, and certain enclosed accessory structures listed in Section 15-80.030(d) must be erected or placed.
+
+(Amended by Ord. 223 § 2 (part), 2003)

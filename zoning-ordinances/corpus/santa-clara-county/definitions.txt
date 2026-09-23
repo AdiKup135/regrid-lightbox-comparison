@@ -1,0 +1,51 @@
+§ 1.30.030. - Definitions of terms.
+
+Lot: A fundamental unit of land that may be lawfully sold as a separate parcel in conformance with the applicable lot-legality provisions of Division C12 of the County Ordinance Code and the applicable subdivision and lot-legality provisions of state law.
+
+Lot area, gross: The area specified as gross lot area on a recorded parcel map, tract map or record of survey. Also, the total area of any lot whose deed contains a legal description that includes land underlying public or private rights-of-way as fee-title portions of the lot.
+
+Lot area, net: The net area of a lot specified as such on a recorded parcel map, tract map or record of survey, or the total land area of any lot exclusive of land underlying public or private rights-of-way.
+
+Lot, corner: A lot situated at the intersection of two or more streets, or bounded on two or more adjacent sides by street lines. If the interior angle of the intersecting street lines is 135 degrees or wider, the lot shall not be deemed a corner lot.
+
+Lot coverage: The footprint of all buildings and structures over 30 inches in height. Covered patios, carports, arbors, and similar structures are counted in lot coverage. Eaves are excluded provided they do not project more than two and one-half feet.
+
+Lot depth: The average distance from the front property line (or edge of right-of-way) to the rear line measured in the general direction of the side lines of the lot.
+
+Lot frontage: The boundary of a dedicated public or private road right-of-way as it fronts along a lot. To determine the front lot line for setback purposes, see "lot lines."
+
+Lot, flag: A lot, generally located to the rear of another lot, whose frontage to a street is provided by a fee access corridor, or whose access is provided by an easement through the parcel with actual frontage along such street. [See Fig. 1.30-5]
+
+Lot, interior: A lot with street frontage and whose side lot lines are the side lot lines of adjacent lots that front on the same street. [See Fig. 1.30-5]
+
+Lot, key: The first lot to the rear of a corner lot, the front line of which is a continuation of the side line of the corner lot, exclusive of the width of any alley, and fronting on the street which intersects or intercepts the street on which the corner lot fronts. [See Fig. 1.30-5]
+
+Lot lines: The lines bounding a lot as defined herein, with the following specific classifications and criteria for determining setbacks. For purposes of this definition, "street" shall mean "right-of-way," as defined herein.
+
+1. The front lot line is normally the line that abuts a street.
+
+2. The front lot line of a corner lot is normally the shorter line (representing the narrower lot dimension) of the two lines abutting a street. If a corner lot's overall depth-to-width dimensions are more strongly representative of the lot's orientation such that an alternate frontage determination would yield a larger building envelope, the right-of-way line that corresponds to the lot width (longer line in that case) shall be deemed the front lot line for setback purposes. In the case of a curved corner, a determination may be made by the zoning administrator that an appropriately situated point along that curve shall demarcate the front lot line from the exterior side lot line.
+
+3. The front lot line of a flag lot shall be based on the lesser dimension (width/length) of the main portion of the lot (portion that excludes access corridor). The line abutting the interior terminus of the access corridor that corresponds to that lesser lot dimension shall be deemed the front lot line. When a fee access corridor exceeds 25 feet in width, the front lot line shall be the street frontage at the access corridor. For a variable-width access corridor the front lot line shall be considered the width line at the point at which the access corridor exceeds 25 feet.
+
+4. The side lot line is the line that intersects the front lot line, the rear lot line, and any other side lot line.
+
+5. The side exterior lot line of a corner lot is the (generally) longer of the two lines abutting a street (see Paragraph 2 above).
+
+6. The rear lot line is generally the line that is most distant and opposite the front lot line. On a triangular lot or other lot where no logical rear lot line exists, the rear setback may be taken as a radius from the point of intersection of side lines most distant and opposite the front lot line. Multiple line segments that logically fit the intent of this definition may also be considered rear lot lines.
+
+Setback: The horizontal separation required between lot lines (and/or rights-of-way, see below), and the nearest point of a building or structure, including below-grade walls. The setback line shall be deemed to mean a line parallel to the lot line separated by the required setback distance.
+
+The measurement shall be taken from the rough exterior building walls (structural wall components; excluding trim, exterior siding, stucco or other such finishing materials), or other vertical structural components, to the nearest lot line, exclusive of those architectural features listed in § 4.20.110 as exempt. Setbacks shall also be taken from the edge of any right-of-way that abuts or passes through the subject lot. In situations where the property line lies within the right-of-way, the setback shall be taken from the edge of such right-of-way. However, if an official plan line or future width line has been established for the abutting right-of-way, setback measurement shall be taken from such official plan line or future width line.
+
+Yard: An open space, adjacent to a dwelling or other main building, that is generally unoccupied and unobstructed from the ground upward, except as otherwise provided in Chapter 4.20. The following are types of yards:
+
+1. The front yard extends across the full width of the lot lying between the front lot line and the nearest line of the dwelling.
+
+2. The side yard lies between the side lot line and the side wall(s) of the dwelling and extends from the front yard to the rear yard.
+
+3. The rear yard extends across the full width of the lot lying between the rear lot line and the nearest line of the primary dwelling.
+
+(Ord. No. NS-1200.317, § 16, 6-8-04; Ord. No. NS-1200.318, § 1, 3-28-06; Ord. No. 1200.320, § 4, 8-29-06; Ord. No. NS-1200.323, § 1, 1-29-08; Ord. No. NS-1200.327, § 2, 2-9-10; Ord. No. NS-1200.330, § 1, 9-28-10; Ord. No. NS-1200.337, § 1, 12-18-12; Ord. No. NS-1200.367, § 2, 6-19-18; Ord. No. NS-1200.371, § 1, 3-10-20; Ord. No. NS-1200.375(10.20.2020), § 1, 10-20-20)
+
+Editor's note— Section 3 of Ord. No. NS-1200.330 allows for an effective date of November 1, 2010, and states: "This ordinance shall not apply to discretionary land-use applications that include house plans (floor plans and elevations) that have been deemed complete or approved prior to November 1, 2010, nor to projects for which a building permit application has been accepted by the Building Inspection Office prior to November 1, 2010.

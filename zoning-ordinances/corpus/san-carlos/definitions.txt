@@ -1,0 +1,92 @@
+18.03.110 Determining lot frontage.
+
+A. Corner Lot. The front of a lot is the narrowest dimension of the lot with street frontage.
+
+B. Through Lot. The front yard of a through lot abuts the street that neighboring lots use to provide primary access. (Ord. 1537 (Exh. A (part)), 2018: Ord. 1438 § 4 (Exh. A (part)), 2011)
+
+18.03.120 Determining setbacks (yards).
+
+A setback line defining a required yard is parallel to and at the specified distance from the corresponding front, side, or rear property line. The following special regulations for determining yards apply when a lot abuts a proposed street or alley.
+
+A. Yards Abutting Planned Street Expansions. If a property abuts an existing or proposed street for which the existing right-of-way is narrower than the right-of-way ultimately required for the street, the required setback shall be established from the future right-of-way rather than the property line.
+
+B. Yards on Alleys.
+
+1. If a side lot line abuts an alley, the yard shall be considered an interior side yard rather than a corner side yard.
+
+2. In computing the minimum yard for any lot where such yard abuts an alley, no part of the width of the alley may be considered as part of the required yard.
+
+C. Measuring Setbacks. Setbacks shall be measured as the distance between the nearest lot line and the closest point on the exterior of a building or structure along a line at right angles to the lot line. Setbacks shall be unobstructed from the ground to the sky except where allowed pursuant to Section 18.15.080, Projections into yards, subject to compliance with the California Building Code.
+
+FIGURE 18.03.120: DETERMINING SETBACKS (YARDS)
+
+(Ord. 1537 (Exh. A (part)), 2018: Ord. 1438 § 4 (Exh. A (part)), 2011)
+
+18.41.020 Definitions.
+
+“Build-to line” means a line parallel to the lot line where the facade of the building is required to be located.
+
+“Corner build-to area” means the area of a corner lot where the facade of the building is required to be located.
+
+“Frontage, street” means that portion of a lot or parcel of land that borders a public street. Street frontage shall be measured along the common lot line separating said lot or parcel of land from the public street, highway, or parkway.
+
+“Lot” means a parcel, tract, or area of land whose boundaries have been established by a legal instrument such as a deed or map recorded with the County of San Mateo, and which is recognized as a separate legal entity for purposes of transfer of title, except public easements or rights-of-way.
+
+1. “Abutting lot” means a lot having a common property line or separated by a public path or lane, private street, or easement to the subject lot.
+
+2. “Corner lot” means a lot or parcel bounded on two (2) or more sides by street lines that have an angle intersection that is not more than one hundred thirty-five (135) degrees.
+
+3. “Flag lot” means a lot so shaped that the main portion of the lot area does not have access to a street other than by means of a corridor having less than twenty (20) feet of width. Also called a “panhandle” lot.
+
+4. “Interior lot” means a lot bounded on one (1) side by a street line and on all other sides by lot lines between adjacent lots or that is bounded by more than one (1) street with an intersection greater than one hundred thirty-five (135) degrees.
+
+5. “Key lot” means an interior lot adjoining the rear lot line of a reversed corner lot.
+
+6. “Reversed corner lot” means a corner lot, the rear of which abuts the side of another lot, whether across a lane or not.
+
+7. “Through lot” means a lot having frontage on two (2) parallel or approximately parallel streets.
+
+FIGURE 18.41.020-B: LOT AND YARD TYPES
+
+“Lot area” means the area of a lot measured horizontally between bounding lot lines.
+
+“Lot coverage” means the portion of a lot that is covered by structures, including principal and accessory buildings, garages, carports, and roofed porches, but not including unenclosed and unroofed decks, landings, or balconies. See also Section 18.03.100, Determining lot coverage.
+
+“Lot depth” means the average distance from the front lot line to the rear lot line measured in the general direction of the side lines. See also Section 18.03.060, Measuring lot width and depth.
+
+Lot Frontage. See “Frontage, street.”
+
+“Lot line” means the boundary between a lot and other property or the public right-of-way.
+
+Lot Line Types.
+
+1. Front Lot Line. On an interior lot, the line separating the lot from the street or lane. On a corner lot, the shorter lot line abutting a street or lane. On a through lot, the lot line abutting the street or lane providing the primary access to the lot. On a flag or panhandle lot, the interior lot line most parallel to and nearest the street or lane from which access is obtained. Where no lot line is within forty-five (45) degrees of being parallel to the rear lot line, a line ten (10) feet in length within the lot, parallel to and at the maximum possible distance from the rear lot line, will be deemed the front lot line for the purpose of establishing the minimum front yard (see Figure 18.41.020-C).
+
+2. Interior Lot Line. Any lot line that is not adjacent to a street.
+
+3. Rear Lot Line. The lot line that is opposite and most distant from the front lot line. Where no lot line is within forty-five (45) degrees of being parallel to the front lot line, a line ten (10) feet in length within the lot, parallel to and at the maximum possible distance from the front lot line, will be deemed the rear lot line for the purpose of establishing the minimum rear yard (see Figure 18.41.020-C).
+
+4. Side Lot Line. Any lot line that is not a front or rear lot line.
+
+5. Street Side Lot Line. A side lot line of a corner lot that is adjacent to a street.
+
+FIGURE 18.41.020-C: REAR OR FRONT LOT LINE FOR PURPOSES
+OF DETERMINING SETBACKS
+
+“Lot width” means the average distance between the side lot lines measured at right angles to the lot depth. See also Section 18.03.060, Measuring lot width and depth.
+
+Parcel. See “Lot.”
+
+“Setback” means the area between a property line and a building or structure which must be kept clear or open. See also Section 18.03.040, Measuring distances, and Section 18.03.120, Determining setbacks (yards).
+
+“Street line” means the boundary between a street and a lot or parcel of land.
+
+“Yard” means an open space other than a court on a lot that is unoccupied and unobstructed from the ground upward, except as otherwise permitted by this title.
+
+1. “Front yard” means a yard extending across the front of a lot for the full width of the lot between the side lot lines. The depth of a front yard shall be a distance specified by this title for the district in which it is located and measured inward from the front lot line.
+
+2. “Interior side yard” means a yard extending along an interior side of a lot from the front lot line to the rear lot line, and to a depth specified by this title for the district in which it is located and measured inward from the interior side lot line.
+
+3. “Street side yard” means a yard extending along the street side of a corner lot from the front lot line to the rear lot line, and to a depth specified by this title for the district in which it is located and measured inward from the street side lot line.
+
+4. “Rear yard” means a yard extending across the rear of a lot for its full width between side lot lines, and to a depth specified by this title for the district in which it is located. If a lot has no rear lot line, a line ten (10) feet in length within the lot, parallel to and at the maximum possible distance from the front lot line, will be deemed the rear lot line for the purpose of establishing the minimum rear yard.

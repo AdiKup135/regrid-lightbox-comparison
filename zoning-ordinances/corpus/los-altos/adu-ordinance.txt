@@ -1,0 +1,191 @@
+Chapter 14.14 - ACCESSORY DWELLING UNITS^[2]
+
+14.14.010 - Purpose and intent.
+
+The intent of this chapter is to provide for accessory dwelling units (ADUs) and junior accessory dwelling units (JADUs), collectively known as an accessory dwelling regulations, on parcels zoned to allow single-family or multifamily dwelling residential use that include a proposed or existing dwelling. ADUs contribute needed housing to the City of Los Altos housing stock, enhance housing opportunities, and contribute to achieving the goals of the RHNA. An ADU is considered a residential use that is consistent with the existing general plan and zoning designations for the parcel. The ADU is not included in calculation of residential density for the purposes of determining general plan conformance. The ADU is not included in calculation of residential floor area ratio or lot coverage.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.020 - Definitions.
+
+"Accessory dwelling unit" (or "ADU") means an attached or a detached residential dwelling unit that provides complete independent living facilities and is located on a parcel with a proposed or existing residential dwelling unit. It shall include permanent provisions for living, sleeping, eating, cooking, and sanitation on the same parcel as the single-family or multi-family dwelling is or will be situated. An accessory dwelling unit also includes the following:
+
+A. An efficiency unit (minimum size unit shall be 150 square feet), as defined in Section 17958.1 of the Health and Safety Code.
+
+B. A manufactured home, as defined in Section 18007 of the Health and Safety Code.
+
+"Accessory dwelling unit, attached" means a residential dwelling unit that is created as a result of internal conversion, addition, or combination thereof made to the primary dwelling, including attached garages, storage areas or similar uses.
+
+"Accessory dwelling unit, detached." A detached accessory dwelling unit means an ADU that is not attached to the primary dwelling. Generally, a detached ADU is constructed as an independent structure that is located on the same parcel as the primary dwelling. However, a detached ADU may also include the conversion of an existing accessory structure that is located on the same parcel as the primary dwelling, but that is detached from the primary dwelling. In such a case, the detached ADU may be attached to another existing accessory structure.
+
+"Existing," when referring to an existing principal dwelling, accessory structure, or other building or structure, means a building or structure erected prior to the date of adoption of the appropriate building code, or one for which a legal building permit has been issued. An unpermitted building or structure shall not be considered "existing" for the purposes of this chapter.
+
+"Multi-family dwelling" means a group of dwelling units on one site that contains separate living units for two or more families that may have joined services or facilities or both.
+
+"Junior accessory dwelling unit" (or "junior ADU" or "JADU") means a unit that is no more than five hundred (500) square feet in size, includes an efficiency kitchen consistent with building code standards, is contained entirely within the walls of a single-family residence and may include separate sanitation facilities or may share sanitation facilities with the existing structure or unit.
+
+"Living area" means the interior habitable area of a dwelling unit, including basements and attics, if defined as habitable by the California Residential Code (CRC) but does not include a garage or any accessory structure.
+
+"Multi-family residential ADU" means an ADU designed for one family and allowed under Government Code Section 65852.2(e)(1)(C).
+
+"Nonconforming zoning condition" means a physical improvement on a parcel that does not conform with current zoning standards.
+
+"Primary dwelling" means, (i) in the case of a parcel occupied by an existing or proposed single- family residential use, the existing or proposed primary dwelling in connection with which an ADU is proposed to be constructed, or (ii) in the case of multi-family housing, the existing or proposed multi-family use in connection with which one or more ADUs allowed under this chapter are proposed to be constructed. As used in this definition, a "single-family residential use" means a single-family residential dwelling unit that is not attached to any other dwelling unit except for an ADU, and which is designed for one family and is surrounded by open space or yards.
+
+"Passageway." The term passageway has the meaning defined by Government Code Section 65852.2, which states: "A pathway that is unobstructed clear to the sky and extends from a street to one entrance of the accessory dwelling unit."
+
+"Public transit" means a location, including, but not limited to, a bus stop or train station, where the public may access buses, trains, subways, and other forms of transportation that charge set fares, run on fixed routes, and/or are available to the public.
+
+"Single family residential ADU" means an ADU designed for one family per 65852.2(a) of Government Code.
+
+"Tandem parking" means that two or more automobiles are parked in any location on a parcel and lined up one behind the other.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.030 - Review procedures.
+
+An application for an accessory dwelling unit or a junior accessory dwelling unit shall be considered and approved ministerially without discretionary review, processes, or provisions. The review of any accessory dwelling application shall be approved or denied in sixty (60) days or less. In the event of conflict within this code or within State law the more permissive regulation shall prevail.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.040 - Location permitted.
+
+A. ADUs may be permitted in the following zones: on parcels zoned for single-family, multi- family and mixed-use.
+
+B. Nothing in this chapter shall be construed to authorize construction of new single-family residences in multi-family or mixed-use zones where such single-family residential use is not otherwise allowed.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.050 - Maximum number of units.
+
+For a parcel with a proposed or existing residential dwelling or use, the following regulations shall establish the maximum number of accessory dwellings allowed:
+
+A. One attached accessory dwelling unit and one detached accessory dwelling unit and two junior accessory dwelling units per lot with a proposed or existing single-family dwelling.
+
+B. At least one accessory dwelling unit built within an existing multi-family dwelling unit is allowed, but no more than up to twenty-five (25) percent of the existing multi-family dwelling units in the same multi-family dwelling development are allowed to build an accessory dwelling unit within its units. Fractional units will be rounded up to the next whole unit.
+
+Multiple accessory dwelling units are allowed within the portions of existing multi-family dwelling structures that are not used as livable space, including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements, or garages.
+
+All units and livable space effected in the creation of an accessory dwelling unit(s) set forth herein must comply with applicable California Building Codes.
+
+C. Not more than two detached accessory dwelling units are allowed on a lot that has an existing or proposed multifamily dwelling development.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.060 - Development standards.
+
+The following table summarizes design standards for all accessory dwellings allowed by this code.
+
+| | JADU | Attached ADU | Detached ADU |
+| Maximum size | 500 sq. ft. created from the existing or proposed square footage of the primary dwelling. | 1,200 sq. ft. but no more than 50% of the floor area of an existing or proposed primary dwelling (excluding basement area). | 1,200 sq. ft. (excluding basement area). |
+| Maximum height | NA | The greater of 16 feet or the height of the underlying zoning district whichever is greater. | 18 feet |
+| Minimum front setback | NA | Setback of underlying zoning district. (Footnote 1.) | Setback of underlying zoning district. (Footnote 1.) |
+| Minimum side setback | NA | 4 feet | 4 feet |
+| Minimum rear setback | NA | 4 feet | 4 feet |
+| Maximum floor area ratio | NA (Footnote 2.) | NA (Footnote 2.) | NA (Footnote 2.) |
+| Maximum lot coverage | NA (Footnote 3.) | NA (Footnote 3.) | NA (Footnote 3.) |
+| Building separation | 5 feet | 5 feet | 5 feet |
+| Bathroom facilities | Bathroom facilities shall be provided independently for the JADU or can have shared bathroom facilities with primary dwelling. | Bathroom facilities shall be provided independently within the ADU. | Bathroom facilities shall be provided independently within the ADU. |
+| Entrance | Exterior; optional interior. (Footnotes 4 and 5.) | Exterior. (Footnote 5.) | Exterior. (Footnote 5.) |
+| Kitchen | Cooking appliances can include a hot plate, or countertop cooking. A wall installed oven is not required. | Must include at least a sink, a refrigerator, and either a cooktop and an oven, or a range. A food preparation counter and storage cabinets that are of reasonable size in relation to the size of the ADU are also required. | |
+| Owner occupancy | Required. | Not required. | |
+
+Footnotes:
+
+1. Any proposed accessory dwelling shall conform to the front setback of the underlying zone unless it is demonstrated through a site plan that a physical preclusion exists and hinders the development of an accessory dwelling as allowed by this code.
+
+2. The square footage of any accessory dwelling shall not be included in the maximum floor area ratio of the parcel.
+
+3. The building area of any accessory dwelling shall not be included in the maximum lot coverage of the parcel.
+
+4. A junior accessory dwelling unit must have a separate entrance from the primary dwelling unit. An interior entry is required if the junior accessory dwelling unit does not include a bathroom.
+
+5. An accessory dwelling unit shall have a separate entrance from the primary dwelling unit provided as a side-hinged door per Section R311 of the California Residential Code.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.070 - Square footage allowance.
+
+The following table provides the square footage allowances for all accessory dwelling unit types:
+
+| Unit Type | Square Footage Limitations |
+| Efficiency unit | The minimum size of an efficiency unit as defined by the Health and Safety Code shall be 150 square feet. |
+| JADU | The maximum size of a JADU shall be five hundred (500) square feet created by the conversion of existing or proposed square footage of the principal dwelling unit including attached garages. Up to one hundred fifty (150) square feet can be added to the existing structure for purposes of ingress and egress to the JADU. The additional square footage created for the purposes of the JADU shall count towards the five hundred (500) square foot maximum. |
+| Attached accessory dwelling unit | An attached single family residential ADU shall not exceed eight hundred fifty (850) square feet in floor area for one bedroom unit or one thousand two hundred (1,200) square feet with more than one bedroom. The total floor area for an attached ADU shall exclude any basement area and shall not be more than fifty (50) percent of the floor area of the existing or proposed principal residence. Notwithstanding this fifty (50) percent threshold requirement, an attached ADU of eight hundred fifty (850) square feet or smaller cannot be denied. |
+| Detached accessory dwelling unit | A detached single-family residential ADU shall not exceed eight hundred fifty (850) square feet in floor area for one bedroom unit, or one thousand two hundred (1,200) square feet with more than one bedroom. For detached accessory dwelling units, any basement area is excluded in the square footage calculation for the ADU. |
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.080 - Allowed projections.
+
+A. Eaves. Roof eaves associated with an accessory dwelling shall be permitted to project into any required setback a maximum of two feet.
+
+B. Exterior Stairs. Exterior stairs associated with an accessory dwelling shall comply with accessory dwelling minimum setbacks. Any exterior stairs associated with an accessory dwelling shall be architecturally integrated into the exterior facade of the existing or proposed building.
+
+C. Porches. Porches associated with an accessory dwelling shall comply with accessory dwelling minimum setbacks. Any porch associated with an accessory dwelling shall be architecturally integrated into the exterior facade of the existing or proposed building and allowed a maximum twenty (20) square feet.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.090 - General provisions.
+
+A. Short-Term Rental. An ADU shall not be rented for periods less than thirty (30) days. Short-term rentals are prohibited pursuant to Chapter 14.30 of the Los Altos Municipal Code.
+
+B. Fire Sprinklers. The installation of fire sprinklers shall not be required in an accessory dwelling unit if sprinklers are not required for the primary residence.
+
+C. Building Codes. Accessory dwellings shall conform to all applicable building code standards at the time of application.
+
+D. Impact Fees. Any applicable fees established by the City of Los Altos shall be proportional based on unit size.
+
+E. Connection Fees and Capacity Charges. Any connection fees and capacity charges that may be required must be assessed in compliance with the provisions of State Government Code Sections 65852.2 and 65852.22, as amended from time to time.
+
+F. Utilities. The accessory dwelling must provide water, sewer and electric utility connections that are in working condition upon its occupancy. The accessory dwelling may be served by the primary dwelling or may have separate utility meters. The accessory dwelling will not be considered a new residential use for the purpose of calculating connection fees or capacity charges for these utilities.
+
+G. Nonconforming Conditions. Ministerial approval of a permit for creation of an accessory dwelling shall not be conditioned on the correction of pre-existing nonconforming zoning conditions.
+
+H. Certificate of Occupancy. A certificate of occupancy for any accessory dwelling or junior accessory dwelling unit shall not be issued before the local agency issues a certificate of occupancy for the primary dwelling.
+
+I. Tolling. If the applicant requests a delay in processing in writing, the 60-day review time shall be tolled for the period of the delay.
+
+J. Historic Properties. A new accessory dwelling located on a historic property will be subject to ministerial review for compliance with the design review criteria set forth in Chapter 12.44 of the Los Altos Municipal Code and must be consistent with the Secretary of Interior's Standards for the Treatment of Historic Properties. No review by the Historic Commission shall be required.
+
+K. Exterior Lighting. Exterior lighting associated with an accessory dwelling shall not be permitted on the sides of the structure facing adjacent properties.
+
+L. Addressing. Each accessory dwelling shall be assigned its own address, consistent with the requirements of the postal service and fire authority.
+
+M. Deed Restriction. Prior to issuance of a building permit for a junior accessory dwelling unit, a deed restriction, in a form satisfactory to the city attorney, shall be recorded at the Santa Clara County Recorder's office and filed with the city. The deed restriction shall prohibit the sale of the junior accessory dwelling unit separate from the sale of the single-family dwelling, and one of the dwellings on the lot must be occupied by at least one legal owner of the property, unless the property is owned by a governmental agency, land trust or housing organization.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.100 - Parking requirements.
+
+One uncovered parking space of nine feet by eighteen feet (9 X 18) shall be required for a newly constructed single-family residential accessory dwelling, which may be located within the front setback, in tandem and in an existing driveway including within an interior side yard setback area, unless the development services director determines such parking is not feasible due to specific site, topographical constraints or fire and life safety. Notwithstanding the above, a parking stall will not be required for a residential accessory dwelling that meets any of the following criteria:
+
+1. The single-family residential accessory dwelling is created as a result of the conversion of existing area of the single-family residence or existing permitted residential accessory structure.
+
+2. An existing garage, carport or parking structure is converted or demolished to accommodate a single-family residential accessory dwelling in the same location.
+
+3. The single-family residential accessory dwelling is within one-half mile walking distance of a public transit station, such as a bus stop or train station.
+
+4. The parcel is within an architecturally and historically significant historic district.
+
+5. On-street parking permits are required in the area but not offered to the occupant of the residential accessory dwelling.
+
+6. A vehicle share site is located within one block of the single-family residential accessory dwelling.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.110 - Mechanical equipment for accessory dwellings.
+
+Accessory dwellings shall conform to all provisions of Chapter 11.14 of the Los Altos Municipal Code unless otherwise specified. The following mechanical equipment regulations are specific to accessory dwellings:
+
+A. Any mechanical equipment associated with an accessory dwelling shall locate proposed equipment on the interior sides of the accessory dwelling away from all property lines and outside of any required setback.
+
+B. No roof mounted mechanical equipment shall be permitted.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)
+
+14.14.120 - ADU rental income survey.
+
+Each year the city will send out an annual ADU rental income survey to be released no later than September 1st of every calendar year. The property owner can voluntarily share the rental income for the unit. Pursuant to California Constitution Article I, Section 1 and Government Code Sections 7927.705, 7922.000, and 7922.540(a), to protect the privacy of property owners and renters and to encourage voluntary responsiveness, the aggregated data will be for the exclusive use of the city to meet its regional housing needs allocation (RHNA). The unredacted data will not be shared with outside agencies, persons or corporations unless specifically mandated by state or federal law.
+
+(Ord. No. 2024-512, § 1(App. A), 4-30-2024)

@@ -1,0 +1,702 @@
+CHAPTER 2.20. - RURAL BASE DISTRICTS
+
+§ 2.20.010. - Purposes.
+
+The intent of the rural base districts is to maintain and preserve the predominantly rural character of lands to which they are applied. The base districts further regulate the type of land uses and intensity of development permitted in rural areas in a manner that implements the general plan and which protects natural resources and maintains compatibility between uses.
+
+This chapter defines the allowable land uses and development standards for each of the rural base districts, which include the A "Exclusive Agriculture," AR "Agricultural Ranchlands," HS "Hillsides," and RR "Rural Residential" districts. The specific purposes of each of these base districts are described below.
+
+A. A Exclusive Agriculture. The purpose of the Exclusive Agriculture district, also known as the A district, is to preserve and encourage the long-term viability of agriculture and agricultural lands, recognizing the vital contributions agriculture makes to the economy and quality of life within the County. The intent of this district is to reserve those lands most suitable for agricultural production for agricultural and appropriate related uses. This zoning district will provide stability for ongoing agricultural operations and provide for new uses necessary to support a viable local agriculture industry. This district is also intended to retain in open space uses those lands which may be suitable for future urbanization until such time as they are included within a city's urban service area and public facilities and services can be economically provided, consistent with community plans and objectives. This district is meant to apply to all portions of the County designated as Agriculture: Large Scale, Agriculture: Medium Scale, and Open Space Reserve in the general plan. Note that § 2.20.050 applies to this district.
+
+B. AR Agricultural Ranchlands. The purpose of the Agricultural Ranchlands district, also known as the AR district, is to preserve ranching, the natural resources, and the rural character of the areas to which it applies. Permitted uses include ranching or agriculture, low-intensity recreation, mineral extraction, and land in its natural state. Very-low-intensity residential, commercial, industrial and institutional uses may also be allowed if they are sized to primarily serve the rural ranchland residents or are necessary for the enhancement and protection of the natural resources of the area and do not require a substantially higher level of service than presently provided. This district is meant to apply to all parcels designated Ranchlands in the general plan. Note that § 2.20.060 applies to this district.
+
+C. HS Hillside. The purpose of the Hillside district, also known as the HS district, is to preserve mountainous lands unplanned or unsuited for urban development primarily in open space and to promote those uses which support and enhance a rural character, which protect and promote wise use of natural resources, and which avoid the risks imposed by natural hazards found in these areas. These lands are watersheds and may also provide such important resources as minerals, forests, animal habitat, rare or locally unique plant and animal communities, historic and archeological sites, scenic beauty, grazing lands, and recreational areas. Additionally, lands zoned Hillside define the setting or viewshed for the urban area of the County.
+
+Development shall be limited to avoid the need for public services and facilities. Permitted uses include agriculture and grazing, very low-density residential use, low density, low-intensity recreation, mineral and other resource extraction, and land in its natural state. Low-intensity commercial, industrial, and institutional uses may also be allowed if they require a remote, rural setting in order to primarily serve the rural residents or community, or if they support the recreational or productive use, study, appreciation, or enhancement of the natural environment. Clustering of development, particularly residential, is encouraged in order to preserve contiguous open space and achieve efficiency in the provision of access to dwellings. This district is meant to apply to all parcels designated Hillside in the general plan. Note that § 2.20.070 applies to this district.
+
+D. RR Rural Residential. The purpose of the Rural Residential district, also known as the RR district, is to permit rural residential development in certain limited unincorporated areas of the County designated by the general plan. Residential, agricultural and open space uses are the primary uses intended within the district. Agriculture-related uses that are not permitted by right may also be permitted through the applicable discretionary review process if deemed compatible with residential uses. Commercial, industrial and institutional uses may be established only where they are sized to be local-serving in nature. This district is meant to apply to all parcels designated Rural Residential in the general plan. Note that § 2.20.080 applies to this district.
+
+(Ord. No. NS-1200.323, § 2, 1-29-08; Ord. No. NS-1200.351, § 1, 10-20-15)
+
+§ 2.20.020. - Use regulations.
+
+The following tables, Tables 2.20-1 and 2.20-2, specify the allowable land uses for the rural base districts, listed by use classification as defined in Chapter 2.10. The regulations for each district are established by letter designations as follows:
+
+| "R" | designates use classifications that are permitted by right. The term "by right" indicates no discretionary permit process by the Planning Office is required. See subsection 1.20.040(D) for applicability of other rules and processes. |
+| "C" | designates use classifications that require an administrative planning clearance from the Planning Office. Planning clearances are for uses that require adherence to the Zoning Ordinance but for which no discretionary permit from the Planning Office is required. |
+| "S" | designates use classifications permitted with a special permit, subject to the provisions of Chapter 5.60, Special Permit. |
+| "A" | designates use classifications permitted with architecture and site approval, subject to the provisions of Chapter 5.40, Architecture and Site Approval. |
+| "U" | designates use classifications permitted with a use permit and architecture and site approval, subject to the provisions of Chapter 5.65, Use Permit, and Chapter 5.40, Architecture and Site Approval. |
+| "—" | designates use classifications that are not allowed. |
+
+Supplemental regulations for the establishment and conduct of a use are referenced in the "Supplemental Regulations" column of the tables. Use classifications not listed in the tables are prohibited in the rural base districts.
+
+TABLE 2.20-1. RESIDENTIAL USES IN RURAL BASE DISTRICTS
+
+| R | Permitted by right |
+| C | Planning clearance |
+| S | Special permit (Chapter 5.60) |
+| A | ASA (Chapter 5.40) |
+| U | Use permit/ASA (Chapters 5.65, 5.40) |
+| — | Not permitted |
+
+| USE CLASSIFICATIONS | ZONING | | | | Supplemental Regulations |
+| USE CLASSIFICATIONS | A | AR | HS | RR | Supplemental Regulations |
+| Residences: Single-Family | R | R | R | R | Note 1 |
+| Residences: Mulitfamily | — | — | — | — | Note 14 |
+| Residential Accessory Structures and Uses | R | R | R | R | § 4.20.020 |
+| Accessory Dwelling Units | | | | | |
+| Standard ADUs | R | R | R | R | § 4.10.015 |
+| Movable tiny homes | C | C | C | C | § 4.10.015 |
+| Junior ADUs | R | R | R | R | § 4.10.015, Note 9 |
+| Agricultural Employee Housing | | | | | |
+| Small-Scale Permanent | C | S | S | C | § 4.10.040, Notes 2, 3 (AR), 10, 11 |
+| Large-Scale Permanent | S | S | S | S | §§ 4.10.040, 3.80.050, Note 2 |
+| Seasonal | S | S | S | S | § 4.10.040 |
+| Community Care | | | | | |
+| Limited | R | R | R | R | § 4.10.090, Note 4 |
+| Expanded | U | U | U | U | § 4.10.090, Note 5 |
+| Domestic Animals | | | | | |
+| Dogs and Cats | R | R | R | R | Note 6 |
+| Other (see Ag: Livestock, Table 2.20-2) | | | | | |
+| Home Occupations | | | | | |
+| General | R | R | R | R | § 4.10.180 |
+| Expanded | S | S | S | S | § 4.10.180, Note 7 |
+| Residential—Communal Institutional | U | U | U | U | § 4.10.300, Note 8 |
+| Temporary Residences during House Construction | R | R | R | R | § 4.10.380 |
+| Temporary Agricultural Residence | C | C | C | C | § 4.10.385, Notes 11, 12 |
+| Urban Primary Unit | — | — | — | R | § 4.10.387, Note 13 |
+
+NOTES:
+
+1. Single-family dwellings, including certain additions, may be subject to the building site approval provisions of § C12-300 et seq. of the Ordinance Code.
+
+2. Agricultural employee housing may, on a limited basis, be used to accommodate overnight tourist stays as part of a winery (see § 4.10.395 for criteria and permitting requirements) or be used for emergency shelter in the Public Services and Supportive Housing Combining District (see § 3.80.050 for criteria and permitting requirements).
+
+3. On lots ten acres or larger in AR districts, a second one-family dwelling for agricultural employee housing is allowed by right. Such agricultural employee housing unit shall not be subject to the supplemental use regulations of § 4.10.040.
+
+4. Facilities qualifying as "Large-Family Day-Care Homes," serving between seven and 14 children, are subject to an administrative permit, per the provisions of Division B24 of the Ordinance Code.
+
+5. Not a permitted use in areas with the "Agriculture-Large Scale" land use plan designation of the general plan.
+
+6. Not to exceed two dogs and five cats over four months of age on parcels less than five acres, or three dogs and five cats over four months of age on parcels five acres or more, unless the required permit is secured pursuant to Division B31 of the Ordinance Code.
+
+7. Expanded home occupations permitted on lots one-acre or larger. For additional applicable criteria, see § 4.10.180.
+
+8. In rural districts, the floor area of Residential-Communal Institutional uses shall be limited to 10,000 square feet or less.
+
+9. Owner-occupancy of one unit is required in any single-family residence that contains a junior accessory dwelling unit. The owner may reside in either the single-family residence or the junior accessory dwelling unit. Owner-occupancy shall not be required if the owner is a governmental agency, land trust, or housing organization.
+
+10. There shall be a cumulative cap of 100 new dwelling units or 120,000 square feet, whichever occurs first, of small-scale permanent agricultural employee housing developed after May 1, 2020, in the Exclusive Agriculture and Rural Residential Zoning Districts combined.
+
+11. Building site approval per Ordinance Code § C12-300 et seq. is not required for small-scale permanent agricultural employee housing or a temporary agricultural residence. Compliance with all other applicable federal, state, and County laws, regulations, and ordinances is required.
+
+12. There shall be a cumulative cap of 50 temporary agricultural residences installed after May 1, 2020, in all zoning districts combined. When one such unit has been removed from a property, it shall no longer count toward the cumulative cap.
+
+13. No more than four total dwelling units may be permitted on a parcel pursuant to the Urban Primary Unit use classification; however, all parcels resulting from an urban lot split pursuant to Section C12-44, shall have no more than two total dwelling units per parcel.
+
+14. Development on parcels with the -os designator is restricted to multi-family housing and limited mixed-use residential development, shall conform with the provisions of Chapter 3.75, and is allowable by use permit or planning clearance pursuant to § 3.75.040.
+
+TABLE 2.20-2. NON-RESIDENTIAL USES IN RURAL BASE DISTRICTS
+
+| R | Permitted by right |
+| C | Planning clearance |
+| S | Special permit (Chapter 5.60) |
+| A | ASA (Chapter 5.40) |
+| U | Use permit/ASA (Chapters 5.65, 5.40) |
+| — | Not permitted |
+
+| USE CLASSIFICATIONS | ZONING | | | | Supplemental Regulations |
+| USE CLASSIFICATIONS | A | AR | HS | RR | Supplemental Regulations |
+| Agriculture | | | | | |
+| General | R | R | R | R | |
+| Livestock | R | R | R | R | Note 1 (HS) |
+| Agricultural Accessory Structures/Uses | R | R | R | R | § 4.20.020 |
+| Agricultural Equipment Sales/Services | A | — | — | — | |
+| Agricultural Processing | | | | | |
+| Small-Scale | R | R | R | R | § 4.10.030 |
+| Medium-Scale | A | — | — | — | § 4.10.030 |
+| Large-Scale | U | — | — | — | § 4.10.030 |
+| Agricultural Research | A | — | — | — | |
+| Agricultural Sales | | | | | |
+| Limited | R | R | R | R | § 4.40.110 (Signs) |
+| Farmers' Markets | U | U | — | — | |
+| Agriculturally Related Entertainment and Commercial Uses | U | — | — | — | § 4.10.050 |
+| Aircraft Landing Strips—Private | U | U | — | — | Note 2 |
+| Antennas—Commercial | | | | | |
+| Minor | A | A | A | A | |
+| Major | U | U | U | U | |
+| Bed and Breakfast Inns | U | U | U | U | § 4.10.060, Note 3 |
+| Butcheries | U | U | — | — | |
+| Camps and Retreats | U | U | U | U | § 4.10.070, Note 4 |
+| Cemeteries | U | U | U | U | § 4.10.080, Note 4 |
+| Churches (See "Religious Institutions") | | | | | |
+| Clubs—Private and Nonprofit | U | U | U | U | § 2.20.090 |
+| Community Care | | | | | |
+| Limited | R | R | R | R | § 4.10.090, Note 6 |
+| Expanded | U | U | U | U | § 4.10.090, Note 4 |
+| Dairies | U | U | — | — | § 4.10.110 |
+| Entertainment—Seasonal Outdoor | — | — | U | — | § 4.10.120 |
+| Emergency Shelters | | | | | |
+| Small-Scale | — | — | — | R | § 4.10.115 |
+| Large-Scale | — | — | — | U | § 4.10.115, Note 20 |
+| Feed Lots | U | U | — | — | § 4.10.130 |
+| Golf Courses and Country Clubs | U | — | U | U | § 4.10.140, Note 4 |
+| Golf Driving Ranges | U | — | — | U | § 4.10.150, Note 4 |
+| Helipads | — | — | U | — | § 4.10.160 |
+| Historic Structures—Use Conversion | A | A | A | A | § 4.10.170 |
+| Hospitals and Clinics | U | U | U | U | § 2.20.090 (AR, HS, RR Districts), § 4.10.190 (A Districts), Note 4 |
+| Hunting and Fishing Preserves | U | R | — | — | Note 7 |
+| Industrial Hemp | | | | | Note 21 |
+| Cultivation | C | - | - | - | § 4.10.195 |
+| Agricultural Research | A | - | - | - | § 4.10.195 |
+| Agricultural Processing | | | | | |
+| Small-Scale | C | - | - | - | § 4.10.030, § 4.10.195 |
+| Medium-Scale | A | - | - | - | § 4.10.030, § 4.10.195 |
+| Large-Scale | U | - | - | - | § 4.10.030, § 4.10.195 |
+| Informational Displays | | | | | |
+| Small | R | — | — | — | |
+| Large | U | — | — | — | |
+| Kennels—Commercial | U | U | U | U | § 4.10.200 |
+| Laboratories and Testing Services (Limited) | U | — | — | — | |
+| Livestock Auction Yards | U | U | — | — | § 4.10.210 |
+| Manufacturing: Small Scale Rural | A | U | — | — | § 2.20.090 |
+| Museums | U | U | U | U | Note 8 |
+| Mushroom Farms | U | U | — | U | § 4.10.220 |
+| Nonprofit Institutions | U | U | U | U | § 2.20.090 (AR, HS, RR Districts), § 4.10.230 (A Districts), Notes 4, 19 |
+| Nurseries | | | | | |
+| Retail | U | U | U | U | Note 9 |
+| Wholesale | R | R | R | U | Note 9 |
+| Offices (Limited) | U | — | — | — | Note 10 |
+| Oil and Gas Extraction | U | U | U | U | |
+| Poultry and Egg Farms—Commercial | U | U | — | U | § 4.10.240 |
+| Radio-Controlled Model Aircraft Facilities | U | — | — | — | § 4.10.250 |
+| Reception Facilities | U | U | U | U | § 4.10.260 |
+| Recreational Playgrounds and Sports Fields | U | U | U | U | § 4.10.270 (A Zoning District) |
+| Recycling Facilities | | | | | |
+| Collection Facilities—Consumer Recycling | R | R | R | R | § 4.10.285 |
+| Recycling/Processing Facilities—Consumer Waste | — | — | — | — | |
+| Concrete, Asphalt and Soil Recycling | U | U | U | U | Note 11 |
+| Composting and Wood Recycling | U | U | U | U | |
+| Hazardous Materials | — | — | — | — | |
+| Religious Institutions | U | U | U | U | § 2.20.090 (AR, HS, RR Districts), § 4.10.290 (A Districts), Notes 4, 19 |
+| Restaurants and Bars | | | | | |
+| Limited-Service Eating Places | — | U | U | — | Note 12 |
+| Full-Service Eating Places | — | U | U | — | Note 12 |
+| Drinking Places | — | U | U | — | Note 12 |
+| Retail Sales and Services: Local-Serving | — | U | U | — | § 4.10.310 |
+| Rodeos and Equestrian Event Facilities | U | U | — | — | § 4.10.320 |
+| Schools | U | U | U | U | § 2.20.090 (AR, HS, RR Districts) § 4.10.330 (A Districts), Note 4 |
+| Solar Energy Conversion Systems—Commercial | | | | | |
+| Minor | A | U | U | A | § 4.10.345, Notes 4, 13 |
+| Major | U | U | U | U | § 4.10.345, Notes 4, 13 |
+| Sport Shooting | — | U | U | — | § 4.10.350 |
+| Stables—Commercial | U | U | U | U | § 4.10.360 |
+| Surface Mining | U | U | U | U | § 4.10.370 |
+| Swim and Tennis Clubs | — | — | U | U | |
+| Timber Harvest—Commercial | — | U | U | — | Note 14 |
+| Truck Sales and Services: Storage (Limited) | U | — | — | — | Note 15 |
+| Underground Mining | U | U | U | U | |
+| Utilities and Public Facilities | | | | | Note 16 |
+| Minor | A | A | A | A | |
+| Major | U | U | U | U | |
+| Veterinary Clinics and Hospitals | U | U | U | U | Note 17 |
+| Well-Drilling Operations | A | — | — | — | |
+| Wind Energy Conversion Systems—Commercial | U | U | U | U | § 4.10.390 |
+| Wineries | | | | | |
+| Small-Scale | R | R | R | R | § 4.10.395, § 4.40.110 (Signs) |
+| Medium-Scale | S | S | S | S | § 4.10.395, § 4.40.110 |
+| Large-Scale | U | U | U | U | § 4.10.395, § 4.40.110 |
+| Wireless Telecommunication Facilities | | | | | Note 5 |
+| Collocation/Modification - Minor | R | R | R | R | |
+| Collocation/Modification - Major | A | A | A | A | § 4.10.400 |
+| New Facilities | A | A | A | A | § 4.10.400 |
+
+NOTES:
+
+1. Livestock breeding, raising and keeping is limited in HS districts as follows: Not more than three large animals or six medium animals per acre as a matter of right, or a proportional combination totaling three animal units where each large animal constitutes one animal unit, and each medium animal constitutes 0.5 animal unit. Special permit required for numbers of large and medium animals exceeding these limits. There are no specified numerical limits for small animals.
+
+2. Landing strip, including approach and departure zones, shall be located a safe distance from residential development to prevent significant hazard.
+
+3. Bed and breakfast inns ancillary to on-site wineries, agricultural sales operations or other agriculturally related uses shall be subject to a special permit, in lieu of a use permit, provided they are situated within the primary residence on the property. Bed and breakfast inns are prohibited within the Los Gatos Hillside Specific Plan area, except as provided under the classification Historic Structures-Use Conversion.
+
+4. Not a permitted use in areas with the "Agriculture-Large Scale" land use plan designation of the general plan.
+
+5. Wireless telecommunications facilities ar exempt from the development standards listed in Table 2.20-3.
+
+6. Facilities qualifying as "Large-Family Day-Care Homes," serving between seven and 14 children, are subject to an administrative permit, per the provisions of Division B24 of the County Ordinance Code.
+
+7. The minimum lot size for hunting preserves shall be 160 acres.
+
+8. Museums in rural districts shall be limited in scale and must relate to the locally significant cultural, historical or social themes of the rural area.
+
+9. The size of buildings for on-site sales and ancillary office associated with nurseries shall be kept to a minimum.
+
+10. Offices ancillary to a permitted agricultural activity in A districts that contain no more than 2,400 square feet of floor area are allowed as a matter of right. Offices larger than 2,400 square feet are subject to a use permit.
+
+11. Concrete, asphalt and soil recycling within rural districts is a permitted use only in association with an existing quarry operation in any rural base zoning district.
+
+12. Restaurants and bars in rural districts shall be limited in scale, with a maximum publically accessible floor area of 1,200 square feet (measured from outer surfaces of enclosing walls, includes bathrooms).
+
+13. Not a permitted use in areas with the -d1 (Santa Clara Valley Viewshed) or -d2 (Milpitas Hillsides) Design Review combining zoning districts.
+
+14. Timber harvest of commercial tree species as defined by the County Tree Preservation and Removal Ordinance, Division C16 of the County Ordinance Code, including, but not limited to, Redwood and Douglas Fir, may be subject to the regulatory and permitting authority of the California Department of Forestry and Fire Protection (CDF). No County permit shall be required if CDF has approved a Timber Harvest Plan or Non-Industrial Timber Management Plan for the activity.
+
+15. Truck storage uses in rural districts shall be limited to agriculture-related tractors, trucks, trailers, and similar equipment.
+
+16. Utility structures and facilities may be exempt from local zoning regulations if they are established by a government agency. There may also be federal or state laws that provide exemptions for certain types of utilities.
+
+17. The minimum lot size for veterinary clinics and hospitals shall be two and one-half acres.
+
+18. Wireless telecommunications facilities ar exempt from the development standards listed in Table 2.20-3.
+
+19. Established Religious Institutions and Nonprofit Institutions may include Emergency Shelters: Small-Scale as an ancillary use by right.
+
+20. Emergency Shelters are a permitted use only within the -sm San Martin Use Permit Areas Combining District, as depicted in Chapter 3.90 of the Zoning Ordinance.
+
+21. Industrial Hemp uses may be established, consistent with the Supplemental Use Regulations in Section 4.10.195, the later date of (1) 30 days from final adoption by the Board of Supervisors of Ordinance No. NS-1200.373 or (2) effective date of the state plan for California approved by the United States Department of Agriculture pursuant to Section 297B of the Federal Agricultural Market Act of 1946 (added by Section 10113 of the federal Agricultural Improvement Act of 2018 (Public Law 115-334)). Industrial Hemp: Cultivation and/or Industrial Hemp: Agricultural Processing (small scale) activities undertaken on multiple parcels by one operator may be authorized with a single application for Planning Clearance.
+
+(Ord. No. NS-1200.310, § 2, 5-20-03; Ord. No. NS-1200.317, § 2, 6-8-04; Ord. No. NS-1200.318, § 3, 3-28-06; Ord. No. NS-1200.324, § 4, 5-5-09; Ord. No. NS-1200.327, § 6, 2-9-10; Ord. No. NS-1200.331, § 2, 11-9-10; Ord. No. NS-1200.332, § 1, 11-22-11; Ord. No. NS-1200.335, § 3, 12-4-12; Ord. No. NS-1200.337, § 4, 12-18-12; Ord. No. NS-1200.345, § 4, 6-10-14; Ord. No. NS-1200.354, § 2, 9-29-15; Ord. No. NS-1200.360, § 2, 5-23-17; Ord. No. NS-1200.362, § 2, 12-5-17; Ord. No. NS-1200.366, § 2, 5-1-18; Ord. No. NS-1200.371, § 3, 3-10-20; Ord. No. NS-1200.373, § 2, 8-25-20; Ord. No. NS-1200.375(10.20.2020), § 3, 10-20-20; Ord. No. NS-1200.378, § 3, 5-25-21; Ord. No. NS-1200.383, § 2, 1-24-23; Ord. No. NS-1200.384, § 2, 12-12-23)
+
+§ 2.20.030. - Development standards.
+
+A. Standards. Table 2.20-3 establishes property development standards for the rural base districts. A "—" indicates there is no applicable standard or requirement.
+
+TABLE 2.20-3. RURAL BASE DISTRICTS: PROPERTY DEVELOPMENT STANDARDS
+
+| | A | AR | HS | RR |
+| Minimum lot area for subdivision or lot line adjustment (acres): | | | | |
+| Without use of slope-density | — ^ 1 | 160 | 160 | — |
+| With slope-density | — ^ 1 | § 2.20.040 | § 2.20.040 | § 2.20.040 |
+| With combining district | Chapter 3.10 | — | — | Chapter 3.10 |
+| Setbacks (feet): | | | | |
+| Front | 30 ^ 1 | 30 | 30 | 30 |
+| Side | 30 ^ 1 | 30 | 30 | 30 |
+| Rear | 30 ^ 1 | 30 | 30 | 30 |
+| Scenic road | 100 | 100 | 100 | 100 |
+| Height (maximum): | | | | |
+| Feet | 35 ^ 1 | 35 | 35 | 35 |
+| Stories | 2 ^ 1 | 3 | 3 | 2 |
+| Additional standards/criteria | § 2.20.050 ^ 1 | § 2.20.060 | § 2.20.070 | § 2.20.080 |
+| Accessory buildings | See Chapter 4.20, Supplemental Development Standards | | | |
+
+^ 1 Development on parcels with the -os designator is restricted to multifamily housing and limited mixed-use residential development, shall conform with the provisions of Chapter 3.75, and is exempt from the development standards in this table.
+
+B. Measurement. The standards shown in Table 2.20-3 are subject to the following rules of measurement:
+
+1. Where a lot abuts a road, setbacks from that road shall be measured from the edge of ultimate right-of-way (see "setback" definition in Section 1.30.030);
+
+2. Setbacks from all property lines not abutting a street shall be measured from the property line unless otherwise specified; and
+
+3. Height shall be measured according to the provisions of Chapter 1.30: Definitions: General Terms.
+
+4. Precision of numbers for the purposes of measurement and calculation shall be as stipulated in Section 1.20.030: Precision of Numbers/Rounding.
+
+(Ord. No. NS-1200.317, § 21, 6-8-04; Ord. No. NS-1200.384, § 1, 12-12-23)
+
+§ 2.20.040. - Slope-density requirements.
+
+Table 2.20-4 describes the required land area per dwelling unit (density), as well as the minimum lot sizes, for the AR, HS and RR districts with application of slope-density requirements. Additional regulations for the AR, HS, and RR districts are described in Sections 2.20.060, 2.20.070, and 2.20.080, respectively.
+
+TABLE 2.20-4. SLOPE DENSITY PROVISIONS IN RURAL BASE DISTRICTS
+
+| Allowed Density: Land Area Per Dwelling Unit (acres) ^ 1 | | | | |
+| Base District | Average slope <10% | Average slope ≥50% | Average slope 10—50% | Minimum Parcel Size |
+| AR | 20 | 160 | 1 0609375-.00109375*S | Same as land area per dwelling (see also 2.20.060) |
+| HS (cluster permit required) ^ 2 | 20 | 160 | 1 .0609375-.00109375*S | 2 acres for cluster (see also 2.20.070) |
+| RR (clustering optional) | 5 | 20 | 1 .2375-.00375*S | Same as land area per dwelling; 1 acre for cluster (see also 2.20.080) |
+
+NOTES:
+
+1. The variable "S" represents the average slope of the entire property that is the subject of the application. Average slope is determined according to the formula S = (0.00229 × IL)/A, where:
+
+I is the contour interval in feet;
+
+L is the combined length of contour lines in scale feet;
+
+A is the gross area in acres of the subject lot or area of land; and,
+
+S is the average slope expressed as a percentage.
+
+Where the average slope is less than ten percent, the land area per dwelling shall be no less than five acres in RR, and no less than 20 acres in AR and HS. Where the average slope exceeds 50 percent, the land area per dwelling shall be 20 acres in RR, and 160 acres in AR and HS.
+
+The maximum number of lots or dwelling units allowed is determined by dividing the gross land area of the subject property by the minimum land area per dwelling unit and rounding down to the nearest whole number.
+
+2. See Section 2.20.060, 2.20.070, and 2.20.080 for additional standards for AR, HS, and RR districts. For specific provisions pertaining to cluster permit and procedures, see Chapter 5.45, Cluster Permits.
+
+§ 2.20.050. - A districts: Agricultural preservation criteria.
+
+A. New uses. Any newly proposed use in an A district must be found to be in compliance with all of the following general criteria.
+
+1. The use must be compatible with and not substantially interfere with the continuation of any on- or off-site agricultural operation.
+
+2. The use should not be of a sensitive nature that would itself be negatively impacted by any existing or future on-site or off-site agricultural use.
+
+3. The use will not require public urban services or infrastructure, or establishment of special districts or similar entities.
+
+4. The use should be consistent with the rural image of the agricultural area.
+
+5. Any new non-agricultural use should be sited to avoid taking the most viable agricultural lands out of active agricultural production.
+
+6. Any new use should not significantly inhibit the future development of adjacent parcels consistent with General Plan land use designations of nearby cities.
+
+7. The use must clearly enhance the long-term viability of local agriculture and agricultural lands.
+
+B. Permitted as of right. Uses permitted as a matter of right have been found to comply with the criteria in Subsection A.
+
+§ 2.20.060. - AR districts: Specific subdivision and road provisions.
+
+A. Limitations on lots created from contiguous property under common ownership. No subdivision of land into parcels smaller than 160 acres shall be approved which would result in the creation of more than four new lots from one or more original lots under common ownership during any three-year period. At the time of subdivision application, the entire area of contiguous land in which the applicant has any ownership interest shall be included as part of the application even though the proposed land division might affect only a portion of the holding.
+
+B. Limitation on new lot creation by geographic area. The AR district includes two geographic areas for the purpose of regulating the number of new lots created in a single calendar year and in three consecutive years. Area A lies to the north of East Dunne Avenue and Coe State Park. Area B includes the remainder of the district, including all lands in the AR district located west of Highway 101. Such areas are shown on the map located in the Planning Office titled "AR Zoning District Sub-Areas A & B."
+
+The total number of new lots that may be created in the AR district over the time periods indicated shall be limited as specified in Table 2.20-5. All lots created in the AR district through subdivision, including those for which building site approval is not obtained, shall count toward the annual subdivision limits set forth below.
+
+TABLE 2.20-5. MAXIMUM NUMBER OF NEW LOTS ALLOWED IN AR DISTRICTS*
+
+| | Area A (North of Coe State Park) | Area B (Remainder of District) |
+| Lots <160 acres: | | |
+| 1 year | 40 | 20 |
+| 3 years | 75 | 38 |
+| Lots ≥160 acres: | | |
+| 1 year | 20 | 10 |
+
+*By subdivision, over the time period specified.
+
+C. Lot size reduction. A subdivision may include a lot or lots as small as 20 acres in size even if the applicable slope density formula (see Section 2.20.040, Slope-Density Requirements) indicates a larger minimum land area per dwelling. The following restrictions apply to such subdivisions:
+
+1. The total number of lots in such a subdivision may not exceed the number of lots that would be permitted through application of the slope density formula.
+
+2. When a subdivision yields a lot (or lots) smaller than the lot size calculated by the slope-density formula, no other lot may be created as part of that subdivision that is of such size and average slope that it could be further subdivided. Such a subdivision must include individual slope-density calculations for all proposed lots larger than 40 acres.
+
+D. Road standards. Ranch roads serving the internal needs of ranches may be of gravel or hard dirt surface, and of widths suitable for ranch uses. Such roads shall not be considered as acceptable for the purpose of subdivision unless they meet applicable County standards for the AR zoning district. Routine maintenance of ranch roads shall not require grading permits so long as the alignment of the road is not substantially changed, pursuant to Section C12-421, Exemptions, of the County Grading Ordinance.
+
+(Ord. No. NS-1200.317, § 3, 6-8-04)
+
+§ 2.20.070. - HS districts: Supplemental development standards.
+
+A. Setbacks-Substandard Named Subdivisions. Setbacks may be reduced on lots less than one acre in identified substandard subdivisions as specified in Table 2.20-6 below. The substandard subdivisions to which this provision applies are Aldercroft Heights, Chemeketa Park, Call of the Wild, Lake Canyon, Mountain Spring, Oakmont and Redwood Estates.
+
+TABLE 2.20-6. SETBACKS ON LOTS OF ONE ACRE OR LESS IN SUBSTANDARD SUBDIVISIONS
+
+| Yard | Setbacks |
+| Front | 20 ft. |
+| Side | 20 ft., or 10% of lot width to minimum of 5 ft. |
+| Side, Exterior (corner lot) | 20 ft., or 10% of lot width to minimum of 10 ft. |
+| Rear | 20 ft. |
+
+B. Special HS Subdivision Regulations. A cluster permit is required for subdivision of land into lots of less than 160 acres within the HS zoning district, except as specified for a two-lot subdivision below. The following provisions apply only to the subdivision of land in the HS district. Provisions for application of the 20- [to] 160-acre slope density formula are provided in Section 2.20.040, Slope Density Requirements.
+
+1. For any two-lot subdivision of a parcel legally created prior to November 22, 1983, the minimum parcel size shall be determined through the use of the 20- [to] 160-acre slope density formula. Minimum lot size shall be the same as the land area per dwelling unit figure determined by the slope density formula. No clustering of development or permanent dedication of open space shall be required. However, any subsequent land division of either of the two lots so created shall be required to meet the cluster permit and open space dedication requirements applicable to land division in the HS district set forth below.
+
+2. A cluster permit is required for the division of land into lots of less than 160 acres, except as specified above (subsection 2.20.070(B)(1)). A cluster arrangement of residential home sites shall achieve economy of land use and efficiency of access, while avoiding or minimizing impact to the natural environment to the extent feasible. Defined development areas shall include no more than 10% of the total land area subject to the land division, with at least 90% of the remaining land area preserved in permanent open space by means of dedication of development rights which prevents future subdivision of such lands. Cluster development proposals may be arranged in more than one cluster provided that the multiple cluster arrangement achieves economy of land use and efficiency of access intended by this ordinance and the applicable provisions of the Hillside general plan land use designation.
+
+3. The land area per dwelling unit shall be determined by the use of the 20- [to] 160-acre slope density formula. The permissible density or number of dwellings may be limited through subdivision approval to less than the maximum number of dwellings indicated by the slope-density equation if deemed necessary to ensure the public health, safety, and general welfare or to achieve consistency with any applicable goal or policy of the general plan.
+
+4. The minimum parcel size for any lot created as part of a cluster is no less than two (2) acres. Land area to achieve the minimum requirement of 90% permanent open space may be arranged as portions of parcels or as a single parcel, provided that the maximum density of development permitted by the slope-density formula is not exceeded and the land devoted to open space is configured as large, contiguous, usable areas.
+
+5. Land uses permitted on lands dedicated as permanent private open space are limited to the following uses:
+
+a) Agriculture.
+
+b) Agricultural accessory structures, including windmills (not residential accessory structures).
+
+c) Wood cutting and commercial timber harvest.
+
+d) Outdoor recreation, non-commercial, including riding stables, corrals, trails, and other similar uses intended for residents of homes within the cluster subdivision.
+
+e) Utilities, wells, and water storage and distribution facilities.
+
+(Ord. No. NS-1200.317, § 4, 6-8-04; Ord. No. NS-1200.339, § 1, 11-5-13)
+
+§ 2.20.080. - RR districts: Supplemental development standards.
+
+A. Special subdivision regulations. A cluster permit is required for subdivision of land in RR districts into lots less than the land area per dwelling unit as determined by the applicable five- to 20-acre slope density formula, or to divide land into lots less than the minimum lot size specified by the applicable lot size combining district, such as the "-5 Ac." combining district. The following provisions apply only to the subdivision of land in the RR district. Provisions for application of the five- to 20-acre slope density formula are provided in Section 2.20.040, Slope density requirements.
+
+1. Absolute minimum lot size for any parcel created by a RR cluster subdivision shall be one acre. Minimum lot size requirements may be greater than one acre if necessary to ensure compliance with applicable development standards, such as for septic systems, wells, access, and related site improvements.
+
+2. Permanent dedication of development rights and open space preservation shall be required for lands involved in any RR cluster subdivision to ensure that no further subdivision is possible which would exceed the maximum density of land allowed by the General Plan through subdivision.
+
+3. Land uses permitted on lands dedicated as permanent private open space as part of a cluster subdivision are limited to the following:
+
+a) Agriculture.
+
+b) Agricultural accessory structures, including windmills (not residential accessory structures).
+
+c) Wood cutting and commercial timber harvest.
+
+d) Outdoor recreation, non-commercial, including riding stables, corrals, trails, and other similar uses intended for residents of homes within the cluster subdivision.
+
+e) Utilities, wells, and water storage and distribution facilities.
+
+§ 2.20.090. - Local-serving uses.
+
+Local-serving uses are of a size, scale and intensity intended to provide goods and services to the resident rural population. For the purposes of this section, the term "local-serving uses" refers to certain institutional and commercial uses that may be allowed in rural districts if their size, scale and intensity is typical of local-serving uses in a rural community. Local-serving uses are not exclusive to the resident rural population and may be used by residents not local to the area.
+
+A. The size, scale and intensity of the use shall be evaluated in accordance with the Local Serving Data document, on file with the Department of Planning and Development and as updated from time-to-time by the Department. Uses deemed to be an appropriate size, scale and intensity by the approval authority because the building square footage and maximum number of people are each less than the applicable 75 percentile values in Table 1.1 (Local Serving Data document on file with the County Planning and Development Department) may be authorized in rural districts in accordance with any other requirements, findings, and criteria otherwise required by the zoning ordinance.
+
+B. For a proposed use whose building square footage or maximum number of people is more than the applicable 75th percentile value listed in Table 1.1 of the Local Serving Data document, the applicant shall prepare a report that establishes a baseline for a proposed use designed at the 75th percentile and evaluating the comparison of size, scale, and intensity impacts to rural resources and character at the 75th percentile with size, scale and intensity impacts to rural resources and character as proposed. The size, scale and intensity impacts to be evaluated at the 75th percentile and as proposed shall evaluate the following criteria:
+
+1. Aesthetics. The scale and massing of the building(s) and improvements shall be compatible with the existing rural setting, taking into consideration the surrounding open space, scenic resources, ridgelines, agricultural uses, and rural residences.
+
+2. Open Space and Habitat. The use shall be sized and designed to minimize disturbance of natural landscapes and biological communities.
+
+3. Agricultural Production. The use shall retain agricultural productivity and minimize conflicts with surrounding agricultural lands. Any loss of agricultural productivity shall be quantified and minimized to the extent feasible.
+
+4. Watersheds. The use shall not create a hazard to water quality or create significant drainage, flooding, erosion or sediment impacts. Increases in impervious surface area, drainage volumes and erosion levels shall be quantified and minimized to the extent feasible.
+
+5. Traffic. The use shall not generate significant additional traffic that creates a safety hazard or impairs local rural roads. New traffic associated with the use should not increase traffic levels significantly above existing conditions.
+
+6. Noise. The use shall not significantly increase noise over existing ambient levels.
+
+C. Uses where the building square footage or maximum number of people are more than the applicable 75th percentile values listed in Table 1.1 of the Local Serving Data document, may be authorized in rural districts following review of the report identified in § 2.20.090(B) and in accordance with any other requirements, findings, and criteria otherwise required by the zoning ordinance, and upon making the following finding:
+
+1. The project is designed, to the maximum extent feasible, such that the use does not result in size, scale and intensity impacts to the criteria identified in subsection 2.20.090(B) greater than what might result from a use which is equal to the 75th percentile baseline value. As used in this section, the maximum extent feasible means making all changes that are possible taking into account the physical limitations of the site, considerations of project, engineering design, and financial cost.
+
+(Ord. No. NS-1200.351, § 3, 10-20-15)
+
+CHAPTER 2.30. - URBAN RESIDENTIAL BASE DISTRICTS
+
+§ 2.30.010. - Purposes.
+
+The purpose of this chapter is to define allowable land uses and property development standards for the urban residential base districts, which include the R1 "One-Family Residence," R1E "One-Family Residence—Estate," RHS "Urban Hillside Residential," R1S "Low-Density Campus Residential," R3S "Medium-Density Campus Residential," R2 "Two-Family Residence," and R3 "Multi-Family Residential" districts. The overall purposes of the urban residential base districts are to provide for appropriate uses in the unincorporated areas of the County that are within the urban service areas of cities and to regulate the type and intensity of development in these areas in a manner consistent with the general plan of the applicable city. The further specific purposes of each of the urban residential base districts are described below.
+
+A. R1 One Family Residence. The purpose of the One-Family Residence district, also known as the R1 district, is to provide for single-family dwellings, and for the orderly and efficient arrangement of dwellings, yards, accessory buildings, and other residential site improvements.
+
+B. R1E One Family Residence—Estate. The purpose of the One-Family Residence—Estate district, also known as the R1E district, is to provide for low-density single-family dwellings, and for the orderly and efficient arrangement of dwellings, yards, accessory buildings, and other residential site improvements.
+
+C. RHS Urban Hillside Residential. The purpose of the Urban Hillside Residential district, also known as the RHS district, is to provide for low-density residential development and limited agricultural uses on foothill lands adjacent to incorporated cities. RHS districts include areas that are particularly vulnerable to natural hazards and environmental degradation. Development density shall be determined by slope-density formulas that consider availability of public water and sewer, and by the severity of geologic and natural hazards. Note that Section 2.30.040 applies to this district.
+
+D. R1S Low-Density Campus Residential. The purpose of the Low-Density Campus Residential district, also known as the R1S district, is to provide for urban low-density housing (up to eight units per acre) on the lands of Stanford University, and to provide for limited neighborhood-supporting nonresidential uses. This designation implements the specific land use policies for low-density housing prescribed by the 2000 Stanford Community Plan by encouraging more compact and efficient urban development.
+
+E. R3S Medium-Density Campus Residential. The purpose of the Medium-Density Campus Residential district, also known as the R3S district, is to provide for urban medium-density housing on the lands of Stanford University, and to provide for limited neighborhood-supporting nonresidential uses. This designation implements the specific land use policies for the medium-density housing prescribed by the 2000 Stanford Community Plan.
+
+F. R2 Two-Family Residence. The purpose of the Two-Family Residence district, also known as the R2 district, is to provide for one- and two-family dwelling units, and for the orderly and efficient arrangement of dwellings, yards, accessory buildings, and other residential site improvements.
+
+G. R3 Multi-Family Residential. The purpose of the Multi-Family Residential district, also known as the R3 district, is to provide space for multiple family residential development commonly found in an urban environment. The R3 district is intended for intensive residential uses at readily accessible urban locations.
+
+§ 2.30.020. - Use regulations.
+
+The following tables, Tables 2.30-1 and 2.30-2, specify the allowable land uses for the urban residential base districts, listed by use classification as defined in Chapter 2.10. The regulations for each district are established by letter designations as follows:
+
+| "R" | designates use classifications that are permitted by right. The term "by right" indicates no discretionary permit process by the Planning Office is required. See subsection 1.20.040(D) for applicability of other rules and processes. |
+| "C" | designates use classifications that require an administrative planning clearance from the Planning Office. Planning clearances are for uses that require adherence to the Zoning Ordinance but for which no discretionary permit from the Planning Office is required. |
+| "S" | designates use classifications permitted with a special permit, subject to the provisions of Chapter 5.60, Special Permit. |
+| "A" | designates use classifications permitted with architecture and site approval, subject to the provisions of Chapter 5.40, Architecture and Site Approval. |
+| "U" | designates use classifications permitted with a use permit and architecture and site approval, subject to the provisions of Chapter 5.65, Use Permit, and Chapter 5.40, Architecture and Site Approval. |
+| "—" | designates use classifications that are not allowed. |
+
+Supplemental regulations for the establishment and conduct of a use are referenced in the "Supplemental Regulations" column of the tables. Use classifications not listed in the table are prohibited in the urban residential base districts.
+
+TABLE 2.30-1. RESIDENTIAL USES IN URBAN RESIDENTIAL BASE DISTRICTS
+
+| R | Permitted by right |
+| C | Planning clearance |
+| S | Special permit (Chapter 5.60) |
+| A | ASA (Chapter 5.40) |
+| U | Use permit/ASA (Chapters 5.65, 5.40) |
+| — | Not permitted |
+
+| Use Classifications | Zoning | | | | | | | Supplemental Regulations |
+| Use Classifications | R1 | R1E | RHS | R1S | R3S | R2 | R3 | Supplemental Regulations |
+| Residences | | | | | | | | |
+| Single-Family | R | R | R | R | A | R | R | Notes 1, 2 (R1S) |
+| Two-Family | — | — | — | R | A | R | R | Notes 1, 2 (R1S) |
+| Multifamily | — | — | — | A | A | — | A | Note 11 |
+| Residential Accessory Structures and Uses | R | R | R | R | R | R | R | § 4.20.020 Note 3 (R3S) |
+| Accessory Dwelling Units | | | | | | | | |
+| Standard ADUs | R | R | R | R | R | R | R | § 4.10.015 |
+| Movable tiny homes | C | C | C | C | C | C | C | § 4.10.015 |
+| Junior ADUs | R | R | R | R | R | R | R | § 4.10.015, Note 9 |
+| Community Care | | | | | | | | |
+| Limited | R | R | R | R | R | R | R | § 4.10.090, Note 4 |
+| Expanded | U | U | U | A | A | U | A | § 4.10.090 |
+| Domestic Animals | | | | | | | | |
+| Dogs and Cats | R | R | R | R | R | R | R | Note 5 |
+| Small Animals | R | R | R | R | R | R | R | Note 6 |
+| Horses | R | R | R | R | — | — | — | Note 7 |
+| Emergency Shelters | | | | | | | | |
+| Small-Scale | — | — | — | — | — | — | R | § 4.10.115 |
+| Large-Scale | — | — | — | — | — | — | U | § 4.10.115 |
+| Home Occupations | | | | | | | | |
+| General | R | R | R | R | R | R | R | § 4.10.180 |
+| Expanded | S | S | S | S | S | S | S | § 4.10.180, Note 8 |
+| Residential—Communal Institutional | U | U | U | — | — | U | U | |
+| Rooming Houses, Fraternities, and Sororities | U | U | — | — | — | U | A | |
+| Temporary Residence/Construction | R | R | R | R | R | R | R | § 4.10.380 |
+| Urban Primary Unit | R | R | R | R | — | — | — | § 4.10.387, Note 10 |
+
+NOTES:
+
+1. Single-family dwellings, including certain additions, and duplexes, may be subject to the building site approval provisions of Section C12-300 et seq. of the County Ordinance Code.
+
+2. In R1S districts, ASA is required for new single-family residences on lots smaller than 10,890 square feet (0.25 acre), excluding housing development pursuant to Section 65852.21 of the California Government Code. ASA is not required for additions or remodels of existing dwellings.
+
+3. In R3S districts, accessory structures not meeting the criteria of § 4.20.020 may be allowed subject to ASA.
+
+4. Facilities qualifying as "Large Family Day Care Homes," serving between seven and 14 children, are subject to an administrative permit, per the provisions of Division B24 of the County Ordinance Code.
+
+5. Not to exceed two dogs and five cats over four months of age on parcels less than five acres, or three dogs and five cats over four months of age on parcels five acres or more, unless the required permit is secured pursuant to Division B31 of the County Ordinance Code.
+
+6. Small animals—Limited. Not to exceed a total of 12 of any of the following small animals: rabbits, guinea pigs, chicken and fowl, and similar species as approved by the Zoning Administrator. Roosters, peafowl, guinea fowl, geese or quacking ducks are not allowed.
+
+7. Horses. Minimum lot size for the keeping of horses in urban residential districts is one-half acre. Not to exceed two horses per acre.
+
+8. Expanded home occupations are permitted on lots of one acre or larger. See § 4.10.180 for other criteria.
+
+9. Owner-occupancy of one unit is required in any single-family residence that contains a junior accessory dwelling unit. The owner may reside in either the single-family residence or the junior accessory dwelling unit. Owner-occupancy shall not be required if the owner is a governmental agency, land trust, or housing organization.
+
+10. No more than four total dwelling units may be permitted on a parcel pursuant to the Urban Primary Unit use classification; however, all parcels resulting from an urban lot split pursuant to Section C12-44 shall have no more than two total dwelling units per parcel.
+
+11. Development on parcels with the -os designator is restricted to multi-family housing and limited mixed-use residential development, shall conform with the provisions of Chapter 3.75, and is allowable by ASA or planning clearance pursuant to § 3.75.040.
+
+TABLE 2.30-2. NON-RESIDENTIAL USE CLASSIFICATIONS IN URBAN
+
+RESIDENTIAL BASE DISTRICTS
+
+| R | Permitted by right |
+| C | Planning clearance |
+| S | Special permit (Chapter 5.60) |
+| A | ASA (Chapter 5.40) |
+| U | Use permit/ASA (Chapters 5.65, 5.40) |
+| — | Not permitted |
+
+| Use Classifications | Zoning | | | | | | | Supplemental Regulations |
+| Use Classifications | R1 | R1E | RHS | R1S | R3S | R2 | R3 | Supplemental Regulations |
+| Agriculture | | | | | | | | |
+| General | — | — | R | — | — | — | — | Note 1 |
+| Livestock | — | — | R | — | — | — | — | Note 1 |
+| Urban | R | R | R | R | R | R | R | § 4.10.025 |
+| Antennas—Commercial | | | | | | | | |
+| Minor | A | A | A | A | A | A | A | |
+| Major | U | U | U | A | A | U | U | |
+| Churches (See "Religious Institutions") | | | | | | | | |
+| Community Care | | | | | | | | |
+| Limited | R | R | R | R | R | R | R | § 4.10.090, Note 3 |
+| Expanded | U | U | U | A | A | U | A | § 4.10.090 |
+| Emergency Shelters | | | | | | | | |
+| Small-Scale | — | — | — | — | — | — | R | § 4.10.115 |
+| Large-Scale | — | — | — | — | — | — | U | § 4.10.115 |
+| Golf Courses and Country Clubs | U | U | — | — | — | — | — | |
+| Historic Structures—Use Conversion | — | — | A | — | — | — | — | § 4.10.170 |
+| Hospitals and Clinics | U | U | U | A | A | U | U | |
+| Museums | U | U | U | A | A | U | U | |
+| Nonprofit Institutions | U | U | U | A | A | U | U | Note 6 |
+| Religious Institutions | U | U | U | A | A | U | U | Note 6 |
+| Retail Sales and Services—Local Serving | — | — | — | A | A | — | A | Notes 2, 7 |
+| Schools | U | U | U | A | A | U | U | |
+| Swim and Tennis Clubs | U | U | U | A | A | U | U | |
+| Utilities and Public Facilities | | | | | | | | Note 4 |
+| Minor | A | A | A | A | A | A | A | |
+| Major | U | U | U | A | A | U | U | |
+| Wireless Telecommunication Facilities | | | | | | | | Note 5 |
+| Collocation/Modification - Minor | R | R | R | R | R | R | R | § 4.10.400 |
+| Collocation/Modification - Major | A | A | A | A | A | A | A | § 4.10.400 |
+| New Facilities | A | A | A | A | A | A | A | § 4.10.400 |
+
+NOTES:
+
+1. On lots two and one-half acres or larger in RHS districts, all agricultural uses permitted in HS districts as a matter of right (see Table 2.20-2) shall be allowed.
+
+2. Commercial and service uses permitted in R1S, R3S and R3 districts shall be limited in scale and in their service market to primarily serve the residents of the subject residential development. For residential support uses in R1S and R3S districts applicable to Stanford University lands, a business plan is required demonstrating that a preponderance of customers will be Stanford residents or employees.
+
+3. Facilities qualifying as "Large-Family Day-Care Homes," serving between seven and 14 children, are subject to an administrative permit, per the provisions of Division B24 of the County Ordinance Code.
+
+4. Utility structures and facilities may be exempt from local zoning regulations if they are established by a government agency. There may also be federal or state laws that provide exemptions for certain types of utilities.
+
+5. Wireless telecommunications facilities are exempt from the development standards listed in Table 2.30-3.
+
+6. Established Religious Institutions and Nonprofit Institutions may include Emergency Shelters: Small-Scale as an ancillary use by right.
+
+7. In R3 zoning districts, any use that involves the sale or onsite consumption of alcoholic beverages shall be subject to a use permit.
+
+(Ord. No. NS-1200.310, § 3, 5-20-03; Ord. No. NS-1200.317, § 5, 6-8-04; Ord. No. NS-1200.318, § 4, 3-28-06; Ord. No. NS-1200.324, § 5, 5-5-09; Ord. No. NS-1200.327, § 7, 2-9-10; Ord. No. NS-1200.335, § 4, 12-4-12; Ord. No. NS-1200.337, § 5, 12-18-12; Ord. No. NS-1200.345, § 5, 6-10-14; Ord. No. NS-1200.348, § 1, 10-21-14; Ord. No. NS-1200.352, § 2, 9-29-15; Ord. No. NS-1200.354, § 3, 9-29-15; Ord. No. NS-1200.360, § 3, 5-23-17; Ord. No. NS-1200.366, § 3, 5-1-18; Ord. No. NS-1200.371, § 4, 3-10-20; Ord. No. NS-1200.382, § 1, 5-24-22; Ord. No. NS-1200.383, § 3, 1-24-23; Ord. No. NS-1200.384, § 4, 12-12-23)
+
+§ 2.30.030. - Development standards.
+
+A. Standards. Table 2.30-3 establishes property development standards for the urban residential base districts. A "-" indicates there is no applicable standard or requirement.
+
+TABLE 2.30-3. URBAN RESIDENTIAL BASE DISTRICTS:
+PROPERTY DEVELOPMENT STANDARDS
+
+| | R1 | R1E | RHS | R1S | R3S | R2 | R3 |
+| Minimum lot area (square feet): | | | | | | | |
+| For lot creation | 5,000 ^ 8 | 5,000 | § 2.30.040 | Note 1 | Note 2 | 5,000 | Notes 3, 8 |
+| For building site | 3,750 ^ 8 | 3,750 | 3,750 | Note 1 | Note 2 | 3,750 | Notes 3, 8 |
+| With lot size combining districts | See Chapter 3.10, Lot Size Combining Districts | | | | | | |
+| Setbacks (feet)^6, 7: | | | | | | | |
+| Front | 25 ^ 8 | 25 | 30 | 25 | Note 4 | 25 | 20 ^ 8 |
+| Side | 5 ^ 8 | 5 | 20 | 5 ^ 5 | Note 4 | 5 | 10 ^ 8 |
+| Corner lot: Exterior side | 10 ^ 8 | 10 | 20 | 10 ^ 5 | Note 4 | 10 | 10 ^ 8 |
+| Rear | 25 ^ 8 | 25 | 25 | 25 ^ 5 | Note 4 | 25 | 15 ^ 8 |
+| Scenic road | 100 | 100 | 100 | — | Note 4 | 100 | 100 |
+| Exceptions | § 4.20.110, Setback Exceptions | | | | | | |
+| Maximum height^6: | | | | | | | |
+| Feet | 35 ^ 8 | 35 | 35 | 35 | Note 4 | 35 | 45 ^ 8 |
+| Stories | 2 ^ 8 | 2 | 3 | 2½ | Note 4 | 2 | 4 ^ 8 |
+| Lot coverage—buildings^6 | — ^ 8 | — | — | — | — | — | 50% ^ 8 |
+| Accessory buildings | See Chapter 4.20, Supplemental Development Standards | | | | | | |
+
+NOTES:
+
+1. Development density for all housing types in R1S districts shall not exceed eight units per net acre. For the purposes of this provision, net acreage shall exclude street rights-of-way, but shall include driveways and other common access ways.
+
+2. Development density for all housing types in R3S districts shall be no less than eight units per net acre and no more than 15 units per net acre. For the purposes of this provision, net acreage shall exclude street rights-of-way, but shall include driveways and other common access ways.
+
+3. Development density in R3 districts shall conform to the density allowed by the applicable city general plan.
+
+4. In R3S districts, setbacks and maximum height for applications subject to Architecture and Site Approval (ASA) may be modified by the Zoning Administrator with proper justification to (a) promote quality design and functionality, (b) to assure adequate buffering and compatibility with adjacent land use and development, and (c) for consistency with the general purposes of ASA.
+
+5. In R1S districts, side and rear setbacks for single-family and two-family dwellings shall be as indicated in the table. For multi-family development subject to Architecture and Site Approval (ASA), side and rear setbacks may be modified by the Zoning Administrator with proper justification to (a) promote quality design and functionality, (b) to assure adequate buffering and compatibility with adjacent land use and development, and (c) for consistency with the general purposes of ASA.
+
+6. For permitted non-residential uses, setbacks and height limits for applications subject to Architecture and Site Approval (ASA) may be modified by the Zoning Administrator with proper justification to (a) promote quality design and functionality, (b) to assure adequate buffering and compatibility with adjacent land use and development, and (c) for consistency with the general purposes of ASA.
+
+7. Setback requirements of applicable lot-size combining districts (§ 3.10.030) shall supersede the setbacks provided for base districts.
+
+8. Development on parcels with the -os designator is restricted to multi-family housing and limited mixed-use residential development, shall conform with the provisions of Chapter 3.75, and is exempt from the development standards in this table.
+
+B. Flag lots: Height restriction. On any flag lot of less than 20,000 square feet, the maximum height of dwellings shall be 21 feet and shall not include more than one story.
+
+C. Measurement. Standards shown in Table 2.30-3 are subject to the following rules of measurement:
+
+1. Where a lot abuts a road, setbacks from that road shall be measured from the edge of the ultimate right-of-way (see "setback" definition in § 1.30.030);
+
+2. Setbacks from all property lines not abutting a street shall be measured from the property line unless otherwise specified; and
+
+3. Height shall be measured according to the provisions of Chapter 1.30: Definitions: General Terms.
+
+4. Development density in R1S, R3S and R3 districts shall be calculated over the project area, which, excepting existing or new street rights-of-way, includes the entire area of any lot or assemblage of contiguous lots upon which development or redevelopment is proposed, and for which one development application is submitted.
+
+Any portions of the project area designated as open space by the applicable subdivision or ASA conditions shall be enforceably restricted to prevent increased density of development beyond that allowed by the zoning ordinance.
+
+5. Precision of numbers for the purposes of measurement and calculation shall be as stipulated in § 1.20.030: Precision of Numbers/Rounding.
+
+(Ord. No. NS-1200.317, § 6, 6-8-04; Ord. No. NS-1200.332, § 2, 11-22-11; Ord. No. NS-1200.359, § 2, 12-6-16; Ord. No. NS-1200.384, § 5, 12-12-23)
+
+§ 2.30.040. - Slope-density requirements in RHS district.
+
+Table 2.30-4 describes the required minimum land area per dwelling unit, or density of development allowed, as well as the minimum parcel sizes, for the RHS district, based on the availability of public water and sewer. Density of development may be further restricted based upon site-specific characteristics of proposed lots and building sites, including slope, geologic stability, drainage, and other factors.
+
+TABLE 2.30-4. LOT SIZE/SLOPE-DENSITY FORMULAS IN RHS
+
+| Water/Sewer Availability | Allowed Density: Land Area per Dwelling Unit^1 | Lot Area Range^2 | Minimum parcel size ^ 3 and 4 |
+| With public water and sanitary sewer | 1 1.2-.02*S | 1—5 acres | 1 acre |
+| With sanitary sewer, without public water | 1 .6809-.010952*S | 1.75—7.5 acres | 1.75 acres |
+| Without public water or sanitary sewer | 1 .475-.0075*S | 2.5—10 acres | 2.5 acres |
+
+NOTES:
+
+1. The variable "S" represents the average slope of the entire property that is the subject of the application. Average slope is determined according to the formula S = (0.00229 × IL)/A, where
+
+I is the contour interval in feet;
+L is the combined length of contour lines in scale feet;
+A is the gross area in acres of the subject lot or area of land; and,
+S is the average slope expressed as a percentage.
+
+The maximum number of lots or dwelling units allowed is determined by dividing the gross land area by the minimum land area per dwelling unit and rounding down to the nearest whole number.
+
+2. Where the average slope of the parcel is less than ten percent, the land area per dwelling unit shall be equal to the lesser value in the lot area range. Where the average slope of the parcel is greater than 50 percent, the land area per dwelling unit shall be equal to the upper value of the lot area range.
+
+3. Minimum parcel size requirements are expressed in gross acres and may be waived through the approval of a cluster permit issued in conformance with applicable General Plan policies and the cluster permit procedures of Chapter 5.45 of this ordinance.
+
+4. Permanent dedication of open space and development rights shall be provided as necessary and appropriate to ensure that the maximum density of development (total number of lots) does not exceed that which is permitted by the applicable slope-density formula.

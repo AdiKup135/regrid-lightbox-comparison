@@ -1,0 +1,57 @@
+17.60.020 Definitions.
+
+“Front/rear lot line redesignation” means a planning permit that allows a property owner to request a different line as the front or rear lot line.
+
+“Front line of main building” means the line touching the frontmost point of the main building that is at a right angle to the line connecting the midpoints of the front and rear lot lines.
+
+“Lot” or “site” means a parcel of land consisting of a single lot of record, used or intended for use or uses under the regulations of this title. See “Lot, corner,” “Lot, double frontage,” “Lot, flag,” and “Lot, interior.”
+
+“Lot area” means the area of a lot measured horizontally between bounding lot lines, including any portion of a flag lot providing access to the street.
+
+“Lot area, net” means the portion of gross site area remaining after deducting from the following:
+
+1. Any portion of a lot within the right-of-way of an existing public or private street, road or access easement, except an emergency access street.
+
+2. The portion of a flag lot constituting the access corridor lying between the front lot line and the frontage line at the street.
+
+“Lot, corner” means a lot bounded by two or more abutting and intersecting street lines. See figure 17.60.020-4 (Corner Lot).
+
+Figure 17.60.020-4. Corner Lot
+
+“Lot depth” means the mean distance between the front lot line and the rear lot line measured in the main direction of the side lines of the lot.
+
+“Lot, double frontage” means an interior lot bounded by two or more abutting street lines that do not intersect. See figure 17.60.020-5 (Double Frontage Lot).
+
+Figure 17.60.020-5. Double Frontage Lot
+
+“Lot, flag” means a lot having access to a street by means of a private driveway or parcel of land (known as the access area) not otherwise meeting the requirements of this title for lot frontage. Width of the access area shall be measured at right angles to the side line of the access area.
+
+See figure 17.60.020-6 (Flag Lot).
+
+Figure 17.60.020-6. Flag Lot
+
+“Lot frontage” means that boundary of a lot along a public right-of-way.
+
+“Lot, interior” means a lot other than a corner lot abutting only one street.
+
+See figure 17.60.020-7 (Interior Lot).
+
+Figure 17.60.020-7. Interior Lot
+
+“Lot line, front” means that boundary of a lot’s narrowest portion abutting a public street or access area in the case of a flag lot, except where a different front has been previously officially designated or recognized by the town.
+
+“Lot line, rear” means the lot line or lines most nearly parallel to and most remote from the front property line.
+
+“Lot width” means the width measured at right angles to its depth at the front line of the building area.
+
+“Rear line of main building” means the line touching the rearmost point of the main building that is at a right angle to the line connecting the midpoints of the front and rear lot lines.
+
+“Street line” means the boundary line between a public or private street, road or way, and a lot or parcel of land.
+
+“Yard” means an open space on the same lot with a building that is unoccupied and unobstructed from the ground upward, except as otherwise permitted in this title.
+
+“Yard, front” means the yard extending across the full width of the lot adjacent to the front lot line and measured from that line to the nearest line where the main building is permitted.
+
+“Yard, rear” means the yard extending across the full width of the lot and lying between the rear line of the lot and the nearest line where the main building is permitted.
+
+“Yard, side” means the yard lying between a side lot line and the nearest line where building is permitted, and extending from the front yard to the rear yard.

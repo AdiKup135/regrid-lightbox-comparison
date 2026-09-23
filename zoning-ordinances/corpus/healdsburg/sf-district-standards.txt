@@ -1,0 +1,126 @@
+§ 20.08.015 Purposes
+
+In addition to the objectives contained in HMC § 20.04.010, the R-1 Districts are established to achieve the following purposes:
+
+A. Reserve appropriately located areas for family living at a reasonable range of population densities, consistent with sound standards of public health and safety.
+
+B. Ensure adequate light, air, privacy, and open space for each dwelling.
+
+C. Provide opportunities for one-family dwellings to have privacy and open space around the units.
+
+D. Reserve space for public and quasi-public facilities needed to complement urban residential areas and institutions that require a residential environment.
+
+E. Minimize traffic congestion and avoid the overloading of utilities by preventing the construction of buildings of excessive size in relation to the land around them.
+
+F. Ensure that necessary off-street parking is provided for automobiles.
+
+G. Protect residential properties from the hazards, noise, and congestion created by commercial and industrial traffic and land use activities.
+
+H. Protect residential properties from noise, illumination, unsightliness, odors, dust, dirt, smoke, vibration, heat, glare, and other objectionable influences.
+
+I. Protect residential properties from fire, explosion, noxious fumes, toxic fumes, and other hazards.
+
+(Ord. 950 § 2 (Exh. A § 300), 1998; Ord. 1010 § 4 (Exh. A § 3), 2003)
+
+§ 20.08.020 Special purposes of R-1-3,500 District
+
+In addition to the general purposes and objectives of the R-1 District, the R-1-3,500 District is hereby established for the following purposes:
+
+A. To allow for innovative housing types and placement of such dwellings on lots such that each lot has the flexibility of optimizing the location of private open space on the lot;
+
+B. To assist in promoting affordable housing by allowing residential development on smaller lots in the community.
+
+(Ord. 950 § 2 (Exh. A § 305), 1998)
+
+§ 20.08.025 Permitted and conditionally permitted uses
+
+The following uses may be permitted or conditionally permitted in all R-1 districts. Chapter 20.28 HMC, Article V describes the procedures for obtaining a conditional use permit.
+
+| Table 2 Permitted (P) and conditionally permitted (C) uses: R-1 District | |
+| Accessory dwelling unit and junior accessory dwelling unit, subject to HMC § 20.20.010 | P |
+| Accessory structures located on the same site with a permitted or conditionally permitted use, including private garages and carports, one guest house or accessory living quarters without a kitchen, storehouses, garden structures, noncommercial greenhouses, recreation rooms, and hobby areas within an enclosed structure | P |
+| Boarding houses | C |
+| Churches, convents, monasteries, parish houses, parsonages, rectories, and other religious institutions | C |
+| Day care, large family, subject to HMC § 20.20.055 | C |
+| Day care, small family | P |
+| Employee housing as defined in Cal. Health and Safety Code § 17008 for six or fewer employees in accordance with Cal. Health and Safety Code § 17000, et seq. | P |
+| Golf courses and driving ranges | C |
+| Home occupations, subject to HMC § 20.20.005 | P |
+| Neighborhood convenience retail stores, subject to HMC § 20.20.070 | C |
+| Private recreational parks and swim clubs | P |
+| Private schools and colleges, not including art, craft, dancing, music, business, professional or trade schools and colleges | C |
+| Private stables or areas for the keeping of one horse, cow, llama, goat or similar large farm or hobby animal on a site not less than two acres in net area; provided, that one additional large animal may be kept for each additional acre of area of the site; and provided, that no stable shall be located closer than 50 feet to any property line, closer than 50 feet to any dwelling unit on the site, or closer than 100 feet to any other dwelling on surrounding properties | P |
+| Public utility and public service pumping stations, power stations, equipment buildings, installations, service yards, drainage ways and structures, storage tanks, reservoirs, and transmission lines found by the planning commission to be necessary for the public health, safety and welfare | C |
+| Raising of fruit and nut trees, vegetables, and horticultural specialties (no on-site sales) | P |
+| Raising for commercial purposes poultry (except roosters and crowing fowl), rabbits, chinchillas, potbellied pigs and other similar small animals on a site at least 20,000 square feet in net size; provided, that there shall be at least 1,000 square feet of site area for each fowl or animal. No structure housing poultry or small animals shall be located closer than 50 feet to any property line or closer than 25 feet to a dwelling on the site | C |
+| Raising or keeping for educational, hobby or noncommercial purposes poultry (except roosters and crowing fowl), rabbits, chinchillas, guinea pigs and similar small animals limited to a total of 10 animals, not including dogs and cats. Animal pens or cages shall not be located in a required front yard or street side corner yard and shall be located a minimum of 20 feet from a property line | P |
+| Residential care, general | C |
+| Residential care, limited | P |
+| Residential visitor lodging operations, subject to HMC § 20.20.060 | C |
+| Single-family dwelling, detached, one per lot | P |
+| Single-family dwelling, attached, one per lot, in the R-1-3,500 District | P |
+| Small lot subdivisions, subject to HMC § 20.20.040 | P |
+| Supportive housing | P |
+| Swimming pools used solely by persons resident on the site and their guests; provided, that no swimming pool or accessory mechanical equipment shall be located in a required front yard or less than five feet from a property line | P |
+| Temporary subdivision sales offices, subject to HMC § 20.20.025 | P |
+| Transitional housing | P |
+| Vacation rental homes | — |
+| Vacation timeshares | — |
+
+| Notes: |
+| — = not permitted |
+
+(Ord. 950 § 2 (Exh. A §§ 310, 315), 1998; Ord. 1003 § 2 (Exh. A § 3), 2003; Ord. 1018 § 2 (Exh. A § 315), 2004; Ord. 1104 § 2 (Exh. A § 4), 2010; Ord. 1159 § 2, 2016; Ord. 1210 § 2, 2021; Ord. 1256, 3/16/2026)
+
+§ 20.08.030 Minimum development standards
+
+The following standards apply to development within the R-1 Districts, except for small lot subdivisions as provided for by HMC § 20.20.040.
+
+| Table 3 Minimum development standards: R-1 Districts | | | | | | | |
+| Zoning District | Minimum Lot Area | Min. Lot Dimensions | | Minimum Yards | | | Max. site coverage |
+| Zoning District | Minimum Lot Area | Width^(1) | Depth^(2) | Front^(3) | Side | Rear | Max. site coverage |
+| R-1-3,500 | 3,500 sq. ft. | 40 feet | None | Non-garage frontage: 10 feet Garage frontage: 20 feet | None, except 10 feet for street side of corner lot | None | 50% |
+| R-1-6,000 | 6,000 sq. ft. | 50 feet | 90 feet | 20 feet | Structures^(4): 1 story: 5 feet 2 story: 10 feet 3 story: 15 feet Street side of corner lot: 10 ft. | 20 feet | 35% |
+| R-1-12,500 | 12,500 sq. ft. | 70 feet | 100 feet | 25 feet | Structures^(4): 1 story: 5 feet 2 story: 10 feet 3 story: 15 feet Street side of corner lot: 10 ft. | 25 feet | 30% |
+| R-1-20,000 | 20,000 sq. ft. | 100 feet | 120 feet | 30 feet | Structures^(4): 1 story: 5 feet 2 story: 10 feet 3 story: 15 feet Street side of corner lot: 10 ft. | 30 feet | 25% |
+| R-1-40,000 | 40,000 sq. ft. | 150 feet | 150 feet | 30 feet | Structures^(4): 1 story: 5 feet 2 story: 10 feet 3 story: 15 feet Street side of corner lot: 10 ft. | 30 feet | 25% |
+
+| Notes: |
+| ^(1) The minimum width of corner lots shall be 10 percent greater than the minimum width for interior lots. |
+| ^(2) Minimum lot depth for lots adjoining a freeway or railroad right-of-way shall be 130 feet, unless adequate alternative noise mitigations are provided, as approved by the planning director. |
+| ^(3) Refer to HMC § 20.16.005 regarding the averaging of front yards under specific conditions. |
+| ^(4) Second and third stories of dwellings shall be set back from side property lines in order to comply with side yard requirements. |
+| ^(5) Refer to HMC § 20.20.010 regarding yard setbacks for accessory dwelling units. |
+| ^(6) Refer to HMC § 20.20.040 regarding minimum development standards for small lot subdivisions. |
+
+(Ord. 950 § 2 (Exh. A §§ 320, 325, 330, 335), 1998; Ord. 1003 § 4, 2003; Ord. 1018 § 2 (Exh. A §§ 320, 325, 330, 335), 2004)
+
+§ 20.08.035 Maximum building height
+
+A. The maximum building height for all primary structures in R-1 districts shall be 35 feet.
+
+B. HMC § 20.16.065 allows exceptions for ancillary structures, including chimneys, antennas and similar architectural features.
+
+C. Accessory dwelling unit building heights are regulated in HMC § 20.20.010.
+
+D. Accessory building heights are regulated in HMC § 20.16.030.
+
+(Ord. 950 § 2 (Exh. A § 340), 1998; Ord. 1003 § 5, 2003; Ord. 1018 § 2 (Exh. A § 340), 2004; Ord. 1159 § 3, 2016; Ord. 1256, 3/16/2026)
+
+§ 20.08.040 Other development requirements
+
+The following additional requirements apply to development in R-1 Districts, including small lot subdivisions:
+
+Accessory structures: Chapter 20.16 HMC, Article II.
+
+Inclusionary housing: HMC § 20.20.030, Article I.
+
+Off-street parking: Chapter 20.16 HMC, Article VIII.
+
+Fences and walls: Chapter 20.16 HMC, Article III.
+
+Design review: Chapter 20.28 HMC, Article IV.
+
+Accessory dwelling units: HMC § 20.20.010.
+
+(Ord. 950 § 2 (Exh. A § 350), 1998; Ord. 1018 § 2 (Exh. A § 350), 2004; Ord. 1159 § 4, 2016)

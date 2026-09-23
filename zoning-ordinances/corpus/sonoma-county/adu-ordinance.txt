@@ -1,0 +1,213 @@
+Sec. 26-88-060. - Accessory dwelling units.
+
+Amended by Ordinance No. 6297
+
+Amended by Ordinance No. 6285
+
+(a) Purpose. This section implements the requirements of Government Code § 65852.2 and the provisions of the general plan housing element that encourage the production of affordable housing by means of accessory dwelling units (ADUs).
+
+(b) Definitions. As used in this section:
+
+(1) "Multifamily" means a structure with two (2) or more attached dwellings on a single lot.
+
+(2) "Objective standards" mean numeric and/or fixed standards that involve no personal or subjective judgment by a public official and are uniformly verifiable by reference to an external and uniform benchmark or criterion available and knowable by both the applicant and the public official prior to submittal.
+
+(3) "Primary residence" means an existing or proposed single-family dwelling or multifamily structure on the lot on which the ADU or ADUs is or are proposed to be established.
+
+(4) "Accessory structure" means a legally permitted structure that is accessory and incidental to a primary residence located on the same lot.
+
+(5) "Existing space" means floor area that is legally permitted or recognized as legal by the Director.
+
+(6) "Floor area" means the interior habitable area of the dwelling unit, including but not limited basements and attics, but does not include a garage or any accessory structure. Floor area shall be calculated by measuring the interior perimeter of applicable areas.
+
+(7) "Groundwater availability zone" means an area designated as Groundwater availability class 1, 2, 3, or 4 pursuant to the general plan water resources element and depicted on Sonoma County's groundwater availability map maintained by the permit and resource management department.
+
+(8) "Proposed dwelling" means a dwelling that is the subject of a permit application and that meets the requirements for permitting.
+
+(9) "Studio" means a dwelling unit in which the living area is not separated from the sleeping area.
+
+(10) "Major transit stop" has the same definition as specified in Section 21155 of the Public Resources Code.
+
+(11) "High quality transit corridor" has the same definition as specified in Section 21155 of the Public Resources Code.
+
+(c) Applicability.
+
+(1) ADUs shall be ministerially permitted in zoning districts that allow single-family or multifamily dwellings, in compliance with Government Code § 65852.2, the requirements of this section, and all other requirements of the applicable zoning district in which an ADU is permitted. The department shall approve or deny an application to create an ADU within sixty (60) days from the date it receives a completed application if there is an existing single-family or multifamily dwelling on the lot.
+
+(2) On lots in LIA, LEA, DA, and RRD zoning districts, ADUs shall be permitted in conjunction with a primary residence, except where a lot is eligible for one (1) or more agricultural employee housing units and an application has been filed for an ADU, that lot shall be eligible for one (1) fewer agricultural dwelling unit. Where a lot contains the maximum agricultural dwelling units permitted on the lot, those units are deemed ADUs and no additional ADUs are permitted. Agricultural employee housing includes farm family dwelling units, caretaker units, year-round farmworker housing, or agricultural employee dwelling units.
+
+(3) ADUs are prohibited in the Z (accessory dwelling unit exclusion) combining district.
+
+(4) ADUs with water provided by a groundwater well or spring in class 3 and 4 groundwater availability zones shall be limited as follows:
+
+(i) In class 3 areas, ADUs shall be permitted only if:
+
+(A) The domestic water source is located on the subject lot, or a mutual water source is available; and
+
+(B) Groundwater yield is sufficient for the existing and proposed use, pursuant to Section 7-12 of the Sonoma County Code.
+
+(ii) In class 4 areas, or critical habitat areas as identified by the county and informed by state or federal agency publications of critical habitat areas for fisheries, an ADU shall be permitted only if:
+
+(A) Both requirements for class 3 areas, above, are met; and
+
+(B) The ADU can be shown to have a net zero increase in water usage on the lot, following the most recent guidance, policy, or procedure adopted by the director of Permit Sonoma.
+
+(d) Density. As provided by Government Code § 65852.2, ADUs do not exceed the allowable density for the lot on which the ADU is located, and are consistent with the general plan and zoning for the lot.
+
+(e) Permit Requirements. Construction permits (including, but not limited to, building, grading, well, septic, and sewer permits, as applicable) shall be required to establish an ADU. ADUs must comply with applicable building and fire codes, including providing evidence of adequate wastewater disposal capacity, water supply, access, and that any required permits have been obtained and all applicable fees have been paid. Water supply must be demonstrated pursuant to Section 7-12 of this Code.
+
+(f) Fees. Applicable development fees shall be charged proportionately by the square footage of the ADU in relation to the square footage of the primary residence. On a lot that contains a multifamily dwelling, the proportionality shall be based on the average square footage of the units within the multifamily dwelling structure. No fees shall be charged for ADUs of less than seventy hundred fifty (750) square feet.
+
+(g) Timing. An ADU is allowed on a lot with an existing or proposed primary dwelling unit. A certificate of occupancy for an ADU shall not be issued prior to a certificate of occupancy for the primary residence. Existing dwellings meeting the standards of this ordinance may be re-designated as an ADU, when a new primary dwelling unit is proposed, and with the approval of a zoning permit.
+
+(h) Development Standards.
+
+(1) Unit Type. An ADU may be attached to an existing primary residence, converted from a portion of the existing living area of the primary residence, detached and on the same legal lot as a primary residence, converted from the entirety of or a portion of an existing accessory structure, or attached to an existing or proposed accessory structure.
+
+(2) Number of Units. The number of ADUs allowed on a single lot shall be:
+
+(i) On a lot that contains an existing or proposed single-family dwelling: One (1) ADU attached to a proposed single family dwelling or within the existing space of a single family dwelling or accessory structure, and one (1) detached, new construction ADU.
+
+(ii) On a lot that contains an existing multifamily dwelling: Two (2) ADUs, detached from the multifamily structure, and up to twenty-five percent (25%) of the existing units in the multifamily dwelling, but at least one (1), converted from existing non-livable space in a multifamily structure.
+
+(iii) On a lot that contains a proposed multifamily dwelling: Two (2) ADUs, detached from the multifamily structure.
+
+(3) Location. ADUs shall be located subject to the following setbacks, and in conformance with any easements and building envelopes:
+
+(i) Front Yard Setback: As established by the base zoning district, unless compliance with the setback would not permit an ADU of eight hundred (800) square feet, meeting applicable height standards, with four-foot side and rear yard setbacks.
+
+(ii) Side and Rear Yard Setbacks: Four (4) feet.
+
+(iii) No setback shall be required for an ADU converted from existing space within the primary residence or an accessory structure, or for an ADU constructed in the same location and to the same dimensions as an existing accessory structure.
+
+(iv) Riparian Corridor Setbacks. ADUs shall observe applicable setbacks of the riparian corridor (RC) combining district as provided in Article 65 of this Code. If the setback would not permit an eight hundred (800) square foot ADU that meets applicable height standards, then the ADU shall provide a minimum of four-foot side and rear yard setbacks and comply with applicable permit requirements for development within the riparian corridor setback. An application for an ADU proposed within the RC setback shall not be considered complete until the applicable permit for development within the riparian corridor setback is obtained.
+
+(v) ADUs shall adhere to subsection (m), construction standards.
+
+(4) Height.
+
+(i) Detached, new construction:
+
+(A) On lots with an existing or proposed single-family residence, ADUs shall be limited to the height limit for accessory structures established by base zoning district, except that the maximum allowed height shall not be less than eighteen (18) feet.
+
+(B) On lots with existing or proposed multifamily dwellings, ADUs shall be limited to eighteen (18) feet in height.
+
+(ii) Attached to the primary residence, or converted from existing space in the primary residence: The ADU shall comply with the height limit established by the base zoning district.
+
+(iii) Attached to or converted from the entirety of or a portion of an accessory structure: On lots with single family or multifamily dwellings, the ADU shall be limited to the height limit for accessory structures established by the base zoning district, except that the maximum allowed height shall not be less than eighteen (18) feet. An ADU created through the conversion of an existing accessory structure may include an expansion of no more than one hundred fifty (150) square feet beyond the physical dimensions of the existing structure to accommodate ingress and egress. In general plan-designated urban service areas, and where the unit is proposed to be located above an accessory structure, the maximum height shall be that established for the primary dwelling in the base zoning district.
+
+(5) Unit Size.
+
+(i) Detached or attached to the primary residence or an accessory structure, new construction: The maximum floor area shall be one thousand two hundred (1,200) square feet.
+
+(iii) Converted from existing space in a primary residence or an accessory structure: The maximum size of an ADU created through the conversion of existing space shall be the dimensions of the structure plus an addition of no more than one hundred fifty (150) square feet to accommodate ingress and egress. An expansion greater than one hundred fifty (150) square feet may be permitted up to a maximum unit size of one thousand two hundred (1,200) square feet.
+
+(6) Lot Size. No minimum lot size shall be required.
+
+(7) Lot Coverage. The lot coverage limitation of the base zoning district shall be applied, unless compliance with lot coverage would not permit an ADU of eight hundred (800) square feet, meeting applicable height standards, with four-foot side and rear yard setbacks.
+
+(i) Parking. One (1) parking space shall be provided. The parking space for an ADU may be located in an existing driveway as tandem parking.
+
+(1) Parking requirements do not apply in any of the following instances:
+
+(i) Where the ADU is located within one-half (½) mile walking distance to a transit stop.
+
+(ii) Where the ADU is on a lot within the HD (historic district) combining district.
+
+(iii) Where the ADU is part of a proposed or existing primary residence or an existing accessory structure.
+
+(iv) When the ADU is located on a lot where on-street parking permits are required, but not offered to the occupant of the ADU.
+
+(v) When the ADU is on a lot located within one (1) block of a car share vehicle.
+
+(vi) The ADU is a studio.
+
+(vii) When an application for an ADU is submitted with an application to create a new single-family or multifamily dwelling on the same lot.
+
+(2) Replacement parking shall not be required when a garage, carport, or covered parking structure is demolished in conjunction with construction of an ADU or converted to an ADU.
+
+(j) Standards for Conversions of Legal Nonconforming Residential Accessory Structures. ADUs converted from residential accessory structures determined to be legal nonconforming, pursuant to Article 94 of the Sonoma County Zoning Ordinance, shall be subject to the following requirements:
+
+(1) A legal nonconforming residential accessory structure that is converted to an ADU, or reconstructed as an ADU to the same footprint and dimensions as the original structure shall not be subject to setback requirements.
+
+(2) A legal nonconforming residential accessory structure that is converted to an ADU may be expanded to one thousand two hundred (1,200) square feet if the expansion will comply with the height limit and setbacks for new detached ADUs.
+
+(3) Expansion of floor area within a nonconforming setback is limited to ten percent (10%), or at least one hundred fifty (150) square feet if necessary to accommodate ingress and egress.
+
+(k) Standards for ADUs Used to Meet the Affordable Housing Program Requirement. In addition to the standards set forth above, an ADU that is proposed to be made available for rent to another household in compliance with Article 89 requirements shall meet the following additional standards:
+
+(1) Separate Parking and Pathway. A designated parking space and a path of travel into the ADU that does not cross the private yard space of the main home.
+
+(2) Doorways. No connecting doorways between the ADU and the main unit, except for a shared laundry room or vestibule; and
+
+(3) Yard. Provision of a separate yard or open space area from that of the main dwelling. For ADUs located above other structures, this requirement may be met through the provision of a deck with no dimension of less than six (6) feet.
+
+(l) Design Standards. ADUs involving addition of floor area shall meet all objective design standards that apply to the lot. No discretionary review or permits shall be required to establish an ADU.
+
+(m) Construction Standards. Not exclusive of other applicable state and local building and fire regulations, ADUs shall comply with the following requirements.
+
+(1) Structures within the state responsibility area (SRA) must comply with applicable local and state regulations for setbacks and fire-resistive construction.
+
+(2) Structures outside of the SRA must comply with building code regulations for fire-resistive construction, unless more restrictive standards are required pursuant to state law or regulation.
+
+(3) Fire sprinklers shall not be required in the ADU if the primary residence is not required to have fire sprinklers. Fire sprinklers may be required if a structure containing an ADU is greater than one thousand two hundred (1,200) square feet.
+
+(n) Use Restrictions.
+
+(1) Ownership. ADUs may be rented but shall not be sold or otherwise conveyed separate from the primary residence, except as specifically provided for by state law.
+
+(2) Duration of Tenancy. ADUs may not be rented for periods of less than 30 days.
+
+(Ord. No. 6458, § XV, 12-5-2023; Ord. No. 6352, § IX(Exh. A), 9-14-2021)
+
+Editor's note— Ord. No. 6352, § IX(Exh. A), adopted Sep. 14, 2021, repealed the former § 26-88-060 and enacted a new section as set out herein. The former § 26-88-060 pertained to similar subject matter and derived from Ord. No. 6191, § II(Exh. A), adopted Jan. 24, 2017; Ord. No. 6222, § II(Exh. A), adopted May 8, 2018; Ord. No. 6285, § IV(Exh. B), adopted Sep. 17, 2019.
+
+Sec. 26-88-061. - Junior accessory dwelling units.
+
+(a) Purpose. This section implements the requirements of Government Code § 65852.22 and the provisions of the General Plan Housing Element that encourage the production of affordable housing by means of accessory dwelling units.
+
+(b) Definitions. As used in this section:
+
+(1) "Single-family residence" refers to the existing or proposed dwelling unit within which the junior accessory dwelling unit is established.
+
+(c) Applicability. Junior accessory dwelling units (JADUs) shall be ministerially permitted in zoning districts that allow single-family dwelling units as permitted uses, in compliance with Government Code § 65852.22, the requirements of this section, and all other requirements of the applicable zoning district. The department shall act on an application to create an JADU within sixty (60) days from the date it receives a completed application if there is an existing single-family dwelling on the lot.
+
+(d) Permit Requirements and Fees. Construction permits (including, but not limited to, a building, well, septic, and/or sewer permit) shall be required to establish a JADU. A JADU shall not be considered a separate or new dwelling unit for purposes of applying building codes, fire codes, well and septic requirements, or collection of impact fees.
+
+(e) Timing. A JADU may be established after or concurrently with the single-family residence.
+
+(f) Development Standards.
+
+(1) Number of Units. One (1) JADU is allowed per lot, within a single-family residence.
+
+(2) Unit Size. The floor area of a JADU shall not exceed five hundred (500) square feet. If the bathroom is shared with the single-family residence, it shall not be included in the floor area.
+
+(3) Location. A JADU shall be created from space in an existing, fully permitted, or proposed single-family dwelling or garage attached to the single-family residence.
+
+(4) Access. A separate, exterior entrance to the JADU shall be provided.
+
+(5) Bathroom. A JADU may include separate sanitation facilities, or may share sanitation facilities with the single-family residence.
+
+(6) Kitchen. A JADU shall include an efficiency kitchen.
+
+(g) Use Restrictions.
+
+(1) JADUs may be rented but shall not be sold separate from the single-family residence.
+
+(2) JADUs may not be rented for periods of less than thirty (30) days.
+
+(3) The owner of the property must reside in either the single-family home or the newly created JADU.
+
+(4) Deed Restriction. The property owner shall record a deed restriction that:
+
+(i) Prohibits sale of the JADU separate from the single-family residence;
+
+(ii) Specifies that the deed restriction runs with the land and is enforceable against future property owners;
+
+(iii) Restricts the size and attributes of the JADU to those established by this section and Government Code § 65852.22; and
+
+(iv) Makes the county a third-party beneficiary of the deed restriction with the right to enforce the provisions of the deed restriction.
+
+(Ord. No. 6352, § X(Exh. B), 9-14-2021)
+
+Editor's note— Ord. No. 6352, § X(Exh. B), adopted Sep. 14, 2021, repealed the former § 26-88-061 and enacted a new section as set out herein. The former § 26-88-061 pertained to similar subject matter and derived from Ord. No. 6191, § III(Exh. B), adopted Jan. 24, 2017.

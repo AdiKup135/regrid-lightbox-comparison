@@ -1,0 +1,59 @@
+18.04.030 Definitions
+
+(84) “Lot” or “site” means a parcel of land consisting of a single lot of record, used or intended for use under the regulations of this title as one site for a use or group of uses.
+
+(A) “Corner lot” means a lot abutting two or more streets having an angle of intersection of one hundred thirty-five degrees or less. A lot abutting on a curved street or streets shall be considered a corner lot if straight lines drawn from the intersections of the side lot lines with the street lines to the midpoint of the street frontage meet at an interior angle of one hundred thirty-five degrees or less.
+
+(B) “Flag lot” means an interior lot that is either a landlocked parcel which has a driveway easement across another lot abutting a street, or a lot having limited frontage providing only enough width for a driveway to reach the buildable area of the lot which is located behind another lot abutting a street.
+
+(C) “Interior lot” means a lot abutting one street.
+
+(D) “Through lot” means a lot other than a corner lot abutting more than one street.
+
+(85) “Lot area” means the area of a lot measured horizontally between bounding lot lines, but excluding any portion of a flag lot providing access to a street and lying between a front lot line and the street, and excluding any portion of a lot within the lines of any natural watercourse, river, stream, creek, waterway, channel, or flood control or drainage easement and excluding any portion of a lot within a public or private street right-of-way whether acquired in fee, easement, or otherwise.
+
+(86) “Lot coverage” encompasses the following definitions:
+
+(A) “Single-family residential use” means the total land area within a site that is covered by buildings, including all projections except the exterior or outermost four feet of any eave or roof overhang, but excluding ground level paving, landscaping features, and open recreational facilities.
+
+(B) “All other uses except single-family residential” means the total land area within a site that is covered by buildings, excluding all projections, ground level paving, landscaping features, and open recreational facilities.
+
+(C) Except in the CD District and areas designated as special study areas, the director of planning and development services may permit minor additions of floor area to facilities that exceed lot coverage limits, for purposes of resource conservation or code compliance, upon the determination that such minor additions will increase site compliance with environmental health and safety standards. Such additions may include, but not be limited to, the following:
+
+(i) Area designed for resource conservation, such as trash compactors, recycling and thermal storage facilities;
+
+(ii) Area designed and required for hazardous materials storage facilities, handicapped access and seismic upgrades.
+
+(D) In commercial and industrial districts except in the CD District and in areas designated as special study areas, the director of planning and development services may permit additions of floor area that exceed lot coverage limits upon the determination that such additions are designed and used solely for providing on-site employee amenities for employees of the facility and will facilitate the reduction of employee vehicle use. Such additions may include, but not be limited to, recreational facilities, credit unions, cafeterias and day care facilities.
+
+(87) “Lot depth” means the horizontal distance from the midpoint of the front lot line to the midpoint of the rear lot line, or to the most distant point on any other lot line where there is no rear lot line.
+
+(91) “Lot line” means any boundary of a lot.
+
+(A) “Front lot line” means, on an interior lot, the lot line abutting a street, or, on a corner lot, the shorter lot line abutting a street, or, on a through lot, the lot line abutting the street providing the primary access to the lot, or, on a flag lot, the interior lot line most parallel to and nearest the street from which access is obtained.
+
+(B) “Interior lot line” means any lot line not abutting a street.
+
+(C) “Rear lot line” means the lot line not intersecting a front lot line which is most distant from and most closely parallel to the front lot line. A lot bounded by only three lot lines will not have a rear lot line.
+
+(D) “Side lot line” means any lot line which is not a front or rear lot line.
+
+(E) “Street lot line” means any lot line abutting a street.
+
+(92) “Lot of record” means a lot which is part of a subdivision recorded in the office of the county recorder, or a lot or parcel described by metes and bounds which has been so recorded.
+
+(93) “Lot width” means the horizontal distance between side lot lines, measured at the required front setback line.
+
+(128) “Setback line” means a line within a lot parallel to a corresponding lot line, which is the boundary of any specified front, side or rear yard, or the boundary of any public right-of-way whether acquired in fee, easement, or otherwise, or a line otherwise established to govern the location of buildings, structures, or uses. Where no minimum front, side or rear yards are specified, the setback line shall be coterminous with the corresponding lot line. (See Chapter 20.08 of the Palo Alto Municipal Code for setback map regulations.)
+
+(146) “Yard” means an area within a lot, adjoining a lot line, and measured horizontally, and perpendicular to the lot line for a specified distance, open and unobstructed except for activities and facilities allowed therein by this title.
+
+(A) “Front yard” means a yard measured into a lot from the front lot line, extending the full width of the lot between side lot lines intersecting the front lot line.
+
+(B) “Interior yard” means a yard adjoining an interior lot line.
+
+(C) “Rear yard” means a yard measured into a lot from the rear lot line, extending between the side yards; provided, that for lots having no defined rear lot line, the rear yard shall be measured into the lot from the rearmost point of the lot depth to a line parallel to the front lot line.
+
+(D) “Side yard” means a yard measured into a lot from a side lot line, extending between the front yard and rear lot line.
+
+(E) “Street yard” means a yard adjoining a street lot line, other than the front lot line.

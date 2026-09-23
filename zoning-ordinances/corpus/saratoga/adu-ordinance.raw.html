@@ -1,0 +1,1835 @@
+<div id="codesContent" ng-switch="vm.pageType">
+    <div role="alert">
+        <!---->
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----><div ng-switch-when="CHUNKS" class="codes-chunks-pg">
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-55COUSPE_15-55.130AP" ng-href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-55COUSPE_15-55.130AP" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 15-55.130 - Appeals.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-57MICOQUPR" ng-href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-57MICOQUPR" ng-if="vm.content.nextNode">Article 15-57 - MINISTERIAL CONSIDERATION OF QUALIFYING PROJECTS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+        <ul class="chunks list-unstyled small-padding">
+            <!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN" class="chunk" data-nodetype="" data-nodedepth="2" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!----><h2 ng-if="vm.relativeNodeDepth &lt; 1" id="_CH15ZORE_ART15-56ACDWUN" data-skip-id="_CH15ZORE_ART15-56ACDWUN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">Article 15-56 - ACCESSORY DWELLING UNITS<sup>[10]</sup></div></h2><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content"><br><div class="footnote-content"><div style="font-weight:bold;">Footnotes: </div> --- (<b>10</b>) ---
+            
+            <p class="refeditorFN"><b>Editor's note—</b>
+               <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), adopted October 21, 2020, amended Article 15-56 in its entirety to
+               read as herein set out. Former Article 15-56, §§ 15.56.010—15.56.050, pertained to
+               similar provisions, and derived from Ord. No. 348, § 1(Att. A, § 1), January 18, 2017;
+               Ord. No. 354, § 1(Exh. A), December 20, 2017; Ord. No. 355, § 1(Exh. A), June 6, 2018.
+               </p>
+            <br></div></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.010PUAR" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.010PUAR" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.010PUAR" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.010PUAR" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.010 - Purpose of article.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The purpose of this Article is to authorize the establishment of accessory dwelling
+               units and junior accessory dwelling units in districts zoned to allow for single-family
+               or multi-family dwellings to comply with state law and to help achieve the goals and
+               policies of the Housing Element of the Saratoga General Plan. Controlled construction
+               of accessory dwelling units and junior accessory dwelling units will promote a stable
+               heterogeneous community with a balanced social and economic mix.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.015DE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.015DE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.015DE" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.015DE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.015 - Definitions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The following definitions apply only to this Article:
+               
+               </p><p class="incr1">
+                  (1)
+                  </p>
+               		
+               <p class="content2">
+                  Accessory dwelling unit as defined in <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE" data-chunk-id="CH15ZORE_ART15-06DE" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>Article 15-06</a>.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (2)
+                  </p>
+               		
+               <p class="content2">
+                  Accessory structure as defined in <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE" data-chunk-id="CH15ZORE_ART15-06DE" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>Article 15-06</a>.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (3)
+                  </p>
+               		
+               <p class="content2">
+                  Junior accessory dwelling unit as defined in <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE" data-chunk-id="CH15ZORE_ART15-06DE" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>Article 15-06</a>.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (4)
+                  </p>
+               		
+               <p class="content2">
+                  Living area means the interior habitable area of a dwelling unit including basements
+                  and attics but does not include a garage or any accessory structure.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (5)
+                  </p>
+               		
+               <p class="content2">
+                  Passageway means a pathway that is unobstructed clear to the sky and extends from
+                  a street to one entrance of the accessory dwelling unit.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (6)
+                  </p>
+               		
+               <p class="content2">
+                  Short-term rental means a dwelling unit which is used for transient occupancy for
+                  periods of up to thirty consecutive days for which payment is required.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (7)
+                  </p>
+               		
+               <p class="content2">
+                  Tandem parking means two or more automobiles parked on a driveway or in any other
+                  location on a lot, lined up behind one another.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1283781" data-product-id="16616" data-ordinance-id="1283781">Ord. No. 399</a>, § 1(Att. 1), 4-3-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.020NUUNALSIMIMUMIDW" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.020NUUNALSIMIMUMIDW" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.020NUUNALSIMIMUMIDW" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.020NUUNALSIMIMUMIDW" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.020 - Number of units allowed for single-family and multi-family dwellings.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               (a)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Single-family dwellings.</span> One accessory dwelling unit and up to two junior accessory dwelling units within
+               the proposed space of a single-family dwelling or existing space of a single-family
+               dwelling or accessory structure, and one detached, new construction accessory dwelling
+               unit with minimum four-foot side and rear yard setbacks shall be allowed on any one
+               lot which contains an existing or concurrently approved single-family dwelling unit.
+               Such units are an accessory use to the main dwelling unit and shall not count toward
+               density limitations or be considered a new residential use.
+               </p>
+            		
+            <p class="incr0">
+               (b)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Multi-family dwellings.</span> Refer to Section <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN_15-56.030ADPRMUMIDW" data-chunk-id="CH15ZORE_ART15-56ACDWUN_15-56.030ADPRMUMIDW" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-56.030</a> of this article.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1283781" data-product-id="16616" data-ordinance-id="1283781">Ord. No. 399</a>, § 1(Att. 1), 4-3-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.025DESTACDWUNJUACDWUN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.025DESTACDWUNJUACDWUN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.025DESTACDWUNJUACDWUN" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.025DESTACDWUNJUACDWUN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.025 - Development standards for accessory dwelling units and junior accessory dwelling units.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               Except as otherwise provided in Section <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" data-chunk-id="CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-56.050</a>, each accessory dwelling unit shall comply with all of the following development
+               standards:
+               
+               </p><p class="incr1">
+                  (a)
+                  </p>
+               		
+               <p class="content2">
+                  <span class="bold">Newly constructed accessory dwelling unit that adds floor area.</span> Each newly constructed accessory dwelling unit that adds floor area to a lot is required
+                  to satisfy the following criteria:
+                  </p>
+               		
+               <p class="incr2">
+                  (1)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Zoning regulations.</span> Unless otherwise provided in this Article, the accessory dwelling unit shall comply
+                  with applicable zoning regulations (including, but not limited to, required setbacks,
+                  floor area limits, site coverage, and height limits). For lots that are at least ten
+                  thousand net square feet in size, a one-time ten percent increase in site coverage
+                  and allowable floor area may be granted by the Community Development Director if the
+                  new accessory dwelling unit is subject to a recorded enforceable restriction limiting
+                  occupancy of the unit to lower-income households as defined in Health and Safety Code
+                  section 50079.5 or moderate-income households, as defined in in Health and Safety
+                  Code section 50052.5, and limiting any rent to be charged for the unit to the affordable
+                  rent set pursuant to Health and Safety Code section 50053. Notwithstanding the foregoing,
+                  an attached or detached accessory dwelling of up to one thousand square feet with
+                  four-foot side and rear setbacks shall be allowed where consistent with the floor
+                  area requirements in section <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN_15-56.025DESTACDWUNJUACDWUN" data-chunk-id="CH15ZORE_ART15-56ACDWUN_15-56.025DESTACDWUNJUACDWUN" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-56.025</a>(a)(3).
+                  </p>
+               		
+               <p class="incr2">
+                  (2)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Sale and rental.</span>
+                  </p>
+               		
+               <p class="incr3">
+                  a.
+                  </p>
+               		
+               <p class="content4">
+                  An accessory dwelling unit may be rented separately from the primary single-family
+                  dwelling or multi-family dwelling.
+                  </p>
+               		
+               <p class="incr3">
+                  b.
+                  </p>
+               		
+               <p class="content4">
+                  An accessory dwelling unit or junior accessory dwelling unit shall not be used as
+                  a short-term rental.
+                  </p>
+               		
+               <p class="incr3">
+                  c.
+                  </p>
+               		
+               <p class="content4">
+                  An accessory dwelling unit may not be sold or otherwise conveyed separately from the
+                  primary dwelling on a lot unless done so in accordance with Government Code section
+                  65852.26.
+                  </p>
+               		
+               <p class="incr2">
+                  (3)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Floor area.</span>
+                  </p>
+               		
+               <p class="incr3">
+                  a.
+                  </p>
+               		
+               <p class="content4">
+                  Except as provided in subsection (b) below, the maximum floor area limit for an accessory
+                  dwelling unit shall be as follows:
+                  </p>
+               		
+               <p class="incr4">
+                  i.
+                  </p>
+               		
+               <p class="content5">
+                  an attached accessory dwelling unit shall not exceed fifty percent of the existing
+                  or concurrently approved living area of a single-family dwelling, with a maximum size
+                  of one thousand two hundred square feet, not including the garage.
+                  </p>
+               		
+               <p class="incr4">
+                  ii.
+                  </p>
+               		
+               <p class="content5">
+                  a detached accessory dwelling unit, not located within a side or rear setback area,
+                  shall have a maximum size of one thousand two hundred square feet of living area,
+                  not including the garage.
+                  </p>
+               		
+               <p class="incr4">
+                  iii.
+                  </p>
+               		
+               <p class="content5">
+                  In no case shall the above requirements in subsections (i) and (ii) prohibit the construction
+                  of one accessory dwelling of up to eight hundred square feet with minimum side and
+                  rear setbacks of four feet or located within the front setback.
+                  </p>
+               		
+               <p class="incr4">
+                  iv.
+                  </p>
+               		
+               <p class="content5">
+                  Notwithstanding the foregoing, conversion of space within an existing single-family
+                  dwelling is not subject to these floor area limitations.
+                  </p>
+               		
+               <p class="incr3">
+                  b.
+                  </p>
+               		
+               <p class="content4">
+                  Both the accessory dwelling unit and the primary dwelling unit shall count toward
+                  the total maximum allowable floor area set by applicable zoning regulations. However,
+                  in no case shall floor area and site coverage requirements be applied to prohibit
+                  the construction of one accessory dwelling unit that does not exceed eight hundred
+                  square feet gross floor area and has minimum side and rear yard setbacks of at least
+                  four feet.
+                  </p>
+               		
+               <p class="incr3">
+                  c.
+                  </p>
+               		
+               <p class="content4">
+                  If an accessory dwelling unit has a basement or an attic, that area is included as
+                  part of the total maximum floor area allowed.
+                  </p>
+               		
+               <p class="incr2">
+                  (4)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Height of accessory dwelling units.</span>
+                  </p>
+               		
+               <p class="incr3">
+                  a.
+                  </p>
+               		
+               <p class="content4">
+                  Attached accessory dwelling units. An accessory dwelling unit that is attached to
+                  the primary dwelling shall not exceed a height of twenty five feet or two stories
+                  or the height limitation that applies to the primary dwelling pursuant to this Chapter,
+                  whichever is lower.
+                  </p>
+               		
+               <p class="incr3">
+                  b.
+                  </p>
+               		
+               <p class="content4">
+                  Detached accessory dwelling units. Detached accessory dwelling units shall not exceed:
+                  </p>
+               		
+               <p class="incr4">
+                  i.
+                  </p>
+               		
+               <p class="content5">
+                  A height of sixteen feet for a detached accessory dwelling unit on a lot with an existing
+                  or proposed single family or multifamily dwelling unit; or
+                  </p>
+               		
+               <p class="incr4">
+                  ii.
+                  </p>
+               		
+               <p class="content5">
+                  A height of eighteen feet for a detached accessory dwelling unit on a lot with an
+                  existing or proposed multifamily, multistory dwelling; or
+                  </p>
+               		
+               <p class="incr4">
+                  iii.
+                  </p>
+               		
+               <p class="content5">
+                  A height of eighteen feet for a detached accessory dwelling unit on a lot with an
+                  existing or proposed single family or multifamily dwelling unit that is within one-half
+                  of one mile walking distance of a major transit stop or a high-quality transit corridor,
+                  as those terms are defined in Public Resources Code section 21155.
+                  </p>
+               		
+               <p class="incr4">
+                  iv.
+                  </p>
+               		
+               <p class="content5">
+                  An additional two feet in height is permitted to accommodate a roof pitch on the accessory
+                  dwelling unit that is aligned with the roof pitch of the primary dwelling unit.
+                  </p>
+               		
+               <p class="incr2">
+                  (5)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Setbacks.</span> Attached accessory dwelling units shall comply with the setbacks required for the
+                  primary dwelling unit. Detached accessory dwelling units shall have rear and side
+                  setbacks of no less than four feet. However, setbacks of less than four feet are allowed
+                  if the accessory dwelling unit is constructed in the same location and to the same
+                  dimensions as an existing structure that is demolished for the purpose of constructing
+                  the accessory dwelling unit. Front yard setback requirements of the underlying zoning
+                  district apply to accessory dwelling units except when it precludes the construction
+                  of one accessory dwelling unit of at least eight hundred square feet.
+                  </p>
+               		
+               <p class="incr2">
+                  (6)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Construction above garage.</span> Notwithstanding other setback requirements in the City Code, a setback no less than
+                  four feet from the side and rear lot lines shall be allowed for an accessory dwelling
+                  unit that is constructed above a garage that is non-conforming as to setbacks.
+                  </p>
+               		
+               <p class="incr2">
+                  (7)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Parking.</span> Parking requirements for an accessory dwelling unit shall be as follows:
+                  </p>
+               		
+               <p class="incr3">
+                  a.
+                  </p>
+               		
+               <p class="content4">
+                  Unless otherwise provided in this section, one off-street parking space shall be provided
+                  for the accessory dwelling unit in addition to the off-street covered parking spaces
+                  required for the main dwelling.
+                  </p>
+               		
+               <p class="incr3">
+                  b.
+                  </p>
+               		
+               <p class="content4">
+                  No parking space shall be required for an accessory dwelling unit in any of the following
+                  instances:
+                  </p>
+               		
+               <p class="incr4">
+                  i.
+                  </p>
+               		
+               <p class="content5">
+                  The accessory dwelling unit is located within one-half mile of public transit as defined
+                  in Government Code § 65852.2;
+                  </p>
+               		
+               <p class="incr4">
+                  ii.
+                  </p>
+               		
+               <p class="content5">
+                  The accessory dwelling unit is located within a designated architecturally and historically
+                  significant historic district;
+                  </p>
+               		
+               <p class="incr4">
+                  iii.
+                  </p>
+               		
+               <p class="content5">
+                  The accessory dwelling unit is part of the proposed or existing primary residence
+                  or accessory structure;
+                  </p>
+               		
+               <p class="incr4">
+                  iv.
+                  </p>
+               		
+               <p class="content5">
+                  When on-street parking permits are required but not offered to the occupant of the
+                  accessory dwelling unit;
+                  </p>
+               		
+               <p class="incr4">
+                  v.
+                  </p>
+               		
+               <p class="content5">
+                  When there is a car share vehicle located within one block of the accessory dwelling
+                  unit;
+                  </p>
+               		
+               <p class="incr4">
+                  vi.
+                  </p>
+               		
+               <p class="content5">
+                  The accessory dwelling unit is subjected to a recorded enforceable restriction limiting
+                  occupancy of the unit to lower income households as defined in Health and Safety Code
+                  section 50079.5 and limiting any rent to be charged for the unit to the affordable
+                  rent set pursuant to Health and Safety Code section 50053;
+                  </p>
+               		
+               <p class="incr4">
+                  vii.
+                  </p>
+               		
+               <p class="content5">
+                  When a permit application for an accessory dwelling unit is submitted with a permit
+                  application to create a new single-family dwelling or a new multifamily dwelling on
+                  the same lot; or
+                  </p>
+               		
+               <p class="incr4">
+                  viii.
+                  </p>
+               		
+               <p class="content5">
+                  The unit is permitted as a junior accessory dwelling unit.
+                  </p>
+               		
+               <p class="incr3">
+                  c.
+                  </p>
+               		
+               <p class="content4">
+                  When a garage, carport, or covered parking structure is demolished in conjunction
+                  with the construction of an accessory dwelling unit, any lost off-street parking spaces
+                  required for the main dwelling are not required to be replaced.
+                  </p>
+               		
+               <p class="incr2">
+                  (8)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Access.</span> The accessory dwelling unit shall be served by the same driveway access to the street
+                  as the existing or concurrently approved main dwelling. A separate driveway shall
+                  be allowed for (a) an accessory dwelling unit on a corner lot where the secondary
+                  frontage does not already have a driveway and (b) an interior lot that has site frontage
+                  of at least eighty feet.
+                  </p>
+               		
+               <p class="incr2">
+                  (9)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Entrances.</span> No access shall be allowed between an accessory building and an accessory dwelling
+                  unit if both structures are connected by a common wall, with the exception that an
+                  attached garage may have interior access to an accessory dwelling unit.
+                  </p>
+               		
+               <p class="incr2">
+                  (10)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Covered patios.</span> Attached covered patios shall comply with the applicable setback requirements of
+                  the underlying zoning district.
+                  </p>
+               		
+               <p class="incr2">
+                  (11)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Appearance.</span> All new construction to create an accessory dwelling unit must match the existing
+                  or concurrently approved main structure in color.
+                  </p>
+               		
+               <p class="incr2">
+                  (12)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Decks.</span> Roof decks are not permitted on any newly constructed accessory dwelling unit.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (b)
+                  </p>
+               		
+               <p class="content2">
+                  <span class="bold">Accessory dwelling unit constructed within existing floor area.</span>
+                  </p>
+               		
+               <p class="incr2">
+                  (1)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Conversion of existing floor area.</span> Each application for a building permit to convert existing interior space of an existing
+                  single-family dwelling, multi-family dwelling, or accessory structure to an accessory
+                  dwelling unit shall comply with the following standards:
+                  </p>
+               		
+               <p class="incr3">
+                  a.
+                  </p>
+               		
+               <p class="content4">
+                  The accessory dwelling unit must:
+                  </p>
+               		
+               <p class="incr4">
+                  i.
+                  </p>
+               		
+               <p class="content5">
+                  Be located within a district zoned to allow for single-family or multi-family dwellings;
+                  </p>
+               		
+               <p class="incr4">
+                  ii.
+                  </p>
+               		
+               <p class="content5">
+                  Be contained within the existing interior space of a single-family dwelling, multi-family
+                  dwelling, or accessory building, including, but not limited to, a studio, pool house,
+                  or other similar structure. An existing accessory building may be expanded by no more
+                  than one hundred fifty square feet beyond the physical dimensions of the existing
+                  structure for the sole purpose of accommodating ingress and egress.
+                  </p>
+               		
+               <p class="incr4">
+                  iii.
+                  </p>
+               		
+               <p class="content5">
+                  Have independent exterior access from the existing main dwelling;
+                  </p>
+               		
+               <p class="incr4">
+                  iv.
+                  </p>
+               		
+               <p class="content5">
+                  Not be intended for sale, or sold, separately from the main dwelling except in accordance
+                  with Government Code section 65852.26;
+                  </p>
+               		
+               <p class="incr4">
+                  v.
+                  </p>
+               		
+               <p class="content5">
+                  Have side and rear setbacks sufficient for fire safety as determined by the fire agency
+                  having jurisdiction; and
+                  </p>
+               		
+               <p class="incr4">
+                  vi.
+                  </p>
+               		
+               <p class="content5">
+                  Comply with all building codes and health and safety regulations.
+                  </p>
+               		
+               <p class="incr3">
+                  b.
+                  </p>
+               		
+               <p class="content4">
+                  Parking.
+                  </p>
+               		
+               <p class="incr4">
+                  i.
+                  </p>
+               		
+               <p class="content5">
+                  When a garage, carport, or covered parking structure is demolished in conjunction
+                  with the construction of an accessory dwelling unit, or converted to an accessory
+                  dwelling unit, any lost off-street parking spaces required for the main dwelling are
+                  not required to be replaced .
+                  </p>
+               		
+               <p class="incr4">
+                  ii.
+                  </p>
+               		
+               <p class="content5">
+                  No additional parking will be required for the accessory dwelling unit in instances
+                  where the accessory dwelling unit is part of the existing main dwelling or an existing
+                  residential accessory structure.
+                  </p>
+               		
+               <p class="incr3">
+                  c.
+                  </p>
+               		
+               <p class="content4">
+                  Converted garage setbacks. No setback shall be required for an existing garage that
+                  is converted to an accessory dwelling unit or to a portion of an accessory dwelling
+                  unit.
+                  </p>
+               		
+               <p class="incr2">
+                  (2)
+                  </p>
+               		
+               <p class="content3">
+                  <span class="bold">Creation of a junior accessory dwelling unit.</span> Each application for a building permit to convert floor area of an existing or proposed
+                  single-family dwelling to a junior accessory dwelling unit shall comply with the following
+                  standards:
+                  </p>
+               		
+               <p class="incr3">
+                  a.
+                  </p>
+               		
+               <p class="content4">
+                  The junior accessory dwelling unit shall be located within a district zoned to allow
+                  for single-family dwellings.
+                  </p>
+               		
+               <p class="incr3">
+                  b.
+                  </p>
+               		
+               <p class="content4">
+                  The junior accessory dwelling unit shall be constructed within the walls of an existing
+                  or proposed single-family structure including an attached garage, and shall be no
+                  more than five hundred square feet in size.
+                  </p>
+               		
+               <p class="incr3">
+                  c.
+                  </p>
+               		
+               <p class="content4">
+                  The junior accessory dwelling unit shall have a separate entrance from the main entrance
+                  to the proposed or existing single-family residence.
+                  </p>
+               		
+               <p class="incr3">
+                  d.
+                  </p>
+               		
+               <p class="content4">
+                  The junior accessory dwelling unit shall contain an efficiency kitchen, which shall
+                  include all of the following:
+                  </p>
+               		
+               <p class="incr4">
+                  i.
+                  </p>
+               		
+               <p class="content5">
+                  A cooking facility with appliances; and
+                  </p>
+               		
+               <p class="incr4">
+                  ii.
+                  </p>
+               		
+               <p class="content5">
+                  A food preparation counter and storage cabinets that are of reasonable size in relation
+                  to the size of the junior accessory dwelling unit.
+                  </p>
+               		
+               <p class="incr3">
+                  e.
+                  </p>
+               		
+               <p class="content4">
+                  The junior accessory dwelling unit shall have side and rear setbacks sufficient for
+                  safety, as determined by the fire agency having jurisdiction.
+                  </p>
+               		
+               <p class="incr3">
+                  f.
+                  </p>
+               		
+               <p class="content4">
+                  The junior accessory dwelling unit must comply with all building codes and health
+                  and safety codes.
+                  </p>
+               		
+               <p class="incr3">
+                  g.
+                  </p>
+               		
+               <p class="content4">
+                  Parking. No additional parking shall be required as a condition to grant a permit
+                  for the creation of a junior accessory dwelling unit.
+                  </p>
+               		
+               <p class="incr3">
+                  h.
+                  </p>
+               		
+               <p class="content4">
+                  Owner-occupancy is required in the structure in which a junior accessory dwelling
+                  unit is permitted. The owner may reside in either the single-family dwelling portion
+                  of the structure or the junior accessory dwelling unit. Pursuant to Government Code
+                  Section 65852.22(a)(2), owner-occupancy shall not be required if the owner is another
+                  governmental agency, land trust, or housing organization.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  (c)
+                  </p>
+               		
+               <p class="content2">
+                  <span class="bold">Impact Fee Exemptions.</span> Accessory dwelling units up to seven hundred fifty square feet are exempt from impact
+                  fees, and accessory dwelling units that are seven hundred fifty square feet or larger
+                  may be charged impact fees but only such fees that are proportional in size (by square
+                  foot) to those for the primary dwelling unit.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1283781" data-product-id="16616" data-ordinance-id="1283781">Ord. No. 399</a>, § 1(Att. 1), 4-3-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.030ADPRMUMIDW" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.030ADPRMUMIDW" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.030ADPRMUMIDW" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.030ADPRMUMIDW" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.030 - Additional provisions for multi-family dwellings.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               (a)
+               </p>
+            		
+            <p class="content1">
+               At least one accessory dwelling unit shall be allowed within an existing multifamily
+               dwelling dwellings as defined in Section <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.240DW" data-chunk-id="CH15ZORE_ART15-06DE_15-06.240DW" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-06.240</a>(c). The maximum number of accessory dwelling units in a multi-family dwelling shall
+               be 25 percent of the existing units as of the date of the dwelling's Certificate of
+               Occupancy; any fraction of a unit under this formula shall be allowed as a whole unit.
+               Any accessory dwelling units in a multifamily dwelling shall be created within existing
+               spaces that are not part of the living area, including, but not limited to, storage
+               rooms, boiler rooms, passageways, attics, basements, or garages, provided that the
+               accessory dwelling unit so created complies with the California Building Code.
+               </p>
+            		
+            <p class="incr0">
+               (b)
+               </p>
+            		
+            <p class="content1">
+               In addition to the accessory dwelling units allowed by subsection (a) above, not more
+               than two detached accessory dwelling units may be allowed for a multi-family dwelling
+               subject to the standards, requirements, and restrictions of this Chapter.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1283781" data-product-id="16616" data-ordinance-id="1283781">Ord. No. 399</a>, § 1(Att. 1), 4-3-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.035OWOCRE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.035OWOCRE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.035OWOCRE" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.035OWOCRE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.035 - Owner occupancy restrictions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               (a)
+               </p>
+            		
+            <p class="content1">
+               With respect to a lot containing a junior accessory dwelling unit, the owner must
+               reside in either the remaining portion of the structure or the newly created junior
+               accessory dwelling unit. Prior to the issuance of a building permit, the applicant
+               shall provide evidence that a deed restriction has been recorded on the title of the
+               affected property stating that one of the dwelling units on the lot shall remain owner
+               occupied. Owner occupancy shall not be required if the owner is another governmental
+               agency, land trust, or housing organization.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1325623" data-product-id="16616" data-ordinance-id="1325623">Ord. No. 405</a>, § 1(Att. 1.5), 10-15-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.040PE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.040PE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.040PE" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.040PE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.040 - Permitting.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               Notwithstanding any other provision of this Chapter, within sixty days of receipt
+               of a complete application, the Community Development Department shall ministerially
+               approve or deny any application for a junior accessory dwelling unit or an accessory
+               dwelling unit that is in compliance with the requirements of this Article or otherwise
+               qualifies for ministerial approval pursuant to State law.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1283781" data-product-id="16616" data-ordinance-id="1283781">Ord. No. 399</a>, § 1(Att. 1), 4-3-2024; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1325623" data-product-id="16616" data-ordinance-id="1325623">Ord. No. 405</a>, § 1(Att. 1.5), 10-15-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.045INLEACDWUNJUACDWUN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.045INLEACDWUNJUACDWUN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.045INLEACDWUNJUACDWUN" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.045INLEACDWUNJUACDWUN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.045 - Inspections of legalized accessory dwelling units and junior accessory dwelling units.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               (a)
+               </p>
+            		
+            <p class="content1">
+               Where the application is for legalization of any existing accessory dwelling unit
+               or junior accessory dwelling unit under Section <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" data-chunk-id="CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-56.050</a>, an inspection of the property shall be conducted to determine that the existing
+               accessory dwelling unit or junior accessory dwelling unit under Section <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" data-chunk-id="CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-56.050</a> will comply with all applicable building, health, fire and zoning codes. Such inspections
+               shall be performed by the City or by an independent contractor retained by the City
+               for such purpose, and the applicant thereof shall pay the cost.
+               </p>
+            		
+            <p class="incr0">
+               (b)
+               </p>
+            		
+            <p class="content1">
+               The inspections to be conducted pursuant to this Section shall not constitute an assumption
+               by the City, or by anyone acting in its behalf, of any liability with respect to the
+               physical condition of the property, nor shall the authorization to construct a new
+               accessory dwelling unit or junior accessory dwelling unit or the legalization of an
+               existing accessory dwelling unit or junior accessory dwelling unit, pursuant to this
+               Code, represent a warranty by the City to the owner of the property or any other person
+               that such property fully complies with all applicable building, health and fire codes.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" data-skip-id="_CH15ZORE_ART15-56ACDWUN_15-56.050LEEXACDWUNJUACDWUN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">15-56.050 - Legalization of existing accessory dwelling units and junior accessory dwelling units.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               (a)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Purpose of Section.</span> It is in the public interest that all residents of the City live in safe, sanitary
+               housing conditions. Accessory dwelling units and junior accessory dwelling units currently
+               exist which were created prior to the adoption of this Article. In order to encourage
+               the legitimating of such units under the law, the owners of property on which accessory
+               dwelling units and junior accessory dwelling units are located should be encouraged
+               to legalize such units provided the units are determined to be both safe and sanitary
+               for continued human occupancy. Conversely, if existing accessory dwelling units or
+               junior accessory dwelling units are not safe and sanitary for continued human occupancy,
+               the City has the responsibility to either insure they are made both safe and sanitary
+               or their use for human occupancy is discontinued. The purpose of this Section is to
+               establish special procedures and standards for legalization of existing accessory
+               dwelling units and junior accessory dwelling units that are or can be made fit for
+               human occupancy.
+               </p>
+            		
+            <p class="incr0">
+               (b)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Scope of Section.</span> This Section shall apply only to accessory dwelling units or junior accessory dwelling
+               units established prior to February 19, 2003, but after August 18, 1984, within a
+               structure for which a building permit was issued, or otherwise was lawfully constructed,
+               and which complied with any applicable zoning or development standards in force at
+               the time of construction. Any accessory dwelling unit or junior accessory dwelling
+               unit established from and after February 19, 2003, shall be deemed a new unit subject
+               to the remaining provisions of this Article.
+               </p>
+            		
+            <p class="incr0">
+               (c)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Contents of application.</span> Application to legalize an existing accessory dwelling unit or junior accessory dwelling
+               unit shall be filed with the Community Development Director on such form as shall
+               be prescribed. The application shall be accompanied by the following:
+               </p>
+            		
+            <p class="incr1">
+               (1)
+               </p>
+            		
+            <p class="content2">
+               A vicinity map showing the location of the site.
+               </p>
+            		
+            <p class="incr1">
+               (2)
+               </p>
+            		
+            <p class="content2">
+               An accurate scale drawing showing the location of all structures, trees, landscaping
+               and off-street parking spaces on the site.
+               </p>
+            		
+            <p class="incr1">
+               (3)
+               </p>
+            		
+            <p class="content2">
+               Inspection reports by the City or an independent contractor, as required under Section
+               <a href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN_15-56.040PE" data-chunk-id="CH15ZORE_ART15-56ACDWUN_15-56.040PE" class="section-link" data-product-id="16616"><span class="popoverPositioner"></span>15-56.040</a> of this Article.
+               </p>
+            		
+            <p class="incr1">
+               (4)
+               </p>
+            		
+            <p class="content2">
+               A preliminary title report covering the site, or other evidence showing the applicant
+               to be the owner of the property.
+               </p>
+            		
+            <p class="incr1">
+               (5)
+               </p>
+            		
+            <p class="content2">
+               If the site is a hillside lot, either or both of the following documents shall be
+               furnished if requested by the Community Development Director: (i) a topographic map
+               of the site showing contours at intervals of not more than five feet; and/or (ii)
+               a geologic report on the site prepared by a certified engineering geologist or a registered
+               civil engineer qualified in soil mechanics.
+               </p>
+            		
+            <p class="incr1">
+               (6)
+               </p>
+            		
+            <p class="content2">
+               If the existing accessory dwelling unit or junior accessory dwelling unit is served
+               by a septic system, a description thereof together with a drawing showing the location
+               of the septic tank and leach field on the site.
+               </p>
+            		
+            <p class="incr0">
+               (d)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Standards.</span> Existing accessory dwelling units and junior accessory dwelling units shall comply
+               with the following standards:
+               </p>
+            		
+            <p class="incr1">
+               (1)
+               </p>
+            		
+            <p class="content2">
+               Where the accessory dwelling unit or junior accessory dwelling unit is located upon
+               a hillside lot, the applicant shall demonstrate, to the satisfaction of the Community
+               Development Director, that the accessory dwelling unit or junior accessory dwelling
+               unit is not subject to actual or potential damage from landslide, earth movement or
+               other geologic hazards.
+               </p>
+            		
+            <p class="incr1">
+               (2)
+               </p>
+            		
+            <p class="content2">
+               In lieu of compliance with the Uniform Building Code, the accessory dwelling unit
+               or junior accessory dwelling unit shall comply with the Uniform Housing Code as adopted
+               by the City and shall otherwise comply with applicable health and fire codes.
+               </p>
+            		
+            <p class="incr1">
+               (3)
+               </p>
+            		
+            <p class="content2">
+               Where the accessory dwelling unit or junior accessory dwelling unit is served by a
+               septic tank, the septic system shall be inspected and approved by the County Health
+               Department. In addition, the applicant shall execute and record a deferred improvement
+               agreement wherein the applicant and the applicant's successors will be obligated to
+               connect the accessory dwelling unit or junior accessory dwelling unit, and the main
+               dwelling if also served by a septic system, to a sanitary sewer whenever the same
+               becomes available and to pay the applicant's or the applicant's successors' proportionate
+               share of the installation cost.
+               </p>
+            		
+            <p class="incr0">
+               (e)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Disqualified existing units.</span> Any unpermitted accessory dwelling unit or junior accessory dwelling unit constructed
+               prior to January 1, 2018, will not be denied approval unless correcting violations
+               of the Building Code, Government Code section 65852.2, or this Article is necessary
+               to protect the health and safety of the public or occupants of the structure, or the
+               building is deemed substandard pursuant to Health &amp; Safety Code section 17920.3.
+               </p>
+            		
+            <p class="incr0">
+               (f)
+               </p>
+            		
+            <p class="content1">
+               <span class="bold">Burden of proof.</span> Wherever in this Section the legalization of an existing accessory dwelling unit
+               or junior accessory dwelling unit depends upon the establishment of any event occurring
+               on or before a specified date, the burden of proof shall be upon the applicant.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1047840" data-product-id="16616" data-ordinance-id="1047840">Ord. No. 376</a>, § 1(Exh. A), 10-21-2020; <a class="ordinance-link" href="https://library.municode.com/ca/saratoga/ordinances/code_of_ordinances?nodeId=1283781" data-product-id="16616" data-ordinance-id="1283781">Ord. No. 399</a>, § 1(Att. 1), 4-3-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!---->
+        </ul>
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-55COUSPE_15-55.130AP" ng-href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-55COUSPE_15-55.130AP" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 15-55.130 - Appeals.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-57MICOQUPR" ng-href="https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-57MICOQUPR" ng-if="vm.content.nextNode">Article 15-57 - MINISTERIAL CONSIDERATION OF QUALIFYING PROJECTS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+    </div><!---->
+</div>

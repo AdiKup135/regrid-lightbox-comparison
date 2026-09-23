@@ -1,0 +1,163 @@
+Sec. 26-08-040. - Development standards.
+
+A. General. Table 8-2 identifies the development standards in the residential zones.
+
+B. Combining Zones. Properties with a combining zone designation as shown in the zoning database (ex. LG local guidelines combining district) may be subject to addition development standards and design guidelines. Where such designations apply, see the appropriate zoning code section for more information on whether the applicable combining zone may modify the development standards.
+
+Table 8-2:Development Standards - Residential Zones
+
+Key of symbols for Table 8-2:
+
+† = Standard indicated in supplemental standards column
+
+| Standard | AR Zone | RR Zone | R1 Zone | R2 Zone | R3 Zone | Supplemental Standards |
+| Acres per Dwelling Unit (min.) | 1-20 | 1-20 | N/A | N/A | N/A | 26-08-040.F; 26-16-020 |
+| Max. Dwelling Units per Acre (max.) | N/A | N/A | 1-6 | 6-12 | 12-20 | 26-08-040.F; 26-16-020 |
+| Lot Size (min. sq. ft.) | See 26-08- 040.G | See 26-08- 040.G | 6,000 | 6,000 | 6,000 | 26-08-040.G; 26-16-030 |
+| Lot Width (min. ft.) | 80 | 80 | 60 | 60 | 80 | |
+| Front Property Line Setback (min. ft.) | 30 | 20 | 20 | 20 | 15 | 26-08-040.J; 26-16-060 |
+| Street Side Property Line Setback (min. ft.) | 30 | 20 | 20 | 20 | 15 | 26-08-040.J; 26-16-060 |
+| Interior Side Property Line Setback (min. ft.) | 10 | 5 | 5 | 5 | 5 | 26-08-040.J; 26-16-060 |
+| Rear Property Line Setback (min. ft.) | 20 | 20 | 20 | 20 | 10 | 26-08-040.J; 26-16-060 |
+| Front Street Centerline Setbacks (min. ft.) | 55 | 45 | 45 | 45 | 45 | 26-16-060 |
+| Side Street Centerline Setbacks (min. ft.) | 55 | 45 | 45 | 45 | 45 | 26-16-060 |
+| Lot Coverage (max.) | See 26-08- 040.I.1 | 35% | 40% | 50% | 60% | 26-08-040.I; 26-16-050 |
+| Main Building Height (max. ft.) | 35 | 35 | 35 | 35 | † | 26-08-040.H |
+| Accessory Building Height (max. ft.) | 35 | 35 | 15 | 35 | 1 story | 26-08-040.H |
+| Multi Family Development Standards | † | † | † | † | † | † See 26-08-050 |
+| Parking | † | † | † | † | † | † See Article 86 |
+
+C. Affordable Housing. Development standards in this article may be modified for affordable housing and other priority projects in accordance with Article 89 (affordable housing program requirements and incentives).
+
+D. Cottage Housing. In the R2 and R3 zones, cottage housing developments are subject to the standards in Section 26-88-263 (cottage housing developments).
+
+E. R2 Multi-Family. In the R2 zone, multifamily developments of five (5) or more units are subject to the high density residential (R3) development standards including those listed in Table 8-2 and additional R3 standards listed in 26-08-040.
+
+F. Density Standards.
+
+1. Reduced Density in Residential Zones.
+
+a. All residential projects shall be designed to meet the minimum density requirements shown in the general plan land use element or on the sectional district maps, whichever is more restrictive.
+
+b. Nothing set forth in this section shall be construed to prohibit the construction of a single-family dwelling on a single lot of record.
+
+2. R3 Density Equivalents. In the R3 zone, residential densities are calculated in density unit equivalents shown in Table 8-3 using net parcel area (excluding right-of-way dedications).
+
+Table 8-3:R-3 Residential Density Unit Equivalents
+
+| Dwelling Unit Size | Density Units |
+| Micro Apt or Studio (<500 sq. ft.) | 0.33 density unit |
+| One-bedroom (<750 sq. ft.) | 0.5 density unit |
+| Two-bedroom (<1,000 sq. ft.) | 0.75 density unit |
+| Three-bedroom | 1.0 density unit |
+| Four or more bedrooms | 1.5 density units |
+
+G. Lot Size Standards.
+
+1. AR Zone. The minimum lot size in the AR zone is:
+
+a. 1 acre on lots served by public water; and
+
+b. 1.5 acres on lots that are not served by public water.
+
+2. RR Zone.
+
+a. The minimum lot size in the RR zone is twenty thousand (20,000) square feet on lands designated urban residential on the general plan land use map.
+
+b. On lands designated rural residential on the general plan land use map, the minimum lot size in the RR zone is:
+
+(1) One (1) acre on lots served by public water; and
+
+(2) One and one-half (1.5) acres on lots that are not served by public water.
+
+3. Williamson Act Lands. See Section 26-16-030.A (Williamson Act Lands).
+
+4. Clustered Development. See Section 26-16-030.B (Clustered Development).
+
+H. Height Standards.
+
+1. Increased Building Height. See Section 26-16-040.A (Increased Building Height).
+
+2. Solar Impacts - R2 Zone.
+
+a. An application for a new main building in the R2 zone shall include evidence showing compliance with paragraph (2) below if the proposed building:
+
+(1) Exceeds fifteen feet (15') in height; and
+
+(2) Is located on a property with a side yard that abuts a north, northwesterly or northeasterly property line.
+
+b. The proposed building may not cast a shadow greater than ten percent (10%) of the solar collection absorption area on the adjacent lot at any one (1) time between the hours of 9:00 a.m. to 3:00 p.m. on December 21 ^ st local standard time.
+
+3. R3 Increased Height. In the R3 zone, a maximum building height of three (3) stories and forty feet (40') is allowed with design review approval for:
+
+a. Housing opportunity area type "A" projects; or
+
+b. Projects where the majority of resident parking is provided as tuck-under (podium-style) ground floor parking.
+
+4. R3 Abutting R1 and R2. The following applies to R3 buildings within thirty feet (30') of an abutting R1 or R2 zone:
+
+a. The maximum height of a building within thirty feet (30') of the R1 or RR zone is thirty feet (30').
+
+b. A second story within thirty feet (30') of the R1 or R2 zone must be set back an additional five feet (5') or more from the first-floor building wall.
+
+I. Lot Coverage.
+
+1. AR Zone. Table 8-4 shows maximum allowed lot coverage in the AR zone.
+
+Table 8-4: AR Zone Lot Coverage
+
+| Parcel Size | Maximum Allowed Lot Coverage |
+| Parcels less than 2 acres | 20% |
+| Parcels 2 to 5 acres | 18,000 sq. ft. or 15%, whichever is greater |
+| Parcels more than 5 acres to 20 acres | 30,000 sq. ft. or 10%, whichever is greater |
+| Parcels more than 20 acres | 85,000 sq. ft. or 5%, whichever is greater |
+
+2. R3 Zone.
+
+a. Lot area not occupied by buildings in the R3 zones shall be devoted to landscaping, lawns, private yard spaces, play or recreational areas, and open parking and access areas.
+
+b. The review authority may approve a ten percent (10%) increase in lot coverage upon finding that, due to the efficient use of land, the project provides sufficient on-site open space and recreation areas.
+
+3. Farm Operations in RR Zone. See Section 26-16-050.A (Increased Lot Coverage for Farm Operations).
+
+4. Greenhouses and Swimming Pools. See Section 26-16-050.B (Residential Greenhouses and Swimming Pools).
+
+J. Setbacks.
+
+1. R2 Abutting R1 or R2. If a side property line in the R2 zone abuts an R1 or RR zone, the minimum side yard setback is increased by one foot (1') for each four feet (4') of building height in excess of fifteen feet (15').
+
+2. R2 and R3 Setback Adjustments. The following setback adjustments apply in the R2 and R3 zones.
+
+a. In a proposed project with multiple buildings, minimum front and street side setbacks for individual buildings may be reduced up to five feet (5') so that the average setbacks for all buildings are at least:
+
+(1) Twenty feet (20') in the R2 zone; and
+
+(2) Fifteen feet (15') in the R3 zone.to obtain an average of twenty feet (20') for all buildings in the proposed development.
+
+b. On lots where access is gained to an interior court by way of a side yard, or where an entrance to a building faces the sideline, the minimum interior side setback is ten feet (10').
+
+3. Porches. Unenclosed front porches in multifamily projects may extend up to ten feet (10') into the required front setbacks provided that adequate sight distance is maintained from driveways, alleys or roads.
+
+4. Other Exceptions and Adjustments. See Section 26-16-060 (setbacks) for additional allowed exceptions and adjustments to setback standards.
+
+5. Agricultural Buffers. An agricultural buffer may be required for any nonagricultural land use that adjoins land zoned AR or designated as agricultural land in the general plan. See Section 26-88-040(f).
+
+K. Waived Covered Parking for Single-Family Dwellings. See Section 26-16-80.B (waived covered parking for single-family dwellings).
+
+L. Planned Developments and Condominiums.
+
+1. Where Allowed. Planned developments and condominiums are permitted in the RR, R1, R2, and R3 zones.
+
+2. Development Standards.n Lot size, setback, and coverage requirements in Table 8-2 do not apply to planned developments and condominiums.
+
+3. R1 Density. In the R1 zone, allowed densities for planned developments or condominiums shall be in accordance with the general plan land use element or the B combining district, whichever is more restrictive. Allowed density shall also consider density which could be accommodated following conventional subdivision design, acknowledging topographical variations and permitted conventional lot areas.
+
+4. Common Walls. Dwelling units in planned developments or condominiums may be attached and share common walls.
+
+5. Condominium Conversions. Condominium conversions proposed as part of planned developments or condominiums are subject to the requirements of Section 26-88-193 and applicable Housing Element policies.
+
+6. Review Criteria. When reviewing a proposed planned development or condominiums project, the review authority shall consider compatibility with adjacent development, unique characteristics, innovation, the provision of amenities, universal design, and housing affordability among relevant criteria.
+
+M. Accessory Buildings on Vacant Parcels. See Section 26-16-080.
+
+(Ord. No. 6444, § IV, 8-22-2023; Ord. No. 6403, 3-7-2023; Ord. No. 6335, § III(Exh. A), 2-9-2021)

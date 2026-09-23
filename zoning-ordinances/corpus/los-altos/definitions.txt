@@ -1,0 +1,49 @@
+14.02.010 - Definitions.
+
+"Frontage" means the property line(s) of a site abutting on a street.
+
+"Lot" means a parcel of land consisting of a single lot of record.
+
+1. "Lot of record" means a lot which is part of a subdivision and shown on a map thereof as recorded in the office of the county recorder, or a legally created parcel of land described by metes and bounds or shown on a parcel map which has been so recorded.
+
+2. "Corner lot" means a lot abutting the intersection of two or more streets. A lot abutting on a curved street or streets shall be considered a corner lot if straight lines drawn from the intersections of the lot lines with the street lines meet at an interior angle of one hundred thirty-five (135) degrees or less, or if the centerline of the street abutting the lot has an interior angle over the distance of any curve of one hundred thirty-five (135) degrees or less. A lot abutting a street and an alley shall not be considered a corner lot.
+
+3. "Interior lot" means a lot other than a corner lot.
+
+4. "Flag lot" means a lot having access to a street by means of a corridor of land not otherwise meeting the requirements of this chapter for site width.
+
+5. "Double frontage lot" means an interior lot having frontage on two parallel or approximately parallel streets.
+
+"Lot depth" means the horizontal distance between the front and the rear lot lines.
+
+"Lot line" means any boundary of a lot.
+
+1. "Front lot line" means, on an interior lot, the lot line abutting a street, or, on a corner lot, the shortest dimension of the lot fronting the street, or, on a double frontage lot, the lot line abutting the street providing the primary means of access to the lot, or, on a flag lot, the interior lot line most parallel to and nearest the street from which the means of access is obtained, except that where the average width of a flag lot exceeds its average depth and the longer dimension is considered the depth, the front lot line will be the property line from which the front yard is measured. On a corner lot, if more than one property line abutting on a street can be designated as a front lot line without creating a nonconforming lot or structure, then either property line may be deemed the front lot line.
+
+2. "Rear lot line" means the lot boundary opposite, or approximately opposite the front lot line. A lot bounded by only three lot lines will not have a rear lot line.
+
+3. "Side lot line" means any lot line, which is not a front or rear lot line, as follows:
+
+a. "Interior side lot line" means any lot line not abutting a street.
+
+b. "Exterior side lot line" means any lot line abutting a street.
+
+4. The city planner shall assign or designate lot lines for irregular-shaped parcels.
+
+"Lot width" means the horizontal distance between the side lot lines measured within the lot boundaries or the mean distance between the side lot lines within the buildable area.
+
+"Property line" means a line bounding a parcel of real property.
+
+"Setback" means the minimum required horizontal distance from a given point or line of reference such as a property line, to the nearest vertical wall or other element of a building or structure.
+
+"Yard" means an area within a lot, adjoining and measured from a lot, street, or plan line for a specified distance, open and unobstructed except for the uses and structures otherwise permitted the regulations of this chapter:
+
+1. Yard measurement. Required yards shall be measured as the minimum horizontal distance from the lot line to a line parallel thereto on the site.
+
+2. "Front yard" means a yard measured into a lot from the front lot line, extending the full width of the lot.
+
+3. "Rear yard" means a yard measured into a lot from the rear lot line, extending the full width of the lot, provided that for lots having no defined rear lot line, the rear yard shall be measured into the lot from the rearmost point of the lot depth to a line parallel to the front lot line. On a corner lot, the rear yard shall terminate at the exterior side yard.
+
+4. "Side yard" means a yard measured into a lot from a side lot line. An exterior side yard is a side yard measured from an exterior lot line or a street or plan line, extending between the front yard and the rear lot line; an interior side yard is a side yard measured from an interior lot line, extending between the front yard and the rear yard.
+
+(Ord. No. 2012-375, § 1, 1-24-2012; Ord. No. 2012-384, § 1, 7-24-2012; Ord. No. 2012-388, § 3, 11-13-2012; Ord. No. 2015-406, §§ 1, 2, 2-10-2015; Ord. No. 2015-408, § 1, 6-9-2015; Ord. No. 2015-409, § 1, 6-9-2015; Ord. No. 2015-414, § 1, 9-8-2015; Ord. No. 2016-418, § 2, 1-26-2016; Ord. No. 2016-423, § 14, 9-27-2016; Ord. No. 2016-427, § 2, 11-8-2016; Ord. No. 2018-448, § 2, 7-10-2018; Ord. No. 2018-451, § 2, 10-9-2018; Ord. No. 2021-478, § 1, 9-14-2021; Ord. No. 2024-519, § 2(App. B), 12-10-2024)

@@ -1,0 +1,326 @@
+§ 10-1.501 Minimum parcel size.
+
+(a) No parcel shall have a net area less than 43,560 square feet; however, the minimum lot area required shall be determined by Section 9-1.604 of the Los Altos Hills Municipal Code. Any parcel created prior to January 1, 1980 which does not meet these minimum lot area requirements may be used by the owner of the parcel, or any successor in interest, as a site for the use permitted in the district, provided all other regulations for the district are complied with, and such parcel has a minimum lot unit factor of 0.5. Parcels which have a lot unit factor of less than 0.5 will be allowed development only upon the issuance of a Conditional Development Permit.
+
+(b) Each lot shall contain a circle having a diameter of 160 feet inscribed totally within its net area.
+
+(c) Each lot shall contain an area of at least one net acre within a circle no greater than 350 feet in diameter.
+
+(d) Each lot shall be configured to avoid discontinuous segments and avoid areas of lot width or depth less than 30 feet, other than where such a configuration already exists and is not made narrower by the creation or alteration of the lot.
+
+(§ 1, Ord. 305, eff. October 3, 1986; § 1, Ord. 382, eff. May 17, 1996; § 1, Ord. 407, eff. July 15, 2000)
+
+§ 10-1.502 Development area.
+
+Except as provided in subsections (c) and (d) of this section, the amount of development area in square feet allowable on a parcel or lot shall not exceed the amounts determined by application of the formula in subsection (a) of this section where An is net area in acres, S is the average slope of the parcel or lot in percent, as defined in Section 10-1.202, LUF is the lot unit factor as defined by Section 10-1.202 and MDA is the maximum development area allowable.
+
+(a) Maximum Development Area Formula. For all parcels or lots, the allowable development area in square feet shall relate to the average slope of the parcel or lot and the Lot Unit Factor for the parcel or lot as specified in the formula given in subsections (1), (2), and (3) below:
+
+(1) For parcels or lots where S is equal to or less than 10%:
+
+MDA = LUF x 15,000 square feet.
+
+(2) For parcels or lots where S is more than 10% and less than 30%:
+
+MDA = LUF x [15,000 - 375 (S-10)] square feet.
+
+(3) For parcels or lots where S is equal to or greater than 30%:
+
+MDA = LUF x 7,500 square feet.
+
+(b) Development Area. Development area shall be measured in a horizontal plane and shall include the following:
+
+(1) Total floor area, as defined in Section 10-1.202 of this title;
+
+(2) The total area of land covered by structures not counted in subsection (b)(1) of this section, such as parking areas, patios, decks, walkways, swimming pools and tennis courts, together with other surfaces comprised of artificially emplaced building materials such as paving, roofing, masonry, stone or wood;
+
+(3) The first 100 feet of driveway, as measured along the center line, closest to the primary dwelling; and
+
+(4) That portion of a driveway exceeding 12 feet in width which is located beyond the area described in subsection (b)(3) of this section.
+
+Where there is a common driveway in a driveway easement or a panhandle and the driveway, or a portion of the driveway, serves more than one residence, then using the regulations stated in subsections (b)(3) and (b)(4) of this section, the amount of driveway area shall be proportioned to the residences based upon use of the driveway;
+
+(5) Exemptions. Walkways constructed of unconsolidated building materials such as decomposed granite, tanbark and other wood chips; roof overhangs unsupported from the ground; and synthetic turf material with natural appearance and drainage characteristics similar to natural turf, when used on athletic fields at public recreational facilities and schools, subject to a conditional use permit approval by the City Council;
+
+(6) Development Area Bonus. A development area bonus (500 square foot maximum) of one square foot for every one square foot of roof-mounted photovoltaic (PV) power generation facility (solar panels) shall be granted subject to the following requirements:
+
+(i) The development area bonus shall apply only to properties that do not already exceed the maximum development area allowable,
+
+(ii) The roof-mounted PV facility shall be grid tied or connected,
+
+(iii) For new residences, the roof-mounted PF facility shall be fully installed and grid connected prior to the final inspection and occupancy of the new residence,
+
+(iv) For all other structures and projects, the roof-mounted PV facility shall first be installed with a building permit and receive satisfactory final inspection prior to granting of the development area bonus,
+
+(v) The development area bonus shall only be used for projects that otherwise comply with all other zoning and site development ordinances,
+
+(vi) The maximum allowable development area bonus shall be reduced by one square foot for every one square foot of ground-mounted PV system over 500 square feet that is exempted from development area requirements by action of the Planning Commission,
+
+(vii) Any development area bonus request may be referred to the Planning Commission by the Community Development Director. A development area bonus request for a property of less than one net acre in size shall be subject to Planning Commission review and decision,
+
+(viii) Sunset Provision. This section shall expire on July 31, 2016,
+
+(ix) The Community Development Director shall provide the City Council with an annual report that evaluates the effectiveness of this subsection as an incentive for increasing PV system installations;
+
+(7) Photovoltaic Power Generation Facilities. Photovoltaic power generation facilities that are connected to the grid and that are 500 square feet or less are exempt from the requirements of this section. Photovoltaic power generation facilities greater than 500 square feet in area are subject to the requirements of this section, unless the Planning Commission determines that the off-site visual impacts of the facility are adequately mitigated.
+
+(c) Minimum MDA. The allowable development area on any parcel or lot shall not be reduced to less than 7,500 square feet by application of the provisions of this section, except as set forth in Section 10-1.502(e) or except in the case of parcels or lots which have a lot unit factor of 0.50 or less. Parcels or lots which have a lot unit factor of 0.50 or less require a Conditional Development Permit and development area may be restricted below 7,500 square feet as a condition of the permit. Maximum development area for lots which require a Conditional Development Permit shall be established as the maximum floor area allowed by Section 10-1.503(c), plus 2,100 square feet. The Site Development Authority may approve development area of up to a total of 4,500 square feet for any lot or parcel without requiring a variance, so long as the findings for a Conditional Development Permit are made. Notwithstanding the foregoing, this subsection (c) shall not apply to any parcel that has a LUF less than 1.0 and was created after the enabling date of the ordinance implementing this sentence.
+
+(d) For any lot on which substantial areas of slope in excess of 30% constrain the allowable development area for the site, the lot unit factor and maximum development area may be calculated based solely on the flatter portion of the property, provided that: (1) the area used in the calculation results in a lot unit factor (LUF) in excess of 1.0 and provides a minimum of a 160 foot diameter building circle within that area; (2) the remaining steep slopes excluded from the calculation are contiguous and placed in a conservation easement, prohibiting any construction, grading or development in perpetuity; and (3) driveway access to the building site is located outside of the conservation easement area.
+
+(e) The standards set forth in this section for maximum development area (MDA) are maximum standards. The City Council and Planning Commission have the discretion to apply stricter standards to reduce development area where site specific constraints dictate further limitations, such that the purposes of the ordinances are complied with. Some examples of site constraints include, but are not limited to, the shape or natural features of the lot, easements which restrict development, the potential for erosion, or high site visibility.
+
+(§ 1, Ord. 305, eff. October 3, 1986, § 2, Ord. 313, eff. June 5, 1987; § 2, Ord. 382, eff. May 17, 1996; § 1, Ord. 389, eff. August 15, 1997; § 1, Ord. 412, eff. July 7, 2001; § 1, Ord. 431, eff. November 16, 2003; § 3, Ord. 446, eff. June 11, 2006; § 1, Ord. 500, eff. August 13, 2006; § 1, Ord. 522, eff. December 18, 2010; § 1, Ord. 547, eff. October 19, 2013; § 1, Ord. 552, eff. November 16, 2014; § 1, Ord. 610, eff. October 28, 2023)
+
+§ 10-1.503 Floor area.
+
+Except as provided in subsections c and d below, the amount of floor area in square feet allowed on a parcel or lot shall not exceed the amount determined by application of the formula in subsection (a) of this section, where S is the average slope of the parcel or lot in percent, as defined in Section 10-1.202, LUF is the lot unit factor as defined in Section 10-1.202, and MFA is the maximum floor area allowable.
+
+(a) For all parcels or lots, the allowable floor area in square feet shall relate to the average slope of the parcel or lot and the lot unit factor for the parcel or lot as specified in the formula given in subsections (a)(1), (a)(2) and (a)(3) of this section:
+
+(1) For parcels or lots where S is equal to or less than 10%:
+
+MFA = LUF x 6,000 square feet
+
+(2) For parcels or lots where S is greater than 10% and less than 30%:
+
+MFA = LUF x [6,000-50(S-10)] square feet
+
+(3) For parcels or lots where S is equal to or greater than 30%:
+
+MFA = LUF x 5,000 square feet
+
+(b) Floor Area. Floor area shall be measured as defined in Section 10-1.202 of this title.
+
+(c) Minimum MFA. The allowable floor area on any parcel or lot shall not be reduced to less than 5,000 square feet by application of the provisions of this section, except as set forth in subsection (e) of this section or except in the case of parcels or lots which have a lot unit factor of 0.50 or less. Parcels or lots which have a lot unit factor of 0.50 or less require a Conditional Development Permit and floor area may be restricted below 5,000 square feet as a condition of the permit. Maximum floor area for lots which require a Conditional Development Permit shall be established as the ratio of the lot unit factor (LUF) for the lot divided by 0.50 times 5,000 square feet. The Site Development Authority may approve floor area of up to 2,500 square feet for any lot without requiring a variance, so long as the findings for a Conditional Development Permit are made. Notwithstanding the foregoing, this subsection (c) shall not apply to any parcel that has a LUF less than 1.0 and was created after the enabling date of the ordinance implementing this sentence.
+
+(d) For any lot on which substantial areas of slope in excess of 30% constrain the allowable floor area for the site, the lot unit factor and maximum floor area may be calculated based solely on the flatter portion of the property, provided that: (1) the area used in the calculation results in a lot unit factor (LUF) in excess of 1.0 and provides a minimum of a 160 foot diameter building circle within that area; (2) the remaining steep slopes excluded from the calculation are contiguous and placed in a conservation easement, prohibiting any construction, grading or development in perpetuity; and (3) driveway access to the building site is located outside of the conservation easement area.
+
+(e) The standards set forth in this section for maximum floor area (MFA) are maximum standards. The City Council and Planning Commission have the discretion to apply stricter standards to reduce floor area where site specific constraints dictate further limitations, such that the purposes of the ordinances are complied with. Some examples of site constraints include, but are not limited to, the shape or natural features of the lot, easements which restrict development, or high site visibility.
+
+(§ 1, Ord. 305, eff. October 3, 1986; § 3, Ord. 382, eff. May 17, 1996; § 2, Ord. 389, eff. August 15, 1997; § 2, Ord. 412, eff. July 7, 2001; § 1, Ord. 522, eff. December 18, 2010; § 1, Ord. 610, eff. October 28, 2023)
+
+§ 10-1.504 Height.
+
+(a) Structures. No structure or part of a structure shall be constructed or altered to exceed 27 feet in structure height in any permitted location, except that primary dwellings shall be permitted a maximum structure height of up to 32 feet subject to all of the following requirements:
+
+(1) For each one foot increase in structure height above 27 feet the minimum required side and rear yard setback lines, as defined by Section 10-1.505, shall each be increased, in distance from the property line, an additional three feet. No portion of the primary dwelling structure shall be located between the property line and the setback line.
+
+(2) For each one foot increase in structure height above 27 feet the minimum required front yard setback line, as defined by Section 10-1.505, shall be increased, in distance from the property line, an additional four feet. No portion of any structure shall be located between the property line and the setback line.
+
+(3) Eligible structures shall have sloped roof surfaces only with a minimum roof pitch of 4:12 that terminate at a ridge.
+
+(4) The maximum continuous wall height shall not exceed 27 feet.
+
+(5) Dormer rooflines shall not exceed a maximum height of 27 feet.
+
+(6) The current maximum overall building height of 35 feet, as described in subsection (b) of this section, shall not be exceeded.
+
+(b) Special Height Limitation. No structure shall exceed a height of 35 feet, measured as the distance between the lowest natural grade topographical elevation of the structure along the building line and the highest topographical elevation of the roof of the structure. No point of the building may exceed 35 feet above the lowest pad elevation of the building.
+
+(c) Exceptions. The following structures or elements of structures are exempt from the height limits to the extent indicated:
+
+(1) Chimneys and appurtenances can extend above the 27 foot height limit. However, the maximum height including chimneys and appurtenances shall not exceed 35 feet and all points of the building must lie within a 35 foot horizontal band based from the lowest visible natural or finished grade.
+
+(d) Ornamental Garden Structures. Ornamental garden structures without roofs and which do not exceed six feet in height may be located between property lines and setback lines provided they do not exceed three feet in height when located in an area bounded by the center line of intersecting roads or easements for vehicular access, public or private, and a straight line joining points on such center lines 80 feet distant from their intersection.
+
+(e) Antennas and Dish Antennas. No antenna, whether freestanding or attached to a building, shall be erected or installed until any permit required by Section 10-2.301 shall first have been obtained and the allowable height thereby determined. The height to which any antenna may be extended, whether freestanding or attached to a building, shall mean the vertical distance at any point from the natural ground level of the property on which the antenna is erected or installed and which existed prior to grading for any structure, or from any building pad on the property if excavated below natural ground level, whichever elevation is lower, to the highest part of the antenna directly above.
+
+(f) The standards set forth in this section for height are maximum standards. The City Council and Planning Commission have the discretion to apply stricter standards to reduce height where site specific constraints dictate further limitations, such that the purposes of the ordinances are complied with. Some examples of site constraints include, but are not limited to, the shape or natural features of the lot, easements which restrict development, or high site visibility.
+
+(§ 1, Ord. 305, eff. October 3, 1986; § 1, Ord. 326, eff. September 16, 1988; § 4, Ord. 370, eff. May 20, 1994; § 3, Ord. 389, eff. August 15, 1997; § 1, Ord. 421, eff. August 17, 2002; §§ 2, 3 and 4, Ord. 434, eff. May 15, 2004; § 1, Ord. 522, eff. December 18, 2010)
+
+§ 10-1.505 Setback lines.
+
+The location of structures with respect to property lines, street rights-of-way, and easement lines shall be regulated as follows:
+
+(a) No structure, nor portion thereof, other than driveways, including necessary backup areas; walkways; minor ornamental garden structures subject to the height limits specified in Section 10-1.504(f); fences; driveway light fixtures, limited to one fixture on each side of a driveway, for a maximum of two fixtures per lot, subject to the height limits specified in Section 10-1.504(h); or underground utility facilities, shall be constructed, altered, or maintained so as to be located between the property line and any setback line, except as otherwise permitted by the provisions of this chapter.
+
+(b) Exceptions to the setback line requirements are as follows:
+
+(1) For additions and remodels to existing legally constructed structures with eaves that currently extend beyond the required setbacks, the addition or remodel shall be allowed to be constructed so as to match the existing eave extension.
+
+(2) For additions, remodels and new construction on properties where the options for siting of structures are substantially constrained by existing natural features of the lot (e.g., steep slopes, significant natural water courses, unusual lot configurations or size, mature oak trees, earthquake fault zones, or native vegetation) or by dedicated conservation, open space, or access easements, eaves may extend into any front, side, or rear yard not more than four feet. This exception may be granted in writing by the Town Planner; provided that, the Town Planner, in his or her discretion, may have the Planning Commission make this determination. If the applicant disagrees with the Town Planner's decision, the applicant may request that the Planning Commission make this determination and the Planning Commission shall do so. Nothing in this section nor any decision made under this section shall preclude a property owner from applying for a variance under Article 10.
+
+(c) The setback line for any structure shall be:
+
+(1) Where a parcel abuts on a single street or other access way, 40 feet from the nearest such public or private street right-of-way, easement for vehicular access, or where an official plan line has been established, from such official plan line.
+
+(2) Where a lot abuts on more than one such street, easement, or official plan line, the Planning Commission or the Site Development Authority, whichever entity first acts upon an application relating to the development of a particular property, shall designate the street, easement or official plan line from which the 40 foot setback shall be measured, which will in the judgment of the Site Development Authority, have the least negative environmental, visual or aesthetic impact on neighboring properties and the public at large.
+
+(3) Thirty feet from property lines, nearest lines of public or private streets, rights-of-way easements for vehicular access, or official plan lines in all other instances.
+
+(d) For the purposes of subsection (c) of this section, the term "easement for vehicular access" shall refer to easements across one lot or parcel which provide access to one or more other lots or parcels. Easements for utilities which include vehicular access solely for the maintenance of utilities within such easements shall be excluded from the term "easement for vehicular access."
+
+(e) The standards set forth in this section for setbacks are minimum standards. The City Council and Planning Commission have the discretion to apply stricter standards to increase setbacks where site specific constraints dictate further limitations, such that the purposes of the ordinances are complied with. Some examples of site characteristics include, but are not limited to, high site visibility where a greater setback is deemed necessary to reduce the appearance of bulkiness of the structure; and/or proximity to other lots or structures where a greater setback is deemed necessary to promote a variety in setbacks to avoid the appearance of uniform house designs or layouts.
+
+(§ 1, Ord. 305, eff. October 3, 1986; § 2, Ord. 326, eff. September 16, 1988; § 1, Ord. 361, eff. January 15, 1994; § 1, Ord. 388, eff. August 1, 1997; § 4, Ord. 389, eff. August 15, 1997; § 1, Ord. 391, eff. December 5, 1997; § 1, Ord. 522, eff. December 18, 2010)
+
+§ 10-1.506 Existing antenna or dish antenna.
+
+The regulations concerning antennas or dish antennas set forth in this chapter shall not apply to any antenna or dish antenna in existence on the effective date of said regulations if the owner of the property on which the antenna or dish antenna is located shall file a declaration with the Town on a form prescribed by the Planning Department.
+
+No fee shall be required, charged or collected by the Town for filing of any declaration.
+
+In the event that the antenna or dish antenna must be replaced or repaired, no permit will be needed if it substantially conforms to the antenna or dish antenna replaced or repaired, particularly as to height and location.
+
+(§ 1, Ord. 305, eff. October 3, 1986)
+
+§ 10-1.507 Fences, walls, gates and columns.
+
+(a) Purpose. The following regulations were created to preserve the beauty and open rural quality of the Town while acknowledging that residents have the right to fence their properties in order to protect their children, contain their animals, and maintain privacy.
+
+(b) Permits Required. No fence, wall, gate, or column structure shall be erected or replaced without the prior issuance of a Zoning or Site Development Permit from the Town.
+
+(c) Definitions. The following definitions are established for the purpose of this article and the meaning and construction of words and phrases is as follows:
+
+Column means a round or square pillar, pole, or post flanking an entranceway constructed of such materials as brick, stone, concrete, or other materials. Includes mailbox columns.
+
+Fence means a structure serving as a barrier or screen constructed of wood, metal, wire, masonry, glass, plastic or any other material (not including graded berms or living hedges).
+
+Gate means a movable frame or solid structure that swings, slides, or rolls controlling ingress and egress through an opening in a fence, wall, or vegetation.
+
+Legal nonconforming structure (Refer to Section 10-1.401(h) of the Zoning Ordinance.)
+
+Open fence or gate means a fence or gate constructed in such a way so that no more than 50% of the surface area obstructs a ground level view through the fence or gate.
+
+Points, spikes, and/or sharpened edges mean any end of a vertical bar that is capable of causing, or is likely to cause injury to people, pets, and/or wildlife.
+
+Solid fence or gate means a fence or gate constructed in such a way so that more than 50% of the surface area obstructs a ground level view through the fence or gate.
+
+Wall means an upright structure of wood, stone, brick, or other substance or combination of substances serving to enclose, divide, support and usually having greater mass than a fence.
+
+(d) Prohibited Fences, Walls, Gates, and Column Types. The following fences are prohibited:
+
+(1) Chain-link or cyclone fences, including any fence with bare lengths of wire stretched between metal poles, with the exception of dark green, black, or brown vinyl-coated chain-linked fences with matching vinyl-coated cross bars and caps.
+
+(2) Barbed or razor wire fences, including any fence with attached barbs, sharp points, or razors. Electric fences, including any fence designed to produce an electric shock, except where necessary for animal husbandry operations.
+
+(3) Any fence, wall, and/or gate that may cause harm to people, pets, and/or wildlife due to points, spikes, or sharpened edges on the top or bottom part of the fence, wall structure and/or gate.
+
+(4) Any perimeter fence, wall, gate, or column where the color reflectivity value exceeds 50%.
+
+(5) Any fence, wall, gate, or column located within a public or private road right-of-way or pathway easement, except for a mailbox column with an approved permit.
+
+(e) Fences, Walls, Gates and Columns Requiring Public Notice. Permit requests for the types of fences, walls, gates and columns identified below require notification of adjacent neighbors and neighbors across the street:
+
+(1) Fences, walls, gates and columns that require the removal of existing screening vegetation (trees and shrubs).
+
+(2) Solid fences that impact neighbor views as defined by Section 5-9.02 of this Code.
+
+(3) Any other proposal deemed appropriate by the Planning Director for a noticed hearing. Such proposals may include solid fences, as well as walls or vinyl-coated chain-link fences along any road right-of-way, and fences or walls longer than 1,000 linear feet.
+
+| Open fences using natural materials and colors, including unpainted and stained white, brown or gray wood; welded or woven wire and wood posts; and natural stone and/or brick construction are preferred and generally not subject to public notice. |
+| Staff shall notice a permit hearing and conduct the permit review hearing pursuant to Section 10-2.1305(b) except that only adjacent neighbors and neighbors across the street need to be notified. At or prior to the permit hearing, neighbors and the fence permit applicant shall be provided with notice that the approval or denial of any permit may be appealed pursuant to Section 10-1.1009. |
+
+(f) Development Standards for Fences, Walls, Gates and Columns.
+
+(1) Fences and walls located on property lines or in setback areas that are not adjacent to a road right-of-way shall not exceed a maximum height of six feet.
+
+(2) Fences and walls located in setback areas that are adjacent to a road right-of-way shall comply with the standards established in subsections (4) through (9). Height may be proportionately increased one foot for every 10 foot increase in setback, up to a maximum of six feet in height.
+
+(3) Fences, walls, gates and columns located behind setback lines are not subject to these development standards.
+
+(4) Open Fences and Gates.
+
+(i) Minimum setback from centerline of adjacent public or private road right-of-way: 30 feet.
+
+(ii) Maximum height of open fences and gates at the minimum setback from the centerline of adjacent public or private road right-of-way: four and one-half (4.5) feet.
+
+(iii) Minimum setback from centerline of adjacent public or private road right-of-way for six feet tall open fences and gates located between adjacent public or private roadways and the structural setback line for the particular property: 45 feet.
+
+(5) Solid Fences, Gates and Walls.
+
+(i) Minimum setback from centerline of adjacent public or private road right-of-way: 30 feet.
+
+(ii) Maximum height of solid fences, gates, and walls at the minimum setback from the centerline of adjacent public or private road right-of-way: three feet.
+
+(iii) Minimum setback from centerline of adjacent public or private road right-of-way for six foot tall solid fences, gates, and walls located between adjacent public or private roadways and the structural setback line for the particular property: 60 feet.
+
+(6) Open Driveway Gates.
+
+(i) Minimum setback from centerline of adjacent public or private road right-of-way: 30 feet.
+
+(ii) Maximum height of open driveway gates at the minimum setback from the centerline of adjacent public or private road right-of-way: four and one-half (4.5) feet (average).
+
+(iii) Minimum setback from centerline of adjacent public or private road right-of-way for open driveway gates with a six feet average height (seven feet maximum height) located between adjacent public or private roadways and the structural setback line for the particular property: 45 feet.
+
+(7) Columns.
+
+(i) Minimum setback from centerline of adjacent public or private road right-of-way: 30 feet.
+
+(ii) Maximum height of columns at the minimum setback from the centerline of adjacent public or private road right-of-way: six feet; seven feet (with lights).
+
+(iii) Maximum height of columns located between adjacent public or private road right-of-way and the structural setback line for the particular property: six feet; seven feet (with lights).
+
+(8) Outdoor Athletic Court Fencing. Maximum height of outdoor athletic court fencing located beyond the structural setback line for the particular property: 10 feet.
+
+(9) Open Space/Conservation Easement Perimeter Fences.
+
+(i) Maximum height of open space/conservation easement perimeter fences: six feet.
+
+(ii) Minimum distance of lowest fence strand or rail from ground: 12 inches above grade.
+
+(iii) Open space/conservation easement perimeter fences shall provide openings sufficient to accommodate the free passage of wildlife through the easement. A split-rail wood fence (see exhibit) or equivalent design shall be required. Where a pathway is located within an open space/conservation easement, the perimeter fence shall be required to have at least two openings at least as wide as the width of the pathway easement.
+
+(10) Any fence crossing or intersecting an officially designated wildlife corridor shall conform to the requirements specified above for an open space/conservation easement perimeter fence.
+
+(11) No fence, wall, gate, or column shall be located within a public or private road right-of-way or pathway easement. A four foot tall mailbox post or column may be granted an exception to be located within a road right-of-way. An encroachment permit from the Engineering Department is required to install a mailbox post or column within a road right-of-way easement. Any existing fence, wall, gate, or column located within any road right-of-way may be required to be removed at the owner's expense.
+
+(12) Solid walls, fences, or gates shall not exceed a maximum height of three feet and all shrubs and plants shall be pruned to a height not to exceed three feet above the road level at its nearest point in an area bounded by the center line of intersecting roads or easements for vehicular access, public or private and a straight line joining points on such center lines 80 feet distant from their intersection (see figure). All side limbs of trees in such area shall be pruned to a height of not less than six feet above the road surface. The purpose of the provisions of this section is to provide an unobstructed view of approaching traffic on the intersecting roads. The City Engineer may prescribe greater restrictions than the height set forth in this subsection where unusual conditions make such additional restrictions desirable in the interests of the public safety.
+
+(13) Any fence or wall may be required to be landscaped. Screen plantings required as a condition of approval for any fence or wall shall be maintained in good condition by the property owner.
+
+(14) The vertical dimension of any fence, wall, gate, or column shall be measured from the finished grade on both sides of any such fence, wall, gate, or column to any point on top of the fence, wall, gate, or column, including post/column caps and any ornamental features.
+
+(g) Requirements for Nonconforming Fences, Walls, Gates and Columns. Replacement of existing legal nonconforming fences, walls, gates, and columns shall be subject to the requirements in this section. Exceptions may be granted pursuant to subsection (h) of this section, or where the strict application of these requirements will result in a hardship for the property owner. Repair of short sections of legal nonconforming fences, walls, gates, or columns (repair of less than 50 feet or repair of no greater than 25% of total fence or wall length) will not require a permit if no other work is done on the same structure over a 12 month period. The replacement of any nonconforming structure shall be prohibited if the City Engineer determines that a public safety hazard exists or that the structure encroaches in an easement or public right-of-way. Any fence, wall, gate, or column constructed without a lawfully issued permit is a violation of the Municipal Code and shall be subject to the provisions of Title 1, Chapter 2 of the Municipal Code.
+
+(h) Exceptions. Exceptions may be granted subject to a noticed hearing and upon the Site Development Authority making all of the following findings:
+
+(1) The height and design of the proposed fence, wall, gate or column are compatible with other fences in the neighborhood;
+
+(2) The proposed removal of vegetation and trees and disturbance to natural terrain have been minimized; and
+
+(3) The proposed structure is otherwise in compliance with all regulations and policies set forth in the Municipal Code and the General Plan.
+
+| Any fence proposed to exceed a height of six feet in a setback area or to be located closer to the centerline of the road than required shall require a variance in accordance with the provisions of Article 10 of the Zoning Ordinance. |
+
+(§ 1, Ord. 434, eff. May 15, 2004; § 1, Ord. 442, eff. March 9, 2006; § 1, Ord. 517, eff. March 16, 2010)
+
+§ 10-1.508 Estate homes.
+
+(a) Purpose. Single-family residential development on a grand scale typically includes a primary dwelling of substantial size as well as accessory structures such as a swimming pool, tennis court, secondary dwelling, pool cabana, barn, and stables. The following regulations have been established to address the potential impacts of estate homes and to ensure that they are developed in a manner that is compatible with the open, rural character of the Town.
+
+(b) Definitions. The following definition is established for the purpose of this article:
+
+Estate home means a building with floor area totaling 10,000 square feet of floor area or greater, not including areas that meet the definition of "basement" set forth in Section 10-1.202. For the purposes of this article, buildings connected by a breezeway, covered walkway, or other means with a height of six feet above grade or greater shall be deemed one building.
+
+(c) Setbacks.
+
+(1) Additional Setbacks. Additional setbacks shall apply to estate homes as follows:
+
+Front setback: 44 feet plus four feet per 2,000 square feet over 10,000 square feet up to a maximum of 60 feet.
+
+Side and rear setbacks: 33 feet plus three feet per 2,000 square feet over 10,000 square feet up to a maximum of 45 feet.
+
+| Size of Building | Setback Requirements for Estate Homes | |
+| Size of Building | Front | Sides and Rear |
+| 10,000—11,999 s.f. | 44 | 33 |
+| 12,000—13,999 s.f. | 48 | 36 |
+| 14,000—15,999 s.f. | 52 | 39 |
+| 16,000—17,999 s.f. | 56 | 42 |
+| 18,000+ s.f. | 60 | 45 |
+
+(2) Exceptions. Exceptions to the additional setbacks required in subsection (d)(1) may be granted by the Planning Commission where the options for siting of buildings are substantially constrained by existing natural features of the lot (e.g., steep slopes over 30%, significant natural watercourses, unusual lot configurations or size, mature oak trees, earthquake fault zones, or native vegetation) or by dedicated conservation, open space or access easements. Nothing in this section or any decision made under this section shall preclude a property owner from applying for a variance under Article 10 of this title.
+
+(d) Height. Primary dwellings shall be permitted maximum structure height of up to 32 feet if the standard setbacks as defined by Section 10-1.505 are increased in accordance with the provisions of Section 10-1.504. The maximum overall building height of 35 feet shall not be exceeded.
+
+(e) Approval Process. Site development applications for estate homes are not eligible for the fast-track process under Section 10-2.1305.1.
+
+(f) Conditions. Every Site Development Permit granted for an estate home may be subject to conditions that are deemed necessary to protect the public health, safety and general welfare and to secure the objectives set forth in this chapter. The City Council and Planning Commission have the discretion to apply stricter standards to increase setbacks, reduce height, reduce floor area, and reduce development area where site specific constraints dictate further limitations, such that the purposes of the ordinances are complied with. Some examples of site constraints include, but are not limited to, the shape or natural features of the lot and easements which restrict development.
+
+(g) Additions. Any proposed addition to an existing building which brings the total floor area of the building in excess of 10,000 square feet, shall be subject to the procedures and requirements of this chapter.
+
+(h) Landscape Screening. Any development project subject to this section is required to provide an application for landscape screening. The landscape screening plan shall be reviewed and approved by the Planning Commission.
+
+(§ 1, Ord. 511, eff. February 24, 2008)

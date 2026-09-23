@@ -1,0 +1,1900 @@
+<div id="codesContent" ng-switch="vm.pageType">
+    <div role="alert">
+        <!---->
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----><div ng-switch-when="CHUNKS" class="codes-chunks-pg">
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.13SIORSIMIOVDI_14.13.080REEXTORST" ng-href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.13SIORSIMIOVDI_14.13.080REEXTORST" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 14.13.080 - Replacement of an existing two-story structure.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.15ACSTRDI" ng-href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.15ACSTRDI" ng-if="vm.content.nextNode">Chapter 14.15 - ACCESSORY STRUCTURES IN R DISTRICTS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+        <ul class="chunks list-unstyled small-padding">
+            <!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN" class="chunk" data-nodetype="" data-nodedepth="2" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!----><h2 ng-if="vm.relativeNodeDepth &lt; 1" id="_TIT14ZO_CH14.14ACDWUN" data-skip-id="_TIT14ZO_CH14.14ACDWUN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">Chapter 14.14 - ACCESSORY DWELLING UNITS<sup>[2]</sup></div></h2><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content"><br><div class="footnote-content"><div style="font-weight:bold;">Footnotes: </div> --- (<b>2</b>) ---
+            
+            <p class="refeditorFN"><b>Editor's note—</b>
+               <a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), adopted April 30, 2024, amended Ch. 14.14 in its entirety. Former Ch.
+               14.14 pertained to similar subject matter and derived from prior code §§ 10-2.6301,
+               10-2.6303, 10-6304, 10-6305, 10-6306, 10-6307; and Ord. 03-253, § 1(part); Ord. No.
+               <a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=902974" data-product-id="16460" data-ordinance-id="902974">2018-448</a>, § 4, adopted July 10, 2018, and <a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1059194" data-product-id="16460" data-ordinance-id="1059194">Ord. No. 2020-473</a>, § 1, adopted Oct. 27, 2020.
+               </p>
+            <br></div></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.010PUIN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.010PUIN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.010PUIN" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.010PUIN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.010 - Purpose and intent.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The intent of this chapter is to provide for accessory dwelling units (ADUs) and junior
+               accessory dwelling units (JADUs), collectively known as an accessory dwelling regulations,
+               on parcels zoned to allow single-family or multifamily dwelling residential use that
+               include a proposed or existing dwelling. ADUs contribute needed housing to the City
+               of Los Altos housing stock, enhance housing opportunities, and contribute to achieving
+               the goals of the RHNA. An ADU is considered a residential use that is consistent with
+               the existing general plan and zoning designations for the parcel. The ADU is not included
+               in calculation of residential density for the purposes of determining general plan
+               conformance. The ADU is not included in calculation of residential floor area ratio
+               or lot coverage.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.020DE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.020DE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.020DE" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.020DE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.020 - Definitions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               "Accessory dwelling unit" (or "ADU") means an attached or a detached residential dwelling
+               unit that provides complete independent living facilities and is located on a parcel
+               with a proposed or existing residential dwelling unit. It shall include permanent
+               provisions for living, sleeping, eating, cooking, and sanitation on the same parcel
+               as the single-family or multi-family dwelling is or will be situated. An accessory
+               dwelling unit also includes the following:
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  An efficiency unit (minimum size unit shall be 150 square feet), as defined in Section
+                  17958.1 of the Health and Safety Code.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  A manufactured home, as defined in Section 18007 of the Health and Safety Code.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Accessory dwelling unit, attached" means a residential dwelling unit that is created
+               as a result of internal conversion, addition, or combination thereof made to the primary
+               dwelling, including attached garages, storage areas or similar uses.
+               </p>
+            <p class="p0">
+               "Accessory dwelling unit, detached." A detached accessory dwelling unit means an ADU
+               that is not attached to the primary dwelling. Generally, a detached ADU is constructed
+               as an independent structure that is located on the same parcel as the primary dwelling.
+               However, a detached ADU may also include the conversion of an existing accessory structure
+               that is located on the same parcel as the primary dwelling, but that is detached from
+               the primary dwelling. In such a case, the detached ADU may be attached to another
+               existing accessory structure.
+               </p>
+            <p class="p0">
+               "Existing," when referring to an existing principal dwelling, accessory structure,
+               or other building or structure, means a building or structure erected prior to the
+               date of adoption of the appropriate building code, or one for which a legal building
+               permit has been issued. An unpermitted building or structure shall not be considered
+               "existing" for the purposes of this chapter.
+               </p>
+            <p class="p0">
+               "Multi-family dwelling" means a group of dwelling units on one site that contains
+               separate living units for two or more families that may have joined services or facilities
+               or both.
+               </p>
+            <p class="p0">
+               "Junior accessory dwelling unit" (or "junior ADU" or "JADU") means a unit that is
+               no more than five hundred (500) square feet in size, includes an efficiency kitchen
+               consistent with building code standards, is contained entirely within the walls of
+               a single-family residence and may include separate sanitation facilities or may share
+               sanitation facilities with the existing structure or unit.
+               </p>
+            <p class="p0">
+               "Living area" means the interior habitable area of a dwelling unit, including basements
+               and attics, if defined as habitable by the California Residential Code (CRC) but does
+               not include a garage or any accessory structure.
+               </p>
+            <p class="p0">
+               "Multi-family residential ADU" means an ADU designed for one family and allowed under
+               Government Code Section 65852.2(e)(1)(C).
+               </p>
+            <p class="p0">
+               "Nonconforming zoning condition" means a physical improvement on a parcel that does
+               not conform with current zoning standards.
+               </p>
+            <p class="p0">
+               "Primary dwelling" means, (i) in the case of a parcel occupied by an existing or proposed
+               single- family residential use, the existing or proposed primary dwelling in connection
+               with which an ADU is proposed to be constructed, or (ii) in the case of multi-family
+               housing, the existing or proposed multi-family use in connection with which one or
+               more ADUs allowed under this chapter are proposed to be constructed. As used in this
+               definition, a "single-family residential use" means a single-family residential dwelling
+               unit that is not attached to any other dwelling unit except for an ADU, and which
+               is designed for one family and is surrounded by open space or yards.
+               </p>
+            <p class="p0">
+               "Passageway." The term passageway has the meaning defined by Government Code Section
+               65852.2, which states: "A pathway that is unobstructed clear to the sky and extends
+               from a street to one entrance of the accessory dwelling unit."
+               </p>
+            <p class="p0">
+               "Public transit" means a location, including, but not limited to, a bus stop or train
+               station, where the public may access buses, trains, subways, and other forms of transportation
+               that charge set fares, run on fixed routes, and/or are available to the public.
+               </p>
+            <p class="p0">
+               "Single family residential ADU" means an ADU designed for one family per 65852.2(a)
+               of Government Code.
+               </p>
+            <p class="p0">
+               "Tandem parking" means that two or more automobiles are parked in any location on
+               a parcel and lined up one behind the other.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.030REPR" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.030REPR" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.030REPR" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.030REPR" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.030 - Review procedures.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               An application for an accessory dwelling unit or a junior accessory dwelling unit
+               shall be considered and approved ministerially without discretionary review, processes,
+               or provisions. The review of any accessory dwelling application shall be approved
+               or denied in sixty (60) days or less. In the event of conflict within this code or
+               within State law the more permissive regulation shall prevail.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.040LOPE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.040LOPE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.040LOPE" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.040LOPE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.040 - Location permitted.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               A.
+               </p>
+            		
+            <p class="content1">
+               ADUs may be permitted in the following zones: on parcels zoned for single-family,
+               multi- family and mixed-use.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Nothing in this chapter shall be construed to authorize construction of new single-family
+               residences in multi-family or mixed-use zones where such single-family residential
+               use is not otherwise allowed.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.050MANUUN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.050MANUUN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.050MANUUN" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.050MANUUN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.050 - Maximum number of units.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               For a parcel with a proposed or existing residential dwelling or use, the following
+               regulations shall establish the maximum number of accessory dwellings allowed:
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  One attached accessory dwelling unit and one detached accessory dwelling unit and
+                  two junior accessory dwelling units per lot with a proposed or existing single-family
+                  dwelling.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  At least one accessory dwelling unit built within an existing multi-family dwelling
+                  unit is allowed, but no more than up to twenty-five (25) percent of the existing multi-family
+                  dwelling units in the same multi-family dwelling development are allowed to build
+                  an accessory dwelling unit within its units. Fractional units will be rounded up to
+                  the next whole unit.
+                  </p>
+               		
+               
+            <p class="b0">
+               Multiple accessory dwelling units are allowed within the portions of existing multi-family
+               dwelling structures that are not used as livable space, including, but not limited
+               to, storage rooms, boiler rooms, passageways, attics, basements, or garages.
+               </p>
+            <p class="b0">
+               All units and livable space effected in the creation of an accessory dwelling unit(s)
+               set forth herein must comply with applicable California Building Codes.
+               </p>
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Not more than two detached accessory dwelling units are allowed on a lot that has
+               an existing or proposed multifamily dwelling development.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.060DEST" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.060DEST" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.060DEST" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.060DEST" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.060 - Development standards.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The following table summarizes design standards for all accessory dwellings allowed
+               by this code.
+               
+               </p><div>
+                  <div class="mcc-expandable-table-wrapper"><div class="table-toolbar"><button type="button" aria-label="Expand Table" title="Expand Table" class="btn btn-primary ink-reaction btn-raised btn-expand"> <i class="fa fa-expand"> Expand </i></button></div><div class="tableWrapper scrollable" style="width:100%">
+                     <table class="thead1 table left makeExpandableTable makeFixedTable" cellpadding="3" cellspacing="0" border="1" rules="all" style="text-align:left;">
+                        <colgroup class="std">
+                           <col width="25%">
+                           <col width="25%">
+                           <col width="25%">
+                           <col width="25%">
+                        </colgroup>
+                        <thead><tr>
+                              <th class=" top "></th>
+                              <th class=" top ">
+                                 JADU
+                                 </th>
+                              <th class=" top ">
+                                 Attached ADU
+                                 </th>
+                              <th class=" top ">
+                                 Detached ADU
+                                 </th>
+                           </tr></thead><tbody>
+                           
+                           <tr>
+                              <td class=" top ">
+                                 Maximum size
+                                 </td>
+                              <td class=" top ">
+                                 500 sq. ft. created from the existing or proposed square footage of the primary dwelling.
+                                 </td>
+                              <td class=" top ">
+                                 1,200 sq. ft. but no more than 50% of the floor area of an existing or proposed primary
+                                 dwelling (excluding
+                                 <br>
+                                 basement area).
+                                 </td>
+                              <td class=" top ">
+                                 1,200 sq. ft. (excluding basement area).
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Maximum height
+                                 </td>
+                              <td class=" top ">
+                                 NA
+                                 </td>
+                              <td class=" top ">
+                                 The greater of 16 feet or the height of the underlying zoning district whichever is
+                                 <br>
+                                 greater.
+                                 </td>
+                              <td class=" top ">
+                                 18 feet
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Minimum front setback
+                                 </td>
+                              <td class=" top ">
+                                 NA
+                                 </td>
+                              <td class=" top ">
+                                 Setback of underlying
+                                 <br>
+                                 zoning district. (Footnote 1.)
+                                 </td>
+                              <td class=" top ">
+                                 Setback of underlying
+                                 <br>
+                                 zoning district. (Footnote 1.)
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Minimum side setback
+                                 </td>
+                              <td class=" top ">
+                                 NA
+                                 </td>
+                              <td class=" top ">
+                                 4 feet
+                                 </td>
+                              <td class=" top ">
+                                 4 feet
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Minimum rear setback
+                                 </td>
+                              <td class=" top ">
+                                 NA
+                                 </td>
+                              <td class=" top ">
+                                 4 feet
+                                 </td>
+                              <td class=" top ">
+                                 4 feet
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Maximum floor area ratio
+                                 </td>
+                              <td class=" top ">
+                                 NA (Footnote 2.)
+                                 </td>
+                              <td class=" top ">
+                                 NA (Footnote 2.)
+                                 </td>
+                              <td class=" top ">
+                                 NA (Footnote 2.)
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Maximum lot coverage
+                                 </td>
+                              <td class=" top ">
+                                 NA (Footnote 3.)
+                                 </td>
+                              <td class=" top ">
+                                 NA (Footnote 3.)
+                                 </td>
+                              <td class=" top ">
+                                 NA (Footnote 3.)
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Building separation
+                                 </td>
+                              <td class=" top ">
+                                 5 feet
+                                 </td>
+                              <td class=" top ">
+                                 5 feet
+                                 </td>
+                              <td class=" top ">
+                                 5 feet
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Bathroom facilities
+                                 </td>
+                              <td class=" top ">
+                                 Bathroom facilities shall be provided independently for the JADU or can have shared
+                                 bathroom facilities with primary dwelling.
+                                 </td>
+                              <td class=" top ">
+                                 Bathroom facilities shall be provided independently within the ADU.
+                                 </td>
+                              <td class=" top ">
+                                 Bathroom facilities shall be provided independently within the ADU.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Entrance
+                                 </td>
+                              <td class=" top ">
+                                 Exterior; optional interior. (Footnotes 4 and
+                                 <br>
+                                 5.)
+                                 </td>
+                              <td class=" top ">
+                                 Exterior. (Footnote 5.)
+                                 </td>
+                              <td class=" top ">
+                                 Exterior. (Footnote 5.)
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Kitchen
+                                 </td>
+                              <td class=" top ">
+                                 Cooking appliances can include a hot plate, or countertop cooking. A wall installed
+                                 oven is not required.
+                                 </td>
+                              <td colspan="2" class=" top ">
+                                 Must include at least a sink, a refrigerator, and either a cooktop and an oven, or
+                                 a range. A food preparation counter and storage cabinets that are of reasonable size
+                                 in relation to the size of the ADU are also required.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Owner occupancy
+                                 </td>
+                              <td class=" top ">
+                                 Required.
+                                 </td>
+                              <td colspan="2" class=" top ">
+                                 Not required.
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div></div>
+                  <p>&nbsp;</p>
+               </div>
+               
+            <p class="b0">
+               Footnotes:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  Any proposed accessory dwelling shall conform to the front setback of the underlying
+                  zone unless it is demonstrated through a site plan that a physical preclusion exists
+                  and hinders the development of an accessory dwelling as allowed by this code.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  The square footage of any accessory dwelling shall not be included in the maximum
+                  floor area ratio of the parcel.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  The building area of any accessory dwelling shall not be included in the maximum lot
+                  coverage of the parcel.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  4.
+                  </p>
+               		
+               <p class="content2">
+                  A junior accessory dwelling unit must have a separate entrance from the primary dwelling
+                  unit. An interior entry is required if the junior accessory dwelling unit does not
+                  include a bathroom.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  5.
+                  </p>
+               		
+               <p class="content2">
+                  An accessory dwelling unit shall have a separate entrance from the primary dwelling
+                  unit provided as a side-hinged door per Section R311 of the California Residential
+                  Code.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.070SQFOAL" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.070SQFOAL" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.070SQFOAL" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.070SQFOAL" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.070 - Square footage allowance.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The following table provides the square footage allowances for all accessory dwelling
+               unit types:
+               
+               </p><div>
+                  <div class="mcc-expandable-table-wrapper"><div class="table-toolbar" style="right: 5px;"><button type="button" aria-label="Expand Table" title="Expand Table" class="btn btn-primary ink-reaction btn-raised btn-expand"> <i class="fa fa-expand"> Expand </i></button></div><div class="tableWrapper scrollable" style="width:100%">
+                     <table class="thead1 table left makeExpandableTable makeFixedTable" cellpadding="3" cellspacing="0" border="1" rules="all" style="text-align:left;">
+                        <colgroup class="std">
+                           <col width="25.53191489361702%">
+                           <col width="74.46808510638297%">
+                        </colgroup>
+                        <thead><tr>
+                              <th class=" top ">
+                                 Unit Type
+                                 </th>
+                              <th class=" top ">
+                                 Square Footage Limitations
+                                 </th>
+                           </tr></thead><tbody>
+                           
+                           <tr>
+                              <td class=" top ">
+                                 Efficiency unit
+                                 </td>
+                              <td class=" top ">
+                                 The minimum size of an efficiency unit as defined by the Health and Safety Code shall
+                                 be 150 square feet.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 JADU
+                                 </td>
+                              <td class=" top ">
+                                 The maximum size of a JADU shall be five hundred (500) square feet created by the
+                                 conversion of existing or proposed square footage of the principal dwelling unit including
+                                 attached garages. Up to one hundred fifty (150) square feet can be added to the existing
+                                 structure for purposes of ingress and egress to the JADU. The additional square footage
+                                 created for the purposes of the JADU shall count towards the five hundred (500) square
+                                 foot maximum.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Attached accessory dwelling unit
+                                 </td>
+                              <td class=" top ">
+                                 An attached single family residential ADU shall not exceed eight hundred fifty (850)
+                                 square feet in floor area for one bedroom unit or one thousand two hundred (1,200)
+                                 square feet with more than one bedroom. The total floor area for an attached ADU shall
+                                 exclude any basement area and shall not be more than fifty (50) percent of the floor
+                                 area of the existing or proposed principal residence. Notwithstanding this fifty (50)
+                                 percent threshold requirement, an attached ADU of eight hundred fifty (850) square
+                                 feet or smaller cannot be denied.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class=" top ">
+                                 Detached accessory dwelling unit
+                                 </td>
+                              <td class=" top ">
+                                 A detached single-family residential ADU shall not exceed eight hundred fifty (850)
+                                 square feet in floor area for one bedroom unit, or one thousand two hundred (1,200)
+                                 square feet with more than one bedroom. For detached accessory dwelling units, any
+                                 basement area is excluded in the square footage calculation for the ADU.
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div></div>
+                  <p>&nbsp;</p>
+               </div>
+               
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.080ALPR" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.080ALPR" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.080ALPR" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.080ALPR" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.080 - Allowed projections.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               A.
+               </p>
+            		
+            <p class="content1">
+               Eaves. Roof eaves associated with an accessory dwelling shall be permitted to project
+               into any required setback a maximum of two feet.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Exterior Stairs. Exterior stairs associated with an accessory dwelling shall comply
+               with accessory dwelling minimum setbacks. Any exterior stairs associated with an accessory
+               dwelling shall be architecturally integrated into the exterior facade of the existing
+               or proposed building.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Porches. Porches associated with an accessory dwelling shall comply with accessory
+               dwelling minimum setbacks. Any porch associated with an accessory dwelling shall be
+               architecturally integrated into the exterior facade of the existing or proposed building
+               and allowed a maximum twenty (20) square feet.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.090GEPR" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.090GEPR" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.090GEPR" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.090GEPR" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.090 - General provisions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr1">
+               A.
+               </p>
+            		
+            <p class="content2">
+               Short-Term Rental. An ADU shall not be rented for periods less than thirty (30) days.
+               Short-term rentals are prohibited pursuant to <a href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.30SHRMREPR" data-chunk-id="TIT14ZO_CH14.30SHRMREPR" class="section-link" data-product-id="16460"><span class="popoverPositioner"></span>Chapter 14.30</a> of the Los Altos Municipal Code.
+               </p>
+            		
+            <p class="incr1">
+               B.
+               </p>
+            		
+            <p class="content2">
+               Fire Sprinklers. The installation of fire sprinklers shall not be required in an accessory
+               dwelling unit if sprinklers are not required for the primary residence.
+               </p>
+            		
+            <p class="incr1">
+               C.
+               </p>
+            		
+            <p class="content2">
+               Building Codes. Accessory dwellings shall conform to all applicable building code
+               standards at the time of application.
+               </p>
+            		
+            <p class="incr1">
+               D.
+               </p>
+            		
+            <p class="content2">
+               Impact Fees. Any applicable fees established by the City of Los Altos shall be proportional
+               based on unit size.
+               </p>
+            		
+            <p class="incr1">
+               E.
+               </p>
+            		
+            <p class="content2">
+               Connection Fees and Capacity Charges. Any connection fees and capacity charges that
+               may be required must be assessed in compliance with the provisions of State Government
+               Code Sections 65852.2 and 65852.22, as amended from time to time.
+               </p>
+            		
+            <p class="incr1">
+               F.
+               </p>
+            		
+            <p class="content2">
+               Utilities. The accessory dwelling must provide water, sewer and electric utility connections
+               that are in working condition upon its occupancy. The accessory dwelling may be served
+               by the primary dwelling or may have separate utility meters. The accessory dwelling
+               will not be considered a new residential use for the purpose of calculating connection
+               fees or capacity charges for these utilities.
+               </p>
+            		
+            <p class="incr0">
+               G.
+               </p>
+            		
+            <p class="content1">
+               Nonconforming Conditions. Ministerial approval of a permit for creation of an accessory
+               dwelling shall not be conditioned on the correction of pre-existing nonconforming
+               zoning conditions.
+               </p>
+            		
+            <p class="incr0">
+               H.
+               </p>
+            		
+            <p class="content1">
+               Certificate of Occupancy. A certificate of occupancy for any accessory dwelling or
+               junior accessory dwelling unit shall not be issued before the local agency issues
+               a certificate of occupancy for the primary dwelling.
+               </p>
+            		
+            <p class="incr0">
+               I.
+               </p>
+            		
+            <p class="content1">
+               Tolling. If the applicant requests a delay in processing in writing, the 60-day review
+               time shall be tolled for the period of the delay.
+               </p>
+            		
+            <p class="incr0">
+               J.
+               </p>
+            		
+            <p class="content1">
+               Historic Properties. A new accessory dwelling located on a historic property will
+               be subject to ministerial review for compliance with the design review criteria set
+               forth in Chapter 12.44 of the Los Altos Municipal Code and must be consistent with
+               the Secretary of Interior's Standards for the Treatment of Historic Properties. No
+               review by the Historic Commission shall be required.
+               </p>
+            		
+            <p class="incr0">
+               K.
+               </p>
+            		
+            <p class="content1">
+               Exterior Lighting. Exterior lighting associated with an accessory dwelling shall not
+               be permitted on the sides of the structure facing adjacent properties.
+               </p>
+            		
+            <p class="incr0">
+               L.
+               </p>
+            		
+            <p class="content1">
+               Addressing. Each accessory dwelling shall be assigned its own address, consistent
+               with the requirements of the postal service and fire authority.
+               </p>
+            		
+            <p class="incr0">
+               M.
+               </p>
+            		
+            <p class="content1">
+               Deed Restriction. Prior to issuance of a building permit for a junior accessory dwelling
+               unit, a deed restriction, in a form satisfactory to the city attorney, shall be recorded
+               at the Santa Clara County Recorder's office and filed with the city. The deed restriction
+               shall prohibit the sale of the junior accessory dwelling unit separate from the sale
+               of the single-family dwelling, and one of the dwellings on the lot must be occupied
+               by at least one legal owner of the property, unless the property is owned by a governmental
+               agency, land trust or housing organization.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.100PARE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.100PARE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.100PARE" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.100PARE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.100 - Parking requirements.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               One uncovered parking space of nine feet by eighteen feet (9 X 18) shall be required
+               for a newly constructed single-family residential accessory dwelling, which may be
+               located within the front setback, in tandem and in an existing driveway including
+               within an interior side yard setback area, unless the development services director
+               determines such parking is not feasible due to specific site, topographical constraints
+               or fire and life safety. Notwithstanding the above, a parking stall will not be required
+               for a residential accessory dwelling that meets any of the following criteria:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  The single-family residential accessory dwelling is created as a result of the conversion
+                  of existing area of the single-family residence or existing permitted residential
+                  accessory structure.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  An existing garage, carport or parking structure is converted or demolished to accommodate
+                  a single-family residential accessory dwelling in the same location.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  The single-family residential accessory dwelling is within one-half mile walking distance
+                  of a public transit station, such as a bus stop or train station.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  4.
+                  </p>
+               		
+               <p class="content2">
+                  The parcel is within an architecturally and historically significant historic district.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  5.
+                  </p>
+               		
+               <p class="content2">
+                  On-street parking permits are required in the area but not offered to the occupant
+                  of the residential accessory dwelling.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  6.
+                  </p>
+               		
+               <p class="content2">
+                  A vehicle share site is located within one block of the single-family residential
+                  accessory dwelling.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.110MEEQACDW" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.110MEEQACDW" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.110MEEQACDW" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.110MEEQACDW" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.110 - Mechanical equipment for accessory dwellings.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               Accessory dwellings shall conform to all provisions of <a href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT11MIPRRE_CH11.14MEEQ" data-chunk-id="TIT11MIPRRE_CH11.14MEEQ" class="section-link" data-product-id="16460"><span class="popoverPositioner"></span>Chapter 11.14</a> of the Los Altos Municipal Code unless otherwise specified. The following mechanical
+               equipment regulations are specific to accessory dwellings:
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  Any mechanical equipment associated with an accessory dwelling shall locate proposed
+                  equipment on the interior sides of the accessory dwelling away from all property lines
+                  and outside of any required setback.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  No roof mounted mechanical equipment shall be permitted.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT14ZO_CH14.14ACDWUN_14.14.120ADREINSU" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT14ZO_CH14.14ACDWUN_14.14.120ADREINSU" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT14ZO_CH14.14ACDWUN_14.14.120ADREINSU" data-skip-id="_TIT14ZO_CH14.14ACDWUN_14.14.120ADREINSU" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">14.14.120 - ADU rental income survey.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               Each year the city will send out an annual ADU rental income survey to be released
+               no later than September 1st of every calendar year. The property owner can voluntarily
+               share the rental income for the unit. Pursuant to California Constitution Article
+               I, Section 1 and Government Code Sections 7927.705, 7922.000, and 7922.540(a), to
+               protect the privacy of property owners and renters and to encourage voluntary responsiveness,
+               the aggregated data will be for the exclusive use of the city to meet its regional
+               housing needs allocation (RHNA). The unredacted data will not be shared with outside
+               agencies, persons or corporations unless specifically mandated by state or federal
+               law.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/los_altos/ordinances/code_of_ordinances?nodeId=1290998" data-product-id="16460" data-ordinance-id="1290998">Ord. No. 2024-512</a>, § 1(App. A), 4-30-2024)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!---->
+        </ul>
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.13SIORSIMIOVDI_14.13.080REEXTORST" ng-href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.13SIORSIMIOVDI_14.13.080REEXTORST" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 14.13.080 - Replacement of an existing two-story structure.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.15ACSTRDI" ng-href="https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.15ACSTRDI" ng-if="vm.content.nextNode">Chapter 14.15 - ACCESSORY STRUCTURES IN R DISTRICTS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+    </div><!---->
+</div>

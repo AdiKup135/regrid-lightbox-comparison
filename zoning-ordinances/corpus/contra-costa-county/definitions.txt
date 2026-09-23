@@ -1,0 +1,53 @@
+82-4.244 - Lot—Definition, dimensions, area, private road structure setbacks.
+
+(a) Defined. "Lot" means a piece, parcel, tract, or division of land, including one delineated or described as a single integral unit on a subdivision map, and two or more considered as one pursuant to Section 82-10.002(c).
+
+(b) Lawful Lot. To qualify as a building site, a lot shall have the minimum dimensions required therefor by Divisions 82 and 84 for the district where it is situated.
+
+(c) Right-of-Way Excluded. No part, nor all, of a lot within a public road, street, highway, right-of-way, or easement, for vehicles or pedestrians, existing or proposed, shall be used to satisfy minimum area, yard, dimensional or coverage requirements.
+
+(d) For lots less than forty thousand square feet in size on private roads, for purposes of measuring primary and secondary front yard setbacks, such setbacks shall be measured from the edge of the easement line of the private road abutting such lot or, if there is no recorded easement, then, from the abutting edge of such private road established by use.
+
+(Ords. 99-12 § 2: 79-69 § 1, 71-99 § 3, 1469: prior code § 8102(o): Ords. 939, 932 § 2, 382 § 2[14]: see §§ 92-4.046, 92-4.062).
+
+82-4.246 - Lot, average width.
+
+"Average width of a lot" is the total area of the lot divided by the depth of the lot.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(bb): Ords. 1269, 1264, 1224, 939, 933, 382).
+
+82-4.248 - Lot depth.
+
+"Depth of a lot" is the distance normal to the frontage to the point of the lot farthest from the frontage.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(z): Ords. 1269, 1264, 1224, 939, 933, 382).
+
+82-4.250 - Lot frontage.
+
+"Frontage" of a lot is the distance measured between the two points on the principal road, street, or access that are farthest apart.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(aa): Ords. 1269, 1264, 1224, 939, 933, 382).
+
+82-4.282 - Yard.
+
+"Yard" means an open space other than a court, on the same lot with the building, which open space is occupied from the ground upward to the sky, except as otherwise provided in Divisions 82 and 84. In determining the dimensions of a yard as provided in Divisions 82 and 84, the "line of the building" means a line drawn parallel to the nearest lot line through the point of a building which is the nearest building to the lot line, without regard to parts of the building designated in Divisions 82 and 84 as parts not to be considered in measuring yard dimensions.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(u): Ords. 1269, 1264, 1224, 939, 933, 382).
+
+82-4.284 - Yard, front.
+
+"Front yard" means an open area extending across the front of a lot, measured toward the rear of the lot to the nearest line of any building on it. If any setback is established by Divisions 82 and 84 for a lot, the area between the setback line and the boundary line that determines the position of the setback line shall constitute the front yard of the lot.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(v): Ords. 1269, 1264, 1224, 939, 933, 382).
+
+82-4.286 - Yard, rear.
+
+"Rear yard" means an open area extending across the rear of a lot, measured from the rear line toward the front to the nearest line of any building on the lot.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(w): Ords. 1269, 1264, 1224, 939, 933, 382).
+
+82-4.288 - Yard, side.
+
+"Side yard" means an open area between each line of a lot and the nearest line of any building on the lot and extending from the front line to the rear line of the lot.
+
+(Ords. 1781, 1760, 1759, 1569, 1469: prior code § 8102(x): Ords. 1269, 1264, 1224, 939, 933, 382).

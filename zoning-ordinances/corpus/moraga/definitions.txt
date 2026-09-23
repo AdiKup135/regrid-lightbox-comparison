@@ -1,0 +1,55 @@
+8.04.020 - Definitions.
+
+"Frontage" means the lot line along the street or circulation thoroughfare which provides primary access to the lot.
+
+"Lot" is a parcel, tract, or area of land whose boundaries have been established by a legal instrument such as a recorded deed or a recorded map and is recognized as a separate legal lot for purposes of transfer of title, except public easements or rights-of-way.
+
+"Lot, corner" is a lot bounded by two or more adjacent streets or private rights-of-way or combination.
+
+"Lot, double-frontage" is a lot which has two or more lot lines which abut a street and do not intersect to form a corner lot. A double-frontage lot has two front lot yards.
+
+"Lot, flag" is a lot shaped and designed in a manner that the main building site area does not have street frontage but is connected to the street by a strip of land which is used for access purposes.
+
+"Lot, interior" is a lot that has one lot line which abuts a street and all other lot lines abut other lots.
+
+"Lot, key" is the first interior lot to the rear of a reversed corner lot.
+
+"Lot, reversed corner" is a corner lot, the sides of which abut the sides of two interior lots and where the side street line becomes a continuation of a front lot line of an adjacent lot.
+
+"Lot, substandard" is any lot that was legally created through a recorded deed even when consisting of less area, width, or depth than that required by the regulations for the zoning district in which it is located.
+
+"Lot area" is the total area defined by the boundaries of a lot, excluding any public street rights-of-way, private drive, or easement.
+
+"Lot coverage" means the portion of a lot that is covered by buildings, including principal and accessory buildings, garages, carports, and roofed porches, but not including unenclosed and unroofed decks, open roofed garden structures such as a gazebo, landings, or balconies.
+
+"Setback" is the minimum required distance from a lot line, measured perpendicularly to the lot line, to the nearest portion of a structure on the lot (except for the facilities and encroachments included in Section 8.68.060) as set forth in the development standards for the zoning district applicable to the lot. See definition of "Yard."
+
+"Yard" means an area within a lot, adjoining a lot line and measured horizontally and perpendicular to the lot line for a specified distance, that is open and unobstructed to the sky, except for activities, facilities and encroachments otherwise allowed by this title. A minimum yard is the minimum required distance from a lot line, measured perpendicularly to the lot line, to the nearest portion of a structure on the lot (except for the facilities and encroachments included in Section 8.68.060) as set forth in the development standards for the zoning district applicable to the lot; also referred to as "setback."
+
+"Yard, exterior side." "Exterior side yard" means the area of a corner lot fronting on a public or private street that extends from the front yard to the rear yard between the exterior side lot line and the nearest wall of a building on the lot, and for purposes of the minimum exterior side yard setback requirement, it is measured perpendicular from the exterior side lot line to the nearest point on the nearest wall of a building on the lot.
+
+"Yard, front." "Front yard" means the area of a lot extending across the full width of the lot and for purposes of the minimum front yard setback requirement, it is measured perpendicular from the front lot line to the nearest point on the nearest wall of a building on the lot.
+
+"Yard, rear." "Rear yard" means the area of a lot extending across the full width of the lot and for purposes of the minimum rear yard setback requirement, it is measured perpendicular from the rear lot line to the nearest point on the nearest wall of a building on the lot.
+
+"Yard, side." "Side yard" means the area of a lot extending from the front yard to the rear yard, and for purposes of the minimum side yard setback requirement, it is measured perpendicular from the side lot line to the nearest point on the nearest wall of a building on the lot.
+
+(Prior code § 8-3101)
+
+(Ord. No.248, § 2, 8-27-2014; Ord. No.261, § 2, 12-9-2015; Ord. No.268, § 2, 5-10-2017; Ord. No.277, § 2, 4-25-2018; Ord. No.280, § 2, 2-27-2019; Ord. No.290, § 3, 6-10-2020; Ord. No.293, § 3(Exh. A), 11-10-2020; Ord. No.296, § 3(Exh. A), 4-14-2021; Ord. No.300, § 3(Exh. A), 10-12-2022; Ord. No.304, § 2, 12-14-2022; Ord. No.306, § 7(Exh. B, 13), 2-22-2023; Ord. No.309, § 3(Exh. B, 1), 5-10-2023; Ord. No. 311, §§ 3, 4, 12-13-2023; Ord. No. 316, § 4, 6-25-2025)
+
+8.04.095 - Calculation of dwelling units.
+
+Lot size: 20,000 sq. ft./43,560 = 0.46 acres
+
+8.04.100 - Lots existing before county zoning.
+
+A lot of less width or area than the minima established in this title may be occupied by a single-family dwelling and its accessory buildings if:
+
+A. The owners of the lot do not own enough adjoining property to make the lot of proper width and area;
+
+B. The setback, side yard and rear yard requirements of this title are met; and
+
+C. The lot is delineated on a recorded subdivision map or its ownership is of record in the county recorder's office on the effective date of the town's adoption of the zoning district applicable to the lot.
+
+(Prior code § 8-3110)

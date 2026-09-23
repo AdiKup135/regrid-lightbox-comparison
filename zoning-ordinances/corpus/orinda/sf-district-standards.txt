@@ -1,0 +1,837 @@
+Chapter 17.4 - RESIDENTIAL DISTRICT BASE DEVELOPMENT REGULATIONS
+
+17.4.1 - Purpose.
+
+The purposes of the residential development regulations are to:
+
+A. Regulate the location, height, appearance and use of accessory structures that may affect the character or quality of life within residential areas;
+
+B. Ensure the provision of public services and facilities needed to accommodate planned population densities, consistent with the general plan;
+
+C. Regulate residential development on lots which are constrained due to lot size, shape, steep slopes and similar physical characteristics to ensure compatibility of development within established residential neighborhoods;
+
+D. Promote development of affordable housing by implementing housing element policies, including special needs housing and lower income households, by providing a density bonus consistent with state law, for projects in which a portion of the units are affordable for such households.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.2 - RVL, RL, RM, and RH Districts—Property development regulations.
+
+modified
+
+Schedule 17.4.2 entitled "Residential Property Development Standards" (found at the end of this section) prescribes certain base restrictions on improvements in residential districts, which districts are described in Section 17.3.2. These development standards and other limitations elsewhere in this chapter are not entitlements and may be modified (i.e., reduced, if for height, and increased, if for setback) as a condition of approval by the reviewing body if discretionary review of the proposed improvement is otherwise required by this title. In addition, lot formation and reconfiguration are subject to the provisions of Chapter 17.7 (Residential Minimum Lot Size) and Chapter 17.20 (Lot Line Adjustments) of this title.
+
+Schedule 17.4.2(A)
+SINGLE-FAMILY RESIDENTIAL PROPERTY DEVELOPMENT STANDARDS
+
+| Zoning District: | RVL-E | RVL | RL-40 | RL-20 | RL-15 | RL-12 | RL-10 | RL-6 | RM |
+| Prescribed Lot Area (square feet, or as noted) | 10 acres | 5 acres | 40,000 | 20,000 | 15,000 | 12,000 | 10,000 | 6,000 | 20,000 |
+| Minimum Front Lot Width (feet) | 350 | 250 | 140 | 120 | 100 | 100 | 80 | 60 | 120 |
+| Minimum Front Lot Depth (feet) | 400 | 200 | 140 | 120 | 100 | 100 | 90 | 90 | 120 |
+| Minimum Yard Setbacks (feet) | | | | | | | | | |
+| • Front Yard ^ 1 | 25 | 25 | 25 | 25 | 20 | 20 | 20 | 20 | 15 |
+| • Side Yard | 50 | 50 | 15 | 15 | 10 | 10 | 10 | 5 | 10 |
+| • Total (Combined) Side Yard ^ 2 | 100 | 100 | 40 | 35 | 25 | 25 | 20 | 15 | 20 |
+| • Rear Yard | 25 | 25 | 15 | 15 | 10 | 10 | 10 | 5 | 10 |
+| • Side and Rear Yard with Street Frontage ^ 1 | 25 | 25 | 25 | 25 | 20 | 20 | 20 | 20 | 15 |
+| Maximum Building Height (feet) | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 |
+| Maximum Building Height (stories) | 2 ½ | 2 ½ | 2 ½ | 2 ½ | 2 ½ | 2 ½ | 2 ½ | 2 ½ | 2 ½ |
+| Maximum Aggregate Building Height (feet) | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 |
+
+^ 1 The Front, Side and Rear Yard Setback may, at the applicant's discretion, be measured from the edge of the existing paved roadway rather than from the property line (i.e., the right-of-way boundary), provided the resulting setback measures no less than fifteen (15) feet from the property line with street frontage.
+
+^ 2 The Total (Combined) Side Yard Setback is the combination of both Side Yard Setbacks. The Total (Combined) Side Yard Setback requirement shall not apply to those portions of the property located more than 50 feet from the front property line.
+
+Schedule 17.4.2(B)
+MULTIFAMILY RESIDENTIAL PROPERTY DEVELOPMENT STANDARDS
+
+| Zoning District: | RM | SH-Overlay (of RM Base District) | HD-Overlay (of base RM District) | RH-25 | RH-40 |
+| Minimum Density (du/ac) | N/A | N/A | N/A | 20 | 20 |
+| Maximum Density (du/ac) | 10 | 38 | 20 unless otherwise specified | 25 | 40 |
+| Prescribed Lot Area (square feet, or as noted) | 20,000 | See RM | See RM | Minimum 22,500 | Minimum 22,500 |
+| Minimum Yard Setbacks (feet) | | | | | |
+| • Front Yard ^ 1 | 15 | 10 | See RM | 15 | 15 |
+| • Side Yard | 10 | 10 | See RM | 10 | 10 |
+| • Total (Combined) Side Yard | 20 | N/A | See RM | 20 | 20 |
+| • Rear Yard | 10 | 10 | See RM | 10 | 10 |
+| • Side and Rear Yard with Street Frontage ^ 1 | 15 | 20 ft from face of curb | See RM | 15 ft from face of curb | 15 ft from face of curb |
+| Building Projection | Per 17.4.18 | Per 17.4.18 | See RM | Per 17.4.18 | Per 17.4.18 |
+| Maximum Building Height (feet) | 27 | Per closest Residential or Downtown District | See RM | 36 | 50 |
+| Maximum Building Height (stories) | 2½ | Per closest Residential or Downtown District | See RM | 3 | 5 |
+| Maximum Aggregate Building Height (feet) | 35 | Per closest Residential or Downtown District | See RM | N/A | N/A |
+| Building Plane Line | N/A | Per 17.4.33.K | N/A | Per 17.4.35(K) | Per 17.4.35(K) |
+| Building Separation | N/A | Per 17.4.33.M | N/A | As required by Building Code | As required by Building Code |
+| Parking | Per 17.16 | Per 17.16 | Per 17.16 | Per 17.16 | Per 17.16 |
+| Min. Private Open Space | 150 sf per unit per 17.4.32(C) | See RM | See RM | 150 | 150 |
+| Min. Shared Open Space | 100 sf/unit per 17.4.32(C) | 100 sf/unit per 17.4.33(C) | 100 sf/unit per 17.4.34(F) | 100 sf/unit per 17.4.35(C) | 100 sf/unit per 17.4.35(C) |
+| Min. Private Storage Space | 30 cubic feet/unit per 17.4.32(E) | See RM | See RM | N/A | N/A |
+| Boat and Trailer Storage | Per 17.4.32(F) | See RM | — | — | — |
+| Min. Laundry Facilities | If shared, 1 washer/5 units per 17.4.32(G) | If shared, 1 washer/15 units per 17.4.33(D) | If shared, 1 washer/15 units per 17.4.34(G) | If shared, 1 washer/15 units per 17.4.35(G) | If shared, 1 washer/15 units per 17.4.35(G) |
+| Lighting and Security | Per 17.4.32(H) | Per 17.4.33(E) | Per 17.4.34(H) | Per 17.4.35(E) | Per 17.4.35(E) |
+| Landscaping | Per 17.4.32(I) | Per 17.4.33(F) | Per 17.4.34(I) | Per 17.4.35(F) | Per 17.4.35(F) |
+| Trash Enclosures | Per 17.4.32(L) | Per 17.4.33(N) | 17.4.34(J) | Per 17.4.35(N) | Per 17.4.35(N) |
+| Gathering Rooms for 8 or more units | 30 sf/unit per 17.4.32(M) | 10 sf/unit per 17.4.33(O) | See RM | 10 sf/unit per 17.4.35(O) | 10 sf/unit per 17.4.35(O) |
+| Direct Pedestrian Access | N/A | Direct access per 17.4.33(P) | N/A | Direct access per 17.4.35(N) | Direct access per 17.4.35(N) |
+| Mechanical Equipment | Not specified | Screening per 17.4.33(Q) | Screening per 17.4.34(K) | Screening per 17.4.35(Q) | Screening per 17.4.35(Q) |
+
+^ 1 The Front, Side and Rear Yard Setback may, at the applicant's discretion, be measured from the edge of the existing paved roadway rather than from the property line (i.e., the right-of-way boundary), provided the resulting setback measures no less than fifteen (15) feet from the property line with street frontage.
+
+Section 17.4.2 Graphic
+Front, Side and Rear Yards with Street Frontage
+
+(Ord. 99-5 § 2 Exh. A (part); Ord. No. 10-10, § 2(exh. A), 1-4-11; Ord. No. 14-04, § 2(exh. A), 5-20-14; Ord. No. 19-03, § 2(Exh. A), 6-18-19; Ord. No. 25-04, § 2(Att. A, § 4), 11-3-25)
+
+17.4.3 - Setback restrictions.
+
+modified
+
+No structure may be located in the minimum yard setback area set forth in Schedule 17.4.2, entitled "Residential Property Development Standards", except as otherwise provided in this title.
+
+(Ord. 99-5 § 2 Exh. A (part); Ord. 02-03 § 4; Ord. No. 10-10, § 2(exh. A), 1-4-11)
+
+17.4.4 - Nonconforming lots.
+
+modified
+
+The following alternative setback requirements shall apply to existing legal lots that do not meet the residential property standards contained in Schedule 17.4.2. This section shall not be interpreted as requiring development standards that are more restrictive than those contained in Schedule 17.4.2.
+
+A. Legal Nonconforming Lot Less Than One Hundred Twenty Feet Deep. On a legal lot that is less than one hundred twenty (120) feet deep, the minimum front yard setback shall be twenty (20) feet.
+
+B. Legal Nonconforming Lot Less Than One Hundred Forty Feet Wide. On a legal lot with a Front Lot Width of less than one hundred forty (140) feet, the following Side Yard and Total (Combined) Side Yard Setbacks shall apply:
+
+| FRONT LOT WIDTH | SINGLE SIDE YARD SETBACK | TOTAL (COMBINED) SIDE SETBACK^1 | SIDE AND REAR YARD WITH STREET FRONTAGE |
+| Less than 140 feet | 15 feet | 35 feet | 20 feet |
+| Less than 120 feet | 10 feet | 25 feet | 15 feet |
+| Less than 100 feet | 10 feet | 20 feet | 15 feet |
+| Less than 80 feet | 5 feet | 15 feet | 15 feet |
+| Less than 60 feet | 5 feet | 10 feet | 15 feet |
+
+^ 1 The Total (Combined) Side Yard Setback is the combination of both Side Yard Setbacks. The Total (Combined) Side Yard Setback requirement shall not apply to those portions of the property located more than 50 feet from the front property line.
+
+C. Rebuilding or Remodeling a Nonconforming Residence. A structure on a lot which was legal when created may be improved or replaced and a new home may be built on that legally-created lot, subject to the requirements of the Orinda Municipal Code.
+
+(Ord. 99-5 § 2 Exh. A (part); Ord. No. 10-10, § 2(exh. A), 1-4-11)
+
+17.4.5 - Reserved.
+
+17.4.6 - Setback requirements for water channels.
+
+modified
+
+A. Water channel setbacks are as follows:
+
+| | Channel Type | | | | | |
+| | Type I | | Type II | | Type III | Type IV |
+| Perennial or Intermittent/Ephemeral | — | — | Perennial | Intermittent/Ephemeral | — | — |
+| Side slopes* | Steeper than 2:1 | Equal to or Shallower than 2:1 | — | — | — | — |
+| Setback** (feet) | 45 | 35 | 45 | 30 | 15 | 0 |
+
+* Horizontal distance relative to vertical distance
+
+** All setbacks are measured from the top of the bank or from the furthest extent of banks undercut by creek, whichever results in the greatest setback. Where opposing bank heights differ, the lower bank height applies to both sides of the channel for purposes of measuring the side slope and setback.
+
+B. Definitions of channel types.
+
+1. Type I channel is a major channel that receives water from several tributaries and includes, but is not limited to, San Pablo Creek, Moraga Creek, Brookside Creek, and Laterwasser Creek.
+
+2. Type II channel is an ephemeral/intermittent or perennial tributary channel that has well-defined channel bed and banks.
+
+3. Type III channel is an ephemeral swale or other small channel that is distinguished from Type I and II channels because it does not have well-defined channel bed and banks.
+
+4. Type IV channel is a man-made channel, such as a road-side ditch, that occurs where no channel previously existed.
+
+C. No structure may be built, except for second story additions that do not encroach into the required setback beyond the existing first floor structure, and no grading is permitted in the setback of a water channel, unless the project meets the following conditions:
+
+1. The project proponent obtains approval from the City Engineer; and
+
+2. The project proponent is granted an exception under Chapter 17.32.
+
+If a project is proposed on the bank of a water channel or in an area of the site that is undeveloped and in a natural state, then the City may hire a biologist to perform a biotic assessment at the applicant's expense and the decision-maker shall consider the findings of this biotic assessment when reviewing the exception application.
+
+(Ord. 99-5 § 2 Exh. A (part); Ord. No. 10-10, § 2(exh. A), 1-4-11)
+
+17.4.7 - Steeply sloping front yard.
+
+If the natural slope of a front yard exceeds an average of thirty (30) percent, a garage, carport and elevated parking deck may be located within the front yard; provided, that:
+
+A. The garage and/or carport maintains a minimum fifteen (15) foot front yard setback; and
+
+B. The required four on-site parking spaces can be provided.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.8 - Determination of front yard on corner lots.
+
+The side with the shorter of the two frontages shall generally be determined as the lot's front yard. The Zoning Administrator may determine otherwise based on the following factors:
+
+A. For developed lots, existing orientation (including access) and/or address may establish the front yard as the longer frontage;
+
+B. For undeveloped lots, the front yard may be established at the time of design review approval is given.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.9 - Determination of front width.
+
+Except as otherwise provided in this title, the front width of a lot is defined to be the shortest possible straight line between the side property lines measured at the point closest to the front property line where the straight line is both: (1) tangent to the minimum front yard setback of the subject lot in at least one point; and (2) either tangent or behind the minimum front yard setback of the subject lot for all points along that line.
+
+Section 17.4.9 Graphics
+
+DETERMINATION OF FRONT WIDTH - SAMPLE CONFIGURATIONS:
+
+Section 17.4.9 Graphics
+
+Section 17.4.9 Graphics
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+17.4.10 - Side yard setback adjustments for certain lots.
+
+For determination of applicable side yard setbacks under Section 17.4.3, if the actual "front width" of a corner or triangular lot, as illustrated below, is longer than the longest of the two side property lines, the "front width" shall be deemed to be one-half of the actual front width.
+
+Section 17.4.10 Graphics
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+17.4.11 - Determination of setback at front yard and side/rear yard with street/easement frontage.
+
+A. On public streets, privately maintained streets with offers of public dedication, and private streets which serve more than four parcels on the subject street's entire length, setbacks shall generally be measured from the limit of right-of-way and/or easement. In cases where the edge of existing pavement, used as a through travel way, encroaches into the lot, in which case the setback shall be measured from the edge of pavement.
+
+B. On private streets, courts and drives which serve four or less parcels on the entire length, setbacks shall be measured from the property line, regardless of easement location. At no time may a structure encroach into the easement.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.12 - Minimum lot frontage.
+
+No lot may be created or reconfigured unless the front lot line meets the minimum front lot width requirements of Section 17.4.3 or an existing nonconforming front lot line is not decreased to less than the average width of the five closest properties fronting on the same street as the subject lot.
+
+(Ord. 02-03 § 5: Ord. 99-5 § 2 Exh. A (part))
+
+17.4.13 - Application of setback requirements for flag, narrow access and nonfrontage lots.
+
+The front yard setback shall be measured from the property line that is most perpendicular to the point of access from the stem to the body of the lot. All other setbacks shall be determined in relation to the front yard thus established.
+
+Section 17.4.13 Graphics
+
+Front Yards for Subject Lots
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.14 - Application of lot size requirements for flag, narrow access and nonfrontage lots.
+
+Minimum lot size, and lot size determinations required for subdivisions, lot line adjustments and to determine the maximum allowable home size (per Section 17.6.2) shall be exclusive of the stem, regardless of fee ownership and that the body shall conform to the minimum dimensions of the subject zone.
+
+Section 17.4.14 Graphics
+
+Body of Subject Lots
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+17.4.15 - Determination of setbacks for irregular lots.
+
+A. When a lot has more than four sides, and the change of barring is one hundred thirty-five (135) degrees, or greater, the subject property line shall be viewed as a continuous, unbroken line for determining setbacks. Front yard shall be determined first, with side yards being established off of the property lines found most perpendicular to the established frontage.
+
+Section 17.4.15 Graphics—A
+
+B. When a lot has less than four sides (triangular lot), the lot shall have two side yards which are established off of the two property lines intersecting the front property line. The rear setback shall be determined from the point where the two side property lines intersect.
+
+Section 17.4.15 Graphics—B
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+17.4.16 - Determination of setbacks for cul-de-sac lots.
+
+The front yard setback shall generally be established from the right-of-way at the cul-de-sac bulb (Section 17.4.16 Graphics Exhibit 1). In cases where the length of one of the property lines radiating from the bulb is less than the lot's "front width," that property line shall be considered as part of the frontage. (Section 17.4.16 Graphics, Exhibits 2 and 3).
+
+Section 17.4.16 Graphics
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+17.4.17 - Reserved.
+
+Editor's note— At the direction of the city § 17.4.17, entitled "Total setback requirement for side yards", has been deleted from the Code. Former § 17.4.17 derived from: Ord. No. 99-5, § 2 Exh. A (part).
+
+17.4.18 - Building projections into yards and courts.
+
+A structure that is otherwise compliant with the required minimum yard setback referenced in 17.4.2 is permitted to project into that required minimum yard setback as follows:
+
+A. Cornice, eave, overhang or similar ornamental features may encroach three feet into a front, side or rear yard.
+
+B. Chimney or fireplace may encroach three feet into a front or rear yard and two feet into a side yard with a maximum width of six feet below the second floor line or eave line in the case of a one story structure, and four feet wide above that point.
+
+C. Unenclosed stairways and landings may encroach four feet into a front, side or rear yard up to a maximum height of seven feet above existing grade, as measured to the top of code required guardrails.
+
+D. A cantilevered awning, canopy or balcony may encroach two and one-half feet into a front, side or rear yard.
+
+E. A patio, deck, porch, access drive, access walk, or stairs under thirty (30) inches above existing or finished grade, whichever is lower, may encroach into any required setback. A deck over thirty (30) inches above grade is subject to Section 17.4.28.
+
+F. A bay window may encroach no more than two feet into the prescribed setback.
+
+This authorization for building projections into yards and courts does not apply to structures that are subject to minimum yard setbacks that are less restrictive than those referenced in 17.4.2.
+
+(Ord. 02-03 § 6: Ord. 99-5 § 2 Exh. A (part); Ord. No. 19-03, § 2(Exh. A), 6-18-19; Ord. No. 22-02, § 2(Att. A.4), 9-6-22)
+
+17.4.19 - Height measurement.
+
+The height of a structure shall be measured perpendicular from the existing grade. A chimney may exceed the permitted height by five feet. The height of architectural projections such as towers and dormers, the shall be measured to the midpoint between the top plate and the roof ridgeline.
+
+(Ord. 00-2 § 4: Ord. 99-5 § 2 (Exh. A (part); Ord. No. 10-10, § 2(exh. A), 1-4-11)
+
+17.4.20 - Aggregate height measurement.
+
+The aggregate height of a structure is a plumb line measurement to the highest roof ridgeline taken from the top of the lowest foundation.
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+(Ord. No. 10-10, § 2(exh. A), 1-4-11)
+
+17.4.21 - Height measured in stories.
+
+For purposes of determining compliance with the two and one-half story limitation provided in Section 17.4.2, a story is the portion of a building between the upper surface of a floor and the upper surface of the floor directly above at all points or, for the top story, the portion of the building between the upper surface of the top floor and the ceiling or roof above, whichever is lower. A half story is that portion of a building under a gable, hip or gambrel roof where the top of at least two opposite exterior walls is not more than three feet high, measured from the floor of that portion of the building being considered a half story.
+
+A. Basement or Cellar. If the finished floor level directly above a basement or cellar is more than four feet above a grade at any point, the basement or cellar shall be considered a story.
+
+B. Attic. An attic shall be considered as either a story or a half story for purposes of this section if it meets the definition of floor area in Subsection 17.6.3(A).
+
+C. Multi-level Structures. A structure may have multiple levels such as a split-level or stepped-foundation design, so long as: (1) no more than two and one-half stories are vertically contiguous at any one point; and (2) the maximum building height and the maximum aggregate building height specified in Section 17.4.2 are not exceeded. Staircases providing access to the multiple floors and landings which provide access to staircases shall not be considered part of a story for determining compliance with the two and one-half story limitation.
+
+(Ord. 00-2 § 5; Ord. 99-5 § 2 Exh. A (part))
+
+17.4.22 - Accessory structures.
+
+A. Garages, accessory dwelling units proposed in new accessory structures, and additions to existing accessory structures to accommodate new accessory dwelling units shall conform to the standard minimum setback requirements of the underlying zone as described in Sections 17.4.2 and 17.4.3, subject to the exceptions in Section 17.3.4.
+
+B. All other accessory structures shall conform to the standard minimum setback requirements of the underlying zone as described in Sections 17.4.2 and 17.4.3, except:
+
+1. The minimum setback from any property line with street frontage is fifty (50) feet.
+
+2. The setback for Front, Side and Rear Yards with street frontage may, at the applicant's discretion, be measured from the edge of the existing paved roadway rather than from the property line with street frontage (i.e., the right-of-way boundary), provided the resulting setback measures no less than forty (40) feet from the property line with street frontage.
+
+C. The minimum separation between an accessory structure and the main structure is five (5) feet.
+
+D. Structures to be used for animals shall comply with the additional requirements specified for "animal structures."
+
+(Ord. 07-02 § 3; Ord. 99-5 § 2 Exh. A (part); Ord. No. 14-04, § 2(exh. A), 5-20-14; Ord. No. 17-03; § 2(Att. A), 8-1-17; Ord. No. 18-02, § 2(Att. A), 3-6-18; Ord. No. 19-03, § 2(Exh. A), 6-18-19)
+
+17.4.23 - Accessory structures and enclosures for nondomestic animals.
+
+Chicken coops, rabbit hutches, and similar accessory structures provided for the housing of small animals shall be set back not less than sixty (60) feet from the front property line or any street line, and shall be not less than forty (40) feet from any side or rear property line; barns, stables and other buildings or structures used to shelter large animals shall be set back not less than one hundred (100) feet from the front property line or any street line and shall not be less than fifty (50) feet from any side or rear property line; fenced pasture, paddocks or other enclosed livestock areas shall not be located nearer than seventy-five (75) feet from the front property line or any street and shall not be less than twenty-five (25) feet from any side or rear property line.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.24 - Landscape structures.
+
+A landscape structure may be placed at any location on a residential lot, subject to the following criteria:
+
+A. A line of sight hazard shall not be created, as determined by the City Engineer.
+
+B. A five-foot minimum setback shall be provided from property lines.
+
+C. The allowed height and maximum dimension for landscape structures is based on their location relative to the setbacks for primary structures described in section 17.4.2. Landscape structures located within the section 17.4.2 setbacks shall not exceed ten feet in height and shall have no other dimension greater than twenty (20) feet. Landscape structures located outside the section 17.4.2 setbacks shall not exceed fifteen (15) feet in height with no other maximum dimension.
+
+D. The Zoning Administrator may, as needed, make the determination as to whether a structure shall be regulated as a landscape structure or as an accessory structure or fence.
+
+E. The total area of a lot covered by landscape structures may not exceed five hundred (500) square feet or twenty (20) percent of the total floor area of the structures on the lot, whichever is greater. For the purposes of this subsection, floor area shall be measured per Chapter 17.6.
+
+(Ord. 99-5 § 2 Exh. A (part); Ord. No. 10-05, § 3, 7-20-10; Ord. No. 15-02, § 2(Exh. A), 11-20-15)
+
+17.4.25 - Sports court.
+
+A sports court shall conform to the setback requirements of the underlying zone, including the proscribed allowances for legally nonconforming lots, with the following modifications and additional requirements:
+
+A. Minimum setback from any street frontage is fifty (50) feet.
+
+B. The side yard setback at the side and rear of the lot shall be at least five feet.
+
+C. The sports court shall be at least five feet from the main structure.
+
+D. The maximum fence height of the portion built within the minimum setback of the subject lot shall be twelve (12) feet.
+
+E. The installation of outdoor lighting at a height of seven feet or more requires use permit approval.
+
+(Ord. 02-03 § 7; Ord. 99-5 § 2 Exh. A (part))
+
+17.4.26 - Pools, spas and related equipment.
+
+All pools, spas and related heating and filter equipment shall conform to the following conditions:
+
+A. Fencing shall be provided as required by the Building Official, subject to the provisions of Section 17.4.27.
+
+B. The minimum side and rear yard setback, as measured from the water's edge, shall be five (5) feet. The minimum setback from property lines with street frontage shall be the same as those required in Section 17.4.3 for primary structures.
+
+C. The maximum height of any retaining wall and related terracing shall be four feet if placed within the minimum setbacks of the subject zone.
+
+D. Pool or spa equipment shall meet the requirements for permanent mechanical equipment contained in Section 17.39.9.
+
+(Ord. 99-5 § 2 Exh. A (part); Ord. No. 14-04, § 2(exh. A), 5-20-14; Ord. No. 19-03, § 2(Exh. A), 6-18-19)
+
+17.4.27 - Fences and retaining walls.
+
+Fences and retaining walls are permitted in every R District and are allowed in conjunction with specific uses as provided in this section.
+
+A. Measurement of Height. The height of a fence or retaining wall is measured from the point at which the fence posts, wall pilasters or wall footing intersects the ground on the lowest side of the wall or fence to the top of the wall or fence directly above. Where a fence is built on top of a retaining wall, the combined fence/wall height is measured from the unretained ground at the outside face of the combined fence/retaining wall.
+
+B. Height Restrictions. The maximum fence or retaining wall height in a required yard or setback area is as follows:
+
+1. Fence. No fence in any location may exceed six feet, except for sports court fences and except for de minimus variances relating to minor variations in the underlying terrain. A fence located within five feet of a property line/right-of-way boundary with street frontage must be constructed completely of an open material, such as lattice or wrought iron, and shall not exceed a height of four feet. Additionally, landscaping for a solid or partly solid fence in the specified setback areas shall be required as provided in Section 17.17.1.
+
+2. Retaining Wall. A retaining wall shall be limited to four feet if it is: (1) within ten feet of any property line; or (2) in the minimum required yard setback for the subject lot, whichever is greater. Elsewhere, a retaining wall shall be no higher than eight feet. Retaining walls and fences may be further limited in height, location or use of materials based on required vehicle sight distance or right-of-way requirements, and if subject to design review under Chapter 17.30 of this title.
+
+3. Fence and Retaining Wall Combinations. The height of a combined retaining wall and fence shall conform to the height limits of Subsection 17.4.27.B.2. and other requirements of Subsection 17.4.27.B.1.
+
+4. Minimum Separation Requirements. Unless there is a minimum horizontal separation of at least four feet between individual retaining walls or fences and retaining walls, a grouping of walls and a grouping of one or more walls and fences shall be seen as a single structure for determining height limits set forth in this section.
+
+(Ord. 02-03 § 8; Ord. 00-2 § 6; Ord. 99-5 § 2 Exh. A (part))
+
+(Ord. No. 14-04, § 2(exh. A), 5-20-14)
+
+17.4.28 - Decks.
+
+A deck over thirty (30) inches above grade shall conform to applicable setback requirements, including total setback and allowances for legally nonconforming lots, subject to the following:
+
+A. Minimum setback from street frontage is twenty (20) feet.
+
+B. Minimum side yard and rear yard setback is five feet.
+
+C. An elevated deck permit under Chapter 17.35 is required for construction of a deck over six feet in height above finished grade at any point which is also greater than two hundred (200) square feet.
+
+A deck under thirty (30) inches above grade is subject to Section 17.4.18(E).
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+(Ord. No. 19-03, § 2(Exh. A), 6-18-19)
+
+17.4.29 - Large vehicle parking—Outdoor storage.
+
+A. Placement of Vehicles and Equipment. A recreational vehicle, boat, trailer, camper shell, large appliance or other large equipment shall not be parked, stored or placed on a residential lot for more than seventy-two (72) hours within a one-month period, except to load or unload the vehicle, unless the following requirements are met:
+
+1. The vehicle or equipment shall be adequately screened from view. "Adequately screened from view" means substantially screened from view from the street or other property by a closed garage, fence or landscaping so that the vehicle is not visible or is barely visible. For vehicles over six (6) feet high, at least seventy (70) percent of the height shall be screened.
+
+2. No vehicle or equipment may be placed within the minimum side yard setback area unless it maintains a minimum five-foot setback from the property line.
+
+3. The engine of such a vehicle or equipment shall not idle for more than ten (10) minutes a day on the property.
+
+If a violation of subsection A of this section occurs, a person who is affected by the violation shall have the right to bring a cause of action to enforce subsection A of this section in a court with appropriate jurisdiction over the matter.
+
+B. Trucks. Not more than one commercial vehicle, as defined in the State Vehicle Code, not to exceed two-ton capacity, may be parked or stored on any one lot.
+
+C. Inoperable Vehicle Storage. No inoperable motor vehicle or any motor vehicle without a current and valid license issued pursuant to the laws of the State of California shall be parked or stored on private residential property, unless it is located in a garage, carport or similar structure.
+
+D. Use of Habitation Prohibited. A vehicle or trailer may not be used for habitation, for keeping animals, or for any other residential use.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+(Ord. No. 19-03, § 2(Exh. A), 6-18-19)
+
+17.4.30 - Manufactured homes.
+
+A mobile home may be used as a residence in any single-family (one-family) residential zone if it meets all of the following requirements and all other applicable code requirements for residential development:
+
+A. The mobile home complies with all development standards and the requirements applicable to single-family residences, including, but not limited to, setbacks, paving, height, materials, width, parking, and accessory structures;
+
+B. The mobile home is manufactured and certified under the National Mobile Home Construction and Safety Standards Act of 1974 and was built no more than ten years prior to the date of application;
+
+C. The mobile home is installed and structurally fixed to an approved permanent foundation and in accordance with installation instructions provided by the manufacturer. The exterior wall covering shall extend to the ground or to the top of the foundation; provided, however, any exposed portion of the foundation shall be treated so as to provide a finished appearance with material such as stucco, veneered brick, decorative block or other finish approved by the Building Official;
+
+D. Plans, including plot, elevations, exterior materials, photographs and other documents and specifications needed to assure compliance with the city and state codes shall be submitted at the time of the application for the permits required by this code;
+
+E. In addition to any other permits required by this code, the following permits shall be obtained:
+
+1. A building permit for the foundation system and any attached accessory structure not included in the mobile home at the factory, such as a porch or steps;
+
+2. A plumbing permit for the connection of gas, water and sewer to the mobile home; and
+
+3. An electrical permit for the connection for electrical power to the mobile home;
+
+F. Mobile Home Defined. For the purposes of this section, "mobile home" shall mean a "mobile home" as defined in Section 18211 of the Health and Safety Code of the state.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.4.31 - Affordable housing incentive program and density bonus.
+
+A. Purpose. The purpose of this section is to comply with state law regarding density bonuses and other incentives (California Government Code Section 65915 et seq.), to implement the housing element of the Orinda General Plan and to provide incentives to developers who guarantee that a portion of their housing development will be affordable to persons of lower income, thus expanding housing opportunities for lower-income persons throughout the city.
+
+B. Definitions. Terms used in this section shall be defined as in Government Code Section 65915 et seq.
+
+C. Eligibility for Density Bonus and Incentive(s) or Concession(s). Project applicants shall be granted a density bonus and incentive(s) or concession(s) to the extent and subject to the terms required by California Government Code Section 65915 et seq. Any request for approval of a density bonus, incentive(s) or concession(s) pursuant to this section shall be made along with other related planning approval requests for the project as specified in the City of Orinda zoning ordinance.
+
+D. Application. Applicants requesting a density bonus, incentive(s) or concession(s) shall submit an application to the Planning Director together with the first application for approval of the development. The application shall include at least the following information:
+
+(1) A concise written description of the project and the planning approval(s) requested.
+
+(2) A site plan showing the location and general layout of the proposed development, surrounding land uses and roadways, total number of units, number and location of affordable units, and number and location of density bonus units.
+
+(3) Level of affordability of qualifying units and proposals for ensuring affordability.
+
+(4) Description of any requested incentive(s) or concession(s), proposed waiver(s) or modification(s) of development standards, and/or parking standards.
+
+(5) Reasonable documentation to establish eligibility for the requested density bonus, incentive(s) or concession(s), waiver(s) or reduction(s) of development standards and/or parking ratios. The application shall identify upon which basis of Government Code Section 65915 the applicant elects to calculate its density bonus. If incentive(s) or concession(s) are requested, the application shall include an explanation of how the incentive(s) or concession(s) result in identifiable and actual cost reductions as described in Government Code Section 65915. If waiver(s) are requested, the application shall describe with a narrative and/or drawings how application of the development standard(s) the applicant seeks to waive would have the effect of physically precluding the construction of the proposed development at the densities and with the concession(s) or incentive(s) permitted. If a density bonus parking ratio is requested, the application shall identify which parking ratio in Government Code section 65915 applies and describe the characteristics of the proposed development or site that qualify the proposed development for that parking ratio.
+
+(6) If an applicant proposes to donate land to the city pursuant to Government Code Section 65915, the application shall provide evidence that each of the associated eligibility conditions has been met.
+
+(7) If an applicant proposes to develop a child care facility pursuant to Government Code Section 65915, the application shall show the location and square footage of the child care facility and provide evidence that each of the associated eligibility conditions has been met.
+
+(8) Such other materials as the Planning Director may determine are necessary to review the request in accordance with this code and state law.
+
+E. Review Process. An application for a density bonus, incentive(s) or concession(s) will be processed concurrently with all other applications required for the development. When the application is complete, notice shall be given as required by Section 17.42.1 and a hearing shall be held by the Planning Commission. The Planning Commission shall make recommendations to the City Council regarding the proposed density bonus and incentive(s) or concession(s). The City Council's decision shall be final.
+
+F. Housing Incentive Agreement Required. Prior to the issuance of a building permit for any dwelling unit in a development for which a density bonus, incentive(s) or concession(s) have been granted, the applicant shall enter into a written agreement with the city for the mandated duration of affordability. The terms and conditions of the agreement shall run with the land which is to be developed, shall be binding upon the successor in interest of the applicant, and shall be recorded in the Office of the Contra Costa County Recorder. The agreement shall be approved by the City Council and shall address all issues required by state law.
+
+(Ord. 08-04 § 2: Ord. 99-5 § 2 (Exh. A (part); Ord. No. 22-02, § 2(Att. A.5), 9-6-22)
+
+17.4.32 - Residential multifamily development standards.
+
+modified
+
+The following supplemental regulations shall apply to residential development in the RM (Residential Multifamily) District:
+
+A. Purpose. The intent of these regulations is to prescribe reasonable standards for multifamily residential development in addition to other applicable city ordinances.
+
+B. Off-Street Parking. Parking spaces for each dwelling unit shall be provided consistent with the requirements of Chapter 17.16 of this title. Visitor parking shall be uniformly distributed throughout the development. All visitor spaces shall be permanently marked as visitor spaces.
+
+C. Private Open Space. Each condominium and townhome unit shall have at least one appurtenant private patio, deck, balcony, atrium or other outdoor private area contiguous to the unit in a single, undivided area of not less than one hundred fifty (150) square feet.
+
+D. Shared Open Space. An outdoor common area of at least one hundred (100) square feet per unit shall be provided for outdoor active and passive group recreation. Such common areas shall not include driveways, parking areas or required front or corner side yards.
+
+E. Private Storage Space. Each unit within the project shall have at least thirty (30) cubic feet of enclosed, weatherproofed and lockable storage space at a single location.
+
+F. Boat and Trailer Storage. Boat, trailer and recreational vehicle storage shall be limited as described in Section 17.4.29, unless such vehicles are prohibited by restrictive covenants.
+
+G. Laundry Facilities. Adequate laundry facilities shall be provided by:
+
+1. Constructing a laundry room with the equivalent of one standard washing machine for each five dwelling units and an equivalent capacity in automatic clothes dryers; or
+
+2. Provide properly designed and plumbed areas within each dwelling unit for washing and drying clothes.
+
+H. Lighting and Security. Night and security lighting and security measures shall be provided as necessary to ensure safe and convenient access and use of multifamily residential facilities.
+
+I. Landscaping. All multifamily residential development shall include landscape plans which provide for substantial front yard landscape screening and, as appropriate, side and rear yard landscaping. Landscaping shall blend with the design of the development and enhance the visual quality of the streetscape, and to help achieve design consistency with the character of the neighborhood.
+
+J. Permitted Density. Density limits for multifamily housing shall not exceed the density limitations as established by the general plan land use designation for the property. Density bonuses for affordable or senior housing shall also be as established by the general plan and applicable state housing law.
+
+K. Trash Enclosures. Trash enclosures shall be located conveniently for residents, and out of vehicular circulation areas. Trash enclosures may not be located within five feet of side or rear property lines or within the conditionally established front yard setback for the principal structure(s). Trash enclosures shall be of a design which is compatible with the development.
+
+L. Gathering Rooms. Where eight or more units are proposed, and in addition to the above requirements, special consideration shall be given to providing adequate gathering rooms or locations for facility residents, based on a requirement of at least thirty (30) square feet per living unit. Areas devoted to kitchen areas and restrooms in such community facilities shall not count toward meeting this requirement.
+
+(Ord. 99-5 § 2 (Exh. A (part); Ord. No. 16-03, § 2(Att. A), 4-12-16; Ord. No. 25-04, § 2(Att. A, § 5), 11-3-25)
+
+17.4.33 - Senior Housing Overlay District (SH-Overlay) development standards.
+
+modified
+
+Senior Housing Facilities, as defined in section 17.2.3, in the SH-Overlay District may apply the standards of this section in lieu of the underlying multifamily district standards. Non-age restricted development in the underlying multifamily district shall be developed in compliance with the multifamily development standards of section 17.4.32, and all other applicable development standards.
+
+A. Allowed by right. Multifamily Senior Housing Facilities, as defined in section 17.2.3, are allowed by right in the RM district subject to the design review requirements of Chapter 17.30, the development standards of this section and other applicable city ordinances.
+
+B. Off-Street Parking. Parking spaces for each dwelling unit shall be provided consistent with the requirements of Chapter 17.16 of this title.
+
+C. Shared Open Space. Outdoor common area(s) of at least one hundred (100) square feet per dwelling unit shall be provided for active and passive group recreation. Each outdoor area shall have a dimension no less than eight feet and shall not include driveways, parking areas or required street fronting yards.
+
+D. Laundry Facilities. Adequate laundry facilities shall be provided by:
+
+1. Constructing a laundry room with the equivalent of one standard washing machine for each fifteen (15) dwelling units and an equivalent capacity in automatic clothes dryers; or
+
+2. Provide properly designed and plumbed areas within each dwelling unit for washing and drying clothes.
+
+E. Lighting and Security. Night and security lighting and security measures shall be provided as necessary to ensure safe and convenient access and use of senior housing development. All outdoor lighting shall be shielded to prevent glare and outdoor light fixtures more than three feet above the ground shall be shielded to prevent direct illumination off-site.
+
+F. Landscaping. All development shall include landscape plans as required in Chapter 17.17 of this title. In addition, landscaping shall provide substantial landscape screening from off-site vantage points and, as appropriate, side and rear yard landscaping. Landscaping shall blend with the design of the development and enhance the visual quality of the streetscape, and to help achieve design consistency with the character of the neighborhood.
+
+G. Permitted Density. Multifamily senior housing in the RM district shall be developed at no more than thirty-eight (38) units per acre.
+
+H. Story Limit. The maximum number of stories shall be as required by the most restrictive of the closest adjoining residential or downtown district base regulations.
+
+I. Building Height Limit. The maximum building height shall be as required by the most restrictive of the closest adjoining residential or downtown district base regulations.
+
+J. Building Setbacks. Buildings shall be set back twenty (20) feet from the face of curb on all street-fronting property lines, but in no case less than ten feet from the property line and a ten-foot setback shall be provided from all other property lines.
+
+K. Building Plane Line. Except as provided in subparagraph 12, no portion of a building shall project beyond the building plane line. The building plane line for facades with street frontage is a plumb line drawn twenty-seven (27) feet high at the setback line then inward on the lot at a forty-five (45) degree angle to the maximum building height. At interior property lines the building plane line is a plumb line forty (40) feet high at the setback line then inward on the lot at a forty-five (45) degree angle. For purposes of this requirement, the vertical measurements are taken from finish grade.
+
+L. Building Projections. Projections described permitted in section 17.4.18 also apply to the building setbacks and building plane line of this section.
+
+M. Building Separation. Separate buildings on the same parcel shall be no closer than twenty (20) feet. Buildings with common walls less than twelve (12) feet in length shall be considered separate buildings for the purposes of this requirement. This requirement shall apply to each story separately as illustrated below.
+
+N. Trash Enclosures. Trash and recycling enclosures shall be located conveniently for residents, and out of vehicular circulation areas. Trash and recycling enclosures may not be located within five feet of interior property lines or within the street fronting setbacks. Trash and recycling enclosures shall be of a design which is compatible with the development.
+
+O. Gathering Rooms. Projects with eight or more units shall include adequate gathering rooms or locations for facility residents, based on a requirement of at least ten square feet per dwelling unit. Areas devoted to kitchen areas and restrooms in such community facilities shall not count toward meeting this requirement.
+
+P. Pedestrian access. Direct pedestrian access to abutting public streets and parks shall be provided.
+
+Q. Mechanical Equipment.
+
+1. General Requirement. Exterior mechanical equipment (except solar collectors) and operating mechanical equipment must be screened from off-site views. Equipment to be screened includes, but is not limited to, heating, air conditioning, refrigeration equipment, plumbing line, ductwork and transformers. Placement of mechanical equipment is limited by the setback requirements of the base zoning district, unless otherwise provided for within this title.
+
+2. Utility Meters. A utility meter must be screened from view from the public right-of-way. A meter or transformer in a required front yard or in a corner side yard must be enclosed in a subsurface vault.
+
+3. Screening Specifications. Screening material may have evenly distributed openings or perforations not exceeding fifty (50) percent of the surface area and must effectively screen mechanical equipment so that it is not directly visible from off-site. Heavy, evergreen landscaping may be used to meet these requirements.
+
+(Ord. No. 10-11, § 3, 12-21-10; Ord. No. 25-02, § 2(Att. A), 5-20-25)
+
+17.4.34 - High Density Overlay District (-HD Overlay) development standards.
+
+This High Density Overlay District (-HD Overlay) district is intended to apply only to those sites within the RM district so designated by means of a Zoning Map amendment. Multifamily dwellings developed in this overlay district at the density specified below may apply the development standards of this section in lieu of any conflicting RM district standards.
+
+A. Allowed by Right. Multifamily dwellings are allowed by right in the HD Overlay district subject to the design review requirements of Chapter 17.30 and the development standards referenced in this section.
+
+B. Permitted Density. Except where the City authorizes a higher density as specified below, multifamily dwellings in the HD Overlay district may be developed at a density of up to twenty (20) units per acre.
+
+C. Higher Permitted Density. Developers may apply for a density bonus under the housing incentive and density bonus program described in Section 17.4.31.
+
+D. Design Review. The design review standards contained in Section 17.30.11 shall apply to proposed multifamily dwellings in this overlay district.
+
+E. Off-Street Parking. Parking shall be provided consistent with the requirements of Chapter 17.16.
+
+F. Shared Open Space. Outdoor common area(s) of at least one hundred (100) square feet per dwelling unit shall be provided for active and passive group recreation. Such outdoor area(s) shall have no dimension less than eight feet and shall not include driveways, parking areas or required street fronting yards.
+
+G. Laundry Facilities. Adequate laundry facilities shall be provided by:
+
+1. Constructing a laundry room with the equivalent of one standard washing machine for each fifteen (15) dwelling units and an equivalent capacity in automatic clothes dryers; or
+
+2. Providing properly designed and plumbed areas within each dwelling unit for washing and drying clothes.
+
+H. Lighting and Security. Night and security lighting and security measures shall be provided as necessary to ensure safe and convenient access to and use of the multifamily development. All outdoor lighting shall be shielded to prevent glare and outdoor light fixtures more than three feet above the ground shall be shielded to prevent direct illumination off-site. The maximum illumination at ground level shall not exceed the minimum required under the California Building Code.
+
+I. Landscaping. All multifamily development shall include landscape plans as required in Chapter 17.17.
+
+J. Trash Enclosures. Trash and recycling enclosures are required, shall be located conveniently for residents, shall be out of vehicular circulation areas, shall be designed to contain waste effectively so that it does not become litter and/or enter nearby watercourses, and shall be no closer to habitable structures on neighboring properties than to the proposed multifamily development. Trash and recycling enclosures may not be located within five feet of interior property lines or within the street fronting setbacks. Trash and recycling enclosures shall be of a design that is compatible with the proposed multifamily dwelling.
+
+K. Mechanical Equipment.
+
+1. General Requirement. Exterior mechanical equipment (except solar collectors) must be screened from off-site views. Equipment to be screened includes, but is not limited to, heating, air conditioning, refrigeration equipment, plumbing line, ductwork and transformers. Placement of mechanical equipment is limited by the setback requirements. Mechanical equipment shall also be no closer to habitable structures on neighboring properties than to the proposed multifamily dwelling.
+
+2. Utility Meters. Utility meters must be screened from view from the public right-of-way. A meter or transformer in a required front yard or in a corner side yard must be enclosed in a subsurface vault.
+
+3. Screening Specifications. Screening material may have evenly distributed openings or perforations not exceeding fifty (50) percent of the surface area and must effectively screen mechanical equipment so that it is not directly visible from off-site. Heavy, evergreen landscaping may be used to meet these requirements.
+
+(Ord. No. 13-03, § 2(Att. A), 12-17-13; Ord. No. 16-03, § 2(Att. A), 4-12-16)
+
+17.4.35 - Residential High Density (RH) development standards.
+
+new
+
+A. Allowed by Right. Multifamily Housing Facilities, as defined in section 17.2.3, are allowed by right in the RH districts subject to the design review requirements of Chapter 17.30, the development standards of this section, and other applicable city ordinances to the extent permitted by state law.
+
+B. Off-Street Parking. Parking spaces for each dwelling unit shall be provided consistent with the requirements of Chapter 17.16 of this title.
+
+C. Shared Open Space. Outdoor common area(s) of at least one hundred (100) square feet per dwelling unit shall be provided for active and passive group recreation. Each outdoor area shall have a dimension no less than eight feet and shall not include driveways, parking areas, or required street fronting yards.
+
+D. Laundry Facilities. Adequate laundry facilities shall be provided by:
+
+1. Constructing a laundry room with the equivalent of one standard washing machine for each fifteen (15) dwelling units and an equivalent capacity in automatic clothes dryers; or
+
+2. Providing properly-designed and plumbed areas within each dwelling unit for washing and drying clothes.
+
+E. Lighting and Security. Night and security lighting and security measures shall be provided as necessary to ensure safe and convenient access. All outdoor lighting shall be shielded to prevent glare and outdoor light fixtures more than three feet above the ground shall be shielded to prevent direct illumination off-site.
+
+F. Landscaping. All development shall include landscape plans as required in Chapter 17.17 of this title. In addition, landscaping shall provide substantial landscape screening from off-site vantage points and, as appropriate, side and rear yard landscaping. Landscaping shall blend with the design of the development and enhance the visual quality of the streetscape, and help to achieve design consistency with the character of the neighborhood.
+
+G. Permitted Density. Multifamily housing in the RH districts shall comply with the minimum and maximum density requirements described in Schedule 17.4.2(B).
+
+H. Story Limit. The maximum number of stories shall be as described in Schedule 17.4.2(B).
+
+I. Building Height Limit. The maximum building height shall be as described in Schedule 17.4.2(B).
+
+J. Building Setbacks. Buildings shall meet the minimum setback requirements described in Schedule 17.4.2(B).
+
+K. Building Plane Line. No portion of a building shall project beyond the building plane line. The building plane line for facades with street frontage is a plumb line drawn twenty-seven (27) feet high at the setback line then inward on the lot at a forty-five (45) degree angle to the maximum building height. At interior property lines the building plane line is a plumb line forty (40) feet high at the setback line then inward on the lot at a forty-five (45) degree angle. For purposes of this requirement, the vertical measurements are taken from finish grade.
+
+L. Building Projections. Projections described permitted in section 17.4.18 also apply to the building setbacks and building plane line of this section.
+
+M. Building Separation. Buildings shall comply with the minimum separation requirements in the Building Code.
+
+N. Trash Enclosures. Trash and recycling enclosures shall be located conveniently for residents, and out of vehicular circulation areas. Trash and recycling enclosures may not be located within five feet of interior property lines or within the street fronting setbacks. Trash and recycling enclosures shall be of a design which is compatible with the development.
+
+O. Gathering Rooms. Projects with eight or more units shall include adequate gathering rooms or locations for facility residents, based on a requirement of at least ten square feet per dwelling unit. Areas devoted to kitchen areas and restrooms in such community facilities shall not count toward meeting this requirement.
+
+P. Pedestrian Access. Direct pedestrian access to abutting public streets and parks shall be provided.
+
+Q. Mechanical Equipment.
+
+1. General Requirement. Exterior mechanical equipment (except solar collectors) and operating mechanical equipment must be screened from off-site views. Equipment to be screened includes, but is not limited to, heating, air conditioning, refrigeration equipment, plumbing line, ductwork and transformers. Placement of mechanical equipment is limited by the setback requirements of the base zoning district, unless otherwise provided for within this title.
+
+2. Utility Meters. A utility meter must be screened from view from the public right-of-way. A meter or transformer in a required front yard or in a corner side yard must be enclosed in a subsurface vault.
+
+3. Screening Specifications. Screening material may have evenly-distributed openings or perforations not exceeding fifty (50) percent of the surface area and must effectively screen mechanical equipment so that it is not directly visible from off-site. Heavy, evergreen landscaping may be used to meet these requirements.
+
+(Ord. No. 25-04, § 2(Att. A, § 6), 11-3-25)
+
+Chapter 17.6 - RESIDENTIAL FLOOR AREA
+
+Sections:
+
+17.6.1 - Purpose.
+
+The purpose of this regulation is to implement the Orinda general plan which envisions maintaining the semi-rural character of the city and providing a variety of housing sizes. (General Plan Sections 2.1, 2.1.1-A, 2.1.2-E and 3.1.4-C) This chapter's regulation of the relationship of house size to lot size is intended to:
+
+A. Preserve and perpetuate the established relationship of structures and spaces characteristic of Orinda's residential setting, where relatively small homes are surrounded with generously sized areas of natural and landscaped open grounds;
+
+B. Assure that the scale of residential development responds to the limitations created by constrained lot sizes or the degree of the lot's slope, or both;
+
+C. Minimize the out-of-scale appearance of large homes relative to their lot size and to other homes in a neighborhood;
+
+D. Minimize the environmental damage of tree removal and grading which may result from over-building; and
+
+E. Expand the range of house size to accommodate housing needs and preserve and enhance diversity of housing.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.6.2 - Determining allowed home size.
+
+For the reasons set forth in Section 17.6.1, the size of a proposed new home or expansion of an existing home, including an expansion to accommodate an accessory dwelling unit in conformance with Section 17.3.4, shall be established as set forth in this section.
+
+A. Lots Under Twenty Thousand Square Feet. No single-family residence on a lot of less than twenty thousand (20,000) square feet may exceed the values shown on the schedule found in Section 17.6.8 entitled "Maximum Allowable Home Size Without Design Review Approval for Lots Less Than 20,000 Square Feet" except as provided in Subsection D below. The "Maximum Floor Area" values shown on that Section 17.6.8 schedule shall be increased by five (5) square feet for every linear foot of open space abutting the lot proposed for development, provided at least 75 linear feet of open space abut the lot proposed for development. For the purposes of this section, "open space" must not contain any buildings within 35 feet of the lot proposed for development. "Open space" includes EBMUD watershed property, PG&E transmission line rights-of-way, golf course fairways, East Bay Regional Park District parkland and portions of City parks in a natural state.
+
+B. All Other Lots. No single-family residence on a lot of twenty thousand (20,000) square feet or more may have a floor area exceeding the product of .20 times the net parcel area of the lot except as provided in Subsection D below.
+
+C. Large Homes. The maximum floor area for a single-family residence shall not exceed seven thousand (7,000) square feet, regardless of lot size except as provided in Subsection D below.
+
+D. Design Review. An applicant may elect to seek approval to exceed the maximum allowed sizes described in Subsections A—C, above, through a design review application to the City. Such applications shall be granted only if exceeding the maximum allowed sizes described in Subsections A—C, above, will not cause or contribute to inconsistency with the City's Basic design review standards (Section 17.30.5) or any other applicable design review standards.
+
+(Ord. 05-01 § 2; Ord. 99-5 § 2 Exh. A (part))
+
+(Ord. No. 10-03, § 2(exh. A), 4-20-10; Ord. No. 10-10, § 2(exh. A), 1-4-11; Ord. No. 17-03; § 2(Att. A), 8-1-17)
+
+17.6.3 - Calculation of floor area.
+
+The floor area of a single-family residence shall be calculated as follows:
+
+A. The floor area shall include the total horizontal area of each floor within the exterior walls of all buildings on a lot, including attached and detached primary and accessory dwelling units, buildings, garages, carports (measured by total roof area), storage spaces and any enclosed space with a seven-foot or greater ceiling height, and as measured at the exterior face of the enclosing walls. The area of a fully enclosed atrium shall be calculated as interior floor area.
+
+B. The floor area shall exclude:
+
+1. Attics and lofts, and/or portions of attics and lofts, which have less than an eight-foot ceiling height as measured from the top of exterior framing elements;
+
+2. Basements where the finished floor level directly above is less than four feet above the finished grade on all sides or basements where the finished floor level directly above is less than two feet above the finished grade on all but one side;
+
+3. Building recesses as follows:
+
+a. On existing residences, balconies, porches, decks or other structures, (except carports) where the longest dimension is unenclosed;
+
+b. On proposed construction, only portions of building recesses recessed less than eight feet deep where at least one of the longest dimensions is unenclosed; and
+
+c. On existing residences and proposed construction, up to 150 square feet of covered porches.
+
+(Ord. 05-01 § 3: Ord. 02-03 § 9; Ord. 99-5 § 2 Exh. A (part))
+
+(Ord. No. 10-10, § 2(exh. A), 1-4-11; Ord. No. 17-03; § 2(Att. A), 8-1-17)
+
+17.6.4 - Floor area adjustments.
+
+The calculation of floor area set forth in Section 17.6.3 shall be adjusted as appropriate under the following provisions:
+
+A. Garage Adjustment. The floor area of a garage shall be excluded from the calculation of floor area to a maximum of four hundred (400) square feet. Any garage floor area in excess of four hundred (400) square feet shall be included in the calculation of floor area in Section 17.6.3.
+
+B. Interior Volumes. In calculating floor area under Section 17.6.3, any space with an exterior height of seventeen (17) feet or greater, measured from finished floor level, shall be doubled.
+
+(Ord. 02-03 § 10; Ord. 99-5 § 2 Exh. A (part))
+
+17.6.5 - Exemptions.
+
+The provisions of this chapter shall not apply to the following projects:
+
+A. Additions of newly created habitable space which are to be fully contained within the building envelope of any existing conforming or legally nonconforming single-family residential structure, as determined by the Zoning Administrator; and provided that no approvals for either a new residence or an exterior addition have been granted within the past five years from the time of the application under this exemption. Examples include excavation and improvement of areas behind the skirt walls of hillside homes, improvement of attic spaces, and limited exterior changes such as the addition of windows, doors and dormers not exceeding four feet in height.
+
+B. Any addition or accessory structure of less than two hundred (200) square feet, provided that no approvals for either a new residence or an exterior addition have been granted within the past five years from the time of the subject application, and neither an exception or variance is requested.
+
+(Ord. 05-07 § 4: Ord. 99-5 § 2 Exh. A (part))
+
+(Ord. No. 10-03, § 2(exh. A), 4-20-10)
+
+17.6.6 - Additions—Calculating the net additional gross floor area.
+
+When an addition to an existing home involves the complete demolition of an existing accessory structure, that previously existing floor area shall not be counted as existing space and its replacement shall be viewed as newly constructed space.
+
+(Ord. 99-5 § 2 Exh. A (part))
+
+17.6.7 - Net parcel area.
+
+"Net parcel area" means the total horizontal area included within the property lines of a parcel, excluding area within vehicular rights-of-way and vehicular easements which serve four or more parcels. Generally, all public streets and private streets serving a total of four or more lots are to be excluded from net parcel area calculations, while shared driveways may be included.
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+17.6.8 - Chapter 17.6 schedule.
+
+Maximum Allowable Home Size For Lots Less Than 20,000 sq. ft.
+
+Note: The "Maximum Floor Area" as listed below excludes the first four hundred (400) square feet of garage and/or carport roof area, but includes all such garage/carport areas in excess of the first four hundred (400) square feet. Application of the design review standards of Chapter 17.30 may result in homes that are either smaller or larger than the maximum floor areas listed below.
+
+| Lot Size (net parcel area) | Maximum Floor Area (sq. ft.) |
+| Less than 5,000 sq. ft. | 1,400 |
+| 5,000 sq. ft. and larger | 1,400 |
+| 5,200 | 1,446 |
+| 5,400 | 1,490 |
+| 5,600 | 1,534 |
+| 5,800 | 1,578 |
+| 6,000 sq. ft. and larger | 1,620 |
+| 6,200 | 1,662 |
+| 6,400 | 1,702 |
+| 6,600 | 1,742 |
+| 6,800 | 1,782 |
+| 7,000 sq. ft. and larger | 1,820 |
+| 7,200 | 1,858 |
+| 7,400 | 1,894 |
+| 7,600 | 1,930 |
+| 7,800 | 1,966 |
+| 8,000 sq. ft. and larger | 2,000 |
+| 8,200 | 2,034 |
+| 8,400 | 2,066 |
+| 8,600 | 2,098 |
+| 8,800 | 2,130 |
+| 9,000 sq. ft. and larger | 2,160 |
+| 9,200 | 2,190 |
+| 9,400 | 2,218 |
+| 9,600 | 2,246 |
+| 9,800 | 2,274 |
+| 10,000 sq. ft. and larger | 2,300 |
+| 10,200 | 2,336 |
+| 10,400 | 2,371 |
+| 10,600 | 2,406 |
+| 10,800 | 2,441 |
+| 11,000 sq. ft. and larger | 2,475 |
+| 11,200 | 2,509 |
+| 11,400 | 2,542 |
+| 11,600 | 2,575 |
+| 11,800 | 2,608 |
+| 12,000 sq. ft. and larger | 2,640 |
+| 12,200 | 2,676 |
+| 12,400 | 2,711 |
+| 12,600 | 2,747 |
+| 12,800 | 2,782 |
+| 13,000 sq. ft. and larger | 2,817 |
+| 13,200 | 2,851 |
+| 13,400 | 2,885 |
+| 13,600 | 2,919 |
+| 13,800 | 2,953 |
+| 14,000 sq. ft. and larger | 2,987 |
+| 14,200 | 3,020 |
+| 14,400 | 3,053 |
+| 14,600 | 3,085 |
+| 14,800 | 3,118 |
+| 15,000 sq. ft. and larger | 3,150 |
+| 15,200 | 3,186 |
+| 15,400 | 3,222 |
+| 15,600 | 3,257 |
+| 15,800 | 3,293 |
+| 16,000 sq. ft. and larger | 3,328 |
+| 16,200 | 3,363 |
+| 16,400 | 3,398 |
+| 16,600 | 3,433 |
+| 16,800 | 3,468 |
+| 17,000 sq. ft. and larger | 3,502 |
+| 17,200 | 3,536 |
+| 17,400 | 3,570 |
+| 17,600 | 3,604 |
+| 17,800 | 3,638 |
+| Lot Size (net parcel area) | Maximum Floor Area (sq. ft.) |
+| 18,000 sq. ft. and larger | 3,672 |
+| 18,200 | 3,705 |
+| 18,400 | 3,739 |
+| 18,600 | 3,772 |
+| 18,800 | 3,805 |
+| 19,000 sq. ft. and larger | 3,838 |
+| 19,200 | 3,870 |
+| 19,400 | 3,903 |
+| 19,600 | 3,936 |
+| 19,800 sq. ft. and larger, but less than 20,000 sq. ft. | 3,968 |
+
+(Ord. 99-5 § 2 (Exh. A (part))
+
+(Ord. No. 10-03, § 2(exh. A), 4-20-10; Ord. No. 17-03; § 2(Att. A), 8-1-17)

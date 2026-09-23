@@ -1,0 +1,173 @@
+DIVISION 10. - ACCESSORY DWELLING UNITS^[2]
+
+SEC. 36.12.60. - Accessory dwelling units and junior accessory dwelling units.
+
+Sec. 36.12.60 through Sec. 36.12.120 establish standards for accessory dwelling units and junior accessory dwelling units in conformance with the City Code and all applicable state laws.
+
+(Ord. No. 11.20, § 4, 11/10/20.)
+
+SEC. 36.12.65. - Accessory dwelling unit and junior accessory dwelling unit definitions.
+
+For the purposes of this division, the following definitions shall apply:
+
+Attached unit. An accessory dwelling unit created by the addition of new floor area which is attached to at least one (1) primary dwelling.
+
+Detached unit. An accessory dwelling unit created by the addition of a new structure which is detached from any primary dwelling.
+
+Dual urban opportunity housing site. An R1-zoned lot which contains two (2) primary dwelling units and/or was created through an urban lot split.
+
+Multi-family dwelling structure. A residential structure or group of attached structures with two (2) or more dwelling units, including, but not limited to, duplexes, triplexes, fourplexes, apartments, condominiums, rowhouses and townhouses. Multi-family dwelling structures are designed such that multiple families are living independently of each other.
+
+Multi-family interior unit. An accessory dwelling unit created within a portion of an existing multi-family dwelling structure that was not previously used as livable space.
+
+Multi-family residential site. A site containing one (1) or more multi-family dwelling structures or more than one (1) single-family home in a zone that permits single-family or multi-family uses.
+
+Single-family interior unit. An accessory dwelling unit created within a portion of an existing single-family residence or within an existing accessory structure on a single-family residential site.
+
+Single-family residential site. A site containing one (1) single-family home, including a lot within a small-lot, single-family development, in a zone that permits single-family or multi-family uses.
+
+(Ord. No. 11.20, § 5, 11/10/20; Ord. No. 4.22, § 10, 4/12/22.)
+
+SEC. 36.12.70. - Findings.
+
+As required by Government Code § 65852.2, the city finds that accessory dwelling units and junior accessory dwelling units are residential uses that are consistent with the allowable density, with the general plan, and zoning designation for the site, provided the units are located on properties zoned to allow single-family or multi-family dwelling residential uses.
+
+(Ord. No. 11.20, § 6, 11/10/20.)
+
+Editor's note— Ord. No. 01.2024, § 9, adopted Jan. 23, 2024, repealed §§ 36.12.75—36.12.115, and renumbered and amended §§ 36.12.80—36.12.120 as set out herein. The former §§ 36.12.75—36.12.115 pertained to similar subject matter and derived from Ord. No. 11.20, § 7, adopted Nov. 10, 2020.
+
+SEC. 36.12.75. - Maximum number of units.
+
+Accessory dwelling units and/or a junior accessory dwelling unit are permitted on a residential site as follows:
+
+a. One (1) accessory dwelling unit and one (1) junior accessory dwelling unit per lot with a proposed or existing single-family dwelling subject to the provisions of Government Code Section 65852.2(A).
+
+b. One (1) detached, new construction, accessory dwelling unit that does not exceed four (4) foot side- and rear-yard setbacks for a lot with a proposed or existing single-family dwelling. The accessory dwelling unit may be combined with a junior accessory dwelling unit.
+
+c. Multiple accessory dwelling units are allowed within the portions of existing multi-family dwelling structures that are not used as livable space, including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements or garages, if each unit complies with Chapter 8 of the city code. At least one (1) accessory dwelling unit within an existing multi-family dwelling is allowed, and up to twenty-five (25) percent of the existing multi-family dwelling units are allowed.
+
+d. Not more than two (2) accessory dwelling units that are located on a lot that has an existing multi-family dwelling are allowed to be detached from that multi-family dwelling subject to a height limit in compliance with Section 36.12.85 and four (4) foot rear yard and side setbacks.
+
+(Ord. No. 11.20, § 8, 11/10/20; Ord. No. 4.22, § 11, 4/12/22; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.80. - Provisions applicable to single-family accessory dwelling units.
+
+Except as provided in subsection 36.12.95 b., an accessory dwelling unit is only allowed on a single-family residential site subject to the following requirements. All requirements of the underlying zoning district shall apply unless they are in conflict with this Section.
+
+SINGLE-FAMILY ACCESSORY DWELLING UNIT REQUIREMENTS
+
+| Minimum lot area | No minimum. | |
+| Gross floor area | Maximum: Eight hundred fifty (850) square feet for one (1) bedroom or fewer, and one thousand (1,000) square feet for two (2) bedrooms or more. Attached units shall not exceed fifty (50) percent of gross floor area of the existing primary unit. | |
+| Setbacks | Front | Consistent with requirements of the underlying zone. |
+| Setbacks | Side | Four (4) feet minimum. |
+| Setbacks | Rear | Four (4) feet minimum. |
+| Height limit | Attached unit or detached unit | For 1- or 2-story structure: Twenty-eight (28) feet maximum, including a basement level. |
+| Height limit | Above an accessory structure | For 2-story structure: Twenty-eight (28) feet maximum if the accessory dwelling unit is proposed on the second story of an accessory structure. |
+| Required parking spaces | No bedrooms | None. |
+| Required parking spaces | One (1) or more bedrooms | One (1) space (covered or uncovered), which can be provided in a garage or carport or as tandem parking in a driveway. No parking is required if the accessory dwelling unit meets the provisions of Section 36.12.95. |
+| Entrances | Shall have a separate entrance from the primary dwelling unit provided as a side-hinged door per Section R311 of the California Residential Code. Internal access to the primary dwelling unit is permitted in addition to the separate entrance. | |
+| Stairs | Setbacks. Staircases must comply with accessory dwelling unit minimum setbacks. No encroachments into setbacks are permitted. | |
+| Stairs | Enclosed Staircase. Enclosed staircases are counted toward the gross floor area of an accessory dwelling unit. | |
+| Porch, decks and balconies and other accessory structures | At-grade patio or deck | A covered, unenclosed porch at the entrance of an accessory dwelling unit is permitted in accordance with building and fire code requirements, where up to fifteen (15) square feet does not count toward gross floor area of the unit. An uncovered deck must comply with subsection 36.14.95 a. |
+| Porch, decks and balconies and other accessory structures | Second-story balcony | Attached unit. A balcony is permitted if compliant with Section 36.10.25 for balconies on the primary dwelling unit. |
+| Porch, decks and balconies and other accessory structures | Second-story balcony | Detached unit. A balcony is permitted on the front of the unit facing the primary home or street, the side of the unit facing the interior yard of the property or, for corner lots, on the street side yard of the unit facing the street. A balcony can face the rear property line only if compliant with Section 36.10.25 for balconies on the primary dwelling unit. The total square footage of all balconies cannot exceed seventy-five (75) square feet and must be a minimum distance of ten (10) feet from the rear property line, seven (7) feet from any side property line and four (4) feet from the street side property line. |
+| Porch, decks and balconies and other accessory structures | Roof deck | Prohibited. |
+| Porch, decks and balconies and other accessory structures | Accessory structures | All other accessory structures must comply with Section 36.12.50. |
+
+(Ord. No. 11.20, § 9, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.85. - Provisions applicable to multi-family accessory dwelling units.
+
+Except as provided in subsection 36.12.95 b., accessory dwelling unit(s) may be permitted on a multi-family residential site subject to the following requirements. All requirements of the underlying zoning district shall apply unless they are in conflict with this Section.
+
+MULTI-FAMILY ACCESSORY DWELLING UNIT REQUIREMENTS
+
+| Minimum lot area | No minimum. | | |
+| Gross floor area | Maximum: One thousand two hundred (1,200) square feet for a detached accessory dwelling unit. | | |
+| Setbacks | Detached unit | Front | Consistent with the required setbacks of the underlying zoning district. |
+| Setbacks | Detached unit | Side | Four (4) feet minimum. |
+| Setbacks | Detached unit | Rear | Four (4) feet minimum. |
+| Height limit | Detached unit | For a 1- or 2-story structure: Twenty-eight (28) feet maximum, including a basement level. | |
+| Required parking spaces | None. | | |
+
+(Ord. No. 11.20, § 10, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.90. - Provisions applicable to junior accessory dwelling units.
+
+A junior accessory dwelling unit may be permitted on a single-family residential site subject to the following requirements.
+
+JUNIOR ACCESSORY DWELLING UNIT REQUIREMENTS
+
+| Minimum lot area | No minimum. |
+| Gross floor area | Maximum: Five hundred (500) square feet of floor area. |
+| Location of unit | Must be contained entirely within the walls of a single-family dwelling. |
+| Required parking spaces | None. |
+| Entrances | A junior accessory dwelling unit must have a separate entrance from the primary dwelling unit. An interior entry between the primary dwelling unit and junior accessory dwelling unit may be allowed in addition to the separate entrance, but an interior entry is required if the junior accessory dwelling unit does not include a bathroom. |
+| Owner occupancy | One (1) of the dwellings on the property must be occupied by at least one (1) legal owner of the property, unless the property is owned by a governmental agency, land trust or housing organization. |
+| Deed restriction | Prior to issuance of a building permit for a junior accessory dwelling unit, a deed restriction, in a form satisfactory to the city attorney and zoning administrator, shall be recorded at the Santa Clara County Recorder's office and filed with the city. The deed restriction shall prohibit the sale of the junior accessory dwelling unit separate from the sale of the single-family dwelling, restrict any modifications to the junior accessory dwelling unit that would render the unit nonconforming, prohibit renting the unit for fewer than thirty (30) days and require that one (1) of the dwellings on the lot must be occupied by at least one (1) legal owner of the property, unless the property is owned by a governmental agency, land trust or housing organization. |
+
+(Ord. No. 11.20, § 11, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+_____
+
+SEC. 36.12.95. - Exceptions.
+
+a. Parking exceptions. No parking space is required for an accessory dwelling unit if any of the following conditions are met:
+
+1. The unit is located within one-half (1/2) mile walking distance of public transit.
+
+2. The unit is located within an architecturally and historically significant historic district.
+
+3. The unit is part of the existing primary dwelling unit or an existing accessory structure.
+
+4. On-street parking permits are required but not offered to the occupant of the accessory dwelling unit.
+
+5. There is a car-share vehicle parking space located within one (1) block of the accessory dwelling unit.
+
+6. When an existing garage, carport or covered parking structure is demolished in conjunction with the construction of an accessory dwelling unit or converted to an accessory dwelling unit, no replacement parking spaces shall be required.
+
+b. Development standard exceptions.
+
+1. An attached or detached accessory dwelling unit no more than eight hundred (800) square feet in size with heights consistent with this Division and minimum side and rear setbacks of four (4) feet shall be permitted regardless of any development standard that would prevent construction of the unit, including, but not limited to, limits on the front setback, lot coverage, floor area ratio, open space or detached accessory dwelling unit location.
+
+2. An expansion of no more than one hundred fifty (150) square feet of an existing accessory structure to accommodate ingress and egress shall be allowed when an accessory dwelling unit is otherwise within the existing space of an accessory structure or within the existing space of an existing single-family dwelling.
+
+3. The height and setback standards listed in Section 36.12.80 do not apply to accessory dwelling units located entirely within a single-family dwelling, nonlivable space of a multi-family dwelling structure, or accessory structure; or in the place of and to the same dimensions, including height, as an existing accessory structure. The side and rear setbacks must be sufficient for fire and safety.
+
+4. Up to two (2) feet of roof eave may encroach into required setbacks in accordance with building and fire codes.
+
+5. The gross floor area for a single-family accessory dwelling unit may be exempt from the subject parcel's maximum allowable floor area per the underlying zoning district, up to a maximum of eight hundred (800) square feet.
+
+(Ord. No. 11.20, § 12, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.100. - Sale of units.
+
+Accessory dwelling units and junior accessory dwelling units may be rented independently of the primary single-family dwelling or multi-family dwelling structure but may not be sold or conveyed separately from the primary dwelling(s) on the lot except as provided in Government Code Section 65852.26.
+
+(Ord. No. 11.20, § 13, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.105. - Short-term rentals.
+
+Short-term rentals with a term thirty (30) days or shorter are prohibited in: all junior accessory dwelling units; all accessory dwelling units of eight hundred (800) square feet or less; single-family interior units; detached units created under subsection 36.12.95 b.1.; multi-family interior units; and detached units on multi-family residential sites.
+
+(Ord. No. 11.20, § 14, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.110. - Corrections of nonconforming conditions or violations.
+
+The correction of nonconforming zoning conditions, building code violations or unpermitted structures shall not be required of an accessory dwelling unit unless the improvements present a threat to public health and safety, which are affected by the construction of the accessory dwelling unit, or a correction is necessary to the primary dwelling unit to protect health and safety as determined by the chief building official.
+
+(Ord. No. 11.20, § 15, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+SEC. 36.12.115. - Utilities.
+
+a. Except as provided in subsection b. below, an accessory dwelling unit may be required to have a new or separate utility connection, including a separate sewer lateral, between the accessory dwelling unit and the utility. A connection fee or capacity charge may be charged that is proportionate to the size in square feet of the accessory dwelling unit or its drainage fixture unit (DFU) values. Separate electric and water meters shall be required for the second unit.
+
+b. Junior accessory dwelling units and accessory dwelling units converted from the existing space of a single-family dwelling or accessory structure are exempt from any requirement to install a new or separate utility connection and to pay any associated connection or capacity fees or charges.
+
+c. All utility extensions shall be placed underground.
+
+d. No accessory dwelling unit shall be permitted if it is determined that there is not adequate water or sewer service to the property.
+
+(Ord. No. 11.20, § 16, 11/10/20; Ord. No. 01.2024, § 9, 1/23/24.)
+
+Editor's note— Ord. No. 01.2024, § 9, adopted Jan. 23, 2024, repealed the former § 36.12.115, and enacted a new § 36.12.115 as set out herein. The former § 36.12.115 pertained to fire sprinklers and derived from Ord. No. 11.20,§ 15, adopted Nov. 10, 2020.

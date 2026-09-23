@@ -1,0 +1,1503 @@
+{
+  "note": "One record per jurisdiction. docs.<doc>.urls are fetched in order; several URLs are concatenated into one raw file with formx-part markers. sections = whole sections kept in the text; entries = definition entries kept, by term regex. transport: direct (fetch_direct.py) | chrome (browser_harvest.md).",
+  "lot_terms": "^(lots?\\b|parcels?\\b|parcel lines?\\b|required\\s+(front|rear|side|street[- ]side|exterior[- ]side|interior[- ]side)\\s+yard|lot line|lot lines|(front|rear|side|street[- ]side|exterior[- ]side|interior[- ]side|exterior|interior)\\s+(lot|property|yard|setback|line)|(property|street)\\s+lines?\\b|corner\\b|reversed?\\s+corner|key lot|flag lot|through\\b|double[- ]frontage|frontage|front(age)?\\b|yards?\\b|setbacks?\\b|street[- ]side|exterior side|interior side|building line|build-to line)",
+  "jurisdictions": [
+    {
+      "jurisdiction": "San Carlos",
+      "slug": "san-carlos",
+      "code_name": "San Carlos Municipal Code, Title 18 Zoning",
+      "platform": "codepublishing",
+      "platform_label": "Code Publishing (General Code)",
+      "host": "www.codepublishing.com/CA/SanCarlos",
+      "transport": "direct",
+      "ua": "old",
+      "host_marker": "current through Ordinance 1637, passed June 22, 2026.",
+      "marker_url": "https://www.codepublishing.com/CA/SanCarlos/",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://www.codepublishing.com/CA/SanCarlos/html/SanCarlos18/SanCarlos1823.html"
+          ],
+          "sections": [
+            "18.23.210"
+          ],
+          "section_range": "SCMC 18.23.210 Accessory dwelling units/junior accessory dwelling units (whole section)"
+        },
+        "definitions": {
+          "urls": [
+            "https://www.codepublishing.com/CA/SanCarlos/html/SanCarlos18/SanCarlos1841.html",
+            "https://www.codepublishing.com/CA/SanCarlos/html/SanCarlos18/SanCarlos1803.html"
+          ],
+          "entries": [
+            {
+              "section": "18.41.020",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "sections": [
+            "18.03.110",
+            "18.03.120"
+          ],
+          "section_range": "SCMC 18.41.020 (lot, lot line, lot line types, frontage, yard, setback entries); 18.03.110 Determining lot frontage; 18.03.120 Determining setbacks (yards)"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://www.codepublishing.com/CA/SanCarlos/html/SanCarlos18/SanCarlos1804.html"
+          ],
+          "sections": [
+            "18.04.030"
+          ],
+          "section_range": "SCMC 18.04.030 Development standards—RS districts (Table 18.04.030 with notes)"
+        }
+      },
+      "marker_re": "current through Ordinance \\d+, passed [A-Z][a-z]+ \\d{1,2}, \\d{4}\\."
+    },
+    {
+      "jurisdiction": "Sunnyvale",
+      "slug": "sunnyvale",
+      "code_name": "Sunnyvale Municipal Code, Title 19 Zoning",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/42732718"
+          ],
+          "section_range": "SMC Chapter 19.79 Accessory Dwelling Units (§ 19.79.010 – § 19.79.100), whole chapter"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/42729520"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS",
+              "enum": "\\(\\d+\\)\\s*"
+            }
+          ],
+          "section_range": "SMC Chapter 19.12 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/42730352",
+            "https://ecode360.com/42730359",
+            "https://ecode360.com/42730405"
+          ],
+          "section_range": "SMC Chapters 19.30 Lot Area and Lot Width, 19.32 Building Heights, Lot Coverages and Floor Area Ratios, 19.34 Front, Side and Rear Yards (whole chapters; Sunnyvale sets residential standards by topic, not by district)"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Mill Valley",
+      "slug": "mill-valley",
+      "code_name": "Mill Valley Municipal Code, Title 20 Zoning",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/44319622"
+          ],
+          "section_range": "MVMC Chapter 20.90 Accessory Dwelling Units (§ 20.90.010 – § 20.90.080), whole chapter"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/44317695"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "MVMC Chapter 20.08 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/44317857"
+          ],
+          "section_range": "MVMC Chapter 20.16 RS Districts (§ 20.16.010 – § 20.16.050), whole chapter"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Sausalito",
+      "slug": "sausalito",
+      "code_name": "Sausalito Municipal Code, Title 10 Zoning",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/47135313"
+          ],
+          "sections": [
+            "10.44.080"
+          ],
+          "section_range": "SMC § 10.44.080 Accessory dwelling units (whole section, within Ch. 10.44 Specific Use Requirements)"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/47137407"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "SMC Chapter 10.88 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/47134342"
+          ],
+          "sections": [
+            "10.22.040"
+          ],
+          "section_range": "SMC § 10.22.040 Site development requirements (residential zoning districts table)"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Napa",
+      "slug": "napa",
+      "code_name": "City of Napa Municipal Code, Title 17 Zoning",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/43397584"
+          ],
+          "sections": [
+            "17.52.015"
+          ],
+          "section_range": "NMC § 17.52.015 Accessory dwelling units and junior accessory dwelling units (whole section)"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/43396147"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "NMC Chapter 17.06 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/43396456"
+          ],
+          "sections": [
+            "17.08.030",
+            "17.08.040"
+          ],
+          "section_range": "NMC § 17.08.030 Residential districts—Property development standards; § 17.08.040 Other development standards and requirements applicable to residential districts"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Menlo Park",
+      "slug": "menlo-park",
+      "code_name": "Menlo Park Municipal Code, Title 16 Zoning",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/47187943"
+          ],
+          "section_range": "MPMC Chapter 16.79 Accessory Dwelling Units, whole chapter"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/47185724"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "MPMC Chapter 16.04 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/47186023",
+            "https://ecode360.com/47186061",
+            "https://ecode360.com/47186101",
+            "https://ecode360.com/47186139",
+            "https://ecode360.com/47186157",
+            "https://ecode360.com/47186195"
+          ],
+          "section_range": "MPMC Chapters 16.10 R-E, 16.12 R-E-S, 16.14 R-1-S, 16.15 R-1-S (FG), 16.16 R-1-U, 16.17 R-1-U (LM), whole chapters (one chapter per single-family district)"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Los Altos Hills",
+      "slug": "los-altos-hills",
+      "code_name": "Los Altos Hills Municipal Code, Title 10 Zoning and Site Development, Chapter 1 Zoning",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/44000032"
+          ],
+          "section_range": "LAHMC Title 10, Chapter 1, Article 14 Accessory Dwelling Units, whole article"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/43999438"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "LAHMC Title 10, Chapter 1, Article 2 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/43999500"
+          ],
+          "section_range": "LAHMC Title 10, Chapter 1, Article 5 Residential-Agricultural (R-A) Zone - Area, Coverage, Height and Setback Limitations, whole article"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Healdsburg",
+      "slug": "healdsburg",
+      "code_name": "Healdsburg Land Use Code, Title 20",
+      "platform": "ecode360",
+      "platform_label": "eCode360 (General Code)",
+      "host": "ecode360.com",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://ecode360.com/48343648"
+          ],
+          "sections": [
+            "20.20.010"
+          ],
+          "section_range": "HLUC § 20.20.010 Accessory dwelling units and junior accessory dwelling units (whole section)"
+        },
+        "definitions": {
+          "urls": [
+            "https://ecode360.com/48345046"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "HLUC § 20.28.310 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://ecode360.com/48342658"
+          ],
+          "section_range": "HLUC Chapter 20.08 Article II Single-family Residential (R-1) Districts"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Lafayette",
+      "slug": "lafayette",
+      "code_name": "Lafayette Municipal Code, Title 6 Planning and Land Use",
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/lafayette",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS_PT2GERE_CH6-5GEPR_ART3ACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "section_range": "LMC Title 6, Chapter 6-5, Article 3 Accessory Dwelling Units, §§ 6-560 – 6-569 (whole article)",
+          "nodes": [
+            "TIT6PLLAUS_PT2GERE_CH6-5GEPR_ART3ACDWUN"
+          ]
+        },
+        "definitions": {
+          "urls": [
+            "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS_PT2GERE_CH6-3DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "nodes": [
+            "TIT6PLLAUS_PT2GERE_CH6-3DE"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "LMC Chapter 6-3 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS_PT3LAUSDI_CH6-7SIMIREDI"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "nodes": [
+            "TIT6PLLAUS_PT3LAUSDI_CH6-7SIMIREDI"
+          ],
+          "section_range": "LMC Chapter 6-7 Single-Family Residential Districts, whole chapter (Articles 1-8 R-6 to R-100, Articles 9-10 LR-5 and LR-10, Article 11 lot-area reduction procedure)"
+        }
+      },
+      "host_marker": "VERSION: JAN 9, 2026 (CURRENT)"
+    },
+    {
+      "jurisdiction": "Moraga",
+      "slug": "moraga",
+      "code_name": "Moraga Municipal Code, Title 8 Planning and Zoning",
+      "notes": "Municode lists Ordinance No. 321, adopted 7/8/26, amending Chapter 8.124 Accessory Dwelling Units, among recently adopted ordinances not yet codified (seen 2026-09-23). Captured text is the codified chapter as published.",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "MOCA_TIT8PLZO_CH8.124ACDWUN"
+          ],
+          "section_range": "MMC Chapter 8.124 Accessory Dwelling Units, whole chapter",
+          "urls": [
+            "https://library.municode.com/ca/moraga/codes/municipal_code?nodeId=MOCA_TIT8PLZO_CH8.124ACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "MOCA_TIT8PLZO_CH8.04GEPRDE"
+          ],
+          "section_range": "MMC Chapter 8.04 General Provisions and Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/moraga/codes/municipal_code?nodeId=MOCA_TIT8PLZO_CH8.04GEPRDE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "MOCA_TIT8PLZO_CH8.21FLARRAFAST",
+            "MOCA_TIT8PLZO_CH8.22RUREDIRR",
+            "MOCA_TIT8PLZO_CH8.24ONTWTHDWUNPEACREDI",
+            "MOCA_TIT8PLZO_CH8.68GESTLOYASEFEWA"
+          ],
+          "section_range": "MMC Chapters 8.21 Floor Area Ratio (FAR) Standards, 8.22 Rural Residential District (RR), 8.24 One, Two, and Three Dwelling Units per Acre Residential Districts, 8.68 General Standards for Lots, Yards, Setbacks, Fences and Walls (whole chapters)",
+          "urls": [
+            "https://library.municode.com/ca/moraga/codes/municipal_code?nodeId=MOCA_TIT8PLZO_CH8.21FLARRAFAST",
+            "https://library.municode.com/ca/moraga/codes/municipal_code?nodeId=MOCA_TIT8PLZO_CH8.22RUREDIRR",
+            "https://library.municode.com/ca/moraga/codes/municipal_code?nodeId=MOCA_TIT8PLZO_CH8.24ONTWTHDWUNPEACREDI",
+            "https://library.municode.com/ca/moraga/codes/municipal_code?nodeId=MOCA_TIT8PLZO_CH8.68GESTLOYASEFEWA"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/moraga",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Orinda",
+      "slug": "orinda",
+      "code_name": "Orinda Municipal Code, Title 17 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD"
+          ],
+          "section_range": "OMC § 17.3.4 Accessory Dwelling Units (ADUs), whole section",
+          "urls": [
+            "https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT17ZO_CH17.2DE"
+          ],
+          "section_range": "OMC Chapter 17.2 Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT17ZO_CH17.4REDIBADERE",
+            "TIT17ZO_CH17.6REFLAR"
+          ],
+          "section_range": "OMC Chapter 17.4 Residential District Base Development Regulations (RVL, RL, RM, RH; whole chapter) and Chapter 17.6 Residential Floor Area (whole chapter)",
+          "urls": [
+            "https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE",
+            "https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.6REFLAR"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/orinda",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Hillsborough",
+      "slug": "hillsborough",
+      "code_name": "Hillsborough Municipal Code, Title 17 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT17ZO_CH17.52ACDWUNJUACDWUN"
+          ],
+          "section_range": "HMC Chapter 17.52 Accessory Dwelling Units and Junior Accessory Dwelling Units, whole chapter",
+          "urls": [
+            "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.52ACDWUNJUACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT17ZO_CH17.08DE",
+            "TIT1GEPR_CH1.04GEPR"
+          ],
+          "section_range": "HMC Chapter 17.08 Definitions, and Chapter 1.04 General Provisions (§ 1.04.010, to which § 17.08.090 refers for \"frontage\"): lot, lot line, frontage, yard, setback, street entries",
+          "urls": [
+            "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.08DE",
+            "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT1GEPR_CH1.04GEPR"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            },
+            {
+              "sections": [
+                "1.04.010"
+              ],
+              "terms": "^(frontage|street|lot|yard|setback)",
+              "enum": "[A-Z]{1,2}\\.\\s+"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT17ZO_CH17.24RESEAR",
+            "TIT17ZO_CH17.28HELI",
+            "TIT17ZO_CH17.32RESTSILOCO"
+          ],
+          "section_range": "HMC Chapters 17.24 Required Setback Areas, 17.28 Height Limitations, 17.32 Residential Structure Size and Lot Coverage (whole chapters; Hillsborough sets residential standards by topic)",
+          "urls": [
+            "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.24RESEAR",
+            "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.28HELI",
+            "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.32RESTSILOCO"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/hillsborough",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Portola Valley",
+      "slug": "portola-valley",
+      "code_name": "Portola Valley Municipal Code, Title 18 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT18ZO_CH18.25STACDWUNADJUACDWUNJA"
+          ],
+          "section_range": "PVMC Chapter 18.25 Standards for Accessory Dwelling Units (ADU) and Junior Accessory Dwelling Units (JADU), whole chapter",
+          "urls": [
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.25STACDWUNADJUACDWUNJA"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT18ZO_CH18.04DE"
+          ],
+          "section_range": "PVMC Chapter 18.04 Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.04DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT18ZO_CH18.12REESDIRE",
+            "TIT18ZO_CH18.14SIMIREDIRE",
+            "TIT18ZO_CH18.16MOREDIRE",
+            "TIT18ZO_CH18.48PAAROPSPBUASRE",
+            "TIT18ZO_CH18.52YA",
+            "TIT18ZO_CH18.54BUBU"
+          ],
+          "section_range": "PVMC Chapters 18.12 R-E, 18.14 R-1, 18.16 M-R district regulations; 18.48 Parcel Area, Open Space and Bulk—Basic Requirements; 18.52 Yards; 18.54 Building Bulk (whole chapters)",
+          "urls": [
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.12REESDIRE",
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.14SIMIREDIRE",
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.16MOREDIRE",
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.48PAAROPSPBUASRE",
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.52YA",
+            "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.54BUBU"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/portola_valley",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Los Altos",
+      "slug": "los-altos",
+      "code_name": "Los Altos Municipal Code, Title 14 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT14ZO_CH14.14ACDWUN"
+          ],
+          "section_range": "LAMC Chapter 14.14 Accessory Dwelling Units, whole chapter",
+          "urls": [
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.14ACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT14ZO_CH14.02DE"
+          ],
+          "section_range": "LAMC Chapter 14.02 Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.02DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT14ZO_CH14.06R1SIMIDI",
+            "TIT14ZO_CH14.08R1SIMIDI",
+            "TIT14ZO_CH14.10R1SIMIDI",
+            "TIT14ZO_CH14.12R1SIMIDI",
+            "TIT14ZO_CH14.13SIORSIMIOVDI"
+          ],
+          "section_range": "LAMC Chapters 14.06 R1-10, 14.08 R1-H, 14.10 R1-20, 14.12 R1-40 Single-Family Districts, 14.13 Single-Story Single-Family Overlay District (whole chapters)",
+          "urls": [
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.06R1SIMIDI",
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.08R1SIMIDI",
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.10R1SIMIDI",
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.12R1SIMIDI",
+            "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO_CH14.13SIORSIMIOVDI"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/los_altos",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Mountain View",
+      "slug": "mountain-view",
+      "code_name": "Mountain View City Code, Chapter 36 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "PTIITHCO_CH36ZO_ARTIVREZO_DIV10ACDWUN"
+          ],
+          "section_range": "MVCC Chapter 36, Article IV, Division 10 Accessory Dwelling Units, whole division",
+          "urls": [
+            "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO_ARTIVREZO_DIV10ACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "PTIITHCO_CH36ZO_ARTXVIIDE"
+          ],
+          "section_range": "MVCC Chapter 36, Article XVII Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO_ARTXVIIDE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "PTIITHCO_CH36ZO_ARTIVREZO_DIV3SIMIR1ZODIST",
+            "PTIITHCO_CH36ZO_ARTIVREZO_DIV12SEFLARRAEX",
+            "PTIITHCO_CH36ZO_ARTIIIGERESPPREXIN_DIV4GESE"
+          ],
+          "section_range": "MVCC Chapter 36, Article IV Division 3 Single-Family (R1) Zoning District Standards, Division 12 Setback and Floor Area Ratio Exceptions, and Article III Division 4 General Setbacks (whole divisions)",
+          "urls": [
+            "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO_ARTIVREZO_DIV3SIMIR1ZODIST",
+            "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO_ARTIVREZO_DIV12SEFLARRAEX",
+            "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO_ARTIIIGERESPPREXIN_DIV4GESE"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/mountain_view",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Saratoga",
+      "slug": "saratoga",
+      "code_name": "Saratoga City Code, Chapter 15 Zoning Regulations",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "CH15ZORE_ART15-56ACDWUN"
+          ],
+          "section_range": "SCC Chapter 15, Article 15-56 Accessory Dwelling Units, whole article",
+          "urls": [
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-56ACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "CH15ZORE_ART15-06DE_15-06.290FR",
+            "CH15ZORE_ART15-06DE_15-06.420LO",
+            "CH15ZORE_ART15-06DE_15-06.430LOLI",
+            "CH15ZORE_ART15-06DE_15-06.520PRLI",
+            "CH15ZORE_ART15-06DE_15-06.587SE",
+            "CH15ZORE_ART15-06DE_15-06.588SEAR",
+            "CH15ZORE_ART15-06DE_15-06.590SELI"
+          ],
+          "section_range": "SCC Article 15-06 Definitions, §§ 15-06.290 Frontage, 15-06.420 Lot, 15-06.430 Lot line, 15-06.520 Property line, 15-06.587 Setback, 15-06.588 Setback area, 15-06.590 Setback line (each section is its own Municode page; the article defines no 'yard' terms)",
+          "urls": [
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.290FR",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.420LO",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.430LOLI",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.520PRLI",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.587SE",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.588SEAR",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-06DE_15-06.590SELI"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "CH15ZORE_ART15-12SIMIREDI",
+            "CH15ZORE_ART15-13HRHIREDI",
+            "CH15ZORE_ART15-20REOPSPDI"
+          ],
+          "section_range": "SCC Chapter 15, Articles 15-12 R-1 Single-Family Residential Districts, 15-13 HR Hillside Residential District, 15-20 R-OS Residential Open Space District (whole articles)",
+          "urls": [
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-12SIMIREDI",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-13HRHIREDI",
+            "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE_ART15-20REOPSPDI"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/saratoga",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "San Jose",
+      "slug": "san-jose",
+      "code_name": "San Jose Municipal Code, Title 20 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT20ZO_CH20.80SPUSRE_PT2.75ACDWUN"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.80SPUSRE"
+          ],
+          "section_range": "SJMC Chapter 20.80, Part 2.75 Accessory Dwelling Units (includes § 20.80.175), whole part",
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT20ZO_CH20.200DE"
+          ],
+          "section_range": "SJMC Chapter 20.200 Definitions: lot, lot line, frontage, yard, setback entries (including §§ 20.200.670, 20.200.700 where matched)",
+          "urls": [
+            "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.200DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT20ZO_CH20.30REZODI_PT3DERE",
+            "TIT20ZO_CH20.30REZODI_PT4SERE"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI"
+          ],
+          "section_range": "SJMC Chapter 20.30 Residential Zoning Districts, Part 3 Development Regulations (Table 20-50, § 20.30.200 ff.) and Part 4 Setback Regulations",
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/san_jose",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Windsor",
+      "slug": "windsor",
+      "code_name": "Windsor Municipal Code, Title XVII Zoning Code",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TITXVIIZOCO_ART7HORE_CH17.82ACDWUNAD",
+            "TITXVIIZOCO_ART7HORE_CH17.84JUACDWUNJA"
+          ],
+          "section_range": "WMC Title XVII, Chapter 17.82 Accessory Dwelling Unit (ADU) and Chapter 17.84 Junior Accessory Dwelling Unit (JADU), whole chapters",
+          "urls": [
+            "https://library.municode.com/ca/windsor/codes/code_of_ordinances?nodeId=TITXVIIZOCO_ART7HORE_CH17.82ACDWUNAD",
+            "https://library.municode.com/ca/windsor/codes/code_of_ordinances?nodeId=TITXVIIZOCO_ART7HORE_CH17.84JUACDWUNJA"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TITXVIIZOCO_ART8DE"
+          ],
+          "section_range": "WMC Title XVII, Article 8 / Chapter 17.110 Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/windsor/codes/code_of_ordinances?nodeId=TITXVIIZOCO_ART8DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TITXVIIZOCO_ART2ZOALUSDEST_CH17.10REZO_17.10.040REZODEST",
+            "TITXVIIZOCO_ART2ZOALUSDEST_CH17.10REZO_17.10.050ADDESTESZO",
+            "TITXVIIZOCO_ART3REAPALZO_CH17.20GESIPLDEST_17.20.050SEMEEX"
+          ],
+          "section_range": "WMC §§ 17.10.040 Residential Zones Development Standards, 17.10.050 Additional Development Standards—Residential Zones, 17.20.050 Setback Measurement and Exceptions",
+          "urls": [
+            "https://library.municode.com/ca/windsor/codes/code_of_ordinances?nodeId=TITXVIIZOCO_ART2ZOALUSDEST_CH17.10REZO_17.10.040REZODEST",
+            "https://library.municode.com/ca/windsor/codes/code_of_ordinances?nodeId=TITXVIIZOCO_ART2ZOALUSDEST_CH17.10REZO_17.10.050ADDESTESZO",
+            "https://library.municode.com/ca/windsor/codes/code_of_ordinances?nodeId=TITXVIIZOCO_ART3REAPALZO_CH17.20GESIPLDEST_17.20.050SEMEEX"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/windsor",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Contra Costa County (unincorporated)",
+      "slug": "contra-costa-county",
+      "code_name": "Contra Costa County Ordinance Code, Title 8 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT8ZO_DIV82GERE_CH82-24ACDWUN"
+          ],
+          "section_range": "CCC Ordinance Code Chapter 82-24 Accessory Dwelling Units, whole chapter",
+          "urls": [
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-24ACDWUN"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT8ZO_DIV82GERE_CH82-4DE"
+          ],
+          "section_range": "CCC Ordinance Code Chapter 82-4 Definitions: lot, lot frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-4DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT8ZO_DIV82GERE_CH82-10LO",
+            "TIT8ZO_DIV82GERE_CH82-12SE",
+            "TIT8ZO_DIV82GERE_CH82-14YA",
+            "TIT8ZO_DIV84LAUSDI_CH84-4SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-6SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-8R-SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-10R-SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-12R-SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-14R-SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-16R-SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-18R-SIMIREDI",
+            "TIT8ZO_DIV84LAUSDI_CH84-20R-SIMIREDI"
+          ],
+          "section_range": "CCC Ordinance Code Chapters 82-10 Lots, 82-12 Setbacks, 82-14 Yards (general regulations), and 84-4 R-6, 84-6 R-7, 84-8 R-10, 84-10 R-12, 84-12 R-15, 84-14 R-20, 84-16 R-40, 84-18 R-65, 84-20 R-100 Single-Family Residential Districts (whole chapters)",
+          "urls": [
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-10LO",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-12SE",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-14YA",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-4SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-6SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-8R-SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-10R-SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-12R-SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-14R-SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-16R-SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-18R-SIMIREDI",
+            "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV84LAUSDI_CH84-20R-SIMIREDI"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/contra_costa_county",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "San Mateo",
+      "slug": "san-mateo",
+      "code_name": "City of San Mateo Municipal Code, Title 27 Zoning",
+      "platform": "sanmateo_law",
+      "platform_label": "City-hosted (Open Law Library format)",
+      "host": "law.cityofsanmateo.org (bulk mirror github.com/cityofsanmateo/law-html)",
+      "transport": "direct",
+      "ua": "old",
+      "docs": {
+        "adu-ordinance": {
+          "toc": {
+            "urls": [
+              "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27.19"
+            ],
+            "href_re": "/code/27\\.19\\.\\d+$",
+            "keep_contents": true
+          },
+          "section_range": "SMMC Chapter 27.19 Accessory Dwelling Units and Junior Accessory Dwelling Units, every section (one page per section)"
+        },
+        "definitions": {
+          "toc": {
+            "urls": [
+              "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27.04"
+            ],
+            "href_re": "/code/27\\.04\\.\\d+$",
+            "label_re": "LOT_TERMS",
+            "keep_contents": true
+          },
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "SMMC Chapter 27.04 Definitions: sections whose titles are lot, lot line, frontage, yard, setback terms"
+        },
+        "sf-district-standards": {
+          "toc": {
+            "urls": [
+              "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27.18"
+            ],
+            "href_re": "/code/27\\.18\\.\\d+$",
+            "keep_contents": true
+          },
+          "section_range": "SMMC Chapter 27.18 R1 Districts—One Family Dwellings, every section"
+        }
+      },
+      "mirror": {
+        "repo": "cityofsanmateo/law-html",
+        "from": "https://law.cityofsanmateo.org",
+        "to": "https://raw.githubusercontent.com/cityofsanmateo/law-html/{branch}",
+        "suffix": "/index.html",
+        "why": "The library's home page asks visitors not to scrape and to bulk-download the HTML instead (github.com/cityofsanmateo/law-html). The default branch is the publication in effect; its files are byte-identical to the live pages (checked 2026-09-23 on 27.19.060)."
+      },
+      "marker_url": "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code",
+      "marker_re": "Current through [A-Z][a-z]+ \\d{1,2}, \\d{4} Last codified ordinance .{0,40}?Ord\\. No\\. [\\d\\-]+"
+    },
+    {
+      "jurisdiction": "Marin County (unincorporated)",
+      "slug": "marin-county",
+      "code_name": "Marin County Code, Title 22 Development Code",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT22DECO_ARTIIISIPLGEDERE_CH22.32STSPLAUS_22.32.120REACDWUN",
+            "TIT22DECO_ARTIIISIPLGEDERE_CH22.32STSPLAUS_22.32.125REJUACDWUN",
+            "TIT22DECO_ARTIVLAUSDEPE_CH22.56REACDWUNPE"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTIIISIPLGEDERE_CH22.32STSPLAUS",
+            "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTIVLAUSDEPE_CH22.56REACDWUNPE"
+          ],
+          "section_range": "MCC §§ 22.32.120 Residential Accessory Dwelling Units, 22.32.125 Residential Junior Accessory Dwelling Units, and Chapter 22.56 Residential Accessory Dwelling Unit Permits (whole chapter)",
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT22DECO_ARTVIIIDECODE_CH22.130DE"
+          ],
+          "section_range": "MCC Chapter 22.130 Definitions: lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTVIIIDECODE_CH22.130DE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT22DECO_ARTIIZODIALLAUS_CH22.10REDI",
+            "TIT22DECO_ARTIIISIPLGEDERE_CH22.20GEPRDEUSST_22.20.060HEMEHELIEX",
+            "TIT22DECO_ARTIIISIPLGEDERE_CH22.20GEPRDEUSST_22.20.090SEREEX"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTIIZODIALLAUS_CH22.10REDI",
+            "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTIIISIPLGEDERE_CH22.20GEPRDEUSST"
+          ],
+          "section_range": "MCC Chapter 22.10 Residential Districts (whole chapter, with development standards tables) and §§ 22.20.060 Height Measurement and Height Limit Exceptions, 22.20.090 Setback Requirements and Exceptions",
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/marin_county",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Napa County (unincorporated)",
+      "slug": "napa-county",
+      "code_name": "Napa County Code, Title 18 Zoning",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TIT18ZO_CH18.104ADZODIRE_18.104.180ACDWUNJUACDWUN"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.104ADZODIRE"
+          ],
+          "section_range": "NCC § 18.104.180 Accessory dwelling units and junior accessory dwelling units (whole section)",
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TIT18ZO_CH18.08DE_18.08.190COLO",
+            "TIT18ZO_CH18.08DE_18.08.340LELO",
+            "TIT18ZO_CH18.08DE_18.08.590SIPA",
+            "TIT18ZO_CH18.08DE_18.08.650YA"
+          ],
+          "section_range": "NCC Chapter 18.08 Definitions §§ 18.08.190 Corner lot, 18.08.340 Legal lot, 18.08.590 Single parcel, 18.08.650 Yards (each section is its own Municode page; the chapter defines no lot-line or frontage terms)",
+          "urls": [
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.190COLO",
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.340LELO",
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.590SIPA",
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.650YA"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "^(corner lot|legal lot|single parcel|yards?)\\b"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TIT18ZO_CH18.104ADZODIRE_18.104.010SCZODIRE",
+            "TIT18ZO_CH18.104ADZODIRE_18.104.120MABUHE",
+            "TIT18ZO_CH18.104ADZODIRE_18.104.260REYA",
+            "TIT18ZO_CH18.52RSRESIDI",
+            "TIT18ZO_CH18.64RCRECODI",
+            "TIT18ZO_CH18.112ROSE"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.104ADZODIRE",
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.52RSRESIDI",
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.64RCRECODI",
+            "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.112ROSE"
+          ],
+          "section_range": "NCC §§ 18.104.010 Schedule of zoning district regulations, 18.104.120 Maximum building height, 18.104.260 Required yards; Chapters 18.52 RS Residential Single District, 18.64 RC Residential Country District, 18.112 Road Setbacks (whole chapters)",
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/napa_county",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Santa Clara County (unincorporated)",
+      "slug": "santa-clara-county",
+      "code_name": "Santa Clara County Code, Appendix I Zoning Ordinance",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "TITCCODELAUS_APXIZO_ART4SUSTRE_CH4.10SUUSRE_S4.10.015ACDWUN"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO_ART4SUSTRE_CH4.10SUUSRE"
+          ],
+          "section_range": "SCCZO § 4.10.015 Accessory dwelling units (whole section)",
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "TITCCODELAUS_APXIZO_ART1GEPR_CH1.30DEGETE"
+          ],
+          "section_range": "SCCZO Chapter 1.30 Definitions: General Terms — lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO_ART1GEPR_CH1.30DEGETE"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "TITCCODELAUS_APXIZO_ART2BADI_CH2.20RUBADI",
+            "TITCCODELAUS_APXIZO_ART2BADI_CH2.30URREBADI"
+          ],
+          "section_range": "SCCZO Chapters 2.20 Rural Base Districts and 2.30 Urban Residential Base Districts (whole chapters; R1, R1E, R1S, RR and the other districts share the chapter tables)",
+          "urls": [
+            "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO_ART2BADI_CH2.20RUBADI",
+            "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO_ART2BADI_CH2.30URREBADI"
+          ],
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/santa_clara_county",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "Sonoma County (unincorporated)",
+      "slug": "sonoma-county",
+      "code_name": "Sonoma County Code, Chapter 26 Sonoma County Zoning Regulations",
+      "docs": {
+        "adu-ordinance": {
+          "nodes": [
+            "CH26SOCOZORE_ART88GEEXSPUSST_S26-88-060ACDWUN",
+            "CH26SOCOZORE_ART88GEEXSPUSST_S26-88-061JUACDWUN"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/sonoma_county/codes/code_of_ordinances?nodeId=CH26SOCOZORE_ART88GEEXSPUSST"
+          ],
+          "section_range": "SCC §§ 26-88-060 Accessory dwelling units and 26-88-061 Junior accessory dwelling units (whole sections)",
+          "raw_kind": "rendered_dom_fragment"
+        },
+        "definitions": {
+          "nodes": [
+            "CH26SOCOZORE_ART04GL"
+          ],
+          "section_range": "SCC Article 04 Glossary (§ 26-04-020 Definitions): lot, lot line, frontage, yard, setback entries",
+          "urls": [
+            "https://library.municode.com/ca/sonoma_county/codes/code_of_ordinances?nodeId=CH26SOCOZORE_ART04GL"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS",
+              "enum": "\\d+(?:\\.\\d+)?\\.\\s+"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "nodes": [
+            "CH26SOCOZORE_ART08REZO_S26-08-040DEST"
+          ],
+          "urls": [
+            "https://library.municode.com/ca/sonoma_county/codes/code_of_ordinances?nodeId=CH26SOCOZORE_ART08REZO"
+          ],
+          "section_range": "SCC § 26-08-040 Development standards (Article 08 Residential Zones: RR, R1, R2, R3 tables)",
+          "raw_kind": "rendered_dom_fragment"
+        }
+      },
+      "platform": "municode",
+      "platform_label": "Municode (CivicPlus)",
+      "host": "library.municode.com/ca/sonoma_county",
+      "transport": "chrome"
+    },
+    {
+      "jurisdiction": "San Mateo County (unincorporated)",
+      "slug": "san-mateo-county",
+      "code_name": "San Mateo County Ordinance Code, Title 8 Zoning & Development Regulations (county-published PDF, not yet on Municode)",
+      "platform": "pdf",
+      "platform_label": "County-hosted PDF (smcgov.org)",
+      "host": "www.smcgov.org",
+      "transport": "direct",
+      "ua": "old",
+      "notes": "Title 8 replaced Division VI of the Ordinance Code by the ordinance adopted Oct. 8, 2024 (per smcgov.org/planning/zoning-regulations). The county's Municode code (Titles 1-7) does not yet include Title 8; the county's own PDF is the published text. PDF creation date 2026-04-24.",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://www.smcgov.org/media/159094/download?inline="
+          ],
+          "raw_ext": "pdf",
+          "strip_lines": [
+            "^\\s*San Mateo County, California, Code of Ordinances\\s*$"
+          ],
+          "slices": [
+            {
+              "start": "^\\s*CHAPTER 8\\.392\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.396\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            }
+          ],
+          "section_range": "SMC Title 8, Article 6, Chapter 8.392 Accessory Dwelling Units and Chapter 8.396 Accessory Dwelling Units, Coastal Zone (whole chapters)"
+        },
+        "definitions": {
+          "urls": [
+            "https://www.smcgov.org/media/159094/download?inline="
+          ],
+          "raw_ext": "pdf",
+          "strip_lines": [
+            "^\\s*San Mateo County, California, Code of Ordinances\\s*$"
+          ],
+          "slices": [
+            {
+              "start": "^\\s*8\\.04\\.030\\s*-\\s*Definitions",
+              "end": "^\\s*8\\.04\\.040\\b",
+              "entries": {
+                "terms": "LOT_TERMS",
+                "enum": "\\s*\\d{1,3}\\.\\s+"
+              }
+            }
+          ],
+          "section_range": "SMC § 8.04.030 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://www.smcgov.org/media/159094/download?inline="
+          ],
+          "raw_ext": "pdf",
+          "strip_lines": [
+            "^\\s*San Mateo County, California, Code of Ordinances\\s*$"
+          ],
+          "slices": [
+            {
+              "start": "^\\s*CHAPTER 8\\.12\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.16\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.20\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.110\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.150\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.154\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.158\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.162\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.166\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.170\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.182\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.190\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.194\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.198\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.202\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.204\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.208\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.216\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.220\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.224\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.228\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.232\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.236\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.240\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.244\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.336\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            },
+            {
+              "start": "^\\s*CHAPTER 8\\.340\\s*[-–]",
+              "end": "^\\s*(CHAPTER|ARTICLE)\\s+\\d"
+            }
+          ],
+          "section_range": "SMC Title 8 Chapters 8.12 RE Residential Estates, 8.16 R1 One-Family Residential Districts, 8.20 R1-CCP Country Club Park, 8.110 RH Residential Hillside; the S combining district chapters 8.150-8.244 that set lot size, coverage and setbacks for R-1 areas; 8.336 Height and 8.340 Yards general provisions (whole chapters)"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Fairfax",
+      "slug": "fairfax",
+      "code_name": "Fairfax Town Code, Title 17 Zoning",
+      "platform": "amlegal",
+      "platform_label": "American Legal Publishing (codelibrary.amlegal.com)",
+      "host": "codelibrary.amlegal.com/codes/fairfax",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-7248"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "section_range": "FTC Chapter 17.048 Residential Accessory Dwelling Units and Junior Accessory Dwelling Units (§ 17.048.010), whole chapter"
+        },
+        "definitions": {
+          "urls": [
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-6218",
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-30393"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "FTC Chapter 17.008 Definitions (lot, lot line, frontage, yard, setback entries) and Chapter 17.010 Rules of Measurement",
+          "slices": [
+            {
+              "start": "^§ 17\\.010\\.",
+              "end": "(?!x)x"
+            }
+          ]
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-8246",
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-8316",
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-9323",
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-9500",
+            "https://codelibrary.amlegal.com/codes/fairfax/latest/fairfax_ca/0-0-0-9657"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "section_range": "FTC Chapters 17.076 RS-7.5 Single-Family Residential Zone, 17.080 RS-6 Single-Family Residential Zone, 17.116 SF-RMP Single-Family Residential Master Planned District, 17.124 UR Upland Residential Zone, 17.136 Floor Area (whole chapters)"
+        }
+      }
+    },
+    {
+      "jurisdiction": "Palo Alto",
+      "slug": "palo-alto",
+      "code_name": "Palo Alto Municipal Code, Title 18 Zoning",
+      "platform": "amlegal",
+      "platform_label": "American Legal Publishing (codelibrary.amlegal.com)",
+      "host": "codelibrary.amlegal.com/codes/paloalto",
+      "transport": "chrome",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76738"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "section_range": "PAMC Chapter 18.09 Accessory Dwelling Units and Junior Accessory Dwelling Units (§§ 18.09.010-18.09.050), whole chapter"
+        },
+        "definitions": {
+          "urls": [
+            "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76370"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS",
+              "enum": "\\(\\d+\\)\\s*"
+            }
+          ],
+          "section_range": "PAMC Chapter 18.04 Definitions: lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-77117",
+            "https://codelibrary.amlegal.com/codes/paloalto/latest/paloalto_ca/0-0-0-76822"
+          ],
+          "raw_kind": "rendered_dom_fragment",
+          "section_range": "PAMC Chapter 18.12 R-1 Single-Family Residential District and Chapter 18.10 Low-Density Residential (RE, R-2 and RMD) Districts (whole chapters)"
+        }
+      },
+      "host_marker": "Supp. No. 82 - 2026 (current)"
+    },
+    {
+      "jurisdiction": "Atherton",
+      "slug": "atherton",
+      "code_name": "Atherton Municipal Code, Title 17 Zoning",
+      "platform": "municipalcodes",
+      "platform_label": "municipal.codes (OpenGov)",
+      "host": "atherton.municipal.codes",
+      "transport": "chrome",
+      "host_marker": "current through Ordinance 679, passed May 20, 2026.",
+      "docs": {
+        "adu-ordinance": {
+          "urls": [
+            "https://atherton.municipal.codes/Code/17.52"
+          ],
+          "section_range": "AMC Chapter 17.52 Accessory Dwelling Units (§§ 17.52.010-17.52.050), whole chapter"
+        },
+        "definitions": {
+          "urls": [
+            "https://atherton.municipal.codes/Code/17.60"
+          ],
+          "entries": [
+            {
+              "sections": "*",
+              "terms": "LOT_TERMS"
+            }
+          ],
+          "section_range": "AMC Chapter 17.60 Definitions (Title 17 Div. IV): lot, lot line, frontage, yard, setback entries"
+        },
+        "sf-district-standards": {
+          "urls": [
+            "https://atherton.municipal.codes/Code/17.32",
+            "https://atherton.municipal.codes/Code/17.38",
+            "https://atherton.municipal.codes/Code/17.42"
+          ],
+          "section_range": "AMC Chapters 17.32 Residential District R-1A, 17.38 Side Yard Requirements, 17.42 Building Height and Measurement (whole chapters)"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+17.110.130 - "L" Definitions.
+
+Lot. See "Parcel."
+
+Lot Area. See "Parcel Area."
+
+Lot Depth. See "Parcel Depth."
+
+Lot Frontage. See "Parcel Frontage."
+
+Lot Line. See "Parcel Line or Property Line."
+
+Lot Width. See "Parcel Width."
+
+17.110.170 - "P" Definitions.
+
+Parcel. A recorded parcel of real property under single ownership, lawfully created as required by the Subdivision Map Act and Town ordinances, including this Zoning Code. Types of lots include the following. [Source: Existing definition, modified]
+
+1. Corner Parcel. A parcel located at the intersection of two (2) or more streets, where they intersect at an interior angle of not more than one hundred thirty-five (135) degrees. If the intersection angle is more than one hundred thirty-five (135) degrees, the parcel is considered an interior lot. [Source: Existing definition, modified]
+
+2. Flag parcel. A parcel having access from the building site to a public street by means of private right-of-way strip that is owned in fee. [Source: Existing definition, modified]
+
+3. Interior Parcel. A parcel abutting only one (1) street. [Source: Existing definition, modified]
+
+4. Key Parcel. An interior parcel, the front of which adjoins the side property line of a corner parcel. [Source: Existing definition, modified]
+
+5. Reverse Corner Parcel. A corner parcel, the rear of which abuts a key parcel. [Source: Existing definition, modified]
+
+6. Through Parcel. A parcel with frontage on two (2) generally parallel streets. [Source: Existing definition, modified]
+
+Parcel Area. Parcel area is the gross area included within the parcel lines of a parcel, exclusive of adjacent dedicated street right-of-way. The total of the area measured in a horizontal plane, within the parcel lines bounding the lot, exclusive of: [Source: Existing definition, modified]
+
+1. Easements for streets or driveways which are not for the exclusive use of the parcel on which any such easement is located; and [Source: Existing definition]
+
+2. The access strip required to serve a flag parcel. [Source: Existing definition]
+
+Parcel Coverage. The percentage of total parcel area occupied by structures. Structure coverage includes the primary structure, all accessory structures (e.g., carports, garages, patio covers, storage sheds, trash dumpster enclosures, etc.) and architectural features (e.g., chimneys, balconies, decks above the first floor, porches, stairs, etc.). Parcel coverage is measured from exterior wall to exterior wall. See Figure 8-1 (Parcel Coverage). [Source: Existing definition, modified]
+
+Figure 8-1
+Parcel Coverage
+
+Parcel Depth. The average linear distance between the front and the rear parcel lines or the intersection of the two (2) side parcel lines if there is no rear line. See Figure 8-2 (Parcel Features). The Director shall determine parcel depth for parcels of irregular configuration. [Source: Existing definition, modified]
+
+Parcel Frontage. The boundary of a parcel adjacent to a public street right-of-way. [Source: Existing definition, modified]
+
+Figure 8-2
+Parcel Types
+
+Figure 8-3
+Parcel Features
+
+Parcel Line or Property Line. Any recorded boundary of a parcel. Types of parcel lines are as follows (see Figure 8-3 (Parcel Features)):
+
+1. Front Parcel Line. On an interior parcel, the property line separating the parcel from the street. The front parcel line on a corner parcel is the line with the shortest frontage. If the street-fronting parcel lines of a corner parcel are equal in length, the front parcel line shall be determined by the Director. On a through parcel, both parcel lines are front parcel lines, and the parcel is considered to have no rear parcel line. [Source: Existing definition, modified]
+
+2. Interior Parcel Line. Any parcel line not abutting a street. [Source: Existing definition, modified]
+
+3. Rear Parcel Line. A property line that does not intersect the front parcel line, which is most distant from and most closely parallel to the front parcel line. [Source: Existing definition, modified]
+
+4. Side Parcel Line. Any parcel line that is not a front or rear parcel line. [Source: Existing definition, modified]
+
+5. Street Side Parcel Line. The longer street fronting parcel line of a corner lot.
+
+Parcel Width. The horizontal distance between the side parcel lines, measured at right angles to the parcel depth at a point midway between the front and rear parcel lines. See Figure 8-3 (Parcel Features). The Director shall determine parcel width for parcels of irregular shape. [Source: Existing definition, modified]
+
+Property Line. See Parcel or Property Line. [Source: Existing definition]
+
+17.110.200 - "S" Definitions.
+
+Setback. The distance by which a structure, parking area or other development feature must be separated from a parcel line, other structure or development feature, or street centerline. Setbacks from private streets are measured from the edge of the easement. [Source: Existing definition]
+
+Street Line. The boundary between a street right-of-way and property. [Source: Existing definition]
+
+17.110.260 - "Y" Definitions.
+
+Yard. An area between a parcel line and a required setback, unobstructed and unoccupied from the ground upward, except for projections permitted by this Zoning Code. See Section 17.20.040 (Setback Measurement and Exceptions). [Source: Existing definition]
+
+1. Front Yard. An area extending across the full width of the parcel between the front parcel line and the required setback. [Source: Existing definition, modified]
+
+2. Rear Yard. An area extending the full width of the parcel between a rear parcel line and the required setback. [Source: Existing definition, modified]
+
+3. Side Yard. An area extending from the front yard to the rear yard between the nearest side parcel line and the required setback. [Source: Existing definition, modified]

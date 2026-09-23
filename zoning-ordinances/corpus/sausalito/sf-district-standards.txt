@@ -1,0 +1,49 @@
+§ 10.22.040 Site development requirements.
+
+Minimum requirements are established for parcel size, lot width, and setbacks. Requirements for density, floor area ratio, coverage and building height are maximum amounts allowed.
+
+A. Parcel Size. Each parcel proposed for development or a new land use, and each new parcel proposed in a subdivision, shall comply with the provisions that follow, or the applicable provisions of SMC § 10.40.030 (Minimum parcel standards). New parcels proposed in a subdivision shall also comply with all applicable provisions of SMC Title 9 (Subdivisions). Existing parcels that do not meet the minimum lot area or width requirements specified by this section as set forth in Table 10.22-2 may be developed in accordance with the development standards listed below; provided, that the subject parcel has been legally created.
+
+B. Lot Width. Additional lot width requirements may be established or allowed by an applicable -Pd overlay district. (See SMC § 10.28.060, Planned development (-Pd).)
+
+C. Setbacks. Different setbacks may also apply where a zoning district is combined with an overlay zoning district. Ten-foot front yard setbacks are required where designated on the zoning map. Minimum side yard setbacks may be increased in other situations as outlined in Chapter 10.40 SMC (General Development Regulations).
+
+D. Density. Density is based on net parcel area. Maximum density for single-family dwellings in the single-family residential (R-1) district may be increased where additional units are approved as provided by SMC § 10.44.080 (Accessory dwelling unit regulations).
+
+E. Building Height. Building height is measured from the natural average grade. Maximum building height may vary depending on parcel topography and may vary for other specific features of the site.
+
+F. Additional Requirements. Land uses shall comply with the additional requirements established by Chapter 10.40 SMC (General Development Requirements) and Chapter 10.44 SMC (Specific Use Requirements).
+
+| Table 10.22-2 (Site Development Standards – Residential Zoning Districts) outlines minimum site development standards for the residential zoning districts. Additional requirements may also apply where noted. |
+
+| Table 10.22-2 Site Development Standards – Residential Zoning Districts^1 | | | | | | | | | | |
+| Development Requirement | R-1 | | | R-2 | | R-3 | PR | H | A | See SMC |
+| Development Requirement | R-1-6 | R-1-8 | R-1-20 | R-2-2.5 | R-2-5 | R-3 | PR | H | A | See SMC |
+| Minimum parcel size^2 | 6,000 sf | 8,000 sf | 20,000 sf | 5,000 sf | 10,000 sf | 5,000 sf | 20,000 sf | 10,000 sf | 1,500 sf | SMC § 10.40.030 (Minimum parcel standards) and SMC Title 9 |
+| Minimum lot width^2 | 50 feet | 50 feet | 50 feet | 50 feet | 50 feet | 50 feet | 50 feet | 50 feet | 30 feet | |
+| Maximum density | 1 du/parcel | 1 du/parcel | 1 du/parcel | 1 du/2,500 sf^2, 3 | 1 du/5,000 sf^2, 3 | 1 du/1,500 sf^2, 3 | 1 du/1980 sf | 1 du/10,000 sf | 1 du/1,500 sf | SMC § 10.44.080 (Accessory dwelling unit regulations) |
+| Maximum floor area ratio^13 | .45 | .40 | .35 | .65^4 | .40 | .8^4 | .65 | .25 | .30 | SMC § 10.44.330 (Development standards for units in two-family and multiple-family residential zoning districts) |
+| Maximum building coverage | 35% | 30% | 30% | 50%^4 | 35% | 50%^4 | 50% | 25% | 30% | SMC § 10.44.330 (Development standards for units in two-family and multiple-family residential zoning districts) |
+| Maximum impervious surface^5 | 67.5% | 65% | 65% | 75%^4 | 67.5% | 75%^4 | 75% | 62.5% | 65% | SMC § 10.44.330 (Development standards for units in two-family and multiple-family residential zoning districts) |
+| Minimum setbacks^6, 7 | | | | | | | | | | SMC § 10.40.080 (Exceptions to required setbacks) and Chapter 10.44 SMC (Specific Use Requirements) |
+| Front^8 | 0 feet | 0 feet | 0 feet | 0 feet | 0 feet | 0 feet | 0 feet | 0 feet | 0 feet | SMC § 10.40.080 (Exceptions to required setbacks) and Chapter 10.44 SMC (Specific Use Requirements) |
+| Side^9 | 5 feet | 5 feet | 10 feet | 5 feet | 5 feet | 5 feet | 5 feet | ^10 | 0 feet | SMC § 10.40.080 (Exceptions to required setbacks) and Chapter 10.44 SMC (Specific Use Requirements) |
+| Rear^10 | 15 feet | 15 feet | 20 feet | 15 feet | 15 feet | 15 feet | 15 feet | 15 feet | 0 feet | SMC § 10.40.080 (Exceptions to required setbacks) and Chapter 10.44 SMC (Specific Use Requirements) |
+| Maximum building height^11 | 32 feet | 32 feet | 32 feet | 32 feet | 32 feet | 32 feet | 32 feet | 18 feet | 12 feet^12 | SMC § 10.40.060 (Height requirements) and Chapter 10.44 SMC (Specific Use Requirements) |
+
+| Notes: |
+| ^1 These standards are not entitlements; the approved size, setbacks or other physical conditions of a proposed new dwelling or expansion of an existing dwelling subject to design review shall be in the discretion of the Planning Commission. In order to meet the standards of design review, the Planning Commission may approve a dwelling smaller, or with greater setbacks, or otherwise impose requirements that are more restrictive than the limits set forth in this chapter. |
+| ^2 See SMC § 10.40.030 (Minimum parcel standards). |
+| ^3 For two or more detached single-family dwellings, see SMC § 10.44.090 (Detached dwelling units). |
+| ^4 Units in the R-2-2.5 and R-3 zoning districts are subject to the restrictions in SMC § 10.44.330. |
+| ^5 Per SMC § 10.40.050C, impervious surface includes decks, paved surfaces, hardscape, and gravel. |
+| ^6 Different setbacks may also apply if district is combined with other zoning districts. |
+| ^7 Per SMC § 10.40.080E, a multifamily rental project that is located on a single site composed of multiple contiguous lots shall only be subject to setback requirements along the exterior lot lines for projects that include a lot merger. |
+| ^8 Ten-foot front yard setbacks are required where designated on the zoning map. See SMC § 10.40.070E.4 (Special Setback Lines). |
+| ^9 Minimum side yard setbacks may be increased in other situations. |
+| ^10 See SMC § 10.44.160E regarding additional separation requirements in addition to setback. |
+| ^11 Maximum building height may vary depending on parcel topography and may vary for other specific features of the site. Building height is measured from natural average grade. |
+| ^12 Measured from a point six feet above NGVD, or average grade, whichever is higher. |
+| ^13 Pursuant to Cal. Gov’t. Code § 65913.11(b), a housing development project consisting of three to seven units shall be allowed to have a floor area ratio of up to 1.0, and for a housing development project consisting of eight to 10 units, the project shall be allowed a floor area ratio of up to 1.25, except for projects within a historic district or property included on the State Historic Resources Inventory, as defined in Cal. Pub. Res. Code § 5020.1, or within a site that is designated or listed as a city or county landmark or historic property or district pursuant to a city or county ordinance. |
+
+(Ord. 1167 § 2, 2003; Ord. 1217 § 1, 2014; Ord. 06-2025-A, 12/2/2025)

@@ -1,0 +1,1559 @@
+<div id="codesContent" ng-switch="vm.pageType">
+    <div role="alert">
+        <!---->
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----><div ng-switch-when="CHUNKS" class="codes-chunks-pg">
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.24SPDI_18.24.010SPDIEG" ng-href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.24SPDI_18.24.010SPDIEG" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 18.24.010 - Special districts—Regulations.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.26OPARDIRE" ng-href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.26OPARDIRE" ng-if="vm.content.nextNode">CHAPTER 18.26 - O-A (OPEN AREA) DISTRICT REGULATIONS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+        <ul class="chunks list-unstyled small-padding">
+            <!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA" class="chunk" data-nodetype="" data-nodedepth="2" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!----><h2 ng-if="vm.relativeNodeDepth &lt; 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">CHAPTER 18.25 - STANDARDS FOR ACCESSORY DWELLING UNITS (ADU) AND JUNIOR ACCESSORY DWELLING UNITS (JADU)</div></h2><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content"><br></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.010PUIN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.010PUIN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.010PUIN" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.010PUIN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.010 - Purpose and intent.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               The purpose of this chapter is to implement Government Code Sections 66310 through
+               66342 by allowing the creation of accessory dwelling units (ADUs) or junior accessory
+               dwelling units (JADUs) through ministerial review. In the event of any conflict or
+               discrepancy between the ADU or JADU standards in this chapter and any other provisions
+               of this title, the standards contained in this chapter shall take precedence. Ambiguities
+               or gaps in this chapter shall be resolved first by reference to Government Code Sections
+               66310 through 66342. In the event of any conflict between state law and this chapter,
+               Government Code Sections 66310 through 66342 shall govern.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.020DE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.020DE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.020DE" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.020DE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.020 - Definitions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               For the purposes of this chapter the definitions as described in California Government
+               Code Section 66313, or as amended shall apply.
+               </p>
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.030ADPEPR" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.030ADPEPR" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.030ADPEPR" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.030ADPEPR" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.030 - Administration and permitting process.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               A. Building Permit Required. All ADUs or JADUs, including those that are internal
+               to an existing structure and converted from existing floor area, shall be subject
+               to a building permit.
+               </p>
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Permitting Procedure.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Ministerial Review. A permit application for an ADU or JADU shall be processed ministerially,
+               without discretionary review or a hearing.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Completeness Determination. A permit application for an ADU or JADU shall be determined
+               to be complete or incomplete and a written notice of the determination provided not
+               later than fifteen business days after receiving the application. If the town determines
+               that an application is incomplete, the town will provide the applicant with a list
+               of incomplete items and a description of how the application can be made complete
+               in the written notice. If a permit application is determined to be incomplete or is
+               denied, the applicant may appeal that decision. After receipt of the appeal, the town
+               shall provide a final written determination within sixty business days.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               Review Period.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               ADU on a Lot with an Existing Dwelling. If there is an existing single-family or multi-family
+               dwelling on a lot, a permit application for an ADU or JADU shall either be denied
+               or approved within sixty days of receipt of a complete application.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               ADU Accompanying Application for a New Primary Dwelling. If a permit application to
+               create an ADU or JADU is submitted with a permit application to create a new single-family
+               or multi-family dwelling on a lot, the town may delay approving or denying the permit
+               application for the ADU or JADU until the town approves or denies the permit application
+               to create the new single-family or multi-family dwelling; however, the application
+               to create the ADU or JADU shall be considered without discretionary review or hearing.
+               </p>
+            		
+            <p class="incr2">
+               iii.
+               </p>
+            		
+            <p class="content3">
+               If the applicant requests a delay, the sixty-day time period shall be tolled for the
+               period of the delay.
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               Deemed Approved. If a complete application is not approved or denied within sixty
+               days of receipt of a complete application, the application shall be deemed approved.
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               Denied Applications. If an application for an ADU or JADU is denied within sixty days
+               of receipt of a complete application, the town shall return in writing a full set
+               of comments to the applicant with a list of items that are defective or deficient,
+               and a description of how the application can be remedied.
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               Nonconforming Conditions. No application for a permit to create an ADU or JADU shall
+               be denied due to the correction of nonconforming zoning conditions, building code
+               violations, or unpermitted structures that:
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               Do not present a threat to public health and safety; and
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               Are not affected by the construction of the ADU or JADU.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.040GEDEOPST" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.040GEDEOPST" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.040GEDEOPST" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.040GEDEOPST" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.040 - General development and operational standards.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               A. Fire Sprinklers. ADUs and JADUs shall not be required to provide fire sprinklers
+               if fire sprinklers are not required for the primary residence. The construction of
+               an ADU or JADU shall not trigger a requirement for fire sprinklers to be installed
+               in the existing primary dwelling or existing multi-family dwelling.
+               </p>
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Short-Term Rental Limitation. ADUs and JADUs shall not be rented for a term of less
+               than thirty days.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Replacement Parking. Replacement parking shall not be required when a garage, carport,
+               covered parking structure, or uncovered parking space is demolished in conjunction
+               with the construction of an ADU or JADU or converted to an ADU or JADU. A demolition
+               permit for a detached garage to be replaced with an ADU or JADU shall be reviewed
+               and issued concurrently with the ADU or JADU permit application.
+               </p>
+            		
+            <p class="incr0">
+               D.
+               </p>
+            		
+            <p class="content1">
+               Separate Sale. Except as permitted by Government Code Section 66341, as the same may
+               be amended from time to time, ADUs shall not be sold or conveyed separately from the
+               primary dwelling.
+               </p>
+            		
+            <p class="incr0">
+               E.
+               </p>
+            		
+            <p class="content1">
+               Utility Connection.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Availability of Utilities. All ADUs shall be connected to public utilities or their
+               equivalent including water, electricity, and sewer services. In the case of well water
+               systems and septic systems the applicant must demonstrate that they are adequately
+               sized for the new demand. Utility connections are subject to review and approval by
+               the appropriate utility agency.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               ADUs using a private sewage disposal system shall obtain approval by the local health
+               officer.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               ADUs constructed pursuant to paragraph (1) of subdivision (a) of Government Code Section
+               66323 shall not be required to install a new or separate utility connection directly
+               between the ADU and the utility, unless the ADU was constructed with a new single-family
+               residence, or upon separate conveyance of the ADU pursuant to Government Code Section
+               66342. For all other ADUs the service provider may require a new or separate utility
+               connection directly between the ADU and the utility.
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               JADUs shall not be required to install a new or separate utility connections.
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               Except for ADUs permitted pursuant to Government Code Section 66323, when a new or
+               separate utility connection directly between the ADU and the utility is proposed,
+               the utility connection shall be placed underground consistent with Section 18.36.010.B.
+               </p>
+            		
+            <p class="incr0">
+               F.
+               </p>
+            		
+            <p class="content1">
+               Separate Entrance. ADUs and JADUs shall provide at least one exterior entrance that
+               is separate from the main entrance of the primary dwelling.
+               </p>
+            		
+            <p class="incr0">
+               G.
+               </p>
+            		
+            <p class="content1">
+               Separate Address. ADUs and JADUs shall provide a separate address from the primary
+               dwelling, except for JADUs which have an interior entry to the main living area of
+               the single-family residence.
+               </p>
+            		
+            <p class="incr0">
+               H.
+               </p>
+            		
+            <p class="content1">
+               Public Health and Safety. Nothing in this code shall be construed as overriding any
+               provision of state law allowing denial of an ADU for impacts to public health and
+               safety.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.050FERE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.050FERE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.050FERE" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.050FERE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.050 - Fee requirements.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               A. Connection Fees or Capacity Charges. An ADU shall not be considered a new residential
+               use for the purposes of calculating connection fees or capacity charges for utilities,
+               including water and sewer service, unless the ADU was constructed with a new single-family
+               dwelling. These fees are assessed by the utility agency.
+               </p>
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Impact Fees. Impact fees shall not be imposed on an ADU that is less than seven hundred
+               fifty square feet in interior livable space. For all other ADUs, impact fees shall
+               be charged proportionate to the square footage of the primary dwelling unit. Impact
+               fees shall not be imposed on a JADU.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               School Fees. Consistent with Section 17620 of the Education Code, an accessory dwelling
+               unit or junior accessory dwelling unit that contains less than five hundred square
+               feet of interior livable space shall, be considered other residential construction
+               that does not increase assessable space by five hundred square feet. These fees are
+               assessed by the school district.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.060ACDWUNADRE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.060ACDWUNADRE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.060ACDWUNADRE" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.060ACDWUNADRE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.060 - Accessory dwelling unit (ADU) regulations.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               A. General Plan and Zoning.
+               </p>
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Residential Use. ADUs approved in compliance with this chapter shall be considered
+               a residential use that is consistent with the existing general plan and zoning designation
+               for the lot.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Permitted Locations. ADUs are permitted on lots with an existing or proposed single-family
+               or multi-family dwelling in areas zoned to allow single-family or multi-family residential
+               use.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               Density. ADUs shall not count toward the maximum density permitted on the lot.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               ADU Typology. ADUs shall be either:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Attached to, or located within, the proposed or existing primary dwelling, including
+               attached garages, storage areas or similar uses or an accessory structure; or
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Detached from the proposed or existing primary dwelling and located on the same lot
+               as the proposed or existing primary dwelling, including detached garages.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Objective Standards.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Single-Family ADUs.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               The following accessory units shall be ministerially approved on a lot with a single-family
+               dwelling:
+               </p>
+            		
+            <p class="incr3">
+               a.
+               </p>
+            		
+            <p class="content4">
+               One ADU within the proposed space of a single-family dwelling or existing space of
+               a single-family dwelling or existing accessory structure that may include an expansion
+               of not more than one hundred fifty square feet for ingress/egress; and
+               </p>
+            		
+            <p class="incr3">
+               b.
+               </p>
+            		
+            <p class="content4">
+               One detached, new construction, ADU of not more than eight hundred square feet of
+               interior livable space that does not exceed four-foot side and rear yard setbacks
+               and that meets the height requirements of this chapter.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               One ADU that does not meet the criteria of subsection C.1.i. above may be ministerially
+               approved if it meets the objective standards contained in this chapter, except that
+               the minimum or maximum size for an ADU or limits on lot coverage, floor area ratio,
+               open space, front setbacks, and minimum lot size, for either attached or detached
+               dwellings, shall not be imposed if they preclude a unit authorized by Government Code
+               Section 66321(b)(3) from being constructed in compliance with all other local development
+               standards.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Multi-family ADUs.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               The following units shall be ministerially permitted on a lot with a multi-family
+               dwelling:
+               </p>
+            		
+            <p class="incr3">
+               a.
+               </p>
+            		
+            <p class="content4">
+               Conversion ADUs. A minimum of one ADU and a maximum of twenty-five percent of the
+               total number of existing multi-family dwelling units shall be permitted to be converted
+               from existing multi-family dwelling structures that are not used as livable space,
+               including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements,
+               or garages, if each unit complies with the state building standards for dwellings.
+               </p>
+            		
+            <p class="incr3">
+               b.
+               </p>
+            		
+            <p class="content4">
+               Detached ADUs.
+               </p>
+            		
+            <p class="incr4">
+               (1)
+               </p>
+            		
+            <p class="content5">
+               Existing Multi-family Dwelling. On a lot with an existing multi-family dwelling, not
+               more than eight detached ADUs shall be permitted. The number of ADUs shall not exceed
+               the number of existing multi-family units on the lot. An ADU subject to this provision
+               shall meet the height requirements of this chapter.
+               </p>
+            		
+            <p class="incr4">
+               (2)
+               </p>
+            		
+            <p class="content5">
+               Proposed Multi-family Dwelling. On a lot with a proposed multi-family dwelling, not
+               more than two detached ADUs shall be permitted. An ADU subject to this provision shall
+               meet the height requirements of this chapter.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               Size. Except for ADUs permitted pursuant to Government Code Section 66323, the maximum
+               allowable square footage for ADUs shall not exceed the area limitations specified
+               below. For the purposes of this section, the calculation of ADU square footage shall
+               not include garages, carports, covered porches/patios, breezeways, and/or other accessory
+               structures.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               Existing Floor Area. ADUs converted from existing floor area shall not be subject
+               to any size limitations.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               New Floor Area.
+               </p>
+            		
+            <p class="incr3">
+               a.
+               </p>
+            		
+            <p class="content4">
+               Attached and Detached ADUs. ADUs created from new floor area shall not exceed one
+               thousand two hundred square feet of interior livable space. Multi-family ADUs consistent
+               with Government Code Section 66323 shall not be subject to the size limitation of
+               this section.
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               Adjusted Maximum Floor Area (AMFA), Lot Coverage, Floor Area Ratio (FAR) and Coverage
+               Area Ratio (CAR).
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               ADUs count towards and shall not exceed the AMFA, lot coverage, FAR or CAR for the
+               subject parcel. However, this shall not prohibit the ministerial approval of ADUs
+               constructed pursuant to Government Code Section 66323 and in compliance with all other
+               local development standards. Development of the site may exceed the AMFA, lot coverage,
+               FAR, or CAR by the minimum amount necessary to allow such an ADU.
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               Height.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               Existing Floor Area. ADUs converted from existing floor area shall not be subject
+               to height limitations.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               New Floor Area.
+               </p>
+            		
+            <p class="incr3">
+               a.
+               </p>
+            		
+            <p class="content4">
+               Attached ADUs. Attached ADUs created from new floor area shall not exceed a height
+               of twenty-five feet or the maximum height permitted in the underlying zoning district,
+               whichever is lower. In all cases, ADUs shall not exceed two stories.
+               </p>
+            		
+            <p class="incr3">
+               b.
+               </p>
+            		
+            <p class="content4">
+               Detached ADUs. Detached ADUs created from new floor area, on a lot with an existing
+               or proposed single-family or multi-family dwelling unit, shall not exceed a height
+               of sixteen feet, or a height of eighteen feet if either of the following conditions
+               are met:
+               </p>
+            		
+            <p class="incr4">
+               (1)
+               </p>
+            		
+            <p class="content5">
+               Transit Proximity. The lot on which the ADU will be created is within one-half mile
+               walking distance of a major transit stop or a high-quality transit corridor, as those
+               terms are defined in Public Resources Code Section 21155.
+               </p>
+            		
+            <p class="incr4">
+               (2)
+               </p>
+            		
+            <p class="content5">
+               Multi-family, Multi-story Structure. The lot on which the ADU will be created consists
+               of an existing or proposed multi-family, multi-story dwelling. An additional height
+               of two feet, for a maximum height of either eighteen or twenty feet, shall be allowed
+               to accommodate a roof pitch on an ADU that is aligned with the roof pitch of the primary
+               dwelling unit.
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               Setbacks.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               Existing Floor Area. ADUs located within an existing living area or an existing accessory
+               structure, or ADUs that replace an existing structure and are in the same location
+               and to the same dimensions as the structure being replaced, shall not be subject to
+               setbacks.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               New Floor Area. ADUs created from new floor area are subject to the following setbacks:
+               </p>
+            		
+            <p class="incr3">
+               a.
+               </p>
+            		
+            <p class="content4">
+               Front Yard. Same as the underlying district, including required scenic corridor setbacks.
+               No front setback is required for ADUs permitted per Government Code Section 66323.
+               </p>
+            		
+            <p class="incr3">
+               b.
+               </p>
+            		
+            <p class="content4">
+               Side Yard. A minimum of four feet.
+               </p>
+            		
+            <p class="incr3">
+               c.
+               </p>
+            		
+            <p class="content4">
+               Rear Yard. A minimum of four feet.
+               </p>
+            		
+            <p class="incr1">
+               7.
+               </p>
+            		
+            <p class="content2">
+               Parking.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               Parking shall not be required for ADUs.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               If parking is provided, parking space design shall conform with Section 18.60.020,
+               Parking dimensions and access.
+               </p>
+            		
+            <p class="incr1">
+               8.
+               </p>
+            		
+            <p class="content2">
+               Site improvements. Site improvements, including grading, driveways, patios, decks,
+               etc., outside the minimum necessary to facilitate the construction of an ADU pursuant
+               to Government Code Section 66323 shall be subject to the requirements and permitting
+               processes of the underlining zoning district for such improvements.
+               </p>
+            		
+            <p class="incr1">
+               9.
+               </p>
+            		
+            <p class="content2">
+               Objective Design Standards. ADUs (except those created pursuant to Government Code
+               Section 66323) shall comply with the following objective design standards. ADUs created
+               pursuant to Government Code Section 66323 are encouraged, but not required, to comply
+               with the objective design standards of this section.
+               </p>
+            		
+            <p class="incr2">
+               i.
+               </p>
+            		
+            <p class="content3">
+               Light Reflectivity Values (LRV). The LRV of proposed colors shall not exceed forty
+               percent, except that trim color and roofs shall not exceed fifty percent.
+               </p>
+            		
+            <p class="incr2">
+               ii.
+               </p>
+            		
+            <p class="content3">
+               Exterior Lighting. All exterior lighting shall comply with all requirements listed
+               in Section 18.36.040.A.8, Outdoor lighting, except that the primary entrance of the
+               ADU may have one or two fixtures, which shall be limited to a total lumen count of
+               seven hundred lumens.
+               </p>
+            		
+            <p class="incr2">
+               iii.
+               </p>
+            		
+            <p class="content3">
+               Landscaping. Proposed landscaping plantings shall be selected from the town's approved
+               native plants list.
+               </p>
+            		
+            <p class="incr0">
+               D.
+               </p>
+            		
+            <p class="content1">
+               Building Code Requirements. ADUs must comply with the town's building code requirements
+               for detached dwellings. However, constructing an ADU does not constitute a group R
+               occupancy change under Section 310 of the California Building Code (Title 24), unless
+               the building official issues a written finding, supported by substantial evidence,
+               that the construction poses a specific, adverse impact on public health and safety.
+               This provision shall not prevent the town from changing the occupancy code for space
+               converted from uninhabitable or non-residential use to residential use.
+               </p>
+            		
+            <p class="incr0">
+               E.
+               </p>
+            		
+            <p class="content1">
+               Passageway. No passageway shall be required in conjunction with the construction of
+               an ADU.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.070JUACDWUNJA" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.070JUACDWUNJA" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.070JUACDWUNJA" data-skip-id="_TIT18ZO_CH18.25STACDWUNADJUACDWUNJA_18.25.070JUACDWUNJA" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">18.25.070 - Junior accessory dwelling unit (JADU).</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!----><span class="label label-success" ng-if="::chunk.CompareStatus == 0">new</span><!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="runin">
+               A. Permitted Locations. JADUs shall be permitted in single-family residential zones.
+               </p>
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Number of JADUs. The following accessory units shall be ministerially approved on
+               a lot with a single-family dwelling. This is in addition to the ADUs allowed per Section
+               18.25.060.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               One JADU within the proposed space of a single-family dwelling or existing space of
+               a single-family dwelling that may include an expansion of not more than one hundred
+               fifty square feet for ingress/egress.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Size. JADUs shall be limited to a maximum size of five hundred square feet of interior
+               livable space.
+               </p>
+            		
+            <p class="incr0">
+               D.
+               </p>
+            		
+            <p class="content1">
+               Owner Occupancy. Owner occupancy is required if the JADU has shared sanitation facilities
+               with the primary dwelling. The owner may reside in either the JADU or the primary
+               dwelling unit. Owner-occupancy is not required if the JADU has separate sanitation
+               facilities from the primary dwelling unit or if the owner is another governmental
+               agency, land trust, or housing organization.
+               </p>
+            		
+            <p class="incr0">
+               E.
+               </p>
+            		
+            <p class="content1">
+               Deed Restriction. A deed restriction, which shall run with the land, shall be filed
+               with the town. The deed restriction shall include:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               A prohibition on the sale of the JADU separate from the sale of the single-family
+               residence, including a statement that the deed restriction may be enforced against
+               future purchasers; and
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               A restriction on the size and attributes of the JADU that conforms with Government
+               Code Sections 66333 through 66339.
+               </p>
+            		
+            <p class="incr0">
+               F.
+               </p>
+            		
+            <p class="content1">
+               Interior Entry. In addition to a separate exterior entrance, JADUs that do not include
+               a bathroom shall include an interior entry to the main living area of the single-family
+               residence.
+               </p>
+            		
+            <p class="incr0">
+               G.
+               </p>
+            		
+            <p class="content1">
+               Efficiency Kitchen. JADUs shall provide an efficiency kitchen that includes all of
+               the following:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               A cooking facility with appliances.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               A food preparation counter and storage cabinets that are of reasonable size in relation
+               to the size of the JADU.
+               </p>
+            		
+            <p class="incr0">
+               H.
+               </p>
+            		
+            <p class="content1">
+               Parking. Parking shall not be required for a JADU.
+               </p>
+            		
+            <p class="incr0">
+               I.
+               </p>
+            		
+            <p class="content1">
+               New or Separate Unit. JADUs shall not be considered a separate or new dwelling unit
+               for the purposes of any fire and life protection ordinance or regulation.
+               </p>
+            		
+            <p class="historynote0">
+               (<a class="ordinance-link" href="https://library.municode.com/ca/portola_valley/ordinances/code_of_ordinances?nodeId=1430451" data-product-id="13781" data-ordinance-id="1430451">Ord. 2026-455</a>, § 2 (Exh. A), 2026)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!---->
+        </ul>
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.24SPDI_18.24.010SPDIEG" ng-href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.24SPDI_18.24.010SPDIEG" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 18.24.010 - Special districts—Regulations.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.26OPARDIRE" ng-href="https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.26OPARDIRE" ng-if="vm.content.nextNode">CHAPTER 18.26 - O-A (OPEN AREA) DISTRICT REGULATIONS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+    </div><!---->
+</div>

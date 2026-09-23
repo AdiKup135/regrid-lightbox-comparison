@@ -1,0 +1,3414 @@
+<div id="codesContent" ng-switch="vm.pageType">
+    <div role="alert">
+        <!---->
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----><div ng-switch-when="CHUNKS" class="codes-chunks-pg">
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE_17.2.3DE" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE_17.2.3DE" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 17.2.3 - Definitions.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE" ng-if="vm.content.nextNode">Chapter 17.4 - RESIDENTIAL DISTRICT BASE DEVELOPMENT REGULATIONS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+        <ul class="chunks list-unstyled small-padding">
+            <!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE" class="chunk" data-nodetype="" data-nodedepth="2" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!----><h2 ng-if="vm.relativeNodeDepth &lt; 1" id="_TIT17ZO_CH17.3REDIBAUSRE" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">Chapter 17.3 - RESIDENTIAL DISTRICT BASE USE RESTRICTIONS</div></h2><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content"><br></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.1PU" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.1PU" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.1PU" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.1PU" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.1 - Purpose.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The purposes of the residential district use restrictions are to:
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  Provide appropriately located areas for residential development that are consistent
+                  with Orinda's predominant semi-rural character as defined in the general plan and,
+                  for those lands within its boundaries, with the North Orinda Specific Plan, and with
+                  standards of public health and safety established by the Municipal Code;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  Ensure preservation of adequate light, air, privacy, views, parking and open space
+                  for each dwelling unit, and protect residents from the harmful effects of excessive
+                  noise, overcrowding, traffic congestion and other adverse environmental effects which
+                  may diminish the desired character of residential neighborhoods;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  C.
+                  </p>
+               		
+               <p class="content2">
+                  Accommodate second dwelling units, home occupations and other ancillary uses on lots
+                  zoned for single-family residential use, subject to appropriate standards;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  D.
+                  </p>
+               		
+               <p class="content2">
+                  In addition to the primary residential uses of the zone, provide for additional land
+                  uses which complement the character of residential development.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part))
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.2REDIDE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.2REDIDE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.2REDIDE" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.2REDIDE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.2 - Residential district descriptions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!----><span class="label label-primary" ng-if="::chunk.CompareStatus == 2">modified</span><!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               There are eleven (11) residential districts in the City of Orinda, as follows.
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  RVL-E (Residential Very Low Density—Estates). The RVL-E district encompasses parcels
+                  with a minimum net lot size of ten acres.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  RVL (Residential Very Low Density). The RVL district encompasses parcels with a minimum
+                  net lot size of five acres.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  C.
+                  </p>
+               		
+               <p class="content2">
+                  RL-40 (Residential Low Density—Forty Thousand square feet). The RL-40 district encompasses
+                  parcels with a minimum net lot size of forty thousand (40,000) square feet.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  D.
+                  </p>
+               		
+               <p class="content2">
+                  RL-20 (Residential Low Density—Twenty Thousand square feet). The RL-20 district encompasses
+                  parcels with a minimum net lot size of twenty thousand (20,000) square feet.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  E.
+                  </p>
+               		
+               <p class="content2">
+                  RL-15 (Residential Low Density—Fifteen thousand square feet). The RL-15 district encompasses
+                  parcels with a prescribed net lot size of fifteen thousand (15,000) square feet.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  F.
+                  </p>
+               		
+               <p class="content2">
+                  RL-12 (Residential Low Density—Twelve thousand square feet). The RL-12 district encompasses
+                  parcels with a prescribed net lot size of twelve thousand (12,000) square feet.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  G.
+                  </p>
+               		
+               <p class="content2">
+                  RL-10 (Residential Low Density—Ten thousand square feet). The RL-10 district encompasses
+                  parcels with a prescribed net lot size of ten thousand (10,000) square feet.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  H.
+                  </p>
+               		
+               <p class="content2">
+                  RL-6 (Residential Low Density—Six thousand square feet). The RL-6 district encompasses
+                  parcels with a prescribed net lot size of six thousand (6,000) square feet.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  I.
+                  </p>
+               		
+               <p class="content2">
+                  RM (Residential Medium Density). The RM district permits a density of no greater than
+                  ten units per acre.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  J.
+                  </p>
+               		
+               <p class="content2">
+                  RH-25 (Residential High Density—Twenty-five dwelling units per acre). The RH-25 district
+                  requires a minimum density of twenty (20) units per acre and a maximum density of
+                  twenty-five (25) units per acre.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  K.
+                  </p>
+               		
+               <p class="content2">
+                  RH-40 (Residential High Density—Forty dwelling units per acre). The RH-40 district
+                  requires a minimum density of twenty (20) units per acre and a maximum density of
+                  forty (40) units per acre.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part); <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1396415" data-product-id="16541" data-ordinance-id="1396415">Ord. No. 25-04</a>, § 2(Att. A, § 2), 11-3-25)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.3 - RVL, RL, RM, and RH districts—Land use regulations.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!----><span class="label label-primary" ng-if="::chunk.CompareStatus == 2">modified</span><!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               A.
+               </p>
+            		
+            <p class="content1">
+               Permitted Uses. A use in the RVL, RL, RM, or RH district is permitted with or without
+               a permit as provided in Schedule <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.3</a>, entitled "RVL, RL, RM, and RH Districts—Land Use Regulations." A use classification
+               followed by the letter "P" is a use that is permitted by right and does not require
+               a use permit. A use classification followed by the letter "L" is a permitted use that
+               is subject to certain limitations prescribed under the "Additional Use Regulations"
+               which follow within this chapter. A use classification followed by the letter "U"
+               is a use authorized in a residential district on approval of a use permit. A use classification
+               followed by the letter "T" is a use permitted on approval of a temporary event permit.
+               Definitions of use appear in <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE" data-chunk-id="TIT17ZO_CH17.2DE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.2</a> of this title.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Zoning Administrator Determination. Where a proposed use is not specifically listed
+               on Schedule <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.3</a>, entitled "RVL, RL, RM, and RH Districts—Land Use Regulations," the Zoning Administrator
+               shall make a determination of use classification based upon consideration of activity
+               characteristics of the proposed use.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Use Permit for Certain Ancillary Uses. Certain ancillary uses in the RL and RVL districts
+               may require a use permit under <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.31GEUSPE" data-chunk-id="TIT17ZO_CH17.31GEUSPE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.31</a>.
+               </p>
+            		
+            <p class="bc0">
+               <span class="bold">Schedule <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.3RVRLRMRHDIANUSRE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.3</a>
+                  </span>
+               
+               </p><div>
+                  <div class="mcc-expandable-table-wrapper"><div class="table-toolbar"><button type="button" aria-label="Expand Table" title="Expand Table" class="btn btn-primary ink-reaction btn-raised btn-expand"> <i class="fa fa-expand"> Expand </i></button></div><div class="tableWrapper scrollable" style="width:100%">
+                     <table class="thead2 table left makeExpandableTable makeFixedTable" cellpadding="3" cellspacing="0" border="1" rules="all" style="text-align: left;">
+                        <colgroup class="std">
+                           <col width="42.857142857142854%">
+                           <col width="14.285714285714286%">
+                           <col width="14.285714285714286%">
+                           <col width="14.285714285714286%">
+                           <col width="14.285714285714286%">
+                        </colgroup>
+                        <thead><tr>
+                              <th style="vertical-align:middle; background-color: Gray; " class="hasbg top ">
+                                 <span class="bold">RVL, RL, RM, and RH DISTRICTS—LAND USE REGULATIONS</span>
+                                 </th>
+                              <th style="vertical-align:middle; background-color: Gray; " colspan="4" class="hasbg top ">
+                                 <span class="bold">P Permitted<br>U Use Permit Required<br>L Permitted, but limited by additional objective regulations<br>T Temporary Event Permit<br>— Not Permitted (Prohibited/Not Applicable)</span>
+                                 </th>
+                           </tr><tr>
+                              <th style="vertical-align:middle; background-color: Silver; " class="hasbg top ">
+                                  
+                                 </th>
+                              <th style="vertical-align:middle; background-color: Silver; " class="hasbg top ">
+                                 <span class="bold">RVL</span>
+                                 </th>
+                              <th style="vertical-align:middle; background-color: Silver; " class="hasbg top ">
+                                 <span class="bold">RL</span>
+                                 </th>
+                              <th style="vertical-align:middle; background-color: Silver; " class="hasbg top ">
+                                 <span class="bold">RM</span>
+                                 </th>
+                              <th style="vertical-align:middle; background-color: Silver; " class="hasbg top ">
+                                 <span class="bold">RH</span>
+                                 </th>
+                           </tr></thead><tbody>
+                           
+                           
+                           <tr>
+                              <td style="vertical-align:middle; background-color: LightGray; " colspan="5" class="hasbg top ">
+                                 <span class="bold">Residential Uses</span>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Single-Family Residential
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 •  Ancillary use not normally associated with a single-family home; such as garage
+                                 structures for more than four cars, energy generation or similar activities, as determined
+                                 by the Zoning Administrator
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Accessory dwelling unit
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Large family day care
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Small family day care
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Outdoor lighting with height over seven feet excluding lights attached to residence,
+                                 for sports courts, pools or similar uses as determined by the Zoning Administrator
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Elevated deck
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Home occupation
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Keeping of animals
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Multifamily Residential
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Residential Care Facility
+                                 <sup>
+                                    (2)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Residential Care, Limited
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Congregate Care
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Transitional and Supportive Housing
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; background-color: LightGray; " colspan="5" class="hasbg top ">
+                                 <span class="bold">Public and Semi-public Uses</span>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Club or Lodge
+                                 <sup>
+                                    (1)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Cultural Institution
+                                 <sup>
+                                    (1)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Day Care, General
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Government Office
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Maintenance or Service Facility
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Park or Recreation Facility
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Public Safety Facility
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Religious Assembly
+                                 <sup>
+                                    (1)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 School, Public or Private
+                                 <sup>
+                                    (1)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Utility, Major
+                                 <sup>
+                                    (1)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Utility, Minor
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; background-color: LightGray; " colspan="5" class="hasbg top ">
+                                 <span class="bold">Agricultural Uses</span>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Animal Husbandry
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Crop Production
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Employee/Farmworker Housing
+                                 <sup>
+                                    (3)
+                                    </sup>
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 L
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; background-color: LightGray; " colspan="5" class="hasbg top ">
+                                 <span class="bold">Temporary Uses</span>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Temporary events (<a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.37TEEVPE" data-chunk-id="TIT17ZO_CH17.37TEEVPE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.37</a>)
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 T
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 T
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 T
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 T
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Garage Sales (maximum two per calendar year per unit)
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 P
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Trailer for Construction or Real Estate Sales (new home development)
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 U
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; background-color: LightGray; " colspan="5" class="hasbg top ">
+                                 <span class="bold">Marijuana Uses</span>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Commercial Marijuana Land Uses
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 Outdoor marijuana cultivation
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                              <td style="vertical-align:middle; " class=" top ">
+                                 —
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div></div>
+                  <p>&nbsp;</p>
+               </div>
+               
+               <p class="b1" style="font-size:13px;">
+                  <sup>
+                     (1)
+                     </sup>
+                   May only be considered if property has frontage on an arterial or collector street.
+                  </p>
+               
+               <p class="b1" style="font-size:13px;">
+                  <sup>
+                     (2)
+                     </sup>
+                   Must demonstrate compliance with state law and license to operate facility.
+                  </p>
+               
+               <p class="b1" style="font-size:13px;">
+                  <sup>
+                     (3)
+                     </sup>
+                   Employee and farmworker housing that serves six or fewer persons.
+                  </p>
+               
+            <p class="historynote0">
+               (Ord. 03-03 § 3 Exh. 1; Ord. 99-5 § 2 Exh. A (part); Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=773816" data-product-id="16541" data-ordinance-id="773816">16-03</a>, § 2(Att. A), 4-12-16; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=843015" data-product-id="16541" data-ordinance-id="843015">17-03</a>; § 2(Att. A), 8-1-17; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=866508" data-product-id="16541" data-ordinance-id="866508">17-05</a>, § 2(Att. A), 9-5-17; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1359917" data-product-id="16541" data-ordinance-id="1359917">Ord. No. 25-02</a>, § 2(Att. A), 5-20-25; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1396415" data-product-id="16541" data-ordinance-id="1396415">Ord. No. 25-04</a>, § 2(Att. A, § 2), 11-3-25)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.4 - Accessory Dwelling Units (ADUs).</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!----><span class="label label-primary" ng-if="::chunk.CompareStatus == 2">modified</span><!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               A.
+               </p>
+            		
+            <p class="content1">
+               Purpose. The purpose of this section is to comply with state law regarding accessory
+               dwelling units (ADUs) and junior accessory dwelling units (JADUs) [California Government
+               Code Sections 66314 and 66333]. To the extent anything in these regulations is inconsistent
+               with state law, including as it may be amended, state law will govern and these regulations
+               will be interpreted and applied as required by state law.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Streamlined ADUs. Pursuant to California Government Code Section 66323 the City shall
+               approve ADUs and JADUs in a streamlined manner as required by state law. For example,
+               the City shall approve the following streamlined ADUs if the specified development
+               standards and use restrictions are met:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               State Exempt ADUs and JADUs.
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               The unit is located within a residential or mixed use zone.
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               The unit complies with applicable building codes, fire codes, and health and safety
+               regulations; however, the unit is not required to provide fire sprinklers if fire
+               sprinklers are not required for the primary dwelling.
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               The unit may be rented in full or in part for the purpose of overnight lodging for
+               terms of thirty (30) or more consecutive days, but it shall not be rented for overnight
+               lodging for shorter terms, notwithstanding anything to the contrary in the City's
+               short-term rental regulations (see section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.12SHRMRE" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.12SHRMRE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.12</a>). Neither the primary dwelling nor the ADU or JADU shall be sold or otherwise conveyed
+               separately from the other unit, except pursuant to California Government Code Section
+               66341.
+               </p>
+            		
+            <p class="incr2">
+               d.
+               </p>
+            		
+            <p class="content3">
+               If the unit is connected to an onsite water system, a percolation test has been completed
+               within the last five years, or if the percolation test has been recertified, within
+               the last ten years.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Within Existing Space (Single-Family)—ADUs and JADUs.
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               The lot on which the ADU or JADU is located contains an existing or proposed single-family
+               dwelling.
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               One ADU and one JADU are permitted per lot with a proposed or existing single-family
+               dwelling if all of the following apply:
+               </p>
+            		
+            <p class="incr3">
+               i.
+               </p>
+            		
+            <p class="content4">
+               The ADU or JADU has exterior access independent from the existing residence.
+               </p>
+            		
+            <p class="incr3">
+               ii.
+               </p>
+            		
+            <p class="content4">
+               The existing single-family dwelling or accessory structure has side and rear setbacks
+               sufficient for fire and safety, as determined by the Moraga-Orinda Fire Protection
+               District (MOFD). If the existing residence or structure complies with the City's setback
+               requirements as described in <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE" data-chunk-id="TIT17ZO_CH17.4REDIBADERE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.4</a>, it shall automatically meet this standard.
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               If an ADU or JADU is proposed, it is within the proposed space of a single-family
+               dwelling, the existing space of a single-family dwelling or accessory structure, or
+               requires an addition of no more than 150 square feet to an existing accessory structure
+               to accommodate ingress and egress.
+               </p>
+            		
+            <p class="incr2">
+               d.
+               </p>
+            		
+            <p class="content3">
+               If a JADU is proposed, it shall also comply with the requirements of California Government
+               Code Section 66333.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               Detached, New Construction (Single-Family)—ADUs.
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               The lot on which the ADU is located contains an existing or proposed single-family
+               dwelling.
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               The lot on which the ADU is located does not contain another ADU, but may contain
+               a JADU permitted pursuant to Subsection (B)(2).
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               The ADU is detached from the single-family dwelling.
+               </p>
+            		
+            <p class="incr2">
+               d.
+               </p>
+            		
+            <p class="content3">
+               The ADU is new construction.
+               </p>
+            		
+            <p class="incr2">
+               e.
+               </p>
+            		
+            <p class="content3">
+               The ADU is located at least four feet from the side and rear lot lines, is no greater
+               than eight hundred (800) adjusted square feet in floor area, and has a height in compliance
+               with OMC section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.4</a>.(C)(4)(c).
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               Within Existing Space (Multifamily)—ADUs.
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               The lot on which the ADU is located contains an existing multifamily dwelling.
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               The ADU is located within a portion of the multifamily dwelling structure that is
+               not used as livable space.
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               The total number of ADUs within the dwelling structure does not exceed twenty-five
+               (25) percent of the existing number of primary dwelling units within the structure,
+               provided that all multifamily dwelling structures shall be permitted at least one
+               ADU pursuant to this Subsection if the other standards are met.
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               Detached, New Construction (Multifamily)—ADUs.
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               The lot on which the ADU is located contains an existing or proposed multifamily dwelling.
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               The ADU is detached from the multifamily dwelling.
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               The ADU is located at least four feet from the side and rear lot lines and has a height
+               in compliance with OMC section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.4ACDWUNAD" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.4</a>.(C)(4)(c).
+               </p>
+            		
+            <p class="incr2">
+               d.
+               </p>
+            		
+            <p class="content3">
+               Number of ADUs.
+               </p>
+            		
+            <p class="incr3">
+               i.
+               </p>
+            		
+            <p class="content4">
+               On a lot with an existing multifamily dwelling, not more than eight detached accessory
+               dwelling units. However, the number of accessory dwelling units allowable pursuant
+               to this clause shall not exceed the number of existing units on the lot.
+               </p>
+            		
+            <p class="incr3">
+               ii.
+               </p>
+            		
+            <p class="content4">
+               On a lot with a proposed multifamily dwelling, not more than two detached accessory
+               dwelling units.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               All Other ADUs. Any ADU that does not meet the standards for streamlined ADUs in Subsection
+               B shall meet the following development standards and use restrictions:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               The ADU is located within a residential or mixed use zone.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               The lot on which the ADU is located contains an existing or proposed primary dwelling.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               The lot on which the ADU is located does not contain another ADU or JADU.
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               The ADU meets all other applicable requirements of this code that do not involve discretionary
+               review including, but not limited to, building height, setback, water channel setback,
+               tree removal, ridgeline and environmental preservation overlay, payment of applicable
+               fees, and building and fire code requirements; however:
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               Passageways. To the extent required by California Government Code Section 66314, no
+               passageway is required in conjunction with the construction of an ADU.
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               Setbacks.
+               </p>
+            		
+            <p class="incr3">
+               i.
+               </p>
+            		
+            <p class="content4">
+               No setback is required for an ADU located within existing living area or an existing
+               accessory structure, or an ADU that replaces an existing structure and is located
+               in the same location and to the same dimensions as the structure being replaced.
+               </p>
+            		
+            <p class="incr3">
+               ii.
+               </p>
+            		
+            <p class="content4">
+               For all other ADUs, the required setback from side and rear lot lines shall be no
+               more than four feet.
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               Building Heights.
+               </p>
+            		
+            <p class="incr3">
+               i.
+               </p>
+            		
+            <p class="content4">
+               Attached ADUs. The height limits applicable to the primary dwelling apply.
+               </p>
+            		
+            <p class="incr3">
+               ii.
+               </p>
+            		
+            <p class="content4">
+               Detached ADUs.
+               </p>
+            		
+            <p class="incr4">
+               A.
+               </p>
+            		
+            <p class="content5">
+               Detached ADUs located wholly or partially above a private garage shall be limited
+               to sixteen (16) feet in height in the area between the setbacks applicable to the
+               primary dwelling and the setbacks applicable to the ADU and otherwise limited by the
+               height limits applicable to the primary dwelling.
+               </p>
+            		
+            <p class="incr4">
+               B.
+               </p>
+            		
+            <p class="content5">
+               Detached ADUs on a lot with an existing or proposed single family or multifamily dwelling
+               unit shall be limited to sixteen (16) feet in height.
+               </p>
+            		
+            <p class="incr4">
+               C.
+               </p>
+            		
+            <p class="content5">
+               Detached ADUs on a lot with an existing or proposed single family or multifamily dwelling
+               unit that is within one-half of one mile walking distance of a major transit stop
+               or a high-quality transit corridor, as those terms are defined in Section 21155 of
+               the Public Resources Code, shall be limited to eighteen (18) feet in height. An additional
+               two feet in height shall be allowed to accommodate a roof pitch on the accessory dwelling
+               unit that is aligned with the roof pitch of the primary dwelling unit.
+               </p>
+            		
+            <p class="incr4">
+               D.
+               </p>
+            		
+            <p class="content5">
+               Detached ADUs on a lot with an existing or proposed multifamily, multistory dwelling
+               shall be limited to eighteen (18) feet in height.
+               </p>
+            		
+            <p class="incr2">
+               d.
+               </p>
+            		
+            <p class="content3">
+               Fire Sprinklers. The ADU is not required to provide fire sprinklers if fire sprinklers
+               are not required for the primary dwelling.
+               </p>
+            		
+            <p class="incr2">
+               e.
+               </p>
+            		
+            <p class="content3">
+               Parking. For ADUs with one or more bedrooms:
+               </p>
+            		
+            <p class="incr3">
+               i.
+               </p>
+            		
+            <p class="content4">
+               One all-weather surface, off-street parking space measuring at least nine feet by
+               nineteen (19) feet shall be provided for the ADU.
+               </p>
+            		
+            <p class="incr3">
+               ii.
+               </p>
+            		
+            <p class="content4">
+               The required parking space may be located as a tandem space in an existing driveway
+               or in the required setbacks. "Tandem parking" means that two or more automobiles are
+               parked on a driveway or in any other location on a lot, lined up behind one another.
+               </p>
+            		
+            <p class="incr3">
+               iii.
+               </p>
+            		
+            <p class="content4">
+               The above parking requirements shall not apply:
+               </p>
+            		
+            <p class="incr4">
+               A.
+               </p>
+            		
+            <p class="content5">
+               To an ADU that is located within one-half (0.5) mile walking distance of public transit,
+               defined as an existing BART or public bus stop;
+               </p>
+            		
+            <p class="incr4">
+               B.
+               </p>
+            		
+            <p class="content5">
+               To an ADU that is located within an architecturally and historically significant historic
+               district;
+               </p>
+            		
+            <p class="incr4">
+               C.
+               </p>
+            		
+            <p class="content5">
+               To an ADU that is part of a proposed or existing primary dwelling unit or accessory
+               structure;
+               </p>
+            		
+            <p class="incr4">
+               D.
+               </p>
+            		
+            <p class="content5">
+               When on-street parking permits are required but not offered to the occupant of the
+               ADU; or
+               </p>
+            		
+            <p class="incr4">
+               E.
+               </p>
+            		
+            <p class="content5">
+               To an ADU that is located within one block of the designated pick-up or drop-off location
+               of a car-share vehicle, where such vehicle is owned by a car-sharing company;
+               </p>
+            		
+            <p class="incr4">
+               F.
+               </p>
+            		
+            <p class="content5">
+               When a permit application for an ADU is submitted with a permit application to create
+               a new single-family dwelling or a new multifamily dwelling on the same lot, provided
+               that the ADU or the parcel satisfies any other criteria listed in Government Code
+               section 66322, subdivisions (a)(1)—(5).
+               </p>
+            		
+            <p class="incr2">
+               f.
+               </p>
+            		
+            <p class="content3">
+               Skirt walls. Any skirt wall developed in conjunction with an ADU shall be less than
+               six feet in height.
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               The ADU may be rented, but it shall not be sold or otherwise conveyed separate from
+               the primary dwelling except pursuant to California Government Code Sections 66340
+               through 66342.
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               Maximum size. The floor area limits in Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.6REFLAR_17.6.2DEALHOSI" data-chunk-id="TIT17ZO_CH17.6REFLAR_17.6.2DEALHOSI" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.6.2</a> of the Orinda Municipal Code shall not apply. An ADU shall meet all of the following
+               requirements:
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               Pursuant to California Government Code Section 66321, the floor area shall not exceed
+               eight hundred and fifty (850) adjusted square feet (studio or one bedroom) or one
+               thousand (1,000) adjusted square feet (more than one bedroom); and
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               Compliance with any other maximum size requirements contained in any applicable development
+               agreement or other similar, lot-specific restriction on maximum size, provided that
+               such requirements shall not be used to reduce the ADU below eight hundred (800) adjusted
+               square feet.
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               For determining compliance with this Subsection, floor area shall be calculated pursuant
+               to Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.6REFLAR_17.6.3CAFLAR" data-chunk-id="TIT17ZO_CH17.6REFLAR_17.6.3CAFLAR" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.6.3</a> and Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.6REFLAR_17.6.4FLARAD" data-chunk-id="TIT17ZO_CH17.6REFLAR_17.6.4FLARAD" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.6.4</a> of the Orinda Municipal Code.
+               </p>
+            		
+            <p class="incr0">
+               D.
+               </p>
+            		
+            <p class="content1">
+               Within sixty (60) days of receipt of a complete application, the Planning Director
+               shall ministerially process for approval any application for a building permit for
+               an ADU or JADU that meets all the criteria in this Section.
+               </p>
+            		
+            <p class="incr0">
+               E.
+               </p>
+            		
+            <p class="content1">
+               Combination Proposals.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               When an ADU is proposed in conjunction with another proposal for which City approval
+               is required under this Code (e.g., new garage, new single-family residence, substantial
+               addition to an existing residence), the City shall follow the process as required
+               by California Government Code Section 66320.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               No certificate of occupancy will be issued for an ADU prior to issuance of a certificate
+               of occupancy for the primary dwelling.
+               </p>
+            		
+            <p class="incr0">
+               F.
+               </p>
+            		
+            <p class="content1">
+               Non-Compliant Proposals. If the above requirements are not met, the proposed ADU cannot
+               be approved under this Section. Notwithstanding any other contrary provisions of this
+               Code, applicants may seek a variance for an ADU in accordance with <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.33VA" data-chunk-id="TIT17ZO_CH17.33VA" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.33</a> but not an exception in accordance with <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.32EX" data-chunk-id="TIT17ZO_CH17.32EX" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.32</a>.
+               </p>
+            		
+            <p class="incr0">
+               G.
+               </p>
+            		
+            <p class="content1">
+               Converted Parking. Notwithstanding any other provision of this code, when a private
+               garage, carport, covered parking structure, or uncovered parking space is demolished
+               or converted in conjunction with the construction of an ADU, the spaces are not required
+               to be replaced, as required by California Government Code Section 66314(d)(11).
+               </p>
+            		
+            <p class="incr0">
+               H.
+               </p>
+            		
+            <p class="content1">
+               Fees. No impact fees, as defined in California Government Code Section 66324(c)(1),
+               shall be imposed on ADUs smaller than seven hundred and fifty (750) adjusted square
+               feet. Impact fees for all other ADUs shall be charged proportionately in relation
+               to the square footage of the primary dwelling unit.
+               </p>
+            		
+            <p class="incr0">
+               I.
+               </p>
+            		
+            <p class="content1">
+               Existing Accessory Dwelling Unit. An existing ADU may be enlarged or modified in accordance
+               with the requirements of state law and this Section.
+               </p>
+            		
+            <p class="incr0">
+               J.
+               </p>
+            		
+            <p class="content1">
+               Density. To the extent required by California Government Code Section 66314, an ADU
+               or JADU built in conformance with this Section does not count toward the allowed density
+               for the lot upon which the ADU or JADU is located.
+               </p>
+            		
+            <p class="incr0">
+               K.
+               </p>
+            		
+            <p class="content1">
+               General Plan and Zoning Designations. ADUs and JADUs are residential uses that are
+               consistent with the City's existing general plan and zoning designations.
+               </p>
+            		
+            <p class="incr0">
+               L.
+               </p>
+            		
+            <p class="content1">
+               No more than two dwelling units of any kind will be permitted by the City on a parcel
+               created through the exercise of the authority contained in California Government Code
+               Section 66411.7.
+               </p>
+            		
+            <p class="historynote0">
+               (Ord. 07-02 § 2: Ord. 03-03 § 4: Ord. 99-5 § 2 Exh. A (part); Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=843015" data-product-id="16541" data-ordinance-id="843015">17-03</a>; § 2(Att. A), 8-1-17; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=880760" data-product-id="16541" data-ordinance-id="880760">18-02</a>, § 2(Att. A), 3-6-18; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1021513" data-product-id="16541" data-ordinance-id="1021513">20-02</a>, § 2(Att. A), 5-19-20; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1131619" data-product-id="16541" data-ordinance-id="1131619">21-8</a>, § 2(Att. A.1), 1-11-22; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1359917" data-product-id="16541" data-ordinance-id="1359917">Ord. No. 25-02</a>, § 2(Att. A), 5-20-25)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.5SMFADACA" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.5SMFADACA" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.5SMFADACA" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.5SMFADACA" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.5 - Small family day care.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The use of single-family residences as small family day care homes shall be considered
+               a residential use of property and can be located in a detached single-family dwelling,
+               a townhouse, a dwelling unit within a dwelling, or a dwelling unit within a covered
+               multifamily dwelling in which the underlying zoning allows for residential uses. A
+               small family day care home is where the family day care provider resides, and includes
+               a dwelling or dwelling unit that is rented, leased, or owned. No business license
+               fee or tax shall be imposed for the privilege of operating a small family day care
+               home. Also, such use of a residence shall not constitute a change of occupancy for
+               the purposes of the Uniform Building Code. However, small family day care homes shall
+               contain a fire extinguisher or smoke detector device, or both, which meets standards
+               established by the State Fire Marshal (Government Code Section 1597.45).
+               </p>
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part); Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1178072" data-product-id="16541" data-ordinance-id="1178072">22-02</a>, § 2(Att. A.2), 9-6-22)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.6LAFADACA" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.6LAFADACA" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.6LAFADACA" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.6LAFADACA" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.6 - Large family day care.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The use of single-family residences as large family day care homes shall be considered
+               a residential use of property. No business license fee or tax shall be imposed for
+               the privilege of operating a large family day care home and it can be located in a
+               detached single-family dwelling, a townhouse, a dwelling unit within a dwelling, or
+               a dwelling unit within a covered multifamily dwelling in which the underlying zoning
+               allows for residential uses. A large family day care home is where the family day
+               care provider resides and includes a dwelling or dwelling unit that is rented, leased,
+               or owned. Also, such use of a residence shall not constitute a change of occupancy
+               for the purposes of the Uniform Building Code. Large family day care homes are subject
+               to the State Fire Marshal standards for large family day cares (Government Code Section
+               1597.46) and include requirements for a fire extinguisher or smoke detector device,
+               or both; requirements for carbon monoxide detectors; specifications as to the number
+               of required exits from the home; specifications as to the floor or floors on which
+               childcare may be provided; and the number of exits on each floor.
+               </p>
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part); Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1178072" data-product-id="16541" data-ordinance-id="1178072">22-02</a>, § 2(Att. A.3), 9-6-22)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.7HOOC" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.7HOOC" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.7HOOC" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.7HOOC" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.7 - Home occupations.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               A.
+               </p>
+            		
+            <p class="content1">
+               Purpose and Intent.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               The purpose of this section is to allow a resident to conduct limited commercial or
+               professional activities at home, i.e., home occupations, where the home occupation
+               is incidental and subordinate to the residential use of the property. It is the intent
+               of this section to ensure that home occupations are compatible with, and do not change
+               the character of the surrounding residential area by generating more traffic, noise,
+               visual impacts, or storage of materials than would normally be expected in a semi-rural
+               residential setting.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               The primary nature of allowable home occupations is that such businesses will have
+               minimal impact on neighbors, with no increase in neighborhood traffic related to the
+               business; e.g., such businesses which are conducted entirely via the telephone, mail,
+               Internet or provide mobile services at the customers' place of residence. Limited
+               professional, therapeutic and educational services at the applicant's residence may
+               also be provided pursuant to the following requirements and prohibitions.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Permitted Home Occupations. A home occupation may be conducted in a residential zone
+               if it does not violate any of the following standards:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               The home occupation shall be incidental and subordinate to the use of the property
+               as a residence.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               The appearance of the structure in no way shall be altered, nor shall the occupation
+               be conducted in a manner which would cause change in the colors, materials, construction,
+               lighting or signs. There shall be no outside display, advertising sign, window display
+               or storage of goods or materials that could be used to identify the business.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               The use of a garage for the purpose of a home occupation shall not decrease the amount
+               of off-street covered parking required by <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO" data-chunk-id="TIT17ZO" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 17</a>.
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               The occupation shall not create any noise, vibration, fumes, odors, dust, other emissions
+               or electrical interference that is detectable from the street or neighboring properties.
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               There shall be no use of (or discharge into) water, sewers, electricity, or storm
+               drains which exceeds normal residential use.
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               Only the permanent residents of the dwelling may be involved in the conduct of the
+               home occupation. There shall be no employees or independent contractors.
+               </p>
+            		
+            <p class="incr1">
+               7.
+               </p>
+            		
+            <p class="content2">
+               The use shall not generate vehicular or pedestrian traffic in excess of that normally
+               associated with single-family use.
+               </p>
+            		
+            <p class="incr1">
+               8.
+               </p>
+            		
+            <p class="content2">
+               Assembly and fabrication of goods shall be limited to small scale arts, crafts and
+               hobby items made for off-site sale, such as through mail order, Internet, street fairs
+               and farmers' markets.
+               </p>
+            		
+            <p class="incr1">
+               9.
+               </p>
+            		
+            <p class="content2">
+               Permitted food preparation shall be limited to specialty items made for off-site sale,
+               such as through mail order, Internet, catering, street fairs and farmers' markets,
+               and shall have all required permits.
+               </p>
+            		
+            <p class="incr1">
+               10.
+               </p>
+            		
+            <p class="content2">
+               Outdoor instruction, such as tennis and swimming lessons, shall not be audible from
+               neighboring properties.
+               </p>
+            		
+            <p class="incr1">
+               11.
+               </p>
+            		
+            <p class="content2">
+               There shall be no installation of equipment or appliances, or storage of materials,
+               or use of vehicles, that are of a nonresidential nature. Activities conducted and
+               equipment or material used as a part of a home occupation shall not change the fire
+               safety or occupation classifications of the residence as set forth in the Uniform
+               Building Code. The home occupation shall not employ the storage of flammable explosive
+               or hazardous materials unless specifically approved by the Moraga/Orinda Fire District.
+               </p>
+            		
+            <p class="incr1">
+               12.
+               </p>
+            		
+            <p class="content2">
+               No more than one company vehicle, which shall be limited to a car, van or truck (three-quarter
+               ton maximum) may be used by the applicant, directly or indirectly, in connection with
+               the home occupation.
+               </p>
+            		
+            <p class="incr1">
+               13.
+               </p>
+            		
+            <p class="content2">
+               The home occupation shall be limited to a minor portion of the dwelling, such as one
+               room, or twenty (20) percent of the dwelling's floor area in case where the use of
+               one room would exceed twenty (20) percent of the dwelling's floor area.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Prohibited Home Occupations. Activities which are in violation of this section are
+               prohibited. The following occupations are categorically prohibited:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Beauty parlors, barber shops and haircut salons;
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Retail and wholesale sales where goods would be retrieved by the buyer at location
+               of the home occupation;
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               Restaurants and food preparation site for the purpose of retail sales from a vehicle;
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               Cabinet making and similar manufacturing activities;
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               Stables, kennels, veterinary clinics, animal breeding and grooming;
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               Appliance, automotive, engine, motorcycle repair on-site;
+               </p>
+            		
+            <p class="incr1">
+               7.
+               </p>
+            		
+            <p class="content2">
+               Medical and dental offices and clinics.
+               </p>
+            		
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part))
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.8KEAN" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.8KEAN" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.8KEAN" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.8KEAN" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.8 - Keeping animals.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               Large animals such as horses and cattle may only be kept on lots of forty thousand
+               (40,000) net square feet or more, allowing one large animal for each twenty thousand
+               (20,000) square feet of net lot size. Keeping small animals such as chickens, rabbits
+               and mink is permitted on residential lots of twenty thousand (20,000) net square feet
+               or more. Keeping exotic animals is subject to obtaining a use permit under <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.31GEUSPE" data-chunk-id="TIT17ZO_CH17.31GEUSPE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.31</a>. Keeping domestic animals is a permitted use on properties zoned for residential
+               use.
+               </p>
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part))
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.9DURESTONLO" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.9DURESTONLO" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.9DURESTONLO" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.9DURESTONLO" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.9 - Dual residential structures on one lot.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               A dual-structure permit shall be required prior to commencing any work, including,
+               but not limited to, demolition, on a proposed new residence on a single-family residential
+               lot containing an existing residence, where the new residence will be entirely or
+               substantially separate from the existing residence and the existing residence is intended
+               to be maintained as living quarters until the new residence is occupied. The dual-structure
+               permit may be issued if the following criteria are met:
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  Written Agreement. The property owner shall agree in writing that:
+                  </p>
+               		
+               <p class="incr2">
+                  1.
+                  </p>
+               		
+               <p class="content3">
+                  The two structures will not be occupied simultaneously for more than a three-day period
+                  when moving to the new home;
+                  </p>
+               		
+               <p class="incr2">
+                  2.
+                  </p>
+               		
+               <p class="content3">
+                  The original structure will be demolished within a reasonable time, to be specified
+                  by the Zoning Administrator; and
+                  </p>
+               		
+               <p class="incr2">
+                  3.
+                  </p>
+               		
+               <p class="content3">
+                  The site of the demolished structure will be adequately landscaped within a reasonable
+                  time, to be specified by the Zoning Administrator.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  Bond. The property owner shall provide a bond sufficient to permit the city to finish
+                  whatever work is left incomplete by the property owner, in a form to be approved by
+                  the City Attorney.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  C.
+                  </p>
+               		
+               <p class="content2">
+                  Recording. The written agreement shall be recorded. On satisfaction of all conditions
+                  of approval and the terms of the written agreement, the city shall record a notice
+                  of compliance.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (Ord. 02-03 § 3)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.10TRSUHO" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.10TRSUHO" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.10TRSUHO" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.10TRSUHO" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.10 - Transitional and supportive housing.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               Notwithstanding anything to the contrary herein, and to the extent required by State
+               law (including Government Code Sections 65582 and 65583(a)(5)), transitional and supportive
+               housing shall be considered a residential use of property, and shall be subject only
+               to those restrictions that apply to other residential dwellings of the same type in
+               the same zone.
+               </p>
+            <p class="historynote0">
+               (Ord. No. 13-03, § 2(Att. A), 12-17-13)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.11MUHO" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.11MUHO" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.11MUHO" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.11MUHO" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.11 - Multifamily housing.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!----><span class="label label-primary" ng-if="::chunk.CompareStatus == 2">modified</span><!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               To the extent allowed by state law, multifamily dwellings in the RM and RH districts
+               shall comply, as applicable, with the design review standards in section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.30DERE_17.30.11SEHOFAMUHOHIDEDERE" data-chunk-id="TIT17ZO_CH17.30DERE_17.30.11SEHOFAMUHOHIDEDERE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.30.11</a>, the multifamily property development standards in section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE_17.4.2RVRLRMRHDIRODERE" data-chunk-id="TIT17ZO_CH17.4REDIBADERE_17.4.2RVRLRMRHDIRODERE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.4.2</a>, the multifamily development standards in section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE_17.4.32REMUDEST" data-chunk-id="TIT17ZO_CH17.4REDIBADERE_17.4.32REMUDEST" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.4.32</a>, and the Residential High Density development standards in section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE_17.4.35REHIDERHDEST" data-chunk-id="TIT17ZO_CH17.4REDIBADERE_17.4.35REHIDERHDEST" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.4.35</a>.
+               </p>
+            <p class="historynote0">
+               (Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=773816" data-product-id="16541" data-ordinance-id="773816">16-03</a>, § 2(Att. A), 4-12-16; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1396415" data-product-id="16541" data-ordinance-id="1396415">Ord. No. 25-04</a>, § 2(Att. A, § 3), 11-3-25)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.3REDIBAUSRE_17.3.12SHRMRE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.3REDIBAUSRE_17.3.12SHRMRE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.12SHRMRE" data-skip-id="_TIT17ZO_CH17.3REDIBAUSRE_17.3.12SHRMRE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.3.12 - Short-term rentals.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!----><span class="label label-primary" ng-if="::chunk.CompareStatus == 2">modified</span><!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="incr0">
+               A.
+               </p>
+            		
+            <p class="content1">
+               Definitions.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               "Host" means the person or people identified as the owner on a short-term rental registration
+               form submitted to the City.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               "Hosting platform" means a person, legal entity or an association of individuals that
+               provide a means, which may or may not be internet-based, through which a short-term
+               rental is offered to the public, in exchange for a fee or other compensation. A hosting
+               platform generally has the following attributes: allows a host to advertise a short-term
+               rental, and provides a means to arrange and enter into agreements to occupy short-term
+               rentals, whether payment of rent is made directly to the host or through the hosting
+               platform.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               "Short-term rental" means the rental of a property in full or in part for a term of
+               less than thirty (30) consecutive days.
+               </p>
+            		
+            <p class="incr0">
+               B.
+               </p>
+            		
+            <p class="content1">
+               Registration Required. It is unlawful for any person to operate a short-term rental
+               within the City without first registering the short-term rental pursuant to this section.
+               </p>
+            		
+            <p class="incr0">
+               C.
+               </p>
+            		
+            <p class="content1">
+               Registration. In the registration filed with the City, the host shall acknowledge
+               the following requirements:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               When any portion of the short-term rental is rented, the total maximum occupancy of
+               the dwelling containing the short-term rental is limited to the maximum number specified
+               on the proof of registration. That maximum is calculated as follows: two people per
+               bedroom plus three people;
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               The host of a short-term rental on any given lot may only arrange for one rental to
+               take place at any given time on that lot;
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               The short-term rental host is responsible for ensuring the short-term rental complies
+               with all local, state, and federal health and safety requirements, including those
+               regarding smoke detectors, fire alarms, and fire extinguishers;
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               The short-term rental host is responsible for compliance with all City regulations
+               including those regarding noise, parking, and occupancy. Compliance with those requirements
+               shall be included in any written agreement used for the short-term rental;
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               While rented, the short-term rental shall not be used for any use or event that would
+               require a Temporary Event Permit pursuant to <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.37TEEVPE" data-chunk-id="TIT17ZO_CH17.37TEEVPE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.37</a>; and
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               The short-term rental registration is non-transferable.
+               </p>
+            		
+            <p class="incr0">
+               D.
+               </p>
+            		
+            <p class="content1">
+               Registration Process.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Each short-term rental shall be annually registered with the Planning Director or
+               his or her designee by completing a City-provided registration form that shall set
+               forth the following information:
+               </p>
+            		
+            <p class="incr2">
+               a.
+               </p>
+            		
+            <p class="content3">
+               The name, address, telephone number, and signature of the owner of the short-term
+               rental for which the registration is sought;
+               </p>
+            		
+            <p class="incr2">
+               b.
+               </p>
+            		
+            <p class="content3">
+               The address of the short-term rental;
+               </p>
+            		
+            <p class="incr2">
+               c.
+               </p>
+            		
+            <p class="content3">
+               The number of bedrooms in the short-term rental, which will be used to calculate the
+               occupancy limit for the short-term rental when it is being rented in full or in part.
+               The maximum occupancy formula is: two people per bedroom plus three people;
+               </p>
+            		
+            <p class="incr2">
+               d.
+               </p>
+            		
+            <p class="content3">
+               Affirmation that all construction at the property containing the short-term rental
+               was conducted in compliance with building codes applicable at the time;
+               </p>
+            		
+            <p class="incr2">
+               e.
+               </p>
+            		
+            <p class="content3">
+               The short-term rental's first operation date, if prior to the effective date of this
+               section;
+               </p>
+            		
+            <p class="incr2">
+               f.
+               </p>
+            		
+            <p class="content3">
+               Acknowledgement that the short-term rental does and shall comply with all requirements
+               set forth in this section;
+               </p>
+            		
+            <p class="incr2">
+               g.
+               </p>
+            		
+            <p class="content3">
+               Evidence of a valid transient occupancy registration certificate issued by the Tax
+               Administrator in compliance with Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT3REFI_CH3.12UNTROCTA_3.12.060RE" data-chunk-id="TIT3REFI_CH3.12UNTROCTA_3.12.060RE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>3.12.060</a>. The application for a transient occupancy registration certificate may be filed
+               concurrently with the registration required under this section; and
+               </p>
+            		
+            <p class="incr2">
+               h.
+               </p>
+            		
+            <p class="content3">
+               An agreement to hold harmless, indemnify and defend the City against claims and litigations
+               arising from or related to the issuance of the short-term rental registration.
+               </p>
+            		
+            <p class="incr0">
+               E.
+               </p>
+            		
+            <p class="content1">
+               Registration Fee Required. At the time of registration, the host shall pay a registration
+               fee in an amount set from time to time by resolution of the City Council to reimburse
+               the City for the cost of processing the registration. Registration shall be initiated
+               only upon the successful payment of the registration fee. The registration fee is
+               not refundable.
+               </p>
+            		
+            <p class="incr0">
+               F.
+               </p>
+            		
+            <p class="content1">
+               Registration Investigation by Planning Director. The Planning Director may make or
+               cause to be made, within a reasonable time after the filing of a registration form
+               pursuant to this section, an investigation of the veracity of the information provided
+               on the registration form.
+               </p>
+            		
+            <p class="incr0">
+               G.
+               </p>
+            		
+            <p class="content1">
+               Proof of Registration—Record Kept by Planning Director. Upon a determination of compliance
+               with the provisions of this section, the Planning Director shall issue to the host
+               a proof of registration showing the name of the host, the address of the short-term
+               rental, the maximum occupancy for the property during any rentals, the City short-term
+               rental registration number, and the date of expiration of the registration (one year
+               from date of issuance).
+               </p>
+            		
+            <p class="incr0">
+               H.
+               </p>
+            		
+            <p class="content1">
+               Hosted Stay Requirement. Short-term rentals are prohibited unless:
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               The short-term rental takes place on property owned by the host and containing the
+               host's primary residence;
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               The host personally lives on the property when it is used for short-term rentals.
+               A host will only be considered to live at the property used for a short-term rental
+               if they are physically and personally present at the time of the short-term rental.
+               Such physical presence must include sleeping overnight. A host will not be considered
+               to live at the property used for a short-term rental if they are away from the property
+               overnight, including on vacation;
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               The host is physically present to monitor and regulate activity during the short-term
+               rental, including by meeting guests upon arrival;
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               The duration of the short-term rental is at least two nights;
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               Any on-line listings and/or other advertisement authorized by the host for the short-term
+               rental specify that the host will be present and/or share the dwelling unit used for
+               the short-term rental; and
+               </p>
+            		
+            <p class="incr1">
+               6.
+               </p>
+            		
+            <p class="content2">
+               Any on-line listings and/or other advertisements authorized by the host clearly identify
+               the short-term rental registration number provided by the City.
+               </p>
+            		
+            <p class="incr0">
+               I.
+               </p>
+            		
+            <p class="content1">
+               Regulations for Hosting Platforms.
+               </p>
+            		
+            <p class="incr1">
+               1.
+               </p>
+            		
+            <p class="content2">
+               Hosting platforms shall retain records documenting compliance with this section for
+               a period of three years after any short-term rental, including, but not limited to,
+               records indicating the history of all short-term rental reservations on the subject
+               property from the hosting platform, length of stay per reservation, and number of
+               persons per reservation.
+               </p>
+            		
+            <p class="incr1">
+               2.
+               </p>
+            		
+            <p class="content2">
+               Hosting platforms shall be required to prompt hosts to include the City-issued registration
+               number in their listing, in a format designated by the City. Upon notice from the
+               City that a listing is non-compliant, hosting platforms shall cease any short-term
+               rental booking transactions for said listing within five business days. A hosting
+               platform shall not complete any booking transaction for any residential property or
+               unit subject to a City notice, until notified by the City that the residential property
+               or unit is in compliance with the local registration requirement.
+               </p>
+            		
+            <p class="incr1">
+               3.
+               </p>
+            		
+            <p class="content2">
+               Safe Harbor. A hosting platform operating exclusively on the internet, which operates
+               in compliance with subsections (1) and (2) above shall be presumed to be in compliance
+               with this section.
+               </p>
+            		
+            <p class="incr1">
+               4.
+               </p>
+            		
+            <p class="content2">
+               The provisions of this subsection I shall be interpreted in accordance with otherwise
+               applicable State and Federal law(s) and will not apply if determined by the City to
+               be in violation of, or preempted by, any such law(s).
+               </p>
+            		
+            <p class="incr1">
+               5.
+               </p>
+            		
+            <p class="content2">
+               The provisions of this subsection I shall not be effective until January 7, 2022.
+               </p>
+            		
+            <p class="incr0">
+               J.
+               </p>
+            		
+            <p class="content1">
+               Enforcement. Violations of this section may be enforced pursuant to <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT19COCO" data-chunk-id="TIT19COCO" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 19</a>.
+               </p>
+            		
+            <p class="incr0">
+               K.
+               </p>
+            		
+            <p class="content1">
+               Pursuant to Senate Bill 9 (2021), short-term rentals are prohibited in units created
+               pursuant the authority contained in California Government Code Sections 65852.21 and/or
+               66411.7.
+               </p>
+            		
+            <p class="historynote0">
+               (Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=854057" data-product-id="16541" data-ordinance-id="854057">17-04</a>, § 2(Att. A), 9-5-17; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1105767" data-product-id="16541" data-ordinance-id="1105767">21-6</a>, § 2(Att. A), 9-7-21; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1131619" data-product-id="16541" data-ordinance-id="1131619">21-8</a>, § 2(Att. A.2), 1-11-22)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!---->
+        </ul>
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE_17.2.3DE" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE_17.2.3DE" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 17.2.3 - Definitions.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE" ng-if="vm.content.nextNode">Chapter 17.4 - RESIDENTIAL DISTRICT BASE DEVELOPMENT REGULATIONS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+    </div><!---->
+</div>

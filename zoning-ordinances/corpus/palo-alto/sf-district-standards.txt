@@ -1,0 +1,1410 @@
+18.12.010 Purposes
+
+Provisions related to the single-family residential (R-1) district, four residential R-1 subdistricts, and the single-story (S) combining district are outlined in this chapter. Requirements for the R-E, R-2 and RMD are included in Chapter 18.10. The specific purposes of each residential district are stated below:
+
+(a) Single Family Residential District [R-1]
+
+The R-1 single family residential district is intended to create, preserve, and enhance areas suitable for detached dwellings with a strong presence of nature and with open area affording maximum privacy and opportunities for outdoor living and children’s play. Minimum site area requirements are established to create and preserve variety among neighborhoods, to provide adequate open area, and to encourage quality design. Accessory dwelling units, junior accessory dwelling units and accessory structures or buildings are appropriate. Community uses and facilities, such as churches and schools, should be limited unless no net loss of housing would result.
+
+(b) Special Residential Building Site R-1 Subdistricts (7,000), (8,000), (10,000), (20,000)1
+
+The special residential building site R-1 subdistricts are intended to modify the site development regulations of the R-1 single family residence district, where applied in combination with the R-1 district, to create and maintain single-family living areas of varying site size and development characteristics, to reflect and preserve the character of existing neighborhoods.
+
+1. Subdistricts may be reflected on the Zoning Map as R-1(650), R-1(743), R-1(929) and R-1(1,858), respectively, reflecting the minimum lot size in square meters rather than in square feet.
+
+(c) Single-Story Combining District (S)
+
+The single-story height combining district is intended to modify the site development regulations of the R-1 single-family residence district, to preserve and maintain single-family living areas of predominantly single-story character. An area proposed for a single story combining district should be of a prevailing single story character, thus limiting the number of structures rendered noncomplying by the (S) combining district. It is intended that neighborhoods currently subject to single story deed restrictions be developed in a manner consistent with those deed restrictions. Furthermore, it is desirable that homes be similar in age, design and character, ensuring that residents of an area proposed for rezoning possess like desires for neighborhood preservation and face common home remodeling constraints.
+
+(Ord. 5412 § 11, 2017: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.020 Applicable Regulations
+
+The specific regulations of this chapter and the additional regulations and procedures established by Chapters 18.52 to 18.80 inclusive shall apply to the R-1 district including the R-1 subdistricts. Such regulations shall apply to construction of two units on an R1-zoned lot pursuant to California Government Code Section 65852.21 (SB 9), except as modified by Section 18.42.180.
+
+(Ord. 5587 § 8, 2023: Ord. 5542 § 7, 2022: Ord. 5538 § 7, 2021: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.030 Land Uses
+
+The permitted and conditionally permitted uses for the single family residential districts are shown in Table 1:
+
+Table 1
+
+PERMITTED AND CONDITIONAL R-1 RESIDENTIAL USES
+
+| | R-1 and all R-1 Subdistricts | Subject to Regulations in: |
+
+| | R-1 and all R-1 Subdistricts | Subject to Regulations in: |
+| ACCESSORY AND SUPPORT USES | | |
+| Accessory facilities and uses customarily incidental to permitted uses with no more than two plumbing fixtures and no kitchen facility, or of a size less than or equal to 200 square feet | P | 18.04.030(a)(3) 18.12.080 |
+| Accessory facilities and uses customarily incidental to permitted uses with more than two plumbing fixtures (but with no kitchen), and in excess of 200 square feet in size, but excluding second dwelling units | CUP | 18.12.080 |
+| Home occupations, when accessory to permitted residential uses | P | 18.42.060 |
+| Horticulture, gardening, and growing of food products for consumption by occupants of the site | P | |
+| Accessory Dwelling Units | P(1) | 18.09 |
+| Junior Accessory Dwelling Unit | P(1) | 18.09 |
+| Safe Parking | | 18.42.160 |
+| EDUCATIONAL, RELIGIOUS AND ASSEMBLY USES | | |
+| Private Educational Facilities | CUP | |
+| Churches and Religious Institutions | CUP | |
+| PUBLIC/QUASI PUBLIC USES | | |
+| Community Centers | CUP | |
+| Utility Facilities essential to provision of utility services to the neighborhood, but excluding business offices, construction or storage yards, maintenance facilities, or corporation yards | CUP | |
+| RECREATlON USES | | |
+| Outdoor Recreation Services | CUP | |
+| RESIDENTIAL USES | | |
+| Single-Family | P | |
+| Two-Family use, under one ownership | P | 18.42.180 |
+| Mobile Homes | P | 18.42.100 |
+| Multiple-Family | P(2) | 18.14.020 |
+| Residential Care Homes | P | |
+| SERVICE USES | | |
+| Day Care Centers | CUP | |
+| Small Adult Day Care Homes | P | |
+| Large Adult Day Care Homes | CUP | |
+| Small Family Day Care Homes | P | |
+| Large Family Day Care Homes | P | |
+| P = Permitted Use CUP = Conditional Use Permit Required | | |
+
+(1) An Accessory Dwelling Unit or a Junior Accessory Dwelling Unit associated with a single-family residence on a lot is permitted, subject to the provisions of Chapter 18.09.
+
+(2) Housing Element opportunity sites (faith-based institutions) only.
+
+(Ord. 5587 § 9, 2023: Ord. 5574 § 4, 2023: Ord. 5542 § 8, 2022: Ord. 5538 § 8, 2021: Ord. 5490 § 2, 2020: Ord. 5412 § 12, 2017: Ord. 4869 § 14 (Exh. A [part]), 2005: Ord. 5608 § 3, 2024)
+
+18.12.040 Site Development Standards
+
+(a) Site Specifications, Building Size, Height and Bulk, and Residential Density
+
+The development standards for the R-1 district and the R-1 subdistricts are shown in Table 2,except:
+
+(1) To the extend such standards may be modified by Section 18.42.180 for two-family uses pursuant to California Government Code Section 65852.21 (SB 9, 2021):
+
+(2) On Housing Element opportunity sites (faith-based institutions): development standards for Multiple-Family uses are identified in Section 18.14.020, which states that sites shall meet the development standards for the RM-30 zoning district, except that Maximum FAR shall be 1.25.
+
+TABLE 2
+R-1 RESIDENTIAL DEVELOPMENT STANDARDS
+
+| | R-1 | R-1 Subdistricts | | | | Subject to Regulations in Chapter: |
+| | R-1 | R-1 (7,000)* | R-1 (8,000)* | R-1 (10,000)* | R-1 (20,000)* | Subject to Regulations in Chapter: |
+| | R-1 | * Subdistricts based on minimum lot size (sq. ft) | | | | Subject to Regulations in Chapter: |
+
+| | R-1 | R-1 Subdistricts | | | | Subject to Regulations in Chapter: |
+| | R-1 | R-1 (7,000)* | R-1 (8,000)* | R-1 (10,000)* | R-1 (20,000)* | Subject to Regulations in Chapter: |
+| | R-1 | * Subdistricts based on minimum lot size (sq. ft) | | | | Subject to Regulations in Chapter: |
+| Minimum Site Specifications | | | | | | |
+| Site area (sq. ft.) | | | | | | |
+| All lots except flag lots (1) | 6,000 | 7,000 | 8,000 | 10,000 | 20,000 | |
+| Flag lots | As established by Section 21.20.301 (Subdivision Ordinance) | | | | | |
+| Site Width (ft) | 60 | | | | | |
+| Site Depth (ft) | 100 | | | | | |
+| Maximum Lot Size | | | | | | |
+| Lot area (sq. ft.) | 9,999 | 13,999 | 15,999 | 19,999 | 39,999 | 18.12.040(d) |
+| Minimum Setbacks | Setback lines imposed by a special setback map pursuant to Chapter 20.08 of this code may also apply | | | | | 18.12.040(e) 18.12.050 |
+| Front Yard (ft.) | Contextual | | | | | 18.12.040(e) 18.12.050 |
+| Rear Yard (ft.) | 20 | | | | | 18.12.040(e) 18.12.050 |
+| Interior Side Yard (ft.) | 6 | 8 | | | | 18.12.040(e) 18.12.050 |
+| Street Side Yard (ft.) | 16 | | | | | 18.12.040(e) 18.12.050 |
+| Maximum Height (as measured to the peak of the roof) (ft.) | | | | | | 18.04.030(a)(67) 18.12.050 |
+| Standard | 30 (3) | | | | | 18.04.030(a)(67) 18.12.050 |
+| Maximum Height for buildings with a roof pitch of 12:12 or greater | 33 (3) | | | | | 18.04.030(a)(67) 18.12.050 |
+| With (S) Combining | 17 feet; limited to one habitable floor (4,5) | | | | | 18.12.100 |
+| Side Yard Daylight Plane (Excludes street side yards) | | | | | | 18.04.030(44) 18.12.050 |
+| Initial Height | 10 feet at interior side lot line (6) | | | | | 18.04.030(44) 18.12.050 |
+| Angle (Degrees) | 45 (6) | | | | | 18.04.030(44) 18.12.050 |
+| Rear Yard Daylight Plane | | | | | | 18.12.050 |
+| Initial Height | 16 feet at rear setback line (6) | | | | | 18.12.050 |
+| Angle (Degrees) | 60 (6) | | | | | 18.12.050 |
+| Maximum Site Coverage: | | | | | | 18.04.030(a)(86A) |
+| Single story development | Equivalent to maximum allowable floor area ratio (7) | | | | | 18.04.030(a)(86A) |
+| With (S) Combining | Equivalent to maximum allowable floor area ratio (7) | | | | | 18.04.030(a)(86A) |
+| Multiple story development | 35% (7) | | | | | 18.04.030(a)(86A) |
+| Additional area permitted to be covered by a patio or overhang | 5% | | | | | 18.04.030(a)(86A) |
+| Maximum Floor Area Ratio (FAR) | | | | | | Table 3 18.04.030(a)(65C) 18.12.040(b) |
+| First 5,000 sq. ft. of lot size | .45 | | | | | Table 3 18.04.030(a)(65C) 18.12.040(b) |
+| Square footage of lot size in excess of 5,000 sq. ft. | .30 | | | | | Table 3 18.04.030(a)(65C) 18.12.040(b) |
+| Maximum House Size (sq. ft.) | 6,000 (8) | | | | | |
+| Residential Density | One unit, except as provided in Section 18.12.090 | | | | | |
+| Parking | See Residential Parking, Section 18.12.060 | | | | | Chs. 18.52, 18.54 |
+
+* Subdistricts may be reflected on the Zoning Map as R-1(650), R-l(743), R-l(929) and R-1(1,858), respectively, reflecting the minimum lot size in square meters rather than in square feet.
+
+Notes to Table 2:
+
+(1) Minimum Lot Size: Any lot less than the minimum lot size may be used in accordance with the provisions of Section 18.40.080.
+
+(2) Contextual Front Setbacks: See Section 18.12.040(e) for application of contextual front setbacks.
+
+(3) R-1 Floodzone Heights: Provided, in a special flood hazard area as defined in Chapter 16.52, the maximum heights are increased by one-half of the increase in elevation required to reach base flood elevation, up to a maximum building height of 33 feet.
+
+(4) R-1 (S) Height Limitations: Habitable floors include lofts, mezzanines, and similar areas with interior heights of five feet (5') or more from the roof to the floor, but shall exclude finished basements and shall exclude attics that have no stairway or built-in access.
+
+(5) R-1 (S) Floodzone Heights: Provided, in a special flood hazard area as defined in Chapter 16.52, the maximum height is increased by one-half of the increase in elevation required to reach base flood elevations, up to a maximum building height of 20 feet.
+
+(6) R-1 Floodzone Daylight Plane: Provided, if the site is in a special flood hazard area and is entitled to an increase in the maximum height, the heights for the daylight planes shall be adjusted by the same amount.
+
+(7) Site Coverage: The covering of a court is exempt from the calculation of site coverage provided that the court existed prior to July 20, 1978.
+
+(8) Maximum House Size: The gross floor area of attached garages are included in the calculation of maximum house size. If there is no garage attached to the house, then the square footage of one detached covered parking space shall be included in the calculation.
+
+(b) Gross Floor Area Summary
+
+The following table summarizes how "gross floor area" is counted, for the purpose of compliance with floor area ratio limits outlined in Table 2. "Gross floor area" means the total covered area of all floors of a main structure and accessory structures greater than one hundred twenty square feet in area, including covered parking and stairways, measured to the outside surface of stud walls, subject to the following inclusions, conditions, and exclusions. For exact language, refer to Section 18.04.030(a)(65), Gross Floor Area definition.
+
+TABLE 3
+SUMMARY OF GROSS FLOOR AREA FOR SINGLE FAMILY RESIDENTIAL DISTRICTS
+
+| Description | Included In GFA | Excluded from GFA |
+
+| Description | Included In GFA | Excluded from GFA |
+| Accessory structures greater than 120 sq. ft. | * | |
+| Second floor equivalent; areas with heights >17' | * (counted twice) | |
+| Third floor equivalent: areas with heights > 26' | * (counted three times) | |
+| Third floor equivalent, where roof pitch is > 4:12 | | * up to 200 sq.ft. of unusable space |
+| Garages and carports | * | |
+| Porte cocheres | | * |
+| Entry feature < 12' in height, if not substantially enclosed and not recessed | * (counted once) | |
+| Vaulted entry > 12' in height | * (footprint counted twice) | |
+| Fireplace footprint | * (counted once) | |
+| First floor roofed or unenclosed porches | | * |
+| First floor recessed porches <10' in depth and open on exterior side | | * |
+| Second floor roofed or enclosed porches, arcades, balconies, porticos, breeze-ways | * | |
+| Basements (complying with patio & lightwell requirements described in Section 18.12.090) | | * |
+| Areas on floors above the first floor where the height from the floor level to the underside of the rafter or finished roof surface is 5' or greater | * | |
+| Bay windows (if at least 18" above interior floor, does not project more than 2', and more than 50% is covered by windows) | | * |
+| Basement area for Category 1 - 4 Historic Homes or contributing structure within a historic district, and individually listed homes on the National Register of Historic Places or California Register of Historic Resources (even if the finished level of the first floor is greater than 3' above grade) | | * |
+| Usable attic space for Category 1- 4 Historic Homes or contributing structure within a historic district, and individually listed homes on the National Register of Historic Places or California Register of Historical Resources | | * (up to 500 sq.ft.) |
+
+(c) Substandard and Flag Lots
+
+The following site development regulations shall apply to all new construction on substandard and flag lots in lieu of comparable provisions in subsection (a).
+
+(1) Substandard Lots
+
+(A) For the purposes of this subsection (c), a substandard lot shall be a lot with a width of less than 50 feet or a depth of less than 83 feet and an area less than 83% of the minimum area required by the zoning of the parcel.
+
+(B) Development standards:
+
+(i) The maximum height shall be 17 feet, as measured to the peak of the roof.
+
+(ii) There shall be a limit of one habitable floor. Habitable floors include loft, mezzanines, and similar areas with interior heights of five feet (5') or more from the roof to the floor, but exclude basements and exclude attics that have no stairway or built-in access. The chief building official shall make the final determination as to whether a floor is habitable.
+
+(iii) For lots less than 50 feet in width, the required street side setback shall be 10 feet.
+
+(iv) Substandard lots shall not be subject to the R-1 contextual garage placement requirement.
+
+(C) Nothing in this subsection (c) shall affect or otherwise redefine the provisions of Section 18.40.080(a) as to whether a substandard lot may be used as a lot under this title.
+
+(2) Flag Lots
+
+(A) A flag lot shall be defined as set forth in Section 18.04.030(a)(84)(B).
+
+(B) Flag Lot Development Standards:
+
+(i) The maximum height shall be 17 feet, as measured to the peak of the roof.
+
+(ii) There shall be a limit of one habitable floor. Habitable floors include lofts, mezzanines, and similar areas with interior heights of five feet (5') or more from the roof to the floor, but exclude basements and exclude attics that have no stairway or built-in access. The chief building official shall make the final determination as to whether a floor is habitable.
+
+(iii) Front Setback: 10 feet. Flag lots are not subject to contextual front setback requirements.
+
+(d) Maximum Lot Sizes in R-1 District and R-1 Subdistricts
+
+This provision limits the potential for lot combinations with a net loss of housing stock and resultant homes that would be out of scale with homes in the surrounding neighborhood. In the R-1 district and all R-1 subdistricts, no new lot shall be created equal to or exceeding two times the minimum lot size prescribed for the district, except that where 6,000 minimum square foot lots are required in an R-1 district, no new lot shall exceed a maximum lot size of 9,999 square feet, as prescribed in Table 2. Lots larger than the prescribed maximum size are permitted only under the following circumstances: (i) where a village residential land use is approved concurrent with the new lot, resulting in no net loss of housing units on the site(s); (ii) where underlying lots must be merged to eliminate nonconformities and no net loss of housing units would result; (iii) where an adjacent substandard lot of less than 25 feet in width is combined with another lot, resulting in no net loss of housing units on the site(s); or (iv) where the number of resultant lots increases or stays the same and results in no net loss of housing units.
+
+(e) Contextual Front Setbacks
+
+The minimum front yard (“setback”) shall be the greater of twenty feet (20') or the average setback, if the average front setback is 30 feet or more. “Average setback” means the average distance between the front property line and the first main structural element, including covered porches, on sites on the same side of the block, including existing structures on the subject parcel. This calculation shall exclude flag lots and existing multifamily developments of three units or more. For calculation purposes, if five (5) or more properties on the block are counted, the single greatest and the single least setbacks shall be excluded. The street sideyard setback of corner lots that have the front side of their parcel (the narrowest street-facing lot line) facing another street shall be excluded from the calculations. For blocks longer than 600 feet, the average setback shall be based on no more than ten sites located on the same side of the street and nearest to the subject property, plus the subject site, and for a distance no greater than 600 feet. Blocks with three (3) or fewer eligible parcels are not subject to contextual setbacks. Structures on the site in no case may be located closer than twenty feet (20') from the front property line.
+
+(f) Contextual Garage and Carport Placement
+
+If the predominant neighborhood pattern is of garages or carports located within the rear half of the site, or with no garage or carport present, attached garages/carports shall be located in the rear half of the house footprint. Otherwise, an attached garage/carport may be located in the front half of the house footprint. “Predominant neighborhood pattern” means the existing garage/carport placement pattern for more than half of the houses on the same side of the block, including the subject site. This calculation shall exclude flag lots, corner lots and existing multifamily developments of three or more units. For blocks longer than 600 feet, the calculations shall be based on the 10 homes located nearest to and on the same side of the block as the subject property, plus the subject site, but for a distance no greater than 600 feet. Detached garages/carports shall be located in the rear half of the site and, if within a rear or side setback, at least 75 feet from the front property line. Detached garages/carports on lots of less than 95 feet in depth, however, may be placed in a required interior side or rear yard if located in the rear half of the lot. Access shall be provided from a rear alley if the existing development pattern provides for alley access. For the calculation of corner lots, the “predominant pattern” shall be established for the street where the new garage/carport fronts.
+
+(g) Garage Doors
+
+For garages located within 50 feet from a street frontage, on lots less than 75 feet in width, the total combined width of garage doors that are parallel to the street shall not exceed 20 feet.
+
+(h) Minimum Permeable Surface in Front Yard
+
+A minimum of 60% of the required front yard shall have a permeable surface that permits water absorption directly into the soil. Provided, all sites may have an impervious 16' x 20' driveway and an impervious 4' x 20' walkway within the front yard setback.
+
+(i) Special Setbacks
+
+Where applicable, setback lines imposed by a special setback map pursuant to Chapter 20.08 of this code shall be followed for the purpose of determining legal setback requirements.
+
+(j) Certification of Daylight Plane Compliance
+
+Upon request by the building official, any person building or making improvements to a structure shall provide a certification that the structure, as built, complies with the daylight plane provisions in subsection (a). Such certification shall be prepared by a licensed engineer, architect, or surveyor, and shall be provided prior to frame inspection.
+
+(k) Lighting
+
+For lighting requirements, refer to Section 18.40.250.
+
+(l) Location of Noise-Producing Equipment and Electrification Equipment
+
+(1) Electrification Equipment and any associated housing, screening, insulation, or bollards necessary to enable compliance with the applicable regulations, including Chapter 9.10 of this Code, shall provide a minimum three foot interior side and rear yard setback and a minimum ten foot street sideyard setback. Except as otherwise provided in this Title for EVSE and energy storage systems, Electrification Equipment shall not be located in the required front yard setback and shall at all times provide sufficient clearance for fire safety purposes. All other noise-producing equipment, such as gas powered generators, commercial kitchen fans, and similar service equipment, shall be located outside of the front, rear and side yard setbacks. Such equipment may, however, be located up to six feet into a street sideyard setback. All noise-producing equipment, including Electrification Equipment, shall be insulated and housed, except where doing so would interfere with the recommended operation of the equipment. The planning director may also permit installation without housing and insulation, provided that a combination of technical noise specifications, location of equipment, and/or other screening or buffering will assure compliance with the city’s Noise Ordinance at the nearest property line. All service equipment must meet the city’s Noise Ordinance in Chapter 9.10 of the Municipal Code.
+
+(2) Where existing improvements comply with front setback requirements, EVSE may encroach up to four feet into the required front setback. Where existing improvements do not comply with front setback requirements, EVSE may encroach into the otherwise required front setback by two feet beyond the existing improvement. EVSE and energy storage systems and associated equipment and safety bollards may be located within required on-siteparking spaces, as further described in PAMC Chapter 18.54 Section 18.54.020.
+
+(3) The Planning Director may publish administrative regulations to further implement this subsection (l), including a list of equipment or technologies that may presumptively be installed without housing and insulation due to noise generation below applicable maximums.
+
+(m) In addition to the standards contained in and referenced in this Chapter, single-family residential development, including the development of a primary residence and one or more accessory dwelling units and development pursuant to California Government Code Sections 65852.21 and 66411.7 shall comply with the objective standards for two-story development adopted by the City Council. However, an applicant seeking to deviate from the objective standards may submit an application for single family individual review pursuant to Section 18.12.110.
+
+(Ord. 5692 § 5, 2026: Ord. 5691 § 2, 2026: Ord. 5656 § 7, 2025: Ord. 5645 § 10, 2025: Ord. 5641 § 10, 2024: Ord. 5601 § 3 (part), 2023: Ord. 5587 § 10, 2023: Ord. 5542 § 9, 2022: Ord. 5538 § 9, 2021: Ord. 5432 § 6 (part), 2018: Ord. 5412 § 13, 2017: Ord. 5373 § 9 (part), 2016: Ord. 4964 §§ 11 - 13, 2007: Ord. 4891 § 4, 2006: Ord. 4869 § 14 (Exh. A [part]), 2005: Ord. 5608 § 4, 2024)
+
+18.12.050 Permitted Encroachments, Projections and Exceptions
+
+The following projections and encroachments into required yards, daylight plane and height are permitted, provided a projection shall not be permitted to encroach into a special setback, as established by the setback map pursuant to Chapter 20.08 of the Palo Alto Municipal Code, except as noted in subsection (a)(1)(D) below.
+
+(a) Setback/Yard Encroachments and Projections
+
+(1) Horizontal Additions
+
+Where a single-family dwelling legally constructed according to existing yard and setback regulations at the time of construction encroaches upon present required yards, one encroaching side (first floor wall) of the existing structure, at a height not to exceed 12 feet, may be extended in accord with this section. Only one such extension shall be permitted for the life of such building. This subsection shall not be construed to allow the further extension of an encroachment by any building that is the result of the granting of a variance, either before or after such property became part of the city.
+
+(A) Front Yard. In cases where the existing setback is less than 20 feet, but at least 14 feet, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended; provided, that the total length of the existing encroaching wall and the additional wall shall together not exceed one-half the maximum existing width of such building.
+
+(B) Interior Side Yard. In cases where the existing setback is less than 8 feet, but at least 5 feet, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended but not to exceed 20 additional feet.
+
+(C) Street Side Yard. In cases where the existing setback is less than 16 feet, but at least 10 feet, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended, but not to exceed 20 feet.
+
+(D) Special Setbacks. In cases where a special setback is prescribed pursuant to Chapter 20.08 of the Municipal Code, and the existing setback is less than the special setback distance, and at least 14 feet for the front setback or at least 10 feet for the street side yard setback, the exiting encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended, provided that the total length of the existing encroaching wall and the additional wall shall together not exceed one-half the maximum existing width of such building.
+
+(2) Rear Yard Encroachments for Portions of Homes
+
+A portion of a main building that is less than half the maximum width of the building may extend into the required rear yard no more than six feet and with a height of no more than one story, except that for a corner lot having a common rear property line with an adjoining corner lot, the building may extend into the required rear yard not more than ten feet with a height of no more than one story.
+
+(3) Allowed Projections
+
+(A) Cornices, Eaves, Fireplaces, and Similar Architectural Features
+
+For cornices, eaves, fireplaces, and similar architectural features, excluding flat or continuous walls or enclosures of usable interior space, the following projections are permitted:
+
+(i) A maximum of two feet into a required side yard. Fireplaces in a required side yard may not exceed five feet in width. Fireplaces not exceeding five feet in width may project into a required side yard no more than two feet.
+
+(ii) A maximum of four feet into a required front yard.
+
+(iii) A maximum of four feet into a required rear yard.
+
+(B) Window Surfaces
+
+(i) Window surfaces, such as bay windows or greenhouse windows, may extend into a required rear yard a distance not to exceed two feet, into a required street side setback a distance not to exceed three feet, or into a required front yard a distance not to exceed three feet.
+
+(ii) Window surfaces may not extend into required interior side yards, with the exception that one greenhouse window with a maximum width of six feet, framed into a wall, may project into the interior side yard no more than two feet. The window surface may not extend into any yard above a first story.
+
+(C) Storage Structures
+
+Storage structures not over six feet in height or twenty-five square feet in floor area may be located in interior side yards and rear yards according to the provisions of Section 18.12.080(b) for accessory structures. Where the provisions of Section 18.12.080(b) for front and/or street side yard setbacks are not met, the following projections are permitted for such structures:
+
+(i) A maximum of two feet into a required side yard.
+
+(ii) A maximum of four feet into a required front yard.
+
+(iii) A maximum of four feet into a required rear yard.
+
+(D) Patios, Decks, Stairways, Landings, Balconies, or Fire Escapes
+
+For uncovered porches (less than 30 inches above grade), patios, decks, stairways, landings, balconies, or fire escapes the following projections are permitted, provided these projections are not permitted above the first story:
+
+(i) A maximum of three feet into a required side yard.
+
+(ii) A maximum of six feet into a required front yard.
+
+(iii) A maximum of six feet into a required rear yard.
+
+(E) Canopy or Patio Cover
+
+A canopy or patio cover may be located in the required rear yard or that portion of the interior side yard, which is more than 75 feet from the street lot line measured along the common lot line. Such canopies shall be subject to the following conditions:
+
+(i) A canopy or patio cover shall not be more than 12 feet in height.
+
+(ii) The canopy or patio cover shall be included in the computation of building coverage.
+
+(iii) The canopy or patio cover and other structures shall not occupy more than fifty percent of the required rear yard.
+
+(iv) The canopy or patio cover shall not be enclosed on more than two sides.
+
+(F) Pools, Spas, and Hot Tubs and Associated Electrification Equipment
+
+(i) Pools, spas, and hot tubs may extend into a required rear yard a distance not to exceed fourteen feet, provided that a minimum setback of six feet from the property line shall be maintained.
+
+(ii) No swimming pool, hot tub, spa, or similar accessory facility shall be located in any portion of a required front or street side yard.
+
+(iii) Electrification Equipment for pools, spas, hot tubs, and swimming pools subject to meeting the standards set forth in Table 1 of Section 9.10.030.
+
+(b) Height and Daylight Plane Exceptions
+
+(1) Height Exceptions
+
+Flues, chimneys, and antennas may exceed the established height limit by not more than 15 feet.
+
+(2) Daylight Plane Exceptions
+
+The following features may extend beyond the daylight plane established by the applicable district, provided that such features do not exceed the height limit for the district unless permitted to do so by subsection (b)(1) above:
+
+(A) Television and radio antennas;
+
+(B) Chimneys and flues that do not exceed 5 feet in width, provided that chimneys do not extend past the required daylight plane a distance exceeding the minimum allowed pursuant to Chapter 16.04 of this code.
+
+(C) Dormers, roof decks, gables, or similar architectural features, provided that:
+
+(i) the sum of the horizontal lengths of all such features shall not exceed 15 feet on each side; and
+
+(ii) the height of such features does not exceed 24 feet;
+
+(iii) no single feature exceeds 7.5 feet in length; and
+
+(iv) there is a minimum 5 foot separation between each feature.
+
+(D) Cornices, eaves, and similar architectural features, excluding flat or continuous walls or enclosures of usable interior space, provided such features do not extend past the daylight plane more than 2 feet.
+
+(Ord. 5601 § 3 (part), 2023: Ord. 5373 § 9 (part), 2016; Ord. 4964 § 14, 2007: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.060 Parking
+
+Off-street parking and loading facilities shall be required for all permitted and conditional uses in accord with Chapters 18.52 and 18.54 of this title. The following parking requirements apply in the R- 1 districts. These requirements are included for reference purposes only, and in the event of a conflict between this Section 18.12.060 and any requirement of Chapters 18.52 and 18.54, Chapters 18.52 and 18.54 shall apply, except in the case of parcels created pursuant to Section 18.10.140(c) (subdivision incentive for historic preservation).
+
+(a) Parking Requirements for Specific Uses
+
+Table 4 shows the minimum off-street automobile parking requirements for specific uses within the R-1 district.
+
+Table 4 shows the minimum off-street automobile parking requirements for specific uses.*
+
+* Editor’s Note: As set forth in Ord. 5051 § 5, 2009. Future legislation will correct the text if needed.
+
+| Table 4 | |
+| Parking Requirements for Specific R-1 Uses | |
+| Use | Minimum Off-Street Parking Requirement |
+
+| Table 4 | |
+| Parking Requirements for Specific R-1 Uses | |
+| Use | Minimum Off-Street Parking Requirement |
+| Single-family residential use (excluding accessory dwelling units) | 2 spaces per unit, of which one must be covered. |
+| Two family use pursuant to California Government Code Section 65852.21 (SB 9, 2021) | 1 space per unit. No spaces required if located within one-half mile walking distance of either a high-quality transit corridor or a major transit stop, or located within one block of a car share vehicle. |
+| Accessory dwelling unit, attached or detached | No parking required |
+| Junior accessory dwelling unit | No parking required |
+| Other Uses | See Chs. 18.52 and 18.54 |
+
+(b) Parking and Driveway Surfaces
+
+Parking and driveway surfaces may have either permeable or impermeable paving. Materials shall be those acceptable to public works department standards. Gravel and similar loose materials shall not be used for driveway or parking surfaces within 10 feet of the public right of way.
+
+(c) Parking in Yards
+
+(1) No required parking space shall be located in a required front yard.
+
+(2) No required parking space shall be located in the first ten feet adjoining the property line of a required street side yard.
+
+(d) Tandem Parking
+
+Tandem parking shall be permitted for single-family uses and for single-family uses with a permitted second dwelling unit.
+
+(e) Underground Parking
+
+Underground parking is prohibited for single-family uses, except pursuant to a variance granted in accordance with the provisions of Chapter 18.76, in which case the area of the underground garage shall be counted in determining the floor area ratio for the site.
+
+(f) Design of Parking Areas
+
+Parking facilities shall comply with all applicable regulations of Chapter 18.54 (Parking Facility Design Standards).
+
+(Ord. 5587 § 11, 2023: Ord. 5542 § 10, 2022: Ord. 5538 § 10, 2021: Ord. 5412 § 14, 2017: Ord. 5373 § 9 (part), 2016; Ord. 5051 § 5, 2009: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.070 Accessory and Junior Accessory Dwelling Units
+
+Accessory Dwelling Units and Junior Accessory Dwelling Units are subject to the regulations set forth in Chapter 18.09.
+
+(Ord. 5587 § 12, 2023: Ord. 5542 § 11, 2022: Ord. 5538 § 11, 2021: Ord. 5412 § 15, 2017)
+
+18.12.080 Accessory Uses and Facilities
+
+Accessory uses and facilities, as allowed in Section 18.12.030, shall be permitted when incidental to and associated with a permitted use or facility in the R-1 district or R-1 subdistricts, or when incidental to and associated with an allowable and authorized conditional use therein, subject to the provisions of subsection (a), below (Types of Accessory Uses).
+
+(a) Types of Accessory Uses
+
+Accessory uses and facilities include, but are not limited to, the following list of examples; provided that each accessory use or facility shall comply with the provisions of this title:
+
+(1) Residential garages, carports, and parking facilities, together with access and circulation elements necessary thereto;
+
+(2) Facilities for storage incidental to a permitted use; and
+
+(3) Recreational uses and facilities for the use and convenience of occupants or employees, or guests thereof, of a principal use or facility.
+
+(b) Location and Development Standards
+
+Except as otherwise provided in this section, accessory buildings shall at all times be located in conformance with requirements for principal buildings, and shall not be located in any required front, side, or rear yard. See Section 18.12.050(a)(3)(C) for allowed encroachments for small storage structures. Accessory buildings may be located in a required interior yard subject to the following limitations:
+
+(1) An accessory building shall not be used for living and/or sleeping purposes unless the building was legally constructed for or was legally converted to living and/or sleeping purposes prior to October 13, 1983.
+
+(2) An accessory building shall not be located in a required front yard, required street yard, or required rear yard of a through lot.
+
+(3) An accessory building shall not be located in a required interior side or rear yard unless the building is placed at least seventy-five feet from the front lot line and for corner lots at least twenty feet from the street side lot line. Additionally, on lots of less than 95 feet in depth, detached garages and carports may be located in a required interior side or rear yard if placed in the rear half of the lot.
+
+(4) Accessory buildings located within a required interior yard as permitted by this section shall be subject to a maximum height established by a daylight plane beginning at a height of eight feet at the property line and increasing at a slope of one foot for every three feet of distance from the property line, to a maximum height of twelve feet.
+
+(5) No accessory building greater than 200 square feet in size shall have more than two plumbing fixtures. Accessory buildings shall not be allowed to be turned into habitable space nor shall these structures be allowed to have showers (indoor or outdoor), gas lines, washer/dryers, and/or cooking facilities to be provided inside or attached to the structure, unless the structure is proposed as an ADU/JADU that satisfies all requirements of the Palo Alto Municipal Code.
+
+(6) Accessory buildings located within a required interior yard, as permitted by this section, shall not individually or cumulatively occupy an area exceeding fifty percent of the required rear yard.
+
+(7) The minimum distance between separate buildings located on the same site shall be as required by Title 16; provided, accessory buildings in the single-family residential (R-1) district shall be separated from the principal building by at least three feet.
+
+(8) A principal building and an accessory building, meeting the requirements of Title 16 and each located on a site as otherwise permitted for the principal building and accessory buildings, may be connected by a structure meeting the definition of a breezeway. Such structure, or breezeway, shall be a part of the accessory building.
+
+(Ord. 5585 § 5, 2023: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.090 Basements
+
+Basements shall be permitted in areas that are not designated as special flood hazard areas as defined in Chapter 16.52, and are subject to the following regulations:
+
+(a) Permitted Basement Area
+
+Basements may not extend beyond the building footprint and basements are not allowed below any portion of a structure that extends into required setbacks, except to the extent that the main residence is permitted to extend into the rear yard setback by other provisions of this code. Basements which serve the primary unit may not extend under an attached ADU or JADU to the extent those secondary units utilize the bonus floor area, lot coverage, and/or maximum house size exemptions identified in Chapter 18.09.
+
+(b) Inclusion as Gross Floor Area
+
+Basements shall not be included in the calculation of gross floor area, provided that:
+
+(1) basement area is not deemed to be habitable space, such as crawlspace; or
+
+(2) basement area is deemed to be habitable space but the finished level of the first floor is no more than three feet above the grade around the perimeter of the building foundation; or
+
+(3) basement area is associated with a historic property as described in Section 18.04.030(a)(65)(D)(vii).
+
+(c) Lightwells, Stairwells, Below Grade Patios and other Excavated Features
+
+(1) Lightwells, stairwells, and similar excavated features along the perimeter of the basement shall not affect the measurement of grade for the purposes of determining gross floor area, provided that the following criteria are met:
+
+(A) such features are not located in the front of the building;
+
+(B) such features shall not exceed 3 feet in width;
+
+(C) the cumulative length of all such features does not exceed 30% of the perimeter of the basement;
+
+(D) such features do not extend more than 3 feet into a required side yard nor more than 4 feet into a required rear yard, but where a side yard is less than 6 feet in width, the features shall not encroach closer than 3 feet from the adjacent side property line;
+
+(E) the cumulative length of any features or portions of features that extend into a required side or rear yard does not exceed 15 feet in length;
+
+(F) the owner provides satisfactory evidence to the planning division prior to issuance of a building permit that any features or portions of features that extend into a required side or rear yard will not be harmful to any mature trees on the subject property or on abutting properties; and
+
+(G) such features have either a drainage system that meets the requirements of the public works department or are substantially sheltered from the rain by a roof overhang or canopy of a permanent nature.
+
+(2) Below-grade patios, sunken gardens, or similar excavated areas along the perimeter of the basement that exceed the dimensions set forth in subsection (1), are permitted and shall not affect the measurement of grade for the purposes of determining gross floor area, provided that:
+
+(A) such areas are not located in the front of the building;
+
+(B) all such areas combined do not exceed 2% of the area of the lot or 200 square feet, whichever is greater; that each such area does not exceed 200 square feet; and that each such area is separated from another by a distance of at least 10 feet. Area devoted to required stairway access shall not be included in the 200 square foot limitation.
+
+(C) such features do not extend more than 2 feet into a required side yard nor more than 4 feet into a required rear yard;
+
+(D) the cumulative length of any excavated area or portion thereof that extends into a required side or rear yard does not exceed 15 feet;
+
+(E) the owner provides satisfactory evidence to the planning director prior to issuance of a building permit that any features or portions of features that extend into a required side or rear yard will not be harmful to any mature trees on the subject property or on abutting properties;
+
+(F) such features have either a drainage system that meets the requirements of the public works department or are substantially sheltered from the rain by a roof overhang or canopy of a permanent nature;
+
+(G) any roof overhang or canopy installed pursuant to subsection (F) is within and is counted toward the site coverage requirements established in Section 18.12.040;
+
+(H) such areas are architecturally compatible with the residence; and
+
+(I) such areas are screened to off-site views by means of landscaping and/or fencing as determined appropriate by the planning director.
+
+(Ord. 5585 § 8, 2023: Ord. 5432 § 6 (part), 2018: Ord. 5412 § 16, 2017: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.100 Regulations for the Single Story Overlay (S) Combining District
+
+(a) Applicability of District
+
+The single-story height combining district may be combined with the R-1 single family residence district or with any R-1 subdistrict. Where so combined, the regulations established by this section shall apply in lieu of the comparable provisions established by Section 18.12.040. All applicable provisions of that section shall otherwise govern development in the combining district.
+
+(b) Site Development Regulations
+
+For sites within the single-story height combining district, the following site development regulations shall apply in lieu of the otherwise applicable site development regulations of Section 18.12.040:
+
+(1) The maximum height shall be 17 feet, as measured to the peak of the roof; provided, in a special flood hazard area as defined in Chapter 16.52, the maximum height is increased by one-half of the increase in elevation required to reach base flood elevation, up to a maximum building height of 20 feet.
+
+(2) There shall be a limit of one habitable floor. Habitable floors include lofts, mezzanines and similar areas but exclude basements and exclude attics that have no stairway or built-in access. Lofts and mezzanines include any space above the first floor in excess of five feet (5') from the floor to the roof above.
+
+(c) Application for a Single Story (S) Combining District
+
+(1) Application to create or remove a single-story overlay district may be made by an owner of record of property located in the single-story overlay district to be created or removed.
+
+(2) Application shall be made to the director on a form prescribed by the director, and shall contain all of the following:
+
+(A) A written statement setting forth the reasons for the application and all facts relied upon by the applicant in support thereof.
+
+(B) A map of the district to be created or removed that includes the address location of those owners whose properties are subject to the zoning request. Boundaries shall correspond with certain natural or man-made features (including, but not limited to, roadways, waterways, tract boundaries and similar features) to define an identifiable neighborhood or development. For creation of a single-story overlay district, the area shall be of a prevailing single story character, such that a minimum of 80% of existing homes within the boundaries are single story.
+
+(C) For creating a single-story overlay district, a list of signatures evidencing support by: (i) 70% of included properties; or (ii) 60% of included properties where all included properties are subject to recorded deed restrictions intended to limit building height to a single story, whether or not such restrictions have been enforced. For the removal of a single-story overlay district, a list of signatures evidencing support by 70% of included properties, whether or not deed restrictions intended to limit the building height to single story apply. "Included properties" means all those properties inside the boundaries of the district proposed to be created or removed. The written statement or statements accompanying the signatures must state that the signer is indicating support for a zone map amendment that affects his or her property. One signature is permitted for each included property, and a signature evidencing support of an included property must be by an owner of record of that property.
+
+(D) Such additional information as the director may deem pertinent and essential to the application.
+
+(3) An application for creation or removal of a single-story (S) overlay district made in accordance with this subsection (c) shall be processed in accordance with Chapter 18.98.
+
+(Ord. 5373 § 9 (part), 2016; Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.110 Single Family Individual Review
+
+(a) Purpose
+
+The goals and purposes of this chapter are to:
+
+(1) Preserve the unique character of Palo Alto neighborhoods;
+
+(2) Promote new construction that is compatible with existing residential neighborhoods;
+
+(3) Encourage respect for the surrounding context in which residential construction and alteration takes place;
+
+(4) Foster consideration of neighbors' concerns with respect to privacy, scale and massing, and streetscape; and
+
+(5) Enable the emergence of new neighborhood design patterns that reflect awareness of each property's effect upon neighboring properties.
+
+This program is intended only to mitigate the effects of second story construction on neighboring homes, and should not be construed to prohibit second story construction when this title would otherwise permit it.
+
+(b) Applicability
+
+The provisions of this Section 18.12.110 apply to the construction that does not comply with the objective standards for two-story development adopted by the City Council. Such projects include construction of a new singly developed two-story structure; the construction of a new second story; or the expansion of an existing second story by more than 150 square feet in the R-1 single family residential district. All second-story additions on a site after November 19, 2001 shall be included in calculating whether an addition is over 150 square feet.
+
+(c) Individual Review Guidelines
+
+The director of planning and development services shall issue guidelines to direct staff and project applicants in implementing the goals and purposes and other provisions of this chapter. Guidelines establishing substantive review standards for second story development shall be presented to the planning and transportation commission for their comment prior to adoption or amendment by the director.
+
+(d) Findings
+
+Neither the director, nor the city council on appeal, shall grant an individual review approval, unless it is found that the application is consistent with the individual review guidelines.
+
+(e) Conditions
+
+In granting individual review approvals, reasonable conditions or restrictions may be imposed if appropriate or necessary to protect the public health, safety, general welfare, or convenience, and to secure the purposes of this title (Zoning).
+
+(f) Application Review and Action
+
+Applications for individual review approval shall be reviewed and acted upon as set forth in Section 18.77.075.
+
+(g) Preliminary Meeting with Planning Staff
+
+Project applicants are strongly encouraged, before applying for individual review of a project, to meet with planning staff to discuss designing a project that promotes the goals of this chapter and the individual review guidelines, and to discuss the proposed plans with their neighbors.
+
+(h) Changes to Approved Projects
+
+The director may approve changes to a previously approved individual review project without following the procedure set forth in Section 18.77.075 if those changes do not affect compliance with the individual review guidelines. Examples of such changes include:
+
+(1) Reductions in window or door size, or reductions in the number of windows.
+
+(2) Changes to aspects of the project not reviewed under individual review, such as materials or non-street-facing first story windows.
+
+(3) Changes that do not affect privacy/streetscape.
+
+(4) Increases in setbacks.
+
+(5) Reductions in second floor mass that do not affect privacy or streetscape.
+
+(Ord. 5691 § 2, 2026: Ord. 5645 § 11, 2025: Ord. 5641 § 11, 2024: Ord. 5494 § 3, 2020: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.120 Home Improvement Exceptions
+
+(a) Purpose
+
+A home improvement exception ("HIE") enables a home improvement or minor addition to an existing single-family or two-family home, or accessory structure, or both, to be consistent with the existing architectural style of the house or neighborhood, to accommodate a significant or protected tree, or to protect the integrity of a historic structure in conformance with the Secretary of the Interior's Standards for Historic Rehabilitation. By enabling adaptive reuse of existing buildings, the home improvement exception promotes retention of existing houses within the city.
+
+(b) Applicability
+
+A home improvement exception may be granted as part of a proposed improvement or addition to an existing single-family or two-family structure, or accessory structure, or both, in the RE, R-1, RMD, or R-2 district, as limited in subsection (c). A home improvement exception may be granted as described in subsections (1) through (16) of subsection (c), but may not exceed the limits set forth in those subsections. In order to qualify for a home improvement exception, the project must retain at least 75% of the existing exterior walls, including exterior finishes such as siding or cladding.
+
+(c) Limits of the Home Improvement Exception
+
+A home improvement exception may be granted only for one or more of the following, not to exceed the specified limits:
+
+(1) To allow up to 100 square feet of floor area more than the maximum square footage allowed on the site by the applicable zoning district regulations except when an exception is granted under subsection (c)(10) for residences designated as historic structures.
+
+(2) To allow the primary building to encroach up to 4 feet into a required front yard setback.
+
+(3) To allow the primary building to encroach up to 3 feet into a required rear yard setback.
+
+(4) To allow the primary building to encroach up to 2 feet into a required interior side yard setback.
+
+(5) To allow the primary building to encroach up to 6 feet into a required street side yard setback (no closer than 10 feet to the property line).
+
+(6) To allow a basement to encroach, along with above grade floor area, as set forth in items 2, 3, 4, or 5.
+
+(7) To allow an encroaching dormer, roof deck, gable, or similar architectural feature to exceed 24 feet in height by up to three feet.
+
+(8) To allow a single dormer, roof deck, gable, or similar architectural feature that encroaches into the rear daylight plane to exceed 7.5 feet in length. In no event shall the maximum length exceed 15 feet.
+
+(9) To permit a site with an existing two-story structure to exceed lot coverage requirements in order to locate remaining available FAR for the site on the first floor.
+
+(10) For any residence designated on the city's Historic Inventory as a Category 1 through 4 historic structure as defined in Section 16.49.020 of the Palo Alto Municipal Code or any contributing structure within a locally designated historic district, to allow up to 250 square feet of floor area in excess of that allowed on the site, provided that any requested addition or exterior modifications associated with the HIE shall be in substantial conformance with the Secretary of the Interior's Standards for Historic Rehabilitation. The property owner who is granted a home improvement exception under this subsection (10) shall be required to sign and record a covenant against the property, acceptable to the city attorney, which requires that the property be maintained in accordance with the Secretary of the Interior's Standards for Historic Rehabilitation.
+
+(11) To allow a legal non-conforming building wall that is between 3.5 and 5 feet from the side lot line to be extended up to one-quarter of the length of the existing wall or ten feet, whichever is shorter.
+
+(12) To allow a horizontal extension (pursuant to Section 18.12.050(a) (Setback/Yard Encroachments and Projections) of a portion of an existing legal nonconforming building wall that is more than twelve feet above grade. Such horizontal extensions must remain within the height and daylight plane limits for the district unless an HIE or variance for a height or daylight plane encroachment is granted.
+
+(13) To allow an increase in the height of an existing legally non-conforming building wall that encroaches into a setback. Such vertical extensions must remain within the height and daylight plane limits for the district unless an HIE or variance for a height or daylight plane encroachment is granted.
+
+(14) To allow, for single-story accessory structures within rear and/or side setbacks, one or more of the following:
+
+(A) On a corner lot, a detached accessory structure may be as close as ten feet from the street side property line. For detached garages and carports, the exception may be granted as long as a minimum dimension of 18 feet remains between the back of sidewalk and face of the garage or carport supports.
+
+(B) Four feet additional height above the twelve foot maximum height, as long as the side daylight plane is met.
+
+(C) A rear daylight plane encroachment of up to three feet.
+
+(15) To allow similar minor exceptions, when determined by the director to be similar in magnitude and scope to those listed in subsections (1) through (14) above. Provided, under no circumstances may such exceptions exceed the limits established in subsections (1) through (14) above.
+
+(16) To allow Electrification Equipment to exceed the noise ordinance standards set forth in Section 9.10.030(c).
+
+(d) Findings
+
+Neither the director, nor the city council on appeal, shall grant a home improvement exception unless it is found that:
+
+(1) The granting of the application is desirable for the preservation of an existing architectural style, neighborhood character, protected tree as defined in Chapter 8.10, or other significant tree, or of a residence that is designated on the city's Historic Inventory as a Category 1 or Category 2 historic structure as defined in Section 16.49.020 of the Palo Alto Municipal Code, or any contributing structure within a locally designated historic district, which would not otherwise be accomplished through the strict application of the regulations; and
+
+(2) The granting of the application will not be detrimental or injurious to property or improvements in the vicinity and will not be detrimental to the public health, safety, general welfare, or convenience; and
+
+(3) The exception is being granted based on characteristics of the property and improvements on the property, rather than the personal circumstances of the applicant, and is the minimum exception necessary for the project to fulfill the purposes of subsection (a).
+
+(e) Conditions
+
+In granting home improvement exceptions, reasonable conditions or restrictions may be imposed if appropriate or necessary to protect the public health, safety, general welfare, or convenience, and to secure the purposes of this title (Zoning).
+
+(f) Application Review and Action
+
+Applications for home improvement exceptions shall be reviewed and acted upon as set forth in Section 18.77.075.
+
+(Ord. 5601 § 3 (part), 2023: Ord. 5432 § 6 (part), 2018: Ord. 5373 § 9 (part), 2016; Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.130 Architectural Review
+
+Architectural review, as required in Chapters 18.76 and 18.77 of the Zoning Ordinance, is required in the R-1 district and R-1 subdistricts whenever three or more adjacent single family residences or duplexes are intended to be developed concurrently, whether through subdivision or individual applications. In addition to the existing ARB findings contained in Chapters 18.76 and 18.77, the single family individual review guidelines shall be used by the ARB in its review of such applications.
+
+(Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.140 Historical Review and Incentives
+
+(a) Historic residence review, as required in Chapter 16.49 of Title 16 of the Palo Alto Municipal Code, is required in the R-1 district and R-1 subdistricts for alterations or modifications to any residence designated on the city’s Historic Inventory as Category 1 or Category 2 historic structure as defined in Section 16.49.020 of this code or any contributing structure located within a locally designated historic district. The Category 1 or Category 2 designation process for becoming a historic structure is contained in Chapter 16.49 of Title 16 of the Municipal Code.
+
+(b) Exemptions to gross floor area requirements are available for historic residences pursuant to the definition of gross floor area in Section 18.04.030(65)(C)(ii). Home improvement exceptions provide for additional square footage and certain other exceptions for historic homes pursuant to Section 18.12.120.
+
+(c) Notwithstanding other provisions of this chapter, existing parcels containing two residences may be subdivided into more than one ownership, where all of the following circumstances exist:
+
+(1) At least one residence is designated on the City’s Historic Inventory as a Category 1, Category 2, Category 3, or Category 4 historic structure as defined in Section 16.49.020 of this code or are contributing structures located within a locally designated historic district or are eligible for the National or California Registers; and
+
+(2) No increase in the total number of residences on the site is proposed; and
+
+(3) Separate lots are proposed to be created, each with a minimum lot size not less than 4,000 square feet in the R-1 district if only one residence is historic or 80% of the minimum lot size for the R-1 subdistricts; if both residences are historic and subject to a covenant, the allowable minimum lot size is 2,000 square feet; and
+
+(4) The resultant parcel lines may create less than minimum lot size (no less than the area stated in item (3) of this section), site width and depth, setback and daylight plane encroachments, floor area and site coverage exceeding the maximum allowable for existing development with respect to each new parcel, without the need for approval of a Variance or Home Improvement Exception, but would not generally increase any existing noncomplying building features; however, minor additions for functional improvements may be allowed at the discretion of the Director of Planning and Development Services; and
+
+(5) The Historic Resources Board has determined that at least one existing residence on the property has historic integrity and qualifies for listing on the City’s Historic Inventory.
+
+(6) A covenant is recorded to run with the land in perpetuity, assuring that the historic residences will be preserved and maintained consistent with the Secretary of the Interior’s Standards for Historic Rehabilitation through compliance with Historic Resources Board review and recommendations. The covenant will stipulate that HRB review is required for all major projects on the site including significant changes to any non-historic residence. Any modifications to a non-historic residence must be compatible with the historic residence and satisfy the Secretary of Interior’s Standards for Historic Compatibility.
+
+(7) The two residences on the property were in existence as of January 28, 2009.
+
+(8) Application of the state Historic Building Code is available for use on any eligible building.
+
+(9) Residences subject to a covenant must meet all government health, life and safety codes.
+
+(Ord. 5494 § 3, 2020: Ord. 5051 § 4, 2009: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.12.150 Grandfathered Uses
+
+(a) Applicability
+
+The uses specified in subsection (b) of this section may remain as grandfathered uses provided that those uses:
+
+(1) are located in the specified district;
+
+(2) existed on the specified date;
+
+(3) on that date, were lawful permitted uses or conditional uses operating subject to a conditional use permit; and
+
+(4) on that date were conforming uses.
+
+(b) Grandfathered Uses
+
+(1) Professional and medical office uses (except product testing and analysis, and prototype development), existing on July 20, 1978 or such uses which were, prior to July 20, 1978, located in an R-1 district which was imposed by reason of annexation of the property to the city without benefit of prezoning and which, prior to the date of annexation, were lawful conforming permitted uses or conditional uses operating subject to a conditional use permit.
+
+(2) Two family uses, except where one of the units is a legal nonconforming detached single-family dwelling on a substandard lot size, and multiple family uses existing on July 20, 1978 or such uses which were, prior to July 20, 1978, located in an R-1 district which was imposed by reason of annexation of the property to the city without benefit of prezoning and which, prior to the date of annexation, were lawful, conforming permitted uses or conditional uses operating subject to a conditional use permit.
+
+(c) Permitted Changes
+
+The following regulations shall apply to the grandfathered uses specified in subsection (b):
+
+(1) Such uses shall be permitted to remodel, improve, or replace site improvements on the same site, for continual use and occupancy by the same use, provided that:
+
+(A) such remodeling, improvement or replacement shall not:
+
+(i) result in increased floor area;
+
+(ii) result in an increase in the number of offices, in the case of professional or medical office uses, or dwellings, in the case of residential uses;
+
+(iii) result in shifting of building footprint;
+
+(iv) increase the height, length, building envelope, or size of the improvement; and
+
+(v) increase the existing degree of noncompliance, except through the granting of a design enhancement exception pursuant to Chapter 18.76.
+
+(2) If a grandfathered use ceases and thereafter remains discontinued for twelve consecutive months, it shall be considered abandoned and may be replaced only by a conforming use.
+
+(3) A grandfathered use that is changed to or replaced by a conforming use shall not be reestablished, and any portion of a site or any portion of a building, the use of which changes from a grandfathered use to a conforming use, shall not thereafter be used except to accommodate a conforming use.
+
+(4) The following additional regulations shall apply to grandfathered professional or medical office uses:
+
+(A) Any remodeling, improvement, or replacement of any building designed and constructed for residential use shall be subject to the issuance of a conditional use permit in accord with Chapter 18.76.
+
+(B) In the event of redevelopment of all or a portion of the site for permitted residential uses, professional and medical office uses may not be incorporated in the redevelopment; except that
+
+(C) This provision shall not apply to permanent conversion to residential use of space within an existing structure now used for professional and medical office uses.
+
+(d) (Reserved)
+
+(e) Existing Homes on Substandard Lots.
+
+In the R-1 district and all R-1 subdistricts, single-family and two-family homes on substandard lots, as defined in Subsection 18.12.040(c)(1), and flag lots existing on August 1, 1991 and which prior to that date were lawful, complying structures, may remain and be remodeled, improved, or replaced without complying with the height and habitable floor limitations for substandard lots specified in Section 18.12.030, provided that:
+
+(1) any such remodeling, improvement, or replacement does not result in a height above seventeen feet or any additional habitable floor area above a first habitable floor, except that any structure damaged or destroyed by a natural disaster (such as fire, flood or earthquake) may be replaced to its previous size without regard to the height and habitable floor limitations imposed by this section; and
+
+(2) in the case of a conflict between the provisions of this section and the provisions of Chapter 18.70, this section shall control.
+
+(Ord. 5412 § 17, 2017: Ord. 4869 § 14 (Exh. A [part]), 2005)
+
+18.10.010 Purposes
+
+Three low-density residential districts are defined in this chapter. Requirements for the single-family residential (R-1) district and related subdistricts and combining districts are included in Chapter 18.12. The specific purpose of each low-density residential district is stated below:
+
+(a) Residential Estate District [RE]
+
+The RE residential estate district is intended to create and maintain single-family living areas characterized by compatibility with the natural terrain and native vegetation. The RE district provides locations for residential, limited agricultural, and open space activities most suitably located in areas of very low density or rural qualities. Accessory dwelling unit(s) and accessory structures or buildings are appropriate where consistent with the site and neighborhood character. Community uses and facilities should be limited unless no net loss of housing units would result.
+
+(b) Two Family Residential District [R-2]
+
+The R-2 two-family residence district is intended to allow a second dwelling unit under the same ownership as the initial dwelling unit on appropriate sites in areas designated for single-family use by the Palo Alto Comprehensive Plan, under regulations that preserve the essential character of single-family use. Community uses and facilities should be limited unless no net loss of housing would result.
+
+(c) Two Unit Multiple-Family Residential District [RMD]
+
+The RMD two-unit multiple-family residence district is intended to allow a second dwelling unit under the same ownership as the initial dwelling unit on appropriate sites in areas designated for multiple-family use by the Palo Alto Comprehensive Plan. The RMD district is intended to minimize incentives to replace existing single-family dwellings, maintain existing neighborhood character and increase the variety of housing opportunities available within the community. The maximum density in this zone shall not exceed seventeen dwelling units per acre.
+
+(Ord. 5412 § 3, 2017: Ord. 4875 § 2 (part), 2005)
+
+18.10.020 Applicable Regulations
+
+The specific regulations of this chapter and the additional regulations and procedures established by Chapters 18.52 to 18.80 inclusive shall apply to all low-density residential districts. Such regulations shall apply to construction of two units on an RE-zoned lot pursuant to California Government Code Section 65852.21 (SB 9, 2021), except as modified by Section 18.42.180.
+
+(Ord. 5542 § 2, 2022: Ord. 5538 § 2, 2021: Ord. 4875 § 2 (part), 2005)
+
+18.10.030 Land Uses
+
+Table 1 shows the permitted and conditionally permitted uses for the low-density residential districts.
+
+TABLE 1
+PERMITTED AND CONDITIONALLY PERMITTED LOW-DENSITY RESIDENTIAL USES
+
+[P = Permitted Use -- CUP = Conditional Use Permit Required]
+
+| | R-E | R-2 | RMD | Subject to Regulations in: |
+
+| | R-E | R-2 | RMD | Subject to Regulations in: |
+| ACCESSORY AND SUPPORT USES | | | | |
+| Accessory facilities and uses customarily incidental to permitted uses (no limit on number of plumbing fixtures) | P | P | P | 18.10.080 |
+| Home Occupations, when accessory to permitted residential uses. | P | P | P | 18.42.060 |
+| Horticulture, gardening, and growing of food products for consumption by occupants of the site. | P | P | P | |
+| Sale of agricultural products produced on the premises (1) | P | | | 18.10.110 |
+| Accessory Dwelling Units | P | P | P | 18.09 |
+| Junior Accessory Dwelling Units | P | P(2) | P(2) | 18.09 |
+| AGRICULTURE AND OPEN SPACE USES | | | | |
+| Agriculture | P | | | 18.10.110 |
+| EDUCATIONAL, RELIGIOUS, AND ASSEMBLY USES | | | | |
+| Private Educational Facilities | CUP | CUP | CUP | |
+| Religious Congregations and Institutions | CUP | CUP | CUP | |
+| PUBLIC/QUASI-PUBLIC USES | | | | |
+| Community Centers | CUP | CUP | CUP | |
+| Utility Facilities essential to provision of utility services to the neighborhood, but excluding business offices, construction or storage yards, maintenance facilities, or corporation yards. | CUP | CUP | CUP | |
+| RECREATION USES | | | | |
+| Neighborhood Recreational Centers | | | CUP | |
+| Outdoor Recreation Services | CUP | CUP | | |
+| RESIDENTIAL USES | | | | |
+| Single-Family | P | P | P | |
+| Two-Family use, under one ownership | P (4) | P | P | |
+| Mobile Homes | P | P | P | 18.42.100 |
+| Residential Care Homes | P | P | P | |
+| RETAIL USES | | | | |
+| Cemeteries | CUP | | | |
+| Commercial Plant Nurseries | CUP | | | |
+| SERVICE USES | | | | |
+| Convalescent Facilities | CUP | | | |
+| Day Care Centers | CUP | CUP | CUP | |
+| Small Adult Day Care Homes | P | P | P | |
+| Large Adult Day Care Homes | CUP | CUP | CUP | |
+| Small Family Day Care Homes | P | P | P | |
+| Large Family Day Care Homes | P | P | P | |
+| Bed & Breakfast Inns | | | P(3) | |
+| P = Permitted Use | | CUP = Conditional Use Permit Required | | |
+
+(1) Sale of Agricultural Products: No permanent commercial structures for the sale or processing of agricultural products are permitted.
+
+(2) Junior Accessory Dwelling Units in R-2 and RMD Zones: A Junior Accessory Dwelling Unit is permitted only in conjunction with a single-family residence, subject to the provisions of Chapter 18.09.
+
+(3) Bed and Breakfast Inns: Bed and breakfast inns are limited to no more than 4 units (including the owner/resident's unit) in the RMD district.
+
+(4) Two Unit Development Pursuant to California Government Code Section 65852.21 (SB 9, 2021): Construction of two units is permitted on an RE-zoned lot, subject to the regulations in Section 18.42.180.
+
+(Ord. 5587 § 4, 2023: Ord. 5574 § 3, 2023: Ord. 5542 § 3, 2022: Ord. 5538 § 3, 2021: Ord. 5412 § 4, 2017: Ord. 4875 § 2 (part), 2005)
+
+18.10.040 Development Standards
+
+(a) Site Specifications, Building Size, Height and Bulk, and Residential Density
+
+The development standards for the low-density residential districts are shown in Table 2:
+
+TABLE 2
+LOW-DENSITY RESIDENTIAL DEVELOPMENT STANDARDS
+
+| | R-E (6) | R-2 | RMD | Subject to Regulations in: |
+
+| | R-E (6) | R-2 | RMD | Subject to Regulations in: |
+| Minimum Site Specifications | | | | |
+| Site Area (ft 2 ) | | | | |
+| All lots except flag lots(1) | 1 acre | 6,000 | 5,000 | 18.10.040(c) |
+| Flag lots | As established by Section 21.20.301 (Subdivision Ord.) | | | |
+| Site Width (ft) | 100 | 60 | 50 | |
+| Site Depth (ft) | 100 | 100 | 100 | |
+| Maximum Lot Size Lot Area (square feet) | None | 11,999 | 9,999 | 18.10.040(g) |
+| Minimum Setbacks | Setback lines imposed by a special setback map pursuant to Chapter 20.08 of this code may also apply. | | | 18.10.050 |
+| Front Yard (ft) | 30 | 20 | 20 | |
+| Rear Yard (ft) | 30 | 20 | 20 | |
+| Interior Side Yard (ft) | 15 | 6 | 6 | |
+| Street Side Yard (ft) | 24 | 16 | 16 | |
+| Maximum Height (as measured to the peak of the roof) (ft) | 30 | 30 (2) | 35 | 18.04.030(67) 18.10.050 |
+| Side Daylight Plane (Side lot lines) | | | | 18.04.030(44); 18.10.050 |
+| Initial Height (ft) | 10 | 10 | 15 | |
+| Angle (degrees) | 45 | 45 | 45 | |
+| Front Daylight Plane (Front setback line) | | | | 18.10.050 |
+| Initial Height (ft) | 16 | 16(3) | | |
+| Angle (degrees) | 60 | 60 | | |
+| Rear Daylight Plane (Rear setback line) | | | | 18.10.050 |
+| Initial Height (ft) | 16 | 16(3) | 15 | |
+| Angle (degrees) | 60 | 60 | 45 | |
+| Maximum Site Coverage: | | | | 18.04.030 (86A) |
+| Single story development | 25% | 40% | 40% | |
+| Multiple story development | 25% | 35% | 40% | |
+| Additional area permitted to be covered by a patio or overhang | | 5% | | |
+| Maximum Floor Area Ratio (FAR) 2 | | | | 18.04.030(65) |
+| First 5,000 square feet | .45 | .45 | .50 | |
+| Square footage in excess of 5,000 square feet | .30 | .30 | .50 | |
+| Additional floor area permitted for covering of one parking space (ft 2 ) | | 200(4) | 200(4) | |
+| Maximum House Size (ft 2 ) | 6,000(5) | 6,000(5) | 6,000(5) | |
+| Minimum Usable Open Space (ft 2 ) | | | 450 sf per unit | |
+| Residential Density Minimum site area permitting two units | 1 acre | 7,500 | 5,000 | For second unit re-quirements, see 18.10.070 |
+| Parking | See Sec. 18.10.060 (Parking) | | | Chs. 18.52,18.54 |
+
+(1) Minimum Lot Size: Any lot less than the minimum lot size may be used in accordance with the provisions of Chapter 18.40.
+
+(2) R-2 Floodzone Heights: Provided, in a special flood hazard area as defined in Chapter 16.52, the maximum heights are increased by one-half of the increase in elevation required to reach base flood elevation, up to a maximum building height of 33 feet.
+
+(3) R-2 Floodzone Daylight Plane: Provided, if the site is in a special flood hazard area and is entitled to an increase in the maximum height, the heights for the daylight planes shall be adjusted by the same amount.
+
+(4) Exemption from Floor Area for Covered Parking Required for Two-Family Uses: In the R-2 and RMD districts, for two-family uses, floor area limits may be exceeded by a maximum of two hundred square feet, for purposes of providing one required covered parking space.
+
+(5) Maximum House Size: The gross floor area of attached garages are included in the calculation of maximum house size. If there is no garage attached to the house, then the square footage of one detached covered parking space shall be included in the calculation. This provision applies only to single-family residences, not to duplexes allowed in the R-2 and RMD districts.
+
+(6) Two Unit Development Pursuant to California Government Code Section 65852.21 (SB9, 2021): Construction of two units on an RE-zoned lot shall be subject to the development standards in this Section 18.10.040, except as modified by Section 18.42.180.
+
+(b) Substandard and Flag Lots in R-2 Districts
+
+The following site development regulations shall apply to all new construction on substandard and flag lots within the R-2 district in lieu of comparable provisions in subsection (a).
+
+(1) Substandard Lots
+
+(A) For the purposes of this subsection (c), a substandard lot shall be a lot with a width of less than 50 feet or a depth of less than 83 feet and an area less than 83% of the minimum area required by the zoning of the parcel.
+
+(B) Development Standards
+
+(i) The maximum height shall be 17 feet, as measured to the peak of the roof.
+
+(ii) There shall be a limit of one habitable floor. Habitable floors include lofts, mezzanines, and similar area with interior heights of five feet (5) or more from the roof to the floor, but exclude basements and exclude attics that have no stairway or built-in access. The chief building official shall make the final determination as to whether a floor is habitable.
+
+(iii) For lots less than 50 feet in width, the required street side setback shall be 10 feet.
+
+(C) Nothing in this subsection (c) shall affect or otherwise redefine the provisions of Section 18.40.080 as to whether a substandard lot may be used as a lot under this title.
+
+(2) Flag Lots
+
+(A) A flag lot shall be defined as set forth in Section 18.04.030(84)(B).
+
+(B) Flag Lot Development Standards:
+
+(i) The maximum height shall be 17 feet, as measured to the peak of the roof.
+
+(ii) There shall be a limit of one habitable floor. Habitable floors include lofts, mezzanines, and similar areas with interior heights of five feet (5') or more from the roof to the floor, but exclude basements and exclude attics that have no stairway or built-in access. The chief building official shall make the final determination as to whether a floor is habitable.
+
+(iii) Front Setback: 10 feet. Flag lots are not subject to contextual front setback requirements.
+
+(iv) Flag lots are not subject to contextual garage placement requirements.
+
+(c) Maximum Lot Sizes in R-2 and RMD Districts
+
+This provision limits the potential for lot combinations with a net loss of housing stock and resultant homes that would be out of scale with homes in the surrounding neighborhood. In the R-2 and RMD districts, no new lot shall be created equal to or exceeding two times the minimum lot size prescribed for the district, as prescribed in Table 2. Lots larger than the prescribed maximum size are permitted only under the following circumstances: (i) where a Village Residential land use is approved concurrent with the new lot, resulting in no net loss of housing on the site(s); (ii) where underlying lots must be merged to eliminate nonconformities and no net loss of housing units would result; and (iii) where an adjacent substandard lot of less than 25 feet in width is combined with another lot, resulting in no net loss of housing units on the site.
+
+(d) Garage Doors in R-2 District
+
+In the R-2 district, for garages located within 50 feet from a street frontage, on lots less than 75 feet in width, the total combined width of garage doors which are parallel to the street shall not exceed 20 feet.
+
+(e) Special Setbacks
+
+Where applicable, setback lines imposed by a special setback map pursuant to Chapter 20.08 of this code shall be followed for the purpose of determining legal setback requirements.
+
+(f) Certification of Daylight Plane Compliance
+
+Upon request by the building official, any person building or making improvements to a structure in the low density residential districts shall provide a certification that the structure, as built, complies with the daylight plane provisions in subsection (a). Such certification shall be prepared by a licensed engineer, architect, or surveyor, and shall be provided prior to frame inspection.
+
+(g) Lighting in R-2 District
+
+For lighting requirements, refer to Section 18.40.250.
+
+(h) Location of Noise-Producing Equipment and Electrification Equipment
+
+(1) Electrification Equipment and any associated housing, screening, insulation, or bollards necessary to enable compliance with the applicable regulations, including Chapter 9.10 of this Code, shall provide a minimum three foot interior side and rear yard setback and a minimum ten foot street sideyard setback. Except as otherwise provided in this Title EVSE and energy storage systems, Electrification Equipment shall not be located in the required front yard setback and shall at all times provide sufficient clearance for fire safety purposes. All other noise-producing equipment, such as gas powered generators, commercial kitchen fans, and similar service equipment, shall be located outside of the front, rear and side yard setbacks. Such equipment may, however, be located up to 6 feet into the street sideyard setback. All noise-producing equipment, including Electrification Equipment, shall be insulated and housed, except where doing so would interfere with the operation of the equipment. The Planning Director may also permit installation without housing and insulation, provided that a combination of technical noise specifications, location of equipment, and/or other screening or buffering will assure compliance with the City’s Noise Ordinance at the nearest property line. All service equipment must meet the City Noise Ordinance in Chapter 9.10 of this code.
+
+(2) Where existing improvements comply with front setback requirements, EVSE may encroach up to four feet into the required front setback. Where existing improvements do not comply with front setback requirements, EVSE may encroach into the otherwise required front setback by two feet beyond the existing improvement. EVSE and energy storage systems and associated equipment and safety bollards may be located within required on-site parking spaces, as further described in PAMC Chapter 18.54 Section 18.54.020.
+
+(3) The Planning Director may publish administrative regulations to further implement this subsection (h), including a list of equipment or technologies that may presumptively be installed without housing and insulation due to noise generation below applicable maximums.
+
+(i) Individual Review
+
+The Individual Review provisions of Section 18.12.110 of the Zoning Ordinance shall be applied to any single-family or two-family residence in the R-2 or RMD districts to those sides of a site that share an interior side lot line with the interior side or rear lot line of a property zoned for or used for single-family or two-family dwellings. The individual review criteria shall be applied only to the project’s effects on adjacent single-family and two-family uses. A project that complies with the objective standards for two-story development adopted by the City Council shall not be subject to individual review.
+
+(Ord. 5692 § 4, 2026: Ord. 5691 § 2, 2026: Ord. 5656 § 5, 2025: Ord. 5645 § 9, 2025: Ord. 5641 § 9, 2024: Ord. 5601 § 2, 2023: Ord. 5587 § 5, 2023: Ord. 5542 § 4, 2022: Ord. 5538 § 4, 2021: Ord. 5412 § 5, 2017: Ord. 5373 § 8 (part), 2016; Ord. 4964 § 9, 2007: Ord. 4875 § 2 (part), 2005)
+
+18.10.050 Permitted Encroachments, Projections and Exceptions
+
+The following projections and encroachments into required yards, daylight plane and height are permitted, provided a projection shall not be permitted to encroach into a special setback, as established by the setback map pursuant to Chapter 20.08 of the Palo Alto Municipal Code, except as noted in (a)(1)(D) below.
+
+(a) Setback/Yard Encroachments and Projections
+
+(1) Horizontal Additions
+
+In the R-2 district and the RMD district, where a single-family dwelling legally constructed according to existing yard and setback regulations at the time of construction encroaches upon present required yards, one encroaching side (first floor wall) of the existing structure at a height not to exceed 12 feet may be extended in accord with this section. Only one such extension shall be permitted for the life of such building. This subsection shall not be construed to allow the further extension of an encroachment by any building which is the result of the granting of a variance, either before or after such property became part of the city.
+
+(A) Front Yard. In cases where the existing setback is less than 20 feet, but at least 14 feet, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended; provided, that the total length of the existing encroaching wall and the additional wall shall together not exceed one-half the maximum existing width of such building.
+
+(B) Interior Side Yard. In cases where the existing setback is less than 8 feet, but at least 5 feet, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended, but not to exceed 20 additional feet.
+
+(C) Street Side Yard. In cases where the existing setback is less than 16 feet, but at least 10 feet, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended, but not to exceed 20 feet.
+
+(D) Special Setbacks. In cases where a Special Setback is prescribed pursuant to Chapter 20.08 of the Municipal Code, and the existing setback is less than the Special Setback distance, but is at least 14 feet for the front setback or at least 10 feet for the street side yard setback, the existing encroachment may be extended for a distance of not more than 100% of the length of the encroaching wall to be extended, provided that the total length of the existing encroaching wall and the additional wall shall together not exceed one-half the maximum existing width of such building.
+
+(2) Rear Yard Encroachments for Portions of Homes
+
+A portion of a main building that is less than half the maximum width of the building may extend into the required rear yard no more than six feet and with a height of no more than one story, except that a corner lot having a common rear property line with an adjoining corner lot may extend into the required rear yard not more than ten feet with a height of no more than one story.
+
+(3) Allowed Projections
+
+(A) Cornices, Eaves, Fireplaces, and Similar Architectural Features
+
+For cornices, eaves, fireplaces, and similar architectural features, excluding flat or continuous walls or enclosures of usable interior space, the following projections are permitted:
+
+(i) A maximum of two feet into a required side yard. Fireplaces in a required side yard may not exceed five feet in width. Fireplaces not exceeding five feet in width may project into a required side yard no more than two feet.
+
+(ii) A maximum of four feet into a required front yard
+
+(iii) A maximum of four feet into a required rear yard
+
+(B) Window Surfaces
+
+Window surfaces, such as bay windows or greenhouse windows, may extend into a required side or rear yard a distance not to exceed two feet, or into a required front yard a distance not exceeding three feet. The window surface may not extend into any yard above a first story.
+
+(C) Detached Storage Structures
+
+In addition to the provisions for location of accessory structures under Section 18.12.080(b), the following further projections are permitted. For structures not over six feet in height or twenty-five square feet in floor area, used exclusively for storage purposes, the following projections are permitted:
+
+(i) A maximum of two feet into a required side yard.
+
+(ii) A maximum of four feet into a required front yard.
+
+(iii) A maximum of four feet into a required rear yard.
+
+(D) Patios, Decks, Stairways, Landings, Balconies, or Fire Escapes
+
+For uncovered porches (less than 30 inches above grade), patios, decks, stairways, landings, balconies, or fire escapes the following projections are permitted, provided these projections are not permitted above the first story:
+
+(i) A maximum of three feet into a required side yard.
+
+(ii) A maximum of six feet into a required front yard.
+
+(iii) A maximum of six feet into a required rear yard.
+
+(E) Canopy or Patio Cover
+
+A canopy or patio cover may be located in the required rear yard or that portion of the interior side yard, which is more than 75 feet from the street lot line measured along the common lot line. Such canopies shall be subject to the following conditions:
+
+(i) A canopy or patio cover shall not be more than 12 feet in height.
+
+(ii) The canopy or patio cover shall be included in the computation of building coverage.
+
+(iii) The canopy or patio cover and other structures shall not occupy more than 50 percent of the required rear yard.
+
+(iv) The canopy or patio cover shall not be enclosed on more than two sides.
+
+(F) Pools, Spas, and Hot Tubs
+
+(i) Pools, spas, and hot tubs may extend into a required rear yard a distance not to exceed fourteen feet, provided that a minimum setback of six feet from the property line shall be maintained.
+
+(ii) No swimming pool, hot tub, spa, or similar accessory facility shall be located in any portion of a required front or street side yard.
+
+(iii) No swimming pool, hot tub, spa, or similar accessory facility shall be located closer than six feet from an interior side yard property line.
+
+(b) Height Exceptions
+
+The following features may exceed the height limit established by the specified districts:
+
+(1) RE and R-2 Districts: In the RE and R-2 districts, flues, chimneys, and antennas may exceed the established height limit by not more than 15 feet.
+
+(2) RMD District: In the RMD district, flues, chimneys, exhaust fans or air conditioning equipment, elevator equipment, cooling towers, antennas, and similar architectural, utility, or mechanical features may exceed the height limit established in any district by not more than 15 feet, provided that no such feature or structure in excess of the height limit shall be used for habitable space, or for any commercial or advertising purposes.
+
+(c) Daylight Plane Exceptions
+
+The following features may extend beyond the daylight plane established by the applicable district, provided that such features do not exceed the height limit for the district unless permitted to do so by subsection (b):
+
+(1) RE and R-2 districts:
+
+(A) Television and radio antennas;
+
+(B) Chimneys and flues, provided that chimneys do not extend past the required daylight plane a distance exceeding the minimum allowed pursuant to Chapter 16.04 of this code;
+
+(C) Dormers, roof decks, gables, or similar architectural features, provided that
+
+(i) the sum of the horizontal lengths of all such features shall not exceed 15 feet on each side; and
+
+(ii) the height of such features does not exceed 24 feet.
+
+(D) Cornices, eaves, and similar architectural features, excluding flat or continuous walls or enclosures of usable interior space, provided such features do not extend past the daylight plane more than 2 feet.
+
+(2) RMD District:
+
+(A) Television and radio antennas; and
+
+(B) Chimneys and flues.
+
+(Ord. 4875 § 2 (part), 2005)
+
+18.10.060 Parking
+
+Off-street parking and loading facilities shall be required for all permitted and conditional uses in accord with Chapters 18.52 and 18.54 of this title. The following parking requirements apply in the R-E, R-2, and RMD districts. These requirements are included for reference purposes only, and in the event of a conflict between this Section 18.10.060 and any requirement of Chapters 18.52 and 18.54, Chapters 18.52 and 18.54 shall apply, except in the case of parcels created pursuant to section 18.10.130(c) (subdivision incentive for historic preservation).
+
+(a) Parking Requirements for Specific Uses
+
+Table 3 shows the minimum off-street automobile parking requirements for specific uses.
+
+TABLE 3
+PARKING REQUIREMENTS FOR R-E, R-2 AND RMD USES
+
+| Use | Minimum Off-Street Parking Requirement |
+| Single-family residential use (excluding accessory dwelling units) | 2 spaces per unit, of which one must be covered |
+| Two family in the RE district, pursuant to California Government Code Section 65852.21 (SB 9, 2021) | 1 space per unit. No spaces required if located within one-half mile walking distance of either a high-quality transit corridor or a major transit stop, or located within one block of a car share vehicle. |
+| Two family (R2 & RMD districts) | 3 spaces total, of which at least two must be covered |
+| Accessory dwelling unit, attached or detached: | No parking required |
+| Junior accessory dwelling unit | No parking required |
+| Other Uses | See Chapter 18.40 |
+
+(b) Parking and Driveway Surfaces
+
+Parking and driveway surfaces may have either permeable or impermeable paving. Materials shall be those acceptable to public works department standards. Gravel and similar loose materials shall not be used for driveway or parking surfaces within 10 feet of the public right of way.
+
+(c) Parking in Yards
+
+(1) No required parking space shall be located in a required front yard.
+
+(2) No required parking space shall be located in the first ten feet adjoining the property line of a required street side yard.
+
+(d) Tandem Parking
+
+Tandem parking shall be permitted for single-family uses and for single-family uses with a permitted second dwelling unit. Tandem parking is permitted for two-family uses where both spaces in tandem (front space and tandem space) are designated for use by the same unit.
+
+(e) Bicycle Parking
+
+For two family uses, at least one Class I bicycle parking space shall be required.
+
+(f) Design of Parking Areas
+
+Parking facilities shall comply with all applicable regulations of Chapter 18.54 (Parking Facility Design Standards).
+
+(g) Parking Facilities on Lots Created Pursuant to Section 18.10.130(c) (subdivision incentive for historic preservation)
+
+Legal non-conforming parking facilities existing prior to the subdivision of a parcel having a historic residence(s) may be maintained as existing non-complying facilities or may be improved to greater compliance with parking requirements, as approved by the Director of Planning and Development Services or his/her designee. Preservation covenants may allow non-historic residences to be remodeled; however, floor area expansions shall be subject to the Director’s discretionary action regarding improvements to on-site parking conditions associated with such increased floor area and when floor area over 400 square feet is proposed to be added to a non-historic residence having legal non-complying parking facilities prior to subdivision, parking facilities shall be brought into greater compliance with Chapter 18.52, wherever feasible. A subdivided property having no existing on-site parking facilities prior to subdivision may be permitted to continue as such as long as preservation covenants allowing for this continuance and any associated access easements have been recorded.
+
+(Ord. 5587 § 6, 2023: Ord. 5542 § 5, 2022: Ord. 5538 § 5, 2021: Ord. 5494 § 3, 2020: Ord. 5412 § 6, 2017: Ord. 5373 § 8 (part), 2016; Ord. 5051 § 3, 2009: Ord. 4875 § 2 (part), 2005)
+
+18.10.070 Accessory and Junior Accessory Dwelling Units
+
+Accessory Dwelling Units and Junior Accessory Dwelling Units are subject to the regulations set forth in Chapter 18.09.
+
+(Ord. 5587 § 7, 2023: Ord. 5542 § 6, 2022: Ord. 5538 § 6, 2021: Ord. 5412 § 7, 2017)
+
+18.10.080 Accessory Uses and Facilities
+
+Accessory uses and facilities, as referenced in Section 18.10.030, shall be permitted when incidental to and associated with a permitted use or facility in the R-E, R-2, or RMD districts, or when incidental to and associated with an allowable and authorized conditional use therein, subject to the provisions below and of Chapters 18.40 and 18.42.
+
+(a) Types of Accessory Uses
+
+Accessory uses and facilities include, but are not limited to, the following list of examples; provided that each accessory use or facility shall comply with the provisions of this title:
+
+(1) Residential garages, carports, and parking facilities, together with access and circulation elements necessary thereto;
+
+(2) Facilities for storage incidental to a permitted use; and
+
+(3) Recreational uses and facilities for the use and convenience of occupants or employees, or guests thereof, of a principal use or facility;
+
+(b) Location and Development Standards
+
+Except as otherwise provided in this section, accessory buildings shall at all times be located in conformance with requirements for principal buildings, and shall not be located in any required front, side, or rear yard. See Section 18.10.050(a)(3)(C) for allowed encroachments for small storage structures. Accessory buildings may be located in a required interior yard subject to the following limitations:
+
+(1) An accessory building shall not be used for living and/or sleeping purposes unless the building was legally constructed for or was legally converted to living and/or sleeping purposes prior to October 13, 1983.
+
+(2) An accessory building shall not be located in a required front yard, required street yard, or required rear yard of a through lot.
+
+(3) An accessory building shall not be located in a required interior side or rear yard unless the building is at least seventy-five feet from any property line adjacent to a street, measured along the respective lot line. Provided, on corner lots, accessory buildings including detached garages and carports may be located in the rear yard if located at least 75 feet from the front street and at least 20 feet from the side street property lines.
+
+(4) Accessory buildings located within a required interior yard as permitted by this section shall be subject to a maximum height established by a daylight plane beginning at a height of eight feet at the property line and increasing at a slope of one foot for every three feet of distance from the property line, to a maximum height of twelve feet.
+
+(5) No accessory building shall have more than two plumbing fixtures. Accessory buildings shall not be allowed to be turned into habitable space nor shall these structures be allowed to have showers (indoor or outdoor), gas lines, washer/dryers, and/or cooking facilities to be provided inside or attached to the structure, unless the structure is proposed as an ADU/JADU that satisfies all requirements of the Palo Alto Municipal Code.
+
+(6) Accessory buildings located within a required interior yard, as permitted by this section, shall not individually or cumulatively occupy an area exceeding fifty percent of the required rear yard.
+
+(7) The minimum distance between separate buildings located on the same site shall be as required by Title 16; provided, accessory buildings in the Residential Estate (RE) district shall be separated from the principal building by at least three feet.
+
+(8) A principal building and an accessory building, meeting the requirements of Title 16 and each located on a site as otherwise permitted for principal building and accessory buildings, may be connected by a structure meeting the definition of a breezeway. Such structure, or breezeway, shall be a part of the accessory building.
+
+(Ord. 5585 § 4, 2023: Ord. 4875 § 2 (part), 2005)
+
+18.10.090 Basements
+
+Basements shall be permitted in areas that are not designated as special flood hazard areas, as defined in Chapter 16.52, subject to the following regulations:
+
+(a) Permitted Basement Area
+
+Basements may not extend beyond the building footprint and basements are not allowed below any portion of a structure that extends into required setbacks, except to the extent that the main residence is permitted to extend into the rear yard setback by other provisions of this code. Basements which serve the primary unit may not extend under an attached ADU or JADU to the extent those secondary units utilize the bonus floor area, lot coverage, and/or maximum house size exemptions identified in Section 18.09.
+
+(b) Inclusion as Gross Floor Area
+
+Basements shall not be included in the calculation of gross floor area, provided that:
+
+(1) basement area is not deemed to be habitable space, such as a crawlspace; or
+
+(2) basement area is deemed to be habitable space but the finished level of the first floor is no more than three feet above the grade around the perimeter of the building foundation. Grade is measured at the lowest point of adjacent ground elevation prior to grading or fill, or finished grade, whichever is lower; or
+
+(3) basement area is associated with a historic property as described in Section 18.04.030(a)(65)(D)(vii).
+
+(c) Lightwells, Stairwells and Other Excavated Features
+
+Excavated features shall not affect the measurement of the grade for the purposes of determining gross floor area, so long as such features meet the following provisions:
+
+(1) Lightwells, stairwells and similar excavated features along the perimeter of the basement shall not affect the measurement of grade, provided that:
+
+(A) such features are not located in the front of the building;
+
+(B) such features shall not exceed 3 feet in width;
+
+(C) the cumulative length of all such features does not exceed 30% of the perimeter of the basement;
+
+(D) such features do not extend more than 3 feet into a required side yard nor more than 4 feet into a required rear yard, but where a side yard is less than 6 feet in width, the features shall not encroach closer than 3 feet from the adjacent side property line;
+
+(E) the cumulative length of any features or portions of features that extend into a required side or rear yard does not exceed 15 feet in length;
+
+(F) the owner provides satisfactory evidence to the planning division prior to issuance of a building permit that any features or portions of features that extend into a required side or rear yard will not be harmful to any mature trees on the subject property or on abutting properties; and
+
+(G) such features have either a drainage system that meets the requirements of the public works department or are substantially sheltered from the rain by a roof overhang or canopy of a permanent nature.
+
+(2) Below-grade patios, sunken gardens or similar excavated areas along the perimeter of the basement that exceed the dimensions set forth in subsection (1), are permitted and shall not affect the measurement of grade, provided that:
+
+(A) such areas are not located in the front of the building;
+
+(B) All such areas combined do not exceed 2% of the area of the lot or 200 square feet, whichever is greater; that each such area does not exceed 200 square feet, and that each such area is separated from another by a distance of at least 10 feet. Area devoted to required stairway access shall not be included in the 200 square foot limitation.
+
+(C) the cumulative length of any excavated area or portion thereof that extends into a required side or rear yard does not exceed 15 feet;
+
+(D) such features do not extend more than 2 feet into a required side yard nor more than 4 feet into a required rear yard;
+
+(E) the owner provides satisfactory evidence to the planning director prior to issuance of a building permit that any features or portions of features that extend into a required side or rear yard will not be harmful to any mature trees on the subject property or on abutting properties;
+
+(F) such features have either a drainage system that meets the requirements of the public works department or are substantially sheltered from the rain by a roof overhang or canopy of a permanent nature;
+
+(G) any roof overhang or canopy installed pursuant to subsection (F) is within and is counted toward the site coverage requirements established in Section 18.10.040;
+
+(H) such areas are architecturally compatible with the residence; and
+
+(I) such areas are screened to off site views by means of landscaping and/or fencing as determined appropriate by the planning director.
+
+(Ord. 5585 § 7, 2023: Ord. 5432 § 5, 2018: Ord. 4964 § 10, 2007: Ord. 4875 § 2 (part), 2005)
+
+18.10.100 Standards for Agricultural Uses
+
+In the RE district, agricultural use shall be allowed subject to the following regulations:
+
+(a) Keeping and Raising of Livestock
+
+Keeping and raising of livestock, poultry, or other animals may be conducted accessory to a residential use, and raising of animals for commercial purposes is prohibited.
+
+(b) Required Site Area for Keeping of Livestock
+
+(1) At least 21,528 square feet (0.5 acre) of site area shall be required for each horse, mule, donkey, cow, steer or similar livestock.
+
+(2) At least 21,528 square feet (0.5 acre) of site area shall be required for each three goats, hogs, sheep, or similar livestock.
+
+(c) Location of Livestock Facilities
+
+Barns, stables, sheds, chicken houses, and other similar facilities for the shelter and feeding of animals, exclusive of domestic household pets, shall be located a minimum of 40 feet from any lot line (property line).
+
+(Ord. 4875 § 2 (part), 2005)
+
+18.10.110 Home Improvement Exceptions
+
+Home improvement exceptions may be granted for existing single-family residences in the R-E, R-2, and RMD districts, pursuant to the provisions of Section 18.12.120 (R-1 Residential District, Home Improvement Exceptions).
+
+(Ord. 4875 § 2 (part), 2005)
+
+18.10.120 Architectural Review
+
+Architectural review, as required in Section 18.76.020, is required in the R-E, R-2, and RMD districts whenever three or more adjacent residential units are intended to be developed concurrently, whether through subdivision or individual applications.
+
+(Ord. 5412 § 8, 2017: Ord. 4875 § 2 (part), 2005)
+
+18.10.130 Historical Review and Incentives
+
+(a) Historic home review, as required in Chapter 16.49 of Title 16 of the Municipal Code, is required in the R-E, R-2, and RMD low density residential districts for alterations or modifications to any residence designated on the City’s Historic Inventory as a Category 1 or Category 2 historic structure as defined in Section 16.49.020 of this code or any contributing structure located within a locally designated historic district.
+
+(b) Exemptions to gross floor area requirements are available for historic residences pursuant to the definition of gross floor area in Section 18.04.030(65)(D)(vii). Home improvement exceptions provide for additional square footage and certain other exceptions for historic homes pursuant to Section 18.12.120 (R-1 Chapter).
+
+(c) Notwithstanding other provisions of this chapter, existing parcels in the R-2 or RMD districts containing two residences may be subdivided into two ownerships, where all of the following circumstances exist:
+
+(1) At least one residence is designated on the City’s Historic Inventory as a Category 1, Category 2, Category 3, or Category 4 historic structure as defined in Section 16.49.020 of this code or are contributing structures located within a locally designated historic district or are eligible for listing on the California or National Registers; and
+
+(2) No increase in the total number of residences on the site is proposed; and
+
+(3) Separate lots are proposed to be created, each with a minimum lot size not less than 4,000 square feet if only one residence is historic; if both residences are historic and subject to a covenant, the allowable minimum lot size is 2,000 square feet; and
+
+(4) The resultant parcel lines may create less than minimum lot size (no less than the area stated in item (3) of this section), site width and depth, setback and daylight plane encroachments, floor area and site coverage exceeding the maximum allowable for existing development with respect to each new parcel, without the need for approval of a Variance or Home Improvement Exception, but would not generally increase any existing non-complying building features; however, minor additions for functional improvements may be allowed at the discretion of the Director of Planning and Development Services; and
+
+(5) The Historic Resources Board has determined that at least one existing residence on the property has historic integrity and qualifies for listing on the City’s Historic Inventory.
+
+(6) A covenant is recorded to run with the land in perpetuity, assuring that the historic residence(s) will be preserved and maintained consistent with the Secretary of the Interior’s Standards for Historic Rehabilitation through compliance with Historic Resources Board review and recommendations. The covenant will stipulate that HRB review is required for all major projects on the site including significant changes to any non-historic residence. Any modifications to a non-historic residence must be compatible with the historic residence and satisfy the Secretary of Interior’s Standards for Historic Compatibility.
+
+(7) The two residences on the property were in existence as of January 28, 2009.
+
+(8) Application of the state Historic Building Code is available for use on any eligible building.
+
+(9) Residences subject to a covenant must meet all government health, life and safety codes.
+
+(Ord. 5494 § 3, 2020: Ord. 5051 § 2, 2009: Ord. 4875 § 2 (part), 2005)
+
+18.10.140 Neighborhood Preservation Combining District (NP)
+
+(a) Purpose and Applicability
+
+The neighborhood preservation combining district is intended to modify the regulations of the RMD two unit multiple-family residential district areas where it is deemed essential to maintain the visual and historic character of existing neighborhoods. The combining district is intended to foster retention of existing single-family structures, to foster additions to existing properties without demolition of sound residential structures, and to assure compatibility of design of new residential units with existing structures on the same or surrounding properties.
+
+Properties in the (NP) combining district are subject to the following regulations:
+
+(b) Design Review
+
+(1) Purposes
+
+The purpose of design review of properties in an (NP) combining district is to achieve compatibility of scale, silhouette, façade articulation, and materials of new construction with existing structure on the same property or on surrounding properties within a combining district.
+
+(2) Design Review Required
+
+For properties on which two or more residential units are developed or modified, design review and approval shall be required by the architectural review board in compliance with procedures established in Section 18.76.020 for any new development or modification to any structure on the property and for site amenities. No design review is required for construction of or modifications to single-family structures that constitute the only principal structure on a parcel of land or for accessory dwelling units or junior accessory units.
+
+(3) Design Review Guidelines
+
+The architectural review board shall, at its discretion, develop specific design review guidelines for each specific area to which this combining district is applied.
+
+(c) Exceptions to Development Standards
+
+(1) Applicability
+
+Subject to the provisions of Section 18.76.040 and the general purposes of this title to foster retention of existing single-family structures and to maintain the existing historic and general character of the neighborhood, the planning director may grant exceptions to site development regulations (except limitations on residential density), parking regulations, and from the special setback requirements of Title 20 applicable to the underlying zone district where combined with the neighborhood preservation (NP) combining district. This exception procedure is the exclusive procedure for procuring an exception to development standards in the NP combining district. It is not necessary for the property owner to obtain a variance.
+
+(2) Findings
+
+The director may only grant an (NP) District Exception if, from the application or the facts presented at the public hearing, he finds:
+
+(A) The granting of the exception will facilitate the preservation of an existing residential structure on the same property and will be of benefit in maintaining the existing historic and general character of the surrounding neighborhood, and
+
+(B) The granting of the application will not be detrimental or injurious to property or improvements in the vicinity and will not be detrimental to the public health, safety, general welfare, or convenience.
+
+(3) Conditions
+
+In granting NP District Exceptions, reasonable conditions or restrictions may be imposed as deemed appropriate or necessary to protect the public health, safety, general welfare, or convenience, and to secure the purposes of this title.
+
+(4) Procedures
+
+Please refer to Chapters 18.76 and 18.77 for further information regarding the procedures applicable to requests for exceptions.
+
+(Ord. 5412 § 9, 2017: Ord. 4875 § 2 (part), 2005)
+
+18.10.150 Grandfathered Uses
+
+(a) Applicability
+
+The uses specified in subsection (b) may remain as grandfathered uses provided that those uses:
+
+(1) are located in the specified district;
+
+(2) existed on the specified date;
+
+(3) on that date, were lawful permitted uses or conditional uses operating subject to a conditional use permit; and
+
+(4) on that date, were conforming uses.
+
+(b) Grandfathered Uses
+
+(1) R-2 district:
+
+(A) Professional and medical office uses (except product testing and analysis, and prototype development), existing on July 20, 1978 or such uses which were, prior to July 20, 1978, located in an R-2 district which was imposed by reason of annexation of the property to the city without benefit of prezoning and which, prior to the date of annexation, were lawful conforming permitted uses or conditional uses operating subject to a conditional use permit.
+
+(B) Two-family uses, except where one of the units is a legal nonconforming detached single-family dwelling on a substandard lot size, and multiple-family uses existing on July 20, 1978 or such uses which were, prior to July 20, 1978, located in an R-2 district which was imposed by reason of annexation of the property to the city without benefit of prezoning and which, prior to the date of annexation, were lawful conforming permitted uses or conditional uses operating subject to a conditional use permit.
+
+(2) RMD district:
+
+(A) Professional and medical office uses (except product testing and analysis, and prototype development), existing on July 20, 1978.
+
+(B) Multiple-family uses existing on July 20, 1978.
+
+(c) Permitted Changes
+
+The following regulations shall apply to the grandfathered uses specified in subsection (b):
+
+(1) Such uses shall be permitted to remodel, improve, or replace site improvements on the same site, for continual use and occupancy by the same use, provided that
+
+(A) such remodeling, improvement or replacement shall not:
+
+(i) result in increased floor area;
+
+(ii) result in an increase in the number of offices, in the case of professional or medical office uses, or dwellings, in the case of residential uses;
+
+(iii) result in shifting of building footprint;
+
+(iv) increase the height, length, building envelope, or size of the improvement,
+
+(v) increase the existing degree of noncompliance, except through the granting of a design enhancement exception pursuant to Chapter 18.76.
+
+(2) If a grandfathered use ceases and thereafter remains discontinued for twelve consecutive months, it shall be considered abandoned and may be replaced only by a conforming use.
+
+(3) A grandfathered use which is changed to or replaced by a conforming use shall not be reestablished, and any portion of a site or any portion of a building, the use of which changes from a grandfathered use to a conforming use, shall not thereafter be used except to accommodate a conforming use.
+
+(4) The following additional regulations shall apply to grandfathered professional or medical office uses:
+
+(A) Any remodeling, improvement, or replacement of any building designed and constructed for residential use shall be subject to the issuance of a conditional use permit in accord with Chapter 18.76.
+
+(B) In the event of redevelopment of all or a portion of the site for permitted residential uses, professional and medical office uses may not be incorporated in the redevelopment, except that this provision shall not apply to permanent conversion to residential use of space within an existing structure now used for professional and medical office uses.
+
+(d) (Reserved)
+
+(e) (Reserved)
+
+(f) Existing Homes on Substandard Lots
+
+In the R-2 district, single-family and two-family homes on substandard lots, as defined in Section 18.10.040(b), and flag lots existing on August 1, 1991 and which prior to that date were lawful, complying structures, may remain and be remodeled, improved, or replaced without complying with the height and habitable floor limitations for substandard lots specified in Section 18.10.040, provided that:
+
+(1) any such remodeling, improvement, or replacement does not result in a height above seventeen feet or any additional habitable floor area above a first habitable floor, except that any structure damaged or destroyed by a natural disaster (such as fire, flood or earthquake) may be replaced to its previous size without regard to the height and habitable floor limitations imposed by this section; and
+
+(2) in the case of a conflict between the provisions of this section and the provisions of Chapter 18.70, this section shall control.
+
+(Ord. 5656 § 6, 2025: Ord. 5412 § 10, 2017: Ord. 4875 § 2 (part), 2005)

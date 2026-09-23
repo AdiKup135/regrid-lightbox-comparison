@@ -1,0 +1,1192 @@
+CHAPTER 8.392 - ACCESSORY DWELLING UNITS
+
+8.392.010 - Purpose.
+Accessory dwelling units are a residential use that provide an important source of housing. The purpose of this
+Chapter is to:
+
+1.     Increase the supply and diversity of the County’s housing stock, in particular the number of smaller and
+       more affordable units, by allowing accessory dwelling units to be built on existing residential properties,
+       while preserving the neighborhood character.
+
+2.     Increase the housing stock of existing neighborhoods in a manner that has less impact on the environment
+       than development of housing in undeveloped areas.
+
+3.     Allow more efficient use of existing residential areas and supporting infrastructure.
+
+4.     Provide a means for residents to remain in their homes and neighborhoods.
+
+5.     Provide opportunities for homeowners to earn supplemental income from renting an accessory dwelling
+       unit.
+
+6.     Establish standards for accessory dwelling units to ensure that they are safe, habitable, and compatible
+       with existing development.
+
+8.392.020 - Definitions.
+1.     Accessory Dwelling Unit. An “accessory dwelling unit” is a dwelling unit located or proposed to be located
+       on a lot which contains, or will contain, a primary residence. Accessory dwelling units may be detached
+       from or attached to the primary residence on the property. Accessory dwelling units may also be (1)
+       efficiency units, as defined in Section 17958.1 of the California Health and Safety Code, or (2) manufactured
+       homes, as defined in Section 18007 of the California Health and Safety Code. Accessory dwelling units are
+       “accessory dwelling units” as that term is used in Government Code Section 65852.2. A “second unit” or
+       “secondary unit” is an accessory dwelling unit. Accessory dwelling units are not “accessory buildings” as
+       defined in Section 8.04.030(22). Any secondary structure that provides independent facilities for living;
+       sleeping; eating; cooking; and sanitation, may be considered an accessory dwelling unit, at the discretion of
+       the Director of Planning and Building, unless an applicant can provide compelling evidence to the contrary
+       to the satisfaction of the Director of Planning and Building.
+
+                                     Title 8 – Zoning & Development Code
+
+2.     Attached Accessory Dwelling Unit. An “attached accessory dwelling unit” is a unit that is built as an
+       addition to, extension of, or within the primary residence.
+
+3.     Detached Accessory Dwelling Unit. A “detached accessory dwelling unit” is a unit that is an independent
+       structure, entirely separated from the structure of the primary residence. Accessory dwelling units
+       constructed within, or as an extension of an existing detached structure other than the primary residence
+       are considered detached accessory dwelling units.
+
+4.     Efficiency Kitchen. An efficiency kitchen, as defined in Government Code Section 65852.22, is a kitchen
+       that contains at least a cooking facility with appliances, and a food preparation counter and storage
+       cabinets that are of reasonable size in relation to the size of the junior accessory dwelling unit.
+
+5.     Floor Area. For purposes of this Chapter, the “floor area” of an accessory dwelling unit is the area of each
+       floor level included within the walls enclosing each dwelling unit. The floor area shall be measured from
+       the outside face of the walls enclosing each dwelling unit including all closet space and storage areas
+       contained within the unit, including habitable basements and attics, but not including unenclosed porches,
+       balconies, or any enclosed garages or carports. For purposes of calculating allowable floor area of
+       accessory dwelling units based on a proportion of the size of the primary residence, only the livable floor
+       area of the primary residence shall be counted. The floor area of any other structures, for purposes of
+       calculating total floor area, lot coverage, or other calculations, shall be calculated in the manner described
+       in the relevant zoning regulations.
+
+6.     Junior Accessory Dwelling Unit. A “junior accessory dwelling unit” is an accessory dwelling unit built
+       entirely within the walls of an existing or proposed primary residence, not exceeding five hundred (500)
+       square feet in size, and including an efficiency kitchen, as described in Government Code Section 65852.22.
+       A junior accessory dwelling unit may include separate sanitation facilities or may share sanitation facilities
+       with the existing or proposed primary residence.
+
+7.     Multifamily Dwelling. Two (2) or more attached dwellings on a single lot is considered a multifamily
+       dwelling. Multiple detached single-unit dwellings on the same lot are not considered a multifamily
+       dwelling.
+
+8.     Owner Occupancy. Owner occupancy is the condition and requirement that the owner of a parcel on
+       which a junior accessory dwelling unit is constructed live in one (1) of the units on the property in
+       perpetuity.
+
+9.     Primary Residence. A “primary residence” is the main residence, including attached habitable and
+       uninhabitable spaces, located or proposed to be located on the parcel on which an accessory dwelling
+       unit(s) is located or proposed to be located.
+
+10.    Stepback. A setback above the ground floor, where the building is “stepped back” an additional distance
+       from the applicable property line.
+
+11.    Uninhabitable space. Uninhabitable space is space that is not developed to full standards of habitability.
+
+8.392.030 - Locations Permitted.
+Accessory dwelling units shall be allowed in the R-1, R-2, R-3, PC, CMU-1, CMU-2, CMU-3, NMU, NMU-ECR, R-E, RH,
+RM and TPZ districts, and all other districts in which residential uses are permitted, regardless of any regulations
+that might otherwise prohibit accessory dwelling units in those districts.
+
+                                     Title 8 – Zoning & Development Code
+
+8.392.040 - Approval.
+Accessory dwelling units meeting all of the applicable requirements of Sections 8.392.050 through 8.392.090, shall
+be approved ministerially, without public notice, public hearing, or discretionary review.
+
+Accessory dwelling units not meeting the applicable standards set forth in Section 8.392.050 through 8.392.090 will
+be considered a conditionally permitted use within the districts specified in Section 8.392.030 and may be
+permitted by a conditional use permit pursuant to a public hearing before the Zoning Hearing Officer, as described
+in Section 8.392.110.
+
+8.392.050 - Development Standards For All Accessory Dwelling Units.
+New accessory dwelling units shall be subject to the requirements and standards described in this Chapter. Where
+not superseded by the specific requirements described in this Chapter, accessory dwelling units shall also be
+subject to the requirements applicable to any dwelling unit on the same parcel in the same district. Development
+standards applicable to all accessory dwelling units include the following:
+
+1.     Minimum Lot Area. Accessory dwelling units shall be exempt from the minimum lot area per dwelling unit
+       provisions in the applicable district.
+
+2.     Minimum Lot Size. Accessory dwelling units shall be exempt from all minimum lot size requirements.
+
+3.     Maximum Density of Development. Accessory dwelling units shall be exempt from any and all provisions
+       limiting the maximum density of development in the applicable district.
+
+4.     Setbacks. Notwithstanding the required setbacks in the applicable district, minimum setbacks for
+       accessory dwelling units shall be:
+
+       a.      Front Setbacks. With the exception of accessory dwelling units created entirely within the space of
+               an existing structure, for all other accessory dwelling units regardless of height, the accessory
+               dwelling unit may be located no closer to the front property line of the subject parcel than the
+               lesser of:
+
+               (1)    The front setback required by the relevant zoning district, or
+
+               (2)    The distance from the front property line of the primary residence located or proposed to
+                      be located on that parcel. For purposes of this section, the primary residence includes
+                      attached garages. In cases where the application of the setbacks described in (1) and (2)
+                      would preclude the creation of an accessory dwelling unit of at was eight hundred (800)
+                      square feet with side and rear setbacks of at least four (4) feet, the accessory dwelling unit
+                      may be located within the front setback, but must be located as far as possible from the
+                      front property line.
+
+                                    Title 8 – Zoning & Development Code
+
+             In cases where an existing primary residence is closer to the front property line than the front
+             setback normally required in the applicable district, the accessory dwelling unit shall also be
+             allowed to be located as close to the front property line as the primary residence.
+
+             In cases where an accessory dwelling units are proposed to be built atop, or below an existing
+             detached garage that is located within the required front setback, a conditional use permit shall be
+             required unless this provision would preclude the creation of an accessory dwelling unit of at least
+             eight hundred (800) square feet.
+
+     b.     Side and Rear Setbacks. For accessory dwelling units created entirely within the space of an
+            existing structure, or constructed in the same location and to the same dimensions as an existing
+            structure, side and rear setbacks shall be those already existing for that structure.
+
+            For all other accessory dwelling units regardless of height, the accessory dwelling unit may be
+            located no closer to the property line than: Side: four (4) feet Rear: four (4) feet.
+
+     c.     Stepbacks. Accessory dwelling units, whether attached or detached, exceeding sixteen (16) feet in
+            height shall have the following stepbacks from the applicable property lines, located at a point no
+            higher than sixteen (16) feet on the structure: Side: five (5) feet Rear: ten (10) feet.
+
+5.   Floor Area. The allowable floor area of an accessory dwelling unit shall be calculated in the manner
+     described in Sections 8.392.050 through 8.392.090, but in no case shall these regulations be applied in such
+     a way as to preclude an attached or detached accessory dwelling unit of up to eight hundred (800) square
+     feet in size that meets all other relevant standards.
+
+6.   Lot Coverage. Accessory dwelling units shall count against the allowed lot coverage on a parcel, except
+     that no lot coverage restriction shall preclude creation of an attached or detached accessory dwelling unit
+     of up to eight hundred (800) square feet in size that meets all other relevant standards.
+
+7.   Height. The maximum height of an accessory dwelling unit shall be twenty-six (26) feet. Building height
+     shall be measured as the vertical distance from any point on the lower of (a) finished grade, or (b) natural
+     grade, to the topmost point of the building immediately above. Chimneys, pipes, mechanical equipment,
+     antennae, and other similar structures may extend up to eight (8) feet beyond the building height, as
+     required for safety or efficient operation. Accessory dwelling units built entirely within an existing building
+     shall be subject to the greater of the height limit applicable to that building in the relevant district, or the
+     maximum height of the existing primary residence, measured in the manner described in the Zoning
+     Regulations of the relevant district.
+
+8.   Daylight Plane. Neither accessory dwelling units built above an existing detached or attached garage or
+     accessory structure, nor detached accessory dwelling units taller than sixteen (16) feet in height, shall be
+     subject to daylight plane requirements. Daylight plane applies to accessory dwelling units attached to or
+     above existing single-family residences and taller than nineteen (19) feet in height, except daylight plane
+     shall be measured from the setback applicable to the accessory dwelling unit.
+
+9.   Balconies and Decks. Accessory dwelling units that do not meet the setback requirements that would
+     apply to a primary residence in the same district shall have no rooftop decks, and no portion of any balcony
+     or deck shall be located above ten (10) feet in height, exclusive of railings, measured in the same manner as
+
+                                     Title 8 – Zoning & Development Code
+
+      height in Section 8.382.050(7), except on the side of the accessory dwelling unit facing the primary
+      residence. Accessory dwelling units that meet the setback requirements that would apply to a primary
+      residence in the same district may have rooftop decks and balconies to the extent otherwise allowed in the
+      relevant district.
+
+10.   Windows. Accessory dwelling units that do not meet the setback requirements that would apply to a
+      primary residence in the same district shall have no windows located above or extending above ten (10)
+      feet on the accessory dwelling unit, measured from finished grade, except on: (1) the side(s) of the
+      accessory dwelling unit facing the primary residence, and (2) the side(s) of the accessory dwelling unit that
+      comply with the setback requirements of the district. On the sides of the accessory dwelling unit that do
+      not meet the setback requirements of the district, clerestory windows located above ten (10) feet on the
+      accessory dwelling unit shall be allowed, if they have a lower sill height of no less than six (6) feet from the
+      nearest interior floor of the accessory dwelling unit, and a total window height no greater than twenty-four
+      (24) inches. Skylights shall be allowed.
+
+11.   Fire Safety Requirements. For accessory dwelling units that do not meet the setback requirements of
+      Section 8.392.050(4)(b) are required to provide fire-rated walls, windows, eaves, and other architectural
+      features on the side(s) of the accessory dwelling unit that encroach on the setback. No egress windows
+      shall be allowed on the side(s) of accessory dwelling unit that do not meet the setback requirements of
+      Section 8.392.050(4)(b)
+
+12.   Ingress and Egress. Accessory dwelling units shall have an independently accessible entrance that does not
+      require passage through the primary residence.
+
+13.   Required Facilities. With the exception of junior accessory dwelling units, which are subject to the
+      requirements described in Section 8.392.080, all attached or detached accessory dwelling units must
+      include the following:
+
+      a.     Independent facilities for living, sleeping, eating, cooking, and sanitation.
+
+      b.     A kitchen area containing a refrigerator, sink, and permanently installed cooking appliance, which
+             must include at least a fixed stovetop.
+
+      c.     A fully plumbed bathroom including sink, shower, and toilet.
+
+14.   Parking Requirements
+
+      a.     Required Parking. One (1) new covered or uncovered parking space, in addition to those already
+             existing on the parcel, shall be provided on-site for each new attached or detached accessory
+             dwelling unit.
+
+      b.     Parking Exemptions. Accessory dwelling units meeting any of the following criteria shall not be
+             required to provide any parking in addition to that already provided on the parcel, or in the case of
+             a concurrent application for a new primary and accessory dwelling unit, shall not be required to
+             provide any parking in addition to the parking required for the primary residence:
+
+             (1)     Accessory dwelling units located within one-half (1/2) mile walking distance of a public
+                     transit stop or station. Public transit stops must be served by a transit line serving the
+                     public, and not solely by specialized, private, or limited population services such as school
+                     buses, privately run shuttles, or other services that cannot be used by all public riders.
+
+                           Title 8 – Zoning & Development Code
+
+     (2)    Accessory dwelling units located within a designated architecturally and historically
+            significant historic district.
+
+     (3)    Accessory dwelling units that are part of the existing primary residence or an existing
+            accessory structure, including attached or detached garages.
+
+     (4)    Accessory dwelling units located within one (1) block of a car share vehicle pick-up/drop-off
+            location.
+
+     (5)    No parking exemption can be granted for properties (1) located within Wildland Urban
+            Interface areas, which includes: Emerald Lake Hills, Devonshire, and other areas designated
+            by the Fire Department as Wildland Urban Interface areas, and (2) where fire engine access
+            and turnaround space required by California Fire Code: Fire Appendix D is not provided.
+
+c.   Conversion of Covered Parking. Any covered parking removed in order to create an accessory
+     dwelling unit is not required to be replaced, and if voluntarily replaced, may be replaced with
+     uncovered parking of any type and configuration allowed by Section 8.392.050(14)(f), below. For
+     purposes of this Section, conversion includes partial or full demolition of covered parking required
+     to create an accessory dwelling unit.
+
+d.   Garage Conversion. If an existing attached or detached garage is converted to an accessory
+     dwelling unit, the parking previously provided by that garage is not required to be replaced, and if
+     voluntarily replaced, may be replaced by uncovered parking of any type and configuration allowed
+     by Section 8.392.050(14)(f), below, and no additional parking related to the accessory dwelling unit
+     is required. For purposes of this Section, conversion includes partial or full demolition of the garage
+     and partial or full replacement with an accessory dwelling unit.
+
+e.   Use of Existing Parking. If the parking already existing on the parcel exceeds that required for
+     existing development on the parcel, excess parking spaces shall be counted toward the new parking
+     required for the accessory dwelling unit.
+
+f.   Provision and Location of Parking. Parking spaces shall be provided in the following manner:
+
+     (1)    Pervious Surfaces. All new uncovered parking spaces created for the accessory dwelling
+            unit must be provided on pervious surfaces. The maximum amount of impervious surfaces
+            designated to satisfy the accessory dwelling unit parking requirement shall be no greater
+            than the amount of impervious surfaces existing at time of application. Existing impervious
+            surface area may be used for parking and need not be converted to pervious surface.
+
+     (2)    Uncovered Parking. All parking required for the accessory dwelling unit may be uncovered.
+
+     (3)    Front or Side Yard Parking. Up to three (3) parking spaces may be provided in the front or
+            side yard setbacks. Not more than six hundred (600) square feet of the front yard area shall
+            be used for parking.
+
+                                    Title 8 – Zoning & Development Code
+
+             (4)     Tandem Parking. Required parking spaces for the primary residence and the accessory
+                     dwelling unit may be provided in tandem on a driveway. A tandem parking arrangement
+                     consists of one (1) car behind the other. No more than three (3) total cars in tandem may
+                     be counted toward meeting the parking requirement.
+
+             (5)     Compact Spaces. All parking required for the accessory dwelling unit may be provided by
+                     compact parking spaces, as defined in Section 8.344.020(a).
+
+15.   Requests for Parking Exceptions. If the required parking for an accessory dwelling unit cannot be met in
+      accordance with this Chapter, an application may be submitted for a parking exception, as specified in
+      Section 8.344.040. For parking provided in accordance with the provisions of this Chapter, a parking
+      exception shall not be required.
+
+16.   Design Review. Accessory dwelling units shall not be subject to design review. Compatibility with
+      applicable design standards for such units shall be determined by staff, at the discretion of the Director of
+      Planning and Building.
+
+17.   Architectural Review. Accessory dwelling units located in scenic corridors are not subject to architectural
+      review.
+
+18.   Concurrent Application for Development of Primary Residence and Accessory Dwelling Unit. In the case of
+      a concurrent application for development of a new primary residence and new accessory dwelling unit on
+      the same parcel, whichever unit is first issued a certificate of occupancy must conform to all applicable
+      regulations for the primary residence in the relevant district.
+
+19.   Conversion of Existing Residence. An existing residence may be converted to an accessory dwelling unit in
+      conjunction with development of a new primary residence, if the existing residence, once converted, will
+      meet all the standards applicable to development of a new accessory dwelling unit described in this
+      Chapter.
+
+20.   Conversion of Accessory Buildings. An accessory dwelling unit may be constructed within, above, or below
+      an existing, detached accessory building, provided the resulting unit conforms to all applicable provisions
+      of this Chapter.
+
+       Accessory dwelling units constructed within, above, or below an existing, detached accessory building
+       that conforms to all applicable provisions of this Chapter shall not be required to obtain a use permit,
+       regardless of the requirements of the applicable district.
+
+       Accessory dwelling units built within, above, or below existing, or new garages are subject to the specific
+       provisions of this Chapter regarding such units, regardless of any regulations to the contrary elsewhere in
+       the Zoning Regulations.
+
+21.   Creation of Accessory Dwelling Unit Entirely Within a Non-Conforming Primary Residence.
+      In the case of an existing primary residence that does not conform to one (1) or more provisions of the
+      zoning regulations, creation of an accessory dwelling unit that will be entirely within the existing primary
+      residence shall not, in itself, create a requirement that the nonconformities be rectified. No correction of
+      existing nonconformities shall be required, unless they pose a threat to public health and safety.
+
+                                      Title 8 – Zoning & Development Code
+
+22.    Short Term Rental. Accessory dwelling units created pursuant to the provisions of this Chapter, if rented,
+       shall only be rented for a term longer than thirty (30) days.
+
+23.    Impact Fees. Accessory dwelling units of less than seven hundred fifty (750) square feet in size shall be
+       exempt from all impact fees. Accessory dwelling units of greater than seven hundred fifty (750) square
+       feet in size shall only be charged impact fees in an amount equal to the standard impact fee for such a unit,
+       multiplied by the proportion of the square footage of the accessory dwelling unit to the square footage of
+       the primary dwelling unit.
+
+8.392.060 - Standards For Detached Accessory Dwelling Units.
+Detached accessory dwelling units shall be subject to the requirements described in Section 8.392.050, and to the
+following requirements:
+
+1.     Distance Between Detached Accessory Dwelling Units and Other Residential Structures. The distance
+       required between a detached accessory dwelling unit and any other residential structure on the same
+       parcel must be a minimum of five (5) feet, measured from foundation to foundation. If a separation
+       distance greater than five (5) feet is required by any other section of the Zoning Regulations, it shall be
+       disregarded, and the standards of this Chapter shall govern.
+
+2.     Floor Area of Detached Accessory Dwelling Units. Notwithstanding any floor area standards applicable to
+       accessory dwelling units in the applicable district, the following floor area standards shall apply:
+
+       a.      The floor area of a detached accessory dwelling unit shall not exceed eight hundred (800) square
+               feet or thirty-five percent (35%) of the livable floor area of the existing or proposed primary
+               residence, whichever is larger, up to a maximum of one thousand five hundred (1,500) square feet.
+               The floor area of the primary residence shall be calculated in the manner described in the relevant
+               base or overlay district Zoning Regulations.
+
+       b.      The floor area of a detached accessory dwelling unit shall count against the total floor area allowed
+               on a parcel, such that the total floor area of the accessory dwelling unit in combination with the
+               square footage of the primary residence and other structures on or proposed to be on the parcel
+               shall not exceed the maximum floor area allowed within the zoning district, with the following
+               exception:
+
+               (1)    Regardless of floor area limitations, a single eight hundred (800) square foot detached
+                      accessory dwelling unit shall be allowed on a parcel, so long as that accessory dwelling unit
+                      can meet the setback and stepback requirements described in Section 8.392.050.
+
+3.     Detached Accessory Dwelling Units and Junior Accessory Dwelling Units. One (1) detached accessory
+       dwelling unit may be built in combination with one (1) junior accessory dwelling unit on the same parcel, as
+       long as both units comply with all relevant provisions of this Chapter. A detached accessory dwelling unit
+       may not be built in combination with an attached accessory dwelling unit on the same parcel.
+
+                                      Title 8 – Zoning & Development Code
+
+8.392.070 -Standards For Attached Accessory Dwelling Units.
+Attached accessory dwelling units shall be subject to the requirements described in section 8.392.050, and to the
+following requirements:
+
+1.     Floor Area of Attached Accessory Dwelling Units. Notwithstanding any floor area standards applicable to
+       accessory dwelling units in the applicable district, the following floor area standards shall apply:
+
+       a.      The floor area of an attached accessory dwelling unit shall not exceed eight hundred (800) square
+               feet or fifty percent (50%) of the livable floor area of the existing or proposed primary residence,
+               whichever is larger, up to a maximum of one thousand five hundred (1,500) square feet. The floor
+               area of the primary residence shall be calculated in the manner described in the relevant base or
+               overlay district Zoning Regulations.
+
+       b.      The floor area of an attached accessory dwelling unit shall count against the total floor area allowed
+               on a parcel, such that the total floor area of the accessory dwelling unit in combination with the
+               square footage of the primary residence and other structures on or proposed to be on the parcel
+               shall not exceed the maximum floor area allowed within the zoning district, with the following
+               exception:
+
+               (1)    Regardless of floor area limitations, a single eight hundred (800) square foot attached
+                      accessory dwelling unit shall be allowed on a parcel, so long as that accessory dwelling unit
+                      can meet the setback and stepback requirements in Section 8.392.050.
+
+               (2)    For attached accessory dwelling units built entirely within the walls of an existing or
+                      proposed primary residence, an additional one-hundred fifty (150) square feet of floor area
+                      is allowed regardless of other floor area limitation, solely for the purpose of providing
+                      ingress/egress, and not for expanded living space. Such space for ingress and egress
+                      typically includes, but is not limited to, stairs, porches, foyers, and other similar areas.
+
+2.     Ingress and Egress for Attached Accessory Dwelling Units. With the exception of junior accessory dwelling
+       units, attached accessory dwelling units shall only be allowed a connecting doorway or other permanent
+       ingress or egress between the primary residence and the accessory dwelling unit with the approval of the
+       Director of Planning and Building, at the Director's discretion. In all cases, such doorways must be
+       independently securable from within the accessory dwelling unit and from within the primary residence.
+
+       For accessory dwelling units attached to the primary residence, any new entrances and exits may face the
+       front of the parcel only if they are 1) located so as not to be visible from the front of the parcel, 2) unless
+       otherwise, required by clearance and or landing requirements, or 3) permitted by the Director of Planning
+       and Building, at the Director’s discretion.
+
+3.     Attached Accessory Dwelling Units and Junior Accessory Dwelling Units. One (1) attached accessory
+       dwelling unit may be built in combination with one (1) junior accessory dwelling unit built on the same
+       parcel, as long as both units comply with all relevant provisions of this Chapter. A detached accessory
+       dwelling unit cannot be built on the same parcel as an attached accessory dwelling unit.
+
+                                     Title 8 – Zoning & Development Code
+
+8.392.080 - Standards For Junior Accessory Dwelling Units.
+Junior accessory dwelling units shall be subject to the requirements described in 8.392.050, with the following
+exceptions:
+
+1.     Location. Junior accessory dwelling units must be constructed entirely within the walls of an existing or
+       proposed primary single-family residence, including within the walls of a garage attached to the primary
+       residence, except that an additional one hundred fifty (150) square feet may be built solely for the purpose
+       of providing ingress and egress for the junior accessory dwelling unit.
+
+2.     Floor area. The floor area of a junior accessory dwelling unit may be no greater than five hundred (500)
+       square feet under any circumstance, except that an additional one hundred fifty (150) square feet may be
+       created outside of the primary residence, solely for the purpose of providing ingress and egress for the
+       junior accessory dwelling unit.
+
+3.     Required Facilities. Junior accessory dwelling units must have a sleeping area, sink, and efficiency kitchen
+       as defined in Government Code Section 65852.22. Junior accessory dwelling units may share a bathroom
+       with the primary residence.
+
+4.     Internal Ingress and Egress. Junior accessory dwelling units must have external ingress and egress, as
+       described in Section 8.392.050.12. However, junior accessory dwelling units may have an internally
+       connecting doorways between the junior accessory dwelling unit and the primary residence. The internally
+       connecting doorway must be independently securable from both the junior accessory dwelling units and
+       the primary residence. An internal connecting doorway between the junior accessory dwelling unit and the
+       primary residence is required if the junior accessory dwelling unit does not include a separate bathroom.
+
+5.     Owner Occupancy. The owner(s) of the parcel on which a junior accessory dwelling unit is proposed shall
+       be required to occupy one (1) of the units on the parcel. The owner(s) shall be required to record a deed
+       restriction enforcing this requirement, which shall run with the land, and which shall be provided to the
+       Planning and Building Department. The deed restriction shall also include a prohibition on the sale of the
+       junior accessory dwelling unit separate from the sale of the single-family residence, including a statement
+       that the deed restriction may be enforced against future purchasers.
+
+6.     Parking. No additional parking shall be required for the creatin of a junior accessory dwelling unit.
+
+8.392.090 - Standards For Multiple Accessory Dwelling Units On Properties With Existing or
+         Proposed Multifamily Structures.
+On parcels with existing or proposed multi-family structures, including multi-family structures with two (2) or more
+units, multiple accessory dwelling units shall be allowed, subject to the requirements described in Section
+8.392.050, and to the following requirements:
+
+1.     Accessory Dwelling Units within Multi-family Structures:
+
+       a.      Multiple accessory dwelling units may be created within the portions of existing or proposed multi-
+               family dwelling structures that are not used as livable space, including, but not limited to, storage
+
+                                    Title 8 – Zoning & Development Code
+
+             rooms, boiler rooms, passageways, attics, basements, or garages, if each unit complies with State
+             building standards for dwellings.
+
+      b.     A minimum of one (1) accessory dwelling unit shall be allowed within an existing or proposed multi-
+             family dwelling, and a maximum number of accessory dwelling units not exceeding twenty-five
+             percent (25%) of the existing or proposed multi-family dwelling units on the parcel, if those
+             accessory dwelling units meet all required standards of this Chapter.
+
+2.    Detached Accessory Dwelling Units on Parcels with Multi-family Structures. Up to two (2) detached
+      accessory dwelling units shall be allowed on a parcel that has an existing or proposed multi-family dwelling,
+      subject to the provisions of this Chapter.
+
+8.392.100 - Development Standards For Unpermitted Accessory Dwelling Units.
+
+1.    Building permits may be issued for existing accessory dwelling units which were constructed without
+      required permits, under the following conditions:
+
+      a.     The accessory dwelling unit conforms to all applicable provisions of this Chapter, and all other
+             applicable required standards for habitability.
+
+      b.     All applicable fees for construction completed without permits have been paid.
+
+      Accessory dwelling units constructed without permits that do not meet the provisions of this Section may
+      apply for a conditional use permit, as described in Section 8.392.110.
+
+8.392.110 - Requirements For Conditionally Permitted Accessory Dwelling Units.
+
+1.    Accessory dwelling units not meeting all applicable standards of this Chapter, and which do not meet
+      requirements of Section 8.392.120, Home Improvement Exceptions, may be conditionally permitted,
+      subject to a conditional use permit.
+
+2.    With the exception of accessory dwelling units described in 8.392.110(3), below, the process for
+      application for and issuance of a conditional use permit for an accessory dwelling unit shall be that set
+      forth in Section 8.28.030 of the County Zoning Regulations, except that the granting of the permit shall be
+      at the determination of the Zoning Hearing Officer. The determination of the Zoning Hearing Officer shall
+      be appealable to the County Planning Commission only, subject to the procedures specified in Chapters
+      8.280 and Chapter 8.448 of the Zoning Regulations.
+
+3.    In the event that the creation or legalization of an accessory dwelling unit creates conflicts with standards
+      specific to the base or overlay zoning of the parcel, or other standards for which specific exceptions are not
+      provided in this Chapter, those conflicts must be addressed by whatever relief, if any, and through
+      whatever procedures, are normally required by the regulations in which those standards are contained.
+
+                                     Title 8 – Zoning & Development Code
+
+4.     In the case of accessory dwelling units meeting all applicable standards of this Chapter except those related
+       to parking requirements, a parking exception may be requested as provided in Section 8.392.05(14)(f), and
+       a conditional use permit shall not be required.
+
+8.392.120 - Home Improvement Exceptions.
+For accessory dwelling units that may be allowed contingent on approval of a Home Improvement Exception (HIE),
+as described in Section 8.320.020, accessory dwelling units are exempt from the following requirements of Section
+8.320.020:
+
+1.     The improvement may not result in the creation of a new story. Accessory dwelling units permitted
+       contingent on an HIE may result in creation of a new story.
+
+2.     At least seventy-five percent (75%) of the existing exterior walls (in linear feet) will remain. Accessory
+       dwelling units may be permitted contingent on an HIE regardless of the percent of linear feet of existing
+       walls remaining.
+
+3.     At least fifty percent (50%) of the existing roof (in square feet) will remain. Accessory dwelling units may
+       be permitted contingent on an HIE regardless of the percent of existing roof remaining.
+
+4.     The addition will be located at least three (3) feet from a property line. In the case of accessory dwelling
+       units located within an existing structure, as described in subsection 8.392.050(4), accessory dwelling units
+       may be permitted contingent on an HIE regardless of setbacks.
+
+5.     The existing structure is located in an area with an average slope of less than twenty (20) percent.
+       Accessory dwelling units may be permitted contingent on an HIE regardless of the average slope.
+
+       The aforementioned units are also exempt from the required HIE findings of Section 8.320.060(1) and (2).
+
+These exceptions to HIE standards are applicable only to the accessory dwelling unit, not to the primary residence
+or any other development on the subject parcel.
+
+Home Improvement Exceptions may not be used to allow an accessory dwelling unit of greater floor area than that
+allowed by Section 8.392.050(5), or a junior accessory dwelling unit of greater floor area than allowed by Section
+8.392.080(2)
+
+                                      Title 8 – Zoning & Development Code
+
+8.392.130 - Decisions.
+Applications for accessory dwelling units, except for those requiring a conditional use permit as specified in Section
+8.392.110, shall be approved or denied ministerially, on the basis of the objective criteria included in this Chapter
+and other applicable regulations. Consideration of other permits associated with development of the proposed
+accessory dwelling unit only, that might otherwise be discretionary, including but not limited to Tree Removal,
+Resource Management, and Grading Permits, and Off-Street Parking Exceptions shall also be ministerial, except as
+provided in Section 8.392.110. No public notice or public hearing shall be required for review and approval or
+denial of an accessory dwelling unit, unless an applicant requests exceptions to the standards set forth in this
+Chapter.
+
+8.392.140 - Appeals.
+Decisions to approve or deny an application for an accessory dwelling unit that meets all relevant standards set
+forth in this Chapter shall not be subject to appeal.
+
+8.392.150 - Applicability In San Mateo County Coastal Zone And Coastal Development
+         District.
+These regulations shall only be applicable in areas outside San Mateo County’s Coastal Zone.
+
+8.392.160 - Applicability Of County Regulations.
+With the exception of specific standards and exemptions described in this Chapter, all accessory dwelling units
+must comply with all applicable provisions in the San Mateo County Ordinance Code, including the Zoning
+Regulations (Title 8 et seq.) and the Building Code (Title 10 et seq.).
+
+(Chapter 22.5 - Added by Ordinance No. 2876 - January 24, 1984)
+
+(Sections 6425 - 6434 repealed and replaced in their entirety by Ordinance No. 04768 - January 10, 2017)
+
+(Sections 6425 - 6436 repealed and replaced in their entirety by Ordinance No. 4811 - March 26, 2019)
+
+(Sections 6425 - 6437 repealed and replaced in their entirety by Ordinance No. 4834 - September 15, 2020)
+
+(Sections 6425 – 6437 repealed and replaced in their entirety by Ordinance No. 4889 – May 21, 2024)
+
+CHAPTER 8.396 - ACCESSORY DWELLING UNITS, COASTAL ZONE
+
+                                     Title 8 – Zoning & Development Code
+
+8.396.010 – Purpose
+Accessory dwelling units are a residential use that provide an important source of housing. The purpose of this
+Chapter is to:
+
+1.      Increase the supply and diversity of the County’s housing stock, in particular the number of smaller and
+        more affordable units, by allowing accessory dwelling units to be built on existing residential properties,
+        while preserving the neighborhood character.
+
+2.      Increase the housing stock of existing neighborhoods in a manner that has less impact on the
+        environment than development of housing in undeveloped areas.
+
+3.      Allow more efficient use of existing residential areas and supporting   infrastructure.
+
+4.      Provide a means for residents to remain in their homes and neighborhoods.
+
+5.       Provide opportunities for homeowners to earn supplemental income from renting             an accessory
+dwelling unit.
+
+6.      Establish standards for accessory dwelling units in the County’s Coastal Zone to ensure that they are safe,
+        habitable, compatible with existing development, and consistent with the policies of the County’s Local
+        Coastal Program and the California Coastal Act.
+
+8.396.020 - Definitions.
+
+1.      Primary Residence. A “primary residence” is the main residence located or proposed to be located on the
+        parcel on which an accessory dwelling unit(s) is located or proposed to be located.
+
+2.      Accessory Dwelling Unit. An “accessory dwelling unit” is a dwelling unit located or proposed to be located
+        on a lot which contains, or will contain, a primary residence. Accessory dwelling units may be detached
+        from or attached to the primary residence on the property. Accessory dwelling units may also be (1)
+        efficiency units, as defined in Section 17958.1 of the California Health and Safety Code, or (2)
+        manufactured homes, as defined in Section 18007 of the California Health and Safety Code. Accessory
+        dwelling units are “accessory dwelling units” as that term is used in Government Code Section 65852.2.
+        An accessory dwelling unit includes an efficiency unit as defined in Section 17958.1 of the Health and
+        Safety Code or a manufactured home as defined in Section 18007 of the Health and Safety code. A
+        “second unit” or “secondary unit” is an accessory dwelling unit. Accessory dwelling units are not
+        “accessory buildings” as defined in Section 6102.19. Any secondary structure that provides independent
+        facilities for living; sleeping; eating; cooking; and sanitation, may be considered an accessory dwelling
+
+                                      Title 8 – Zoning & Development Code
+
+         unit, at the discretion of the Director of Planning and Building, unless an applicant can provide compelling
+         evidence to the contrary to the satisfaction of the Director of Planning and Building.
+
+3.       Detached Accessory Dwelling Unit. A “detached accessory dwelling unit” is a unit that is an independent
+         structure, entirely separated from the structure of the primary residence. Accessory dwelling unit
+         constructed within, or as an extension of an existing detached structure other than the primary residence
+         are considered detached accessory dwelling units.
+
+4.       Attached Accessory Dwelling Unit. An “attached accessory dwelling unit” is a unit that is built as an
+         addition to, extension of, or within the primary residence.
+
+5.       Junior Accessory Dwelling Unit. A “junior accessory dwelling unit” is an accessory dwelling unit built
+         entirely within the walls of an existing or proposed primary residence, not exceeding five hundred sq. ft.
+         in size, and including an efficiency kitchen, as described in Government Code Section 65852.22. A junior
+         accessory dwelling unit may include separate sanitation facilities or may share sanitation facilities with the
+         existing structure or unit.
+
+6.       Efficiency Kitchen. An efficiency kitchen, as defined in Government Code Section 65852.22, is a kitchen
+         that contains at least a cooking facility with appliances, and a food preparation counter and storage
+         cabinets that are of reasonable size in relation to the size of the junior accessory dwelling unit.
+
+7.       Floor Area. For purposes of this Chapter, the “floor area” of an accessory dwelling unit is the area of each
+         floor level included within the walls enclosing each dwelling unit. The floor area shall be measured from
+         the outside face of the walls enclosing each dwelling unit including all closet space and storage areas
+         contained within the unit, including habitable basements and attics, but not including unenclosed
+         porches, balconies, or any enclosed garages or carports. For purposes of calculating allowable floor area
+         of accessory dwelling units based on a proportion of the size of the primary residence, only the livable
+         floor area of the primary residence shall be counted. The floor area of any other structures, for purposes
+         of calculating total floor area, lot coverage, or other calculations, shall be calculated in the manner
+         described in the relevant zoning regulations.
+
+8.       Owner Occupancy. Owner occupancy is the condition and requirement that the owner of a parcel on
+         which a junior accessory dwelling unit is constructed live in one of the units on the property in perpetuity.
+
+9.       Stepback. A setback above the ground floor, where the building is “stepped back” an additional distance
+         from the outermost point of the building at the ground level.
+
+8.396.030 - Locations Permitted.
+Accessory dwelling units shall be allowed in the R-1, R-2, and R-3 Zoning Districts in the County’s Coastal Zone,
+regardless of any regulations that might otherwise prohibit accessory dwelling units in any specific district.
+
+                                      Title 8 – Zoning & Development Code
+
+8.396.040 – Approval.
+Accessory dwelling units meeting all of the applicable requirements of Sections 8.396.050 through 8.396.090, as
+applicable, shall be approved ministerially, without public notice, public hearing, or discretionary review, in the
+manner and to the extent described in Section 6439.17.
+
+Accessory dwelling units not meeting the applicable standards set forth in Sections 8.396.050 through 8.396.090 will
+be considered a conditionally permitted use within the districts specified in Section 8.396.030 and may be
+permitted by a conditional use permit pursuant to a public hearing before the Zoning Hearing Officer, as described
+in Section 8.396.110 Conditionally permitted units may also still be subject to other permitting requirements and
+approvals pertaining to the County’s Coastal Zone, as described in Section 8.396.180.
+
+8.396.050 - Development Standards For All Accessory Dwelling Units
+New accessory dwelling units shall be subject to the requirements and standards described in this chapter. Where
+not superseded by the specific requirements described in this chapter, accessory dwelling units shall also be
+subject to the requirements applicable to any dwelling unit on the same parcel in the same district. Development
+standards applicable to all accessory dwelling units include the following:
+
+1.       Minimum Lot Area. Accessory dwelling units shall be exempt from the minimum lot area per dwelling
+         unit provisions in the applicable district.
+
+2.       Minimum Lot Size. Accessory dwelling units shall be exempt from all minimum lot size requirements.
+
+3.       Maximum Density of Development. Accessory dwelling units shall be exempt from any and all provisions
+         limiting the maximum density of development in the applicable district.
+
+4.       Setbacks. Notwithstanding the required setbacks in the applicable district, minimum setbacks for
+         accessory dwelling units shall be:
+
+                a. Front Setbacks. With the exception of accessory dwelling units created entirely within the space
+                of an existing structure, for all other accessory dwelling units regardless of height, the accessory
+                dwelling unit may be located no closer to the front property line of the subject parcel than the
+                lesser of:
+
+                  (1)      The front setback required by the relevant zoning district, or
+
+                                  Title 8 – Zoning & Development Code
+
+                       (2)     The distance from the front property line of the primary residence located or
+                  proposed to be located on that parcel. For purposes of this section, the primary residence
+                  includes attached garages.
+
+           In cases where an existing primary residence is closer to the front property line than the front
+           setback normally required in the same district, the accessory dwelling unit shall also be allowed to
+           be located as close to the front property line as the primary residence.
+
+           In cases where an accessory dwelling unit is proposed to be built atop an existing detached garage
+           that is located within the required front setback, a conditional use permit shall be required.
+
+           b. Side and Rear Setbacks. For accessory dwelling units created entirely within the space of an
+           existing structure, setbacks shall be those already existing for that structure, unless such setbacks
+           present demonstrable safety issues.
+
+           For all other accessory dwelling units regardless of height, the accessory dwelling unit may be
+           located no closer to the property line than: Side: 4 feet; Rear: 4 feet.
+
+           c. Stepbacks. Accessory dwelling units, whether attached or detached, exceeding 16 feet in height
+           shall have the following stepbacks, located at a point no higher than 16 feet on the structure: Side:
+           5 feet; Rear: 10 feet.
+
+5.   Floor Area. The allowable floor area of an accessory dwelling unit shall be calculated in the manner
+     described in Sections 8.396.050 through 8.396.090, but in no case shall these regulations be applied in
+     such a way as to preclude an attached or detached accessory dwelling unit of at least 800 sq. ft. in size
+     that meets all other relevant standards.
+
+6.   Lot Coverage. Accessory dwelling units shall count against the allowed lot coverage on a parcel, except
+     that no lot coverage restriction shall preclude creation of an attached or detached accessory dwelling unit
+     of at least 800 sq. ft. in size that meets all other relevant standards.
+
+7.   Height. The maximum height of the accessory dwelling unit shall be twenty-six feet. Building height shall
+     be measured as the vertical distance from any point on the lower of (a) finished grade, or (b) natural
+     grade, to the topmost point of the building immediately above. Chimneys, pipes, mechanical equipment,
+     antennae, and other similar structures may extend up to eight feet beyond the building height, as
+     required for safety or efficient operation. Accessory dwelling units built entirely within an existing
+     building shall be subject to the greater of the height limit applicable to that building in the relevant
+     district, or the maximum height of the existing primary residence, measured in the manner described in
+     the Zoning Regulations of the relevant district.
+
+                                   Title 8 – Zoning & Development Code
+
+8.    Daylight Plane. Neither accessory dwelling units built above an existing detached or attached garage or
+      accessory structure, nor detached accessory dwelling units taller than sixteen (16) feet in height, shall be
+      subject to daylight plane requirements.
+
+9.    Balconies and Decks. Accessory dwelling units that do not meet the setback requirements that would
+      apply to a primary residence in the same district shall have no rooftop decks, and no portion of any
+      balcony or deck shall be located above ten (10) feet in height, exclusive of railings, measured in the same
+      manner as height in Section 6439.7, except on the side of the accessory dwelling unit facing the primary
+      residence. Accessory dwelling units that meet the setback requirements that would apply to a primary
+      residence in the same district may have rooftop decks and balconies to the extent otherwise allowed in
+      the relevant district.
+
+10.   Windows. Accessory dwelling units that do not meet the setback requirements that would apply to a
+      primary residence in the same district shall have no windows located above or extending above ten (10)
+      feet on the accessory dwelling unit, measured from finished grade, except on: (1) the side(s) of the
+      accessory dwelling unit facing the primary residence, and (2) the side(s) of the accessory dwelling unit
+      that comply with the normal setback requirements of the district. On the sides of the accessory dwelling
+      unit that do not meet the normal setback requirements of the district, clerestory windows located above
+      ten (10) feet on the accessory dwelling unit shall be allowed, if they have a lower sill height of no less than
+      six feet from the nearest interior floor of the accessory dwelling unit, and a total window height no
+      greater than twenty-four (24) inches. Skylights shall be allowed.
+
+11.   Ingress and Egress. Accessory dwelling units shall have an independently accessible entrance that does
+      not require passage through the primary residence.
+
+12.   Required Facilities. With the exception of junior accessory dwelling units, which are subject to the
+      requirements described in Section 6439.8, all attached or detached accessory dwelling units must include
+      the following:
+
+      a.       Independent facilities for living, sleeping, eating, cooking, and sanitation.
+
+             b. A kitchen area containing a refrigerator, sink, and permanently installed cooking appliance, which
+             must include at least a fixed stovetop.
+
+      c.       A fully plumbed bathroom including sink, shower, and toilet.
+
+13.   Parking Requirements
+
+             a. Required Parking. Parking for accessory dwellings units shall be provided as follows:
+
+                           Title 8 – Zoning & Development Code
+
+     (1)   Outside of the designated areas shown in LCP Maps 3.1, “ADU Parking Area – Montara and
+           Moss Beach,” and 3.2, “ADU Parking Area – El Grenada and Pillar Point Harbor,” one new
+           covered or uncovered parking space, in addition to those already existing on the parcel, shall
+           be provided on-site for each new attached or detached accessory dwelling unit, unless the
+           accessory dwelling unit meets the parking exemption criteria of subsection b. below. When
+           a garage, carport, or covered parking structure is demolished in conjunction with the
+           construction of an accessory dwelling unit or converted to an accessory dwelling unit outside
+           of such designated areas, those off-street parking spaces are not required to be replaced.
+
+     (2)   Within the designated areas shown in LCP Maps 3.1 and 3.2, at least one off-street parking
+           space shall be required for each accessory dwelling unit, and all off-street parking
+           requirements associated with other residential uses at the site shall be met onsite, including
+           replacement parking spaces if any are removed or converted to accommodate an accessory
+           dwelling unit.
+
+b.   Parking Exemptions. Accessory dwelling units located outside of the designated areas shown in
+     LCP Maps 3.1 and 3.2 and meeting any of the following criteria shall not be required to provide any
+     parking in addition to that already provided on the parcel, or in the case of a concurrent application
+     for a new primary and accessory dwelling unit, shall not be required to provide any parking in
+     addition to the parking required for the primary residence:
+
+     (1)   Accessory dwelling units located within one-half (1/2) mile of a public transit stop or station,
+           measured as a direct line from the transit stop. Public transit stops must be served by a
+           transit line serving the public, and not solely by specialized, private, or limited population
+           services such as school buses, privately run shuttles, or other services that cannot be used by
+           all public riders.
+
+     (2)   Accessory dwelling units located within a designated architecturally and historically
+           significant historic district.
+
+     (3)   Accessory dwelling units that are part of the existing primary residence or an existing
+           accessory structure, including attached or detached garages.
+
+     (4)   Accessory dwelling units located within one (1) block of a car share vehicle pick-up/drop-off
+           location.
+
+c.   Conversion of Covered Parking. Any covered parking removed in order to create an accessory
+     dwelling unit, if required to be replaced, may be replaced with uncovered parking of any type and
+     configuration allowed by Section 8.396.050(13)(f), below. For purposes of this Section, conversion
+     includes partial or full demolition of covered parking required to create an accessory dwelling unit.
+
+d.   Garage conversion. If an existing attached or detached garage is converted to an accessory
+     dwelling unit, the parking previously provided by that garage may be replaced by uncovered
+
+                                  Title 8 – Zoning & Development Code
+
+            parking of any type and configuration allowed by Section 8.396.050(13)(f), below, and no additional
+            parking related to the accessory dwelling unit is required. For purposes of this Section, conversion
+            includes partial or full demolition of the garage and partial or full replacement with an accessory
+            dwelling unit.
+
+            e. Use of Existing Parking. If the parking already existing on the parcel exceeds that required for
+            existing development on the parcel, excess parking spaces shall be counted toward the new
+            parking required for the accessory dwelling unit.
+
+      f.    Provision and Location of Parking. Parking spaces shall be provided in the following manner:
+
+                   (1) Pervious Surfaces. All new parking spaces created for the accessory dwelling unit must
+                   be provided on pervious surfaces. The maximum amount of impervious surfaces designated
+                   to satisfy the accessory dwelling unit parking requirement shall be no greater than the
+                   amount of impervious surfaces existing at time of application. Existing impervious surface
+                   area may be used for parking and need not be converted to pervious surface.
+
+                   (2) Uncovered Parking. All parking required for the accessory dwelling unit may be
+                   uncovered.
+
+                   (3) Front or Side Yard Parking. Up to three parking spaces may be provided in the front or
+                   side yard. Not more than 600 sq. ft. of the front yard area shall be used for parking.
+
+                   (4) Tandem Parking. Required parking spaces for the primary residence and the accessory
+                   dwelling unit may be provided in tandem on a driveway. A tandem parking arrangement
+                   consists of one car behind the other. No more than three total cars in tandem may be
+                   counted toward meeting the parking requirement.
+
+                   (5) Compact Spaces. All parking required for the accessory dwelling unit may be provided
+                   by compact parking spaces, as defined in Section 8.344.010(a).
+
+14.   Requests for Parking Exceptions. If the required parking for an accessory dwelling unit outside the
+      designated areas shown in LCP Maps 3.1 and 3.2 cannot be met in accordance with this Chapter, an
+      application may be submitted for a parking exception, as specified in Section 8.344.040. For parking
+      provided in accordance with the provisions of this Chapter, a parking exception shall not be required.
+
+15.   Design Review. Accessory dwelling units shall not be subject to design review, except to the extent that
+      they are located in the County’s Coastal Zone. Accessory dwelling units in the County’s Coastal Zone are
+      subject to relevant design review requirements incorporated in the County’s Local Coastal Program and
+      Zoning Regulations, however, such units shall not be reviewed by a Design Review Committee, nor shall
+      their design be subject to consideration at any public hearing. Compatibility with applicable design
+
+                                    Title 8 – Zoning & Development Code
+
+      standards for such units shall be determined by the Director of Planning and Building or the Director’s
+      designee.
+
+16.   Architectural Review. Accessory dwelling units located in scenic corridors in the County’s Coastal Zone
+      shall be subject to architectural review as normally required.
+
+17.   Concurrent Application for Development of Primary Residence and Accessory Dwelling Unit. In the case
+      of a concurrent application for development of a new primary residence and new accessory dwelling unit
+      on the same parcel, whichever unit is first issued a certificate of occupancy must conform to all applicable
+      regulations for the primary residence in the relevant district.
+
+18.   Conversion of Existing Residence. An existing residence may be converted to an accessory dwelling unit in
+      conjunction with development of a new primary residence, if the existing residence, once converted, will
+      meet all the standards applicable to development of a new accessory dwelling unit described in this
+      Chapter.
+
+19.   Conversion of Accessory Buildings. An accessory dwelling unit may be constructed within or above an
+      existing, detached accessory building, provided the resulting unit conforms to all applicable provisions of
+      this Chapter.
+
+      Accessory dwelling units constructed within or above an existing, detached accessory building that
+      conforms to all applicable provisions of this Chapter shall not be required to obtain a use permit,
+      regardless of the requirements of the applicable district.
+
+      Accessory dwelling units built within or above existing garages are subject to the specific provisions of this
+      Chapter regarding such units, regardless of any regulations to the contrary in the Zoning Regulations.
+
+20.   Creation of Accessory Dwelling Unit Entirely Within a Non-Conforming Primary Residence. In the case of
+      an existing primary residence that does not conform to one or more zoning regulations, creation of an
+      accessory dwelling unit that will be entirely within the existing primary residence shall not, in itself, create
+      a requirement that the nonconformities be rectified. However, no other provisions that may require
+      rectification of existing nonconformities are waived merely due to approval of an accessory dwelling unit,
+      unless specifically described in this Chapter.
+
+21.   Short Term Rental. Accessory dwelling units created pursuant to the provisions of this Chapter, if rented,
+      shall only be rented for a term longer than 30 days.
+
+22.   Impact Fees. Accessory dwelling units of less than 750 sq. ft. in size shall be exempt from all impact fees.
+      Accessory dwelling units of greater than 750 sq. ft. in size shall only be charged impact fees in an amount
+      equal to the standard impact fee for such a unit, multiplied by the proportion of the accessory dwelling
+      unit to the primary dwelling unit.
+
+                                     Title 8 – Zoning & Development Code
+
+8.396.060 - Standards For Detached Accessory Dwelling Units.
+New detached accessory dwelling units shall be subject to the requirements described in Section 6439.5, and to
+the following requirements:
+
+1.      Distance between Detached Accessory Dwelling Units and Other Residential Structures. The distance
+        required between a detached accessory dwelling unit and any other residential structure on the same
+        parcel must be a minimum of five (5) feet, measured from foundation to foundation. If a separation
+        distance greater than five (5) feet is required by any other section of the Zoning Regulations, it shall be
+        disregarded, and the standards of this Chapter shall govern.
+
+2.      Floor Area of Detached Accessory Dwelling Units. Notwithstanding any floor area standards applicable to
+        accessory dwelling units in the applicable district, the following floor area standards shall apply:
+
+               a. The floor area of a detached accessory dwelling unit shall not exceed eight hundred (800) sq. ft.
+               or thirty-five percent (35%) of the livable floor area of the existing or proposed primary residence,
+               whichever is larger, up to a maximum of one thousand five hundred (1,500) square feet. The floor
+               area of the primary residence shall be calculated in the manner described in the relevant base or
+               overlay district Zoning Regulations.
+
+               b. The floor area of a detached accessory dwelling unit shall count against the total floor area
+               allowed on a parcel, such that the total floor area of the accessory dwelling unit in combination
+               with the square footage of the primary residence and other structures on or proposed to be on the
+               parcel shall not exceed the maximum floor area allowed within the zoning district, with the
+               following exception:
+
+                     (1) Regardless of floor area limitations, a single eight hundred (800) square foot detached
+                     accessory dwelling unit shall be allowed on a parcel, so long as that accessory dwelling unit
+                     can meet the setback and stepback requirements described in Section 6439.5.4.
+
+3.      Detached Accessory Dwelling Units and Junior Accessory Dwelling Units. One detached accessory
+        dwelling unit may be built in combination with one junior accessory dwelling unit built on the same
+        parcel, as long as both units comply with all relevant provisions of this Chapter.
+
+8.396.070 - Standards For Attached Accessory Dwelling Units.
+New attached accessory dwelling units shall be subject to the requirements described in Section 6439.5, and to the
+following requirements:
+
+                                  Title 8 – Zoning & Development Code
+
+1.   Floor Area of Attached Accessory Dwelling Units. Notwithstanding any floor area standards applicable to
+     accessory dwelling units in the applicable district, the following floor area standards shall apply:
+
+           a. The floor area of an attached accessory dwelling unit shall not exceed eight hundred (800) sq. ft.
+           or fifty percent (50%) of the livable floor area of the existing or proposed primary residence,
+           whichever is larger, up to a maximum of one thousand five hundred (1,500) square feet. The floor
+           area of the primary residence shall be calculated in the manner described in the relevant base or
+           overlay district Zoning Regulations.
+
+           b. The floor area of an attached accessory dwelling unit shall count against the total floor area
+           allowed on a parcel, such that the total floor area of the accessory dwelling unit in combination
+           with the square footage of the primary residence and other structures on or proposed to be on the
+           parcel shall not exceed the maximum floor area allowed within the zoning district, with the
+           following exception:
+
+                  (1) Regardless of floor area limitations, a single eight hundred (800) square foot attached
+                  accessory dwelling unit shall be allowed on a parcel, so long as that accessory dwelling unit
+                  can meet the setback and stepback requirements in Section 8.396.050(4).
+
+                  (2) For attached accessory dwelling units built entirely within the walls of an existing or
+                  proposed primary residence, an additional one-hundred fifty (150) sq. ft. of floor area is
+                  allowed regardless of other floor area limitation, solely for the purpose of providing
+                  ingress/egress, and not for expanded living space. Such space for ingress and egress typically
+                  includes, but is not limited to, stairs, porches, foyers, and other similar areas.
+
+2.   Ingress and Egress for Attached Accessory Dwelling Units. With the exception of junior accessory dwelling
+     units, attached accessory dwelling units shall only be allowed a connecting doorway or other permanent
+     ingress or egress between the primary residence and the accessory dwelling unit with the approval of the
+     Director of Planning and Building, at the Director's discretion. In all cases, such doorways must be
+     independently securable from within the accessory dwelling unit and from within the primary residence.
+     Junior accessory dwelling units are permitted to have a connecting doorway or other permanent ingress
+     or egress between the primary residence and the junior accessory dwelling unit, but such doorway must
+     also be independently securable from within both the junior accessory dwelling unit and the primary
+     residence.
+
+     For accessory dwelling units attached to the primary residence, any new entrances and exits may face the
+     front of the parcel only if they are 1) located so as not to be visible from the front of the parcel, or 2)
+     unless otherwise, required by clearance and or landing requirements, or 3) unless permitted by the
+     Director of Planning and Building, at the Director’s discretion.
+
+3.   No Combining of Attached Accessory Dwelling Units and Other Accessory Dwelling Units.
+
+                                      Title 8 – Zoning & Development Code
+
+         An attached accessory dwelling unit that does not meet the definition of, and comply with all relevant
+         standards relating to, a junior accessory dwelling unit, may not be built in combination with any other
+         attached or detached accessory dwelling unit on the same parcel.
+
+8.396.080 - Standards For Junior Accessory Dwelling Units.
+New attached junior accessory dwelling units shall be subject to the requirements described in Section 8.396.050,
+with the following exceptions:
+
+1.       Location. Junior accessory dwelling units must be constructed entirely within the walls of an existing or
+         proposed primary single-family residence, except that an additional one hundred fifty (150) sq. ft. may be
+         built solely for the purpose of providing ingress and egress for the junior accessory dwelling unit.
+
+2.       Floor area. The floor area of a junior accessory dwelling unit may be no greater than five hundred (500)
+         sq. ft. under any circumstance, except that an additional one-hundred fifty (150) sq. ft. may be created
+         outside of the primary residence, solely for the purpose of providing ingress and egress for the junior
+         accessory dwelling unit.
+
+3.       Required Facilities. Junior accessory dwelling units must have a sleeping area, sink, and efficiency kitchen
+         as defined in Government Code Section 65852.22. JADUs may share a bathroom with the primary
+         residence.
+
+4.       Internal Ingress and Egress. Junior accessory dwelling units must have external ingress and egress, as
+         described in Subsection 8.396.050(11). However, junior accessory dwelling units may have internally
+         connecting doorways between the junior accessory dwelling unit and the primary residence. The
+         internally connecting doorway must be independently securable from both the junior accessory dwelling
+         units and the primary residence.
+
+5.       Owner Occupancy. The owner(s) of the parcel on which a junior accessory dwelling unit is proposed shall
+         be required to occupy one of the units on the parcel. The owner(s) shall be required to record a deed
+         restriction enforcing this requirement, which shall run with the land, and which shall be provided to the
+         Planning and Building Department. The deed restriction shall also include a prohibition on the sale of the
+         junior accessory dwelling unit separate from the sale of the single-family residence, including a statement
+         that the deed restriction may be enforced against future purchasers.
+
+8.396.090 - Standards For Multiple Accessory Dwelling Units On Properties With Existing
+         Multifamily Structures.
+On parcels with existing multi-family structures, including multi-family structures with two or more units, multiple
+accessory dwelling units shall be allowed, subject to the requirements described in Section 8.396.050 and to the
+following requirements:
+
+                                    Title 8 – Zoning & Development Code
+
+1.     Accessory Dwelling Units within Multifamily Structures:
+
+             a. Multiple accessory dwelling units may be created within the portions of existing multi-family
+             dwelling structures that are not used as livable space, including, but not limited to, storage rooms,
+             boiler rooms, passageways, attics, basements, or garages, if each unit complies with state building
+             standards for dwellings.
+
+             b. A minimum of one accessory dwelling unit shall be allowed within an existing multi-family
+             dwelling, and a maximum number of accessory dwelling units not exceeding twenty-five percent
+             (25%) of the existing multi-family dwelling units on the parcel, if those accessory dwelling units
+             meet all required standards of this Chapter.
+
+2.     Detached Accessory Dwelling Units on Parcels with Multifamily Structures. No more than two detached
+       accessory dwelling units shall be allowed on a parcel that has an existing multi-family dwelling, subject to
+       the provisions of this Chapter.
+
+8.396.100 - Development Standards For Existing Accessory Dwelling Units.
+
+1.     Building permits may be issued for existing accessory dwelling units which were constructed without
+       required permits, under the following conditions:
+
+             a. The accessory dwelling unit conforms to all applicable provisions of this Chapter, and all other
+             applicable required standards for habitability.
+
+             b. All applicable fees for construction completed without permits have been paid.
+
+       Accessory dwelling units constructed without permits that do not meet the provisions of this Section may
+       apply for a conditional use permit, as described in Section 8.396.110.
+
+8.396.110 - Requirements For Conditionally Permitted Accessory Dwelling Units.
+
+1.     Accessory dwelling units not meeting all applicable standards of this Chapter may be conditionally
+       permitted, subject to a conditional use permit.
+
+2.     With the exception of accessory dwelling units described in Section 8.396.110(4), below, the process for
+       application for and issuance of a conditional use permit for an accessory dwelling unit shall be that set
+       forth in Section 8.280.030 of the County Zoning Regulations, except that the granting of the permit shall
+
+                                     Title 8 – Zoning & Development Code
+
+        be at the determination of the Zoning Hearing Officer. The determination of the Zoning Hearing Officer
+        shall be appealable to the County Planning Commission only, subject to the procedures specified in
+        Chapter 8.280 and Chapter 8.448 of the Zoning Regulations.
+
+3.      In the case of accessory dwelling units within the Coastal Zone which are proposed in conjunction with
+        other development that is required to be reviewed by the Planning Commission, the conditional use
+        permit will be reviewed and granted by the Planning Commission only, and shall not be appealable. The
+        Planning Commission’s review may not consider issues related to design review.
+
+4.      Accessory dwelling units requiring a conditional use permit which are within the Coastal Development
+        (CD) District may require a Coastal Development Permit that may be appealable to the Coastal
+        Commission.
+
+5.      In the event that the creation or legalization of an accessory dwelling unit creates conflicts with standards
+        specific to the base or overlay zoning of the parcel, or other standards for which specific exceptions are
+        not provided in this Chapter, those conflicts must be addressed by whatever relief, if any, and through
+        whatever procedures, are normally required by the regulations in which those standards are contained.
+
+6.      In the case of accessory dwelling units meeting all applicable standards of this Chapter except those
+        related to parking requirements, a parking exception may be requested as provided in Section
+        8.396.050(14), and a conditional use permit shall not be required.
+
+8.396.120 - Home Improvement Exceptions.
+For accessory dwelling units that may be allowed contingent on approval of a Home Improvement Exception (HIE),
+as described in Section 8.320, accessory dwelling units are exempt from the requirements of Section 8.320 that:
+
+1.      The improvement may not result in the creation of a new story. Accessory dwelling units permitted
+        contingent on an HIE may result in creation of a new story.
+
+2.      At least 75 percent of the existing exterior walls (in linear feet) will remain. Accessory dwelling units may
+        be permitted contingent on an HIE regardless of the percent of linear feet of existing walls remaining.
+
+3.      At least 50 percent of the existing roof (in sq. ft.) will remain. Accessory dwelling units may be permitted
+        contingent on an HIE regardless of the percent of existing roof remaining.
+
+4.      The addition will be located at least three feet from a property line. In the case of accessory dwelling units
+        located within an existing structure, as described in 8.396.050(4), accessory dwelling units may be
+        permitted contingent on an HIE regardless of setbacks.
+
+                                      Title 8 – Zoning & Development Code
+
+5.       The existing structure is located in an area with an average slope of less than 20 percent. Accessory
+         dwelling units may be permitted contingent on an HIE regardless of the average slope.
+
+These exceptions to HIE standards are applicable only to the accessory dwelling unit, not to the primary residence
+or any other development on the subject parcel.
+
+Home Improvement Exceptions may not be used to allow an accessory dwelling unit of greater floor area than that
+allowed by Section 8.396.050(5).
+
+8.396.130 - Applicability In San Mateo County Coastal Zone And Coastal Development
+         District.
+These regulations shall only be applicable in areas inside San Mateo County’s Coastal Zone.
+
+8.396.140 – Applicability Of County Regulations.
+With the exception of specific standards and exemptions described in this Chapter, all accessory dwelling units
+must comply with all applicable provisions in the San Mateo County Ordinance Code, including the Zoning
+Regulations (Title 8 et seq.) and the Building Regulations (Title 10 et seq.).
+
+8.396.150 – Coastal Development District.
+In the Coastal Development (CD) District, all accessory dwelling units shall comply with all of the applicable
+regulations of the district, including but not limited to the Sensitive Habitats, Visual Resources, and Hazards
+policies of the Local Coastal Program. Nothing in this Chapter shall be construed to supersede or in any way alter
+or lessen the effect or application of the California Coastal Act, the San Mateo County Local Coastal Program, or
+the CD District regulations, except that no public hearing shall be required for accessory dwelling units that meet
+all relevant standards of this Chapter, and approval of such accessory dwelling unit applications shall be made
+ministerially, at the staff level. Accessory dwelling units shall count toward the total residential development limits
+described in Section 1.23 and 3.22 of the County’s Local Coastal Program.
+
+8.396.160 – Decisions.
+Applications for accessory dwelling units, except for those requiring a conditional use permit as specified in Section
+8.396.110, shall be approved or denied ministerially, on the basis of the objective criteria included in this Chapter
+and other applicable regulations as defined in Section 8.392.130 Consideration of other permits associated with
+development of the proposed accessory dwelling unit only, that might otherwise be discretionary, including but
+not limited to Tree Removal, Coastal Development, Resource Management, and Grading Permits, shall also be
+ministerial, except as provided in Section 8.396.110. Except for units that are within the Coastal Zone’s Appeals
+Jurisdiction and/or that require a Coastal Development Permit, no public notice or public hearing shall be required
+for review and approval or denial of an accessory dwelling unit, unless an applicant requests exceptions to the
+standards set forth in this Chapter. In the case of units that are within the Coastal Zone’s Appeals Jurisdiction,
+and/or require a Coastal Development permit, all required public notice will be provided.
+
+                                       Title 8 – Zoning & Development Code
+
+8.396.170 - Appeals.
+Decisions to approve or deny an application for an accessory dwelling unit that meets all relevant standards set
+forth in this Chapter shall not be subject to appeal, except if located in the Coastal Commission appeals area of the
+CD District, in which case the decision may be appealable as provided in the CD District Regulations, Section
+8.252.040(s).
+
+8.396.180 – Applicability Of County Regulations.
+With the exception of specific standards and exemptions described in this Chapter, all accessory dwelling units
+must comply with all applicable provisions in the San Mateo County Ordinance Code, including the Zoning
+Regulations (Title 8 et seq.) and the Building Code (Title 10 et seq.).
+
+(Chapter 22.5.1 - Added by Ordinance No. 4834 – September 15, 2020)
+
+(Sections 6439.1 – 6439.18 repealed and replaced in their entirety by Ordinance No. 4851 - September 14, 2021)

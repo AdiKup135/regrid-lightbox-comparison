@@ -1,0 +1,24 @@
+§ 10-1.202 Designated.
+
+Building line means the line along which the vertical surface of a building intersects the ground.
+
+Frontage means all property abutting one side of a road.
+
+Lot means a portion of land shown as a unit on a recorded parcel or subdivision map.
+
+Lot, corner. "Corner lot" means a lot abutting on two or more intersecting roads.
+
+Lot unit factor (LUF) means the number obtained by dividing the net area in acres of the subject parcel or lot of land by the minimum average lot size that would be required for a parcel of average slope equal to that of the subject parcel, as determined by the following formula:
+
+(a) For lots or parcels where the average slope is less than 10%, the LUF is equal to the net area of the lot or parcel.
+
+(b) For lots or parcels with average slopes between 10% and 55%, then:
+
+| LUF = An [1-0.02143(S-10)] | |
+| where: | |
+| (i) | An = net area of the parcel or lot; |
+| (ii) | S = average slope of the net area of the parcel or lot in percent. |
+
+Parcel means all contiguous land held in one ownership as indicated in the records of the County Recorder, which is not shown as a lot or unit on a recorded parcel or subdivision map.
+
+Setback line means a line established by the provisions of this chapter to govern the placement of structures with respect to right-of-way lines or property lines.

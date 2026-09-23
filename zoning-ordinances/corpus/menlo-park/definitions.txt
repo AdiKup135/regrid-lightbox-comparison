@@ -1,0 +1,75 @@
+§ 16.04.390 Lot.
+
+For the definition of "lot" see Section 16.04.140, "building site."
+
+(Prior code § 30.238)
+
+§ 16.04.395 Lot, corner.
+
+"Corner lot" means a lot having frontage on two public or private streets which intersect at a corner of the lot.
+
+§ 16.04.396 Lot, interior.
+
+"Interior lot" means any lot which is not a corner, through, or panhandle lot.
+
+§ 16.04.400 Lot line, front.
+
+"Front lot line" means:
+
+(1) In the case of an interior lot fronting on a public street, a line separating the lot from the public street;
+
+(2) In the case of an interior lot fronting on a private street but not on a public street, a line separating the lot from the private street;
+
+(3) In the case of a corner lot fronting on two public streets, a line separating the shorter street frontage of the lot from a public street;
+
+(4) In the case of a corner lot fronting on one public street and one private street, a line separating the street frontage of the lot from the public street;
+
+(5) In the case of a corner lot fronting on two private streets, but not on a public street, a line separating the shorter street frontage of the lot from a private street; and
+
+(6) In the case of a panhandle lot, the shorter dimension of the lot boundaries which are contiguous to the private driveway or easement which provides access to the lot.
+
+§ 16.04.405 Lot line, front—Election for corner lot.
+
+In the case of a lot fronting on two public streets, the property owner may elect that the front lot line shall be the line separating the longer street frontage of the lot from a public street. This election may be made if the lot and improvements thereon will conform to the requirements of Titles 15 and 16 if the election is made and would not otherwise be conforming. If the election is made the minimum lot depth requirement for the lot shall be the former minimum lot width requirement and the minimum lot width requirement shall be the former minimum lot depth requirement. The election shall be in writing and shall be approved by the director of community development and the election and approval shall be recorded with the county recorder's office, a copy of which shall be filed with the department of community development. The election may be revoked if the lot and improvements thereon will conform to the requirements of Titles 15 and 16 after such revocation. The revocation shall be in writing and shall be approved by the director of community development and the revocation and approval shall be recorded with the county recorder's office, a copy of which shall be filed with the department of community development.
+
+(Ord. 786 § 1 (part), 1988)
+
+§ 16.04.410 Lot line.
+
+"Lot line" means a line separating the frontage from a street; the side from a street or adjoining property; the rear or side from an alley or street or adjoining property.
+
+§ 16.04.440 Lot line, rear.
+
+"Rear lot line" means the lot boundary opposite or approximately opposite the front.
+
+§ 16.04.450 Lot line, side.
+
+"Side lot line" means any lot boundary not a front or rear lot line.
+
+§ 16.04.460 Lot, through.
+
+"Through lot" means a lot having frontage on two parallel or approximately parallel streets.
+
+§ 16.04.600 Setback line.
+
+"Setback line" means a line established by this chapter to govern the placement of buildings or structures with respect to lot lines on the site and which is established by measuring from the lot lines and/or access easements on the site at an angle perpendicular to the lot line. The setback line shall be parallel with the lot line.
+
+§ 16.04.640 Street line.
+
+"Street line" means the boundary between a street right-of-way and property.
+
+§ 16.04.710 Yard.
+
+"Yard" means required open space on the same lot with a building, which open space is unoccupied and unobstructed from the ground upward, except as otherwise permitted in Section 16.08.060 or Chapter 16.59 or 16.68.
+
+§ 16.04.720 Yard, front.
+
+"Front yard" means a yard extending across the front of the lot and measured from the front line of the lot to the front setback line; provided, however, that if any official plan line has been established for the street upon which the lot abuts, the yard measurement shall be taken from such official plan line to the nearest line of the building.
+
+§ 16.04.730 Yard, rear.
+
+"Rear yard" means a yard extending across the full width of the lot and measured between the rear line of the lot and the rear setback line.
+
+§ 16.04.740 Yard, side.
+
+"Side yard" means a yard between the side line of the lot and the side setback line and extending from the front yard to the rear yard.

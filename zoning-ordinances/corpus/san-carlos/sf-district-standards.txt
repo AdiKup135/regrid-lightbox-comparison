@@ -1,0 +1,72 @@
+18.04.030 Development standards—RS districts.
+
+A. Table 18.04.030 prescribes the development standards for RS districts. Additional regulations are denoted in a right-hand column. Section numbers in this column refer to other sections of this title, while individual letters refer to subsections that directly follow the table. The numbers in each illustration below refer to corresponding regulations in the “#” column in the associated table.
+
+B. Deviation From Standards.
+
+1. The standards set forth in this section shall apply to all residential development applications in the RS district. Proposed development projects that comply with all development and objective standards contained in this section shall qualify for approval as a matter of right, and subject only to zoning clearance review pursuant to Chapters 18.28 (Zoning Clearance) and 18.29 (Design Review and Objective Design Standards Compliance Review) unless as specified within Table 18.04.020, Land Use Regulations—Residential Districts. For proposed projects that deviate from one (1) or more objective standards, such applications shall be subject to the design review provisions set forth in Chapter 18.29.
+
+2. Deviations Subject to Design Review. Any application involving a deviation or exception from the objective standards for the following shall be subject to design review for that standard pursuant to Chapter 18.29:
+
+a. Building articulation and massing.
+
+b. Building materials and colors.
+
+c. Building modification to preserve a protected tree unless a setback modification requires a variance.
+
+d. Driveway location, width, and configuration.
+
+e. Entry location, connectivity, and treatments.
+
+f. Garage location and setbacks.
+
+g. Landscape design.
+
+h. Roof form and detail.
+
+i. Window treatments.
+
+TABLE 18.04.030: DEVELOPMENT STANDARDS—RESIDENTIAL SINGLE-FAMILY DISTRICTS
+
+| District | RS-3 | RS-6 | Additional Regulations | # |
+| Lot and Density Standards | | | | |
+| Maximum Density (units/net acre) | 3 | 6 | | |
+| Minimum Lot Size (sq. ft.) | 10,000* | 5,000* | *New subdivision lots shall be subject to Table 17.16.030 | |
+| Corner Lots | 10,000* | 6,000* | *New subdivision lots shall be subject to Table 17.16.030 | |
+| Minimum Lot Width (ft.) | 75* | 40* | *New subdivision lots shall be subject to Table 17.16.030 | 1 |
+| Corner Lots | 75* | 60* | *New subdivision lots shall be subject to Table 17.16.030 | 2 |
+| Maximum Floor Area | | | | |
+| Maximum Floor Area (MFA) | No MFA | For lots less than or equal to 7,500 sq. ft. MFA is the greater of 1,100 sq. ft. + 35% of the lot area or 50% of the lot area; for lots greater than 7,500 sq. ft. MFA is 50% of the lot area. | See Chapter 18.03, Rules of Measurement; See Section 18.23.210 for accessory dwelling unit and junior accessory dwelling unit standards | |
+| Building Form and Location | | | | |
+| Maximum Height (ft.) | 28 (C) | 28 (C) | See Section 18.15.060, Height and height exceptions, and see Chapter 18.12 for permissible height within a Hillside Overlay District | 3 |
+| Public and Semi-Public Uses | 28 | 45 | | |
+| Minimum Setbacks (ft.) | | | | |
+| Front | 20 | 1st Story: 15 2nd Story: 19 | See Section 18.15.080, Projections into yards | 4 |
+| Interior Side | 1st Story: 10 2nd Story: 14 (E, F, G) | 1st Story: 5 (D) 2nd Story: 9 (E, F, G) | See Section 18.15.080, Projections into yards | 5 |
+| Street Side | 1st Story: 10 (G) 2nd Story: 14 (E, F, G) | 1st Story: 7.5 (G) 2nd Story: 11.5 (E, F, G) | See Section 18.15.080, Projections into yards | 6 |
+| Rear | 20 | 15 | | 7 |
+| Garage, from property line | 20 | 20 | See Section 18.04.040(A)(3)(d) and (e) Detached garages and see Chapter 18.12 for Hillside Overlay District provisions | 8 |
+| Garage, from primary facade | 5 | 5 | | 9 |
+| Maximum Lot Coverage (Percent of Lot) | 25 in H Overlay 35 outside H Overlay | 50 | See Chapter 18.03, Rules of Measurement | 10 |
+
+C. Building Height Within the Front and Rear Fifteen (15) Feet of the Building. The maximum height within the front and rear fifteen (15) feet of the building shall be measured as indicated in Section 18.03.050 (Measuring height) not exceeding twenty-eight (28) feet. For buildings located in the Hillside Overlay zoning district, refer to Chapter 18.12 (Hillside Overlay District).
+
+FIGURE 18.04.030-C: MEASURING BUILDING HEIGHT—RS DISTRICTS
+
+D. Side Setback Exception. For lots less than fifty (50) feet in width, the minimum ground-floor side setback shall be a minimum of ten percent (10%) of the lot width or three (3) feet, whichever is greater.
+
+E. The upper story may align with the lower story at the required lower story five (5) feet setback for up to thirty percent (30%) of the length of the lower story. The maximum thirty percent (30%) projection shall be measured from the rear wall of the lower story. Any window located on the projecting portion of the building shall be either a clerestory window or shall be glazed, tinted, etched, frosted, or treated in any similar manner that limits views into and from the window.
+
+FIGURE 18.04.030-E: SECOND STORY PROJECTION
+
+FIGURE 18.04.030-F, G: SEVEN (7) FEET INTERIOR SIDE SETBACK
+
+F. Where the entire ground floor is set back at least seven (7) feet from the property line, the upper story may align with the lower story for the entire length of the building.
+
+G. For a ground floor setback of seven (7) feet a projection of up to two (2) feet is allowed on the lower and upper story. The alignment of the stories shall not exceed thirty percent (30%) of the length of the lower story. The maximum thirty percent (30%) projection shall be measured from the rear wall of the lower story. Any window located on the projecting portion of the building shall be either a clerestory window or shall be glazed, tinted, etched, frosted, or treated in any similar manner that limits views into and from the window.
+
+H. Street Side Setbacks on Lots with Reversed Frontage. The exterior side setback in the rear twenty-five percent (25%) of a reversed corner lot shall not be less than the front yard required or existing, whichever is less, on the adjoining key lot.
+
+FIGURE 18.04.030-H: STREET SIDE SETBACKS ON LOTS WITH REVERSED FRONTAGE
+
+(Ord. 1603 § 3 (Exh. A), 2023; Ord. 1596 § 6 (Exh. A), 2023; Ord. 1566 (Exh. B (part)), 2020; Ord. 1537 (Exh. B (part)), 2018: Ord. 1480 (Exh. B (part)), 2015; Ord. 1438 § 4 (Exh. A (part)), 2011)

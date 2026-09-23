@@ -1,0 +1,297 @@
+§ 17.010.010 PURPOSE.
+
+The purpose of this chapter is to explain how various measurements referred to in this title and needed to determine compliance with objective standards and related requirements are to be calculated.
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.020 GENERAL PROVISIONS.
+
+(A) For all calculations, the applicant is responsible for supplying drawings illustrating the measurements that apply to a project. These drawings shall be drawn to scale and of sufficient detail to allow easy verification upon inspection by the Planning Director and the Planning Commission.
+
+(B) Whenever this title requires consideration of distances, parking spaces, dwelling units or other aspects of development or the physical environment expressed in numerical quantities, and the result of a calculation contains a fraction of a whole number, the results will be rounded as follows:
+
+(1) Fractions of one-half (0.5) or greater shall be rounded up to the nearest whole number, and fractions of less than one-half (0.5) shall be rounded down to the nearest whole number, except as otherwise provided.
+
+(2) Exception for State Affordable Housing Density Bonus: the calculation of fractions related to permitted bonus density units for projects eligible for bonus density pursuant to Cal. Gov't Code § 65915 or any successor statute shall be done as provided by state law.
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.030 MEASURING DISTANCES.
+
+(A) When measuring a required distance, such as the minimum distance between a structure and a lot line, the measurement is made at the closest or shortest distance between the two objects.
+
+(B) When determining distances for setbacks and structure dimensions, all distances are measured along a horizontal plane from the appropriate line, edge of building, structure, storage area, parking area, or other object. These distances are not measured by following the topography or slope of the land.
+
+(C) Unless otherwise specified, measurements involving a structure are made to the closest support element of the structure.
+
+(D) Measurement of a minimum travel distance for vehicles, such as garage entrance setbacks and stacking lane distances, are measured down the center of the vehicle travel area. For example, curving driveways and travel lanes are measured along the center arc of the driveway or traffic lane.
+
+(E) When a specified land use is required to be located a minimum distance from another land use, the minimum distance is measured in a straight line from all points along the lot line of the subject project, in all directions.
+
+FIGURE 17.010(A) MEASURING DISTANCES
+
+(Or. 885, passed 11-1-2023)
+
+§ 17.010.040 MEASURING HEIGHT.
+
+(A) Building height shall be defined as the distance from finished grade to the highest point of the coping of a flat roof or to the deck line of a mansard roof or to the height of the highest peak or gable of a pitched or hipped roof. The height of a stepped or terraced building is the maximum height of any segment of the building along the finished grade directly below. On lots with a grade change of 10% or more between the front and rear property lines, building height is measured from the “grade plane” as determined in the following subsection, and height shall be measured from the measure point at the top of the building, as determined above, to the grade plane.
+
+FIGURE 17.010 (B): MEASURING BUILDING HEIGHT
+
+FIGURE 17.010 (C): MEASURING BUILDING HEIGHT OF A TERRACED OR STEPPED BUILDING
+
+(1) On lots with a grade change of 10% or more between the front and rear lot lines, or between the front lot line and its most distant point when there is no rear lot line, building height is measured from the adjacent natural or finished grade, whichever is lower, to the coping of a flat roof or to the deck line of a mansard roof or to the average height of the highest gable of a pitched or hipped roof.
+
+(2) Exceptions. Certain building features may exceed the height limits pursuant § 17.044.050.
+
+(B) In measuring the height of a building in stories, the following measurement rules apply:
+
+(1) A mezzanine shall be counted as a full story if its floor area exceeds one-third of the total area of the nearest full floor directly below it or if it is enclosed on more than three sides.
+
+(2) A basement shall be counted as a full story if the finished surface of the floor above the basement is:
+
+(a) More than three feet above the reference plane established according to § 17.010.050 (A)(1); or
+
+(b) More than eight feet above the basement floor at any point.
+
+FIGURE 17.0410 (D): DETERMINING IF A BASEMENT IS A STORY
+
+(3) A story may not exceed 18 feet in height from the upper surface of the floor to the ceiling above.
+
+(C) The height of any fence or wall shall be determined from the downslope side of the wall by measuring the vertical distance from the highest finished grade adjacent to the fence or wall to the highest point of any portion of the fence or wall. In the case of fences or walls between the setback line and lot line, height shall be measured from highest finished grade on the downslope side adjacent to the fence or wall to the top of the fence or wall.
+
+(1) The height of a fence that is on top of a retaining wall is measured from the highest finished grade point on the downslope of any point on such fence to the highest point of the fence on the highest side of the wall.
+
+(2) Any fence or railing required to comply with minimum height in applicable Building Code requirement is permitted.
+
+(D) Deck height is the vertical distance from finished grade directly below the deck to the top of the floor of the deck.
+
+FIGURE 17.010 (E): MEASURING HEIGHT OF FENCES AND WALLS
+
+(D) Deck height is measured from ground to top of the floor of the deck.
+
+FIGURE 17.010 (F): MEASURING HEIGHT OF DECKS
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.050 DETERMINING GRADE.
+
+(A) Grade is the location of the ground surface. For purposes of this chapter, the grade of a building used to determine building height shall be determined by one or more of the following:
+
+(1) Existing grade. The existing elevation of the ground at any point on a lot. Existing grade also may be referred to as natural grade.
+
+(2) Finished grade. The lowest point of elevation of the finished surface of the ground, paving, or sidewalk within the area between the building and the lot line, or when the lot line is more than five feet from the building, between the building and a line five feet from the building.
+
+(3) Reference grade plane. A reference grade plane representing the average of finished ground level adjoining the building at exterior walls. Where the finished ground level slopes away from the exterior walls, the reference grade plane shall be established by the lowest points within the area between the building and the lot line or, where the lot line is more than five feet from the building, between the building and a point five feet from the building.
+
+FIGURE 17.010 (G): REFERENCE GRADE PLANE
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.060 MEASURING LOT WIDTH AND DEPTH.
+
+(A) Lot width is the horizontal distance between the side lot lines, measured at right angles to the lot depth at a point midway between the front and rear lot lines.
+
+(B) Lot depth is measured along a straight line drawn from the midpoint of the front lot line to the midpoint of the rear lot line or to the most distant point on any other lot line where there is no rear lot line.
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.070 DETERMINING AVERAGE SLOPE.
+
+The average slope of a parcel is calculated using the following formula: S = 100(I)(L)/A, where:
+
+S = Average slope (in percent)
+
+I = Contour interval (in feet)
+
+L = Total length of all contour lines on the parcel measured from where the contour lines intersect with the property lines of the parcel (in feet)
+
+A = Area of subject parcel (in square feet)
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.080 DETERMINING FLOOR AREA.
+
+The floor area of a building is the sum of the gross horizontal areas of all floors of a building or other enclosed structure, measured from the outside perimeter of the exterior walls and/or the centerline of interior walls.
+
+(A) Floor area includes, but is not limited to, all habitable space (as defined in the town's construction codes) that is below the roof and within the outer surface of the main walls of principal or accessory buildings, the centerlines of party walls separating such buildings or portions thereof, or lines drawn parallel to and two feet within the roof line of any building without walls. In the case of a multi-story building that has covered or enclosed stairways, stairwells, or elevator shafts, the horizontal area of such features shall be counted only once at the floor level of their greatest area of horizontal extent.
+
+(B) Floor area does not include the following: mechanical, electrical, and communication equipment rooms that do not exceed two percent of the building's gross floor area; bay windows, decks, or other architectural projections where the vertical distance between the lowest surface of the projection and the finished floor is 30 inches or greater; areas that qualify as usable open space; and, in non-residential buildings, areas used for off-street parking spaces or loading spaces, driveways, ramps between floors of a multi-level parking garage, and maneuvering aisles that are located below the finish grade of the property.
+
+(C) For non-residential uses, gross floor area includes interior walkways interior courtyards, walkways, paseos, and corridors covered by a roof or skylight. Non-residential gross floor area does not include arcades, porticoes, and similar open areas that are located at or near street level and are accessible to the general public but are not designed or used as sales, display, storage, service, or production areas.
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.090 DETERMINING FLOOR AREA RATIO.
+
+The floor area ratio (FAR) is the ratio of the floor area, excluding the areas described below, of all principal and accessory buildings on a site to the site area. To calculate the FAR, floor area is divided by site area, and typically expressed as a decimal. For example, if the floor area of all buildings on a site totals 20,000 square feet, and the site area is 10,000 square feet, the FAR is expressed as 2.0. See Chapter 17.136 for additional regulations that apply to existing structures. The following are excluded from the floor area when calculating FAR.
+
+(1) Garages and carports. 500 square feet for a single-family residence; 800 square feet for garage space for a duplex; and 400 square feet for a townhouse constructed as a series of single-family dwellings.
+
+(2) Parking for multi-family structures. Parking areas located below finished grade or finished floor of habitable space where the vertical distance between finished grade and finished floor of the parking level is five feet or more. Structured parking areas located above finished grade where the vertical distance between finished grade and the floor of the parking level is five feet or less.
+
+FIGURE 17.010 (H): DETERMINING FLOOR AREA RATIO
+
+(Ord. 885, passed 11-1- 2023)
+
+§ 17.010.100 DETERMINING LOT COVERAGE.
+
+Lot coverage is the ratio of the total footprint area of all impervious surfaces on a lot to the net lot area, typically expressed as a percentage. The footprints of all principal and accessory structures, including garages, carports, covered patios, and roofed porches, combined with all impervious driveways, walkway and other surfaces shall be summed in order to calculate lot coverage. The following shall be excluded from the calculation:
+
+(A) Eaves and roof overhangs projecting up to two feet from a wall;
+
+(B) Trellises and similar structures that have roofs that are at least 50 percent open to the sky with uniformly distributed openings;
+
+(C) Swimming pools and hot tubs that are not enclosed in roofed structures or decks; and
+
+(D) Driveway, walkways, patios, decks and other flat surfaces built with pervious materials.
+
+FIGURE 17.010(I): DETERMINING LOT COVERAGE
+
+(Ord. 885, passe d 11- 1- 2023)
+
+§ 17.010.110 DETERMINING LOT FRONTAGE.
+
+(A) The front of a lot that is not a corner lot or through lot is the lot line along the street frontage.
+
+(B) The front of a corner lot is the narrowest dimension of the lot with street frontage.
+
+(C) Except in the case of a panhandle lot, the front yard of a through lot is the one that abuts the street that adjoining lots use to provide primary access into the dwellings on these lots. The opposite yard is considered a rear yard.
+
+(D) In the case of a through lot, the narrowest dimension is the front yard (that is not a panhandle). If same dimension, staff shall determine the front yard.
+
+(E) If a panhandle lot, then the front yard is the one adjoining the widest portion of the lot that faces the street. (see graphic 17.010 (J).
+
+(Ord. 885, passed 11-1-2023)
+
+FIGURE 17.010 (J): MEASURING LOT WIDTH AND DEPTH
+
+§ 17.010.120 DETERMININ G SETBACKS.
+
+A setback line defining a required yard is parallel to and at the specified distance from the corresponding front, side, or rear lot line. The following regulations for determining yards apply when a lot abuts a proposed street or alley.
+
+(A) If a property abuts an existing or proposed street for which the existing right-of-way is narrower than the right-of-way ultimately required for the street, the required setback shall be established from the future right-of-way rather than the property line.
+
+(B) If a side lot line abuts an alley, the yard shall be considered an interior side yard rather than a corner side yard. In computing the minimum yard for any lot where such yard abuts an alley, no part of the width of the alley may be considered as part of the required yard.
+
+(C) Setbacks shall be measured as the distance between the nearest lot line and the closest point on the exterior of a building or structure along a line at right angles to the lot line. Setbacks shall be unobstructed from the ground to the sky except where projections into yards are allowed by § 17.044.070.
+
+FIGURE 171.010 (K): DETERMINING SETBACKS (YARDS)
+
+(Ord. 885, passed 11-1- 2023)
+
+§ 17.010.130 MEASURING PARKING LOT LANDSCAPING.
+
+For the purp ose of calculating required parking lot landscaping, parking lot areas are deemed to include parking and loading spaces as well as aisles, vehicle entry and exit areas, and any adjacent paved areas. Parking lot area does not include enclosed vehicle storage areas.
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.010.140 MEASURING PEDESTRIAN CLEARANCE.
+
+The minimum distance shall be measured from the edge of any table, chair, bench, planter, or other appurtenance used as part of an outdoor dining area to any obstruction within the sidewalk area. The distance from the back of a chair shall account for a seated person.
+
+FIGURE 17.010(L): MEASURING PEDESTRIAN CLEARANCE
+
+(Ord. 885, passed 11-1-2023)
+
+§ 17.008.020 DEFINITIONS.
+
+BUILDING LINE. A line formed by the outer surface of the closing wall of a building or portion thereof and surface of the ground.
+
+(Prior Code, § 17.04.087)
+
+CORNER LOT. A lot in the junction of and fronting on two or more intersecting streets.
+
+(Prior Code, § 17.04.093)
+
+FRONT FRONTAGE. The side of a lot abutting on a street or way and ordinarily regarded as the front of the lot.
+
+(Prior Code, § 17.04.201)
+
+FRONTAGE. All the property on one side of a street between two intersecting streets (crossing or terminating), measured along the line of the street, or, if the street is dead-ended, then all of the property abutting on one side between an intersecting street and the dead end of the street.
+
+(Prior Code, § 17.04.204)
+
+LOT. A parcel of land occupied by one building and the accessory buildings or uses customarily incidental to it, including such open spaces as are arranged and designed to be used in connection with the buildings.
+
+(Prior Code, § 17.04.321)
+
+(1) BUILDING LOT. Land occupied or to be occupied by a building and its accessory buildings, or by a dwelling group and its accessory buildings, together with the open spaces as are required under the provisions of this title, having not less than the minimum area and width required by this title for a lot in the district in which the land is situated, and having its principal frontage on a street or on such other means of access as may be determined in accordance with the provisions of the law to be adequate as a condition of the issuance of a building permit for a building on the land.
+
+(Prior Code, § 17.04.327)
+
+(2) CORNER LOT. A lot which occupies the interior angle at the intersection of two street lines which make an angle of less than 135 degrees with each other.
+
+(Prior Code, § 17.04.330)
+
+(3) INTERIOR LOT. A lot other than a corner lot.
+
+(Prior Code, § 17.04.339)
+
+(4) THROUGH LOT. A lot, other than a corner lot, having frontage on more than one street.
+
+(Prior Code, § 17.04.348)
+
+LOT AREA. The area of a horizontal plane bounded by the front, side and rear lot lines.
+
+(Prior Code, § 17.04.324)
+
+LOT COVERAGE. The percentage of the lot area that is occupied by the ground area of a building, any accessory building(s), as well as any impervious surface areas such as patios (other than driveways) adjacent to the building or accessory building.
+
+(Prior Code, § 17.04.333)
+
+LOT DEPTH. The mean horizontal distance between the front lot line and the rear lot line of a lot, measured within the lot boundaries.
+
+(Prior Code, § 17.04.336)
+
+LOT LINE. The lines bounding a lot.
+
+(Prior Code, § 17.04.342)
+
+LOT OF RECORD. A deed which has been recorded.
+
+(Prior Code, § 17.04.345)
+
+LOT WIDTH. The distance between the side lot lines measured along the setback line as established by this title, or if no setback line is established, the distance between the side lot lines measured along the street line.
+
+(Prior Code, § 17.04.351)
+
+SETBACK. The distance between a street line and the front building line of a principal building or structure, projected to the side lines of the lot, and including driveways and parking area, except where otherwise restricted by this title.
+
+(Prior Code, § 17.04.501)
+
+STREET LINE. The dividing line between a lot, tract or parcel of land and a contiguous street.
+
+(Prior Code, § 17.04.549)
+
+YARD. An open space at grade between a building and the adjoining lot lines, unoccupied and unobstructed by any portion of a structure from the ground upward, except as otherwise provided in this title. In measuring a yard for the purpose of determining the width of a side yard, the depth of a front yard or the depth of the rear yard, the minimum horizontal distance between the lot line and the main building shall be used.
+
+(Prior Code, § 17.04.612)
+
+(1) FRONT YARD. A yard extending along the full-length of the front lot line between the side lot lines.
+
+(Prior Code, § 17.04.615)
+
+(2) REAR YARD. A yard extending across the full-width of the lot and measured between the rear line of the lot and the rear line of the main building.
+
+(Prior Code, § 17.04.618)
+
+(3) SIDE YARD. A yard between the building or attached structure and the adjacent side line of the lot and extending from the front yard to the rear yard.
+
+(Prior Code, § 17.04.621)
+
+§ 17.010.100 DETERMINING LOT COVERAGE.
+
+Lot coverage is the ratio of the total footprint area of all impervious surfaces on a lot to the net lot area, typically expressed as a percentage. The footprints of all principal and accessory structures, including garages, carports, covered patios, and roofed porches, combined with all impervious driveways, walkway and other surfaces shall be summed in order to calculate lot coverage. The following shall be excluded from the calculation:
+
+(A) Eaves and roof overhangs projecting up to two feet from a wall;
+
+(B) Trellises and similar structures that have roofs that are at least 50 percent open to the sky with uniformly distributed openings;
+
+(C) Swimming pools and hot tubs that are not enclosed in roofed structures or decks; and
+
+(D) Driveway, walkways, patios, decks and other flat surfaces built with pervious materials.
+
+FIGURE 17.010(I): DETERMINING LOT COVERAGE
+
+(Ord. 885, passe d 11- 1- 2023)

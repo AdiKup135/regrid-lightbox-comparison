@@ -1,0 +1,31 @@
+§ 20.28.310 Definitions
+
+Frontage. The property line of a site abutting on a street, other than the side line of a corner lot.
+
+Lot. A parcel of land created by a duly approved and recorded subdivision map in accordance with the Subdivision Map Act.
+
+Lot area. The total horizontal area included within the property lines of a lot.
+
+Lot, corner. A lot bounded on two or more adjacent street lines which have an angle of intersection of not more than 135 degrees.
+
+Lot, depth. The horizontal distance from the mid-point of the front lot line to the midpoint of the rear lot line.
+
+Lot, double frontage. An interior lot having frontage on two parallel or approximately parallel streets.
+
+Lot, flag. A lot with access to a street by means of a corridor having at least 15 feet of frontage. The length of a corridor shall be measured from the frontage line to the nearest point of intersection with that property line parallel or most nearly parallel to the frontage line. The area of access corridor shall not be included in determining the site area of a corridor lot.
+
+Lot, interior. A lot other than a corner lot.
+
+Lot, key. A lot with a side property line that abuts the rear property line of any one or more adjoining lots.
+
+Lot, reversed corner. A corner lot the side line of which is substantially a continuation of the front property line of the first lot to its rear.
+
+Lot line, front. A line separating an interior lot from a street, or a line separating the narrower street frontage of a corner lot from a street.
+
+Yard. An open space on the same site as a structure, unoccupied and unobstructed from the ground upward, including a front yard, or space between structures.
+
+Yard, front. A yard extending across the full width of a site, the depth of which is the minimum horizontal distance between the front property line and a line parallel thereto on the site.
+
+Yard, rear. A yard extending across the full width of a site, the depth of which is the minimum horizontal distance between the rear property line and a line parallel thereto on the site.
+
+Yard, side. A yard extending from the rear line of the required front yard, or the front property line of the site where no front yard is required, to the front line of the required rear yard, or the rear property line of the site where no rear yard is required, the width of which is the minimum horizontal distance between the side property line and a line parallel thereto on the site.

@@ -1,0 +1,155 @@
+20.200.260 - Corner triangle.
+
+"Corner triangle" is the triangular area formed by the two street lot lines of a corner lot and their projection and a line connecting them at points forty-five feet measured at the outer edge of the curb L from the intersection of the projected lot lines measured at the outer edge of the curb.
+
+(Ord. 26248.)
+
+20.200.410 - Flag lot.
+
+"Flag lot" is an interior lot accessed by a corridor having a street frontage of less than twenty-seven feet.
+
+(Ords. 26248, 29254.)
+
+20.200.430 - Frontage.
+
+"Frontage" is the portion of all property abutting on a side of a street between two intersecting or terminating streets, or at the end of such street if it does not meet another.
+
+(Ord. 26248.)
+
+20.200.580 - Key lot.
+
+"Key lot" is the first interior lot abutting the rear of a corner lot. The front lot line of the key lot is a continuation of the side lot line of the corner lot, excluding any lot which is separated from a corner lot by an alley.
+
+(Ord. 26248.)
+
+20.200.660 - Lot.
+
+"Lot" is a contiguous unit of land which may be lawfully sold as a separate parcel in conformity with the provisions of Title 19 of this Code.
+
+(Ord. 26248.)
+
+20.200.670 - Lot, corner.
+
+A. A corner lot is a lot having at least two frontages on intersecting streets; and
+
+1. A residential corner lot is a lot in a residential district on a corner fronting not more than one hundred twenty feet on one street and not more than one hundred twenty feet on another. If both of the street frontages exceed the specified frontage widths, the lot is considered to have two front property lines.
+
+2. A commercial corner lot is a lot in a commercial zoning district on a corner fronting not more than one hundred fifty feet on one street and not more than one hundred fifty feet on another. If both of the street frontages exceed the specified frontage width, the lot is considered to have two front property lines.
+
+B. Notwithstanding the provisions of Section 20.200.670.A, in a pedestrian oriented zoning district, a "corner lot" means a lot having at least two frontages on intersecting streets. Such "corner lot" shall have a minimum of two front lot lines regardless of the dimensions of the lot.
+
+(Ords. 26248, 28858.)
+
+20.200.675 - Lot coverage.
+
+For purposes of this Part, "lot coverage" means all area of a lot, as projected on a horizontal plane, which is enclosed by the exterior walls of buildings or enclosed accessory structures or covered by decks, porches, stairs and/or landings that cover an enclosed space or paved ground area. The lot coverage tabulation will exclude uncovered porches, landings and stairs; uncovered decks, except the overhanging roof of a building or accessory structure or paved ground area is included in the lot coverage calculation; and any existing or proposed Accessory Dwelling Unit or Junior Accessory Dwelling Unit.
+
+(Ord. 31298.)
+
+20.200.680 - Lot, interior.
+
+"Lot, interior" is a lot other than a corner lot.
+
+(Ord. 26248.)
+
+20.200.690 - Lot, through.
+
+"Lot, through" is a lot having frontage on two parallel or approximately parallel streets.
+
+(Ord. 26248.)
+
+20.200.700 - Lot line.
+
+"Lot line" is defined to include:
+
+A. "Front lot line" is the boundary line of a lot which abuts the closest edge of a public or private right-of-way whether that right-of-way is owned in fee title or through an easement.
+
+B. "Front lot line of a corner lot" is the narrower lot line abutting a public or private right-of-way whether that right-of-way is owned in fee title or through an easement.
+
+C. "Side lot line" is the boundary line of a lot which intersects the front lot line, the rear lot line, and any other side lot line.
+
+D. "Side corner lot line of a corner lot" is the longer of the two boundary lines abutting a public or private right-of-way whether that right-of-way is owned in fee title or through an easement.
+
+E. "Rear lot line" is the boundary line of a lot which is generally opposite of the front lot line.
+
+(Ords. 26248, 26455, 28828, 29218, 29631.)
+
+20.200.850 - Parcel.
+
+"Parcel" is synonymous with "lot" for purposes of this title.
+
+(Ord. 26248.)
+
+20.200.1080 - Setback.
+
+"Setback" is the minimum distance by which buildings, structures, and parking must be separated from any lot line.
+
+1. "Front setback" is measured from the front lot line.
+
+2. "Rear setback" is measured from the rear lot line.
+
+3. "Side setback" is measured from the side lot line(s).
+
+(Ord. 26248.)
+
+20.200.1090 - Setback area, front.
+
+A. For an interior lot, the "front setback area" is the area which extends across the full width of the lot and from the front lot line along the street to a line defined by the front setback, excluding frontage area which is used primarily for ingress or egress to a flag lot; or
+
+B. For a residentially zoned corner lot, the "front setback area" is the area which extends across the full width of the lot and from the narrower lot line along a public street to a parallel line defined by the front setback line.
+
+C. The front setback area shall not include any land held as public right-of-way, regardless of whether such land is held in fee title or easement.
+
+(Ords. 26248, 29631.)
+
+20.200.1100 - Setback area, rear.
+
+A. For an interior lot, the "rear setback area" is the area which extends across the full width of the lot and from the rear lot line to a parallel line defined by the rear setback distance; or
+
+B. For a residentially zoned corner lot, the "rear setback area" is the area which extends across the full width of the lot and from the lot line opposite the narrower lot line along a public street to a parallel line defined by the rear setback line.
+
+(Ord. 26248.)
+
+20.200.1110 - Setback area, side.
+
+A. For an interior lot, the "side setback area" is that area which is neither a front setback area nor rear setback area; or
+
+B. For a corner lot:
+
+1. "Interior side setback area" is that area which extends from the lot line opposite the wider (larger) street frontage defined as the interior side lot line to a parallel line defined by the side setback; and
+
+2. "Corner side setback area" is that area which extends from the lot line along the wider street frontage to a parallel line defined by the side setback. The corner setback area shall not include any land held as public right-of-way, regardless of whether such land is held in fee title or easement.
+
+(Ords. 26248, 29631.)
+
+20.200.1440 - Yard.
+
+"Yard" is an open space other than a court on the same lot with a building unoccupied and unobstructed from the ground upward except as otherwise provided in this title.
+
+(Ords. 26248, 29821.)
+
+20.200.1450 - Yard, front.
+
+"Front yard" is that yard which extends:
+
+1. Across the full width of the lot; and
+
+2. From the front line of the lot to the front of the building.
+
+(Ords. 26248, 29821.)
+
+20.200.1460 - Yard, rear.
+
+"Rear yard" is that yard which extends:
+
+1. Across the full width of the lot; and
+
+2. From the rear line of the lot to the rear of the building.
+
+(Ords. 26248, 29821.)
+
+20.200.1470 - Yard, side.
+
+"Side yard" is that yard which is neither front yard nor rear yard.
+
+(Ords. 26248, 29821.)

@@ -1,0 +1,363 @@
+Article 3. - Accessory Dwelling Units^[6]
+
+6-560 - Purpose and findings.
+
+(a) Purpose. The purpose of this article is to allow and regulate accessory dwelling units (ADUs) and junior accessory dwelling units (JADUs) in compliance with California Government Code sections 65852.2 and 65852.22.
+
+(b) Effect of Conforming. An ADU or JADU that conforms to the standards in this section will not be:
+
+(1) Deemed to be inconsistent with the city's general plan and zoning designation for the lot on which the ADU or JADU is located.
+
+(2) Deemed to exceed the allowable density for the lot on which the ADU or JADU is located.
+
+(3) Considered in the application of any local ordinance, policy, or program to limit residential growth.
+
+(4) Required to correct a nonconforming zoning condition, as defined in Section 6-561(h) below.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020)
+
+6-561 - Definitions.
+
+As used in this article, terms are defined as follows:
+
+(a) "Accessory dwelling unit" or "ADU" means an attached or a detached residential dwelling unit that provides complete independent living facilities for one or more persons and is located on a lot with a proposed or existing primary residence. An accessory dwelling unit can also include the following:
+
+(1) An efficiency unit, as defined in Health and Safety Code Section 17958.1.
+
+(2) A manufactured home, as defined in Health and Safety Code Section 18007.
+
+(b) "Accessory building" means a structure that is accessory and incidental to a dwelling located on the same lot.
+
+(c) "Affordable rent" means a rental rate that results in monthly housing costs, including utilities, that collectively do not exceed the following:
+
+(1) For a very low-income household, 50 percent of the AMI, adjusted for household size, multiplied by 30 percent and divided by 12. (2) For a low-income household, 80 percent of the AMI, adjusted for household size, multiplied by 30 percent and divided by 12.
+
+(d) "Area median income" or "AMI" mean the area median income for Contra Costa County.
+
+(e) "Bonus ADU" means an accessory dwelling unit authorized under Section 6-569 that meets all of the following criteria:
+
+(1) It is no more than 500 square feet in floor area.
+
+(2) It is contained entirely within an existing or proposed single-family building. An enclosed use within the residence, such as an attached garage, is also considered to be a part of the single-family structure and may be converted to a bonus ADU.
+
+(3) It includes its own separate bathroom or shares a bathroom with the existing or proposed single-family building. If the unit does not include its own separate bathroom, then it contains an interior entrance to the main living area of the existing or proposed single-family structure in addition to an exterior entrance that is separate from the main entrance to the primary dwelling, so that the bonus ADU inhabitant may use the shared bathroom facility.
+
+(4) It includes an efficiency kitchen, as defined in subsection (g) below.
+
+(f) "Complete independent living facilities" means permanent provisions for living, sleeping, eating, cooking, and sanitation on the same parcel as the single-family or multifamily dwelling is or will be situated.
+
+(g) "Efficiency kitchen" means a kitchen that includes all of the following:
+
+(1) A cooking facility with appliances.
+
+(2) A food preparation counter and storage cabinets that are of a reasonable size in relation to the JADU.
+
+(h) "Floor area" means the total habitable and non-habitable area contained within a building footprint as measured to the internal face of the external walls.
+
+(i) "Height" means the vertical distance between the average of the highest and lowest grade at the lowest foundation wall (measured at existing grade or finished grade, whichever is lower) and the highest point of the structure. Mechanical appurtenances attached to buildings are excepted from the height limit calculation.
+
+(j) "Junior accessory dwelling unit" or "JADU" means an accessory dwelling unit that meets all of the following criteria:
+
+(1) It is no more than 500 square feet in floor area.
+
+(2) It is contained entirely within an existing or proposed single-family building. An enclosed use within the residence, such as an attached garage, is also considered to be a part of the single-family structure and may be converted to a JADU.
+
+(3) It includes its own separate bathroom or shares a bathroom with the existing or proposed single-family building. If the unit does not include its own separate bathroom, then it contains an interior entrance to the main living area of the existing or proposed single-family structure in addition to an exterior entrance that is separate from the main entrance to the primary dwelling, so that the JADU inhabitant may use the shared bathroom facility.
+
+(4) It includes an efficiency kitchen, as defined in subsection (g) above.
+
+(k) "Livable space" means a space in a dwelling intended for human habitation, including living, sleeping, eating, cooking, or sanitation.
+
+(l) "Living area" means the interior habitable area of a dwelling unit including basements and attics but does not include a garage or any accessory building.
+
+(m) "Low-income household" means a household whose annual income does not exceed 80 percent of area median income, adjusted for household size as published by the State of California Department of Housing and Community Development for Contra Costa County.
+
+(n) "Nonconforming zoning condition" means an existing physical improvement on a property that does not conform with current zoning standards.
+
+(o) "Passageway" means a pathway that is unobstructed clear to the sky and extends from a street to one entrance of the ADU or JADU.
+
+(p) "Primary unit" or "primary residence" means a single-family or multi-family residential dwelling unit.
+
+(q) "Proposed dwelling" means a dwelling that is the subject of a permit application and that meets the requirements for permitting.
+
+(r) "Public transit" means a location, including, but not limited to, a bus stop or train station, where the public may access buses, trains, subways, and other forms of transportation that charge set fares, run on fixed routes, and are available to the public.
+
+(s) "Tandem parking" means that two or more automobiles are parked on a driveway or in any other location on a lot, lined up behind one another.
+
+(t) "Very low-income household" means a household whose annual income does not exceed 50 percent of area median income, adjusted for household size as published by the State of California Department of Housing and Community Development for Contra Costa County.
+
+(u) "Zoning administrator" means the city's planning and building services manager or designee.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020; Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+6-562 - Process and timing.
+
+(a) An ADU permit is considered and approved ministerially, without discretionary review or a hearing.
+
+(b) The city must approve or deny an application to create an ADU or JADU within 60 days from the date that the city receives a completed application. If the city has not approved or denied the completed application within 60 days, the application is deemed approved unless either:
+
+(1) The applicant requests a delay, in which case the 60-day time period is tolled (paused) for the period of the requested delay, or
+
+(2) The application to create a ADU or JADU is submitted with a permit application to create a new single-family or multifamily dwelling on the lot, in which case the city may delay acting on the permit application for the ADU or JADU until the city acts on the permit application to create the new single-family or multifamily dwelling, but the application to create the ADU or JADU will still be considered ministerially without discretionary review or a hearing.
+
+(c) If the city denies an application to create an ADU or JADU, the city must provide the applicant with comments that include, among other things, a list of all the defective or deficient items and a description of how the application may be remedied by the applicant. Notice of the denial and corresponding comments must be provided to the applicant within the 60-day time period established by subsection (b) above.
+
+(d) A demolition permit for a detached garage that is to be replaced with an ADU is reviewed with the application for the ADU and approved by the City at the same time.
+
+(e) The city's planning and building director, or his or her designee, will review and act on all applications for ADUs.
+
+(f) Expiration of Permit. If the applicant does not begin the work authorized by the ADU permit within 12 months from the date of issuance or such other expiration date stated in the permit, the permit shall expire.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020; Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+6-563 - General ADU and JADU requirements.
+
+The following requirements apply to all ADUs and JADUs (Class A, Class B and Class C):
+
+(a) Zoning.
+
+(1) An ADU subject only to a building permit under Sections 6-564 (Class A) and 6-565 (Class B) below may be created on a lot in a residential or mixed-use zone.
+
+(2) An ADU subject to an ADU permit under Section 6-566 (Class C) below may be created on a lot that is zoned to allow single-family dwelling residential use or multifamily dwelling residential use.
+
+(3) A JADU may only be created on a lot zoned for single-family residences, in accordance with Government Code section 66333(a).
+
+(b) Height.
+
+(1) Except as otherwise provided by subsections b(2) and b(3) below, a detached Class A or Class B ADU created on a lot with an existing or proposed single family or multifamily dwelling unit may not exceed 16 feet in height. Except as otherwise provided by subsections b(2) and b(3) below, a detached Class C ADU may not exceed 17 feet in height.
+
+(2) A detached ADU may be up to 18 feet in height if it is created on a lot with an existing or proposed single-family or multifamily dwelling unit that is located within one-half mile walking distance of a major transit stop or high quality transit corridor, as those terms are defined in Public Resources Code Section 21155, and the ADU may be up to two additional feet in height (for a maximum of 20 feet) if necessary to accommodate a roof pitch on the ADU that is aligned with the roof pitch of the primary dwelling unit.
+
+(3) A detached ADU created on a lot with an existing or proposed multifamily dwelling that has more than one story above grade may not exceed 18 feet in height.
+
+(4) An ADU that is attached to the primary dwelling may not exceed 25 feet in height or the height limitation imposed by the underlying zone that applies to the primary dwelling, whichever is lower. Notwithstanding the foregoing, ADUs subject to this subsection (b)(4) may not exceed two stories.
+
+(c) Fire Sprinklers.
+
+(1) Fire sprinklers are required in an ADU if sprinklers are required in the primary residence.
+
+(2) The construction of an ADU does not trigger a requirement for fire sprinklers to be installed in the existing primary dwelling.
+
+(d) Address. All ADUs shall be assigned an address. The planning and building department will inform local agencies and service providers and the United States Postal Service of the address of the ADU, which will be the primary residence number followed by an identifying letter or number.
+
+(e) Passageway. No passageway, as defined in Section 6-561(o) above, is required for an ADU.
+
+(f) Rental Term. No ADU or JADU may be rented for a term that is shorter than 30 days. This prohibition applies regardless of when the ADU or JADU was created.
+
+(g) No Separate Conveyance. An ADU or JADU may be rented, but except as otherwise provided in Government Code Section 66341 relating to nonprofit corporations, no ADU or JADU may be sold or otherwise conveyed separately from the primary residence (in the case of a single-family lot) or from the lot and all of the dwellings (in the case of a multifamily lot).
+
+(h) Septic System. If the ADU or JADU will connect to an onsite wastewater-treatment system, the owner must include with the application a percolation test completed within the last five years or, if the percolation test has been recertified, within the last ten years.
+
+(i) Owner Occupancy.
+
+(1) ADUs created under this article on or after January 1, 2020 are not subject to an owner-occupancy requirement.
+
+(2) As required by state law, all JADUs are subject to an owner-occupancy requirement. A natural person with legal or equitable title to the property must reside on the property, in either the primary residence or JADU, as the person's legal domicile and permanent residence. However, the owner-occupancy requirement of this paragraph does not apply if the property is entirely owned by another governmental agency, land trust, or housing organization.
+
+(3) The foregoing owner-occupancy requirement may be excused for up to 12 consecutive months for health, family, employment or military reasons. The zoning administrator may grant two 12-month extensions at the request of the owner for such reasons.
+
+(j) Deed Restriction. Prior to issuance of a certificate of occupancy for an ADU or JADU, a deed restriction must be recorded against the title of the property in the county recorder's office and a copy filed with the zoning administrator. The deed restriction must run with the land and bind all future owners. The form of the deed restriction will be provided by the city and must provide that:
+
+(1) The ADU or JADU may not be sold separately from the primary residence except as otherwise provided in Government Code Section 66341.
+
+(2) The ADU or JADU is restricted to the approved size and to other attributes allowed by this article.
+
+(3) An ADU or JADU may not be rented for a term that is shorter than 30-days minimum rental.
+
+(4) The deed restriction runs with the land and may be enforced against future property owners.
+
+(5) The deed restriction may be removed if the owner eliminates the ADU or JADU, as evidenced by, for example, removal of the kitchen facilities. To remove the deed restriction, an owner may make a written request of the zoning administrator, providing evidence that the ADU or JADU has in fact been eliminated. The zoning administrator may then determine whether the evidence supports the claim that the ADU or JADU has been eliminated. Appeal may be taken from the zoning administrator's determination consistent with other provisions of this code. If the ADU or JADU is not entirely physically removed, but is only eliminated by virtue of having a necessary component of an ADU or JADU removed, the remaining structure and improvements must otherwise comply with applicable provisions of this code.
+
+(6) The deed restriction is enforceable by the zoning administrator or his or her designee for the benefit of the city. Failure of the property owner to comply with the deed restriction may result in legal action against the property owner, and the city is authorized to obtain any remedy available to it at law or equity, including, but not limited to, obtaining an injunction enjoining the use of the ADU or JADU in violation of the recorded restrictions or abatement of the illegal unit.
+
+(k) Building and Safety.
+
+(1) Must Comply with Building Code. Subject to subsection (k)(2) below, all ADUs and JADUs must comply with all local building code requirements.
+
+(2) No Change of Occupancy. Construction of an ADU does not constitute a Group R occupancy change under the local building code, as described in Section 310 of the California Building Code, unless the building official or code enforcement division officer makes a written finding based on substantial evidence in the record that the construction of the ADU could have a specific, adverse impact on public health and safety. Nothing in this subsection (k)(2) prevents the city from changing the occupancy code of a space that was uninhabitable space or that was only permitted for nonresidential use and was subsequently converted for residential use in accordance with this section.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020; Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+6-564 - Class A ADUs.
+
+If an ADU or JADU complies with each of the general requirements in Section 6-563 above, and the specific requirements of either subsection (a) or (b) below, it is a Class A ADU and is allowed with only a building permit in the following scenarios:
+
+(a) Limited Detached on Single-family Lot: One detached, new-construction ADU on a lot with a proposed or existing single-family dwelling (in addition to any JADU that might be established on the lot), if the detached ADU satisfies all of the following limitations:
+
+(1) The side- and rear-yard setbacks are at least four feet.
+
+(2) The total floor area is 800 square feet or smaller.
+
+(3) The height above grade does not exceed the applicable height limit provided in Section 6-563(b).
+
+(b) Limited Detached on Multifamily Lot: No more than two detached ADUs on a lot that has a proposed multifamily dwelling, or up to eight detached ADUs on a lot with an existing multifamily dwelling, if each detached ADU satisfies all of the following:
+
+(1) The side- and rear-yard setbacks are at least four feet. If the existing multifamily dwelling has a rear or side yard setback of less than four feet, the city will not require any modification to the multifamily dwelling as a condition of approving the ADU.
+
+(2) The height above grade does not exceed the applicable height limit provided in Section 6-563(b)(b).
+
+(3) If the lot has an existing multifamily dwelling, the quantity of detached ADUs does not exceed the number of primary dwelling units on the lot.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020; Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+6-565 - Class B ADUs.
+
+If an ADU or JADU complies with each of the general requirements in Section 6-563 above, and the specific requirements of either subsection (a) or (b) below, it is a Class B ADU and is allowed with only a building permit in the following scenarios:
+
+(a) Converted on Single-family Lot: Up to one ADU as described in this subsection (a) and one JADU are permitted on a lot with a proposed or existing single-family dwelling on it, either individually or together, where it/they:
+
+(1) Is/are either: within the space of a proposed single-family dwelling; within the existing space of an existing single-family dwelling; or (in the case of an ADU only) within the existing space of an existing accessory building, plus up to 150 additional square feet if the expansion is limited to accommodating ingress and egress;
+
+(2) Has/have exterior access that is independent of that for the single-family dwelling;
+
+(3) Has side and rear setbacks sufficient for fire and safety, as dictated by applicable building and fire codes; and
+
+(4) The JADU complies with the requirements of Government Code Sections 66333 through 66339.
+
+(b) Converted on Multifamily Lot: One or more ADUs within portions of existing multifamily dwelling buildings that are not used as livable space, including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements, or garages, if each converted ADU complies with state building standards for dwellings. Under this subsection (b), at least one converted ADU is allowed within an existing multifamily dwelling, up to a quantity equal to 25 percent of the existing multifamily dwelling units. In the case the resulting number of permitted ADUs contains a fraction, the number shall be rounded up to the nearest whole number.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020; Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+6-566 - Class C ADUs.
+
+The following section applies to ADUs that do not qualify as Class A or Class B ADUs. The planning and building director, or his or her designee, shall approve an ADU permit for a Class C ADU that complies with all the general requirements in Section 6-563 above, and with all the following specific requirements of this section:
+
+(a) Maximum Unit Size.
+
+(1) The maximum size of a detached or attached ADU subject to this section is 1,200 square feet of floor area.
+
+(2) An attached ADU that is created on a lot with an existing primary residence is further limited to 50 percent of the floor area of the existing primary residence except as permitted by subsection (a)(3) below.
+
+(3) Application of other development standards in this Section 6-566, might further limit the size of the ADU, but no application of the percent-based size limitation in subsection (a)(2) above or of an FAR, front setback, lot coverage limit, or open-space requirement may require the ADU to be less than 800 square feet in floor area.
+
+(b) Setbacks.
+
+(1) A setback of no more than four feet from the side and rear lot lines shall be required; except no setback shall be required for an ADU that is constructed in the same location and to the same dimensions as an existing structure.
+
+(2) Subject to subsections (a)(3) and (b)(1), above, front yard setbacks shall be as follows:
+
+(A) R-6, R-10, R-12, R-15, D-1, M-R-A, M-R-B, M-R-O districts: At least 20 feet; on corner lots the principal frontage shall have a setback of at least 20 feet and the other setback shall be at least four feet.
+
+(B) R-20, R-40, R-65 districts: At least 25 feet; on corner lots the principal frontage shall have a setback of at least 25 feet and the other setback shall be at least four feet.
+
+(C) R-100 district: At least 30 feet; on corner lots, the principal frontage shall have a setback of at least 30 feet and the other setback shall be at least four feet.
+
+(D) L-R-5 and L-R-10 districts: A minimum of 50 feet.
+
+(E) RB, C, SRB, C-1, and PHC districts: 50 feet on the ground floor from frontages facing Mt Diablo Boulevard. For all other frontages no setback is required.
+
+(c) Floor Area Ratio (FAR). Subject to subsection (a)(3) above, no ADU subject to this section may cause the total FAR of the lot to exceed the following thresholds, as applicable:
+
+(1) M-R-A district: .25 for lot sizes less than 10,000 square feet; .30 for lot sizes at least 10,000 square feet and less than 11,000 square feet; increasing .01 for every 1,000 square feet of lot size above 11,000 square feet.
+
+(2) M-R-O district: The maximum floor area shall be no greater than that allowed if the parcel were in the M-R-A zoning district as provided in subsection (c)(1) above, except that it need not be less than 0.50 times the area of the site.
+
+(d) Lot Coverage. Subject to subsection (a)(3) above, no ADU subject to this section may cause the total lot coverage of the lot to exceed the following thresholds, as applicable:
+
+(1) D-1 district: 50 percent.
+
+(2) M-R-A district: 35 percent.
+
+(3) M-R-B district: 25 percent.
+
+(e) Minimum Open Space. Subject to subsection (a)(3) above, no ADU subject to this section may cause the total percentage of open space of the lot to fall below the following thresholds, as applicable:
+
+(1) M-R-A district: 45 percent. 20 percent of the ground level of the lot shall be planted open space (maintained with growing plants) with a minimum dimension of 15 feet.
+
+(2) M-R-B district: 50 percent. 30 percent of the ground level of the lot shall be planted open space (maintained with growing plants) with a minimum dimension of 15 feet.
+
+(3) M-R-O district: 30 percent. 20 percent of the ground level of the lot shall be planted open space (maintained with growing plants) with a minimum dimension of ten feet.
+
+(4) M-R-T district: 50 percent.
+
+(f) Parking.
+
+(1) Generally, one off-street parking space is required for each ADU subject to this section that has one or more separate bedrooms. Off-street parking is not required for ADUs without separate bedrooms (studio). The parking space may be provided in setback areas, provided it is uncovered, or as tandem parking, as defined by Section 6-561(s) above, unless the zoning administrator makes specific findings that parking in setback areas or tandem parking is not feasible based upon specific site or regional topographical or fire and life safety conditions.
+
+(2) Exceptions. No parking under subsection (f)(1) above is required in the following situations:
+
+(A) The ADU is located within one-half mile walking distance of public transit, as defined Section 6-561(r) above.
+
+(B) The ADU is located within an architecturally and historically significant historic district.
+
+(C) The ADU is part of the proposed or existing primary residence or an existing accessory building under Section 6-565(a) above.
+
+(D) When on-street parking permits are required but not offered to the occupant of the ADU.
+
+(E) When there is an established car share vehicle stop located within one block of the ADU.
+
+(F) When the permit application to create an ADU is submitted with an application to create a new single-family or new multifamily dwelling on the same lot, provided that the ADU or the lot satisfies any other criteria listed in subsections (f)(2)(A) through (E) above.
+
+(3) No Replacement. When a garage, carport, covered parking structure, or uncovered parking space is demolished in conjunction with the construction of an ADU or converted to an ADU, those off-street parking spaces are not required to be replaced.
+
+(g) Architectural Requirements. Each ADU subject to this section shall comply with the following development standards:
+
+(1) The ADU's exterior, including the walls, trim, roof, windows, and doors shall each be the same material, texture, and color as those of the primary dwelling.
+
+(2) If the passageway or entrance provided for the ADU is visible from the street or right-of-way used to access the primary residence, such entrance shall not be located on the same side and facing the same direction as the entrance to the primary unit. If an ADU is accessed by an outside stairway which is visible from the street or right-of-way, the stairway shall not be on the same side as the entrance to the primary unit.
+
+(3) The off-street parking for an ADU shall be accessed by the primary unit's existing curb cut(s).
+
+(4) All exterior lighting for an ADU must be shielded and down-facing. Exterior wall-mounted lighting may only be placed on the two faces of the building that are furthest from the perimeter of the property, except that one wall light may always be placed adjacent to the exterior access door to the ADU. Shielded and downward-facing path lighting, with an above-grade height of no more than 20 inches, is permitted on all sides of an ADU.
+
+(h) Tree Protection. For each tree of the following species with a trunk diameter measuring greater than or equal to 12 inches as measured at a height of four and one-half feet from grade removed to provide for the location of an ADU subject to this section, one 15-gallon tree of the same species shall be planted onsite: Arroyo willow (Salix lasiolepis); Bigleaf maple (Acer macrophyllum); Black walnut (Juglans hindsii); Black oak (Quercus kelloggii); Blue oak (Quercus douglasii); Blue elderberry (Sambucus Mexicana, aerulea, or glauca); Boxelder (Acer negundo); California bay (Umbellularia californica); California buckeye (Aesculus californica); Canyon oak (Quercus chrysolepis); Coast live oak (Quercus agrifolia); Cork oak (Quercus suber); Cottonwood (Populus fremontii); Interior live oak (Quercus wislizenii); Madrone (Arbutus menziesii); Oregon white oak (Quercus garryana); Red willow (Salix laevigata); Valley oak (Quercus lobata); White alder (Alnus rhombifolia). No separate tree permit and no additional replacement trees shall be required for tree removal as described in this section.
+
+(i) Creek Setback. Subject to subsection (a)(3) above, to protect from flooding and land subsidence, an ADU subject to this section shall be set back from an unimproved creek channel as follows:
+
+(1) Channel Depth of Zero through 21 Feet. If the side slopes of the channel are steeper than 2:1 (horizontal:vertical), the width of the structure setback is determined by a line measured from the toe of the slope a distance of twice the channel depth plus the appropriate top-of-bank setback as follows:
+
+| Channel Depth (Feet) | Top of Bank Setback Minimum Width (Feet) |
+| 0—6 | 12 each side |
+| 6—12 | 15 each side |
+| 12—18 | 18 each side |
+| 18—21 | 21 each side |
+
+If the side slopes of the channel are flatter than 2:1 (horizontal:vertical) the structure setback is the appropriate setback indicated in the table above, measured from the top of the bank.
+
+(2) Channel Depth Exceeding 21 Feet. If the depth of a channel exceeds 21 feet, the width of the structure setback is determined by measuring from the toe of the slope a distance of three times the channel depth.
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020)
+
+6-567 - Impact fees.
+
+All Class A, B and C ADUs shall be subject to any applicable impact fees adopted by the city, except as provided below.
+
+(a) No impact fee is required for an ADU that is less than 750 square feet in floor area. For purposes of this section, "impact fee" means a "fee" under the Mitigation Fee Act (Government Code Section 66000(b)) and a fee under the Quimby Act (Government Code Section 66477). "Impact fee" here does not include any connection fee or capacity charge for water service.
+
+(b) Any impact fee that is required for an ADU that is 750 square feet or larger in floor area must be charged proportionately in relation to the square footage of the primary residence unit. (E.g., the floor area of the primary unit, divided by the floor area of the ADU, times the typical fee amount charged for a new dwelling.)
+
+(Ord. No. 678, § 3(Exh. A), 4-27-2020)
+
+6-568 - Nonconforming zoning code conditions, building code violations, and unpermitted structures.
+
+(a) Generally. The city will not deny an ADU or JADU application due to a nonconforming zoning condition, building code violation, or unpermitted structure on the lot that does not present a threat to the public health and safety and that is not affected by the construction of the ADU or JADU.
+
+(b) Unpermitted ADUs Constructed Before 2020.
+
+(1) Permit to Legalize. As required by state law, the city may not deny a permit to legalize an existing but unpermitted ADU or JADU that was constructed before January 1, 2020, if denial is based on either of the following grounds:
+
+(A) The ADU violates applicable building standards, or
+
+(B) The ADU does not comply with the state ADU law or this article.
+
+(2) Exceptions.
+
+(A) Notwithstanding subsection (b)(1) above, the city may deny a permit to legalize an existing but unpermitted ADU that was constructed before January 1, 2020, if the city makes a finding that correcting a violation is necessary to comply with the standards specified in California Health and Safety Code Section 17920.3.
+
+(B) Subsection (b)(1) above does not apply to a building that is deemed to be substandard in accordance with California Health and Safety Code Section 17920.3.
+
+(Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+6-569 - ADU bonus program.
+
+(a) As authorized by Government Code Section 66325(b), in addition to the maximum number of ADUs or JADUs otherwise permitted under this article, the city shall allow a Bonus ADU (as defined in Section 6-561(e)) if at least one of the units will be temporarily deed-restricted at affordable rent levels to very low-income households as defined by Section 6-561 (t) or low-income households as defined by Section 6-561(m), subject to the following terms of affordability:
+
+(1) For very low-income, the affordability restrictions shall apply for a minimum of ten years.
+
+(2) For low-income, the affordability restrictions shall apply for a minimum of ten years.
+
+(b) The bonus ADU shall comply with all other applicable provisions of this chapter.
+
+(Ord. No. 695, § 3(Exh. A), 12-9-2024)
+
+Editor's note— Ord. No. 695, § 3(Exh. A), adopted Dec. 9, 2024, repealed the former § 6-569 and enacted a new § 6-569 as set out herein. The former § 6-569 pertained to appeals and derived from Ord. No. 678, § 3(Exh. A), adopted April 27, 2020.

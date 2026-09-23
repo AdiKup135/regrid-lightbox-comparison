@@ -1,0 +1,2056 @@
+<div id="codesContent" ng-switch="vm.pageType">
+    <div role="alert">
+        <!---->
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----><div ng-switch-when="CHUNKS" class="codes-chunks-pg">
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.1PUOR_17.1.11DELODIDIBO" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.1PUOR_17.1.11DELODIDIBO" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 17.1.11 - Development on lots divided by district boundaries.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE" ng-if="vm.content.nextNode">Chapter 17.3 - RESIDENTIAL DISTRICT BASE USE RESTRICTIONS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+        <ul class="chunks list-unstyled small-padding">
+            <!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.2DE" class="chunk" data-nodetype="" data-nodedepth="2" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.2DE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!----><h2 ng-if="vm.relativeNodeDepth &lt; 1" id="_TIT17ZO_CH17.2DE" data-skip-id="_TIT17ZO_CH17.2DE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">Chapter 17.2 - DEFINITIONS</div></h2><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content"><br></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.2DE_17.2.1AP" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.2DE_17.2.1AP" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.2DE_17.2.1AP" data-skip-id="_TIT17ZO_CH17.2DE_17.2.1AP" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.2.1 - Applicability.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The definitions in this chapter apply to this title, unless the context requires a
+               different definition, subject to Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.2DE_17.2.2RUCOLA" data-chunk-id="TIT17ZO_CH17.2DE_17.2.2RUCOLA" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.2.2</a>.
+               </p>
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part))
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.2DE_17.2.2RUCOLA" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.2DE_17.2.2RUCOLA" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.2DE_17.2.2RUCOLA" data-skip-id="_TIT17ZO_CH17.2DE_17.2.2RUCOLA" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.2.2 - Rules for construction of language.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               The following rules of construction apply, in addition to the general provisions and
+               rules of construction in <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT1GEPR" data-chunk-id="TIT1GEPR" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 1</a> of the Municipal Code:
+               
+               </p><p class="incr1">
+                  A.
+                  </p>
+               		
+               <p class="content2">
+                  The particular controls the general.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  B.
+                  </p>
+               		
+               <p class="content2">
+                  Unless the context clearly indicates the contrary, the following conjunctions shall
+                  be interpreted as follows:
+                  </p>
+               		
+               <p class="incr2">
+                  1.
+                  </p>
+               		
+               <p class="content3">
+                  "And" indicates that all connected words or provisions apply;
+                  </p>
+               		
+               <p class="incr2">
+                  2.
+                  </p>
+               		
+               <p class="content3">
+                  "Or" indicates that the connected words or provisions may apply singly or in any combination;
+                  </p>
+               		
+               <p class="incr2">
+                  3.
+                  </p>
+               		
+               <p class="content3">
+                  "Either...or" indicates that the connected words or provisions apply singly but not
+                  in combination.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  C.
+                  </p>
+               		
+               <p class="content2">
+                  In case of conflict between the text and a diagram, the text controls.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  D.
+                  </p>
+               		
+               <p class="content2">
+                  References to departments, commissions, boards and other offices or instrumentalities
+                  are to those of the City unless otherwise indicated.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  E.
+                  </p>
+               		
+               <p class="content2">
+                  A reference to a public official in the City is to that person who performs the function
+                  referred to and includes a designated deputy of the official.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  F.
+                  </p>
+               		
+               <p class="content2">
+                  A reference to days is to calendar days unless otherwise specified by state law. If
+                  a deadline falls on a weekend or holiday, the time for performing an act is extended
+                  to the next working day.
+                  </p>
+               		
+               
+            <p class="historynote0">
+               (Ord. 99-5 § 2 Exh. A (part))
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!----><li data-ng-repeat="chunk in vm.content.chunks">
+                <mcc-codes-content-chunk mindepth="2"><div id="c_TIT17ZO_CH17.2DE_17.2.3DE" class="chunk" data-nodetype="" data-nodedepth="3" ng-switch="::chunk.DocType">
+    <span id="contentAnchor_TIT17ZO_CH17.2DE_17.2.3DE" class="anchor-offset"></span>
+    <!----><div ng-switch-when="1">
+        <div class="chunk-heading" tabindex="-1" ng-init="htmlChunkInit()">
+            <mcc-codes-title-wrapper mindepth="minDepth" nodedepth="::chunk.NodeDepth" chunkid="::chunk.Id" titlehtml="chunkVm.titleHtml" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}">    <!---->
+    <!----><h3 ng-if="vm.relativeNodeDepth == 1" id="_TIT17ZO_CH17.2DE_17.2.3DE" data-skip-id="_TIT17ZO_CH17.2DE_17.2.3DE" tabindex="-1" class="chunk-title-wrapper" ng-bind-html="vm.titleHtml"><div class="chunk-title">17.2.3 - Definitions.</div></h3><!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----></mcc-codes-title-wrapper>
+            <!----><div ng-if="::$root.mccStateParams.product.Features.CodeBankCompare">
+                <!---->
+                <!----><span class="label label-primary" ng-if="::chunk.CompareStatus == 2">modified</span><!---->
+            </div><!---->
+
+
+            <div class="mcc_codes_content_action_bar">
+
+                <div class="btn-group action-dropdown hidden-sm hidden-md hidden-lg hidden-xl">
+                    <button type="button" class="btn btn-icon-toggle ink-reaction dropdown-toggle btn-primary" data-toggle="dropdown" aria-hidden="true" aria-popup="true" aria-label="Document actions menu">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right animation-expand">
+                        <!----><li ng-if="::codesVm.docActions.sharelink.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="sharelink"><i class="fa fa-link"></i> Share Link</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.print.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="print"><i class="fa fa-print"></i> Print</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.downloaddocx.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="downloaddocx"><i class="fa fa-file-word-o"></i> Download (docx)</button>
+                        </li><!---->
+                        <!----><li ng-if="::codesVm.docActions.email.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="email"><i class="fa fa-envelope-o"></i> Email</button>
+                        </li><!---->
+                        <!----><li ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled">
+                            <button type="button" class="codes-action-menu-btn button-unstyled btn-block" data-actionid="compare"><i class="fa fa-copy"></i> Compare</button>
+                        </li><!---->
+                        <!---->
+                        <!---->
+                    </ul>
+                </div>
+                <!--delegated listener in codesContent2-->
+                <div class="btn-group action-bar text-primary hidden-xs pull-right">
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="sharelink" ng-if="::codesVm.docActions.sharelink.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Share link">
+                        <i class="fa fa-link"></i>
+                        <span class="sr-only">Share Link to section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="print" ng-if="::codesVm.docActions.print.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Print">
+                        <i class="fa fa-print"></i>
+                        <span class="sr-only">Print section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="downloaddocx" ng-if="::codesVm.docActions.downloaddocx.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Download (Docx)">
+                        <i class="fa fa-file-word-o"></i>
+                        <span class="sr-only">Download (Docx) of sections</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="email" ng-if="::codesVm.docActions.email.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="sr-only">Email section</span>
+                    </button><!---->
+                    <!----><button type="button" class="btn btn-icon-toggle codes-action-menu-btn" data-actionid="compare" ng-if="::!hideCompareAction &amp;&amp; codesVm.docActions.compare.enabled" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Compare versions">
+                        <i class="fa fa-copy"></i>
+                        <span class="sr-only">Compare versions</span>
+                    </button><!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="chunk-content-wrapper" ng-class="{'ins': $root.mccStateParams.product.Features.CodeBankCompare &amp;&amp; $root.$stateParams.showChanges &amp;&amp; chunk.CompareStatus == 0}"><div class="chunk-content">
+            <p class="p0">
+               As used in this title, the following terms are defined in this section:
+               </p>
+            <p class="p0">
+               "Abutting or adjoining" means having district boundaries or lot lines in common.
+               </p>
+            <p class="p0">
+               "Accepted arboricultural practice" is a practice recommended in current generally
+               accepted textbooks and professional journals on arboriculture and tree care including
+               but not limited to pruning standards published by the International Society of Arboriculture.
+               </p>
+            <p class="p0">
+               "Accessory dwelling unit" means an attached or a detached residential dwelling unit
+               that provides complete independent living facilities for one or more persons and is
+               located on a lot with a proposed or existing primary dwelling. It shall include permanent
+               provisions for living, sleeping, eating, cooking (see definition of kitchen), and
+               sanitation on the same parcel as the single-family or multifamily dwelling is or will
+               be situated. An accessory dwelling unit also includes the following:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  An efficiency unit, as defined in Health and Safety Code § 17958.1.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  A manufactured home, as defined in Health and Safety Code § 18007.
+                  </p>
+               		
+               
+            <p class="p0">
+               This definition is intended to match that in California Government Code Section 65852.2(j)(1).
+               </p>
+            <p class="p0">
+               "Accessory structure" means a structure that is incidental to the principal permitted
+               or conditionally permitted structure or use on a site and customarily found on the
+               same site. An accessory structure includes, as regulated by the respective zone of
+               the property, a garage, storage shed, greenhouse, and accessory dwelling units. Small
+               storage buildings and shelters shall be seen as accessory structures, regardless of
+               structural definitions used to determine UBC compliance. Accessory structure does
+               not include fences, decks, and landscape structures.
+               </p>
+            <p class="p0">
+               "Accessory use" means a use that is incidental to and compatible with the primary
+               use and which does not significantly increase the intensity or level of activity to
+               the principal permitted or conditionally permitted use on a site and customarily provided
+               with the use. The use must also be compatible with the primary use of the site and
+               the character of the surrounding area. This classification may include home occupation,
+               surface parking for resident's, customer's or employee's automobiles, recreational
+               activity, and administrative or office support function and facility.
+               </p>
+            <p class="p0">
+               Acre, Gross. "Gross acre" means the area of a lot or site, including easements and
+               right-of-way to be dedicated, but excluding existing public rights-of-way.
+               </p>
+            <p class="p0">
+               Acre, Net. "Net acre" means the area of a lot or site remaining after dedication of
+               all required easements for vehicles and rights-of-way, either public or private.
+               </p>
+            <p class="p0">
+               "Adult businesses" means a business based primarily upon materials or performances
+               that depict, describe, or relate to "specified sexual activities" or "specified anatomical
+               areas," as defined in Subsection 17.8.5.H.1.
+               </p>
+            <p class="p0">
+               "Aisle" means a paved area on a lot between a driveway and a parking space necessary
+               to provide access for vehicles.
+               </p>
+            <p class="p0">
+               "Alley" means a public or private right-of-way permanently reserved for secondary
+               access to the rear or side of properties otherwise abutting on a street. It does not
+               include a private right-of-way which provides vehicular access to three or fewer lots.
+               </p>
+            <p class="p0">
+               "Alter" means to make a physical change in the exterior appearance or the supporting
+               members of a structure, such as bearing walls, columns, beams or girders.
+               </p>
+            <p class="p0">
+               "Ambulance services" means nonpublic emergency and nonemergency medical care and transportation,
+               including incidental storage and maintenance of vehicles.
+               </p>
+            <p class="p0">
+               "Ancillary retail use" means an additional retail use in the same commercial premises
+               as the primary retail use.
+               </p>
+            <p class="p0">
+               Animal, Domestic. "Domestic animal" means a small animal of the type generally accepted
+               as a pet, including dog, cat, rabbit, songbird, fish, and the like, but not including
+               chickens, ducks, goose, fowl, hogs or the like.
+               </p>
+            <p class="p0">
+               Animal, Exotic. "Exotic animal" means a wild animal not customarily confined or cultivated
+               by man for domestic or commercial purposes but kept as a pet or for display.
+               </p>
+            <p class="p0">
+               Animal, Large. "Large animal" means an adult animal, other than a domestic animal,
+               typically larger than three and one-half feet in height or two hundred fifty (250)
+               pounds. This term includes horses, cows, and any other mammals customarily kept in
+               a pen, corral or stable, such as hogs.
+               </p>
+            <p class="p0">
+               "Animal husbandry" means raising of animals and production of animal products, such
+               as eggs or dairy products, on an agricultural or commercial basis, excluding slaughterhouse,
+               meat processing and secondary food production. Typical uses include grazing, ranching,
+               dairy farming, beekeeping, poultry farming and livestock auction. Facilities include
+               barn, silo, paddock, stable, pen and apiary. This use is separate from the accessory
+               use of keeping large animals on residential lots.
+               </p>
+            <p class="p0">
+               Animal Sales and Services. The following six definitions apply:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  "Animal boarding" means shelter and care for small animals on a commercial basis.
+                  This classification includes activities such as feeding, exercising, grooming, and
+                  incidental medical care.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  "Animal grooming" means bathing and trimming services for small animals on a commercial
+                  basis. This classification includes boarding of domestic animals for a maximum period
+                  of forty-eight (48) hours.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  "Animal hospital" means an establishment where small animals receive medical and surgical
+                  treatment. This classification includes only facilities that are entirely enclosed,
+                  soundproofed, and air-conditioned. Grooming and temporary boarding of animals is included
+                  if incidental to the hospital use.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  4.
+                  </p>
+               		
+               <p class="content2">
+                  Animals: Retail Sales. "Retail sales of animals" means retail sales of small animals
+                  which takes place within an entirely enclosed building. This classification includes
+                  grooming if incidental to the retail use.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  5.
+                  </p>
+               		
+               <p class="content2">
+                  "Animal show" means an exhibition of domestic or large animals for a maximum of seven
+                  days.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  6.
+                  </p>
+               		
+               <p class="content2">
+                  Animal, Small. "Small animal" means an animal typically no larger than three and one-half
+                  feet in height or two hundred fifty (250) pounds. This term includes fish, birds,
+                  goats and chickens, and any mammal customarily kept as a domestic pet within a dwelling
+                  unit.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Antenna" means any electrical conductor or array of conductors used for the purpose
+               of receiving and/or transmitting electromagnetic energy in support of communication
+               related or other activities, which is erected and maintained in a fixed location.
+               </p>
+            <p class="p0">
+               Antenna, Amateur Radio. "Amateur radio antenna" means any antenna which is used in
+               conjunction with an amateur radio station licensed by the Federal Communications Commission,
+               including, but not limited to booms, spreaders, radiator elements, director elements
+               or reflector elements constructed of metal tubing or similarly visible material.
+               </p>
+            <p class="p0">
+               Antenna, Commercial. "Commercial antenna" means any antenna and related support structure
+               intended for the purpose of sending and/or receiving signals in support of a commercial
+               venture, including, but not limited to public utilities, cellular telephone communications,
+               privately owned or publicly supported AM or FM radio stations, cable television operations
+               or television broadcast stations and business information and communication systems.
+               </p>
+            <p class="p0">
+               Antenna, Complex Wire. "Complex wire antenna" means two or more wires which may be
+               configured into a complex array and which may include self-supporting members, such
+               as a quad, delta, rhombic, curtain or similar antenna.
+               </p>
+            <p class="p0">
+               "Antenna height" means the vertical measurement from natural grade, or, if mounted
+               on a structure, from a point directly below the antenna structure if it were extended
+               to natural grade at the point nearest the structure, to the topmost portion of the
+               mast, antenna support structure or antenna, whichever is highest.
+               </p>
+            <p class="p0">
+               Antenna, Home Television. "Home television antenna" means an antenna, other than a
+               satellite antenna, intended for reception of television signals.
+               </p>
+            <p class="p0">
+               Antenna, Mast. "Mast antenna" means a pole of wood or metal, or a tower fabricated
+               of metal, or other material capable of, and used to support an antenna and maintain
+               it at the proper elevation.
+               </p>
+            <p class="p0">
+               Antenna, Satellite. "Satellite antenna" means a parabolic, concave or similarly configured
+               element which may be circular in shape, or may be composed of segments of a circle,
+               which, together with such supporting components as the feedhorn and receiving elements,
+               permits a reasonably unobstructed line of sight with geosynchronous or orbiting satellites,
+               microwave relay antennas or similar antennas, from or to which the satellite antenna
+               receives and/or transmits television signals or electromagnetic waves.
+               </p>
+            <p class="p0">
+               Antenna, Simple Wire. "Simple wire antenna" means a single wire, solid or stranded,
+               one-eighth inch or less in diameter, which is nonrigid and is not self-supporting.
+               </p>
+            <p class="p0">
+               Antenna Structure. The term "antenna structure" refers collectively to an antenna
+               and its supporting guy wires, mast or tower, if any.
+               </p>
+            <p class="p0">
+               "Antenna support structure" means all the components of the structure used to support
+               an antenna or array of antennas, exclusive of the principal and accessory structures
+               on the parcel and the antenna(s).
+               </p>
+            <p class="p0">
+               Antenna, Whip. The term "whip antenna" means a vertically mounted antenna consisting
+               of a single, slender, rod-like element, which is supported only at or near its base.
+               </p>
+            <p class="p0">
+               "Apartment" means a multifamily dwelling consisting of two or more dwelling units
+               under single ownership that are offered for rent or lease. This definition excludes
+               any single-family dwelling that contains, is attached to, or is on the same lot as
+               an accessory dwelling unit.
+               </p>
+            <p class="p0">
+               "Arbitrator" means a neutral person who conducts a process similar to a trial, and
+               who hears testimony, considers evidence, and makes a binding decision for the disputing
+               parties.
+               </p>
+            <p class="p0">
+               "Arts and crafts shows, indoors and outdoors" means display and sale of painting,
+               sculpture, crafts and similar objects.
+               </p>
+            <p class="p0">
+               "Artist studio" means work space for artists and artisans, including an individual
+               practicing one of the fine arts, or skilled in an applied art or craft.
+               </p>
+            <p class="p0">
+               "Attic" is that part of a building immediately below and wholly or partly within the
+               roof framing.
+               </p>
+            <p class="p0">
+               "Automobile" means a self-propelled, motorized vehicle used, or intended to be used,
+               for the transportation of people upon a street or highway, but not including any vehicle
+               designed for travel on stationary rails or tracks. This definition includes a motorcycle,
+               light truck or van with a capacity rating not exceeding one ton.
+               </p>
+            <p class="p0">
+               "Balcony" means a platform that projects from a wall of a building, typically above
+               the first level, and is surrounded by a rail balustrade or parapet.
+               </p>
+            <p class="p0">
+               "Bank and savings and loan" means a financial institution, including credit union
+               office or check cashing service, that provides retail banking services to individuals
+               and businesses. This classification includes only those institutions engaged in the
+               on-site circulation of cash money.
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  "With drive-through service" means an institution providing services accessible to
+                  a person who remains in an automobile.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  "ATM" means an automatic teller machine (ATM) on the exterior of a building for direct
+                  pedestrian access. An ATM for access from within a building is exempt.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Bar" (also, "tavern") means establishment such as a cocktail lounge and bar, at which
+               alcoholic beverages, including beer and wine, are served for on-site consumption.
+               Any sale of food is incidental to beverage service.
+               </p>
+            <p class="p0">
+               "Bay window" means a window which projects out from the vertical plane of an exterior
+               wall.
+               </p>
+            <p class="p0">
+               "Bedroom" means a private room planned or intended for sleeping, which is separated
+               from other rooms by a door.
+               </p>
+            <p class="p0">
+               "Binding arbitration" means the legal procedure set forth in Sections 1280 et seq.
+               of the Code of Civil Procedure;
+               </p>
+            <p class="p0">
+               "Blockface" means the property abutting on one side of a street and lying between
+               the two nearest intersecting or intercepting streets, or nearest intersecting or intercepting
+               street and railroad right-of-way, unsubdivided land, watercourse or city boundary.
+               </p>
+            <p class="p0">
+               "Breezeway" means a roofed, open-sided passageway connecting two structures, such
+               as a house and a garage.
+               </p>
+            <p class="p0">
+               "Building" means a structure having a roof supported by columns or walls for the housing
+               or enclosure of a person, animal, chattel, or property of any kind.
+               </p>
+            <p class="p0">
+               "Business services" means establishments providing document delivery, mail receiving
+               and boxes, graphic arts, interior decorating, drafting, blueprinting, typesetting,
+               copying and photographic services. This classification excludes maintenance and repair
+               and accounting, advertising architectural design, city planning, environmental analysis,
+               insurance, investment, landscape design, law, management consulting, and real estate
+               office.
+               </p>
+            <p class="p0">
+               "Carport" means a permanently roofed structure with one or more open sides for the
+               parking or temporary storage of automobiles.
+               </p>
+            <p class="p0">
+               "Cemetery" means burial grounds for the interment of the dead. This does not include
+               crematory, columbarium, mausoleum or mortuary.
+               </p>
+            <p class="p0">
+               "Christmas tree sale" means retail sales of Christmas trees between Thanksgiving and
+               December 26th. Also includes seasonal sales, such as the sale of pumpkins at Halloween.
+               </p>
+            <p class="p0">
+               "City" means the City of Orinda.
+               </p>
+            <p class="p0">
+               "Club or lodge" means a meeting, recreational or social facility of a private or nonprofit
+               organization primarily for use by members or guests, including union hall, social
+               club and youth center.
+               </p>
+            <p class="p0">
+               "Collection facility" means a building, structure or facility (including a vehicle)
+               with a gross floor area of two hundred twenty-five (225) square feet or less used
+               for the deposit and storage of household articles or recyclables.
+               </p>
+            <p class="p0">
+               College, Public or Private. "Public or private college" means an institution of higher
+               education providing curriculum of a general, religious, or professional nature and
+               that typically grants recognized degrees.
+               </p>
+            <p class="p0">
+               "Commercial filming" means a facility in which motion picture, still or video photography
+               is conducted, including film studio and processing services.
+               </p>
+            <p class="p0">
+               Commercial Filming, Limited. "Limited commercial filming" means commercial motion
+               picture or video photography at the same location for a single or limited production.
+               </p>
+            <p class="p0">
+               "Commercial marijuana land use" means any place, location, building, structure, or
+               establishment where the sale or exchange for valuable consideration of marijuana or
+               marijuana products, or the provision of marijuana or marijuana products by a nonprofit,
+               or the cultivation, possession, manufacture, distribution, processing, storing, laboratory
+               testing, packaging, or labeling of marijuana or marijuana products intended for sale
+               or exchange for valuable consideration or provision by a nonprofit occurs.
+               </p>
+            <p class="p0">
+               "Commercial recreation and entertainment" means a business providing participant or
+               spectator recreation, entertainment or sports activities.
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  Within Building. This classification includes such activities as movie or live performing
+                  arts theater, sports arena, bowling alley, billiard parlor, dance, ice or roller skating
+                  rink, scale model course, tennis or racquetball court, health or fitness club and
+                  gym, martial arts, game center including pinball arcade or establishment having four
+                  or more coin-operated electronics or mechanical game machines, and dance hall or disco.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  Outdoor Facility. This classification includes movie or live performing arts theater,
+                  sports stadium and arena, amusement park, golf or golf driving range, miniature golf
+                  or scale-model course, tennis or swim club, water slide and plunge, or batting cages.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Commercial use" means an occupation, business or type of enterprise offering a product
+               or service that is conducted for the purpose of profit.
+               </p>
+            <p class="p0">
+               "Communications facility" means a broadcasting, recording, and other communication
+               service accomplished through electronic or telephonic mechanism. This classification
+               includes radio, television or recording studio; telephone switching center; cellular
+               or digital telephone facility; telegraph or cable television transmitting office.
+               </p>
+            <p class="p0">
+               "Community noise equivalent level (CNEL)" means the average noise level during a twenty-four
+               (24) hour day, in decibels, weighted to account for the lower tolerance of people
+               to noise during evening (7:00 to 10:00 p.m.) and night (10:00 p.m. to 7:00 a.m.) hours
+               relative to daytime hours. This definition includes the term "LDN" (average day-night
+               noise level).
+               </p>
+            <p class="p0">
+               Complaining Party. See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.22VIPR_17.22.4DE" data-chunk-id="TIT17ZO_CH17.22VIPR_17.22.4DE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.22.4</a>.
+               </p>
+            <p class="p0">
+               "Conditionally permitted" means a use permitted subject to approval with conditions.
+               </p>
+            <p class="p0">
+               "Condominium" means a unit within a multifamily dwelling or an individual unit or
+               space within a commercial building or complex, and that is under single ownership.
+               </p>
+            <p class="p0">
+               "Congregate care residential" means a facility which provides twenty-four (24) hour
+               nonmedical care of persons in need of personal services, supervision or assistance
+               essential for sustaining the activities of daily living or for the protection of the
+               individual. The facility contains small individual dwelling units of usually only
+               one (1) or two (2) rooms with a small kitchen allowing for independent living but
+               also provides common dining, housekeeping, recreational and social facilities. Health
+               and Safety Code Sections 1502(a)(1); 1597.43. Small kitchens that comply with state
+               and local standards must be included in each individual dwelling unit for this definition
+               to apply.
+               </p>
+            <p class="p0">
+               "Convalescent facility" means an establishment providing care on a twenty-four (24)
+               hour basis for seven or more persons requiring regular medical attention, but excluding
+               facilities providing surgical or emergency medical services.
+               </p>
+            <p class="p0">
+               "Convenience market" means an establishment providing retail sales of food, beverages
+               and small convenience items. Long and late hours of operation are typical. Excluded
+               are delicatessens and other specialty food shops having a sizeable assortment of fresh
+               fruits, vegetables and fresh-cut meats.
+               </p>
+            <p class="p0">
+               "Court" means an unoccupied area open to the sky, other than a yard, on the same site
+               as a structure and bounded on two (2) or more sides by a structure.
+               </p>
+            <p class="p0">
+               Coverage, Lot or Site. "Lot or site coverage" means the percentage of a site covered
+               by a roof, soffit, trellis, that portion of an eave or overhang extending more than
+               two and one-half (2.5) feet from a wall, by a deck more than thirty (30) inches in
+               height, by a swimming pool, spa or sports court (such as a tennis or basketball court)
+               and by mechanical equipment.
+               </p>
+            <p class="p0">
+               "Crop production" means the raising and harvesting of orchard crops, raw crops or
+               field crops on an agricultural or commercial basis, including primary processing and
+               packaging, but excluding canning and secondary food production. Facilities include
+               granary, barn, greenhouse and packing structure.
+               </p>
+            <p class="p0">
+               "Cultivation" means any activity involving the planting, growing, harvesting, drying,
+               curing, grading, or trimming of marijuana, whether for personal use or for commercial
+               or nonprofit purposes.
+               </p>
+            <p class="p0">
+               "Cultural institution" means a nonprofit institution displaying or preserving objects
+               of interest in the arts or sciences. This classification includes library, museum
+               and art gallery.
+               </p>
+            <p class="p0">
+               Day Care, General. "General day care" means providing nonmedical care for fifteen
+               (15) or more persons on a less than twenty-four (24) hour basis. This classification
+               includes nursery school, preschool and day care center for children or adults.
+               </p>
+            <p class="p0">
+               Day Care, Small Family. "Small family day care" means nonmedical care and supervision
+               of eight or fewer children on a less than twenty-four (24) hour basis. This classification
+               includes a nursery school, preschool and day care center for children. Health and
+               Safety Code Section 15977.44.
+               </p>
+            <p class="p0">
+               Day Care, Large Family. "Large family day care" means nonmedical care and supervision
+               of fourteen (14) or fewer children on a less than twenty-four (24) hour basis. This
+               classification includes a nursery school, preschool and day care center for children.
+               Health and Safety Code Section 1597.465.
+               </p>
+            <p class="p0">
+               "dBA" means a number in decibels read from a sound level meter with the meter switched
+               to the weighted scale "A."
+               </p>
+            <p class="p0">
+               "Deck" means a platform, either freestanding or attached to a building, that is supported
+               by pillars or posts (see also: "Balcony").
+               </p>
+            <p class="p0">
+               Deck, Elevated. See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.35ELDEPE_17.35.2DE" data-chunk-id="TIT17ZO_CH17.35ELDEPE_17.35.2DE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.35.2</a>.
+               </p>
+            <p class="p0">
+               "Demolition" means to destroy or tear down all or part of a building or other structure.
+               </p>
+            <p class="p0">
+               "Destroy" means to kill or to take action that could foreseeably endanger the health
+               or vigor of a tree, including, but not limited to, excessive or improper pruning of
+               a tree, grade changes around or near a tree, excessive irrigation of a tree, and trenching
+               within the dripline or protected perimeter of a tree.
+               </p>
+            <p class="p0">
+               "Development" means any activity involving or related to the placement of any structure,
+               grading, change in the density or intensity of land use from that which is legally
+               existing, including subdivision of land or air space, or demolition, repair or alteration
+               of a structure or facility.
+               </p>
+            <p class="p0">
+               "Development project" is a project requiring a building or grading permit.
+               </p>
+            <p class="p0">
+               "Diameter" means the distance across the tree from outside bark to outside bark measured
+               at four and one-half (4.5) feet above the natural grade of the tree.
+               </p>
+            <p class="p0">
+               "Director" means the Planning Director or his or her designated representative.
+               </p>
+            <p class="p0">
+               "Distribution line" means an electric power line bringing power from a distribution
+               substation to a consumer.
+               </p>
+            <p class="p0">
+               "District" means a portion of the city within which the use of land and structures
+               and the location, height, and bulk of structures are governed by this title.
+               </p>
+            <p class="p0">
+               "Dripline" means the outermost edge of the tree's canopy. When depicted on a map,
+               the dripline appears as an irregularly shaped circle that follows the contour of the
+               tree's canopy as seen from above.
+               </p>
+            <p class="p0">
+               "Driveway" means a paved or unpaved area or private right-of-way necessary or used
+               to provide direct access for vehicles between a street and either:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  An area providing vehicular access to three or fewer lots or on a residential lot
+                  containing required parking spaces;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  An aisle between spaces in a parking lot;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  A loading berth; or
+                  </p>
+               		
+               
+               <p class="incr1">
+                  4.
+                  </p>
+               		
+               <p class="content2">
+                  A refuse storage area.
+                  </p>
+               		
+               
+            <p class="p0">
+               A driveway shall not be considered for yard setback purposes.
+               </p>
+            <p class="p0">
+               "Dwelling" means a building designed exclusively for residential occupancy, including
+               single-family and multifamily uses.
+               </p>
+            <p class="p0">
+               "Dwelling, Multifamily." "Multifamily dwelling" means a building on one lot used and
+               designed as a dwelling for two or more families living independently of each other
+               with an individual kitchen for each. This definition includes, without limitation,
+               apartments, residential condominiums and townhomes. This definition excludes any single-family
+               dwelling that contains or is attached to an accessory dwelling unit.
+               </p>
+            <p class="p0">
+               "Dwelling, Single-Family." "Single-family dwelling" means a building on one lot designed
+               exclusively for occupancy by one family, even if the building or lot also contains
+               an accessory dwelling unit.
+               </p>
+            <p class="p0">
+               "Dwelling unit" means one or more habitable rooms designed for occupancy by only one
+               family for living and sleeping purposes, and having a kitchen for fully self-contained
+               living purposes.
+               </p>
+            <p class="p0">
+               "Emergency shelter" shall be defined as in State law (see Health and Safety Code Section
+               50801, Government Code Section 65582) to mean housing with minimal supportive services
+               for homeless persons that is limited to occupancy of six months or less by a homeless
+               person. No individual or household may be denied emergency shelter because of an inability
+               to pay.
+               </p>
+            <p class="p0">
+               "Employee/Farmworker Housing" means a housing accommodation developed for and/or provided
+               to farmworkers.
+               </p>
+            <p class="p0">
+               Entertainment, Live. "Live entertainment" means any of the following activities on
+               the site of a use other than a public or semi-public use:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  A comedy act, musical, theatrical or dance recital or similar entertainment performed
+                  by one or more persons, regardless of whether performers are compensated;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  Any form of dancing by patrons or guests at a business establishment;
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  A fashion show, except when conducted within an enclosed building used primarily for
+                  the manufacture or sale of clothing.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Environmental preservation zone" includes that geographical area of the city shown
+               on the North Orinda Specific Plan Map adopted November 21, 1978, and designated as
+               "environmental preservation." A copy of the map is on file in the Orinda Planning
+               Department.
+               </p>
+            <p class="p0">
+               "Exception" means a deviance from the standards and requirements of this title which
+               is authorized in <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO" data-chunk-id="TIT17ZO" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 17</a> and permitted under <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.32EX" data-chunk-id="TIT17ZO_CH17.32EX" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.32</a>.
+               </p>
+            <p class="p0">
+               "Family" means one or more persons occupying a dwelling unit and living as a single
+               housekeeping unit.
+               </p>
+            <p class="p0">
+               "Farmers' market" means retail sales of produce and other food items conducted by
+               a sponsor.
+               </p>
+            <p class="p0">
+               "Fence" means a barrier made of wire, wood, metal, masonry or other material used
+               as a screen or enclosure for a yard or open space. It includes a wall, gate or structure
+               used as a fence. A retaining wall or freestanding sign is not considered a fence.
+               </p>
+            <p class="p0">
+               Front Yard. See Yard, Front.
+               </p>
+            <p class="p0">
+               "Fully enclosed and secure structure" shall mean a fully enclosed space within a building
+               that complies with <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT15BUCO" data-chunk-id="TIT15BUCO" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 15</a> of this Code, or if not subject to that Title, that has a complete roof and a foundation,
+               slab or equivalent base to which the floor is secured and that is secure against unauthorized
+               entry and accessible only through one or more lockable doors. Walls, doors, windows,
+               and roofs must be constructed of solid and firm material such as wood, metal, or,
+               in the case of windows, glass. Plastic sheeting or similar products do not satisfy
+               this requirement.
+               </p>
+            <p class="p0">
+               "Game center" means a business where the primary use is the playing of electronic
+               or mechanical games, or where the game use is ancillary, and more than three game
+               machines are proposed.
+               </p>
+            <p class="p0">
+               Garage, Private. "Private garage" means a detached accessory structure or portion
+               of a principal structure on the same lot as the dwelling for the parking or temporary
+               storage of an automobile belonging to the occupant of the dwelling.
+               </p>
+            <p class="p0">
+               "Garage sale" means the sale of tangible personal property at a residential site.
+               </p>
+            <p class="p0">
+               "General plan" means the City of Orinda General Plan with amendments.
+               </p>
+            <p class="p0">
+               "Government office" means an administrative, clerical or public contact office of
+               a federal, state or local government agency, including postal facilities, together
+               with incidental storage and maintenance of vehicles.
+               </p>
+            <p class="p0">
+               Grade, Existing. "Existing grade" means the surface of the ground at any point on
+               the perimeter of an existing or a proposed structure as the grade exists (without
+               alteration) prior to application for required approvals.
+               </p>
+            <p class="p0">
+               Grade, Street. "Street grade" means the top of the curb or the top of the edge of
+               the pavement or traveled way where no curb exists.
+               </p>
+            <p class="p0">
+               "Grading" means any activity related to the cutting, filling, compaction or other
+               movement of earth, including storage of moved earth materials, on a property as regulated
+               by this title.
+               </p>
+            <p class="p0">
+               "Hearing official" means the City Council, the Planning Commission, or the Zoning
+               Administrator, as the case may be.
+               </p>
+            <p class="p0">
+               "Hedge" means a barrier formed by bushes, shrubs or trees growing close together in
+               a line so as to be used as a screen or enclosure for a yard or open space.
+               </p>
+            <p class="p0">
+               Height. See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE_17.4.19HEME" data-chunk-id="TIT17ZO_CH17.4REDIBADERE_17.4.19HEME" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.4.19</a>.
+               </p>
+            <p class="p0">
+               Height, Aggregate. See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE_17.4.20AGHEME" data-chunk-id="TIT17ZO_CH17.4REDIBADERE_17.4.20AGHEME" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.4.20</a>.
+               </p>
+            <p class="p0">
+               Heritage Tree. See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.24HETR_17.24.2DE" data-chunk-id="TIT17ZO_CH17.24HETR_17.24.2DE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.24.2</a>.
+               </p>
+            <p class="p0">
+               "Home occupation" means a commercial enterprise conducted in a dwelling unit or accessory
+               building in a residential district that is incidental to the principal residential
+               use.
+               </p>
+            <p class="p0">
+               "Hospital" means a state-licensed facility providing medical, surgical, psychiatric
+               or emergency medical services to sick or injured persons, primarily on an inpatient
+               basis. This classification includes incidental facilities for out-patient treatment,
+               as well as training, research and administrative services for patients and employees.
+               </p>
+            <p class="p0">
+               Horticulture, Limited. "Limited horticulture" means cultivation of flowers, fruits,
+               vegetables, or ornamental trees and shrubs on a wholesale basis with incidental retail
+               sales and where no other garden, nursery or landscape merchandise is sold or stored
+               on the site.
+               </p>
+            <p class="p0">
+               Illumination, Direct. "Direct illumination" means illumination by means of light that
+               travels directly from its source to the viewer's eye.
+               </p>
+            <p class="p0">
+               Illumination, Indirect. "Indirect illumination" means illumination by means of light
+               cast or reflected upon an opaque surface from a concealed source.
+               </p>
+            <p class="p0">
+               "Junior accessory dwelling unit" means a residential unit that is no more than five
+               hundred (500) square feet in size and contained entirely within a single-family residence.
+               A junior accessory dwelling unit may include separate sanitation facilities, or may
+               share sanitation facilities with the existing structure. This definition is intended
+               to match that in California Government Code Section 65852.22(h)(1).
+               </p>
+            <p class="p0">
+               "Kitchen" means any room or part of a room within a building which is designed, built,
+               used or intended to be used for storage and food preparation and dishwashing in conjunction
+               with the establishment or use of a dwelling unit; but not including a bar, butler's
+               pantry or similar room adjacent to or connected with a kitchen. Food preparation facilities
+               shall include 220-volt electrical or natural or propane gas service, unless otherwise
+               specified by this Code.
+               </p>
+            <p class="p0">
+               Laboratory, Limited. "Limited laboratory" means an establishment providing medical
+               or dental laboratory services or establishment with less than two thousand (2,000)
+               square feet providing photographic, analytical, or testing service.
+               </p>
+            <p class="p0">
+               "Landscape" means to plant and maintain some combination of trees, ground cover, shrubs,
+               vines, flowers or lawn. Landscaping may include natural features such as existing
+               or imported rock and structural features including fountains, pools, art work, screens,
+               walls, fences or benches. A landscaped area may also include a walkway or concrete
+               plaza if it is an integral part of the elements of landscaping described in this section.
+               </p>
+            <p class="p0">
+               "Landscape structure" means a decorative structure typically associated with landscaping
+               that is located outside of and separate from a building. Landscape structure includes,
+               but is not limited to, a trellis, arbor, fountain, artwork/sculpture, or similar structures.
+               Landscape structure does not include fences and accessory structures.
+               </p>
+            <p class="p0">
+               Landscaping, Interior. "Interior landscaping" means landscaped area or areas within
+               the shortest circular line defining the perimeter or exterior boundary of the parking
+               or loading area, or similar paved area, excluding driveways or walkways providing
+               access to the facility (as applied to parking and loading facilities or to similar
+               paved areas).
+               </p>
+            <p class="p0">
+               Landscaping, Perimeter. "Perimeter landscaping" means landscaped area adjoining and
+               outside the shortest circular line defining the exterior boundary of a parking or
+               loading area, or similar paved area, excluding driveways or walkways providing access
+               to the facility (as applied to parking and loading facilities or to similar paved
+               areas).
+               </p>
+            <p class="p0">
+               "Liquor store" means an establishment primarily engaged in the sale of alcoholic beverages
+               for off-site consumption and incidental sale of general merchandise. This classification
+               includes wine tasting rooms as an incidental use to wine sales. The sale of nonalcoholic
+               beverages and food items is incidental to a liquor store.
+               </p>
+            <p class="p0">
+               "Living area" means the interior habitable area of a dwelling unit including basements
+               and attics but does not include a private garage or any accessory structure.
+               </p>
+            <p class="p0">
+               "Lot" means a site or parcel of land under single ownership that has been legally
+               subdivided, resubdivided or merged. The term for the purpose of application of this
+               title also includes "parcel" and "site."
+               </p>
+            <p class="p0">
+               Lot Area, Net. "Net lot area" means the horizontal area within the property lines
+               excluding streets, alleys, vehicular easements and areas to be included in future
+               street rights-of-way as established by easement, dedication or ordinance.
+               </p>
+            <p class="p0">
+               Lot, Corner. "Corner lot" means a site bounded by two or more adjacent street lines
+               that have an angle of intersection of not more than one hundred thirty-five (135)
+               degrees.
+               </p>
+            <p class="p0">
+               "Lot depth" means the horizontal distance measured at right angles from the midpoint
+               of the front lot line to the rear lot line. Where the configuration of a lot prevents
+               measurement of the lot depth pursuant to this requirement, the lot depth shall be
+               the longest possible straight-line distance measured at a right angle from a point
+               on the front lot line to the point furthest back on the lot.
+               </p>
+            <p class="p0">
+               Lot, Double-Frontage. "Double-frontage lot" means an interior lot fronting on more
+               than one street. Each frontage from which access is permitted is considered a front
+               lot line for development purposes.
+               </p>
+            <p class="p0">
+               Lot, Flag. "Flag lot" means a lot shaped so that the lot body (the widest part of
+               the lot) does not have street frontage but is connected to the street by a lot stem.
+               For this purpose, a "lot stem" is a strip of land: (1) which is contiguous with the
+               body of a lot, (2) the width of which is less than both the required lot width and
+               the average width of the lot, and (3) which usually provides access to the body of
+               the lot. Typically, required setbacks render the area of a lot stem unbuildable.
+               </p>
+            <p class="p0">
+               Lot Front Width. See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.4REDIBADERE_17.4.9DEFRWI" data-chunk-id="TIT17ZO_CH17.4REDIBADERE_17.4.9DEFRWI" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.4.9</a>.
+               </p>
+            <p class="p0">
+               "Lot line" means the line bounding a lot.
+               </p>
+            <p class="p0">
+               "Lot line adjustment" means the adjustment of a lot line between two or more existing
+               adjacent parcels where the land taken from one parcel is added to the adjacent parcel
+               and where a greater number of parcels than originally existed is not created, consistent
+               with the state Subdivision Map Act.
+               </p>
+            <p class="p0">
+               Lot Line, Front. "Front lot line" means a lot line located at the front of a lot,
+               typically along the edge of a street or street right-of-way.
+               </p>
+            <p class="p0">
+               Lot Line, Interior. "Interior lot line" means a lot line not abutting a street.
+               </p>
+            <p class="p0">
+               Lot Line, Rear. "Rear lot line" means a lot line, not a front lot line, that is parallel
+               or approximately parallel to the front lot line and located to the rear of the lot,
+               furthest from the front lot line.
+               </p>
+            <p class="p0">
+               Lot Line, Side. "Side lot line" means any lot line that is not a front lot line or
+               a rear lot line.
+               </p>
+            <p class="p0">
+               Lot, Nonconforming. "Nonconforming lot" means a lot which was lawfully subdivided
+               or established, but which does not conform with the regulations for the district in
+               which the lot is located by reason of adoption or amendment of this title or previous
+               regulations or by reason of annexation of territory to the city.
+               </p>
+            <p class="p0">
+               "Low (very), low or moderate income household" means a person or family whose income
+               does not exceed the limits of the area income, by classification, as described in
+               California Health and Safety Code Section 50093.
+               </p>
+            <p class="p0">
+               "Low Barrier Navigation Center" means a Housing First, low-barrier, service-enriched
+               shelter focused on moving people into permanent housing that provides temporary living
+               facilities while case managers connect individuals experiencing homelessness to income,
+               public benefits, health services, shelter, and housing.
+               </p>
+            <p class="p0">
+               "Lower-income household" means a person or family, whose income does not exceed the
+               qualifying limits for lower income families as established pursuant to Section 8 of
+               the United States Housing Act of 1937 and as described in California Health and Safety
+               Code Section 50079.5.
+               </p>
+            <p class="p0">
+               "Maintenance and repair service" means an establishment providing on-site repair and
+               incidental sales of supplies for appliances, office machines, home electronic equipment
+               and computers, bicycles, tools, or garden equipment within an enclosed building. This
+               classification includes furniture refinishing and repair, or building maintenance
+               services, but excludes maintenance and repair of vehicles (see "Vehicle/equipment
+               sales and services"), boats or ships, or industrial equipment.
+               </p>
+            <p class="p0">
+               "Maintenance or service facility" means a facility for use by public entities and
+               utilities providing storage areas and maintenance and repair services for vehicles
+               and equipment. This classification includes corporation yards, equipment service centers
+               and similar facilities.
+               </p>
+            <p class="p0">
+               "Manufactured home" means a prefabricated or factory-built structure certified under
+               the National Manufactured Housing Construction and Safety Standards Act of 1974 that
+               is attached to a permanent foundation and is used as a dwelling unit. This definition
+               is intended to include mobile homes and modular homes which meet material standards
+               for manufactured homes.
+               </p>
+            <p class="p0">
+               "Marijuana" means all parts of the plant Cannabis sativa L., Cannabis indica, or Cannabis
+               ruderalis, whether growing or not; the seeds thereof; the resin, whether crude or
+               purified, extracted from any part of the plant; and every compound, manufacture, salt,
+               derivative, mixture, or preparation of the plant, its seeds or resin. It does not
+               include: (i) industrial hemp, or (ii) the mature stalks of the plant, fiber produced
+               from the stalks, oil or cake made from the seeds of the plant, any other compound,
+               manufacture, salt, derivative, mixture, or preparation of the mature stalks (except
+               the resin extracted therefrom), fiber, oil, or cake, or the sterilized seed of the
+               plant which is incapable of germination. As defined, marijuana includes cannabis and
+               both medical and nonmedical marijuana/cannabis. Medical includes "medicinal."
+               </p>
+            <p class="p0">
+               "Marijuana products" means marijuana that has undergone a process whereby the plant
+               material has been transformed into a concentrate, including, but not limited to, concentrated
+               cannabis, or an edible or topical product containing marijuana or concentrated cannabis
+               and other ingredients.
+               </p>
+            <p class="p0">
+               "Mediator" means a neutral, objective third person who assists people in finding a
+               mutually satisfactory solution to a problem.
+               </p>
+            <p class="p0">
+               "Multifamily residential" means the multifamily residential zone characterized by
+               two or more dwelling units on a lot. This classification includes mobile homes and
+               manufactured housing; it excludes accessory dwelling units in all residential districts
+               which comply with the requirements of <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO" data-chunk-id="TIT17ZO" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 17</a>.
+               </p>
+            <p class="p0">
+               "Municipal Code" means the Municipal Code of the City of Orinda.
+               </p>
+            <p class="p0">
+               "Neighborhood" means the area measured by homes within a three hundred (300) foot
+               radius of any point on the property line of the lot on which the subject property
+               is located.
+               </p>
+            <p class="p0">
+               "Net Parcel Area." See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.6REFLAR_17.6.7NEPAAR" data-chunk-id="TIT17ZO_CH17.6REFLAR_17.6.7NEPAAR" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.6.7</a>.
+               </p>
+            <p class="p0">
+               "Nonconforming structure or building" means a structure or building or part of a structure
+               that conformed with regulations in place at the time of construction and was built
+               with required permits but due to changes in the regulations does not conform to current
+               requirements.
+               </p>
+            <p class="p0">
+               "Nonconforming use" means a use of a structure or land which was lawfully established
+               and maintained, but which does not conform with the use regulations, required conditions
+               or other use requirements of this title for the district in which it is located, including
+               density and parking regulations, by reason of adoption or amendment of this title
+               or previous regulations or by reason of annexation of territory to the city.
+               </p>
+            <p class="p0">
+               Office, Business and Professional. "Business and professional office" means an establishment
+               engaged in the provision of executive, management, administrative, consulting or professional
+               services, such as architectural and interior design, city planning, environmental
+               analysis, landscape architecture, engineering, real estate (as may be further limited
+               by the specific zoning district), insurance, investment, legal, secretarial, accounting,
+               computer programming and data processing, desktop publishing, psychology, advertising
+               and public relations, title insurance, bail bonds, medical or dental offices (including
+               acupuncturists, homeopaths and chiropractors), prescription pharmacy (if included
+               within a medical office), entertainment (including ticket agencies), building and
+               construction offices (excluding contractor yards), sales representatives, collection,
+               or personnel agency.
+               </p>
+            <p class="p0">
+               "Off-street loading facility" means that portion of a site or structure devoted to
+               the loading or unloading of a motor vehicle or trailer, including a loading berth,
+               aisle or access drive.
+               </p>
+            <p class="p0">
+               "Off-street parking facility" means that portion of a site devoted to the off-street
+               parking of a motor vehicle, including a parking space, aisle or driveway ramp.
+               </p>
+            <p class="p0">
+               Open Space, Common. "Common open space" means an open area within a residential development
+               reserved for the use of the residents of the development and guests, and, if provided
+               for through the conditions of approval of the development, the general public.
+               </p>
+            <p class="p0">
+               Open Space, Private. "Private open space" means an open area outside of a building
+               adjoining and directly accessible to a dwelling unit, reserved for the exclusive use
+               of the resident of the dwelling unit and guest.
+               </p>
+            <p class="p0">
+               "Outdoor living area" means an area on the exterior of the second unit that is designed
+               for human habitation, including but not limited to, a patio, a barbecue pit, an outdoor
+               dining table, a hammock, a lounge chair, a bench, a spa or a deck.
+               </p>
+            <p class="p0">
+               "Outdoor marijuana cultivation" shall mean the cultivation of marijuana in any location
+               within the City of Orinda that is not inside a dwelling or inside a fully enclosed
+               and secure accessory structure.
+               </p>
+            <p class="p0">
+               "Owner-occupant" means a person who has an ownership interest in the property and
+               also occupies the property as a primary residence.
+               </p>
+            <p class="p0">
+               "Parcel" means a recorded property under single ownership.
+               </p>
+            <p class="p0">
+               "Park or recreation facility" means a park, a playground, a recreation facility (other
+               than commercial recreational uses) and open space, public or private.
+               </p>
+            <p class="p0">
+               "Parking Lot." (See: "Off-street parking facility.")
+               </p>
+            <p class="p0">
+               Parking Space, Automobile. "Automobile parking space" means a space within a building
+               or open off-street parking facility for the parking of an automobile exclusive of
+               driveway, aisle, ramp, columns or office and work area.
+               </p>
+            <p class="p0">
+               Parking Space, Covered. "Covered parking space" means a carport or garage or, in multifamily
+               residential development, spaces covered by a roof or building but not necessarily
+               enclosed.
+               </p>
+            <p class="p0">
+               "Passageway" means a pathway that is unobstructed clear to the sky and extends from
+               a street to one entrance of an accessory dwelling unit.
+               </p>
+            <p class="p0">
+               "Permitted" means a use or improvement for which discretionary review and approval
+               from the City Council, Planning Commission, or the Zoning Administrator is not required
+               by this code.
+               </p>
+            <p class="p0">
+               "Personal development services" means the provision of instructional services or facilities,
+               including photography, fine arts, crafts, music studio, driving school and diet center.
+               </p>
+            <p class="p0">
+               "Personal property sale" means the sale of personal property on a noncommercial basis.
+               This use includes garage and estate sales.
+               </p>
+            <p class="p0">
+               "Personal services" means provision of services and incidental sales of a personal
+               nature. This classification includes barber and beauty shop, watch and jewelry repair,
+               engraver, picture framing, seamstress, tailor, shoe repair shop, dry cleaner, locksmith,
+               film developing, telegraph and fax services, mail receiving and boxes, delivery services
+               and self-service laundry.
+               </p>
+            <p class="p0">
+               "Philanthropic event" means sale of tickets, fundraising and use of public or private
+               facilities for nonprofit organization or to benefit charitable cause, including use
+               of residential, commercial or office space.
+               </p>
+            <p class="p0">
+               "Porch" means a covered platform, usually having a separate roof, at an entrance to
+               a dwelling, or an open gallery or room, which is not heated or cooled, that is attached
+               to the outside of a building.
+               </p>
+            <p class="p0">
+               "Pre-existing View" or "Sunlight." See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.22VIPR_17.22.4DE" data-chunk-id="TIT17ZO_CH17.22VIPR_17.22.4DE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.22.4</a>.
+               </p>
+            <p class="p0">
+               "Prezoning" means the zoning district classification as prescribed by this title that
+               has been designated for a site before annexation to the city.
+               </p>
+            <p class="p0">
+               "Primary living area" means the portion of a residence from which a view is observed
+               most often by the occupants relative to other portions of the residence. The determination
+               of primary living area is made on a case-by-case basis.
+               </p>
+            <p class="p0">
+               "Professional arborist" means a person certified as an arborist by the International
+               Society of Arboriculture or a person who, as determined by the Director, is equally
+               qualified in the field of arboriculture.
+               </p>
+            <p class="p0">
+               "Project" means any development proposal for new or changed use, or for new construction,
+               alteration, repair or enlargement of a structure that is regulated by this title (see:
+               "Development").
+               </p>
+            <p class="p0">
+               "Property Line" (see: "Lot line").
+               </p>
+            <p class="p0">
+               "Property owner" means a person holding complete or partial ownership of a lot, parcel
+               or site regulated by this title.
+               </p>
+            <p class="p0">
+               "Protected perimeter" means the area around the tree within the dripline plus a ten-foot-wide
+               strip of ground surrounding the dripline.
+               </p>
+            <p class="p0">
+               "Protected tree" means a tree which has been so designated in accordance with <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.21TRMA" data-chunk-id="TIT17ZO_CH17.21TRMA" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.21</a> of the Orinda Municipal Code.
+               </p>
+            <p class="p0">
+               "Pruning" means the selective removal of tree branches.
+               </p>
+            <p class="p0">
+               "Public parking facility" means a publicly-owned, off-street parking facility, including
+               surface parking or parking structure, for the temporary parking of automobiles by
+               the general public.
+               </p>
+            <p class="p0">
+               "Public safety facility" means a facility for public safety and emergency services,
+               including police and fire protection and emergency ambulance service.
+               </p>
+            <p class="p0">
+               "Public transit terminal" means public or publicly regulated facility for passenger
+               transit service and operations. This includes a rapid transit station, bus terminal,
+               and park-and-ride lot.
+               </p>
+            <p class="p0">
+               "Real property sale" means a sale, leasing or rental of lots or structures. This includes
+               the on-site sale of subdivision lots or structures.
+               </p>
+            <p class="p0">
+               "Rear Yard." See Yard, Rear.
+               </p>
+            <p class="p0">
+               "Recreational vehicle" means a vehicle, other than an automobile, which is self-propelled,
+               motorized and has self-contained living quarters, including a kitchen, bathroom and
+               sleeping areas, and may be used for the transportation of people upon a street or
+               highway, but not including any vehicle designed for travel on stationary rails or
+               tracks. This definition also includes motor homes and travel trailers.
+               </p>
+            <p class="p0">
+               "Religious assembly" means a facility for religious worship and incidental religious
+               activities and education, but not including private school.
+               </p>
+            <p class="p0">
+               "Removal" means the elimination of a tree from its present location.
+               </p>
+            <p class="p0">
+               "Renovation" means reconstruction of an existing primary residence involving no change
+               in the existing footprint, height, floor area, and volume of the primary residence,
+               except for de minimis changes. Whether a project is a renovation will be determined
+               by proof made according to Planning Department requirements.
+               </p>
+            <p class="p0">
+               "Research and development services" means an establishment primarily engaged in industrial
+               or scientific research, including limited product testing. This classification includes
+               electronic research firm, computer software development and pharmaceutical research
+               laboratory, but excludes manufacturing or medical testing and analysis.
+               </p>
+            <p class="p0">
+               "Resident" means a person who occupies a dwelling as a home on a permanent basis,
+               and has no other permanent place of residence.
+               </p>
+            <p class="p0">
+               "Residential Care, Limited" or "Limited residential care" means twenty-four (24) hour
+               nonmedical care for eight or fewer persons in need of personal services, supervision,
+               protection or assistance essential for sustaining the activities of daily living which
+               are licensed by the state of California. Health and Safety Code Sections 1568.0831,
+               1569.85, and 11834.23.
+               </p>
+            <p class="p0">
+               "Residential Care Facility" means a facility, which demonstrates compliance with state
+               law and a license to operate the facility, which is maintained and operated to provide
+               twenty-four (24) hour nonmedical care for persons in need of personal services, supervision,
+               protection, or assistance essential for sustaining the activities of daily living
+               or for the protection of the individual.
+               </p>
+            <p class="p0">
+               "Restaurant" means an establishment where consumers dine while seated at a table,
+               booth or counter, either inside or outside the building.
+               </p>
+            <p class="p0">
+               "Restaurant, Take-Out" or "Take-out restaurant" means a take out restaurant provides
+               prepared food primarily for consumption off the premises. Typical characteristics
+               of a take-out restaurant include, but are not limited to, the purchase of food at
+               a walk-up window or counter, payment for food prior to consumption and the packaging
+               of food in disposable containers. A restaurant shall not be considered a take-out
+               restaurant solely on the basis of incidental or occasional take-out sales.
+               </p>
+            <p class="p0">
+               "Restorative action" means a specific requirement to resolve a tree dispute.
+               </p>
+            <p class="p0">
+               "Retail sales" means the sale of tangible goods to the ultimate consumer.
+               </p>
+            <p class="p0">
+               "Ridgeline." See Subsection 17.5.2.B.
+               </p>
+            <p class="p0">
+               "Ridgeline Lot." See Subsection 17.5.2.C.
+               </p>
+            <p class="p0">
+               "Riparian vegetation" means vegetation associated with any watercourse which requires
+               or tolerates moisture in excess of that available in adjacent uplands.
+               </p>
+            <p class="p0">
+               "Rummage sale" means the sale of secondhand property including reclaimed or salvaged
+               goods by a charitable, religious or nonprofit organization.
+               </p>
+            <p class="p0">
+               "Scenic corridor" is that area of land on and adjacent to streets and SR 24 which
+               have been designated within the general plan as scenic corridors.
+               </p>
+            <p class="p0">
+               "School, Commercial" or "Commercial school" means an establishment engaged in the
+               teaching of technical or vocational skills, including barber and beauty colleges,
+               real estate, modeling, computer programming, and secretarial school.
+               </p>
+            <p class="p0">
+               "School, Public or Private" or "Public or private school" means an education institution,
+               attendance at which satisfies the compulsory education laws of the State of California.
+               </p>
+            <p class="p0">
+               "Senior citizen" means a person fifty-five (55) years of age or older. This definition
+               includes the term "qualifying resident" described in California Civil Code Section
+               51.3.
+               </p>
+            <p class="p0">
+               "Senior Housing Facilities" are housing facilities that qualify as "housing for older
+               persons" ("HOP") under the Federal Fair Housing Act, 42. U.S.C. § 3607(b), and as
+               "housing for senior citizens" ("HSC") under the Unruh Civil Rights Act, Civil Code
+               Sections 51.2 and 51.3.
+               </p>
+            <p class="p0">
+               "Service station" means an establishment primarily engaged in the retail sale of gasoline
+               and motor fuel, auto parts and supplies, and incidental auto repair.
+               </p>
+            <p class="p0">
+               "Setback" means the required minimum distance from any point on a property line to
+               the nearest point on the nearest structure.
+               </p>
+            <p class="p0">
+               "Shopping center" means a complex consisting of buildings containing not less than
+               four independently operated stores or shops developed under one comprehensive plan
+               where the ground-floor stores have access directly to a sidewalk or parking lot, and
+               where all stores are served by a common parking lot. The recording of a condominium
+               subdivision map does not affect the status of a shopping center.
+               </p>
+            <p class="p0">
+               "Short-term rental" means a dwelling that is leased or rented in full or in part for
+               the purpose of overnight lodging for less than thirty (30) consecutive day terms.
+               Short-term rentals are not considered home occupations (as defined in Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE_17.3.7HOOC" data-chunk-id="TIT17ZO_CH17.3REDIBAUSRE_17.3.7HOOC" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.3.7</a>).
+               </p>
+            <p class="p0">
+               "Side Yard." See Yard, Side.
+               </p>
+            <p class="p0">
+               "Single-family residential" means a building containing one dwelling unit located
+               on a single lot. This classification includes a mobile home and manufactured housing,
+               and lots containing a single-family dwelling and one accessory dwelling unit.
+               </p>
+            <p class="p0">
+               "Single ownership" means holding record title, possession under a contract to purchase,
+               or possession under a lease, by a person individually, jointly, in common, or in any
+               other manner where the property is or will be under unitary or unified control.
+               </p>
+            <p class="p0">
+               "Site" means a lot, or group of contiguous lots or parcels that is proposed for development
+               under this title, and is in a single ownership.
+               </p>
+            <p class="p0">
+               "Small Family Day Care." See Day Care, Small Family.
+               </p>
+            <p class="p0">
+               "Specific plan" means a plan for a defined area authorized by state law that is consistent
+               with the general plan.
+               </p>
+            <p class="p0">
+               "Specified anatomical areas" means human genitals (pubic region), buttocks or female
+               breasts below a point immediately above the areola when less than completely and opaquely
+               covered; or human male genitals in a discernible turgid state, even if completely
+               and opaquely covered.
+               </p>
+            <p class="p0">
+               "Specified sexual activities" means human genitals in a state of sexual stimulation
+               or arousal; acts of human masturbation, sexual intercourse, oral copulation, or sodomy;
+               fondling or other erotic touching of human genitals (pubic region), buttocks or female
+               breasts.
+               </p>
+            <p class="p0">
+               "Sports court" means an unenclosed facility with fencing above six feet in height.
+               </p>
+            <p class="p0">
+               "Square footage" means the measure of area for the purposes of identifying permitted
+               square footage, lot area or similar measurement as referenced in this title.
+               </p>
+            <p class="p0">
+               "Storage, Outdoor" or "Outdoor storage" means storage or placement of equipment, merchandise
+               or products not otherwise permitted outside of a building.
+               </p>
+            <p class="p0">
+               "Street" means a public or private thoroughfare, including a right-of-way easement
+               which affords principal means of access to abutting property, including avenue, place,
+               way, drive, lane, boulevard, highway, road and other thoroughfare, except an alley
+               or driveway.
+               </p>
+            <p class="p0">
+               "Street fair" means the provision of games, eating and drinking facilities, live entertainment,
+               or similar activities not requiring use of roofed structures.
+               </p>
+            <p class="p0">
+               "Street line" means the boundary between a street and property.
+               </p>
+            <p class="p0">
+               "Street Line, Future" or "Future street line" means an established line from which
+               the minimum front or street side yard is measured. If no specific future street is
+               established, the future street line is the adjacent existing right-of-way of an abutting
+               public or private street, roadway or easement. A future street line is established
+               to provide for future street widening or construction, delineating the area open,
+               or to be open, to public use.
+               </p>
+            <p class="p0">
+               "Structure" means anything constructed or erected that requires a location on the
+               ground, including a building or a swimming pool and installation of ground-mounted
+               equipment.
+               </p>
+            <p class="p0">
+               "Structural alteration" means any change in the supporting members of a structure
+               or building, such as bearing wall, column, beam or girder.
+               </p>
+            <p class="p0">
+               "Structure Principal" or "Principal structure" means a structure on a site which contains
+               (or is proposed concurrently for development with) the primary use or uses permitted
+               in or intended for a zone. This includes a single-family dwelling within a single-family
+               residential zone.
+               </p>
+            <p class="p0">
+               "Stump growth" means new growth from the remaining portion of the tree trunk, the
+               main portion of which has been cut off.
+               </p>
+            <p class="p0">
+               "Subdivision" means a site divided and recorded for the purpose of sale, lease or
+               financing of individual lots or parcels, as regulated by the state Subdivision Map
+               Act and City ordinance.
+               </p>
+            <p class="p0">
+               "Substantially screened from view" means screened from a street or other property
+               by a fence or landscaping so that a vehicle is not visible or is barely visible.
+               </p>
+            <p class="p0">
+               "Substation" means a subsidiary electrical transmitting facility in which electric
+               current is transferred from power lines and distributed to local consumers.
+               </p>
+            <p class="p0">
+               "Supportive housing" shall be defined as in State law (see Health and Safety Code
+               Section 50675.14, Government Code Section 65582) to mean "housing with no limit on
+               length of stay, that is occupied by the target population, and that is linked to on-site
+               or off-site services that assist the supportive housing resident in retaining the
+               housing, improving their health status, and maximizing their ability to live and,
+               when possible, work in the community." Within this definition, the phrase "target
+               population" includes "persons with disabilities", "families who are homeless", and
+               "homeless youth", all as defined by State law.
+               </p>
+            <p class="p0">
+               "Swimming pool, spa and hot tub" means a water-filled enclosure having a depth of
+               eighteen (18) inches or more typically used for swimming or recreation.
+               </p>
+            <p class="p0">
+               "Tavern." See "Bar."
+               </p>
+            <p class="p0">
+               "Temporary use" means an occasional use or event of very limited duration.
+               </p>
+            <p class="p0">
+               "Thinning" means the selective removal of entire branches from a tree to improve visibility
+               through the tree or improve the tree's structural condition.
+               </p>
+            <p class="p0">
+               "Topping" means elimination of the upper portion of a tree's trunk or main leader.
+               </p>
+            <p class="p0">
+               "Trade fair" means the display and sale of goods or equipment related to a specific
+               trade or industry for a maximum period of ten days.
+               </p>
+            <p class="p0">
+               "Transitional housing" shall be defined as in State law (see Health and Safety Code
+               Section 50675.2, Government Code Section 65582) to mean "buildings configured as rental
+               housing developments, but operated under program requirements that call for the termination
+               of assistance and recirculation of the assisted unit to another eligible program recipient
+               at some predetermined future point in time, which shall be no less than six months
+               from the beginning of assistance."
+               </p>
+            <p class="p0">
+               "Transmission line" means an electric power line bringing power to a receiving or
+               distribution substation.
+               </p>
+            <p class="p0">
+               "Travel service" means establishments providing travel information and reservation
+               to individuals and businesses. This classification excludes automobile rentals.
+               </p>
+            <p class="p0">
+               "Use" means the purpose for which a site or structure is arranged, designed, intended,
+               constructed, erected, moved, altered or enlarged or for which either a site or a structure
+               is or may be occupied or maintained.
+               </p>
+            <p class="p0">
+               "Use, Accessory" or "Accessory use" means a use that is appropriate, subordinate and
+               customarily incidental to the primary use (use permitted in or intended for a zone)
+               of the site and which is located on the same site as the primary use.
+               </p>
+            <p class="p0">
+               "Utility, Major" or "Major utility" means a power substation, refuse collection and
+               recycling facility (but not including a hazardous waste facility), water reservoir,
+               water or wastewater treatment plant, or similar facility of a public agency or public
+               utility, but not including any city facility. Also includes above ground distribution
+               or transmission lines including service for telephone or cable television. A utility
+               structure that may have a significant effect on surrounding uses is regulated under
+               this classification.
+               </p>
+            <p class="p0">
+               "Utility, Minor" or "Minor utility" means a public utility that is necessary to support
+               legally established uses and involves only minor facilities or structures such as
+               a drainage channel, aqueduct, small sewer or water pump station or substation (of
+               less than two hundred (200) gross square feet, with adequate noise attenuation) or
+               underground water, sewer, drainage, gas, electricity, telephone or related utility
+               lines.
+               </p>
+            <p class="p0">
+               "Variance" means a deviance from the standards and requirements of this title which
+               is granted under <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.33VA" data-chunk-id="TIT17ZO_CH17.33VA" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Chapter 17.33</a>.
+               </p>
+            <p class="p0">
+               "Vehicle/equipment sales and services" includes the following:
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  "Automobile rental" means the rental of automobiles. Routine automobile maintenance
+                  is incidental to automobile rental.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  "Automobile repair" means the limited repair and service or installation of parts
+                  for automobiles.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  "Automobile washing" means the washing, waxing or cleaning of automobiles by mechanical
+                  or semi-mechanical devices or by employees.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  4.
+                  </p>
+               		
+               <p class="content2">
+                  "Commercial parking facility" means lots offering short-term or long-term parking
+                  to the public for a fee, primarily for parkers who are not tenants of, or visitors
+                  to, an establishment for which such parking is required.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  5.
+                  </p>
+               		
+               <p class="content2">
+                  "Vehicle/equipment sales and rental" mean the sale or rental of automobiles, motorcycles,
+                  trucks, tractors, construction or agricultural equipment, mobile homes, and similar
+                  equipment, including storage and incidental maintenance. An establishment engaged
+                  only in the rental of automobiles is classified under automobile rentals.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Visible" means noticeable by a person six feet in height walking on a street or sidewalk
+               two years after installation of any planting intended to screen a view, or as noted
+               specifically within this title.
+               </p>
+            <p class="p0">
+               "Visitor accommodations" means commercial establishments offering lodging to transients.
+               
+               </p><p class="incr1">
+                  1.
+                  </p>
+               		
+               <p class="content2">
+                  "Bed and breakfast inn" means an establishment providing guest rooms for lodging on
+                  a less than weekly basis typically in a converted single-family or multifamily dwelling,
+                  with incidental eating and drinking service provided from a single kitchen for lodgers
+                  only.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  2.
+                  </p>
+               		
+               <p class="content2">
+                  "Hotel" means an establishment providing guest rooms for lodging, typically on a less
+                  than weekly basis, with no or minimal kitchen facilities in the guest units. This
+                  classification may include recreational facilities, or eating, drinking and banquet
+                  service, incidental to the hotel operation.
+                  </p>
+               		
+               
+               <p class="incr1">
+                  3.
+                  </p>
+               		
+               <p class="content2">
+                  "Motel" means an establishment with guest rooms or units providing no or minimal kitchen
+                  facilities, but having a separate entrance leading directly to the outside of the
+                  building and adjacent to an individual parking space.
+                  </p>
+               		
+               
+            <p class="p0">
+               "Wall plane" means the exterior vertical surface of a structure, which is at least
+               eight feet in height.
+               </p>
+            <p class="p0">
+               "Wall, Skirt." "Skirt wall" means the exterior vertical surface of a structure, located
+               at or below the elevation line of the lowest finished floor, to the bottom of the
+               wall (or where the wall intersects final grade).
+               </p>
+            <p class="p0">
+               "Windowing." See Section <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.22VIPR_17.22.4DE" data-chunk-id="TIT17ZO_CH17.22VIPR_17.22.4DE" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>17.22.4</a>.
+               </p>
+            <p class="p0">
+               "Yard" means an open area other than a court, unoccupied and unobstructed by a structure
+               or use.
+               </p>
+            <p class="p0">
+               "Yard, Corner Side." "Corner side yard" means a yard between the corner side (or edge
+               of street right-of-way or pavement, whichever line may encroach furthest into a lot)
+               lot line and the nearest line of the building and extending from the rear of the front
+               yard to the front of the rear (interior) lot line.
+               </p>
+            <p class="p0">
+               "Yard, Front." "Front yard" means a yard extending across the full width of the lot
+               between the front lot line (or edge of street right-of-way or pavement, whichever
+               line may encroach furthest into a lot) and the required front yard setback line of
+               the respective zone, measured parallel to the front lot line. If a future street right-of-way
+               line is established for the street upon which the lot abuts, the measurement is taken
+               from the future street right-of-way line adjacent to the nearest line of the building.
+               The depth of a required front yard is measured horizontally from the front lot line
+               toward the nearest part of a structure.
+               </p>
+            <p class="p0">
+               "Yard, Rear." "Rear yard" means a yard extending across the full width of the lot
+               (except on a corner lot) between the rear lot line and the required rear yard setback
+               line of the respective zone, measured parallel to the rear lot line. The depth of
+               a required rear yard is measured horizontally from the rear lot line toward the nearest
+               part of a structure.
+               </p>
+            <p class="p0">
+               "Yard Setback." (See "Setback.")
+               </p>
+            <p class="p0">
+               "Yard, Side." "Side yard" means a yard between the side lot line and the required
+               side yard setback line of the respective zone, measured parallel to the side lot line.
+               The depth of a required side yard is measured horizontally from the side lot line
+               toward the nearest part of a structure.
+               </p>
+            <p class="p0">
+               "Zoning ordinance" means <a href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO" data-chunk-id="TIT17ZO" class="section-link" data-product-id="16541"><span class="popoverPositioner"></span>Title 17</a>, titled "Zoning," of the Orinda Municipal Code, as amended from time to time.
+               </p>
+            <p class="historynote0">
+               (Ord. 05-07 § 3; Ord. 03-03 § 2; Ord. 02-03 §§ 2, 33 (part); Ord. 00-2 §§ 2, 3; Ord.
+               99-5 § 2 Exh. A (part); Ord. No. 10-11, § 2, 12-21-10; Ord. No. 11-04, § 1, 5-3-11;
+               Ord. No. 13-03, § 2(Att. A), 12-17-13; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=726832" data-product-id="16541" data-ordinance-id="726832">14-04</a>, § 2(exh. A), 5-20-14; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=773814" data-product-id="16541" data-ordinance-id="773814">15-02</a>, § 2(Exh. A), 11-20-15; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=843015" data-product-id="16541" data-ordinance-id="843015">17-03</a>; § 2(Att. A), 8-1-17; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=854057" data-product-id="16541" data-ordinance-id="854057">17-04</a>; § 2(Att. A), 9-5-17; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=866508" data-product-id="16541" data-ordinance-id="866508">17-05</a>, § 2(Att. A), 9-5-17; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=880760" data-product-id="16541" data-ordinance-id="880760">18-02</a>, § 2(Att. A), 3-6-18; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=965405" data-product-id="16541" data-ordinance-id="965405">Ord. No. 19-03, § 2(Att. A), 6-18-19</a>; Ord. No. <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1021513" data-product-id="16541" data-ordinance-id="1021513">20-02</a>, § 2(Att. A), 5-19-20; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1359917" data-product-id="16541" data-ordinance-id="1359917">Ord. No. 25-02</a>, § 2(Att. A), 5-20-25; <a class="ordinance-link" href="https://library.municode.com/ca/orinda/ordinances/code_of_ordinances?nodeId=1404111" data-product-id="16541" data-ordinance-id="1404111">Ord. No. 25-06</a>, § 2(Att. A), 1-20-26)
+               </p></div></div>
+    </div><!---->
+    <!---->
+</div>
+</mcc-codes-content-chunk>
+            </li><!---->
+        </ul>
+        <!----><div ng-include="'codesNavTemplate'">
+        <div class="chunk-nav clearfix text-primary">
+            <!----><a class="pull-left text-left" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.1PUOR_17.1.11DELODIDIBO" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.1PUOR_17.1.11DELODIDIBO" ng-if="vm.content.prevNode"><i class="fa fa-angle-left fa-fw"></i> 17.1.11 - Development on lots divided by district boundaries.</a><!---->
+            <!----><a class="pull-right text-right" href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE" ng-href="https://library.municode.com/ca/orinda/codes/code_of_ordinances?nodeId=TIT17ZO_CH17.3REDIBAUSRE" ng-if="vm.content.nextNode">Chapter 17.3 - RESIDENTIAL DISTRICT BASE USE RESTRICTIONS <i class="fa fa-angle-right fa-fw"></i></a><!---->
+        </div>
+</div>
+    </div><!---->
+</div>

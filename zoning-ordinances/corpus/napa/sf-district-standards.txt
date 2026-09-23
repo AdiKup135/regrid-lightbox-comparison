@@ -1,0 +1,63 @@
+§ 17.08.030 Residential districts—Property development standards.
+
+| N/A = Not Applicable |
+| Single-Family Residential (RS), Single-Family Infill (RI), Traditional Residential Infill (RT), and Multifamily Residential (RM) Districts are combined on the zoning map with the following development standards, based on General Plan density ranges and neighborhood development patterns. |
+
+| | RS 40 | RS 20 RI 20 | RS 10 RI 10 | RS 7 RI 7 RT 7 | RS 5 RI 5 RT 5 | RS 4 RI 4 RT 4 | RM | Comments and Additional Standards |
+| Density—dwelling units per acre | See General Plan density ranges applicable to property | | | | | | | (1) |
+| Height—principal building stories/ height in feet, whichever is more restrictive | 2.5/30 | 2.5/30 | 2.5/30 | 2.5/30 | 2.5/30 | 2.5/30 | 3.0/35 | Height may be increased up to 35 feet, or in RM Districts up to 40 feet with design review approval to implement design guidelines |
+| Minimum Lot Area (sq. ft.) | 40,000 | 20,000 | 10,000 | 7,000 | 5,000 | 4,000 | 5,000 | (2) |
+| Lot Width (feet) at front setback line | 100 | 70 | 70 | 60 | 50 | 45 | 50 | (2) Lot widths of 60 feet or more may be reduced to not less than 50 feet on lots with divergent lot lines, such as cul-de-sac bulbs. |
+| Lot Frontage (feet) at front property line | 50 | 50 | 50 | 50 | 50 | 45 | 50 | (2) Lot frontage may be reduced to not less than 40 feet on lots with divergent lot lines, such as cul-de-sac bulbs. Flag lots are exempt from frontage requirements. See flag lot standards. |
+| Front Setback (feet) | 30 | 30 | 20 | 20 | 20 | 20 | 20 | (2), (3) In Districts where 50% of the lots along the block are improved with buildings, the front setback may be the average of the improved lots on one side of the street for the length of the block or standard setback, whichever is less. |
+| Side Setback (feet) | 30 | 30 | 20 | 15 | 15 | 15 | 15 | (2), (3) |
+| Side Yard (feet) | | | | | | | | |
+| 1 story | 10 | 10 | 10 | 5/10 * | 5/10 * | 5/10 * | 5 | (2) * 5 feet one side; 10 feet one side |
+| 2-2.5 stories | 15 ** | 15 ** | 15 ** | 5/10 *,*** | 5/10 *,*** | 5/10 *,*** | 10 ** | ** The first story of the building shall be set in the required yard distance from the property line. Second and third story yard requirements may be met by stepping back the upper story/ies, except that RM sites adjacent to RS, RI or RT Districts shall also meet transition standards (See Section 17.08.040). *** Where a 2 story house is adjacent to an existing 1 story house, the second story shall be stepped back or set back a minimum 10 feet. |
+| 3+ stories | NA | NA | NA | NA | NA | NA | 15 ** | |
+| Rear Yard (feet) | 30 | 30 | 30 | 20 | 20 | 15 | 15/20 * | *15 feet for 1 or 2 stories; 20 feet for 3 stories. Third story yard requirement may be met by stepping back the third story. |
+| Usable Outdoor Area/Unit, Attached Units (sq. ft.) | NA | NA | NA | 600 | 500 | 400 | 200 | In private yards or common areas |
+| Lot Coverage | 20% | 25% | 40% | 45% | 45% | 50% | 50% | |
+
+| Notes: | |
+| (1) | Densities shall conform to General Plan density ranges, except densities may be reduced in accordance with Section 17.08.050, and increased in accordance with density bonus (Ch. 17.52) and, in RM Districts, density flexibility standards (Ch. 17.52). Densities apply to residential uses; floor area ratios apply to nonresidential uses. See Ch. 17.52 for calculation of density and floor area ratios. |
+| (2) | In RS 4, RS 5, RI 4, RI 5, RT 4, RT 5, RS-7, RS-10, RI-7, RI-10 and RT-7, standards may be modified with a use permit if the project meets the standards set forth in Section 17.52.470, Small lot development standards. If the regulations of the underlying district allow a subdivision of 10 lots or more for a project, the applicant may apply for a small lot development use permit for a portion of the project in a size no greater than 20% of those initially identified lots. For example, if the regulations of the underlying district allow a subdivision of 10 lots for a project, the applicant may apply for a small lot development use permit over property equivalent in size to two of the 10 lots; and under small lot development standards the property comprising those two lots may be subdivided and developed as up to four smaller homes (up to 1,200 square feet) on up to four smaller lots. Two smaller homes may be designed to have the appearance of one larger home where appropriate to maintain the neighborhood character. |
+| (3) | Also see standards for setbacks along new private and certain public streets (Section 17.52.440). |
+| (4) | Single-family attached and detached in RM districts shall comply with the condominium standards in Section 17.52.080. |
+| See Chapter 17.52 (Site and Use Regulations) for additional regulations pertaining to agricultural buffers, creeks and watercourses, historic preservation, wetlands and other site development standards. See Chapter 17.56 (Administrative Exceptions) for limited adjustments to zoning standards. | |
+
+(O2003-12; O2004 14; O2008 12; O2011 6; O2012 2, 2/21/12; O2015-11, 9/15/15)
+
+§ 17.08.040 Other development standards and requirements applicable to residential districts.
+
+A. Design Guidelines. Design guidelines shall be utilized as applicable.
+
+B. Parking. On-site parking and loading shall be provided in accord with Chapter 17.54.
+
+C. Accessory Structures. Accessory structures shall meet standards described in Chapter 17.52.
+
+D. Transitional Standards. RM District properties abutting other R districts shall meet the following standards:
+
+1. Buildings two or more stories in height shall meet side yard requirements by setting the building in 10 feet from the side property line; the third story may be stepped back. Second or higher story decks shall not encroach into the side yard.
+
+2. A landscaped buffer shall be incorporated into affected side and rear yard areas to address privacy concerns.
+
+3. Fencing or walls shall be required along abutting side and rear yards in materials and design compatible with the project.
+
+4. The above requirements may be waived or modified by the decision-making body if the abutting property is devoted to nonresidential use, if the location or design of existing development is such that the above requirements are not necessary to provide an appropriate transition, or if an alternative design provides a superior transition.
+
+E. Rooftop Equipment. Rooftop equipment for multifamily projects shall be screened and integrated into building architecture. Screens shall not disproportionately increase the mass of the building.
+
+F. Landscaping. Except for single-family dwellings and accessory uses developed as permitted uses, all planting strips, yards, setbacks and other required open space areas shall be landscaped in accord with an landscape plan addressing city landscape standards, approved by the decision making authority as part of the design review or other discretionary permit. All landscaping shall be maintained in a healthy, attractive condition. Landscape maintenance agreements with the city may be required on sensitive sites.
+
+G. Street Trees. Street trees in the right-of-way may be required to be installed by the Community Resources Director in accordance with city standards.
+
+H. Public Works Improvements. Curb, gutter, sidewalk, street, drainage, utility undergrounding and similar improvements may be required to be installed by the Public Works Director in accordance with Policy Resolution 27 or Public Works Department standard specifications.
+
+I. Lighting. Exterior lighting shall be directed or shielded so as to prevent glare onto public streets and abutting residential properties.
+
+J. Noise. See Section 17.52.310, Noise standards.
+
+K. Property Management. Residential rental property shall comply with NMC Sections 8.16.015(B), (C) and (D) regarding property management.
+
+(O2003-12)

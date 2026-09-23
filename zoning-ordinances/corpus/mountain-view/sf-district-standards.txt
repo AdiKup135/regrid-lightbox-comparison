@@ -1,0 +1,238 @@
+DIVISION 3. - SINGLE-FAMILY (R1) ZONING DISTRICT STANDARDS
+
+SEC. 36.10.10. - R1 zoning district standards.
+
+New land uses and structures, and alterations to existing land uses and structures, shall be designed and constructed in compliance with this section.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.10.15. - Minimum lot area and width for subdivisions.
+
+The minimum area and width of parcels proposed in new subdivisions in the R1 zoning district is determined below, except in areas of special limitations or when smaller lots are approved as part of a larger planned unit development or through an urban lot split. These areas are identified on the zoning map by a suffix to the R1 map symbol (e.g., R1-8, R1-10, etc.), and are subject to the following requirements:
+
+| Zoning Designation | Minimum Lot Area | Minimum Width |
+| R1 | 6,000 square feet | 60 feet (corner lots: 70 feet) |
+| R1-7 | 7,000 square feet | 70 feet |
+| R1-8 | 8,000 square feet | 75 feet |
+| R1-10 | 10,000 square feet | 80 feet |
+| R1-10+ | As noted by suffix | 80 feet |
+
+If the minimum lot area required by a suffix to the R1 zoning map symbol is within the ranges shown above (i.e., more than six thousand (6,000) square feet but less than ten thousand (10,000) square feet, etc.), the required lot width shall be determined by the zoning administrator based on the values specified in the table above.
+
+For standards applicable to lots created through a planned unit development, see Section 36.10.35. For standards applicable to lots created through urban lot splits, see Section 36.13.50 through Section 36.13.75."
+
+(Ord. No. 18.13, § 1, 12/10/13; Ord. No. 4.22, § 5, 4/12/22.)
+
+_____
+
+SEC. 36.10.20. - Minimum street frontage for any residential use.
+
+Parcels in the R1 zoning district shall have a minimum frontage of thirty-five (35) feet on a public street, unless the lot has been created by an urban lot split pursuant to the provisions of Section 36.13.50 through Section 36.13.75 or is a lot without the required frontage on a public street pursuant to the provisions of Section 36.10.35 (Subdivisions in the R1 zone creating parcels without the required frontage on a public street.)
+
+(Ord. No. 18.13, § 1, 12/10/13; Ord. No. 4.22, § 6, 4/12/22.)
+
+SEC. 36.10.25. - R1 zone development standards.
+
+The following table entitled "R1 Zone Development Standards" defines standards for minimum parcel size, density, setbacks and height limits within the R1 zoning district. See Section 36.14.75 for exceptions to the site layout standards that may be granted for home improvements and minor additions. For standards applicable to dual urban opportunity developments, see Section 36.13.10 through Section 36.13.45.
+
+R1 ZONE DEVELOPMENT STANDARDS
+
+| Other references | See Zoning Handbook for the Single-Family Homeowner and Zoning Calculations: Methods, Definitions, and Clarifications. | |
+| Lot area | 6,000 sq. ft. minimum for interior lots, 7,000 sq. ft. for corner lots; except for larger area required by Section 36.10.15 based on map designation or smaller area approved under Section 36.10.35 with a PUD permit or under Section 36.13.50 through Section 36.13.75 with an urban lot split. | |
+| Lot width | 60 ft. minimum for interior lots, 70 ft. for corner lots; except for greater width required by Section 36.10.15 or Section 36.10.20 based on map designation and lesser width is required for lots created by an urban lot split pursuant to Section 36.13.65. | |
+| Density (maximum) | 1 dwelling per parcel, except where an accessory dwelling unit, junior accessory dwelling unit and/or dual opportunity development is allowed. | |
+| Floor area ratio | The maximum base FAR allowed shall be based on lot area and calculated using the following formula: FAR = 0.50 - (0.00001 × Lot Area). FAR shall be measured as provided in the Zoning Calculations: Methods, Definitions, and Clarifications. See Section 36.14.75 for exceptions. 0.45 for lots of 5,000 sq. ft. or less; Use formula above for lots between 5,001 and 9,999 sq. ft.; Examples: • 6,000 sq. ft. lot = 0.50 - (0.00001 × 6,000) = 0.44 FAR • 7,500 sq. ft. lot = 0.50 - (0.00001 × 7,500) = 0.425 FAR 0.40 for lots of 10,000 sq. ft. or greater. | |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | The following setbacks apply to any new construction, additions or replacement floor area, regardless of the existing building's setbacks. | |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Front | 20 ft. minimum for the first floor wall; an additional 5 ft. from the first-floor wall for a second floor over an attached garage, where garage projects forward. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Sides (1st-story) | For lots less than 6,000 sq. ft. or less than 60 ft. wide: 5 ft. minimum and 10 ft. total for both sides. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Sides (1st-story) | For lots of 6,000 sq. ft. or more and 60 ft. or greater in width: 5 ft. minimum and 12 ft. total for both sides. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Sides (2nd-story) | For lots less than 5,000 sq. ft. or less than 40 ft. wide: 5 ft. minimum each side and 12 feet total for both sides. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Sides (2nd-story) | For lots 5,000 sq. ft. or more and 40 ft. or greater in width, front half of lot: 7 ft. minimum and 15 ft. total for both sides; rear half of lot: 12 ft. minimum on each side. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Sides (2nd-story) | For lots of 10,000 sq. ft. or more, and greater than 65 ft. wide: 10 ft. minimum and 25 ft. total for both sides. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Street sides (corner lots) | 15 ft. minimum. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Rear | 1-story portions of structure: 20% of the lot depth or 15 ft., whichever is greater, but not more than 40 ft. maximum, required. Encroachment allowed, see Section 36.14.75. |
+| Setbacks (See Figures 36.10-1 and 36.10-2) | Rear | 2-story portions of structure: 25% of lot depth, or 20 ft., whichever is greater, but not more than 40 ft. maximum, required. |
+| Height limits | Maximum building height for 1-story structure: 24 ft. Maximum building height for 2-story structure: 28 ft. | |
+| Height limits | Maximum 1st floor wall height at top of wall plate: 15 ft. Maximum 2nd floor wall height at top of wall plate: 22 ft. | |
+| Landscaping required | 50% of the required front setback area shall be permanently landscaped. Street trees shall be planted in front of all structures with second-story additions or construction of a new dwelling unit. | |
+| Second-story decks | Second-story decks and balconies are allowed only on the front and rear of houses, except that on corner lots they are allowed on the street side. The total square footage of all decks and balconies located at floor level of the second story cannot exceed 150 sq. ft. and are subject to second-story setbacks except that decks and balconies on the rear of a house must be set back 5 ft. in addition to the required rear yard second-story setback. Decks, or any similar feature, are not permitted on the roof of a 2-story structure. | |
+| Parking and driveways | Required spaces | 2 spaces, 1 of which shall be covered. The uncovered space can be located in the driveway. |
+| Parking and driveways | Covered parking | A garage or carport shall be provided and permanently maintained for parking. The garage or carport must maintain a minimum unobstructed interior dimension of 9 ft. by 20 ft. for 1 car and be increased 9 ft. in width for each additional parking space. The minimum unobstructed ceiling height is 7 ft. 6 in. |
+| Parking and driveways | Driveway | Minimum dimensions. Minimum width of 9 ft., with direct access to at least a 1-car garage or carport. Minimum length of 20 ft. measured from the property line to the front of the covered parking space. |
+| Parking and driveways | Driveway | Back-up area. Where access to a garage, carport or open parking space is perpendicular (90 degrees) to the driveway, a minimum 24 ft. deep unobstructed back-out area shall be provided. |
+| Parking and driveways | Driveway | Street frontage. Lots with no garage or a 1-car garage are allowed a maximum cumulative 20 ft. wide area, including driveway, visible from the street for vehicle parking. Lots with a 2- or 3-car garage are allowed a maximum cumulative 30 ft. wide area, including driveway, visible from the street for vehicle parking. |
+| Parking and driveways | Garage frontage on street | The street-facing facade of a garage structure shall not exceed 25 ft. in width when facing any lot frontage that is less than 75 ft. wide. On parcels with more than 75 ft. of frontage, the garage facade may be up to 35 ft. wide. See Section 36.12.35 for limits on widths of accessory structures, including detached garages. |
+| Signs | See Article XII (Signs). | |
+
+(Ord. No. 18.13, § 1, 12/10/13; Ord. No. 5.18, § 1, 4/24/18; Ord. No. 4.22, § 7, 4/12/22; Ord. No. 01.2024, § 8, 1/23/24.)
+
+SEC. 36.10.30. - Development review required.
+
+The following types of proposed development in the R1 zoning district shall be subject to development review in compliance with Section 36.44.45 (Development Review):
+
+a. Structures in new subdivisions of five (5) or more parcels;
+
+b. Requests for FAR exceptions;
+
+c. Fences over six (6) feet in height and up to seven (7) feet;
+
+d. Planned unit developments in accordance with Section 36.46.70; and
+
+e. Conditional use permits in accordance with Section 36.48.
+
+Figure 36.10-1
+SINGLE FAMILY SETBACK REQUIREMENTS
+(For Reference Only)
+
+Figure 36.10-2
+SINGLE-FAMILY HEIGHT LIMITS
+(For Reference Only)
+
+(Ord. No. 18.13, § 1, 12/10/13; Ord. No. 4.22, § 8, 4/12/22.)
+
+SEC. 36.10.35. - Subdivisions in the R1 zone creating parcels without the required frontage on a public street.
+
+The approval of a subdivision in compliance with Chapter 28 of the City Code (Subdivisions) that results in three (3) or more lots, where at least one (1) lot does not have the required frontage on a public street, shall require approval of a planned unit development permit to evaluate the appropriateness of the lots, establish setbacks, and address any lot design problems. this section does not pertain to urban lot splits, as defined in Section 36.60.45. For standards pertaining to urban lot splits, refer to Section 36.13.10.
+
+a. Minimum lot size. The developable portion of any flag lot or other lot that does not have the required frontage on a public street, exclusive of the "flag pole" portion of a flag lot or the private drive in a subdivisions with up to four (4) buildable lots, shall comply with the minimum lot size requirements of the applicable zoning district. The individual lots in a subdivision involving five (5) or more buildable lots may be less than the minimum lot size required in the applicable zoning district provided that the density, based on all of the land area including private streets and common areas, does not exceed the maximum density for the applicable zoning district.
+
+b. Floor area ratio (FAR). Allowable FAR shall be calculated on the developable portion of the lot only. Floor area exceptions are not allowed on lots that do not have the required frontage on a public street.
+
+c. Density. A flag lot or other lot without the required frontage on a public street may contain one (1) single-family dwelling, one (1) accessory dwelling unit and one (1) junior accessory dwelling unit.
+
+d. Number of lots. At least one (1) of the lots in a flag lot subdivision or other subdivision that includes parcels without the required frontage on a public street shall have the street frontage normally required by the applicable zoning district. No more than two (2) additional flag lots shall be permitted to extend behind the lot with full street frontage.
+
+e. Setback requirements. Setbacks shall comply with the standards found in Section 36.10.25 except for the following special setback requirements:
+
+1. All lots.
+
+(a) Garage setback. The setback from a garage face shall be a minimum of twenty (20) feet.
+
+(b) Side yards adjacent to a flag pole or private driveway. Side yards adjacent to a flag "pole" shall be a minimum of five (5) feet for first story and seven (7) feet for the second story. Side yards adjacent to a private driveway serving two (2) or more units shall be a minimum of ten (10) feet for the first and second stories. If a garage faces the flag pole or private driveway, the setback shall be a minimum of twenty (20) feet.
+
+2. Lots that front on a public street. Side yards adjacent to existing lots shall be a minimum of seven (7) feet for the first story and eight (8) feet for the second story except for that portion of the second story that is on the rear half of the parcel which shall be a minimum of twelve (12) feet.
+
+3. Lots without the required frontage. For lots that are at the rear of the site and do not have the required frontage on a public street, the zoning administrator shall determine which of the yards on the sides that are adjacent to existing lots is the rear yard, taking into consideration whether the yards of the adjacent lots are rear yards or side yards. Any remaining yard which is adjacent to a side yard for sixty-six (66) percent of the length of the adjacent property may have the side yard setbacks defined in Section 36.10.25. Any remaining yard adjacent to a rear yard must have a minimum first-story setback of fifteen (15) feet and a minimum second-story setback of twenty (20) feet.
+
+4. Access requirements for flag lots. A flag "pole" serving two (2) or more lots shall be a minimum of twenty-five (25) feet with sixteen (16) feet paved, provided that there is at least eight (8) feet of street frontage per lot. A wider paved access and adequate turnaround for emergency vehicles may also be required by the Uniform Fire Code, depending on distance of the house from the street.
+
+Figure 36.10-3
+FLAG LOT SETBACK REQUIREMENTS
+(For Reference Only)
+
+Figure 36.10-4
+SETBACK REQUIREMENTS FOR SUBDIVISIONS WITH
+SEVERAL LOTS ON A PRIVATE STREET
+(For Reference Only)
+
+(Ord. No. 18.13, § 1, 12/10/13; Ord. No. 4.22, § 9, 4/12/22.)
+
+DIVISION 12. - SETBACK AND FLOOR AREA RATIO EXCEPTIONS
+
+SEC. 36.14.75. - Setback and floor area ratio exceptions.
+
+This section provides exceptions to the residential yard setback and floor area ratio requirements of Section 36.10.25 (R1 Zone Development Standards) and 36.10.50 (R2 Zone Development Standards) under specified circumstances. In no case shall the projection exemptions result in less than the required interior setback or minimum building separation between two (2) structures in R1 or R2 districts. All setback and projection exceptions that comply with this section are exempt from development review. All floor area ratio exceptions require development review in compliance with Section 36.44.45.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.14.80. - Principal structure setback exceptions into front, side and rear yards and minor floor area ratio exceptions.
+
+Projections of a principal structure into required setbacks and minor floor area ratio exceptions may be permitted for the purpose of home improvements or minor additions, in compliance with this section. The purpose of this section is to allow the upgrading of existing dwellings that may otherwise be prevented by the provisions of this section.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.14.85. - Setback exceptions and projections.
+
+a. Projections into front and side setbacks of the principal structure. Projections of the principal structure, including roof eaves, into front or side setbacks of up to three (3) feet may be permitted where the projections do not exceed a cumulative ten (10) feet in length along a given building side, and where the total cumulative footprint area of the projections does not exceed fifty (50) square feet. Projections may be on the first or second story or both.
+
+b. Projections into rear setbacks of the principal structure. A portion of the principal structure, including roof eaves, may project into the required rear setback, subject to the following requirements:
+
+1. Height limit. The projection shall be no more than one (1) story or twenty-four (24) feet in height and no more than fifteen (15) feet at the top of the wall plate;
+
+2. Rear setback. The projection shall be located no closer than ten (10) feet to the rear lot line, including any projections or overhang;
+
+3. Maximum coverage. The projection(s), including any existing projections, shall not cover more than a cumulative twelve and one-half (12½) percent of the required rear yard area;
+
+4. Design. The projection shall conform in general to the principal structure in terms of design, materials and color.
+
+c. Findings for approval. A projection into a setback for home improvements/minor additions shall not be approved unless the proposed exception:
+
+1. Is minor, involving a particular area or room of the structure, and does not propose a setback encroachment along the entire length of any one (1) facade;
+
+2. Is only intended to increase the habitability and function of a particular area or room of the structure, or is desirable for the preservation of an existing architectural style or neighborhood character that could not otherwise be accomplished; and
+
+3. The granting of the exception will not be detrimental or injurious to property or improvements in the vicinity and will not be detrimental to the public health, safety or welfare.
+
+(Ord. No. 18.13, § 1, 12/10/13; Ord. No. 5.18, § 2, 4/24/18)
+
+SEC. 36.14.90. - Floor area ratio exceptions.
+
+a. Minor floor area ratio exception, R1 zoning district. Up to a cumulative seventy-five (75) square feet may be allowed beyond the FAR limit in the R1 zoning district (without approval of a major floor area exception under Section 36.14.90.b), provided that the total square footage of the dwelling does not exceed the maximum floor area allowed under the major floor area exception process. This additional floor area is only intended to increase the habitability and function of a particular room or area of the structure. Development review in compliance with Section 36.44.45 is required for this exception.
+
+1. Findings for approval. A minor floor area ratio exception for home improvements/minor additions shall not be approved unless the proposed exception:
+
+(a) Is minor, involving a particular area or room of the structure, and does not propose a setback encroachment along the entire length of any one (1) facade;
+
+(b) Is only intended to increase the habitability and function of a particular area or room of the structure, or is desirable for the preservation of an existing architectural style or neighborhood character that could not otherwise be accomplished; and
+
+(c) The granting of the exception will not be detrimental or injurious to property or improvements in the vicinity and will not be detrimental to the public health, safety or welfare.
+
+b. Major FAR exception, R1 zoning district. When requested by a project applicant, a major floor area ratio exception of up to ten (10) percent greater than the base floor area may be granted by the zoning administrator for an addition to an existing house after a public hearing in compliance with Section 36.56 (Applications, Hearings and Appeals).
+
+1. Findings for approval. A major floor area exception shall not be approved unless the zoning administrator makes Finding (a) or all three of findings (b), (c) and (d) below:
+
+(a) There are exceptional or extraordinary circumstances related to the design of the existing house or building code compliance or other code compliance that make it difficult or impossible to enlarge the house within the base floor area ratio requirements, and that the additions is of superior design quality and compatible with the existing neighborhood character; or
+
+(b) The additional floor area is only intended to increase the habitability and function of the structure; and
+
+(c) The granting of the major floor area exception is desirable for the preservation of an existing architectural style or neighborhood character which would not otherwise be accomplished through the strict application of the provisions of this chapter; and
+
+(d) It can be demonstrated that the design of the proposed addition is of superior design quality; compatible with existing neighborhood character; effective in minimizing the perceived size of the dwelling; not overly intrusive to the privacy and sunlight access of neighboring dwellings; and is in substantial compliance with the design guidelines for single-family homes.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.14.95. - Architectural projections into front, side, and rear setbacks.
+
+Architectural projections attached to a principal structure or accessory structure into required setbacks may be permitted for the purpose of home improvements, additions, or new construction in compliance with this section.
+
+a. Architectural projections eighteen (18) inches or less in height, front, side and rear yards. Decks, stoops, landings, concrete patios and other architectural features eighteen (18) inches or less in height above natural grade may encroach into any side or rear yard, provided the structure causes no drainage onto adjacent properties.
+
+b. Architectural projections greater than eighteen (18) inches in height, front, side and rear yards. First and second-story architectural features attached to principal or accessory structures that are not part of the habitable interior area (e.g., eaves, canopies, trellises, arbors, open porches, balconies, decks, patio covers, chimneys, outside stairways, basement light wells, all greater than eighteen (18) inches in height, etc.), and first-story bay windows no more than twelve (12) feet long, may project into required setbacks the following maximum distances, except that second-story bay windows, balconies, or decks are not allowed to project into the required side and rear setbacks:
+
+1. Six (6) feet into the front setback;
+
+2. Two (2) feet into the side setback; and
+
+3. Six (6) feet into the rear setback.
+
+(Ord. No. 5.18, § 3, 4/24/18)
+
+DIVISION 4. - GENERAL SETBACKS
+
+SEC. 36.08. - General setbacks and fence provisions.
+
+SEC. 36.08.05. - Corner setbacks for buildings.
+
+a. Uncontrolled intersection. No portion of any building or structure greater than three (3) feet in height located on a corner lot at an uncontrolled intersection may extend within the required setback along either street frontage or within a line with a radius equivalent to the street corner radius tangent to these two (2) setback lines.
+
+b. Controlled intersection. A building or structure, or any portion thereof, greater than three (3) feet in height located on a corner lot at a controlled intersection must comply with the required setbacks along either street frontage and may not extend beyond the intersection point of the two required setbacks.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.08.10. - Unlawful erection of buildings in setback zones.
+
+It shall be unlawful for any person, firm or corporation to erect, construct, or locate, or contract for the erection, construction or location of any building or other structure, excepting fences three (3) feet in height or less above grade and signs erected or installed pursuant to the provisions of this chapter within any setback line as established herein, and the zoning administrator, city council or building inspector shall refuse to issue a permit for the construction or erection of any building or structure within such setback contrary to provisions of this chapter.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.08.15. - Storage of habitable trailer in setback prohibited.
+
+Habitable trailers shall not be stored or parked within any required street setback area in any office, commercial or industrial zone except where limited display areas may be permitted by the zoning administrator, using the conditional use permit procedure under Sec. 36.48.
+
+(Ord. No. 18.13, § 1, 12/10/13.)
+
+SEC. 36.08.20. - Fences and walls—Nonresidential property.
+
+In all nonresidential districts, in required yards other than front yards and street setback areas, fences and walls may not exceed seven (7) feet in height, subject to development review (see Sec. 36.44.45). On a case-by-case basis, the zoning administrator may consider fences or walls of additional height.
+
+(Ord. No. 18.13, § 1, 12/10/13.)

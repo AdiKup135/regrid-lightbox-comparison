@@ -1,0 +1,586 @@
+Chapter 8.21 - FLOOR AREA RATIO (FAR) STANDARDS
+
+8.21.010 - Purpose.
+
+The purpose of this chapter is to codify floor area ratio standards that were previously located in the town's design guidelines for the development of new single-family dwellings and additions to existing single-family dwellings. Floor area ratio is intended to establish an objective standard for the maximum size of a home based on the size of the property.
+
+(Ord. No. 311, § 10, 12-13-2023)
+
+8.21.020 - Applicability.
+
+This chapter applies to new single-family dwellings, and additions and remodels to existing single-family dwellings.
+
+(Ord. No. 311, § 10, 12-13-2023)
+
+8.21.030 - Exemptions.
+
+The following are not subject to the standards of this chapter:
+
+A. A one-time only addition of two hundred (200) square feet or less in area to an existing dwelling if no other additions have been previously approved.
+
+B. A legally constructed building which exceeds the maximum gross floor area permitted by this chapter and which is destroyed by fire, flood, landslide, or other act of nature. Such a building may be rebuilt with up to the same amount of floor area, subject to approval in accordance with Section 8.20.060 of the Moraga Municipal Code; and
+
+C. A single-family dwelling in a planned development or major subdivision where the planning commission or town council established alternative FAR standards for new homes approved as part of the planned development or major subdivision project.
+
+(Ord. No. 311, § 10, 12-13-2023)
+
+8.21.040 - Definitions.
+
+The following definitions apply to this chapter:
+
+"Attic" means that space of a building above a story, which is not habitable and may be utilized for storage. The space must be unconditioned.
+
+"Basement" means that portion of a building, which is either partly above finished ground surface or all below finished ground surface found between the floor and ceiling or finished floor level directly above. If the height between the ceiling and the finished ground surface adjoining the exterior walls exceeds six feet at any point or if it is utilized as a habitable space/room, the space will be considered a story.
+
+"Floor area ratio" means the ratio of the building's gross floor area divided by the lot area.
+
+"Gross floor area" is the sum of the following:
+
+A. The area measured on exterior walls of the first story of the dwelling;
+
+B. Garage area measured on outside walls;
+
+C. That portion of any first story room with a ceiling height of fifteen (15) feet or more and not a part of a second story;
+
+D. Area of the second story measured on exterior walls;
+
+E. The area of that portion of any attic space that has a clear height of seven feet above the floor; and
+
+F. The area of accessory structures greater than four hundred (400) square feet in area with permanent foundations, measured on exterior walls.
+
+Items that do not count towards the gross floor area:
+
+1. A basement or attic, as defined by this Code;
+
+2. An accessory building(s) with a total area of less than four hundred (400) square feet, other than a garage or carport;
+
+3. A covered or uncovered balcony, porch, and deck;
+
+"Maximum floor area ratio" means the maximum floor area that may be developed on a lot, based on the net lot area.
+
+(Ord. No. 311, § 10, 12-13-2023)
+
+8.21.050 - Maximum floor area ratio and gross floor area.
+
+The maximum floor area ratio is set forth below. The maximum gross floor area is determined by multiplying the net lot area by the maximum floor area ratio. For example, a lot with a net lot area of ten thousand three hundred fifty (10,350) square feet will have a maximum floor area ratio of .328 and a maximum permitted house size of three thousand three hundred ninety-four (3,394) square feet. Table 1 shows the maximum floor area ratio and gross floor area that applies to a single-family residential dwelling on a lot with an area of one acre or less.
+
+| Net Lot Area (sq. ft.) | Maximum FAR | Maximum Gross Floor Area (sq. ft.) |
+| 4,999 and less | | 1,900 |
+| 5,000 | 0.380 | 1,900 |
+| 5,200 | 0.378 | 1,965 |
+| 5,400 | 0.376 | 2,030 |
+| 5,600 | 0.374 | 2,094 |
+| 5,800 | 0.372 | 2,157 |
+| 6,000 | 0.370 | 2,220 |
+| 6,200 | 0.368 | 2,281 |
+| 6,400 | 0.366 | 2,342 |
+| 6,600 | 0.364 | 2,402 |
+| 6,800 | 0.362 | 2,461 |
+| 7,000 | 0.360 | 2,520 |
+| 7,200 | 0.358 | 2,577 |
+| 7,400 | 0.356 | 2,634 |
+| 7,600 | 0.354 | 2,690 |
+| 7,800 | 0.352 | 2,745 |
+| 8,000 | 0.350 | 2,800 |
+| 8,200 | 0.348 | 2,853 |
+| 8,400 | 0.346 | 2,906 |
+| 8,600 | 0.344 | 2,958 |
+| 8,800 | 0.342 | 3,009 |
+| 9,000 | 0.340 | 3,060 |
+| 9,200 | 0.338 | 3,109 |
+| 9,400 | 0.336 | 3,158 |
+| 9,600 | 0.334 | 3,206 |
+| 9,800 | 0.332 | 3,253 |
+| 10,000 | 0.330 | 3,300 |
+| 10,200 | 0.328 | 3,345 |
+| 10,400 | 0.326 | 3,390 |
+| 10,600 | 0.324 | 3,434 |
+| 10,800 | 0.322 | 3,477 |
+| 11,000 | 0.320 | 3,520 |
+| 11,200 | 0.318 | 3,561 |
+| 11,400 | 0.316 | 3,602 |
+| 11,600 | 0.314 | 3,642 |
+| 11,800 | 0.312 | 3,681 |
+| 12,000 | 0.310 | 3,720 |
+| 12,200 | 0.308 | 3,757 |
+| 12,400 | 0.306 | 3,794 |
+| 12,600 | 0.304 | 3,830 |
+| 12,800 | 0.302 | 3,865 |
+| 13,000 | 0.300 | 3,900 |
+| 13,200 | 0.298 | 3,933 |
+| 13,400 | 0.296 | 3,966 |
+| 13,600 | 0.294 | 3,998 |
+| 13,800 | 0.292 | 4,029 |
+| 14,000 | 0.290 | 4,060 |
+| 14,200 | 0.288 | 4,089 |
+| 14,400 | 0.286 | 4,118 |
+| 14,600 | 0.284 | 4,146 |
+| 14,800 | 0.282 | 4,173 |
+| 15,000 | 0.280 | 4,200 |
+| 15,200 | 0.278 | 4,225 |
+| 15,400 | 0.276 | 4,250 |
+| 15,600 | 0.274 | 4,274 |
+| 15,800 | 0.272 | 4,297 |
+| 16,000 | 0.270 | 4,320 |
+| 16,200 | 0.268 | 4,341 |
+| 16,400 | 0.266 | 4,362 |
+| 16,600 | 0.264 | 4,382 |
+| 16,800 | 0.262 | 4,401 |
+| 17,000 | 0.260 | 4,420 |
+| 17,200 | 0.258 | 4,437 |
+| 17,400 | 0.256 | 4,454 |
+| 17,600 | 0.254 | 4,470 |
+| 17,800 | 0.252 | 4,485 |
+| 18,000 | 0.250 | 4,500 |
+| 18,200 | 0.248 | 4,513 |
+| 18,400 | 0.246 | 4,526 |
+| 18,600 | 0.244 | 4,538 |
+| 18,800 | 0.242 | 4,549 |
+| 19,000 | 0.240 | 4,560 |
+| 19,200 | 0.238 | 4,569 |
+| 19,400 | 0.236 | 4,578 |
+| 19,600 | 0.234 | 4,586 |
+| 19,800 | 0.232 | 4,593 |
+| 20,000 | 0.230 | 4,600 |
+| 21,000 | 0.2247 | 4,718 |
+| 22,000 | 0.2190 | 4,818 |
+| 23,000 | 0.2134 | 4,908 |
+| 24,000 | 0.2079 | 4,989 |
+| 25,000 | 0.2024 | 5,060 |
+| 26,000 | 0.1969 | 5,119 |
+| 27,000 | 0.1915 | 5,170 |
+| 28,000 | 0.1863 | 5,216 |
+| 29,000 | 0.1812 | 5,255 |
+| 30,000 | 0.1763 | 5,289 |
+| 31,000 | 0.1716 | 5,319 |
+| 32,000 | 0.1671 | 5,347 |
+| 33,000 | 0.1627 | 5,369 |
+| 34,000 | 0.1585 | 5,389 |
+| 35,000 | 0.1545 | 5,407 |
+| 36,000 | 0.1506 | 5,421 |
+| 37,000 | 0.1470 | 5,439 |
+| 38,000 | 0.1435 | 5,453 |
+| 39,000 | 0.1401 | 5,464 |
+| 40,000 | 0.1369 | 5,476 |
+| 41,000 | 0.1338 | 5,486 |
+| 42,000 | 0.1308 | 5,493 |
+| 43,000 | 0.1279 | 5,499 |
+| 43,560 | 0.1262 | 5,500 |
+| Greater than 1 acre | | 5,500 [1] |
+
+[1] Applies only to homes that would be visible from a scenic corridor.
+
+For lots greater than one acre where the home would be visible from a scenic corridor, the maximum home size is five thousand five hundred (5,500) square feet.
+
+(Ord. No. 311, § 10, 12-13-2023)
+
+8.21.060 - Modifications.
+
+A. Except as provided under subsection B below, the reviewing body has the authority to permit a gross floor area greater than the maximum allowed under Section 8.21.050 with approval of a conditional use permit in compliance with Section 8.16.080 and findings found in Section 8.12.120.
+
+B. The reviewing body shall not grant a modification to the maximum FAR standard for projects with one or more of the following adverse design characteristics:
+
+1. Any building addition that requires a variance to a front, side, or rear yard property line setback.
+
+2. The use of multiple or stacked retaining walls or retaining walls higher than three feet to create level yard areas on hillside lots.
+
+3. The lack of sufficient driveway maneuvering space or very tight turning radius for access in and out of garages or insufficient guest parking on lots with less than forty-five (45) feet of frontage to a public street.
+
+(Ord. No. 311, § 10, 12-13-2023)
+
+Chapter 8.22 - RURAL RESIDENTIAL DISTRICT (RR)
+
+8.22.010 - Purpose.
+
+The purpose of this district is to promote a rural character by providing for very low density single-family residential uses, agricultural uses, and preservation of the natural environment consistent with the general plan.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.020 - Design guidelines consideration.
+
+Notwithstanding the provisions of this chapter, all residential development projects must conform with the Town of Moraga Design Guidelines, as may be amended from time to time, or be granted an exception to one or more of the design guidelines by the planning commission in accordance with the procedures set forth in Chapter 8.72.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.030 - Permitted uses.
+
+A. A detached single-family dwelling on each lot and the accessory structures and uses normally auxiliary to it.
+
+B. Agriculture.
+
+C. Accessory dwelling units consistent with Chapter 8.124.
+
+D. Supportive housing and transitional housing of the same type allowed in this district.
+
+E. Animal keeping in accordance with Chapter 8.92, excluding Article 2.
+
+F. Dog daycare, dog training.
+
+G. Home occupations in conformance with Chapter 8.112.
+
+H. Child day care center (small and large family day care home only); and
+
+I. Residential care facilities with six persons or fewer, employee housing with six persons or fewer, and group homes not requiring licensing by the State of California.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023; Ord. No. 316, § 4, 6-25-2025)
+
+8.22.040 - Conditional uses.
+
+In this districts, each of the following uses is permitted on issuance of a conditional use permit:
+
+A. Animal keeping in accordance with Chapter 8.92, Article 2.
+
+B. Religious facility.
+
+C. Park and outdoor recreation facility.
+
+D. Animal boarding.
+
+E. A use which the planning commission, after notice and public hearing, has found to be comparable to any of the foregoing uses.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.050 - Density transfer.
+
+Density transfers shall be processed under Chapter 8.104.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.060 - Minimum lot area and setback regulations.
+
+A. The minimum lot area and setbacks for principal structures are set forth in the following table:
+
+| Standard |
+| Minimum lot area: | 5 acres |
+| Minimum lot width: | 140 feet |
+| Minimum lot depth: | 140 feet |
+| Minimum lot frontage: | 100 feet |
+| Minimum setback from property lines: | 25 feet |
+
+B. Development standards in the R-R District may be altered through the Planned Development process identified in Chapter 8.48.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.070 - Maximum building height.
+
+At no point shall the building height of a structure exceed two stories or thirty-five (35) feet, whichever is less. On lots where a building is stepped down a slope and the building footprint slope is twenty (20) percent or greater, the maximum aggregate building height shall not exceed forty-five (45) feet. Measurement of building height shall be as defined in Chapter 8.04 of this title.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.080 - Accessory structures and buildings.
+
+Setbacks and other development standards for accessory structures and buildings, including decks, shall be as defined in Chapter 8.70 of this Code.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.090 - Fences and walls.
+
+Setbacks and development standards for fences and walls shall be as defined in Section 8.68.040 of this Code.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+8.22.100 - Site and development analysis.
+
+Any application for a subdivision or planned development in this district shall include a study or analysis including the following information prepared by one or more certified professionals approved by the planning director:
+
+A. Land use analysis, including adjacent land uses, densities, and the potential for citing proposed development so that its visibility from nearby residential uses is minimized.
+
+B. Geotechnical analysis, identifying:
+
+1. Steepness of slope, including location of any slopes greater than twenty (20) percent.
+
+2. Potential landslide hazards, including soil with a history of slippage or slopes subject to severe surface erosion or deterioration.
+
+3. Proximity to known faults (active or inactive), as documented by the California or US Geological Surveys or other sources.
+
+4. Areas subject to enhanced seismically induced ground shaking or seismically induced ground failure such as a landslide, lateral spread, rockfall, ground lurching, liquefaction, soil settlement, differential compaction and compression.
+
+5. Areas subject to the effect of seismically induced flooding and/or dam or stock pond failure.
+
+6. Location and extent of any proposed grading, soil displacement, and alteration to landforms.
+
+C. Hydrologic analysis, identifying:
+
+1. Location of any natural drainage way or swale with a drainage basin of fifty (50) acres or more or crossed by a perennial or ephemeral (intermittent) drainage channel.
+
+2. Location of FEMA 100-year and 500-year flood plain, where present.
+
+3. Presence of regular or intermittent springs or adverse ground water conditions.
+
+4. Identification of any areas within one hundred (100) yards upstream or five hundred (500) yards downstream of a reservoir, detention basin or pond of one acre or more in surface area.
+
+D. Biological resource evaluation, including:
+
+1. Evaluation of site plant and animal resources, as determined by a qualified wildlife biologist.
+
+2. Arborist report for site.
+
+E. Fire hazard severity zone and proximity to wildfire risk zones as defined by CalFire.
+
+F. Proposed provisions for emergency vehicle access.
+
+(Ord. No. 309, § 3(Exh. A), 5-10-2023)
+
+Chapter 8.24 - ONE, TWO, AND THREE DWELLING UNITS PER ACRE RESIDENTIAL DISTRICTS^[2]
+
+8.24.010 - Purpose.
+
+The purpose of the 1-DUA, 2-DUA, and 3-DUA zoning districts is to provide for a residential environment consisting of low density, detached, single-family homes consistent with the general plan.
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+8.24.020 - Establishment of land use districts.
+
+The following single-family residential land use districts are established:
+
+A. One dwelling unit per acre residential;
+
+B. Two dwelling units per acre residential
+
+C. Three dwelling units per acre residential.
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+8.24.030 - Design guidelines consideration.
+
+Notwithstanding the provisions of this chapter, all residential development projects must conform with the Town of Moraga Design Guidelines, including the floor area ratio (FAR) standards for residential development, or be granted an exception to one or more of the design guidelines by the design review board in accordance with the procedures set forth in Chapter 8.72.
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+8.24.040 - Permitted uses.
+
+A. A detached single-family dwelling on each lot and the accessory structures and uses normally auxiliary to it;
+
+B. Agriculture (crop and tree farming with no on-site sales only);
+
+C. Park and outdoor recreational facility if the planning commission makes a specific finding that the use is consistent with the general plan;
+
+D. Accessory dwelling units consistent with Chapter 8.124;
+
+E. Supportive housing and transitional housing of the same type allowed in this district;
+
+F. Animal keeping in accordance with Chapter 8.92, Article 1;
+
+G. Home occupations in conformance with Chapter 8.112;
+
+H. Child day care center (family day care home only);
+
+I. Pocket parks; and
+
+J. Residential care facilities with six persons or fewer, employee housing with six persons or fewer, and group homes not requiring licensing by the State of California.
+
+(Ord. No. 268, § 4, 5-10-2017; Ord. No. 293, § 3(Exh. A), 11-10-2020; Ord. No. 316, § 4, 6-25-2025)
+
+8.24.050 - Conditional uses.
+
+In these districts, each of the following uses is permitted on issuance of a conditional use permit:
+
+A. Animal keeping in accordance with Chapter 8.92, Article 2;
+
+B. Assembly or meeting facility;
+
+C. Religious facility;
+
+D. Sports recreation facility (private, not organized and operated for profit; for use by residents of the neighborhood or subdivision where it is located);
+
+E. Park and Outdoor Recreational Facility not organized and operated for profit; and
+
+F. A use which the planning commission, after notice and public hearing, has found to be comparable to any of the foregoing uses.
+
+(Ord. No. 268, § 4, 5-10-2017; Ord. No. 293, § 3(Exh. A), 11-10-2020)
+
+8.24.055 - Density.
+
+A. One dwelling unit per acre residential.
+
+1. No more than one dwelling unit shall be constructed on any one acre, except as provided in subsection A(2) of this section.
+
+2. The density may be increased on any one-acre sized parcel in compliance with all applicable state laws.
+
+B. Two dwelling units per acre residential.
+
+1. No more than two dwelling units shall be constructed on any one-acre sized parcel, except as provided in subsection B(2) of this section.
+
+2. The density may be increased on any one-acre sized parcel, in compliance with all applicable state laws.
+
+C. Three dwelling units per acre residential.
+
+1. No more than three dwelling units shall be constructed on any one-acre sized parcel, except as provided in subsection C(2) of this section.
+
+2. The density may be increased on any one-acre sized parcel in compliance with all applicable state laws.
+
+(Ord. No. 293, § 3(Exh. A), 11-10-2020)
+
+8.24.060 - Minimum lot area and yard setback regulations.
+
+A. The minimum lot area and setbacks for principal structures in the one, two, and three dwelling units per acre residential land use districts are set forth in the following table and shall apply to the extent consistent with state law:
+
+| Standard | SFR 1 DU/acre | SFR 2 DU/acre | SFR 3 DU/acre |
+| Minimum lot area | 30,000 sq. feet | 20,000 sq. feet | 10,000 sq. feet |
+| Minimum lot width | 140 feet | 120 feet | 80 feet |
+| Minimum lot depth | 140 feet | 120 feet | 100 feet |
+| Minimum front yard setback(see A1) | 25 feet | 25 feet | 20 feet (see A2) |
+| Exterior side yard setback (corner lots) | 25 feet | 20 feet | 15 feet |
+| Minimum side yard setback | 20 feet | 15 feet | 10 feet |
+| Sum of side yards | N/A | 35 feet | 20 feet |
+| Minimum rear yard setback | 25 feet | 20 feet | 15 feet |
+| Maximum lot coverage (see A3) | N/A | N/A | 60 percent |
+
+1. The front yard setback for two or more lots fronting on a private street is governed by Section 8.68.110.
+
+2. The portion(s) of the building where the driveway is located shall be setback a sufficient distance to accommodate a minimum driveway length of twenty-five (25) feet.
+
+3. Maximum lot coverage for SFR 3 DU/acre applies only to developments within the Moraga Center Specific Plan area.
+
+B. See Section 8.200.050 Moraga Center Design Requirements of the Moraga Municipal Code, and Chapter 11 of the Moraga Design Guidelines for other standards applicable to properties located within the Moraga Center area.
+
+(Ord. No. 268, § 4, 5-10-2017; Ord. No. 293, § 3(Exh. A), 11-10-2020)
+
+8.24.070 - Single family residences—Nonconforming setbacks.
+
+A. For lots developed with a detached single family residence prior to November 7, 1980, the front and side yard setbacks established under the previous county zoning shall be applied to building additions as prescribed by Section 8.68.050 of this Code.
+
+B. For residential buildings that have nonconforming setbacks, but are not eligible to apply the provisions of Section 8.68.050 related to the previous county setbacks, a building addition or deck may continue an existing exterior wall within a normally required setback as provided in Section 8.20.060.C(2) and 8.20.060.C(3).
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+8.24.080 - Maximum building height.
+
+At no point shall the building height of a structure in these districts exceed two stories or thirty-five (35) feet, whichever is less. On lots where a building is stepped down a slope and the building footprint slope is twenty (20) percent or greater, the maximum aggregate building height shall not exceed forty-five (45) feet. However, if upon design review, the reviewing authority finds that the building height proposed for the structure will create a significant adverse effect on neighboring properties or is incompatible with the natural terrain or vegetation, the reviewing authority may reduce the maximum building height permitted to a height which eliminates or mitigates the adverse effects of the building height proposed. Measurement of building height shall be as defined in Chapter 8.04 of this title.
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+8.24.090 - Accessory structures and buildings.
+
+Setbacks and other development standards for accessory structures and buildings, including decks, shall be as defined in Chapter 8.70 of this Code.
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+8.24.100 - Fences and walls.
+
+Setbacks and development standards for fences and walls shall be as defined in Section 8.68.040 of this Code.
+
+(Ord. No. 268, § 4, 5-10-2017)
+
+CHAPTER 8.68 - GENERAL STANDARDS FOR LOTS, YARDS, SETBACKS, FENCES AND WALLS^[13]
+
+Article 1. - Lots
+
+8.68.010 - Division of lots.
+
+A person shall not divide a lot or parcel and shall not convey a lot or parcel or any part of it if the division or conveyance so reduces the area, width, yard or setback of the lot or parcel or creates a lot or parcel with an area, width, yard, or setback so small that it does not conform to this title.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.020 - Required area reduced by public use.
+
+If part of a lot or parcel having not less than the required area for its land use district is acquired for public use and if the remainder of the lot or parcel has not less than eighty (80) percent of the area required for its land use district, the remainder shall be considered as having the required area. However, setback, side yard, and rear yard requirements shall be met. If a lot or parcel has an authorized nonconforming status as to area under any town ordinance, the parcel shall retain its nonconforming status if the acquisition for public use does not reduce the remainder below eighty (80) percent of the existing nonconforming area. The setback, side yard, and rear yard requirements of the land use district shall be met for any new development thereafter, except for buildings or structures in existence at the time of public acquisition.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+Article 2. - Setbacks
+
+8.68.030 - Setback requirements.
+
+On a corner lot the setback requirement applicable to the land use district in which the lot is located applies to both public and private road, street or highway frontage of the lot. The setback line of a parcel of land is common with the right-of-way line of a public or private road, street or highway.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+Article 3. - Fences and Walls
+
+8.68.040 - Fences and walls within setbacks.
+
+A. Fences in Front and Exterior Side Yard Setback Areas. No fence or wall higher than three feet is permitted within a front yard or exterior side yard setback area without the prior approval of the zoning administrator. Fences or walls exceeding six feet and up to seven feet six inches in height are permitted in the front or exterior side yard setback areas subject to approval of the design review board. The reviewing authority shall consider whether the fence design and location: (1) are aesthetically compatible in the neighborhood; and (2) do not create sight obstructions as set forth in Section 8.80.010.
+
+B. Fences or Walls in Side and Rear Yard Setback Areas.
+
+1. Fences or walls up to six feet in height are permitted within side or rear yard setback areas.
+
+2. Fences or walls exceeding six feet and up to seven feet six inches in height are permitted in side or rear yard setback areas subject to approval of the design review board. The design review board shall consider whether the fence or wall design, height and location: (a) are aesthetically compatible with the neighborhood; (b) do not create sight obstructions as set forth in Section 8.80.010 or to the adjacent properties; and (c) do not create health and safety problems.
+
+C. Fences or walls exceeding seven feet six inches in height and located within any setback require a variance approval from the planning commission with specific findings set forth in Section 8.12.130.
+
+D. Open fencing up to seven feet in height is permitted in rural residential, MOSO, and nonMOSO open space districts. Such fencing is not subject to other provisions in Section 8.68.040, and does not require approval from the zoning administrator or the design review board.
+
+E. The following are prohibited fence types/materials:
+
+1. Barbed wire, razor, or concertina wire
+
+2. Electrified fences
+
+3. Chain link fencing (when visible from public areas, public rights-of-way, and/or private roadways)
+
+4. Temporary fencing such as plastic or wire mesh fencing, barricades, and panel - system fences. (Except for construction sites, town-sponsored events, and temporary uses approved under Section 8.148.050).
+
+(Ord. No. 268, § 6, 5-10-2017; Ord. No. 309, § 5(Exh. B, 5), 5-10-2023; Ord. No. 311, § 12, 12-13-2023)
+
+Article 4. - Yards
+
+8.68.050 - Front and side yard setbacks established under county zoning.
+
+Notwithstanding any provision in this title to the contrary, the front and side yard setbacks applicable to a lot on which a detached single family residence was constructed in the former R-10, R-15 and R-20 zones under county zoning regulations in effect prior to November 7, 1980 shall be the front and side yard setbacks that were in effect at the time of development pursuant to the subdivision's development standards or county zoning regulations. County zoning regulations prior to November 7, 1980 are shown below (updated adopted code):
+
+| County Zone | Minimum Front Yard | Minimum Side Yard | Sum of Side Yards | Exterior Side Yard |
+| R-10 | 20 feet | 10 feet | 20 feet | 15 feet |
+| R-15 | 20 feet | 10 feet | 25 feet | 15 feet |
+| R-20 | 25 feet | 15 feet | 35 feet | 20 feet |
+
+These setbacks shall apply to additions and alterations to single family residences existing on the effective date of the ordinance from which this article derives but shall not apply to new, separate structures on the same lot as an existing single family residence such as a detached secondary or accessory dwelling unit or a detached accessory structure or building.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.060 - Obstructions in yard areas.
+
+A. Except as otherwise provided in this title, every part of a required yard area shall be open and unobstructed to the sky. However, a fire escape, open stairway or landing, ADA access facility, at-grade paving or decking materials, chimney, the ordinary projection of a sill, belt-course, cornice, eave, or bay window, or an ornamental feature which does not obstruct the light and ventilation on any adjoining parcel, is not considered an obstruction and does not violate the prescribed yard regulations.
+
+B. Movable, disassemblable, and/or demountable objects or structures such as small-scale, children's play equipment (e.g., swing sets, climbing frames, slides, trampolines, basketball hoops, etc.), or shade structures such as shade sails and open-sided canopies, whether attached or unattached to the ground, are not obstructions and may be located within any required yard, subject to the following limitations:
+
+1. Climbing frames, and similar structures shall have a deck height no greater than eight feet, and total height no greater than fifteen (15) feet.
+
+2. Shade structures shall not block or cover a vehicle access easement, driveway, parking area, garage or carport. If visible from the public street, shade structures shall not be used for the purposes of covering vehicles or stored household items (other than outdoor furniture) for any period longer than seventy-two (72) hours.
+
+3. Any object or structure permitted under this section shall not have a footprint larger than four hundred (400) square feet.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.070 - Accessory use in rear yard.
+
+An accessory building, accessory structure, or accessory use may occupy only up to thirty (30) percent of a required rear yard, except that swimming pools, tennis courts, and similar facilities located at or below grade are not counted toward this limitation.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.080 - Rear yard abutting on side yard.
+
+In each single-family residential district and each multiple-family residential district, there shall be a rear yard of not less than five feet wherever the rear yard of a lot or parcel of land abuts on a side yard.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.090 - Front lot line of a corner lot.
+
+The front lot line of a corner lot shall be the lot line located on the principal street. In the event that it is unclear which of two intersecting streets is the principal street, the planning director or the public works director shall make a determination based on factors such as the orientation of the primary building on the lot and patterns of development in the vicinity of the subject lot.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.100 - Double frontage.
+
+Where both the front and rear of a lot abut a public or private street a front yard shall be maintained from both streets.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.110 - Front yard setback for lots on private streets.
+
+The front yard setback for a lot fronting on a private street shall be the front yard setback specified in the land use district plus one-half of the right-of-way width specified for a minor street for a subdivision measured from the center of the private street.
+
+(Ord. No. 268, § 6, 5-10-2017)
+
+8.68.120 - Access to garage on corner lot.
+
+A. The purpose of this section is to prescribe special regulations governing vehicle access to the garage structure on a corner lot in order to:
+
+1. Minimize the number of access points on to and off of heavily traveled streets;
+
+2. Provide adequate distance between the garage and the right-of-way so that a vehicle when parked upon the driveway apron within the side yard setback area does not encroach into the right-of-way.
+
+B. Location of Access. Access to off-street parking on a corner lot shall be from the right-of-way having the lowest average daily traffic (ADT) as determined by the planning director.
+
+(Ord. No. 268, § 6, 5-10-2017)

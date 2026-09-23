@@ -1,0 +1,168 @@
+§ 20.20.010 Accessory dwelling units and junior accessory dwelling units
+
+The purpose of this section is to comply with state law, which provides for cities to set standards for the development of accessory dwelling units and junior accessory dwelling units so as to increase the supply of small and affordable housing while ensuring that they remain compatible with existing primary structures and neighborhoods. It is the intent that accessory dwelling units will be permitted to be established as a permanent housing option on any property that either contains or is constructed concurrently with a primary single-family or multifamily residential use, and when established in compliance with state law and local ordinances. It is the intent that junior accessory dwelling units will be permitted to be established as a permanent housing option on any property that either contains or is constructed with a primary single-family residential use, and when established in compliance with state law and local ordinance. An efficiency unit or manufactured home, as defined in Section 18007 of the Health and Safety Code, are types of accessory dwelling units.
+
+A. General Requirements – Accessory Dwelling Units.
+
+1. Accessory dwelling units shall not be counted when calculating the permitted density requirements of the General Plan, but shall otherwise be considered a component of a residential land use on a property consistent with the General Plan text and diagrams.
+
+2. Accessory dwelling units are exempt from the growth control measures set forth in Chapter 17.24 HMC.
+
+3. Accessory dwelling units shall be allowed to be established either simultaneously with or subsequent to the construction of a primary dwelling unit(s) that is located on the same lot of record and under one common ownership subject to provisions of subsection (C) of this section. Accessory dwelling units shall not be sold, transferred or owned separately from the primary residential unit on the property, except when the accessory dwelling unit or primary dwelling unit was built or developed by a qualified nonprofit corporation per Government Code Section 66341, as that section may be amended.
+
+4. The owner of the lot upon which an accessory dwelling unit is located is neither required to reside in the primary dwelling unit or accessory dwelling unit.
+
+5. Accessory dwelling units shall only be used for residential purposes.
+
+6. Rental accessory dwelling units shall only be used for rentals of terms longer than 30 days and shall not be converted to accommodate residential visitor lodging.
+
+7. Accessory dwelling units shall be allowed in all zoning districts that permit single-family and multifamily uses when proposed on a lot that is developed or proposed to be developed with one or more legally permitted primary dwelling units.
+
+8. Factory-built housing or a manufactured home may be used as an accessory dwelling unit so long as it conforms to all provisions of this section.
+
+9. Accessory dwelling units may be attached to the primary dwelling unit, detached from the primary dwelling unit or may involve the conversion of floor area of an existing structure.
+
+Accessory dwelling units shall be placed on a permanent foundation. Refer to HMC 20.28.310 for definitions of various types of accessory dwelling units and efficiency units.
+
+B. General Requirements – Junior Accessory Dwelling Units.
+
+1. One junior accessory dwelling unit shall be allowed to be established either simultaneously with or subsequent to the construction of a single-family dwelling under one common ownership subject to provisions of subsection (C) of this section. Junior accessory units shall not be sold, transferred or owned separately from the primary residential unit on the property.
+
+2. A junior accessory dwelling unit shall be allowed in all zoning districts that permit single-family and multifamily uses when proposed on a lot that is developed or proposed to be developed with one legally permitted single-family dwelling.
+
+3. The owner of the single-family dwelling shall reside on a property containing a junior accessory dwelling unit, either in the single-family dwelling or in the junior accessory dwelling unit. Owner occupancy is not required if the owner is a governmental agency, land trust, or housing organization.
+
+4. A junior accessory dwelling unit shall be no more than 500 square feet in size, contained within the exterior walls of a proposed or existing single-family dwelling and include a separate entrance from the main entrance to the proposed or existing single-family dwelling. A junior accessory dwelling unit shall have an efficiency kitchen including a cooking facility with appliances, a food preparation counter, and storage cabinets.
+
+5. If a proposed junior accessory dwelling unit does not include a separate bathroom, the junior accessory dwelling unit shall include a separate entrance from the main entrance to the junior accessory dwelling unit, with an interior entry to the main living area.
+
+6. A junior accessory dwelling unit shall not be considered a separate or new unit for purposes of any fire or life protection ordinance or for purposes of providing water, wastewater or power services. Single-family dwellings containing a junior accessory dwelling unit may be subject to such requirements as applied to single-family dwellings not containing a junior accessory dwelling unit.
+
+7. Junior accessory dwelling units shall not be counted when calculating the permitted density requirement of the General Plan, but shall otherwise be considered a component of a residential land use on a property consistent with the General Plan text and diagrams.
+
+8. Junior accessory dwelling units are exempt from the growth control measures set forth in Chapter 17.24 HMC.
+
+9. Rental of a junior accessory dwelling unit shall be for a term longer than 30 days.
+
+C. Development Standards.
+
+| Table 20 Development Standards for Attached and Detached Accessory Dwelling Units (ADUs) and Junior Accessory Dwelling Units (JADUs) | | | |
+| Development Standard | Junior Accessory Dwelling Unit | Attached Accessory Dwelling Unit | Detached Accessory Dwelling Unit |
+| Number of ADUs/JADUs New or Existing Single-Family Dwelling^1 | 1 | 1 | 1 |
+| Number of ADUs New Multifamily^1 | N/A | 1 | 1 |
+| Maximum Size | 500 square feet | 1,200 square feet | 1,200 square feet |
+| Site Coverage | N/A | See Table 20a Exception: ADUs 850 square feet or less are not subject to the maximum site coverage requirements of the underlying zoning. | |
+| Height^2 | See Table 20a | See Table 20a Exception: ADUs located within required rear and side yard of the zoning district cannot exceed two stories or 25 feet. | Two stories or 25 feet |
+| Setbacks^3 | | | |
+| Front | N/A | See Table 20a | See Table 20a |
+| Interior Side | N/A | 4 feet | 4 feet |
+| Street Side | N/A | 4 feet | 4 feet |
+| Rear | N/A | 4 feet | 4 feet |
+| Parking Spaces: On Site | | | |
+| Accessory Dwelling Unit New Construction or Conversion | 0 | 0 | 0 |
+| Replacement Parking for Primary Dwelling Garage or Covered/Uncovered Off street Parking Conversion | 0 | 0 | 0 |
+
+| Notes: | |
+| 1. | One JADU and one attached or detached ADU is allowed on the site of a new or existing single-family dwelling. |
+| 2. | An ADU located over a detached accessory building may exceed the maximum height stated in HMC § 20.16.030 (Maximum height), up to two stories or 25 feet, and the maximum required interior side and rear setbacks are four feet as noted in Table 20. |
+| 3. | No setback shall be required for an existing living area or accessory structure or a structure constructed in the same location and to the same dimensions as an existing structure that is converted to an accessory dwelling unit or to a portion of an accessory dwelling unit. |
+| 4. | If any one of the following standards set forth in Table 20a: maximum size and/or lot coverage would prohibit the issuance of a building permit for an accessory dwelling unit, the applicant for said building permit will be entitled to a permit for an 850-square-foot accessory dwelling unit that is 16 feet high, with four-foot side and rear yard setbacks. |
+
+| Table 20a Development Standards: Front Setback, Site Coverage, Height for Specific Zoning Districts | | | | | | | | | | |
+| Develop- ment Stand- ard by Zone | R-1-3.5* | R-1-6 | R-1-12.5 | R-1-20 and 40 | RM | DR | PR and CD | CS | MU | GMU |
+| Front setback | 20' | 20' | 25' | 30' | 20' | 20' | None | None | None | 30' |
+| Site coverage | 50% | 35% | 30% | 25% | 40% | 40% | 100% | 60% | 60% | 30% |
+| Height** | 35' | | | | 40' | 35' | 35' when abutting or across street or alley from R-1 zone | | 35' abutting/across street or alley from zone allowing single-family as permitted use | 35' |
+| *20' setback for garage frontage. Non-garage frontage: 10' | | | | | | | 40' when abutting zone allowing multifamily as primary use to include RM, ORM, RMP, DR | | 40' abutting/across street or alley from zone allowing multi-family as permitted use | |
+| **Exceptions to this requirement are prescribed in HMC § 20.16.065. | | | | | | | 50' in all other instances | | 50' in all other instances | |
+
+| If any one of the standards set forth in Table 20a would preclude the construction of an 850 square foot, 16-foot-high accessory dwelling unit with four-foot side and rear setbacks, then that standard shall be waived. |
+| If a proposed ADU is 800 square feet or less, it is exempt from front setback provisions. |
+
+D. Design Criteria. All new accessory dwelling units shall comply with the following objective design criteria:
+
+1. Placement. Detached and attached accessory dwelling units (and all associated outdoor living areas and accessory structures) shall comply with the front yard setback requirements of the zoning district in which the accessory dwelling unit is to be located, as shown in Table 20a. An attached or detached accessory dwelling unit shall not be placed between a required front yard setback from a public right-of-way and the primary dwelling unit.
+
+2. Building Design. The materials and colors of the accessory dwelling unit's exterior walls, roof, windows, and doors shall match the primary dwelling(s). The roof slope of the accessory dwelling unit shall match the primary dwelling(s).
+
+3. Landscape Design. Landscaping shall be provided around accessory dwelling units, and shall comply with fire code regulations for defensible space. Fire-resistant and low-water-use plants shall be utilized.
+
+4. Entrance. A separate entrance shall be provided for accessory dwelling units and junior accessory dwelling units. Access to the public right-of-way may be provided through the rear yard of the primary residence or a dedicated pathway.
+
+5. Privacy. Windows in an accessory dwelling unit that is located less than 10 feet from a rear or side property line shall be clerestory windows or use frosted or obscure glass. Balconies and doors shall be oriented toward units on site.
+
+E. State-Mandated Units (Goverment Code Section 66323). Notwithstanding the requirements established in subsections (A) through (D) of this section, the city shall ministerially approve an application for a building permit within a residential or mixed-use zoning district to create any of the following. Applications which meet the standards of this subsection shall not be subject to any other development standards, but shall be subject to all applicable state laws, including the California Building Code.
+
+1. One accessory dwelling unit and one junior accessory dwelling unit per lot with a proposed or existing single-family dwelling if all of the following apply:
+
+a. The accessory dwelling unit or junior accessory dwelling unit is within the proposed space of a single-family dwelling or existing space of a single-family dwelling or accessory structure and may include an expansion of not more than 150 square feet beyond the same physical dimensions as the existing accessory structure. An expansion beyond the physical dimensions of the existing accessory structure shall be limited to accommodating ingress and egress.
+
+b. The space has exterior access from the proposed or existing single-family dwelling.
+
+c. The side and rear setbacks are sufficient for fire and safety.
+
+d. The junior accessory dwelling unit complies with the requirements of Government Code Section 66333 et seq.
+
+e. An accessory dwelling unit or junior accessory dwelling unit created pursuant to this subsection (E) will not be required to install a new or separate utility connection unless the unit is constructed concurrently with a new single-family dwelling.
+
+2. One detached, new construction, accessory dwelling unit for a lot with a proposed or existing single-family dwelling. The accessory dwelling unit may be combined with a junior accessory dwelling unit described in subsection (F)(1) of this section. The accessory dwelling unit must have:
+
+a. A minimum of four-foot rear yard and side setbacks.
+
+b. A total floor area of not more than 850 square feet.
+
+c. A height limitation of 18 feet.
+
+3. Multiple accessory dwelling units within the portions of existing multifamily dwelling structures that are not used as livable space, including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements, or garages, if each unit complies with state building standards for dwellings. "Livable space" means space in a dwelling intended for human habitation, as the term appears in Government Code Sections 66313(e) and 66323(a)(3)(A).
+
+a. The city shall approve accessory dwelling units up to a number equal to 25% of the existing units in the multifamily dwelling, or one accessory dwelling unit, whichever is greater.
+
+4. Multiple accessory dwelling units, not to exceed the number specified in subsection (E)(4)(c) or (d) below, as applicable, that are located on a lot that has an existing or proposed multifamily dwelling but are detached from that multifamily dwelling. The accessory dwelling units must comply with the following:
+
+a. A height limitation of 18 feet.
+
+b. A minimum of four-foot rear yard and side setbacks.
+
+c. On a lot with an existing multifamily dwelling, not more than eight detached accessory dwelling units. However, the number of accessory dwelling units allowable pursuant to this clause shall not exceed the number of existing units on the lot.
+
+d. On a lot with a proposed multifamily dwelling, not more than two detached accessory dwelling units.
+
+e. If the existing multifamily dwelling has a rear or side setback of less than four feet, the City shall not require any modification of the existing multifamily dwelling as a condition of approving the application to construct an accessory dwelling unit that satisfies the requirements of this subsection. Not more than two accessory dwelling units that are located on a lot that has an existing multifamily dwelling but are detached from that multifamily dwelling.
+
+5. Rental of an accessory dwelling unit or junior accessory dwelling unit created pursuant to this section shall be for a term longer than 30 days.
+
+F. Additional Provisions.
+
+1. All accessory dwelling units and junior accessory dwelling units must comply with HMC Title 15, Building Codes, except as follows:
+
+a. The City shall not deny a permit for an unpermitted accessory dwelling unit or junior accessory dwelling unit that was constructed before January 1, 2020, for building code violations, unless the City makes a finding that correcting the violation is necessary to comply with conditions that would otherwise deem a building substandard, pursuant to Section 17920.3 of the Health and Safety Code.
+
+2. Nonconforming Conditions.
+
+a. For State-mandated ADUs and JADUs: The City shall not condition approval on the correction of nonconforming zoning code violations.
+
+b. For all other ADUs and JADUs: The City shall require the correction of nonconforming zoning conditions, building code violations, or unpermitted structures that present a threat to public health and safety and are affected by the construction of the accessory dwelling unit or junior accessory dwelling unit.
+
+3. The installation of fire sprinklers shall not be required in an accessory dwelling unit if sprinklers are not required for the primary residence. The construction of an accessory dwelling unit shall not trigger a requirement for fire sprinklers to be installed in the existing multifamily dwelling.
+
+4. Accessory dwelling units up to 850 square feet are exempt from impact fees. Accessory dwelling units that are 850 square feet or larger may be charged impact fees, but the fees must be proportional in size (by square foot) to fees charged for the primary dwelling unit.
+
+5. Accessory dwelling units constructed from existing space and junior accessory dwelling units shall not be considered to be a new residential use for purposes of calculating connection fees or capacity charges for utilities, unless constructed concurrently with a new single-family dwelling. The connection fee or capacity charge shall be proportionate to the burden of the proposed accessory dwelling unit, based on its square footage or plumbing fixtures as compared to the primary dwelling.
+
+G. Application Review.
+
+1. Applications for accessory dwelling units and junior accessory dwelling units shall be submitted on the form provided by the City, along with all supporting documentation and the application fee.
+
+2. The City shall review accessory dwelling unit and junior accessory dwelling unit applications for completeness within 30 days of receipt. If an application is deemed incomplete, the City shall provide an exhaustive list of items that were not complete. That list shall be limited to those items required on the City's submittal requirement checklist.
+
+3. Once an application for an accessory dwelling unit or junior accessory dwelling unit is deemed complete, the City shall review the application for compliance with this section and shall approve or deny the application ministerially, without discretionary review or a hearing, within 60 days of receipt of a complete application. If the City does not approve or deny the complete application within 60 days of receipt, the application is deemed approved.
+
+4. If a permit application for an accessory dwelling unit or junior accessory dwelling unit is submitted with a proposed primary dwelling(s), action on the accessory dwelling unit or junior accessory dwelling unit shall occur concurrently with the permit for the primary dwelling(s).
+
+5. If the City denies an accessory dwelling unit or junior accessory dwelling unit application, it shall return in writing a full set of comments to the applicant with a list of items that are defective or deficient and a description of how the application can be remedied by the applicant, within 60 days from when a completed application is received.
+
+6. Applicants may appeal the denial of a building permit for an accessory dwelling unit permit pursuant to the provisions set forth in Chapter 2.36 HMC.
+
+H. Severability. To the extent possible, this section shall be interpreted to be consistent with the provisions of Government Code Section 66310 et seq. If any part of this section is found to be invalid or inconsistent with Government Code Section 66310 et seq., such provision shall be null and void and the remaining sections will still be applied to the maximum extent feasible.
+
+(Ord. 1003 § 2 (Exh. A § 19), 2003; Ord. 1006 § 2 (Exh. A § 1855), 2003; Ord. 1159 § 11, 2016; Ord. 1172 § 2, 2018; Ord. 1187 § 4, 2019; Ord. 1189 § 3, 2019; Ord. 1197 § 1 (Att. A), 2019; Ord. 1210 § 9, 2021; Ord. 1253, 12/15/2025)

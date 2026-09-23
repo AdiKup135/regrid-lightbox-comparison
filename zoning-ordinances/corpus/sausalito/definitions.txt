@@ -1,0 +1,31 @@
+§ 10.88.040 Specialized terms and land use definitions.
+
+"Flag lot" means a lot which does not have direct frontage on a road or street, and which is connected to a road or street by a narrow fee ownership appendage that is primarily used to provide access to the building site on the lot.
+
+"Lot or parcel" means a portion of land shown as a unit on a recorded subdivision map or an approved minor subdivision map, parcel map or otherwise existing as of record with the office of the Recorder of the County of Marin.
+
+"Parcel depth" means the horizontal distance between the front and rear parcel lines from the midpoint of the front parcel line and measured in the mean direction of the side parcel lines.
+
+"Parcel size, net" means total area of a parcel measured in a horizontal plane within the lot lines bounding the parcel. The following features do not contribute to the net of the parcel area:
+
+1. The area within easements for streets, driveways, parking, pedestrian and bicycle access ways and navigation channels which are not for the exclusive use of the parcel on which any such easement is located;
+
+2. Any portion of an individual access way, in excess of five percent of the minimum parcel or building site area required in the district;
+
+3. Any portion of a parcel which extends beyond a pierhead line as shown in the Sausalito General Plan or on the zoning map referenced in SMC § 10.10.020 (Adoption of zoning map).
+
+"Parcel width" means the average horizontal distance between the side parcel lines, measured at right angles to the lines followed in measuring parcel depth.
+
+"Property lines" means the recorded boundaries of a lot of record, as follows:
+
+1. "Front property line" means the line separating the parcel from the street. In case a lot abuts on more than one street, the parcel owner may elect any street parcel line as the front parcel line; provided, that such choice in the opinion of the Community Development Director will not be injurious to adjacent properties.
+
+2. "Rear property line" means, ordinarily, that line of a parcel that is opposite and most distant from the front line of the parcel. In the case of a triangular or gore-shaped parcel, a line 10 feet in length within the parcel parallel to and at a maximum distance from the front parcel line shall be deemed to be the rear parcel line for the purpose of determining the depth of rear yard.
+
+3. "Side property lines" are recorded lot boundaries that are neither front nor rear property lines, which extend between front and rear property lines. On a corner lot, there will be one side parcel line and one rear property line.
+
+"Setback" means an area on a lot where no buildings, structures, or additions may be located, and which thereby becomes a yard area.
+
+"Setback, rear" means an area formed by a line parallel to the rear property line.
+
+"Setback, side" means an area formed by a line parallel to the side property lines of a lot (property lines that are neither front nor rear property lines), that extends between front and rear setback areas. Side setbacks are measured at right angles to the side property lines.

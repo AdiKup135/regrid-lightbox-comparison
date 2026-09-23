@@ -1,0 +1,51 @@
+17.2.3 - Definitions.
+
+Front Yard. See Yard, Front.
+
+"Lot" means a site or parcel of land under single ownership that has been legally subdivided, resubdivided or merged. The term for the purpose of application of this title also includes "parcel" and "site."
+
+Lot Area, Net. "Net lot area" means the horizontal area within the property lines excluding streets, alleys, vehicular easements and areas to be included in future street rights-of-way as established by easement, dedication or ordinance.
+
+Lot, Corner. "Corner lot" means a site bounded by two or more adjacent street lines that have an angle of intersection of not more than one hundred thirty-five (135) degrees.
+
+"Lot depth" means the horizontal distance measured at right angles from the midpoint of the front lot line to the rear lot line. Where the configuration of a lot prevents measurement of the lot depth pursuant to this requirement, the lot depth shall be the longest possible straight-line distance measured at a right angle from a point on the front lot line to the point furthest back on the lot.
+
+Lot, Double-Frontage. "Double-frontage lot" means an interior lot fronting on more than one street. Each frontage from which access is permitted is considered a front lot line for development purposes.
+
+Lot, Flag. "Flag lot" means a lot shaped so that the lot body (the widest part of the lot) does not have street frontage but is connected to the street by a lot stem. For this purpose, a "lot stem" is a strip of land: (1) which is contiguous with the body of a lot, (2) the width of which is less than both the required lot width and the average width of the lot, and (3) which usually provides access to the body of the lot. Typically, required setbacks render the area of a lot stem unbuildable.
+
+Lot Front Width. See Section 17.4.9.
+
+"Lot line" means the line bounding a lot.
+
+"Lot line adjustment" means the adjustment of a lot line between two or more existing adjacent parcels where the land taken from one parcel is added to the adjacent parcel and where a greater number of parcels than originally existed is not created, consistent with the state Subdivision Map Act.
+
+Lot Line, Front. "Front lot line" means a lot line located at the front of a lot, typically along the edge of a street or street right-of-way.
+
+Lot Line, Interior. "Interior lot line" means a lot line not abutting a street.
+
+Lot Line, Rear. "Rear lot line" means a lot line, not a front lot line, that is parallel or approximately parallel to the front lot line and located to the rear of the lot, furthest from the front lot line.
+
+Lot Line, Side. "Side lot line" means any lot line that is not a front lot line or a rear lot line.
+
+Lot, Nonconforming. "Nonconforming lot" means a lot which was lawfully subdivided or established, but which does not conform with the regulations for the district in which the lot is located by reason of adoption or amendment of this title or previous regulations or by reason of annexation of territory to the city.
+
+"Parcel" means a recorded property under single ownership.
+
+"Setback" means the required minimum distance from any point on a property line to the nearest point on the nearest structure.
+
+"Street line" means the boundary between a street and property.
+
+"Street Line, Future" or "Future street line" means an established line from which the minimum front or street side yard is measured. If no specific future street is established, the future street line is the adjacent existing right-of-way of an abutting public or private street, roadway or easement. A future street line is established to provide for future street widening or construction, delineating the area open, or to be open, to public use.
+
+"Yard" means an open area other than a court, unoccupied and unobstructed by a structure or use.
+
+"Yard, Corner Side." "Corner side yard" means a yard between the corner side (or edge of street right-of-way or pavement, whichever line may encroach furthest into a lot) lot line and the nearest line of the building and extending from the rear of the front yard to the front of the rear (interior) lot line.
+
+"Yard, Front." "Front yard" means a yard extending across the full width of the lot between the front lot line (or edge of street right-of-way or pavement, whichever line may encroach furthest into a lot) and the required front yard setback line of the respective zone, measured parallel to the front lot line. If a future street right-of-way line is established for the street upon which the lot abuts, the measurement is taken from the future street right-of-way line adjacent to the nearest line of the building. The depth of a required front yard is measured horizontally from the front lot line toward the nearest part of a structure.
+
+"Yard, Rear." "Rear yard" means a yard extending across the full width of the lot (except on a corner lot) between the rear lot line and the required rear yard setback line of the respective zone, measured parallel to the rear lot line. The depth of a required rear yard is measured horizontally from the rear lot line toward the nearest part of a structure.
+
+"Yard Setback." (See "Setback.")
+
+"Yard, Side." "Side yard" means a yard between the side lot line and the required side yard setback line of the respective zone, measured parallel to the side lot line. The depth of a required side yard is measured horizontally from the side lot line toward the nearest part of a structure.

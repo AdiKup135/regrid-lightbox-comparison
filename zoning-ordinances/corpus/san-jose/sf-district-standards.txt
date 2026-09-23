@@ -1,0 +1,207 @@
+Part 3 - DEVELOPMENT REGULATIONS
+
+20.30.200 - Development standards.
+
+All development in the residential zoning districts shall conform to the development regulations set forth below in Table 20-60.
+
+Table 20-60
+Residential Zoning Districts Development Standards
+
+| Regulations | Zoning District | | | | | | | |
+| Regulations | R-1-8 | R-1-5 | R-1-2 | R-1-1 | R-1-RR | R-2 | R-M | R-MH |
+| Minimum lot area (square feet or acreage) | 5,445 | 8,000 | 20,000 | 43,560 | 5 acres | 5,445 | 6,000 | 6,000 |
+| Minimum setback (feet) | | | | | | | | |
+| Front | 20 | 20 | 30 | 30 | 50 | 15 | 10 | 15 |
+| Side, interior (Note 6) | 5 | 5 | 15 | 20 | 20 | 5 | 5 | 5 |
+| Side, corner (Note 6) | 12.5 | 12.5 | 15 | 20 | 30 | 10 | 7.5 | 7.5 |
+| Rear, interior | 20 | 20 | 25 | 25 | 30 | 25 | 25 | 25 |
+| Rear, corner | 20 | 20 | 25 | 25 | 30 | 25 | 15 | 15 |
+| Minimum driveway length (feet) measured from lot line (Note 5) | 18 | 18 | 18 | 18 | 18 | 0 | 0 | 0 |
+| Maximum height (feet) (Notes 1, 2 and 4) | 35 | 35 | 35 | 35 | 35 | 35 | 45 or established in Chapter 20.85 | 45 |
+| Maximum number of stories (Note 3) | 2.5 | 2.5 | 2.5 | 2.5 | 2.5 | 2.5 | Not applicable | 3 |
+| Parking | See Chapter 20.90 | | | | | | | |
+| Floor area ratio | See Part 9 of Chapter 20.100 for single-family house permit criteria that may apply | | | | | | | |
+
+Notes:
+
+1. Refer to Part 9 of Chapter 20.100 regarding single-family house permit requirements and Section 20.200.510 regarding the definition of "height."
+
+2. An alternative maximum height may be established as described in Chapter 20.85. Where an alternative maximum height restriction has been established as described in Chapter 20.85, that regulation described in Chapter 20.85 shall govern and control over the provisions in this section.
+
+3. Refer to Section 20.200.120 regarding the definition of "basement;" refer to Section 20.200.1210 regarding the definition of "story;" and refer to Section 20.200.1220 regarding the definition of "half story."
+
+4. An alternative maximum height may be established as described in Chapter 20.85. Where an alternative maximum height restriction has been established as described in Chapter 20.85, that regulation described in Chapter 20.85 shall govern and control over the provisions of this section.
+
+5. The minimum driveway length shall also comply with the minimum setback requirements for the zoning district in which the lot is situated.
+
+6. Refer to section 20.30.260 for side setback exceptions in the R-M and R-MH districts.
+
+(Ords. 26248, 29011, 29176, 29821, 30190.)
+
+20.30.210 - Setback determination.
+
+A. Corner lot. If a lot exceeds the defined dimensions of a corner lot it cannot be considered a corner lot and hence is deemed to have two front property lines abutting the street sides, and a single rear property line and one (or more) side property line(s). The director of planning will make the final determination of where the front, side and rear property lines are of a lot where there is some question.
+
+B. Irregular shape lot or a lot with more than four sides. In the case of an irregular shaped lot or a lot with more than four sides where there is some question as to what are the front, side and rear property lines, there shall be at a minimum, one front property line and one rear property line. The rear property line shall be the lot line directly parallel to the front property line and of a width of at least thirty feet in length. If no such lot line exists, the director shall make the final determination as to the rear property line of such lot.
+
+(Ord. 26248.)
+
+20.30.220 - Setback - Abutting alley.
+
+In computing the depth of a rear setback area for any building, where such rear setback area opens onto an alley, one-half of such alley may be assumed to be a portion of the rear setback area.
+
+(Ord. 26248.)
+
+20.30.230 - Lot area - Exceptions.
+
+A. Notwithstanding the provisions of Section 20.30.200, the minimum area of a lot or parcel whose area, as shown on a final subdivision map approved by the City of San José, is less than the minimum lot area required for said zoning district, but not less than three thousand square feet, shall be the area shown for such lot or parcel on such subdivision map.
+
+B. The minimum lot area shall not apply to SRO living unit facilities.
+
+(Ords. 26248, 26761.)
+
+20.30.240 - Front setback - Block average exception.
+
+In the R-1-8, R-1-5, R-2, and R-M Residence Districts, when lots comprising forty percent or more of the frontage on one side of a street between two intersecting streets have been developed with buildings having an average front setback with a variation in depth of not more than ten feet, but less than the minimum front setback required by Section 20.20.200, the minimum front setback applicable to such lots shall be said existing average rather than the setbacks as otherwise referenced in this title. No additional exceptions to the front setback are allowed to further reduce the front setback.
+
+(Ords. 26248, 29011.)
+
+20.30.250 - Side setback - Exception, R-1 and R-2 residence districts.
+
+Notwithstanding the provisions of Section 20.30.200, where an interior lot is situated in a R-1 or R-2 residence district, and such lot has been of record since prior to July 1, 1929, and such lot is and has been since said date less than fifty feet in width, the side setback requirements for such lot, if it is an interior lot, shall be:
+
+1. For one-family or two-family dwellings or uses accessory thereto, ten percent of the width of such lot in lieu of the setback established by Section 20.30.200, provided that in no case shall the side setback requirement be less than four feet; and
+
+2. For buildings used or intended to be used for any purpose other than a one-family or two-family use or uses accessory thereto shall have a side setback of not less than five feet.
+
+(Ords. 26248, 29821.)
+
+20.30.260 - Side setback - Exception, R-M and R-MH residence districts.
+
+Notwithstanding the provisions of Section 20.30.200, in the R-M and R-MH residence districts, if a building situated or proposed to be situated within a lot has more than two and one-half stories, the side setback established by the provisions of Section 20.30.200 for such lot, if it is an interior lot, shall be increased one foot for each additional story above the second story. If, however, such lot shall have been of record since prior to July 1, 1929, and has a width of less than fifty feet, the side setback established by the provisions of Section 20.30.200 shall be reduced, in such instances, to ten percent of the width of such lot, but to not less than four feet.
+
+(Ord. 26248.)
+
+20.30.265 - Rear setback - Exception lots of record since July 1, 1929.
+
+With respect to any interior or corner lot in an R-1 or R-2 residence district, and with respect to an interior lot in an R-M residence district, the rear setback may be reduced to twenty percent of the depth of such lot if the depth of such lot is less than one hundred feet and if, in addition, such lot has been of record, with such lesser depth, since prior to July 1, 1929. In no case can the rear setback be less than fifteen feet.
+
+(Ord. 26248.)
+
+20.30.270 - Corner lot - Rear setback - Exception for attached garage.
+
+Notwithstanding the provisions of Section 20.30.200, the rear setback for a garage that is attached to a primary dwelling unit on a corner lot in a R-1 or R-2 residence district, may be reduced to five feet where all of the following provisions are met:
+
+A. The portion of the garage which is situated within twenty feet of the rear lot line of said corner lot maintains a corner side setback of ten feet. Notwithstanding this provision, the garage must meet the driveway length requirement of Section 20.90.130(C); and
+
+B. The portion of the garage which is situated within twenty feet of the rear lot line of said corner lot does not exceed sixteen feet in height.
+
+(Ords. 26248, 29821, 30696.)
+
+20.30.280 - Rear setback - Exception - New construction of or additions to single-family residences.
+
+In the R-1 residence districts, new construction of a one-family dwelling or an addition, added to an existing one-family dwelling, that is a single story or an open or enclosed patio, where the maximum height of said new construction or addition with a sloped roof as measured halfway up any slope of the roof does not exceed twelve feet, and no portion of said addition exceeds a maximum height of sixteen feet above grade, shall have a minimum rear setback of fifteen feet, provided that such addition shall not occupy more than fifty percent of the area between the minimum required rear setback as designated in Section 20.30.200 and said fifteen-foot rear setback.
+
+(Ords. 26248, 26455, 29821, 30336.)
+
+20.30.290 - Mobilehome parks converted to residential ownership.
+
+Where mobilehome lots rented to tenants in a mobilehome park in a R-MH residence district are proposed to be converted to separate lots or parcels, the minimum lot area and setbacks of the proposed lots or parcels may correspond to those of the mobilehome lots existing prior to the conversion.
+
+(Ord. 26248.)
+
+20.30.300 - Maximum height - Exception for chimneys or architectural embellishments.
+
+In the R-1 and R-2 residence districts, the maximum height of a chimney, weather vane or other similar architectural embellishment mounted on a building and having a horizontal cross section of no more than twenty square feet may be increased to forty feet, provided that it does not exceed the height of the building on which it is mounted by more than five feet.
+
+(Ords. 26248, 29011, 29821.)
+
+20.30.310 - Minor one-story addition - Exception for same side setback as existing structure.
+
+One-story additions, including Accessory Dwelling Units, may be erected with the same side setback as an existing structure subject to the following restrictions:
+
+A. No such addition shall reduce, or further diminish a nonconforming setback.
+
+B. The total square footage of the proposed encroachment into the nonconforming side setback shall be no more than the square footage of the existing areas encroaching within the nonconforming Side Setback Area or one hundred fifty (150) square feet in area, whichever is less.
+
+C. Said addition is a single-Story addition and shall not exceed twenty (20) feet in height.
+
+D. Only one such addition shall be Permitted.
+
+(Ords. 26248, 29011, 29821, 30353.)
+
+Part 4 - SETBACK REGULATIONS
+
+20.30.400 - Setback areas - Setback area to be kept open, unobstructed, and unoccupied.
+
+Except as otherwise expressly and specifically provided in other sections of this Title, every part of every setback area shall be kept open, unobstructed, and unoccupied on the surface of the ground, above the surface of the ground, and below the surface of the ground by all buildings or structures except as follows:
+
+A. Sills, eaves, belt courses, cornices, canopies, and other similar architectural features may project horizontally for a distance of not more than two feet into the air space above the surface of the ground in any setback area;
+
+B. In the R-1-2, R-1-1 and R-1-RR districts only, sills, eaves, belt courses, cornices, canopies, and other similar architectural features may project horizontally for a distance of not more than four feet into the air space above the surface of the ground in any setback area;
+
+C. Any portion of a building including but not limited to bay windows, chimneys, or architectural elements that project out from the primary surface of the building facade, whether on a foundation or cantilevered, not occupying in the aggregate more than twenty percent of the length of the side of the building, may project horizontally for a distance of not more than two feet into any setback area, provided that such extensions maintain a minimum side setback of at least three feet and a minimum rear setback of at least ten feet;
+
+D. Tankless water heaters, heat pumps, and power inverters may project horizontally for a distance of not more than two feet into any setback area, provided such extensions maintain a minimum side setback of three feet;
+
+E. Wells for basement windows or stairs of up to ten feet in length each, not occupying in the aggregate more than twenty percent of the length of the side of the building on which they are located, may project horizontally for a distance of not more than two feet into the side and rear setback areas, provided that such extensions maintain a minimum side setback of three feet and a rear setback of fifteen feet;
+
+F. Overhead wires necessary for utility service to a building on the lot;
+
+G. Underground lines necessary for the sewerage, drainage, plumbing, water, gas, and electrical and other utility needs of the lot or of a building on the lot;
+
+H. Walks and driveways for vehicular or pedestrian access to the lot that are situated in any setback area shall not be higher than two feet above grade; and
+
+I. Mechanical equipment, including but not limited to, pool equipment and HVAC equipment, may be placed in the rear setback and shall maintain a five-foot setback from the rear property line, maintain a setback from the side property line a distance equal to that of the side setback requirements of the respective zoning district, and adhere to the required front setback of the respective zoning district.
+
+(Ords. 26248, 26455, 29011, 29821, 30396, 31095, 31298.)
+
+20.30.410 - Stairs and porches.
+
+Unenclosed porches and stairways, if they do not extend more than three feet above surface grade may extend into a front setback area not more than five feet. Porches and stairs may be covered.
+
+(Ords. 26248, 26455, 29821.)
+
+20.30.420 - Rear setbacks - Projections into.
+
+The following encroachments are permitted into the air space above the surface of the ground in the rear setback area required Section 20.30.200; provided, however, that the horizontal distance, measured at any and all points between the vertical projection of any accessory building or structure (except an uncovered swimming pool, no part of which, other than diving boards, slides and ladder rails, is more than twelve inches above surface grade) and the vertical projection of such encroachments shall be not less than six feet, said permitted encroachments being as follows:
+
+A. In the R-M residence district, balconies, decks and corridors of the residential building if they are uncovered and unenclosed, and if the lowest part thereof is not less than eight feet above surface grade, may project horizontally for a distance of not more than five feet into the air space above the surface of the ground in the rear setback area as set for in Table 20-60. Such balconies, decks and corridors shall not be supported by nor attached to any columns or walls situate in such required rear setback area which is covered by them or be enclosed with glass, screening or walls of any kind nor shall any glass, screening or walls of any kind situate in such required rear setback area be attached to them.
+
+B. Fire escapes of the residential building, if they are uncovered and unenclosed, and if the lowest part thereof when in a retracted position is not less than eight feet above surface grade, may project horizontally for a distance of not more than five feet into the air space above the surface of the ground in the rear setback area required by Section 20.30.200.
+
+C. Eaves of the residential building and/or a roof (e.g., a patio cover) which is attached to the residential building may project horizontally for a distance of not more than four feet into the air space above the surface of the ground in the rear setback area required by other provisions of this title. Such eaves and/or such roof shall not be supported by nor attached to any columns or walls situate in such required rear setback area; nor shall any part of such required rear setback area which is covered by such eaves and/or such roof be enclosed with glass, screening or walls of any kind, nor shall any glass, screening or walls of any kind situate in such required rear setback area be attached to any part of such eaves or such roof.
+
+D. Eaves of the residential building and/or a roof (e.g., a patio cover) which is attached to the residential building may project for a greater distance than four feet into the air space above the surface of the ground in the rear setback area required by Section 20.30.200, provided that:
+
+1. Such eaves and/or such roof may cover up to, but not more than, fifteen percent of such required rear setback area;
+
+2. No part of that portion of such eaves and/or of such roof which encroaches more than four feet into such required rear setback area shall be less than seven feet above surface grade;
+
+3. No part of that portion of such eaves and/or of such roof which encroaches more than four feet into such required rear setback area shall be more than ten feet above surface grade;
+
+4. No part of that portion of such eaves and/or of such roof which encroaches more than four feet into such required setback area shall have a vertical thickness of more than thirty-six inches;
+
+5. Such eaves and/or such roof may be supported by columns which are situate in such required rear setback area, but shall not be supported by nor attached to walls which are situate in such required rear setback area;
+
+6. No part of such eaves nor of such roof nor of any columns supporting such eaves and/or such roof shall be closer than fifteen feet, horizontally, to the rear property line; and
+
+7. No part of such required rear setback area which is covered by such eaves and/or such roof shall be enclosed with glass, screening or walls of any kind nor shall any glass, screening or walls of any kind situate in such required rear setback area be attached to any part of such eaves, such roof or columns supporting such eaves and/or such roof.
+
+(Ords. 26248, 26455.)
+
+20.30.430 - Front setback - Parking and storage.
+
+No unmounted camper or vehicle, other than those vehicles expressly specified and allowed under Title 17 of this Code, shall be kept, stored or parked for a period of time in excess of forty-eight consecutive hours in the front setback area of any lot or parcel situated in a residential district or containing a residential use. Such parking or storage is limited to paved surfaces.
+
+(Ords. 26248, 26711.)
+
+20.30.440 - Front Setback - Limitation on Amount of Paved Surface.
+
+No more than fifty percent (50%) of the required front setback for any lot containing a one-family dwelling or any lot located in any R-1 residence district with a frontage width of forty (40) feet or greater shall be paved with asphalt, cement or any other impervious or pervious surface.
+
+1. For lots which have a frontage width less than forty (40) feet, paving in the front setback area is limited to ten (10) feet in width or fifty percent (50%) of the width of the lot an any given point, whichever is greater.
+
+2. Notwithstanding subsection 1, for lots which have a frontage width less than forty (40) feet, a paved area directly contiguous with, and providing primary access to, two side by side required parking spaces, may exceed the fifty percent (50%) limitation as long as it is no more than twenty-five (25) feet long and eighteen (18) feet wide.
+
+(Ords. 26248, 30133.)

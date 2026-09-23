@@ -1,0 +1,440 @@
+§ 19.30.010 Conformance required.
+
+The minimum lot area and lot width of each lot in every zoning district shall conform with the areas and distances specified in the table of required lot area and lot width, unless increased, decreased or modified by special provisions. The minimum floor elevation of every building in any zoning district shall conform with the special provisions set forth herein. Lot areas are expressed in terms of square feet and lot widths in terms of lineal feet unless otherwise specified.
+
+(Prior zoning code § 19.36.010; Ord. 2623-99 § 1)
+
+§ 19.30.020 Required lot area and width.
+
+Lot area and width shall be according to the provisions set forth in Table 19.30.020, except that all lots located within the DSP district shall conform to provisions set forth in Chapter 19.28.
+
+| Table 19.30.020 | | | | | |
+| Required Net Lot Area and Width | | | | | |
+| Zoning District | Lot Area Minimum (Square feet) | Lot Area Per Dwelling Unit (Square Feet) | Lot Width at Minimum Front Yard Setback Corner (Feet) | Lot Width at Minimum Front Yard Setback Interior (Feet) | Lot Width at Minimum Front Yard Setback Cul-de-sac^1 (Feet) |
+| R-0 | 6,000 | 6,000 | 62 | 57 | 45 |
+| R-1 | 8,000 | 8,000 | 82 | 76 | 45 |
+| R-1.5 | 4,200 | 4,200 | 45 | 42 | 40 |
+| R-1.7/PD | 2 acres^2 | 2,600^2 | ^3 | ^3 | ^3 |
+| R-2^7 | 8,000 | 3,600 | 82 | 76 | 60 |
+| R-3^7, 8 | 8,000 | 1,800 | 82 | 120 | 60 |
+| R-4^7, 8 | 8,000 | 1,200 | 82 | 120 | 60 |
+| R-5^8 | 8,000 | 950 | 82 | 76 | 60 |
+| R-MH | 9 Acres | 1,500^4 | None | None | None |
+| R-MH | 9 Acres | 1,800^5 | None | None | None |
+| O^6 | 8,000 | None | 82 | 76 | 60 |
+| P-F | None | None | None | None | None |
+| C-1 | None | None | None | None | None |
+| C-2 | None | None | None | None | None |
+| C-3 | None | None | None | None | None |
+| C-4 | None | None | None | None | None |
+| M-S | 22,500 | None | 100 | 100 | 80 |
+| M-3 | 22,500 | None | 100 | 100 | 80 |
+
+| Notes: | |
+| 1 | Also applicable to lots on the exterior side of a street with a centerline radius of four hundred feet or less. |
+| 2 | Maximum lot area shall not exceed four thousand square feet. |
+| 3 | As determined by planned development requirements. A minimum site area of 2.0 acres also required. |
+| 4 | 1,500 square feet nonexpandable mobile home. |
+| 5 | 1,800 square feet expandable mobile home. |
+| 6 | Must be contiguous with similarly zoned land of at least 40,000 square feet (net). |
+| 7 | Lot area and lot width less than the minimum required may be allowed through approval of a use permit or special development permit provided that overall density is consistent with the zoning district. |
+| 8 | Number of dwelling units allowed for R-3, R-4 and R-5 is pursuant to Table 19.30.040. |
+
+(Prior zoning code § 19.36.020; Ord. 2623-99 § 1; Ord. 2683-01 § 3; Ord. 2810-06 § 4; Ord. 2905-09 § 7)
+
+§ 19.30.030 Average lot area—Reduction.
+
+The minimum lot area in all residential zoning districts, except R-0, R-1.5 and R-1.7 zoning districts, may be reduced to seven thousand six hundred square feet providing the average lot area in each subdivision, subdivision unit or single development equals eight thousand eight hundred square feet. The area of any lot in excess of eight thousand four hun-dred square feet shall be disregarded in computing the average lot area within such subdivision, subdivision unit or single development.
+
+(Prior zoning code § 19.36.030; Ord. 2623-99 § 1)
+
+§ 19.30.040 Dwelling units allowed in multiple-family zoning districts.
+
+Table 19.30.040 (Number of Dwelling Units Allowed R-3, R-4 and R-5 Zoning Districts) shows the number of dwell-ing units allowed per minimum lot area in multiple-family zoning districts. Additional dwelling units may be allowed under Section 19.18.025 (Density bonus).
+
+| Table 19.30.040 | | | |
+| Number of Dwelling Units Allowed: R-3, R-4 and R-5 Zoning Districts | | | |
+| Number of Units Allowed | Minimum Net Lot Area (square feet) Zoning District: | | |
+| Number of Units Allowed | R-3 | R-4 | R-5 |
+| 1 | 6500 or less (legally created) | 6500 or less (legally created) | 6500 or less (legally created) |
+| 2 | 6500 | 6500 | 6500 |
+| 3 | 7200 | 7200 | 7200 |
+| 4 | 8000 | 8000 | 8000 |
+| 5 | 1 unit for each 1800 sq. ft. | 9000 | 9000 |
+| 6 | 1 unit for each 1800 sq. ft. | 10000 | 10000 |
+| 7 | 1 unit for each 1800 sq. ft. | 11000 | 11000 |
+| 8 | 1 unit for each 1800 sq. ft. | 12000 | 12000 |
+| 9 | 1 unit for each 1800 sq. ft. | 13000 | 13000 |
+| 10 | 1 unit for each 1800 sq. ft. | 14000 | 14000 |
+| 11 | 1 unit for each 1800 sq. ft. | 15000 | 15000 |
+| 12 | 1 unit for each 1800 sq. ft. | 16000 | 16000 |
+| 13 | 1 unit for each 1800 sq. ft. | 17000 | 17000 |
+| 14 | 1 unit for each 1800 sq. ft. | 18000 | 18000 |
+| 15 | 1 unit for each 1800 sq. ft. | 19000 | 19000 |
+| 16 | 1 unit for each 1800 sq. ft. | 20000 | 20000 |
+| 17 | 1 unit for each 1800 sq. ft. | 21000 | 21000 |
+| 18 | 1 unit for each 1800 sq. ft. | 22000 | 22000 |
+| 19 | 1 unit for each 1800 sq. ft. | 23000 | 23000 |
+| 20 | 1 unit for each 1800 sq. ft. | 24000 | 24000 |
+| 21 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 22 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 23 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 24 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 25 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 26 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 27 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 28 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 29 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+| 30 | 1 unit for each 1800 sq. ft. | 1 unit for each 1200 sq. ft. | 1 unit for each 950 sq. ft. |
+
+(Prior zoning code § 19.36.035; Ord. 2976-12 § 1; Ord. 2623-99 § 1)
+
+§ 19.30.050 Multiple buildings on lot—When permitted.
+
+Any lot or parcel of land in one ownership having an area sufficient for more than one commercial, industrial, or mul-tiple family dwelling or building may be so used and building permits may be issued for multiple buildings in every zoning district, except single family zoning districts where only accessory structures are allowed.
+
+(Prior zoning code § 19.36.050; Ord. 2623-99 § 1)
+
+§ 19.30.060 Minimum floor elevations.
+
+The minimum floor elevation for any building in any zoning district, computed on city datum, shall be four and one-half feet. Provided, however, that when the floor elevation of any building is less than nine feet, all waste from sanitary facilities installed at an elevation of less than nine feet shall flow by gravity to an approved sump and then be pumped to a minimum elevation of nine feet for discharge by gravity to the sanitary system.
+
+(Prior zoning code § 19.36.070; Ord. 2623-99 § 1)
+
+§ 19.32.010 Conformance required.
+
+The maximum building height and maximum lot coverage of and on each lot in every zoning district shall conform with the areas, distances and percentage herein specified in the table of building height and lot coverage unless increased, decreased or modified by special provisions applicable thereto. Unless otherwise specified, building heights are ex-pressed in terms of lineal feet and lot coverage in terms of percentage of lot area.
+
+(Prior zoning code § 19.40.010; Ord. 2731-03 § 2; Ord. 2623-99 § 1)
+
+§ 19.32.020 Building height, lot coverage and floor area ratio.
+
+(a) Maximums. Maximum building height, lot coverage, and floor area ratio are shown in Table 19.32.020 (Building Height, Lot Coverage and Floor Area Ratio), with the following exceptions:
+
+(1) R-1.5. In the R-1.5 zoning district, walls facing the side yards cannot exceed twelve feet in height within twelve feet of the side property lines. Second-story wall height is limited to twenty-one feet, exclusive of pitched roof structure.
+
+(2) R-0, R-1, and R-2. In the R-0, R-1, and R-2 zoning districts, dwellings that exceed the maximum floor area ratio or gross floor area must be considered by the planning commission at a public hearing as described in Section 19.80.040 (Procedures and decisions). This requirement does not apply to dual urban opportunity dwelling units that are approved pursuant to Chapter 19.78.
+
+(3) R-3, R-4 and R-5. In the R-3, R-4 and R-5 zoning districts, a height bonus of up to five feet is allowed when underground parking is included in the development. See Section 19.32.030 (Building heights—Increased—When).
+
+(4) P-F. In the P-F zoning district, building height and lot coverage cannot exceed the maximums allowed in the most restrictive abutting zoning district. Additional setbacks, as described in Table 19.34.030 (Required Yards), are required for structures that exceed the maximum building height allowed in the most restrictive abutting zoning district.
+
+(5) C-2 and C-3. In the C-2 and C-3 zoning districts, hotels may exceed seventy-five feet in height if allowed by use permit.
+
+(6) Special Incentives. Exceptions to maximum building height, lot coverage, and floor area ratio may be al-lowed through Chapter 19.56 (Alternative Energy Systems) and other development incentives adopted by the city coun-cil.
+
+(7) Other Exceptions. Other exceptions described in this chapter apply.
+
+(b) Specific Plan, Precise Plan and Other Specialized Areas. If the lot is within a combining district or specialized plan's prescribed area, the standards established for those areas override the maximums shown in Table 19.32.020.
+
+| Table 19.32.020 | | | | |
+| Building Height, Lot Coverage and Floor Area Ratio | | | | |
+| Zoning District | Building Stories | Building Height (ft.) | Lot Coverage | Floor Area Ratio (FAR) |
+| R-0 | 2 | 30 | 45% (single-story dwellings) 40% (two-story dwellings) | 45% FAR or 3,600 sq. ft. of gross floor area, whichever is less |
+| R-1 | 2 | 30 | 45% (single-story dwellings) 40% (two-story dwellings) | 45% FAR or 3,600 sq. ft. of gross floor area, whichever is less |
+| R-1.5 | 2 | 30 | 40% | 50% |
+| R-1.7/PD | 2 | 30 | 40% | 50% |
+| R-2 (single-family dwellings) | 2 | 30 | 45% (single-story dwellings) 40% (two-story dwellings) | 45% FAR or 3,600 sq. ft. of gross floor area, whichever is less |
+| R-2 (all uses other than single-family dwellings) | 2 | 30 | 45% (single-story dwellings) 40% (two-story dwellings) | 55% |
+| R-3 | 3 | 35 | 40% | None |
+| R-4 | 4 | 55 | 40% | None |
+| R-5 | 4 | 55 | 40% | None |
+| R-MH | 2 | 30 | None | None |
+| O | 2 | 30 | 40% | None |
+| P-F | N/A | See Section 19.32.020(a) | See Section 19.32.020(a) | N/A |
+| C-1 | 2 | 40 | 35% | None |
+| C-2 | 8 | 75 | 35% | None |
+| C-3 | 8 | 75 | 35% | None |
+| C-4 | 2 | 40 | 35% | None |
+| M-S | 8 | 75 | 45% | 35% |
+| M-S (70% FAR) | 8 | 75 | 45% | 70% |
+| M-S (100% FAR) | 8 | 100 | 45% | 100% |
+| M-3 | 8 | 75 | 45% | 35% |
+
+(Prior zoning code §§ 19.32.080(e)(3), 19.40.020; Ord. 2623-99 § 1; Ord. 2650-00 § 3; Ord. 2683-01 § 4; Ord. 2690-02 § 1; Ord. 2731-03 § 2; Ord. 2744-04 § 3; Ord. 2810-06 § 5; Ord. 2875-08 § 2; Ord. 2905-09 § 8; Ord. 2908-09 § 2; Ord. 2975-12 § 1; Ord. 2984-09 § 4; Ord. 2988-12 § 16; Ord. 3038-14 § 1; Ord. 3189-22 § 8)
+
+§ 19.32.030 Buildings heights—Increased—When.
+
+(a) Towers, spires, chimneys, machinery penthouses not exceeding twenty-five percent of the roof area on which the penthouse is located, scenery lofts, cupolas, water tanks, telecommunications facilities, wind turbines and towers, high bay test facilities, and similar architectural and utility structures, including equipment screening, and necessary mechani-cal appurtenances, may exceed the maximum building height in any zoning district by a maximum of twenty-five feet, unless otherwise permitted pursuant to Chapter 19.54 (Wireless Telecommunication Facilities) or Chapter 19.56 (Alter-native Energy Systems). Provided, however, that no such architectural or utility structure, equipment screening, or neces-sary mechanical appurtenance shall be erected, maintained, or located between the face of the main building and any public street, nor in any required side or rear yard.
+
+(b) Underground Parking. In the R-3, R-4 and R-5 zoning districts, multiple-family dwelling developments with underground parking may exceed the zoning district height limit by an amount equal to the depth of the underground parking, but by no more than five feet total. For example, an apartment complex with underground parking facility of six feet in depth may exceed the zoning district height limit by no more than five feet.
+
+(Prior zoning code § 19.40.030; Ord. 2623-99 § 1; Ord. 2904-09 § 3; Ord. 2988-12 § 8; Ord. 3038-14 § 2)
+
+§ 19.32.040 Building heights—Distance from property line.
+
+(a) Except as otherwise provided in subsection (b), the height of buildings constructed or erected in any commercial or industrial zoning district within seventy-five feet of the property line of property in a single-family residence zoning district shall not exceed twenty feet in the event existing buildings on the adjacent lot are one story or thirty feet if the existing buildings are two-story or the lot is undeveloped.
+
+(b) Single-family dwellings and townhomes constructed in any multiple-family residential zoning district adjacent to a single-family residence zoning district shall not exceed thirty feet in height within seventy-five feet of the property line, provided the setback requirements are met.
+
+(Prior zoning code § 19.40.040; Ord. 2810-06 § 6; Ord. 2623-99 § 1)
+
+§ 19.32.050 Public parking zoning districts—Regulations not applicable.
+
+Lot coverage regulations are not applicable within the boundaries of any off-street public parking zoning district here-tofore formed, or which hereafter may be formed, pursuant to the Sunnyvale Municipal Code, as amended, or any statute of the state of California.
+
+(Prior zoning code § 19.40.050; Ord. 2623-99 § 1)
+
+§ 19.32.060 Limitations on paved surfaces in R-0 and R-1 zoning districts—Required front yard.
+
+Not more than fifty percent of the required front yard of any lot within an R-0 or R-1 zoning district shall be paved with asphalt, concrete cement, or any other impervious surface, except as may be required to meet off-street parking and access requirements of this code.
+
+(Prior zoning code § 19.40.060; Ord. 2623-99 § 1)
+
+§ 19.32.070 Floor area ratio (FAR).
+
+(a) The total floor area ratio of all buildings on a parcel zoned M-S or M-3 and occupied in whole or in part by the following uses shall not exceed thirty-five percent:
+
+(1) Administrative, professional, medical and research and development offices and uses;
+
+(2) Financial institutions, such as banks and savings and loan associations, except drive-through facilities;
+
+(3) Plants and facilities for the assembly, compounding, manufacture, packaging, processing, repairing, or treatment of equipment, materials, merchandise or products, except for products containing explosives or propellants;
+
+(4) Public utility buildings and service facilities, electric transmission and distribution substations, and public utility service centers;
+
+(5) Amusement, athletic, cultural and recreational enterprises;
+
+(6) Businesses selling merchandise or products at retail or services (such as real estate brokerage services);
+
+(7) Hazardous materials storage facilities not governed by Section 19.22.060 or Chapter 19.82.
+
+(b) The following are exceptions to the total floor area ratios set forth in subsection (a):
+
+(1) Hazardous materials storage facilities governed by Section 19.22.060 or Chapter 19.82;
+
+(2) Buildings permitted by use permits;
+
+(3) Temporary offices except floor area will be included for such offices in place for more than four years;
+
+(4) Architectural design features not utilized for occupancy or storage;
+
+(5) Bicycle Support Facilities. When showers and/or dressing rooms are provided for use by bicycle commut-ers, the floor area occupied by such facilities may result in an increase in total floor area ratio of up to forty percent if approved through the miscellaneous plan permit process. Request for higher percentage substitutions shall be reviewed by the planning commission using the use permit process.
+
+(c) The floor area ratios for intensification sites are as follows:
+
+(1) M-S (One Hundred Percent FAR). Parcels within the area as delineated on the zoning map, are allowed a maximum one hundred percent floor area ratio.
+
+(2) M-S (Seventy Percent FAR). Parcels within the area delineated on the zoning map, are allowed a maximum seventy percent floor area ratio.
+
+(d) Commercial storage and warehouse uses are limited to fifty percent floor area ratio unless otherwise approved by use permit.
+
+(Prior zoning code §§ 19.32.142, 19.32.145(h), 19.51.035(a)(4); Ord. 2623-99 § 1; Ord. 2655-01 § 2; Ord. 2905-09 § 9; Ord. 2975-12 § 2)
+
+§ 19.32.080 Interpretation and application of floor area ratio in M-S (industrial and service) and M-3 (general industrial) districts.
+
+This section is enacted to supplement and to assist in the interpretation and administration of Table 19.32.020.
+
+(a) In determining floor area ratio, all uses conducted on a parcel shall be considered whether or not they are con-ducted by the same person and whether or not they are the same kind of use. In addition, a determination of floor area ratio is an aggregate of uses within a building(s) regardless of the area of building(s) such uses occupy.
+
+(b) In reviewing projects which exceed FAR limitations, the reviewing authority shall consider the relationship of the proposed use to other uses in the building and the potential expansion of such uses. Even if the proposed use occu-pies only a portion of a building(s), the reviewing authority may subject the entire parcel and buildings thereon to condi-tions reasonably related to the proposed use.
+
+(c) A use permit is required where the addition or expansion of use(s) subject to FAR limitations to an existing building(s) results in an FAR exceeding the maximum allowed.
+
+(Prior zoning code § 19.32.145; Ord. 2623-99 § 1; Ord. 2733-03 § 2)
+
+§ 19.32.090 FAR in ITR (industrial to residential) district.
+
+New construction, expansion or reconstruction of an existing building in an ITR district shall not exceed thirty-five percent except as allowed by use permit.
+
+(Prior zoning code §§ 19.20.356, 19.20.358; Ord. 2623-99 § 1)
+
+§ 19.32.100 FAR in downtown specific plan.
+
+FAR requirements for the downtown specific plan are as permitted in Table 19.28.080.
+
+(Ord. 2623-99 § 1)
+
+§ 19.32.110 City council action where FAR exceeds delineated threshold in M-S and M-3 districts.
+
+The city council shall be the approval authority for any new industrial development in the M-S or M-3 districts pro-posing an FAR in excess of that prescribed by this chapter.
+
+(Ord. 2623-99 § 1; Ord. 2744-04 § 4)
+
+§ 19.34.010 Purpose.
+
+This chapter establishes the minimum front yard, side yard and rear yard building setbacks for all zones.
+
+(Ord. 2623-99 § 1)
+
+§ 19.34.020 Conformance required.
+
+The minimum front yard, side yards, rear yard and distance between buildings of and on each lot in every zoning district shall conform with the distances specified in the table of required yards in this chapter unless increased, de-creased or modified by special provisions. Yard distances, unless otherwise specified, are expressed in terms of lineal feet.
+
+(Prior zoning code § 19.44.010; Ord. 2623-99 § 1)
+
+§ 19.34.030 Required yards.
+
+Yards shall be required as set forth in Table 19.34.030, except that all lots located within the DSP district shall con-form to provisions set forth in Chapter 19.28.
+
+| Table 19.34.030 Required Yards | | | | | |
+| Zoning District | Front Yard Minimum^1, 2 | Front Yard Average^1, 2 | Side Yards Total^1, 3, 4 | Side Yards One Side^1, 4 | Rear Yard^1, 6 |
+| R-0 | 15 | 20 | 20% of lot width but not less than 10 ft.^8 | 4 ft. | 20 |
+| R-1.5 | 20 | 20 | 12 | 4 | 20 |
+| R-1.7 | 15 | 20 | 12 | 4 | 20 |
+| R-2 | 15 | 20 | 20% of lot width but not less than 10 ft.^8 | 4 | 20 |
+| R-1 | 15 | 20 | 20% of lot width but not less than 15 ft.^8 | 6 | 20 |
+| R-3 | 15 | 20 | 15 | 6 | 20 |
+| R-4 | 20 | None | 20 | 9 | 20 |
+| R-5 | 20 | None | 20 | 9 | 20 |
+| R-MH | None | None | None | None | None |
+| O | 20 | None | 15 | 6 | 20 |
+| P-F | Pursuant to Footnote 6 | Pursuant to Footnote 6 | Pursuant to Footnote 6 | Pursuant to Footnote 6 | Pursuant to Footnote 6 |
+| C-1^7 | 70 | None | None | None | None |
+| C-2^7 | 70 | None | None | None | None |
+| C-3^7 | 70 | None | None | None | None |
+| C-4^7 | 20 | None | None | None | None |
+| M-S^7 | 25 | None | 20 | None | None |
+| M-3^7 | 25 | None | 20 | None | None |
+
+| Notes: | |
+| ^1 | Refer to Chapter 19.56 for deviations to required setbacks to accommodate installation of solar energy systems. |
+| ^2 | For development or additions on single lots in zoning districts where there is an average requirement, the minimum setback must meet the average figure. |
+| ^3 | Combined total of the two side yards added together. |
+| ^4 | Increased setbacks for multiple stories may also be required by Section 19.34.080. |
+| ^5 | Residential zoning districts allow a one-story encroachment into the rear setback as provided in 19.48.050. |
+| ^6 | The minimum front yard, side yards and rear yard required in this district shall be equal to those required in the most restrictive abutting zoning district. One-half foot shall be added to each yard for each foot that the building exceeds the maximum height allowed in the most restrictive abut-ting district. |
+| ^7 | Increased setbacks for commercial or industrial zoned properties may also be required by Section 19.34.070 or 19.34.110. |
+| ^8 | When calculating setbacks as a percentage of lot width, the resulting setback shall be rounded to the nearest foot (e.g., 12.4 feet = 12 ft. required and 15.7 ft.= 16 ft. required). Lot width is measured at the front setback per Section 19.12.130(18). |
+
+(Prior zoning code §§ 19.32.080(e)(2), 19.44.020, 19.44.020 Table; Ord. 2875 § 3; Ord. 2623-99 § 1; Ord. 2649-00 § 6; Ord. 2683-01 § 5; Ord. 2909-09 § 1)
+
+§ 19.34.040 Front yard—Average and reduction.
+
+(a) In the R-0, R-1, R-2 and R-3 zoning districts, the average front yard depth of each development of two or more adjoining lots shall not be less than twenty feet, provided that:
+
+(1) The variation on depth between front yards of adjoining lots shall not be less than three feet;
+
+(2) The depth of the front yards of not more than two adjoining lots on the same street may be the same;
+
+(3) The requirement of subsections (1) and (2) above shall not apply to lots on a curvilinear street having a centerline radius of four hundred feet or less, or to cul-de-sac lots; and
+
+(4) The provisions of this subsection shall not apply to front yards which may be reduced in accordance with subsection (b).
+
+(b) In the R-0, R-1 and R-1.5 zoning districts, for lots at the corner of streets intersecting at an angle of sixty degrees or more, the minimum front yard on the longer street frontage may be reduced to nine feet. This requirement also applies to duplexes and single-family residences in the R-2 zoning district.
+
+(c) In the O, C-1, C-2 and C-3 zoning districts, for lots at the corner of streets intersecting at an angle of sixty de-grees or more, the minimum front yard on the longer street frontage may be reduced to fifteen feet, except where said front yard is along El Camino Real.
+
+(d) In the C-1, C-2 and C-3 zoning districts, the required front yard may be reduced provided that each of the follow-ing conditions is satisfied:
+
+(1) No structure or portion thereof extends beyond either of the lines drawn from the points of intersection of the seventy-foot front yard line with the side lot lines and making an angle of twenty degrees with the centerline of the abutting right-of-way; and
+
+(2) The landscaping area in front of the structure or structures is increased by an amount equal to the area occu-pied by that portion of the structure within the front yard otherwise required.
+
+(e) In any zoning district in which an automobile service station is allowed, the required front yard may be reduced for the purpose of permitting service station pump islands, canopies for such pump islands and support columns for such canopies without a variance for such reduction, provided that each of the following conditions is satisfied:
+
+(1) The use of the property as an automobile service station has been otherwise approved by the planning commission or city council; and
+
+(2) In no event shall the pump island, canopy or support be closer than fifteen feet to any public right-of-way or official plan line.
+
+(f) Within the boundaries of any public parking district, the minimum front yard shall be fifteen feet as measured from the inside edge of the public sidewalk.
+
+(Prior zoning code § 19.44.070; Ord. 3194-22 § 8; Ord. 2623-99 § 1)
+
+§ 19.34.045 Front yard setback requirements for residential developments in specified zoning districts.
+
+In any two-story residential development in an R-0, R-1 or R-2 zoning district, the front yard setback for the second story shall be not less than twenty-five feet.
+
+(Ord. 2650-00 § 4)
+
+§ 19.34.050 Front setback requirements for multistory residential developments.
+
+In any multistory residential development greater than two stories or thirty feet in height, located in an R-4 or R-5 zoning district, the front setback for each story above two stories shall be the amount of any front yard setback required pursuant to this chapter, plus an amount not less than one-half of the height of the front wall of the additional story. In any building not divided by stories, the front setback for any part of the building in excess of thirty feet in height shall be no less than one-half of the height of the front wall elevation above thirty feet above the ground, plus any front yard set-back required pursuant to this chapter.
+
+(Prior zoning code § 19.44.075; Ord. 2623-99 § 1)
+
+§ 19.34.060 Vision triangles.
+
+(a) Definitions.
+
+"Corner vision triangle" means a triangular area on corner lots with specific height limitations for structures and vegetation, including fences, buildings and hedges. The triangle is formed by following three steps (see Figure 19.34.060 Vision Triangles for illustration):
+
+(A) Draw imaginary straight lines that extend the front property lines until they intersect at a single point (Point X);
+
+(B) Locate two points along each property line that are forty feet from the intersection point (Points A and B); and
+
+(C) Connect all three points to form a triangle.
+
+"Driveway vision triangle" means a triangular area next to a driveway, alleyway or multi-use path with specific height limitations for structures and vegetation, including fences, buildings and hedges. The triangle is formed by the following three steps (see Figure 19.34.060 Vision Triangles for illustration):
+
+(A) Use the point where the inside edge of the sidewalk and the edge of the driveway intersect (Point X);
+
+(B) Locate two points along the edge of the driveway and sidewalk that are ten feet from the intersection point (Points A and B). If there is no sidewalk, the vision triangle is measured along the property line. If a driveway has been widened without a corresponding widening of the curb approach, the driveway vision triangle is measured from the original driveway edge;
+
+(C) Connect all three points to form a triangle.
+
+"Extended driveway vision triangle" means a triangular area measured in a similar manner as a driveway vision triangle but with the following dimensions (see Figure 19.34.060 Vision Triangles for illustration):
+
+(A) The point along the edge of the sidewalk (Point A) is forty feet from the intersection point (Point X); and
+
+(B) The point along the edge of the driveway (Point B) is fifteen feet from Point X.
+
+(b) Applicability.
+
+(1) Any structure, vegetation or parking space is subject to corner and driveway vision triangle requirements unless specifically stated otherwise in this section.
+
+(2) New structures, including signs, are subject to extended vision triangle requirements when located on lots with more than 100 parking spaces.
+
+(3) The following locations are exempt from vision triangle requirements:
+
+(A) Downtown Specific Plan District. Properties within the DSP Blocks 1, 1a, 2, 3, 7, 18, 21 and 22.
+
+(B) El Camino Real Specific Plan District. Intersections and driveways controlled with a traffic light or four-way stop in the El Camino Real Specific Plan.
+
+(C) Village Center Master Plan. Intersections and driveways controlled with a traffic light or four-way stop in the Village Center Master Plan area.
+
+(D) Public Parking District. Properties within the public parking district.
+
+(c) Parking Spaces. Parking areas are prohibited in all vision triangles.
+
+(d) Structures and Vegetation in Vision Triangles. Structures and vegetation are limited to three and one-half feet in height within any vision triangle. A structure may include buildings, fences, accessory structures, signs or any other physical object. Vegetation may include plants, shrubs and trees. The following structures and vegetation are exempt from vision triangle requirements:
+
+(1) Trees with Circumferences Less than Thirty-Eight Inches. A tree of thirty-eight inches in circumference as measured four and one-half feet from the ground may be located within a vision triangle if the lowest tree branches and foliage are at least ten feet from the ground at maturity.
+
+(2) Building Canopies. A building canopy may project five feet into a vision triangle if the canopy is at least ten feet high as measured from the top of curb closest to the canopy. Ground-mounted support posts are prohibited within any vision triangle.
+
+(3) Open Fences. "Open fences" as defined in Section 19.48.020 (General fence requirements) may be located in a vision triangle.
+
+(e) Special Requirements for Safety. The director may require additional setbacks if needed for pedestrian, motorist, or bicyclist safety.
+
+| Figure 19.34.060 Vision Triangles |
+
+(Prior zoning code § 19.44.040; Ord. 2623-99 § 1; Ord. 2981-12 § 8; Ord. 2992-13 § 7; Ord. 3194-22 § 9; Ord. 3242-25, 7/29/2025)
+
+§ 19.34.070 Front, side and rear yards—Increase in industrial zoning districts—When required.
+
+(a) The minimum front yard of twenty-five feet in industrial zoning districts shall be increased to thirty-five feet on any industrial lot which fronts on a public street with a right-of-way width of eighty-six feet or more.
+
+(b) The front yard, side yard or rear yard, as the case may be, of industrially zoned property adjacent to property in any residential zoning district, with the exception of property adjacent to any R-5 zoning district, shall be increased to one hundred feet measured from the property line of the residentially zoned property. The area within such required spe-cial front yard, side yard or rear yard may be used only for landscaping, parking or open area employee recreation.
+
+(Prior zoning code § 19.44.060; Ord. 2623-99 § 1)
+
+§ 19.34.080 Side yards—Increase—Multi-story.
+
+(a) For new construction or additions to a building in any zoning district where side yards are required, each side yard shall be increased three feet for each additional story above the first story, or for each additional ten feet of height above twenty feet if the structure is not divided by stories.
+
+(b) Except for single-family or duplex buildings, the additional side yard setback required by this section shall be measured at the ground floor level. For single-family or duplex buildings, the setback shall be measured at the floor level of the additional story or stories.
+
+(Prior zoning code §§ 19.44.027, 19.44.030; Ord. 2623-99 § 1; Ord. 2650-00 § 5)
+
+§ 19.34.090 Side yards—R-1.5 zoning district.
+
+(a) Where a zero side yard is permitted, the side wall adjacent to the required twelve-foot side yard may extend to a height of twenty-one feet (exclusive of pitched roof of structure). Section 19.34.080 shall not be applied in this instance.
+
+(b) No dwelling in the R-1.5 zoning district shall be closer than twelve feet from any other dwelling.
+
+(Prior zoning code § 19.44.025; Ord. 2623-99 § 1)
+
+§ 19.34.100 Side yards—Modifications—When allowed.
+
+(a) In an R-4 zoning district, when a single-family dwelling is constructed on a legally created lot, the required side yards applicable to the R-0 zoning district shall apply. When a two-family dwelling structure is constructed on a legally created lot, the required side yards applicable to the R-2 zoning district shall apply.
+
+(b) In any residential zoning district where two buildings are located or planned for one lot or parcel, the required minimum and total side yards for each building may be calculated separately, so long as such separate side yards do not cross one another. If the line of the front face of one building extending for the full width of the lot overlaps the line of the near face of the other building, minimum and total side yard requirements shall apply as if the two buildings were one building. The modifications of side yards permitted by this section shall not apply to accessory structures which are regulated by Chapter 19.40.
+
+(Prior zoning code § 19.44.035; Ord. 2907-09 § 6; Ord. 2623-99 § 1)
+
+§ 19.34.110 Side and rear yards—Increase in commercial zoning districts—When required.
+
+In the case of each development in any commercial zoning district which will have a side or rear yard contiguous to property in a residential zoning district, a side yard of fifteen feet and a rear yard of ten feet shall be provided, together with three additional feet at ground level for the second and each additional story above the first story or for each addi-tional ten-foot unit of height above twenty feet, if the structure in such development is not divided by stories.
+
+(Prior zoning code § 19.44.050; Ord. 2623-99 § 1)

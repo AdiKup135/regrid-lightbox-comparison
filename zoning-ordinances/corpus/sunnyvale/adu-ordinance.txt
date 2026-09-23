@@ -1,0 +1,308 @@
+§ 19.79.010 Purpose.
+
+The city council finds that the city is experiencing a severe shortage of housing, especially affordable housing, and that facilitating the development of accessory dwelling units will increase the housing options for family members, seniors, low-wage workers, persons with disabilities, students and others in the community. Because accessory dwelling units are an essential component of the city's housing supply, an accessory dwelling unit that conforms to all applicable requirements shall not be considered to exceed the allowable density for the lot upon which it is located, and is deemed to be a residential use that is consistent with the existing general plan and zoning designations for the lot.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.020 Applicability.
+
+The regulations contained in this chapter shall apply to lots in residential or residential mixed-use zones containing an existing or proposed single-family dwelling or multifamily dwelling structure and lots with a legal nonconforming single-family dwelling or multifamily dwelling structure.
+
+For purposes of this chapter, an attached two-family dwelling, such as a duplex, shall be treated as a multifamily dwelling structure. Multiple detached single-unit dwellings on the same lot shall be considered single-family dwellings.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.030 Streamlined and non-streamlined accessory dwelling units.
+
+(a) Streamlined Accessory Dwelling Units. No discretionary planning permit is required for an accessory dwelling unit that meets the requirements of a streamlined accessory dwelling unit as defined in this subsection (a). Streamlined accessory dwelling units are subject to a ministerial building permit application. Streamlined accessory dwelling units include:
+
+(1) Conversion accessory dwelling units;
+
+(2) Attached or detached new construction accessory dwelling units that do not exceed 800 square feet in floor area with at least four-foot side and rear yard setbacks, and which comply with height requirements in Section 19.79.040 of this chapter, on lots with an existing or proposed single family dwelling;
+
+(3) Detached new construction accessory dwelling units with at least four-foot side and rear yard setbacks, and which comply with the height requirements in Section 19.79.040 of this chapter, on lots with an existing or proposed multifamily dwelling structure;
+
+(4) Accessory dwelling units completely within a basement as defined in Section 19.12.030 of this code; and
+
+(5) Junior accessory dwelling units.
+
+(b) Non-streamlined Accessory Dwelling Units. A miscellaneous plan permit pursuant to Chapter 19.82 is required for an accessory dwelling unit that does not meet the criteria for streamlined approval in subsection (a) of this section. The director of community development shall ministerially approve the miscellaneous plan permit.
+
+(1) Non-streamlined accessory dwelling units include attached or detached new construction accessory dwelling units over 800 square feet in floor area.
+
+| Table 19.79.030. Streamlined and Non-Streamlined Accessory Dwelling Unit—Permit, Zoning and Design Standards Requirements | | | |
+| | ADU Type | Planning Permit Requirement | Additional Zoning and Design Standards Requirements^1 |
+| Streamlined ADUs | Attached or detached, new construction ADUs up to 800 sq. ft. area on lots with existing or proposed single-family dwelling | No planning permit; only a ministerial building permit | None |
+| Streamlined ADUs | Detached new construction ADUs on lots with existing or proposed multifamily dwelling structure | No planning permit; only a ministerial building permit | None |
+| Streamlined ADUs | Conversion ADUs | No planning permit; only a ministerial building permit | None |
+| Streamlined ADUs | JADUs | No planning permit; only a ministerial building permit | None |
+| Streamlined ADUs | ADUs completely within basement as defined in Section 19.12.030(4) | No planning permit; only a ministerial building permit | None |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Maximum zoning district lot coverage per Chapter 19.32^2 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Floor area and FAR per Chapter 19.32^2 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Minimum zoning district front and reducible front yard setbacks per Chapter 19.34 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Entrance on different wall planes facing street per Section 19.79.040 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Minimum distance from main building and accessory structures per Section 19.79.040^3 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Design relationship to main building per Section 19.79.040^4 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Solar access requirement per Section 19.79.040^5 |
+| Non-Streamlined ADUs | Attached or detached, new construction ADUs over 800 sq. ft. area on lots with existing or proposed single-family dwelling | Ministerial MPP | Second floor window design per Section 19.79.040^5 |
+
+| NOTES: | |
+| 1 | In addition to the standard requirements applicable for all new construction ADUs of minimum four-foot side and rear yard setbacks and height limitations per Section 19.79.040. |
+| 2 | Additional area above 800 square feet shall count towards lot coverage, gross floor area, and FAR. |
+| 3 | Applicable only for detached new construction ADUs over 800 square feet in area. |
+| 4 | Applicable only for attached new construction ADUs over 800 square feet in area. |
+| 5 | Applicable only for two-story or second floor level new construction ADUs over 800 square feet in area. |
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.040 General requirements.
+
+The following requirements apply to all accessory dwelling units, unless otherwise noted:
+
+(a) Area. Accessory dwelling unit area shall include all interior areas within the dwelling unit, as measured from the outside dimensions of a building or wall.
+
+(b) Minimum Area. The area of each accessory dwelling unit shall be at least 150 square feet.
+
+(c) Attached Patios and Entry Porches. Attached covered patios where the roof is more than 50% solid shall be counted towards lot coverage, floor area, and floor area ratio. Entry porches where the roof is more than 50% solid shall be counted towards lot coverage but shall be exempt from floor area and floor area ratio.
+
+(d) Building Requirements. All applicable requirements of Title 16 (Buildings and Construction) shall be satisfied, subject to the exemptions contained in Chapter 16.72 of this code.
+
+(e) Correction of Nonconforming Conditions. Approval of an accessory dwelling unit shall not be conditioned on the correction of nonconforming zoning conditions, building code violations, or unpermitted structures that do not present a threat to public health and safety and are not affected by the construction of the accessory dwelling unit.
+
+(f) Design Relationship of Attached New Construction Accessory Dwelling Units to the Main Residential Building. Non-streamlined attached new construction accessory dwelling units shall maintain the appearance of the main residential building, by using the same type of wall cladding, trim detail, roofing material, building color(s), and window frames/trim.
+
+(g) Distance Between the Main Building and Accessory Dwelling Unit. Detached non-streamlined accessory dwelling units shall be located at least five feet away from the main building, as measured from exterior walls.
+
+(h) Easements. Accessory dwelling units are not permitted in any portion of existing easements that prohibit the construction of permanent structures as noted in the easement.
+
+(i) Entrances. The accessory dwelling unit shall have a separate exterior access independent from the single-family or multifamily dwelling.
+
+(1) The entrance to the accessory dwelling unit and the entrance to the single-family dwelling shall not be on the same wall plane facing the public street. This requirement shall only apply to non-streamlined accessory dwelling units as defined in Section 19.79.030 of this chapter.
+
+(2) Enclosed accessory structures attached to accessory dwelling units shall have a separate exterior access independent from the accessory dwelling unit.
+
+(j) Expansion of conversion accessory dwelling units for ingress and egress. A conversion accessory dwelling unit may include an expansion of not more than 150 square feet beyond the physical dimensions of an existing accessory structure for the sole purpose of accommodating ingress and egress. The ingress and egress expansion area shall meet minimum side and rear setbacks sufficient for fire and safety and the height limitations specified in Chapter 19.32 of this code for the applicable zoning district. Expansions of more than 150 square feet shall be considered a new construction accessory dwelling unit.
+
+(k) Height. The following height limitations apply to new construction accessory dwelling units:
+
+(1) Detached Accessory Dwelling Unit. The height of the unit as measured from the average finished grade within five feet of the structure shall not be more than the following:
+
+(A) 16 feet on a lot with an existing or proposed single-family dwelling or single-story multifamily dwelling unit that does not meet the requirements of subsection (k)(1)(B), below.
+
+(B) 18 feet on a lot that is within one-half of one mile walking distance of a major transit stop or a high-quality transit corridor, as those terms are defined in Section 21155 of the Public Resources Code. An additional two feet in height is allowed to accommodate a roof pitch on the accessory dwelling unit that is aligned with the roof pitch of the primary dwelling unit.
+
+(C) 18 feet on a lot with an existing or proposed multistory, multifamily dwelling structure.
+
+(2) Attached accessory dwelling Unit. 25 feet or the height limitation that applies to the main building, whichever is lower.
+
+(l) Heritage Resources. Accessory dwelling units are allowed on lots that are listed on the City's Heritage Resource Inventory per Chapter 19.96 of this code and are not subject to additional permit and public review requirements beyond those described in Section 19.79.030 of this chapter.
+
+(m) Mechanical Equipment. Mechanical equipment serving accessory dwelling units, such as, but not limited to, heating or air conditioning units, shall meet the requirements in Section 19.48.100 of this code.
+
+(n) Number of Stories. Accessory dwelling units are limited to a maximum of two stories.
+
+(o) Parking. No off-street parking spaces are required for an accessory dwelling unit, and the applicant shall not be required to replace any covered parking spaces that are removed or demolished as a result of the construction of the accessory dwelling unit or conversion of existing space in a main residential dwelling or accessory structure to an accessory dwelling unit.
+
+(p) Protected Trees. A separate tree removal permit is not required for the proposed removal of protected trees, as defined in Section 19.94.030 of this code, in conjunction with a new construction accessory dwelling unit. The proposed tree removal shall be reviewed as part of the required building permit, or planning permit, if required, subject to the standards and criteria in Chapter 19.94 of this code. However, the standards and criteria shall not preclude a streamlined accessory dwelling unit as defined in Section 19.79.030(a) of this chapter. One replacement tree, at least 15-gallon in size, or an equivalent tree replacement in-lieu fee is required for each protected tree that is removed for construction of a non-streamlined accessory dwelling unit as defined in Section 19.79.030 of this chapter.
+
+(q) Sale and Rental. An accessory dwelling unit may be rented separately from the single-family dwelling or multifamily dwelling structure, but may not be sold or otherwise conveyed separately from the other dwellings on the lot, except as permitted by Government Code Section 66341. The city has not elected to allow the separate conveyance of the main building and accessory dwelling unit or units as condominiums pursuant to Government Code Section 66342.
+
+(r) Short-Term Rentals. An accessory dwelling unit approved on or after January 1, 2020, shall not be used as a short-term rental as regulated by Chapter 19.76 of this code.
+
+(s) Second Floor Balconies or Decks. Balconies, second-story decks, and rooftop terraces are prohibited on all second floor or two-story-tall accessory dwelling units.
+
+(t) Second Floor or Two-Story Accessory Dwelling Units. For non-streamlined accessory dwelling units as defined in Section 19.79.030 of this chapter, where the unit is located on a second floor, the following requirements must be met:
+
+(1) The proposed project meets the specified requirements of this code applicable to second-story construction or additions, including the zoning district's second-floor front setbacks, maximum lot coverage, and the solar access requirement in Chapter 19.56 of this code; and
+
+(2) If the entrance to the accessory dwelling unit is above the first floor, it is not on the same building elevation as the entrance to the single-family or multifamily dwelling.
+
+(u) Second Story Windows. For non-streamlined accessory dwelling units, all second-story windows setback less than 20 feet from a rear property line or seven feet from a side property line shall comply with at least one of the following standards:
+
+(1) Second story window sills shall be at least five feet above the finished floor; or
+
+(2) Second story windows shall have opaque or translucent glazing if the sill height is within five feet above the finished floor.
+
+(v) Solar Access Requirement. Second floor or two-story non-streamlined accessory dwelling units shall meet the solar access requirement described in Chapter 19.56 of this code.
+
+(w) Setbacks for New Construction Accessory Dwelling Units.
+
+(1) Side and Rear Yard Setbacks. Minimum four-foot side and rear yard setbacks are required; however, setbacks of less than four feet are allowed if the accessory dwelling unit is constructed in the same location and to the same dimensions (including height, area, width, and length) as an existing structure that is demolished for the purpose of constructing the accessory dwelling unit.
+
+(2) Front and Reducible Front Setbacks. Minimum zoning district front yard and reducible front yard (for corner lots) zoning setbacks are required for non-streamlined accessory dwelling units as defined in Section 19.79.030 of this chapter.
+
+(x) Subdivisions. Nothing contained herein shall be construed to permit subdivisions of real property otherwise prohibited by this code or state law.
+
+(y) Urban Lot Splits/Dual Urban Opportunity Units. A lot created through an urban lot split pursuant to Chapter 18.26 of this code may have a maximum of one new construction accessory dwelling unit, one conversion accessory dwelling unit, or one junior accessory dwelling unit in conjunction with one single-family dwelling on the lot, for a maximum of two total units on the lot. If the lot contains two dual urban opportunity units pursuant to Chapter 19.78, no accessory dwelling units are permitted on the lot.
+
+(z) Other Legal Requirements. Accessory dwelling units shall comply with all other applicable legal requirements that are not inconsistent with this chapter.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.050 Requirements for lots with a single-family dwelling.
+
+The following requirements apply to lots with an existing or proposed single-family dwelling. Multiple detached single-unit dwellings on the same lot shall be considered single-family dwellings for the purposes of the accessory dwelling unit regulations in this chapter.
+
+(a) Number of Accessory Dwelling Units Allowed Per Lot.
+
+(1) On a lot with only one single-family dwelling, one conversion accessory dwelling unit, one new construction accessory dwelling unit, and one junior accessory dwelling unit, in any order without prejudice, totaling three units plus the single-family dwelling main building, are allowed per lot.
+
+(2) On a lot with multiple detached single-unit dwellings, one conversion accessory dwelling unit and one new construction accessory dwelling unit are allowed per lot.
+
+(3) Each lot may only have either one, but not both, of the following types of attached accessory dwelling units:
+
+(A) Conversion accessory dwelling unit created by conversion of existing space within a single-family dwelling or space within a proposed single-family dwelling; or
+
+(B) Attached new construction accessory dwelling unit.
+
+(b) New Construction Accessory Dwelling Units.
+
+(1) Size. The total floor area of the unit shall not be more than 1,000 square feet gross floor area. There shall be no restrictions on the number of bedrooms.
+
+(2) Detached Accessory Dwelling Units.
+
+(A) Detached accessory dwelling units and accessory structures. Detached new construction accessory dwelling units may be connected to an existing or proposed accessory structure. If not connected, detached new construction accessory dwelling units that are non-streamlined per Section 19.79.030 shall maintain a minimum setback of five feet (as measured from exterior walls or support posts) to an existing or proposed accessory structure.
+
+(B) Zoning and Design requirements for Non-Streamlined Accessory Dwelling Units. Refer to Table 19.79.030 and 19.79.060 for zoning and design requirements for non-streamlined accessory dwelling units.
+
+(c) Conversion Accessory Dwelling Units.
+
+(1) Location. A conversion accessory dwelling unit is located:
+
+(A) Entirely within the interior space of the existing or proposed single-family dwelling; or
+
+(B) Within the interior space of an existing accessory structure and may include an expansion of not more than 150 square feet beyond the physical dimensions of the existing structure for the sole purpose of accommodating ingress and egress.
+
+(d) Junior Accessory Dwelling Units.
+
+(1) Number. The number of junior accessory dwelling units are limited to one for lots with one existing or proposed single-family dwelling. Junior accessory dwelling units are not allowed for lots with multiple detached single-unit dwellings.
+
+(2) Size. A junior accessory dwelling unit shall be no more than 500 square feet gross floor area in size and must be contained entirely within the walls of an existing or proposed single-family dwelling, including attached garages.
+
+(3) Prohibited Locations. Junior accessory dwelling units shall not be created by a new construction addition to an existing single-family dwelling or by conversion of an existing detached accessory structure.
+
+(4) Sanitation Facilities. The junior accessory dwelling unit may have separate sanitation facilities or may share sanitation facilities with the single-family dwelling. If sanitation facilities are shared, there must be a connecting interior door between the junior accessory dwelling unit and the single-family dwelling.
+
+(5) Efficiency Kitchen. The junior accessory dwelling unit, at a minimum, shall include an efficiency kitchen per Government Code Section 66333, which includes:
+
+(A) A cooking facility with appliances; and
+
+(B) A food preparation counter and storage cabinets that are of reasonable size in relation to the size of the junior accessory dwelling unit.
+
+(6) Conversion to a Junior Accessory Dwelling Unit. An accessory dwelling unit that was constructed as a new construction accessory dwelling unit shall not be treated as a junior accessory dwelling unit for purposes of this chapter unless the owner complies with the owner-occupancy and other deed restrictions in subsection (d)(7).
+
+(7) Owner-occupancy and Deed Restriction. Owner-occupancy is required in the single-family residence in which the junior accessory dwelling unit is located. Either the newly created junior accessory dwelling unit or the remaining portion of the single-family dwelling structure must be the bona fide principal residence of at least one legal owner of the lot, as evidenced at the time of building permit approval by appropriate documents establishing title and residency.
+
+(A) Prior to the issuance of a building permit, the applicant shall provide evidence that a covenant has been recorded on the title of the affected property stating all of the following:
+
+(i) One of the dwelling units on the lot shall remain owner-occupied unless the owner is a governmental agency, land trust, or housing organization.
+
+(ii) The junior accessory dwelling unit shall not be sold separately from the sale of the single-family residence.
+
+(iii) The junior accessory dwelling unit shall not be more than 500 square feet gross floor area in size and shall comply with all other requirements applicable to junior accessory dwelling units in Section 19.79.050.
+
+(iv) A statement that these deed restrictions are enforceable against future purchasers.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.060 Requirements for lots with a multifamily dwelling structure.
+
+The following requirements apply to lots with an existing or proposed multifamily dwelling structure:
+
+(a) Detached New Construction Accessory Dwelling Units.
+
+(1) Number.
+
+(A) On a lot with an existing multifamily dwelling, not more than eight detached accessory dwelling units are allowed. However, the number of accessory dwelling units shall not exceed the number of existing units on the lot prior to the addition of any accessory dwelling units.
+
+(B) On a lot with a proposed multifamily dwelling, not more than two detached accessory dwelling units are allowed.
+
+(b) Conversion Accessory Dwelling Units.
+
+(1) Number. At least one accessory dwelling unit may be created within a multifamily dwelling structure by converting existing interior non-habitable area. The maximum number of accessory dwelling units so created shall not exceed 25% of the total number of existing multifamily dwelling units prior to the addition of any accessory dwelling units.
+
+(2) Location. The accessory dwelling unit shall be created only within portions of the existing multifamily dwelling structure not used as habitable area, including, but not limited to, storage rooms, boiler rooms, passageways, attics, basements, or attached garages, as long as the unit meets building standards for dwellings. An accessory dwelling unit shall not be created:
+
+(A) Within any portion of the habitable area of an existing dwelling unit in a multifamily dwelling structure.
+
+(B) Within accessory structures such as carports, utility buildings, and community rooms.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.070 Summary of applicable standards.
+
+Table 19.79.070 summarizes the applicable standards for accessory dwelling units on lots with an existing or proposed single-family or multifamily dwelling as set forth in more detail in Sections 19.79.040, 19.79.050 and 19.79.060 of this chapter.
+
+| Table 19.79.070. Applicable Standards for New Construction, Conversion and Junior Accessory Dwelling Units on Single-Family and Multifamily Residential Lots. | | | |
+| | New Construction ADUs | Conversion ADUs | JADU |
+| Location | Lots with existing or proposed single-family or multifamily dwellings. | Lots with existing or proposed single-family, or existing multifamily dwellings | Contained entirely within the walls of an existing or proposed single-family dwelling. |
+| Number | | | |
+| Single-Family Dwelling | One^1 | One^1 | One |
+| Multifamily Dwelling | Existing multifamily: 2 to 8 detached^7 | 25% of existing units (minimum of one allowed) | None |
+| Multifamily Dwelling | Proposed multifamily: Maximum 2 detached | 25% of existing units (minimum of one allowed) | None |
+| Size | 150 sq. ft. minimum | 150 sq. ft. minimum | 150 sq. ft. minimum |
+| Size | 1,000 sq. ft. maximum^2 | No maximum | 500 sq. ft. maximum |
+| Height | 16 feet for a detached ADU on a single-family or single-story multifamily lot^3 | n/a | n/a |
+| Height | 18 feet for a detached ADU on a multistory, multifamily lot^3 | n/a | n/a |
+| Height | 25 feet for an attached ADU | n/a | n/a |
+
+| | Up to 800 sq. ft. area^4 | Over 800 sq. ft. area^4,9 | Conversion ADU^4,5,6 | JADU^4,5 |
+| Independent exterior entrance | Yes | Yes^8 | Yes | Yes |
+| Setbacks (first and second floor) | | | | |
+| Front | n/a | Zoning setback^10 | n/a | n/a |
+| Reducible front (longer street frontage of corner lots) | n/a | Zoning setback^10 | n/a | n/a |
+| Side | 4 feet | 4 feet | n/a | n/a |
+| Rear | 4 feet | 4 feet | n/a | n/a |
+| Combined side | n/a | n/a | n/a | n/a |
+| Distance from main building or accessory structures | n/a | 5 feet (only applicable to detached ADUs) | n/a | n/a |
+| Solar access requirement (for second floor ADUs) | n/a | Per Section 19.56.020 | n/a | n/a |
+| Required rear yard encroachment | n/a | n/a | n/a | n/a |
+| Lot coverage | Exempt | Area over 800 sq. ft. | Area over 800 sq. ft. | Exempt |
+| Floor area ratio | Exempt | Area over 800 sq. ft. | Area over 800 sq. ft. | Exempt |
+| Design relationship to main building | n/a | Yes, per Section 19.79.040 | n/a | n/a |
+| Second story windows | n/a | Yes, per Section 19.79.040 | n/a | n/a |
+| Deed restriction requirement | n/a | n/a | n/a | Yes, per Section 19.79.040 |
+
+| Notes: | |
+| 1 | Each single-family dwelling lot or multiple detached single-unit dwellings on a lot may have either one, but not both, of the following: (1) conversion accessory dwelling unit created by conversion of parts of an existing or space within a proposed single-family dwelling, or one attached new construction accessory dwelling unit. |
+| 2 | This maximum size applies to lots with an existing or proposed single-family dwelling. |
+| 3 | 18 feet on a lot that is within one-half of one mile walking distance of a major transit stop or a high-quality transit corridor, as those terms are defined in Section 21155 of the Public Resources Code. An additional two feet in height is allowed to accommodate a roof pitch on the accessory dwelling unit that is aligned with the roof pitch of the primary dwelling unit. |
+| 4 | Setbacks must also comply with any recorded utility easements or other previously recorded setback restrictions. |
+| 5 | The existing dwelling and accessory structure must meet the California Building Standards. |
+| 6 | If the existing single-family dwelling or accessory structure is expanded not more than 150 square feet for the sole purpose of accommodating ingress and egress, the side and rear setbacks shall be sufficient for fire and life safety; the generally applicable four-foot setbacks shall not be required. |
+| 7 | Number of accessory dwelling units shall not exceed the existing number of units on the lot prior to addition of accessory dwelling units. |
+| 8. | The entrance to the accessory dwelling unit and the entrance to the single-family dwelling shall not be on the same wall plane facing the public street as defined in Section 19.79.040 of this chapter. |
+| 9 | Detached new construction ADUs on lots with existing or proposed multifamily dwelling units with at least four-foot side and rear yard setbacks, and which comply with height requirements per Section 19.79.040 are not subject to the additional requirements for new construction ADUs over 800 square feet. |
+| 10 | Zoning setback means the setback required in the applicable zoning district. |
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.080 Utility connections.
+
+(a) Except as provided in subsection (b), an accessory dwelling unit may be required to have a new or separate utility connection directly between the accessory dwelling unit and the utility. The city council may adopt by resolution a connection fee or capacity charge that is proportionate to the burden of the proposed accessory dwelling unit upon the water and sewer system. The fee may be based upon either the square feet of the accessory dwelling unit or its drainage fixture unit (DFU) values, as defined in the Uniform Plumbing Code adopted and published by the International Association of Plumbing and Mechanical Officials. Such fees and charges shall not exceed the reasonable cost of providing the utility service.
+
+(b) The following accessory dwelling units shall be exempt from any requirement to install a new or separate utility connection and to pay any associated connection or capacity fees or charges:
+
+(1) Junior accessory dwelling units.
+
+(2) Conversion accessory dwelling units, unless the unit is constructed with a new single-family home.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.090 Impact fees.
+
+(a) Except as provided in subsection (b), below, the city council may, by resolution, establish fees, including, but not limited to, the transportation impact fee, for accessory dwelling units that mitigate the impact of the accessory dwelling unit on public infrastructure and services. Such fees shall be imposed proportionally based on the square footage of the accessory dwelling unit in relation to the square footage of the main building's dwelling unit. Impact fees do not include any connection fee or capacity charge by the city, special district, or water corporation.
+
+(b) No impact fees shall be imposed on an accessory dwelling unit that is less than 750 square feet in size. For purposes of this section, "impact fees" include the fees specified in Sections 66000 and 66477 of the Government Code, but do not include utility connection fees or capacity charges.
+
+(Ord. 3240-25, 4/8/2025)
+
+§ 19.79.100 Procedures and decisions.
+
+(a) The city shall approve or deny the application to create an accessory dwelling unit within 60 days from the date the city receives a complete application if there is an existing single-family or multifamily dwelling on the lot. Incomplete applications will be returned with an explanation of what additional information is required, and the 60-day period shall be tolled until a complete application is submitted.
+
+(b) If the permit application to create an accessory dwelling unit is submitted with a permit application to create a new single-family or multifamily dwelling on the lot, the city may delay approving or denying the permit application for the accessory dwelling unit until such time as the city acts on the permit application to create the new single-family or multifamily dwelling, but the application to create the accessory dwelling unit shall still be considered ministerially without discretionary review or a hearing.
+
+(c) If the applicant requests a delay, the 60-day time period shall be tolled for the period of the delay.
+
+(Ord. 3240-25, 4/8/2025)
