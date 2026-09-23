@@ -19,13 +19,14 @@ Front-rule resolution accepts both provider vocabularies: Zoneomics city_id and
 the Census jurisdiction name (see services/parcel_data/front_rules.py).
 """
 import os
-from typing import Any, Dict
+from typing import Any, Dict, Tuple
 
 import requests
 from flask import Blueprint, g, jsonify, request
 
 from services.compute.parcel_edges.edge_labeling import (
   EdgeLabelingInput,
+  EdgeLabelingResult,
   FrontRuleOverride,
   ZoneomicsParcel,
   label_edges,
@@ -78,44 +79,62 @@ def get_edges():
     return jsonify({'error': str(e)}), 400 if isinstance(e, AssertionError) else 500
 
 
+def label_from_body(body: Dict[str, Any]) -> Tuple[EdgeLabelingResult, Dict[str, Any], bool]:
+  """Assemble EdgeLabelingInput from a posted /edges payload and run the engine.
+
+  Shared by /edges/label and /adu/evaluate so both routes label a lot the
+  same way (one owner for front-rule resolution and street naming).
+
+  @param body The /edges response posted back, optionally with ``front_rule`` /
+    ``front_rule_overrides`` / ``user_front_override_edge_index``.
+
+  @return (labeling result, the front_rule record used ({} = engine default),
+    whether the Google Roads namer was on).
+
+  @raise AssertionError When the subject parcel or its boundary is missing.
+  """
+  subject = body.get('subject') or {}
+  assert subject.get('boundary'), 'subject parcel with boundary required (pass the /edges response)'
+  meta = body.get('meta') or {}
+
+  if body.get('front_rule'):
+    front: Dict[str, Any] = {'rule': body['front_rule'], 'overrides': body.get('front_rule_overrides')}
+  else:
+    front = front_rule_for(city_id=meta.get('city_id'),
+                           jurisdiction_name=meta.get('city_name'),
+                           county_name=meta.get('county_name')) or {}
+
+  street_namer = None
+  google_api_key = (os.environ.get('GOOGLE_API_KEY') or '').strip() or None
+  if google_api_key:
+    from services.compute.parcel_edges.street_naming import make_google_roads_namer
+    street_namer = make_google_roads_namer(google_api_key)
+
+  overrides = [FrontRuleOverride.from_db(o) for o in front.get('overrides') or []]
+  result = label_edges(EdgeLabelingInput(
+    subject=_parcel(subject),
+    neighbors=[_parcel(n) for n in body.get('neighbors') or []],
+    front_rule=front.get('rule'),
+    front_rule_overrides=overrides or None,
+    zone=body.get('zone'),
+    user_front_override_edge_index=body.get('user_front_override_edge_index'),
+    subject_street_name=body.get('subject_street_name'),
+    street_namer=street_namer,
+  ))
+  return result, front, bool(google_api_key)
+
+
 @parcel_edges_bp.route('/edges/label', methods=['POST'])
 def label_edges_route():
   """Label a posted /edges payload — same in-process assembly cli.py documents."""
   try:
     body = request.get_json(silent=True) or {}
-    subject = body.get('subject') or {}
-    assert subject.get('boundary'), 'subject parcel with boundary required (pass the /edges response)'
-    meta = body.get('meta') or {}
-
-    if body.get('front_rule'):
-      front: Dict[str, Any] = {'rule': body['front_rule'], 'overrides': body.get('front_rule_overrides')}
-    else:
-      front = front_rule_for(city_id=meta.get('city_id'),
-                             jurisdiction_name=meta.get('city_name'),
-                             county_name=meta.get('county_name')) or {}
-
-    street_namer = None
-    google_api_key = (os.environ.get('GOOGLE_API_KEY') or '').strip() or None
-    if google_api_key:
-      from services.compute.parcel_edges.street_naming import make_google_roads_namer
-      street_namer = make_google_roads_namer(google_api_key)
-
-    overrides = [FrontRuleOverride.from_db(o) for o in front.get('overrides') or []]
-    result = label_edges(EdgeLabelingInput(
-      subject=_parcel(subject),
-      neighbors=[_parcel(n) for n in body.get('neighbors') or []],
-      front_rule=front.get('rule'),
-      front_rule_overrides=overrides or None,
-      zone=body.get('zone'),
-      user_front_override_edge_index=body.get('user_front_override_edge_index'),
-      subject_street_name=body.get('subject_street_name'),
-      street_namer=street_namer,
-    ))
+    result, front, roads_namer = label_from_body(body)
     return jsonify({
       'result': result.to_dict(),
       'engine': 'python',
       'front_rule_used': front.get('rule') or 'address_street (engine default)',
-      'roads_namer': bool(google_api_key),
+      'roads_namer': roads_namer,
     }), 200
   except Exception as e:
     g.fx_logger.log('parcel_edges: /edges/label failed: %s' % e, channel_name='error')

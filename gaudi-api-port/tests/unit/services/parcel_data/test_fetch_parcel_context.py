@@ -61,6 +61,11 @@ _ZONE_OK = {'features': [{'attributes': {
   'Source': 'City REST', 'Date': '7/16/2023',
 }}]}
 
+_TRANSIT_OK = {'features': [{'attributes': {
+  'hqta_type': 'hq_corridor_bus', 'hqta_details': 'stop_along_hq_bus_corridor_single_operator',
+  'agency_primary': 'Santa Clara Valley Transportation Authority', 'agency_secondary': ' ', 'route_id': '22',
+}}]}
+
 _ADDRESS = '1590 Madrono Ave, Palo Alto, CA'
 
 
@@ -74,6 +79,7 @@ def _parcel_layer_handler(point_features: List[Dict[str, Any]], envelope_feature
 def _session(point_features: Optional[List[Dict[str, Any]]] = None,
              envelope_features: Optional[List[Dict[str, Any]]] = None,
              zone_payload: Any = None,
+             transit_payload: Any = None,
              extra: Optional[List] = None) -> FakeSession:
   routes = list(extra or [])
   routes += [
@@ -83,6 +89,7 @@ def _session(point_features: Optional[List[Dict[str, Any]]] = None,
       point_features if point_features is not None else [_SUBJECT],
       envelope_features if envelope_features is not None else [_SUBJECT, _WEST, _EAST])),
     ('California_Statewide_Zoning_North', zone_payload if zone_payload is not None else _ZONE_OK),
+    ('CA_HQ_Transit_Areas', transit_payload if transit_payload is not None else _TRANSIT_OK),
   ]
   return FakeSession(routes)
 
@@ -101,8 +108,10 @@ class TestHappyPath:
     assert context['meta']['county_fips'] == '06085'
     assert context['meta']['geocode_source'] == 'google'
     assert context['discovery'] == 'arcgis-envelope'
+    assert context['transit']['near_transit'] is True
+    assert context['transit']['routes'] == ['22']
     assert context['flags'] == []
-    assert context['callCount'] == 5  # google + containment + point + envelope + zone
+    assert context['callCount'] == 6  # google + containment + point + envelope + zone + transit
 
   def test_neighbor_cap_and_distance_order(self) -> None:
     far = _feature('102', '1620', _SUBJECT_LNG + 3 * _SIDE, _SUBJECT_LAT)
@@ -164,6 +173,18 @@ class TestDegradations:
     context = fetch_parcel_context(_ADDRESS, session=session, google_api_key='key')
     assert context['neighbors'] == []
     assert 'neighbor_fetch_failed' in context['flags']
+
+  def test_transit_failure_is_flagged_and_none(self) -> None:
+    session = _session(transit_payload=ConnectionError('transit down'))
+    context = fetch_parcel_context(_ADDRESS, session=session, google_api_key='key')
+    assert context['transit'] is None
+    assert 'transit_lookup_failed' in context['flags']
+
+  def test_outside_every_transit_area(self) -> None:
+    session = _session(transit_payload={'features': []})
+    context = fetch_parcel_context(_ADDRESS, session=session, google_api_key='key')
+    assert context['transit']['near_transit'] is False
+    assert context['transit']['area_count'] == 0
 
   def test_zone_failure_is_flagged_and_none(self) -> None:
     session = _session(zone_payload=ConnectionError('zoning down'))

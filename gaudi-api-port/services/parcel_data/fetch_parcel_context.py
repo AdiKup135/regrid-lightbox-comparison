@@ -30,6 +30,9 @@ stages):
      situs attached by APN join. Runs in parallel with the zoning query.
   4. CA statewide zoning — district at the subject's representative point
      (ca_zoning_client).
+  5. CA HQ transit areas — is the subject within a half-mile of a major transit
+     stop or high-quality corridor (ca_transit_client); the 18 ft height gate
+     of the ADU setback engine. Same stage as zoning.
 
 Every degradation is a flag, never a silent guess — in particular a failed
 neighbour query yields ``neighbor_fetch_failed`` rather than an empty fabric
@@ -52,6 +55,7 @@ import requests
 from shapely import wkt as shapely_wkt
 
 from .arcgis_parcel_client import attach_joined_situs, fetch_parcels_at_point, fetch_parcels_in_envelope
+from .ca_transit_client import fetch_transit_at_point
 from .ca_zoning_client import fetch_zone_at_point
 from .census_geocoder_client import geographies_for_point
 from .county_registry import CountyConfig, county_for_fips, county_for_name, supported_counties
@@ -158,9 +162,10 @@ def fetch_parcel_context(address: str,
   # the two county-independent calls (Census containment — the slowest single
   # call — and statewide zoning) start together; the parcel point query fires
   # the moment containment lands, and neighbour discovery overlaps the rest.
-  with ThreadPoolExecutor(max_workers=2) as pool:
+  with ThreadPoolExecutor(max_workers=3) as pool:
     containment_future = pool.submit(geographies_for_point, lat, lng, session)
     zone_future = pool.submit(fetch_zone_at_point, lat, lng, session)
+    transit_future = pool.submit(fetch_transit_at_point, lat, lng, session)
     containment = containment_future.result()
     calls[0] += 1
 
@@ -175,6 +180,7 @@ def fetch_parcel_context(address: str,
     county = county_for_fips(containment.get('county_fips')) or county_for_name(containment.get('county_name'))
     if county is None:
       zone_future.result()
+      transit_future.result()
       return _error('unsupported_county',
                     'no parcel source for county %r; supported: %s'
                     % (containment.get('county_name'), ', '.join(supported_counties())))
@@ -186,9 +192,11 @@ def fetch_parcel_context(address: str,
     candidates = fetch_parcels_at_point(county, lat, lng, session=session)
     if candidates is None:
       zone_future.result()
+      transit_future.result()
       return _error('upstream', 'county parcel layer query failed')
     if not candidates:
       zone_future.result()
+      transit_future.result()
       return _error('no_parcel', 'no parcel contains the geocoded point for %r — the geocode may be '
                                  'non-rooftop or the point may fall in the right-of-way' % address)
     subject = candidates[0]
@@ -199,6 +207,7 @@ def fetch_parcel_context(address: str,
       subject_shape = shapely_wkt.loads(subject['boundary'])
     except Exception:
       zone_future.result()
+      transit_future.result()
       return _error('upstream', 'county fabric returned an unparseable subject boundary')
 
     # Stage 3, in parallel with the still-running zoning query: neighbours
@@ -211,12 +220,16 @@ def fetch_parcel_context(address: str,
     neighbors = neighbors_future.result()
     calls[0] += 1  # the zoning query
     zone_record = zone_future.result()
+    calls[0] += 1  # the transit query
+    transit = transit_future.result()
 
   zone: Optional[Dict[str, Any]] = None
   if zone_record is None:
     flags.append('zone_lookup_failed')
   else:
     zone = {'zone_code': zone_record['zone_code'], 'zone_type': zone_record.get('zone_type')}
+  if transit is None:
+    flags.append('transit_lookup_failed')
 
   place_name = containment.get('place_name')
   jurisdiction = place_name or (
@@ -244,6 +257,8 @@ def fetch_parcel_context(address: str,
       'last_updated': (zone_record or {}).get('date'),
     },
     'zone': zone,
+    # ADU height gate input (Gov. Code § 66321(b)(4)(B)); None when the lookup failed.
+    'transit': transit,
     'callCount': calls[0],
     'discovery': 'arcgis-envelope',
     'flags': flags,

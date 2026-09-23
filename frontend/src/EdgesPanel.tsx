@@ -47,6 +47,29 @@ interface EdgesApiResponse {
   droppedStubs?: number; // zoneomics only
   subject_street_name?: string | null; // opendata only (Google route)
   flags?: string[]; // opendata only (fetch-side degradation flags)
+  // opendata only: CA HQ Transit Areas at the subject point (18 ft height gate).
+  transit?: { near_transit: boolean; hqta_types: string[]; agencies: string[]; routes: string[]; area_count: number } | null;
+}
+
+/** POST /adu/evaluate response — Phase A of the setback engine (state track,
+ *  Gov. Code § 66323(a)(2)): the track, each edge's setback and the buildable
+ *  envelope. Off the state track there is no polygon (Phase B not built). */
+interface AduApiResponse {
+  phase: string;
+  track: 'state_66323' | 'local_66314';
+  track_reasons: string[];
+  state_height_limit_ft: number;
+  unit: { unit_size: number; unit_height_in_feet: number; near_transit: boolean | null; sb9_split: boolean; existing_detached_adu: boolean };
+  edges: Array<{ tag: string; setback_ft?: number; setback_basis?: string; flags: string[] }>;
+  setback_polygon: string | null;
+  setback_polygon_area_sqft: number | null;
+  flags: string[];
+  citations: string[];
+  // Transit block used for the height gate, and whether it came with the
+  // payload or the route looked it up (Zoneomics payloads carry none).
+  transit: EdgesApiResponse['transit'];
+  transit_source: 'payload' | 'lookup' | 'lookup_failed';
+  labeling: { front_rule_used: string; roads_namer: boolean; engine: string; flags: string[] };
 }
 
 /** POST /edges/label response: the PYTHON engine (the gaudi-api production
@@ -112,6 +135,68 @@ export default function EdgesPanel() {
   const [engine, setEngine] = useState<Engine>('python-server');
   const [source, setSource] = useState<DataSource>('opendata');
   const [engineInfo, setEngineInfo] = useState<string | null>(null);
+  // Phase A inputs — manual for now (gaudi-api has no unit height yet). Names
+  // follow Gaudi: EstimatorParameters.unit_size; unit_height_in_feet is new.
+  const [unitSize, setUnitSize] = useState('800');
+  const [unitHeight, setUnitHeight] = useState('16');
+  const [sb9Split, setSb9Split] = useState(false);
+  const [existingAdu, setExistingAdu] = useState(false);
+  const [adu, setAdu] = useState<AduApiResponse | null>(null);
+  const [aduError, setAduError] = useState<string | null>(null);
+  // CA HQ Transit Areas (Caltrans / Cal-ITP): the half-mile buffers the 18 ft
+  // height gate tests against, drawn around the subject so the lot can be
+  // read against them. Straight from the public FeatureServer (CORS-open).
+  const [transitFC, setTransitFC] = useState<FC>({ type: 'FeatureCollection', features: [] });
+  const [showTransit, setShowTransit] = useState(true);
+
+  const loadTransitAreas = async (lat: number, lng: number) => {
+    setTransitFC({ type: 'FeatureCollection', features: [] });
+    const d = 0.012; // ~0.8 mi box: the half-mile buffers around the lot, with margin
+    const params = new URLSearchParams({
+      geometry: `${lng - d},${lat - d},${lng + d},${lat + d}`, geometryType: 'esriGeometryEnvelope', inSR: '4326',
+      spatialRel: 'esriSpatialRelIntersects', outFields: 'hqta_type,hqta_details,agency_primary,route_id', outSR: '4326', f: 'geojson',
+    });
+    try {
+      const r = await fetch(`https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_HQ_Transit_Areas/FeatureServer/0/query?${params}`);
+      const fc = (await r.json()) as FC;
+      if (fc?.type === 'FeatureCollection') setTransitFC(fc);
+    } catch {
+      /* the map layer is a courtesy; the gate itself is evaluated server-side */
+    }
+  };
+
+  /** Phase A: POST the /edges payload + unit facts to the Python evaluator.
+   *  Always the opendata backend — it is the only host of the engine; the
+   *  payload shape is provider-agnostic. */
+  const runAdu = async (data: EdgesApiResponse) => {
+    setAdu(null);
+    setAduError(null);
+    void loadTransitAreas(data.subject.lat, data.subject.lng);
+    try {
+      const r = await fetch('/api/opendata/adu/evaluate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          subject: data.subject, neighbors: data.neighbors, meta: data.meta, zone: data.zone,
+          subject_street_name: data.subject_street_name ?? null, transit: data.transit ?? null,
+          unit_size: Number(unitSize), unit_height_in_feet: Number(unitHeight),
+          sb9_split: sb9Split, existing_detached_adu: existingAdu,
+        }),
+      });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d?.error ?? `HTTP ${r.status}`);
+      const a = d as AduApiResponse;
+      setAdu(a);
+      console.info(
+        `[adu-setbacks] phase ${a.phase} · track ${a.track} (${a.track_reasons.join(', ')}) · ` +
+        `unit ${a.unit.unit_size} sf / ${a.unit.unit_height_in_feet} ft · state height limit ${a.state_height_limit_ft} ft · ` +
+        `transit ${a.unit.near_transit === null ? 'unknown' : a.unit.near_transit ? 'yes' : 'no'} · ` +
+        `envelope ${a.setback_polygon_area_sqft ?? '—'} sf · flags: ${a.flags.join(', ') || '(none)'}`,
+      );
+    } catch (e) {
+      setAduError(e instanceof Error ? e.message : 'evaluate failed');
+    }
+  };
 
   /** Label `data` with the selected engine and push the result into state. */
   const runEngine = async (data: EdgesApiResponse, fixture?: string) => {
@@ -148,6 +233,7 @@ export default function EdgesPanel() {
       setEngineInfo('typescript engine (client, reference)');
     }
     setResult(labeled);
+    await runAdu(data);
     return labeled;
   };
 
@@ -171,6 +257,7 @@ export default function EdgesPanel() {
       setApi(fx);
       setRule(undefined);
       setResult(lr.result);
+      await runAdu(fx);
       setEngineInfo(`python engine · fixture ${name} · rule: ${lr.front_rule_used} · roads namer: ${lr.roads_namer ? 'on' : 'off (census only)'}`);
       setVs({ longitude: fx.subject.lng, latitude: fx.subject.lat, zoom: 17.5 });
     } catch (e) {
@@ -246,6 +333,25 @@ export default function EdgesPanel() {
     })),
   };
 
+  // FOR-438: one closed polygon offset from the parcel line, 1px red #FF3333,
+  // the band between parcel line and setback filled red at low opacity.
+  const setbackFC: FC = (() => {
+    if (!api || !adu?.setback_polygon) return { type: 'FeatureCollection', features: [] };
+    try {
+      const lot = parseWktOuterRing(api.subject.boundary);
+      const env = parseWktOuterRing(adu.setback_polygon);
+      return {
+        type: 'FeatureCollection',
+        features: [
+          { type: 'Feature', properties: { kind: 'band' }, geometry: { type: 'Polygon', coordinates: [[...lot, lot[0]], [...env, env[0]]] } },
+          { type: 'Feature', properties: { kind: 'envelope' }, geometry: { type: 'Polygon', coordinates: [[...env, env[0]]] } },
+        ],
+      };
+    } catch {
+      return { type: 'FeatureCollection', features: [] };
+    }
+  })();
+
   const onMapClick = (e: MapLayerMouseEvent) => {
     const f = e.features?.[0];
     if (f?.properties && typeof f.properties.idx === 'number') {
@@ -302,6 +408,25 @@ export default function EdgesPanel() {
                 }}
               />
               <Layer id="edge-hit" type="line" paint={{ 'line-color': '#000', 'line-opacity': 0, 'line-width': 18 }} />
+            </Source>
+          )}
+          {showTransit && transitFC.features.length > 0 && (
+            <Source id="hq-transit-areas" type="geojson" data={transitFC}>
+              <Layer id="hq-transit-fill" type="fill" paint={{ 'fill-color': ['match', ['get', 'hqta_type'], 'hq_corridor_bus', '#185FA5', '#7B3FA0'], 'fill-opacity': 0.1 }} />
+              <Layer id="hq-transit-line" type="line" paint={{ 'line-color': ['match', ['get', 'hqta_type'], 'hq_corridor_bus', '#185FA5', '#7B3FA0'], 'line-width': 1, 'line-dasharray': [3, 2] }} />
+              <Layer
+                id="hq-transit-label"
+                type="symbol"
+                minzoom={14}
+                layout={{ 'text-field': ['concat', ['get', 'agency_primary'], ' ', ['get', 'route_id']], 'text-size': 10, 'symbol-placement': 'line' }}
+                paint={{ 'text-color': '#185FA5', 'text-halo-color': '#fff', 'text-halo-width': 1 }}
+              />
+            </Source>
+          )}
+          {setbackFC.features.length > 0 && (
+            <Source id="adu-setbacks" type="geojson" data={setbackFC}>
+              <Layer id="adu-setback-band" type="fill" filter={['==', ['get', 'kind'], 'band']} paint={{ 'fill-color': '#FF3333', 'fill-opacity': 0.25 }} />
+              <Layer id="adu-setback-line" type="line" filter={['==', ['get', 'kind'], 'envelope']} paint={{ 'line-color': '#FF3333', 'line-width': 1 }} />
             </Source>
           )}
           {labelsFC.features.length > 0 && (
@@ -370,10 +495,41 @@ export default function EdgesPanel() {
             {loading ? 'Loading…' : 'Label edges'}
           </button>
         </div>
+        <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', fontSize: '0.8rem', flexWrap: 'wrap', color: '#444' }}>
+          <span style={{ color: '#888' }}>ADU:</span>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <code>unit_size</code>
+            <input id="unit_size" type="number" min={1} value={unitSize} onChange={(e) => setUnitSize(e.target.value)} style={{ width: 64, padding: '0.2rem 0.4rem', border: '1px solid #ccc', borderRadius: 4 }} /> sf
+          </label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <code>unit_height_in_feet</code>
+            <input id="unit_height_in_feet" type="number" min={1} step={0.5} value={unitHeight} onChange={(e) => setUnitHeight(e.target.value)} style={{ width: 56, padding: '0.2rem 0.4rem', border: '1px solid #ccc', borderRadius: 4 }} /> ft
+          </label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <input id="sb9_split" type="checkbox" checked={sb9Split} onChange={(e) => setSb9Split(e.target.checked)} /> SB 9 split parcel
+          </label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <input id="existing_detached_adu" type="checkbox" checked={existingAdu} onChange={(e) => setExistingAdu(e.target.checked)} /> detached ADU already on lot
+          </label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }} title="Caltrans / Cal-ITP CA HQ Transit Areas — half-mile buffers around major transit stops (purple) and HQ bus corridors (blue)">
+            <input id="show_transit" type="checkbox" checked={showTransit} onChange={(e) => setShowTransit(e.target.checked)} /> transit buffers{transitFC.features.length > 0 && ` (${transitFC.features.length})`}
+          </label>
+          {api && <button onClick={() => runAdu(api)} disabled={loading} style={{ padding: '0.2rem 0.6rem', borderRadius: 4, border: '1px solid #24312B', background: '#fff', color: '#24312B', cursor: 'pointer', fontSize: '0.78rem' }}>Re-evaluate</button>}
+        </div>
         {error && <div style={{ color: '#CE3A2E', fontSize: '0.85rem' }}>{error}</div>}
+        {aduError && <div style={{ color: '#CE3A2E', fontSize: '0.85rem' }}>setbacks: {aduError}</div>}
         {api && result && (
           <>
             {engineInfo && <div style={{ fontSize: '0.78rem', color: '#24312B', background: '#eef2ee', borderRadius: 6, padding: '0.3rem 0.6rem' }}>{engineInfo}</div>}
+            {adu && (
+              <div style={{ fontSize: '0.78rem', color: adu.track === 'state_66323' ? '#2F6B4F' : '#9A6A17', background: adu.track === 'state_66323' ? '#E6F0EA' : '#F7EEDC', borderRadius: 6, padding: '0.3rem 0.6rem' }}>
+                <strong>{adu.track === 'state_66323' ? 'State track §66323(a)(2)' : 'Local track §66314 — Phase B not built'}</strong>
+                {' '}· {adu.track_reasons.join(', ')} · state height limit {adu.state_height_limit_ft} ft
+                {' '}· transit: {adu.unit.near_transit === null ? 'lookup failed (16 ft only)' : adu.unit.near_transit ? `within ½ mi (${adu.transit?.routes?.join(', ') || 'HQ area'})` : 'none within ½ mi'}{adu.transit_source === 'lookup' && ' · looked up server-side'}
+                {adu.setback_polygon_area_sqft != null && <> · buildable envelope {Math.round(adu.setback_polygon_area_sqft).toLocaleString()} sf</>}
+                {adu.flags.length > 0 && <> · flags: {adu.flags.join(', ')}</>}
+              </div>
+            )}
             <div style={{ fontSize: '0.8rem', color: '#666' }}>
               {api.meta?.city_name ?? '?'} · zone {api.zone?.zone_code ?? '?'} · APN {api.subject.apn} · front rule: {rule ?? 'default (address_street)'} ·{' '}
               {api.callCount} API calls · discovery {api.discovery ?? 'radius'}
@@ -404,6 +560,9 @@ export default function EdgesPanel() {
                     </span>
                   )}
                   <span style={{ flex: 1 }}>{abutsText(e)}</span>
+                  {adu?.edges[idx]?.setback_ft != null && (
+                    <span title={adu.edges[idx].setback_basis} style={{ color: '#FF3333', fontVariantNumeric: 'tabular-nums', fontWeight: 600 }}>→ {adu.edges[idx].setback_ft} ft</span>
+                  )}
                   <span style={{ color: '#888', fontVariantNumeric: 'tabular-nums' }}>{Math.round(e.lengthFt)} ft</span>
                 </button>
               ))}
@@ -415,6 +574,9 @@ export default function EdgesPanel() {
                 <div>length: {result.edges[selected].lengthFt} ft</div>
                 <div>basis: {result.edges[selected].basis} · confidence: {result.edges[selected].confidence}</div>
                 {result.edges[selected].flags.length > 0 && <div>flags: {result.edges[selected].flags.join(', ')}</div>}
+                {adu?.edges[selected]?.setback_ft != null && (
+                  <div>setback: <strong style={{ color: '#FF3333' }}>{adu.edges[selected].setback_ft} ft</strong> — {adu.edges[selected].setback_basis}</div>
+                )}
               </div>
             )}
           </>

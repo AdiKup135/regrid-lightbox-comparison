@@ -19,6 +19,7 @@ import os
 
 from flask import Flask, g, jsonify
 
+from routes.adu_setbacks import adu_setbacks_bp
 from routes.parcel_edges import parcel_edges_bp
 
 _ENV_FILE = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '.env'))
@@ -54,6 +55,7 @@ class _PlainFxLogger:
 def create_app() -> Flask:
   app = Flask(__name__)
   app.register_blueprint(parcel_edges_bp)
+  app.register_blueprint(adu_setbacks_bp)
 
   @app.before_request
   def _bind_context() -> None:
