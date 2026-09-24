@@ -104,7 +104,7 @@
   <header>
     <div>
       <h1>ADU Setback Decision Tree</h1>
-      <div class="status">as of 2026-09-23 · Q1–Q2 assumed · Q3, Q4, Q2c decided · Q5, Q6 pending · Phase A prototyped in site repo · B, C next</div>
+      <div class="status">as of 2026-09-24 · Q1–Q2 assumed · Q3, Q4 decided · counsel answers on front / second front / measurement in · Q5, Q6 pending · Phase A prototyped in site repo · B, C next</div>
     </div>
     <div class="tabs" role="tablist" aria-label="Diagram version">
       <button id="tab-lean" role="tab" aria-selected="true" aria-controls="fig">Lean — decisions made</button>
@@ -142,10 +142,11 @@
       <ul>
         <li><span class="chip flag">Q1 · assumed yes</span><span>The lot is eligible. Detached, new construction only — conversions, attached ADUs and JADUs are not FormX products.</span></li>
         <li><span class="chip flag">Q2 · assumed yes</span><span>A published ADU ordinance is in effect; no status lookup. Sources of truth: the codified ordinance and Gov. Code §§ 66310–66342 read with the HCD Handbook (Mar 2026). <strong>Rejected as sources:</strong> HCD review letters, Zoneomics data.</span></li>
-        <li><span class="chip done">Q3</span><span>Size fork at 800 sf of interior livable space. Height: ≤ 16 ft anywhere; 16–18 ft inside a CA HQ Transit Area; &gt; 18 ft → local track. The 20 ft roof-pitch allowance is left to a human override in the Gaudi UI. Both unit inputs manual and required; names follow Gaudi: <code>unit_size</code>, <code>unit_height_in_feet</code>.</span></li>
-        <li><span class="chip done">Phase A</span><span>Prototyped in the site repo (2026-09-23): <code>services/compute/adu_setbacks/</code>, <code>services/parcel_data/ca_transit_client.py</code>, <code>POST /adu/evaluate</code>, debug-UI inputs and the FOR-438 red band. 126 unit tests green; verified on a live Sunnyvale lot.</span></li>
+        <li><span class="chip done">Q3</span><span>Size fork at 800 sf, measured as the footprint incl. exterior walls, excl. decks (counsel 2026-09-24). Height, top of slab to top of roof: ≤ 16 ft anywhere; 16–18 ft inside a CA HQ Transit Area; &gt; 18 ft → local track. The 20 ft roof-pitch allowance is left to a human override in the Gaudi UI. Both unit inputs manual and required; names follow Gaudi: <code>unit_size</code>, <code>unit_height_in_feet</code>.</span></li>
+        <li><span class="chip done">Phase A</span><span>Prototyped in the site repo (2026-09-23): <code>services/compute/adu_setbacks/</code>, <code>services/parcel_data/ca_transit_client.py</code>, <code>POST /adu/evaluate</code>, debug-UI inputs and the FOR-438 red band. 141 unit tests green; verified on a live Sunnyvale lot.</span></li>
+        <li><span class="chip done">Front</span><span>State track front = the jurisdiction's default front setback for housing (counsel 2026-09-24): §66323(a)(2) fixes side and rear only, so the local front number stands. One field per jurisdiction, <code>residential_front_setback</code>, extracted for all 28 on 2026-09-24 from the code tables (base district value + a per-district table matched on the parcel's zone code; 13 × 20 ft, 6 × 25 ft, 4 × 15 ft, Atherton 60, Portola Valley 50, Los Altos Hills 40, Fairfax 10, Sausalito 0). Unknown jurisdiction → no value, flag <code>front_setback_missing</code>. <strong>Rejected:</strong> front = 0 ft.</span></li>
         <li><span class="chip done">Q4</span><span>Inside the local track, a unit ≤ 800 sf and ≤ 16 ft is shielded: front setback, coverage, FAR and open space cannot preclude it (§66321(b)(3)).</span></li>
-        <li><span class="chip done">Street side</span><span>A <code>street_side</code> edge is a side (state 4 ft cap applies) unless the jurisdiction is <code>all_fronts</code>, where the labeler's <code>second_front</code> flag makes it a front. No per-jurisdiction field needed.</span></li>
+        <li><span class="chip done">Street side</span><span>A <code>street_side</code> edge is a side (state 4 ft cap applies) unless the jurisdiction is <code>all_fronts</code>, where the labeler's <code>second_front</code> flag marks it. Counsel 2026-09-24: on the state track the address street is <em>the</em> front (local value) and the second frontage takes the state 4 ft. No pending flag any more.</span></li>
         <li><span class="chip done">Tracks</span><span>Envelopes are computed as packages — no cherry-picking provisions across the state and local tracks. Build order: Phase A state track → Phase B local track → Phase C choice.</span></li>
       </ul>
     </section>
@@ -153,8 +154,7 @@
       <h2>Still to decide</h2>
       <ul>
         <li><span class="chip pending">Q2c</span><span>Per-provision preemption: local value vs. state rule for each edge, computed from the corpus.</span></li>
-        <li><span class="chip pending">Q3</span><span>State track, <code>all_fronts</code> jurisdictions only (Hillsborough, Sunnyvale, Contra Costa County): does a <code>second_front</code> edge get 0 ft under §66323, or the local front? Asked Hila. Interim: one constant (0 ft) + flag <code>second_front_pending_counsel</code>; no soft lines.</span></li>
-        <li><span class="chip pending">Hila</span><span>Do planning counters measure transit walking distance, or accept the HQTA buffers? (FOR-1422)</span></li>
+        <li><span class="chip pending">Hila</span><span>Do planning counters measure transit walking distance, or accept the HQTA buffers? (FOR-1422). Verified 2026-09-24: buffers are 0.5 mi; major stops (rail, BRT, bus, ferry) and HQ bus corridors are all in the layer.</span></li>
         <li><span class="chip pending">Q4</span><span>Does the 800 sf shield protect a second detached unit, or is it spent once per lot?</span></li>
         <li><span class="chip pending">Q5</span><span>Overlays: coastal LCP setbacks, fire/building-code separation, recorded easements, creek/riparian setbacks.</span></li>
         <li><span class="chip pending">Q6</span><span>How to present the owner's choice when both tracks are open — both envelopes, or the larger buildable area.</span></li>
@@ -197,7 +197,7 @@
       { id: 'q3', kind: 'decision', x: 230, y: 352, w: 320, h: 86,
         lines: [['b', 'Q3 · Does the unit fit §66323(a)(2)?'], ['', 'detached · new construction · first on the lot'], ['c', 'unit_size ≤ 800 sf'], ['c', 'unit_height_in_feet ≤ 16 ft (18 near transit)']] },
       { id: 'st', kind: 'state', x: 40, y: 496, w: 320, h: 122,
-        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: no setback may be imposed'], ['', 'street_side = side (4 ft), unless all_fronts → front'], ['m', 'no coverage, FAR, lot size or design standards']] },
+        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: the jurisdiction’s front setback for housing'], ['', 'street_side = side (4 ft) · all_fronts: 2nd frontage 4 ft'], ['m', 'no coverage, FAR, lot size or design standards']] },
       { id: 'lo', kind: 'local', x: 420, y: 496, w: 320, h: 88,
         lines: [['b', 'Local track · §66314  →  Phase B'], ['', 'ordinance values per edge, clamped (Q2c):'], ['m', 'side/rear ≤ 4 ft · height ≥ state floor · size ≥ 850/1,000']] },
       { id: 'q4', kind: 'decision', x: 420, y: 630, w: 320, h: 52,
@@ -254,15 +254,15 @@
       { id: 'q2n', kind: 'plain', x: 420, y: 392, w: 580, h: 64,
         lines: [['b', 'Sources of truth: the codified ordinance + state law'], ['', 'Gov. Code §§ 66310–66342 read with the HCD Handbook (Mar 2026) · rejected: HCD review letters, Zoneomics'], ['c', 'full-ordinance corpus, 3 tiers → FOR-1418']] },
       { id: 'q3', kind: 'decision', x: 40, y: 448, w: 320, h: 86,
-        lines: [['b', 'Q3 · Does the unit fit §66323(a)(2)?'], ['', 'detached · new construction · first on the lot'], ['c', 'unit_size ≤ 800 sf   (manual, required)'], ['c', 'unit_height_in_feet   (manual, required)']] },
+        lines: [['b', 'Q3 · Does the unit fit §66323(a)(2)?'], ['', 'detached · new construction · first on the lot'], ['c', 'unit_size ≤ 800 sf · footprint incl. walls, excl. decks'], ['c', 'unit_height_in_feet · top of slab to top of roof']] },
       { id: 'h1', kind: 'plain', x: 420, y: 470, w: 580, h: 44,
         lines: [['b', '≤ 16 ft → state track anywhere · 16–18 ft → iff inside a CA HQ Transit Area'], ['c', 'Caltrans/Cal-ITP layer · existing stops only · transit_straight_line_buffer · FOR-1422']] },
       { id: 'h2', kind: 'assume', x: 420, y: 520, w: 580, h: 56,
         lines: [['b', '> 18 ft → local track. The 20 ft roof-pitch allowance is NOT modelled'], ['c', 'humans adjust via a setback override field in the Gaudi UI'], ['m', 'transit lookup failed → only 16 ft granted, flag transit_lookup_failed']] },
       { id: 'st', kind: 'state', x: 40, y: 640, w: 320, h: 122,
-        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: no setback may be imposed'], ['', 'street_side = side (4 ft), unless all_fronts → front'], ['m', 'no coverage, FAR, lot size or design standards']] },
-      { id: 'stn', kind: 'pending', x: 40, y: 774, w: 320, h: 40,
-        lines: [['b', 'open (all_fronts): second_front under §66323'], ['m', 'asked Hila · interim 0 ft + flag, no soft lines']] },
+        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: the jurisdiction’s front setback for housing'], ['', 'street_side = side (4 ft) · all_fronts: 2nd frontage 4 ft'], ['m', 'no coverage, FAR, lot size or design standards']] },
+      { id: 'stn', kind: 'plain', x: 40, y: 774, w: 320, h: 40,
+        lines: [['b', 'front value: residential_front_setback per jurisdiction (28 extracted)'], ['m', 'per-district table on the zone code · unknown city → flag, UI asks']] },
       { id: 'lo', kind: 'local', x: 420, y: 640, w: 320, h: 88,
         lines: [['b', 'Local track · §66314  →  Phase B'], ['', 'ordinance values per edge, clamped (Q2c):'], ['m', 'side/rear ≤ 4 ft · height ≥ state floor · size ≥ 850/1,000']] },
       { id: 'lon', kind: 'plain', x: 760, y: 640, w: 240, h: 88,

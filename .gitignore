@@ -6,3 +6,4 @@ dist
 .cursor
 .vite
 app.yaml
+.pydeps

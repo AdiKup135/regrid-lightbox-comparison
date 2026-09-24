@@ -12,10 +12,13 @@ from typing import Dict, List
 from shapely import from_wkt
 
 from services.compute.adu_setbacks.evaluate import evaluate_adu
-from services.compute.adu_setbacks.offset import FLAG_CONCAVE_LOT, setback_polygon
+from services.compute.adu_setbacks.offset import FLAG_CONCAVE_LOT, FLAG_ENVELOPE_MISSING_VALUE, setback_polygon
 from services.compute.adu_setbacks.state_track import (
-  FLAG_SECOND_FRONT_PENDING,
-  SECOND_FRONT_INTERIM_FT,
+  FLAG_FRONT_SETBACK_MANUAL,
+  FLAG_FRONT_SETBACK_MISSING,
+  FRONT_SOURCE_DB,
+  FRONT_SOURCE_MANUAL,
+  FrontSetback,
   state_track_setbacks,
 )
 from services.compute.adu_setbacks.track import UnitFacts
@@ -50,6 +53,10 @@ _INTERIOR = [_edge('front', _D, _A), _edge('side', _A, _B), _edge('rear', _B, _C
 _CORNER = [_edge('front', _D, _A), _edge('side', _A, _B), _edge('rear', _B, _C), _edge('street_side', _C, _D)]
 
 
+# A jurisdiction whose code says 20 ft in front of a house.
+_FRONT_20 = FrontSetback(20.0, FRONT_SOURCE_DB, 'Test MC 1.2.3')
+
+
 def _area_ft(wkt: str) -> float:
   ring = [_PROJ.to_ft((x, y)) for x, y in from_wkt(wkt).exterior.coords]
   from shapely.geometry import Polygon
@@ -57,39 +64,58 @@ def _area_ft(wkt: str) -> float:
 
 
 class TestStateTrackValues:
-  def test_interior_lot(self) -> None:
-    setbacks, flags = state_track_setbacks(_INTERIOR)
-    assert [s.setback_ft for s in setbacks] == [0.0, 4.0, 4.0, 4.0]
+  def test_interior_lot_front_is_the_local_value(self) -> None:
+    setbacks, flags = state_track_setbacks(_INTERIOR, _FRONT_20)
+    assert [s.setback_ft for s in setbacks] == [20.0, 4.0, 4.0, 4.0]
+    assert 'Test MC 1.2.3' in setbacks[0].basis
     assert flags == []
 
+  def test_front_without_a_local_value_is_none_and_flagged(self) -> None:
+    setbacks, flags = state_track_setbacks(_INTERIOR)
+    assert [s.setback_ft for s in setbacks] == [None, 4.0, 4.0, 4.0]
+    assert flags == [FLAG_FRONT_SETBACK_MISSING]
+
+  def test_manual_front_value_is_flagged_as_manual(self) -> None:
+    setbacks, flags = state_track_setbacks(_INTERIOR, FrontSetback(15.0, FRONT_SOURCE_MANUAL))
+    assert setbacks[0].setback_ft == 15.0
+    assert flags == [FLAG_FRONT_SETBACK_MANUAL]
+
   def test_street_side_is_a_side(self) -> None:
-    setbacks, flags = state_track_setbacks(_CORNER)
+    setbacks, flags = state_track_setbacks(_CORNER, _FRONT_20)
     assert setbacks[3].setback_ft == 4.0
     assert 'side' in setbacks[3].basis
     assert flags == []
 
-  def test_second_front_takes_the_interim_value_and_flags(self) -> None:
+  def test_second_front_takes_the_state_4_ft(self) -> None:
     edges = list(_CORNER)
     edges[3] = _edge('street_side', _C, _D, flags=['second_front'])
-    setbacks, flags = state_track_setbacks(edges)
-    assert setbacks[3].setback_ft == SECOND_FRONT_INTERIM_FT
-    assert FLAG_SECOND_FRONT_PENDING in flags
+    setbacks, flags = state_track_setbacks(edges, _FRONT_20)
+    assert setbacks[0].setback_ft == 20.0  # the address street keeps the local front
+    assert setbacks[3].setback_ft == 4.0
+    assert 'second_front' in setbacks[3].basis
+    assert flags == []
 
 
 class TestOffset:
   def test_rectangle_interior_lot_area(self) -> None:
-    setbacks, _ = state_track_setbacks(_INTERIOR)
+    setbacks, _ = state_track_setbacks(_INTERIOR, _FRONT_20)
     wkt, area, flags = setback_polygon(_RECT_WKT, _INTERIOR, setbacks, *_ORIGIN)
-    # 4 ft off the rear and both sides, nothing off the front: 96 × 52.
-    assert abs(area - 96 * 52) < 1.0
-    assert abs(_area_ft(wkt) - 96 * 52) < 2.0  # WKT round-trip, 9 decimals
+    # 20 ft off the front, 4 ft off the rear and both sides: 76 × 52.
+    assert abs(area - 76 * 52) < 1.0
+    assert abs(_area_ft(wkt) - 76 * 52) < 2.0  # WKT round-trip, 9 decimals
     assert flags == []
 
+  def test_missing_front_value_is_drawn_at_zero_and_flagged(self) -> None:
+    setbacks, _ = state_track_setbacks(_INTERIOR)
+    _, area, flags = setback_polygon(_RECT_WKT, _INTERIOR, setbacks, *_ORIGIN)
+    assert abs(area - 96 * 52) < 1.0
+    assert flags == [FLAG_ENVELOPE_MISSING_VALUE]
+
   def test_rectangle_corner_lot_area(self) -> None:
-    setbacks, _ = state_track_setbacks(_CORNER)
+    setbacks, _ = state_track_setbacks(_CORNER, _FRONT_20)
     _, area, _ = setback_polygon(_RECT_WKT, _CORNER, setbacks, *_ORIGIN)
     # street_side is a side: same envelope as the interior lot.
-    assert abs(area - 96 * 52) < 1.0
+    assert abs(area - 76 * 52) < 1.0
 
   def test_concave_lot_is_flagged(self) -> None:
     # An L-shaped lot: the rectangle with its NE 40 × 30 corner removed.
@@ -97,7 +123,7 @@ class TestOffset:
     edges = [_edge('front', _D, _A), _edge('side', _A, _B), _edge('rear', _B, (100.0, 30.0)),
              _edge('side', (100.0, 30.0), (60.0, 30.0)), _edge('rear', (60.0, 30.0), (60.0, 60.0)),
              _edge('side', (60.0, 60.0), _D)]
-    setbacks, _ = state_track_setbacks(edges)
+    setbacks, _ = state_track_setbacks(edges, _FRONT_20)
     wkt, area, flags = setback_polygon(_wkt(pts), edges, setbacks, *_ORIGIN)
     assert FLAG_CONCAVE_LOT in flags
     assert wkt is not None and 0 < area < 100 * 60 - 40 * 30
@@ -106,12 +132,20 @@ class TestOffset:
 class TestEvaluate:
   def test_state_track_end_to_end(self) -> None:
     unit = UnitFacts(unit_size=750, unit_height_in_feet=16, near_transit=False)
-    result = evaluate_adu(unit, _INTERIOR, _RECT_WKT, *_ORIGIN).to_dict()
+    result = evaluate_adu(unit, _INTERIOR, _RECT_WKT, *_ORIGIN, front=_FRONT_20).to_dict()
     assert result['track'] == 'state_66323'
-    assert [e['setback_ft'] for e in result['edges']] == [0.0, 4.0, 4.0, 4.0]
+    assert [e['setback_ft'] for e in result['edges']] == [20.0, 4.0, 4.0, 4.0]
+    assert result['front_setback'] == {'value_ft': 20.0, 'source': 'jurisdiction_db', 'citation': 'Test MC 1.2.3'}
     assert result['setback_polygon'].startswith('POLYGON')
-    assert abs(result['setback_polygon_area_sqft'] - 96 * 52) < 1.0
+    assert abs(result['setback_polygon_area_sqft'] - 76 * 52) < 1.0
     assert 'phase_b_not_built' not in result['flags']
+
+  def test_state_track_without_a_front_value(self) -> None:
+    unit = UnitFacts(unit_size=750, unit_height_in_feet=16, near_transit=False)
+    result = evaluate_adu(unit, _INTERIOR, _RECT_WKT, *_ORIGIN).to_dict()
+    assert result['edges'][0]['setback_ft'] is None
+    assert result['front_setback']['source'] == 'missing'
+    assert FLAG_FRONT_SETBACK_MISSING in result['flags'] and FLAG_ENVELOPE_MISSING_VALUE in result['flags']
 
   def test_local_track_returns_no_polygon(self) -> None:
     unit = UnitFacts(unit_size=1000, unit_height_in_feet=16, near_transit=False)

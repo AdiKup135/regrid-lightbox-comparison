@@ -18,6 +18,22 @@
         "rule": "designated",
         "source": "code",
         "citation": "LMC 6-566(b)(2) - principal frontage per district; secondary frontage 4 ft for Class C ADUs"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "LMC § 6-710 (R-6); the same 20 ft in R-10, R-12, R-15; 25 ft in R-20, R-40, R-65",
+        "by_district": {
+          "R-6": 20,
+          "R-10": 20,
+          "R-12": 20,
+          "R-15": 20,
+          "R-20": 25,
+          "R-40": 25,
+          "R-65": 25
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "lafayette/sf-district-standards"
       }
     },
     {
@@ -33,6 +49,19 @@
         "rule": "designated",
         "source": "code",
         "citation": "MMC 8.68.090 - front lot line = principal street"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "MMC § 8.24.060 table: SFR 3 DU/acre 20 ft; SFR 1 and 2 DU/acre 25 ft",
+        "by_district": {
+          "SFR 3 DU/acre": 20,
+          "SFR 2 DU/acre": 25,
+          "SFR 1 DU/acre": 25
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "moraga/sf-district-standards",
+        "note": "district keys are the code table headings, not zoning-map codes"
       }
     },
     {
@@ -48,6 +77,25 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "OMC 17.4.8 - shorter frontage is generally the front"
+      },
+      "residential_front_setback": {
+        "value_ft": 25,
+        "source": "code",
+        "citation": "OMC Schedule 17.4.2(A): RVL-E, RVL, RL-40, RL-20 25 ft; RL-15, RL-12, RL-10, RL-6 20 ft; RM 15 ft",
+        "by_district": {
+          "RVL-E": 25,
+          "RVL": 25,
+          "RL-40": 25,
+          "RL-20": 25,
+          "RL-15": 20,
+          "RL-12": 20,
+          "RL-10": 20,
+          "RL-6": 20,
+          "RM": 15
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "orinda/sf-district-standards",
+        "note": "default = RL-20 (sample zone at the query point)"
       }
     },
     {
@@ -63,6 +111,18 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "TC 17.010.110(B) (Ord. 885, 11-1-2023) - \"The front of a corner lot is the narrowest dimension of the lot with street frontage\"; this is the operative front declaration. 17.010.120(B) refers to a \"corner side yard\", confirming one front plus one street side. Street-side treatment: 17.040.020(D) gives all street frontage of any corner lot a 10 ft setback, which equals the 10 ft front yard setback in 17.040.020(A), so the numeric outcome is identical either way - this entry was previously labeled all_fronts on the strength of 17.040.020(D), but that is a setback rule, not a front declaration. Ch. 17.008 defines CORNER LOT as \"a lot in the junction of and fronting on two or more intersecting streets\" (locational, not operative) and never defines \"front lot line\"; 17.010.110(B) fills that gap. Caveat: 17.040.020 preamble is ambiguously drafted (\"no accessory structure or building...\") and per-district primary-dwelling setbacks were not traced."
+      },
+      "residential_front_setback": {
+        "value_ft": 10,
+        "source": "code",
+        "citation": "FTC § 17.076.070(A)(1) (RS-7.5): front + rear combined ≥ 30 ft, neither < 10 ft; § 17.080.070 (RS-6): combined ≥ 25 ft, neither < 6 ft",
+        "by_district": {
+          "RS-7.5": 10,
+          "RS-6": 6
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "fairfax/sf-district-standards",
+        "note": "combined front+rear rule: the number is the front minimum, the rear absorbs the rest"
       }
     },
     {
@@ -78,6 +138,17 @@
         "rule": "designated",
         "source": "code",
         "citation": "MMC 20.90.030(A)(12) - primary frontage by driveway/home orientation; remaining street frontage is the side yard"
+      },
+      "residential_front_setback": {
+        "value_ft": 15,
+        "source": "code",
+        "citation": "MVMC § 20.16.040(C) (RS districts): exterior yards 15 ft",
+        "by_district": {
+          "RS": 15
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "mill-valley/sf-district-standards",
+        "note": "Mill Valley sets one exterior-yard number for all RS districts"
       }
     },
     {
@@ -93,6 +164,19 @@
         "rule": "owner_elected",
         "source": "code",
         "citation": "SMC 10.88 - owner elects the front street line with Director concurrence"
+      },
+      "residential_front_setback": {
+        "value_ft": 0,
+        "source": "code",
+        "citation": "SMC § 10.22.040 Table 10.22-2: front 0 ft in R-1-6, R-1-8, R-1-20; note 8: 10 ft where designated on the zoning map (§ 10.40.070E.4 special setback lines)",
+        "by_district": {
+          "R-1-6": 0,
+          "R-1-8": 0,
+          "R-1-20": 0
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "sausalito/sf-district-standards",
+        "note": "the code really says 0 ft; check the zoning map for a 10 ft special setback line"
       }
     },
     {
@@ -108,6 +192,30 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "NMC 17.06.030 - on a corner lot the front line is the shorter of any two adjacent street lot lines"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "NMC § 17.08.030 table: RS-10, RS-7, RS-5, RS-4, RM 20 ft; RS-40, RS-20 30 ft; block-average rule (note 3) may lower it",
+        "by_district": {
+          "RS-40": 30,
+          "RS-20": 30,
+          "RI-20": 30,
+          "RS-10": 20,
+          "RI-10": 20,
+          "RS-7": 20,
+          "RI-7": 20,
+          "RT-7": 20,
+          "RS-5": 20,
+          "RI-5": 20,
+          "RT-5": 20,
+          "RS-4": 20,
+          "RI-4": 20,
+          "RT-4": 20,
+          "RM": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "napa/sf-district-standards"
       }
     },
     {
@@ -123,6 +231,17 @@
         "rule": "address_street",
         "source": "code",
         "citation": "AMC 17.52.040(F)(7) - front designated by the address street on corner/double-frontage lots"
+      },
+      "residential_front_setback": {
+        "value_ft": 60,
+        "source": "code",
+        "citation": "AMC § 17.32.040(D)(1) (R-1A): 60 ft; lots of record before Ord. 146 (1946) under 200 ft deep: 30 % of depth, min 30 ft",
+        "by_district": {
+          "R-1A": 60,
+          "R-1B": 60
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "atherton/sf-district-standards"
       }
     },
     {
@@ -138,6 +257,15 @@
         "rule": "all_fronts",
         "source": "code",
         "citation": "HMC 17.24.020(A) - 25 ft street-line setback on every street frontage; no front concept"
+      },
+      "residential_front_setback": {
+        "value_ft": 25,
+        "source": "code",
+        "citation": "HMC § 17.24.020(A): 25 ft street-line setback area; § 17.24.020(D): no dwelling within 50 ft of the right-of-way centerline",
+        "by_district": {},
+        "extracted": "2026-09-24",
+        "corpus_doc": "hillsborough/sf-district-standards",
+        "note": "Hillsborough sets setbacks by topic, one number for every lot"
       }
     },
     {
@@ -153,6 +281,22 @@
         "rule": "owner_elected",
         "source": "code",
         "citation": "MPMC 16.04.405 - owner may elect the front lot line on corner lots"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "MPMC §§ 16.10.030, 16.12.030, 16.14.030, 16.16.030, 16.17.030 (R-E, R-E-S, R-1-S, R-1-U, R-1-U (LM)): 20 ft front",
+        "by_district": {
+          "R-E": 20,
+          "R-E-S": 20,
+          "R-1-S": 20,
+          "R-1-S (FG)": 20,
+          "R-1-U": 20,
+          "R-1-U (LM)": 20,
+          "RE": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "menlo-park/sf-district-standards"
       }
     },
     {
@@ -168,6 +312,25 @@
         "rule": "owner_elected",
         "source": "code",
         "citation": "PVMC 18.04.350 - owner may elect any street parcel line as front, with town planner concurrence; flag lots: line nearest and most nearly parallel to the street"
+      },
+      "residential_front_setback": {
+        "value_ft": 50,
+        "source": "code",
+        "citation": "PVMC § 18.48.010 Table 1: 1 A and larger combining districts 50 ft; 7.5 M, 15 M, 20 M 20 ft",
+        "by_district": {
+          "1A": 50,
+          "2A": 50,
+          "2.5A": 50,
+          "3.5A": 50,
+          "5A": 50,
+          "7.5A": 50,
+          "7.5M": 20,
+          "15M": 20,
+          "20M": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "portola-valley/sf-district-standards",
+        "note": "zone codes carry the combining district after the slash, e.g. R-E/3.5A"
       }
     },
     {
@@ -183,6 +346,18 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "SCMC 18.41.020 - corner lot front = the shorter lot line abutting a street; flag lots: interior line nearest and most parallel to the access street"
+      },
+      "residential_front_setback": {
+        "value_ft": 15,
+        "source": "code",
+        "citation": "SCMC Table 18.04.030: RS-6 15 ft (1st story) / 19 ft (2nd story); RS-3 20 ft",
+        "by_district": {
+          "RS-6": 15,
+          "RS-3": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "san-carlos/sf-district-standards",
+        "note": "RS-6 second story 19 ft"
       }
     },
     {
@@ -198,6 +373,18 @@
         "rule": "owner_elected",
         "source": "code",
         "citation": "SMMC 27.04.300(a) - on a corner lot the owner may elect either street property line as the front; through lots: both street lines are fronts (27.04.275(d))"
+      },
+      "residential_front_setback": {
+        "value_ft": 15,
+        "source": "code",
+        "citation": "SMMC § 27.18.070(a): R1-B and R1-C 15 ft; R1-A 25 ft; garages 20 ft (b)",
+        "by_district": {
+          "R1-B": 15,
+          "R1-C": 15,
+          "R1-A": 25
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "san-mateo/sf-district-standards"
       }
     },
     {
@@ -213,6 +400,25 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "County zoning Def. 80 - front lot line = the narrowest lot frontage"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "SMC Ord. Code S combining districts: §§ 8.158.050 (S-50), 8.166 (S-72), 8.170.050 (S-73), 8.182 (S-81), 8.190 (S-83), 8.202 (S-92), 8.204 (S-93), 8.240 (S-108): 20 ft; RH § 8.110: 20 ft",
+        "by_district": {
+          "S-50": 20,
+          "S-72": 20,
+          "S-81": 20,
+          "S-83": 20,
+          "S-92": 20,
+          "S-93": 20,
+          "S-108": 20,
+          "RH": 20,
+          "S-73": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "san-mateo-county/sf-district-standards",
+        "note": "R-1 itself (Ch. 8.16) sets no yards; the S district after the slash does"
       }
     },
     {
@@ -228,6 +434,19 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "LAMC 14.02.010 Lot line - corner lot front = shortest dimension fronting the street; either line allowed only if both remain conforming; flag lots: interior line nearest and most parallel to the access street"
+      },
+      "residential_front_setback": {
+        "value_ft": 25,
+        "source": "code",
+        "citation": "LAMC § 14.06.080 (R1-10) 25 ft; § 14.08.080 (R1-H) 30 ft; § 14.10.080 (R1-20) 30 ft; § 14.12.080 (R1-40) 50 ft",
+        "by_district": {
+          "R1-10": 25,
+          "R1-H": 30,
+          "R1-20": 30,
+          "R1-40": 50
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "los-altos/sf-district-standards"
       }
     },
     {
@@ -243,6 +462,17 @@
         "rule": "designated",
         "source": "code",
         "citation": "LAHMC 10-1.505(c)(2) - Planning Commission designates the 40-ft street on multi-street lots"
+      },
+      "residential_front_setback": {
+        "value_ft": 40,
+        "source": "code",
+        "citation": "LAHMC § 10-1.505(c)(1) (R-A): 40 ft from the street right-of-way or access easement",
+        "by_district": {
+          "R-A": 40
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "los-altos-hills/sf-district-standards",
+        "note": "measured from the right-of-way / easement line, not the lot line"
       }
     },
     {
@@ -258,6 +488,16 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "MVCC 36.60.27 - corner lot front = shortest frontage unless the owner designates the longer at time of development; through lots: both lines are fronts"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "MVCC § 36.10.25 R1 Zone Development Standards: 20 ft minimum for the first-floor wall",
+        "by_district": {
+          "R1": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "mountain-view/sf-district-standards"
       }
     },
     {
@@ -273,6 +513,17 @@
         "rule": "owner_elected",
         "source": "code",
         "citation": "PAMC 18.09.040(j)(4) corner-lot election (10 ft street side / 16 ft front)"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "PAMC § 18.12.040(e) (R-1): the greater of 20 ft or the block average when that average is 30 ft or more",
+        "by_district": {
+          "R-1": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "palo-alto/sf-district-standards",
+        "note": "contextual rule can raise it above 20"
       }
     },
     {
@@ -310,6 +561,21 @@
             ]
           }
         ]
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "SJMC Table 20-50 (§ 20.30.200): R-1-8 and R-1-5 20 ft; R-1-2 and R-1-1 30 ft; R-1-RR 50 ft; R-2 15 ft",
+        "by_district": {
+          "R-1-8": 20,
+          "R-1-5": 20,
+          "R-1-2": 30,
+          "R-1-1": 30,
+          "R-1-RR": 50,
+          "R-2": 15
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "san-jose/sf-district-standards"
       }
     },
     {
@@ -325,6 +591,20 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "SMC 15-06.430(a) - corner lot front = shortest dimension fronting the street; flag lots: interior line nearest the access street; Director assigns lines on irregular lots"
+      },
+      "residential_front_setback": {
+        "value_ft": 25,
+        "source": "code",
+        "citation": "SCC § 15-12.090(a)(1): R-1-10,000, R-1-12,500, R-1-15,000 25 ft; R-1-20,000, R-1-40,000 30 ft",
+        "by_district": {
+          "R-1-10,000": 25,
+          "R-1-12,500": 25,
+          "R-1-15,000": 25,
+          "R-1-20,000": 30,
+          "R-1-40,000": 30
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "saratoga/sf-district-standards"
       }
     },
     {
@@ -340,6 +620,21 @@
         "rule": "all_fronts",
         "source": "code",
         "citation": "SMC 19.12.260(1)(a) - front yard parallels \"the street or streets upon which the lot abuts\", so every street line of a corner lot is a front; 19.12.260(1)(b) - rear yard is opposite the narrower frontage, making the short frontage the primary front; 19.12.130(18) - lot width measured at the \"required front yard\", i.e. the one not reducible under 19.34.040; 19.34.040(b) - front yard on the longer street frontage reducible to 9 ft in R-0/R-1/R-1.5 (and duplex/SFR in R-2) where streets intersect at 60 degrees or more; Table 19.79.070 carries a separate \"Reducible front (longer street frontage of corner lots)\" row for ADUs"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "SMC Table 19.34.030: R-0 and R-1 front minimum 15 ft, average 20 ft; note 2: a single lot must meet the average, so 20 ft",
+        "by_district": {
+          "R-0": 20,
+          "R-1": 20,
+          "R-1.5": 20,
+          "R-1.7": 20,
+          "R-2": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "sunnyvale/sf-district-standards",
+        "note": "minimum 15 ft applies only inside a multi-lot development"
       }
     },
     {
@@ -355,6 +650,18 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "HMC 20.28.310 - front = line separating the narrower street frontage of a corner lot from a street (verified from Nov 2024 archive; live eCode360 gated)"
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "HMC § 20.08.030 Table 3: R-1-6,000 20 ft; R-1-12,500 25 ft; R-1-3,500 10 ft (20 ft at a garage)",
+        "by_district": {
+          "R-1-6,000": 20,
+          "R-1-12,500": 25,
+          "R-1-3,500": 10
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "healdsburg/sf-district-standards"
       }
     },
     {
@@ -370,6 +677,21 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "Zoning Ord. 27.60.020 - corner-lot front = shortest frontage (Director decides ties); through lots: both street lines are fronts; flag-lot front setback Director-determined (27.20.070(C)(1))"
+      },
+      "residential_front_setback": {
+        "value_ft": 15,
+        "source": "code",
+        "citation": "WMC Table 17.10-02 (§ 17.10.040), new development minimum: SR 15 ft; ER 20 ft; RR 25 ft; VR and MDR 10 ft",
+        "by_district": {
+          "SR": 15,
+          "ER": 20,
+          "RR": 25,
+          "VR": 10,
+          "MDR": 10
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "windsor/sf-district-standards",
+        "note": "the table also sets a maximum front setback"
       }
     },
     {
@@ -386,6 +708,23 @@
         "rule": "all_fronts",
         "source": "code",
         "citation": "CCC Ord. Code 82-12.202 - on a corner lot the district setback requirements apply to ALL state highway, public road, and street frontages of the lot. District chapters then split the value: the 'principal frontage' gets the full front setback and the other a reduced one (84-4.1004 R-6: 20 ft principal / 15 ft other; Ch. 84-14 R-20: 25/20) - the second_front pattern, both frontages binding. CAVEAT: 'principal frontage' is not defined in Title 8 (82-4.250 presupposes it); in practice the address street. Through lots: no county provision found - 82-12.202's all-frontages language governs by its plain terms. Private roads: setbacks measured from easement edge for lots <40k sf (82-4.244). ADU (82-24.012): defers to the zone's yard requirements; Gov. Code 66321(b)(3) softens front for <=800 sf ADUs."
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "CCC Ord. Code § 84-4.1004 (R-6) 20 ft; R-7, R-10, R-12, R-15 follow it; § 84-14.1004 (R-20) 25 ft; R-40, R-65 follow R-20",
+        "by_district": {
+          "R-6": 20,
+          "R-7": 20,
+          "R-10": 20,
+          "R-12": 20,
+          "R-15": 20,
+          "R-20": 25,
+          "R-40": 25,
+          "R-65": 25
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "contra-costa-county/sf-district-standards"
       }
     },
     {
@@ -402,6 +741,21 @@
         "rule": "address_street",
         "source": "code",
         "citation": "MCC 22.130.030 'Lot Line, Front' - on a corner lot, the line bounding the street to which the property is addressed and from which access is taken (same formulation in 22.20.090(B)(1)(b)). When address street and access street differ, the code literally makes both lines front lot lines - flag such corners. Through lots: both lot lines are front lot lines, no rear lot line (rear-setback carve-out for accessory structures: 20% of depth, max 25 ft). Irregular lots: Director determines the lines. Non-coastal Development Code (Title 22) only - the Coastal Zoning Code (Title 20, Ch. 20.130) has its own definitions, not reviewed. ADU (22.32.120(A), Category 1 <=800 sf): 4 ft side/rear, 'a front yard setback is not required'."
+      },
+      "residential_front_setback": {
+        "value_ft": 25,
+        "source": "code",
+        "citation": "MCC § 22.10.040 Table 2-5: RA, RR, RE, R1, R2 25 ft",
+        "by_district": {
+          "RA": 25,
+          "RR": 25,
+          "RE": 25,
+          "R1": 25,
+          "R2": 25
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "marin-county/sf-district-standards",
+        "note": "RSP/RMP planned districts: standards per Chapter 22.16"
       }
     },
     {
@@ -418,6 +772,17 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "NCC 18.08.190 'Corner lot' - the shortest street frontage constitutes the front of the lot, OR as designated by the director based on structure orientation, topography, other structures, and access location (a discretionary escape hatch on the geometric default; 18.08.650(A) gives the director the same role on irregular lots). Street side of a corner lot: min 10 ft (18.104.010 fn C). Front yard measured from the Ch. 18.112 road setback where the lot fronts a road (18.08.650(A)). Through lots: not addressed textually. ADU (18.104.180(C), through Ord. 1495 9-2024): front setback waived as needed to allow an 800 sf ADU with 4 ft side/rear."
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "NCC § 18.104.010 Schedule of zoning district regulations: RS 20 ft; RM 20 ft",
+        "by_district": {
+          "RS": 20,
+          "RM": 20
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "napa-county/sf-district-standards"
       }
     },
     {
@@ -434,6 +799,25 @@
         "rule": "shortest_frontage",
         "source": "code",
         "citation": "SCC Zoning Ordinance (County Code Title C, Appendix I) 1.30.030 'Lot lines' - the front lot line of a corner lot is normally the shorter of the two street-abutting lines, UNLESS the lot's depth-to-width orientation makes the longer line yield the larger building envelope (a geometric tiebreak, not owner election). Flag lots: front = line at the interior terminus of the access corridor (fee corridors >25 ft wide: the street frontage instead). Unusually configured lots: zoning administrator classifies. Through lots: no provision found. Setbacks measured to right-of-way edge / official plan line where applicable. ADU (4.10.015(C)(2),(D)(2)): same front yard as the primary residence; Gov. Code 66321(b)(3) softens front for <=800 sf."
+      },
+      "residential_front_setback": {
+        "value_ft": 25,
+        "source": "code",
+        "citation": "SCCZO § 2.30.030 Table 2.30-3: R1, R1E, R1S, R2 25 ft; RHS 30 ft; R3 20 ft; § 2.20.030 Table 2.20-3: A, AR, HS, RR 30 ft",
+        "by_district": {
+          "R1": 25,
+          "R1E": 25,
+          "R1S": 25,
+          "R2": 25,
+          "RHS": 30,
+          "R3": 20,
+          "A": 30,
+          "AR": 30,
+          "HS": 30,
+          "RR": 30
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "santa-clara-county/sf-district-standards"
       }
     },
     {
@@ -450,8 +834,23 @@
         "rule": "owner_elected",
         "source": "code",
         "citation": "SCC 26-04-020 (Art. 04 Glossary) 'Lot Line, Front' - on a corner lot, 'either one or the other' of the two street lot lines (no geometric test and no designating official named - classic election formulation; staff may fix the choice at permit time). Interior AND through lots: EACH street lot line is a front lot line, and 26-88-040(a) bars encroachment on the required front yard on either street of a through lot (all_fronts behavior for through lots). Election is largely moot in magnitude: 26-08-040 residential tables set the street-side setback EQUAL to the front setback (30/30, 20/20, 15/15); it still matters for garage openings (26-16-060.C) and front-only averaging (26-16-060.E). Recorded setback/official plan lines supersede (26-88-040(d),(e); 26-88-050). ADU (26-88-060(3)(i)): front per base district unless it would preclude an 800 sf ADU with 4 ft side/rear."
+      },
+      "residential_front_setback": {
+        "value_ft": 20,
+        "source": "code",
+        "citation": "SCC § 26-08-040 table: R1, RR, R2 20 ft; AR 30 ft; R3 15 ft",
+        "by_district": {
+          "R1": 20,
+          "RR": 20,
+          "R2": 20,
+          "AR": 30,
+          "R3": 15
+        },
+        "extracted": "2026-09-24",
+        "corpus_doc": "sonoma-county/sf-district-standards"
       }
     }
   ],
-  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id, or by jurisdiction name for opendata-provider payloads (gaudi-api-port services/parcel_data/front_rules.py)). front_rule.overrides is optional: an ordered list of conditions under which a different rule applies, each with its own citation. Evaluate overrides before falling back to front_rule.rule. Absent the field, front_rule.rule applies unconditionally. If an override condition cannot be evaluated (e.g. zone info missing) and no other override applies, the engine falls back to the address_street default rather than the base rule, flagging front_rule_override_unevaluated for logs/debugging."
+  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id, or by jurisdiction name for opendata-provider payloads (gaudi-api-port services/parcel_data/front_rules.py)). front_rule.overrides is optional: an ordered list of conditions under which a different rule applies, each with its own citation. Evaluate overrides before falling back to front_rule.rule. Absent the field, front_rule.rule applies unconditionally. If an override condition cannot be evaluated (e.g. zone info missing) and no other override applies, the engine falls back to the address_street default rather than the base rule, flagging front_rule_override_unevaluated for logs/debugging.",
+  "residential_front_setback_note": "residential_front_setback = the jurisdiction's front setback for housing, in feet, extracted 2026-09-24 from the corpus tier-3 documents (corpus/<slug>/sf-district-standards.txt). It is the FRONT value of a Gov. Code 66323(a)(2) state-track ADU (counsel, 2026-09-24: the statute sets side/rear only). value_ft = the base single-family district; by_district = the code table's number per district, matched against the parcel's zone code (punctuation/case ignored); citation = the code section; note = caveats."
 }

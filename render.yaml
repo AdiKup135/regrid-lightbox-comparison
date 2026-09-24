@@ -1,0 +1,47 @@
+# Render Blueprint for the site POC (https://regrid-lightbox-comparison.onrender.com).
+# One Node web service. Its start script also runs the Python opendata provider
+# (Flask) on 127.0.0.1:3004 in the same instance. See ARCHITECTURE.md "Deployment".
+#
+# Secrets use `sync: false`: Render asks for their values once, in the dashboard's
+# "New Blueprint" flow, and never reads them from this file. After that first
+# sync, Render ignores sync:false keys here; change their values on the
+# service's Environment page.
+services:
+  - type: web
+    # Must equal the existing service's name so the Blueprint adopts it
+    # instead of creating a second service.
+    name: regrid-lightbox-comparison
+    runtime: node
+    # Check this against the service's current instance type before applying.
+    # The Blueprint preview shows any plan change.
+    plan: free
+    buildCommand: npm install && npm run build && bash scripts/render-build-python.sh
+    startCommand: bash scripts/render-start.sh
+    healthCheckPath: /healthz
+    envVars:
+      # --- secrets: entered once in the Blueprint flow ---
+      - key: VITE_MAPBOX_TOKEN     # frontend map tiles; read by Vite at BUILD time (redeploy after changing)
+        sync: false
+      - key: GOOGLE_API_KEY        # opendata geocoding + Roads street namer (both Python consumers)
+        sync: false
+      - key: ZONEOMICS_API_KEY     # zoneomics-backend
+        sync: false
+      - key: REGRID_TOKEN          # regrid-backend
+        sync: false
+      - key: LIGHTBOX_API_KEY      # lightbox-backend
+        sync: false
+      - key: LIGHTBOX_API_SECRET   # lightbox-backend
+        sync: false
+      # --- plain config: defaults the code already assumes, declared for visibility ---
+      - key: OPENDATA_URL          # server.js proxy target; loopback = start Flask in this instance
+        value: http://127.0.0.1:3004
+      - key: ZONEOMICS_BASE_URL
+        value: https://api.zoneomics.com
+      - key: ZONEOMICS_CALL_BUDGET # per-process Zoneomics call guard (quota protection)
+        value: "40"
+      # Not declared on purpose:
+      #   PORT         Render sets it; Express listens on it.
+      #   PYTHON_BIN, PYTHONPATH, HOST   set by scripts/render-start.sh.
+      #   PYTHON_VERSION   Render applies it to Python-runtime services. This Node
+      #                service uses the image's system python3 (Debian 12, 3.11),
+      #                which exists at build and at runtime; the port's tests pass on it.

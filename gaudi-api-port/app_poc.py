@@ -72,5 +72,8 @@ if __name__ == '__main__':
   logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
   _load_dotenv()
   port = int(os.environ.get('PORT', '3004'))
-  logging.info('opendata provider on :%s (google geocode: %s)', port, 'on' if os.environ.get('GOOGLE_API_KEY') else 'off — census fallback')
-  create_app().run(host='127.0.0.1', port=port)
+  # Loopback by default: locally and on Render the provider sits behind Express
+  # (scripts/render-start.sh). HOST=0.0.0.0 only if it ever runs as its own service.
+  host = os.environ.get('HOST', '127.0.0.1')
+  logging.info('opendata provider on %s:%s (google geocode: %s)', host, port, 'on' if os.environ.get('GOOGLE_API_KEY') else 'off — census fallback')
+  create_app().run(host=host, port=port, threaded=True)

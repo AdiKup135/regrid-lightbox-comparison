@@ -20,17 +20,36 @@ app.use('/api/zoneomics', zoneomicsRouter);
 
 // Free open-data provider runs as a separate Flask process (gaudi-api-port/
 // app_poc.py, port 3004); forward rather than mount. Mirrors the Vite dev proxy.
-const OPENDATA_URL = process.env.OPENDATA_URL || 'http://localhost:3004';
+// On Render, scripts/render-start.sh starts that process in the same instance.
+// 127.0.0.1, not localhost: Flask binds IPv4 loopback only.
+const OPENDATA_URL = (process.env.OPENDATA_URL || 'http://127.0.0.1:3004').replace(/\/$/, '');
 app.use('/api/opendata', async (req, res) => {
+  let upstream;
   try {
-    const upstream = await fetch(`${OPENDATA_URL}${req.url}`, {
+    upstream = await fetch(`${OPENDATA_URL}${req.url}`, {
       method: req.method,
       headers: { 'Content-Type': 'application/json' },
       body: ['GET', 'HEAD'].includes(req.method) ? undefined : JSON.stringify(req.body ?? {}),
     });
-    res.status(upstream.status).json(await upstream.json());
   } catch {
-    res.status(502).json({ error: 'opendata backend unreachable (start it with npm run dev:opendata)' });
+    return res.status(502).json({ error: `opendata backend unreachable at ${OPENDATA_URL} (locally: npm run dev:opendata)` });
+  }
+  // Pass non-JSON replies (a Flask 404/500 HTML page) through instead of
+  // masking them as "unreachable".
+  const text = await upstream.text();
+  res.status(upstream.status);
+  try { res.json(JSON.parse(text)); }
+  catch { res.type(upstream.headers.get('content-type') || 'text/plain').send(text); }
+});
+
+// Render health check (render.yaml healthCheckPath). 503 when the opendata
+// provider is down, so a deploy whose Python side cannot start never goes live.
+app.get('/healthz', async (req, res) => {
+  try {
+    const r = await fetch(`${OPENDATA_URL}/health`, { signal: AbortSignal.timeout(3000) });
+    res.status(r.ok ? 200 : 503).json({ ok: r.ok, opendata: r.ok ? 'up' : `status ${r.status}` });
+  } catch (err) {
+    res.status(503).json({ ok: false, opendata: `unreachable (${err.name})` });
   }
 });
 

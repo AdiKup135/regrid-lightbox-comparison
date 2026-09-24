@@ -4,7 +4,7 @@ adu_setbacks
 Phase A of the ADU setback engine: the state track (Gov. Code § 66323(a)(2)).
 
 Given the labeled lot edges (services.compute.parcel_edges), two facts about
-the proposed unit — ``unit_size`` (sq ft of interior livable space, the name
+the proposed unit — ``unit_size`` (sq ft, footprint incl. exterior walls, excl. decks; the name
 gaudi-api already uses in EstimatorParameters) and ``unit_height_in_feet`` —
 and whether the lot sits in a high-quality transit area, decide which track
 the unit is on and, on the state track, assign every edge its setback and draw

@@ -65,10 +65,10 @@ def load_jurisdictions(db_path: Optional[str] = None) -> List[Dict[str, Any]]:
   return records
 
 
-def front_rule_for(city_id: Optional[int] = None, jurisdiction_name: Optional[str] = None,
-                   county_name: Optional[str] = None,
-                   db_path: Optional[str] = None) -> Optional[Dict[str, Any]]:
-  """The front_rule record for a jurisdiction, or None if it is not in the database.
+def jurisdiction_record_for(city_id: Optional[int] = None, jurisdiction_name: Optional[str] = None,
+                            county_name: Optional[str] = None,
+                            db_path: Optional[str] = None) -> Optional[Dict[str, Any]]:
+  """The whole jurisdiction record, or None if it is not in the database.
 
   @param city_id Zoneomics city id (Zoneomics-provider payloads).
   @param jurisdiction_name Incorporated place name from the Census geocoder,
@@ -77,18 +77,68 @@ def front_rule_for(city_id: Optional[int] = None, jurisdiction_name: Optional[st
     unincorporated-county record when jurisdiction_name is None.
   @param db_path Override for tests.
 
-  @return The record's ``front_rule`` dict ({rule, source, citation, ...}), or None.
+  @return The record dict, or None.
   """
   records = load_jurisdictions(db_path)
   if city_id is not None:
     for record in records:
       if record.get('zoneomics_city_id') == int(city_id):
-        return record.get('front_rule')
+        return record
   wanted = _normalize_name(jurisdiction_name or '')
   if not wanted and county_name:
     wanted = _normalize_name('%s County (unincorporated)' % county_name)
   if wanted:
     for record in records:
       if _normalize_name(str(record.get('jurisdiction') or '')) == wanted:
-        return record.get('front_rule')
+        return record
+  return None
+
+
+def front_rule_for(city_id: Optional[int] = None, jurisdiction_name: Optional[str] = None,
+                   county_name: Optional[str] = None,
+                   db_path: Optional[str] = None) -> Optional[Dict[str, Any]]:
+  """The front_rule record for a jurisdiction ({rule, source, citation, ...}), or None."""
+  record = jurisdiction_record_for(city_id, jurisdiction_name, county_name, db_path)
+  return record.get('front_rule') if record else None
+
+
+def _district_key(code: Optional[str]) -> str:
+  """'R-1-10,000', 'R1-10000' and 'r1 10000' are the same district key."""
+  return ''.join(ch for ch in str(code or '').upper() if ch.isalnum())
+
+
+def _numeric(value: Any) -> bool:
+  return isinstance(value, (int, float)) and not isinstance(value, bool) and value >= 0
+
+
+def residential_front_setback_for(city_id: Optional[int] = None, jurisdiction_name: Optional[str] = None,
+                                  county_name: Optional[str] = None, zone_code: Optional[str] = None,
+                                  db_path: Optional[str] = None) -> Optional[Dict[str, Any]]:
+  """The jurisdiction's front setback for housing, used as the state-track front
+  value (counsel 2026-09-24): ``{value_ft, source, citation, district}``.
+
+  The record's ``residential_front_setback`` holds the default (``value_ft``,
+  the base single-family district) and ``by_district`` — the same number per
+  residential district as the code's table lists it. When the parcel's zone
+  code matches a district the district's number is used and ``district`` says
+  which; otherwise the default and ``district`` is None.
+
+  @param zone_code The parcel's zone code from the parcel context, if known.
+
+  @return None when the jurisdiction is unknown or the value has not been
+    extracted from its code yet (the engine then flags the lot).
+  """
+  record = jurisdiction_record_for(city_id, jurisdiction_name, county_name, db_path)
+  setback = (record or {}).get('residential_front_setback') or {}
+  by_district = setback.get('by_district') or {}
+  wanted = _district_key(zone_code)
+  if wanted:
+    for district, value in by_district.items():
+      if _district_key(district) == wanted and _numeric(value):
+        return {'value_ft': float(value), 'source': setback.get('source'), 'citation': setback.get('citation'),
+                'district': district}
+  value = setback.get('value_ft')
+  if _numeric(value):
+    return {'value_ft': float(value), 'source': setback.get('source'), 'citation': setback.get('citation'),
+            'district': None}
   return None

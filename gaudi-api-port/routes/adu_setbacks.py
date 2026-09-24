@@ -10,8 +10,14 @@ HTTP surface of the ADU setback engine, Phase A (the state track).
                        edge's setback and the buildable envelope.
 
 Body, on top of the /edges response fields:
-  unit_size             sq ft of interior livable space — required, > 0
-  unit_height_in_feet   required, > 0
+  unit_size             sq ft — footprint incl. exterior walls, excl. decks
+                        (counsel 2026-09-24) — required, > 0
+  unit_height_in_feet   top of slab to top of roof — required, > 0
+  front_setback_ft      optional, >= 0: the user's own front value (FOR-1423
+                        manual override). Otherwise the jurisdiction database's
+                        residential_front_setback is used; if that is null too
+                        the front edge has no value and front_setback_missing
+                        is flagged.
   sb9_split             optional bool (default false)  — FOR-1420
   existing_detached_adu optional bool (default false)  — FOR-1421
   transit               optional; the /edges payload's own ``transit`` block.
@@ -31,7 +37,14 @@ import requests
 
 from routes.parcel_edges import label_from_body
 from services.compute.adu_setbacks import UnitFacts, evaluate_adu
+from services.compute.adu_setbacks.state_track import (
+  FRONT_SOURCE_DB,
+  FRONT_SOURCE_MANUAL,
+  FRONT_UNKNOWN,
+  FrontSetback,
+)
 from services.parcel_data.ca_transit_client import fetch_transit_at_point
+from services.parcel_data.front_rules import residential_front_setback_for
 
 adu_setbacks_bp = Blueprint('adu_setbacks', __name__)
 
@@ -67,6 +80,31 @@ def _resolve_transit(body: Dict[str, Any]) -> Tuple[Optional[Dict[str, Any]], st
   return record, 'lookup' if record is not None else 'lookup_failed'
 
 
+def _resolve_front_setback(body: Dict[str, Any]) -> FrontSetback:
+  """The state-track front value: the posted override, else the jurisdiction db, else unknown."""
+  raw = body.get('front_setback_ft')
+  if raw is not None and raw != '':
+    try:
+      value = float(raw)
+    except (TypeError, ValueError):
+      raise AssertionError('front_setback_ft must be a number')
+    assert value >= 0, 'front_setback_ft must be >= 0'
+    return FrontSetback(value, FRONT_SOURCE_MANUAL, 'entered by the user')
+  meta = body.get('meta') or {}
+  zone = body.get('zone') or {}
+  record = residential_front_setback_for(city_id=meta.get('city_id'), jurisdiction_name=meta.get('city_name'),
+                                         county_name=meta.get('county_name'),
+                                         zone_code=zone.get('zone_code') if isinstance(zone, dict) else None)
+  if record is None:
+    return FRONT_UNKNOWN
+  citation = record.get('citation') or record.get('source') or ''
+  if record.get('district'):
+    citation = '%s district: %s' % (record['district'], citation)
+  else:
+    citation = 'jurisdiction default (zone %s not in the district table): %s' % (zone.get('zone_code') or 'unknown', citation)
+  return FrontSetback(record['value_ft'], FRONT_SOURCE_DB, citation)
+
+
 @adu_setbacks_bp.route('/adu/evaluate', methods=['POST'])
 def evaluate_route():
   """Phase A: track + state-track setbacks + envelope for a posted /edges payload."""
@@ -75,6 +113,7 @@ def evaluate_route():
     unit_size = _positive_number(body, 'unit_size')
     unit_height = _positive_number(body, 'unit_height_in_feet')
     transit, transit_source = _resolve_transit(body)
+    front_setback = _resolve_front_setback(body)
     near_transit = None if transit is None or transit.get('near_transit') is None else bool(transit['near_transit'])
     unit = UnitFacts(
       unit_size=unit_size,
@@ -86,7 +125,7 @@ def evaluate_route():
     labeling, front, roads_namer = label_from_body(body)
     subject = body['subject']
     evaluation = evaluate_adu(unit, [e.to_dict() for e in labeling.edges], subject['boundary'],
-                              float(subject['lng']), float(subject['lat']))
+                              float(subject['lng']), float(subject['lat']), front=front_setback)
     payload = evaluation.to_dict()
     payload['transit'] = transit
     payload['transit_source'] = transit_source

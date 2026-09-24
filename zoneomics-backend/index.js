@@ -298,7 +298,8 @@ function frontRuleForCity(cityId) {
 
 function runPythonEngine(request) {
   return new Promise((resolve, reject) => {
-    const proc = spawn('python3', ['-m', 'services.compute.parcel_edges.cli'], { cwd: PORT_PKG_DIR });
+    // PYTHON_BIN/PYTHONPATH come from scripts/render-start.sh on Render (deps in .pydeps).
+    const proc = spawn(process.env.PYTHON_BIN || 'python3', ['-m', 'services.compute.parcel_edges.cli'], { cwd: PORT_PKG_DIR });
     let out = '';
     let errOut = '';
     proc.stdout.on('data', (d) => { out += d; });

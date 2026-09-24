@@ -1,6 +1,6 @@
 # site repo — architecture map
 
-*POC repo. Main-only, no branches. Last updated 2026-08-30.*
+*POC repo. Main-only, no branches. Last updated 2026-09-24.*
 
 This repo started as a Regrid-vs-Lightbox data-provider comparison (the README's
 original story) and grew into the staging ground for the **parcel edge-labeling
@@ -69,6 +69,57 @@ Gaudi-bound is Python in `gaudi-api-port/`, written to gaudi-api conventions.
 | — | all of the above | `npm run dev` |
 
 Tests: `cd gaudi-api-port && python3 -m pytest tests` (engine + provider, offline).
+
+## Deployment (Render)
+
+One Render **Node web service**, `regrid-lightbox-comparison`
+(https://regrid-lightbox-comparison.onrender.com), declared in `render.yaml` at the
+repo root. Pushing to `main` redeploys it.
+
+```
+ Render instance (Debian 12, Node runtime)
+ ┌──────────────────────────────────────────────────────────────────────┐
+ │ scripts/render-start.sh                                              │
+ │  ├─ node server.js         :$PORT (public)                           │
+ │  │    /                     frontend/dist (built at deploy time)     │
+ │  │    /api/regrid|lightbox|zoneomics   Express routers               │
+ │  │    /api/zoneomics/edges/label  → spawns python3 engine (cli.py)   │
+ │  │    /api/opendata/*       → proxy to OPENDATA_URL                  │
+ │  │    /docs/*               zoning-ordinances/ (decision tree, PDFs) │
+ │  │    /healthz              503 unless the Flask side answers        │
+ │  └─ python3 app_poc.py     127.0.0.1:3004 (private)                  │
+ │       /health  /edges  /edges/label  /adu/evaluate                   │
+ └──────────────────────────────────────────────────────────────────────┘
+```
+
+- **Build:** `npm install && npm run build && bash scripts/render-build-python.sh`.
+  The last step pip-installs `gaudi-api-port/requirements.txt` into `.pydeps/`
+  with `--target`. Render keeps only the project directory from build to runtime,
+  and Debian's system pip refuses global installs. The build fails if the engine
+  cannot import.
+- **Start:** `bash scripts/render-start.sh` puts `.pydeps` on `PYTHONPATH` for
+  both Python consumers, starts Flask on loopback, then Express. If either
+  process dies, the script exits and Render restarts the instance.
+- **Python:** the image's system `python3` (Debian 12: 3.11). `PYTHON_VERSION`
+  applies only to Python-runtime services, so it is not set. Tests pass on 3.11.
+- **Two-service option:** run `app_poc.py` as its own Render Python service
+  with `HOST=0.0.0.0`, and set `OPENDATA_URL` on this service to its URL. The start
+  script then skips the local Flask process.
+
+Environment variables. Secrets are `sync: false` in `render.yaml`: Render asks for
+them once in the Blueprint flow, and afterwards they live on the service's
+**Environment** page.
+
+| Variable | Used by | Notes |
+|---|---|---|
+| `VITE_MAPBOX_TOKEN` | frontend | Read at **build** time; redeploy after changing |
+| `GOOGLE_API_KEY` | opendata geocoding, Roads street namer | Without it, opendata `/edges` needs lat/lng |
+| `ZONEOMICS_API_KEY` | zoneomics-backend | Quota-limited |
+| `REGRID_TOKEN` | regrid-backend | |
+| `LIGHTBOX_API_KEY`, `LIGHTBOX_API_SECRET` | lightbox-backend | |
+| `OPENDATA_URL` | server.js proxy, start script | Default `http://127.0.0.1:3004` = local Flask |
+| `ZONEOMICS_BASE_URL`, `ZONEOMICS_CALL_BUDGET` | zoneomics-backend | Defaults in `render.yaml` |
+| `PORT` | server.js | Set by Render; never declare it |
 
 ## What translates to Gaudi (and what doesn't)
 

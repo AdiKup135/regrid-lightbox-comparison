@@ -28,6 +28,9 @@ from .state_track import EdgeSetback
 # reflex corner the buffer construction only approximates.
 _CONCAVITY_TOLERANCE = 0.01
 FLAG_CONCAVE_LOT = 'concave_lot_offset_approximation'
+# An edge with no value (front setback not in the database) is drawn at 0 ft;
+# the envelope is then an upper bound until the value is entered.
+FLAG_ENVELOPE_MISSING_VALUE = 'envelope_drawn_without_missing_setback'
 
 
 def setback_polygon(boundary_wkt: str, edges: Sequence[Dict], setbacks: Sequence[EdgeSetback],
@@ -53,6 +56,10 @@ def setback_polygon(boundary_wkt: str, edges: Sequence[Dict], setbacks: Sequence
 
   envelope = lot
   for edge, setback in zip(edges, setbacks):
+    if setback.setback_ft is None:
+      if FLAG_ENVELOPE_MISSING_VALUE not in flags:
+        flags.append(FLAG_ENVELOPE_MISSING_VALUE)
+      continue
     if setback.setback_ft <= 0:
       continue
     pts_ft = [projection.to_ft((float(p[0]), float(p[1]))) for p in edge.get('pts') or []]

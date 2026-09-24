@@ -167,16 +167,25 @@ in production prefer passing `Project.address`'s persisted lat/lng + street to
 What it does: for a detached, new-construction ADU on a single-family lot, decide
 whether the unit qualifies for California's state-mandated approval path
 (Gov. Code § 66323(a)(2)) and, if it does, give every lot edge its setback and
-draw the buildable envelope. On that path the values are the statute's, not the
-city's: 4 ft side and rear, no front setback, and the second street line of a
-corner lot counts as a side unless the jurisdiction treats every street as a
-front (`all_fronts`). Larger or taller units fall to the local-ordinance path,
-which is Phase 2 — the engine says so and draws nothing.
+draw the buildable envelope. On that path side and rear are the statute's 4 ft;
+the front is the jurisdiction's default front setback for housing (counsel,
+2026-09-24 — the statute sets side and rear only), read from the new
+`residential_front_setback` field of the jurisdiction database (all 28
+extracted 2026-09-24 from the corpus, code-cited; a `by_district` table is
+matched against the parcel's zone code, else the base district's number) or
+posted as `front_setback_ft` (the UI's manual value). Only an unknown
+jurisdiction leaves the front edge at `setback_ft: null` + flag
+`front_setback_missing`, and then the UI asks for the number. The
+second street line of a corner lot is a side (4 ft); in `all_fronts`
+jurisdictions the address street is the front and the other frontage is 4 ft.
+Larger or taller units fall to the local-ordinance path, which is Phase 2 —
+the engine says so and draws nothing.
 
 Inputs, all from the user for now (gaudi-api has no unit height yet):
-`unit_size` (sq ft, the EstimatorParameters name), `unit_height_in_feet`, and
-two yes/no facts defaulting to no — SB 9 split parcel, detached ADU already on
-the lot. The 18 ft height allowance near transit is decided from Caltrans' HQ
+`unit_size` (sq ft, the EstimatorParameters name; measured as the footprint
+incl. exterior walls, excl. decks), `unit_height_in_feet` (top of slab to top
+of roof), and two yes/no facts defaulting to no — SB 9 split parcel, detached
+ADU already on the lot. The 18 ft height allowance near transit is decided from Caltrans' HQ
 Transit Areas layer, fetched alongside zoning.
 
 Where it lives (copy with the rest, same layout):
@@ -196,10 +205,10 @@ silent. The drawing follows FOR-438: one closed offset polygon, 1 px red
 (`frontend/src/EdgesPanel.tsx`) is the reference rendering.
 
 Decisions behind it (with the reasoning) are on the "ADU Setback Decision Tree"
-page linked from FOR-1418. Two legal questions are with counsel and carried as
-flags meanwhile: the `second_front` edge in `all_fronts` cities (interim 0 ft,
-`SECOND_FRONT_INTERIM_FT`), and walking distance vs. the transit buffers
-(FOR-1422). Deferred gates: FOR-1419 (residential / single-family check),
+page linked from FOR-1418. Counsel answered the front / second-front /
+measurement questions on 2026-09-24 (above). Still open, carried as a flag:
+walking distance vs. the half-mile transit buffers (FOR-1422; buffers and stop
+types verified). Deferred gates: FOR-1419 (residential / single-family check),
 FOR-1420 (SB 9), FOR-1421 (existing ADU).
 
 ## Not done, deliberately left to the Gaudi side

@@ -5,10 +5,15 @@ Which regime governs the proposed unit: the state track or the local track.
 
 The state track is Gov. Code § 66323(a)(2): one detached, new-construction ADU
 on a lot with a single-family dwelling, which the local agency must approve
-under state standards only. The city may condition it on at most 800 sq ft of
-interior livable space and the § 66321(b)(4) height (HCD ADU Handbook, March
-2026, p. 16). Anything outside that box is a § 66314 unit, reviewed under the
-local ordinance — Phase B, not built here.
+under state standards only. The city may condition it on at most 800 sq ft and
+the § 66321(b)(4) height (HCD ADU Handbook, March 2026, p. 16). Anything
+outside that box is a § 66314 unit, reviewed under the local ordinance —
+Phase B, not built here.
+
+How the two numbers are measured (counsel, Hila, 2026-09-24):
+  unit_size            the footprint including the exterior walls; decks,
+                       porches and other unroofed attachments excluded.
+  unit_height_in_feet  from the top of the slab to the top of the roof.
 
 Height: 16 ft qualifies anywhere; 18 ft qualifies when the lot is within a
 half-mile of a major transit stop or high-quality transit corridor (p. 24).
@@ -28,8 +33,8 @@ TRACK_STATE_66323 = 'state_66323'
 TRACK_LOCAL_66314 = 'local_66314'
 
 # § 66323(a)(2)(A): the local agency may cap the state-track unit at 800 sq ft
-# of interior livable space (Handbook p. 16, p. 38). Every jurisdiction in the
-# database does.
+# (Handbook p. 16, p. 38) — measured as the footprint incl. exterior walls,
+# excl. decks (counsel 2026-09-24). Every jurisdiction in the database caps.
 STATE_TRACK_MAX_UNIT_SIZE_SQFT = 800.0
 # § 66321(b)(4)(A): the base detached height a city must allow.
 STATE_HEIGHT_BASE_FT = 16.0
@@ -48,7 +53,9 @@ class UnitFacts:
   Both unit numbers are required: they are eligibility conditions, not
   refinements. gaudi-api has no unit height yet, so for now both are typed in.
   """
+  # Footprint incl. exterior walls, excl. decks (sq ft).
   unit_size: float
+  # Top of slab to top of roof.
   unit_height_in_feet: float
   # Lot within a half-mile HQ transit area (services.parcel_data.ca_transit_client).
   # None = lookup failed; the 18 ft allowance is then not granted, and flagged.

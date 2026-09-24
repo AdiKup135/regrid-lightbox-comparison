@@ -65,6 +65,34 @@ class TestEvaluate:
     for flag in ('zone_use_assumed_residential', 'sb9_split_assumed_no', 'existing_detached_adu_assumed_no'):
       assert flag in body['flags']
 
+  def test_front_value_comes_from_the_jurisdiction_db(self, client) -> None:
+    # Palo Alto R-1: PAMC 18.12.040(e), 20 ft — matched through the zone code.
+    body = client.post('/adu/evaluate', json={**_PAYLOAD, 'unit_size': 800, 'unit_height_in_feet': 16}).get_json()
+    assert body['front_setback']['source'] == 'jurisdiction_db'
+    assert body['front_setback']['value_ft'] == 20.0
+    assert body['front_setback']['citation'].startswith('R-1 district:')
+    assert 'front_setback_missing' not in body['flags']
+    assert [e['setback_ft'] for e in body['edges'] if e['tag'] == 'front'] == [20.0]
+
+  def test_unknown_jurisdiction_has_no_front_value(self, client) -> None:
+    payload = {**_PAYLOAD, 'meta': {'city_name': 'Nowhere', 'county_name': 'Santa Clara'}}
+    body = client.post('/adu/evaluate', json={**payload, 'unit_size': 800, 'unit_height_in_feet': 16}).get_json()
+    assert body['front_setback']['source'] == 'missing'
+    assert 'front_setback_missing' in body['flags']
+    assert [e['setback_ft'] for e in body['edges'] if e['tag'] == 'front'] == [None]
+
+  def test_manual_front_value_is_used_and_flagged(self, client) -> None:
+    body = client.post('/adu/evaluate', json={**_PAYLOAD, 'unit_size': 800, 'unit_height_in_feet': 16,
+                                              'front_setback_ft': 20}).get_json()
+    assert body['front_setback'] == {'value_ft': 20.0, 'source': 'manual', 'citation': 'entered by the user'}
+    assert 'front_setback_from_manual_override' in body['flags'] and 'front_setback_missing' not in body['flags']
+    assert [e['setback_ft'] for e in body['edges'] if e['tag'] == 'front'] == [20.0]
+
+  def test_negative_front_value_is_400(self, client) -> None:
+    response = client.post('/adu/evaluate', json={**_PAYLOAD, 'unit_size': 800, 'unit_height_in_feet': 16,
+                                                  'front_setback_ft': -1})
+    assert response.status_code == 400
+
   def test_transit_from_payload_raises_the_height_limit(self, client) -> None:
     near = {**_PAYLOAD, 'transit': {'near_transit': True}, 'unit_size': 800, 'unit_height_in_feet': 18}
     response = client.post('/adu/evaluate', json=near)

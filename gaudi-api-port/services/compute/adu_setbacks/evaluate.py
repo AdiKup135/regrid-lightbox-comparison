@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 
 from .offset import setback_polygon
-from .state_track import state_track_setbacks
+from .state_track import FRONT_UNKNOWN, FrontSetback, state_track_setbacks
 from .track import TRACK_STATE_66323, TrackDecision, UnitFacts, determine_track, state_height_limit_ft
 
 
@@ -19,6 +19,8 @@ from .track import TRACK_STATE_66323, TrackDecision, UnitFacts, determine_track,
 class AduEvaluation:
   track: TrackDecision
   unit: UnitFacts
+  # The local front value used on the state track (jurisdiction db / manual / missing).
+  front_setback: FrontSetback = FRONT_UNKNOWN
   # Labeled edges, each with its setback merged in (setback_ft, setback_basis) on the state track.
   edges: List[Dict] = field(default_factory=list)
   setback_polygon_wkt: Optional[str] = None
@@ -34,6 +36,7 @@ class AduEvaluation:
       'unit': {'unit_size': self.unit.unit_size, 'unit_height_in_feet': self.unit.unit_height_in_feet,
                'near_transit': self.unit.near_transit, 'sb9_split': self.unit.sb9_split,
                'existing_detached_adu': self.unit.existing_detached_adu},
+      'front_setback': self.front_setback.to_dict(),
       'edges': self.edges,
       'setback_polygon': self.setback_polygon_wkt,
       'setback_polygon_area_sqft': self.setback_polygon_area_sqft,
@@ -43,11 +46,14 @@ class AduEvaluation:
 
 
 def evaluate_adu(unit: UnitFacts, labeled_edges: List[Dict], boundary_wkt: str,
-                 origin_lng: float, origin_lat: float) -> AduEvaluation:
+                 origin_lng: float, origin_lat: float,
+                 front: FrontSetback = FRONT_UNKNOWN) -> AduEvaluation:
   """Run Phase A.
 
   @param unit The unit facts (validated by the caller).
   @param labeled_edges LotEdge.to_dict() list from the edge labeler.
+  @param front The jurisdiction's residential front setback, or the manual value
+    (routes.adu_setbacks resolves it). Default: unknown, flagged.
   @param boundary_wkt Subject parcel boundary, EPSG:4326 WKT.
   @param origin_lng @param origin_lat Subject point, for the local projection.
 
@@ -55,8 +61,8 @@ def evaluate_adu(unit: UnitFacts, labeled_edges: List[Dict], boundary_wkt: str,
     and there is no polygon: Phase B is not built (flagged).
   """
   decision = determine_track(unit)
-  result = AduEvaluation(track=decision, unit=unit, edges=[dict(e) for e in labeled_edges],
-                         flags=list(decision.flags))
+  result = AduEvaluation(track=decision, unit=unit, front_setback=front,
+                         edges=[dict(e) for e in labeled_edges], flags=list(decision.flags))
 
   def add_flags(new: List[str]) -> None:
     result.flags.extend(f for f in new if f not in result.flags)
@@ -65,7 +71,7 @@ def evaluate_adu(unit: UnitFacts, labeled_edges: List[Dict], boundary_wkt: str,
     add_flags(['phase_b_not_built'])
     return result
 
-  setbacks, value_flags = state_track_setbacks(result.edges)
+  setbacks, value_flags = state_track_setbacks(result.edges, front)
   for edge, setback in zip(result.edges, setbacks):
     edge['setback_ft'] = setback.setback_ft
     edge['setback_basis'] = setback.basis
