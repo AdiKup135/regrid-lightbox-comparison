@@ -1,856 +1,1445 @@
 {
-  "title": "Bay Area zoning ordinance links (via Zoneomics)",
-  "generated": "2026-08-27",
-  "source": "Zoneomics v2/zoneDetail API (zone_details.link), queried with FormX ZONEOMICS_API_KEY",
-  "note": "ordinance_link is the link Zoneomics attaches to the zone at a representative point in each jurisdiction. Where the platform is 'Zoneomics code viewer', Zoneomics hosts the code text on its own site instead of linking to Municode/eCode360 directly. The five '<County> County (unincorporated)' records added 2026-08-30 are NOT from Zoneomics (no city_id): they come from direct county-code research (see each record's research_source) and link to Municode directly.",
-  "count": 28,
-  "jurisdictions": [
-    {
-      "jurisdiction": "Lafayette",
-      "county": "Contra Costa",
-      "zoneomics_city_name": "Lafayette",
-      "zoneomics_city_id": 2653,
-      "zoneomics_last_updated": "2026-07-21",
-      "sample_zone_code_at_query_point": "MRA",
-      "ordinance_link": "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS",
-      "code_platform": "Municode",
-      "front_rule": {
-        "rule": "designated",
-        "source": "code",
-        "citation": "LMC 6-566(b)(2) - principal frontage per district; secondary frontage 4 ft for Class C ADUs"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "LMC § 6-710 (R-6); the same 20 ft in R-10, R-12, R-15; 25 ft in R-20, R-40, R-65",
-        "by_district": {
-          "R-6": 20,
-          "R-10": 20,
-          "R-12": 20,
-          "R-15": 20,
-          "R-20": 25,
-          "R-40": 25,
-          "R-65": 25
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "lafayette/sf-district-standards"
-      }
+ "_schema": {
+  "_comment": "SCHEMA OF THIS FILE. JSON has no comments, so this block is the documentation. Update it every time the data schema changes (Adi, 2026-10-18) and add a changelog line.",
+  "version": "1.5.1",
+  "updated": "2026-10-18",
+  "one_record_per": "jurisdiction (city, or county for unincorporated land); 28 records; the engine's single setback record per jurisdiction — research with quotes lives INSIDE the field it supports, not in sibling files",
+  "record_fields": {
+   "jurisdiction": "display name; counties carry the suffix ' (unincorporated)'",
+   "slug": "kebab-case id, same as corpus/<slug>/ and the other research files (e.g. san-mateo-county)",
+   "county": "county the jurisdiction sits in",
+   "ordinance_link": "URL of the published ADU ordinance. Published = in effect (Adi 2026-09-23): no status lookup, and HCD review letters are not a source",
+   "code_platform": "Municode | eCode360 | Zoneomics code viewer (Zoneomics hosts the code text itself) | ... — tells the corpus pipeline how to scrape",
+   "zoneomics_city_name / zoneomics_city_id / zoneomics_last_updated": "provenance of ordinance_link: Zoneomics v2/zoneDetail, queried 2026-08-27 at one representative point per city. The five county records (added 2026-08-30) have no city_id: their links come from direct county-code research",
+   "front_rule": {
+    "what": "how the jurisdiction decides which edge of a multi-street lot is the FRONT; consumed by the edge labeler (edge-labeling/edge-labeling.ts, gaudi-api-port/services/parcel_data/front_rules.py)",
+    "rule": "address_street | shortest_frontage | designated | owner_elected | all_fronts. Engine default for an unlisted jurisdiction: address_street (the street in the situs address), falling back to shortest frontage",
+    "source": "'code' = verified in the municipal code, see citation",
+    "citation": "code section + the sentence it rests on",
+    "overrides": "optional list of {rule, condition, citation, description, zone_codes?}: conditions under which a different rule applies (San Jose: oversized corner lots and pedestrian districts are all_fronts). An unevaluable condition falls back silently to address_street",
+    "engine_rule": "a street_side edge is a side (state 4 ft cap) unless the rule is all_fronts, where the second frontage is a front (Adi 2026-09-23)"
+   },
+   "residential_front_setback": {
+    "what": "the jurisdiction's ZONING-DISTRICT front setback for housing, in feet (city or county). Used as the state-track front whenever state_track_front.rule == 'district' (counsel 2026-09-24: Gov. Code § 66323(a)(2) sets side and rear only), and as the local-track front",
+    "value_ft": "the base single-family district value",
+    "by_district": "{zone code: feet} from the code table, matched against the parcel's zone code (case and punctuation ignored); empty when the jurisdiction has one value",
+    "source / citation / extracted / corpus_doc / note": "'code' + the section; extracted 2026-09-24 from corpus/<slug>/sf-district-standards.txt; note = caveats (block averages, contextual rules)"
+   },
+   "state_track_front": {
+    "what": "what the jurisdiction's OWN ADU chapter says about the front setback of the state-track unit (Gov. Code § 66323(a)(2), ≤ 800 sf). Decision Adi 2026-10-18 (FOR-1511): the engine describes what the lot has BY RIGHT",
+    "rule": "'local' = the chapter sets its own front for this unit → the engine takes value_ft. 'district' = use residential_front_setback. FOR-1511 scope: only the six classification == grant_local records are 'local'",
+    "value_ft": "the chapter's own front value when rule == 'local' (0 ft in all six today; the engine reads the number, it never assumes 0); null otherwise",
+    "value_rule": "formula for a lot-specific local value, or null. San Mateo County: min(district_front_ft, primary_front_distance_ft) — deferred until the primary footprint exists (rule stays 'district' + flag)",
+    "flags": "flags the engine must raise: front_from_local_adu_chapter (rule local) · front_local_grant_by_disapplication (Napa: the chapter switches its front clause off for § 66323(a) units) · front_rule_mixed (Healdsburg, San Carlos) · front_rule_silent (10 chapters, pending counsel) · front_rule_needs_primary_footprint (San Mateo County)",
+    "classification": "reading of the local text, 28-chapter pass 2026-10-18: grant_local 6 (chapter sets its own front for this unit; 'no front setback' in all six) · conditional_yield 9 (zoning front applies but yields if it would preclude an 800 sf unit — case-by-case at the counter, NOT by right) · district_applies 1 (Santa Clara County, no relief) · silent 10 (the unit's section lists side/rear/size/height only; the chapter disapplies its own standards for it and names no front) · mixed 2 (an unconditional clause and a conditional one in the same chapter)",
+    "threshold_sf": "the chapter's own small-unit threshold (800 in most; Fairfax Class 1 runs to 1,200; Healdsburg's state-mandated unit to 850)",
+    "citation / quote / placement_rule / notes / source": "verbatim quote with its section; placement_rule = any rule keeping the unit out of the front yard even without a front setback ({exists, quote, citation, exempted_by_notwithstanding}); notes = hard calls and the engine-scope note; source = corpus doc read + ticket"
+   }
+  },
+  "file_fields": {
+   "title / generated / source / count": "provenance of the original 2026-08-27 Zoneomics export; count = number of records"
+  },
+  "changelog": [
+   "2026-08-27 v1.0 created from Zoneomics zoneDetail: jurisdiction, county, zoneomics_*, sample_zone_code_at_query_point, ordinance_link, code_platform",
+   "2026-08-30 v1.1 five unincorporated-county records added by hand (no zoneomics_city_id)",
+   "2026-08-27→09-03 v1.2 front_rule (+ overrides for San Jose) for all 28, all source: code",
+   "2026-09-24 v1.3 residential_front_setback for all 28 (by_district tables) — state-track front per counsel",
+   "2026-10-18 v1.5.0 slug added; state_track_front folded in from the 28-chapter read (quotes included); the separate state_track_front_rules.json/.md deleted; sample_zone_code_at_query_point removed (a sample, meant nothing)",
+   "2026-10-18 v1.5.1 FOR-1511 scope: classification grant_none renamed grant_local; only those six are rule 'local'; Healdsburg and San Mateo County back to 'district' with flags; the four top-level *_note strings merged into this _schema block"
+  ]
+ },
+ "title": "Bay Area zoning ordinance links (via Zoneomics)",
+ "generated": "2026-08-27",
+ "source": "Zoneomics v2/zoneDetail API (zone_details.link), queried with FormX ZONEOMICS_API_KEY",
+ "count": 28,
+ "jurisdictions": [
+  {
+   "jurisdiction": "Lafayette",
+   "county": "Contra Costa",
+   "zoneomics_city_name": "Lafayette",
+   "zoneomics_city_id": 2653,
+   "zoneomics_last_updated": "2026-07-21",
+   "ordinance_link": "https://library.municode.com/ca/lafayette/codes/code_of_ordinances?nodeId=TIT6PLLAUS",
+   "code_platform": "Municode",
+   "front_rule": {
+    "rule": "designated",
+    "source": "code",
+    "citation": "LMC 6-566(b)(2) - principal frontage per district; secondary frontage 4 ft for Class C ADUs"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "LMC § 6-710 (R-6); the same 20 ft in R-10, R-12, R-15; 25 ft in R-20, R-40, R-65",
+    "by_district": {
+     "R-6": 20,
+     "R-10": 20,
+     "R-12": 20,
+     "R-15": 20,
+     "R-20": 25,
+     "R-40": 25,
+     "R-65": 25
     },
-    {
-      "jurisdiction": "Moraga",
-      "county": "Contra Costa",
-      "zoneomics_city_name": "Moraga",
-      "zoneomics_city_id": 3985,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "MCSP-C",
-      "ordinance_link": "https://www.zoneomics.com/code/moraga-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "designated",
-        "source": "code",
-        "citation": "MMC 8.68.090 - front lot line = principal street"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "MMC § 8.24.060 table: SFR 3 DU/acre 20 ft; SFR 1 and 2 DU/acre 25 ft",
-        "by_district": {
-          "SFR 3 DU/acre": 20,
-          "SFR 2 DU/acre": 25,
-          "SFR 1 DU/acre": 25
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "moraga/sf-district-standards",
-        "note": "district keys are the code table headings, not zoning-map codes"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "lafayette/sf-district-standards"
+   },
+   "slug": "lafayette",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "LMC 6-564(a); 6-566(b)(2)",
+    "quote": "[6-564(a)] Limited Detached on Single-family Lot: One detached, new-construction ADU on a lot with a proposed or existing single-family dwelling (in addition to any JADU that might be established on the lot), if the detached ADU satisfies all of the following limitations: (1) The side- and rear-yard setbacks are at least four feet. (2) The total floor area is 800 square feet or smaller. (3) The height above grade does not exceed the applicable height limit provided in Section 6-563(b). || [6-566] The following section applies to ADUs that do not qualify as Class A or Class B ADUs. ... (b)(2) Subject to subsections (a)(3) and (b)(1), above, front yard setbacks shall be as follows: (A) R-6, R-10, R-12, R-15, D-1, M-R-A, M-R-B, M-R-O districts: At least 20 feet; ...",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Orinda",
-      "county": "Contra Costa",
-      "zoneomics_city_name": "Orinda",
-      "zoneomics_city_id": 3361,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "RL-20",
-      "ordinance_link": "https://www.zoneomics.com/code/orinda-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "OMC 17.4.8 - shorter frontage is generally the front"
-      },
-      "residential_front_setback": {
-        "value_ft": 25,
-        "source": "code",
-        "citation": "OMC Schedule 17.4.2(A): RVL-E, RVL, RL-40, RL-20 25 ft; RL-15, RL-12, RL-10, RL-6 20 ft; RM 15 ft",
-        "by_district": {
-          "RVL-E": 25,
-          "RVL": 25,
-          "RL-40": 25,
-          "RL-20": 25,
-          "RL-15": 20,
-          "RL-12": 20,
-          "RL-10": 20,
-          "RL-6": 20,
-          "RM": 15
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "orinda/sf-district-standards",
-        "note": "default = RL-20 (sample zone at the query point)"
-      }
+    "notes": "Class A detached unit lists side/rear, size, height only. 6-563 (general requirements for Classes A/B/C) has no setback clause. The district-specific front setbacks (20/25/30/50 ft) and the 800 sf yield in 6-566(a)(3) apply only to Class C. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/lafayette/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Moraga",
+   "county": "Contra Costa",
+   "zoneomics_city_name": "Moraga",
+   "zoneomics_city_id": 3985,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://www.zoneomics.com/code/moraga-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "designated",
+    "source": "code",
+    "citation": "MMC 8.68.090 - front lot line = principal street"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "MMC § 8.24.060 table: SFR 3 DU/acre 20 ft; SFR 1 and 2 DU/acre 25 ft",
+    "by_district": {
+     "SFR 3 DU/acre": 20,
+     "SFR 2 DU/acre": 25,
+     "SFR 1 DU/acre": 25
     },
-    {
-      "jurisdiction": "Fairfax",
-      "county": "Marin",
-      "zoneomics_city_name": "Fairfax",
-      "zoneomics_city_id": 1498,
-      "zoneomics_last_updated": "2026-08-09",
-      "sample_zone_code_at_query_point": "CH",
-      "ordinance_link": "https://www.zoneomics.com/code/fairfax-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "TC 17.010.110(B) (Ord. 885, 11-1-2023) - \"The front of a corner lot is the narrowest dimension of the lot with street frontage\"; this is the operative front declaration. 17.010.120(B) refers to a \"corner side yard\", confirming one front plus one street side. Street-side treatment: 17.040.020(D) gives all street frontage of any corner lot a 10 ft setback, which equals the 10 ft front yard setback in 17.040.020(A), so the numeric outcome is identical either way - this entry was previously labeled all_fronts on the strength of 17.040.020(D), but that is a setback rule, not a front declaration. Ch. 17.008 defines CORNER LOT as \"a lot in the junction of and fronting on two or more intersecting streets\" (locational, not operative) and never defines \"front lot line\"; 17.010.110(B) fills that gap. Caveat: 17.040.020 preamble is ambiguously drafted (\"no accessory structure or building...\") and per-district primary-dwelling setbacks were not traced."
-      },
-      "residential_front_setback": {
-        "value_ft": 10,
-        "source": "code",
-        "citation": "FTC § 17.076.070(A)(1) (RS-7.5): front + rear combined ≥ 30 ft, neither < 10 ft; § 17.080.070 (RS-6): combined ≥ 25 ft, neither < 6 ft",
-        "by_district": {
-          "RS-7.5": 10,
-          "RS-6": 6
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "fairfax/sf-district-standards",
-        "note": "combined front+rear rule: the number is the front minimum, the rear absorbs the rest"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "moraga/sf-district-standards",
+    "note": "district keys are the code table headings, not zoning-map codes"
+   },
+   "slug": "moraga",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "MMC 8.124.110(C)(2)",
+    "quote": "One detached ADU, new construction with a proposed or existing single-family dwelling that complies with the following standards: (1) The lot on which the ADU is located does not contain another ADU, but may contain a JADU permitted pursuant to Section 8.124.110.B (2) Front yard setbacks consistent with the applicable zoning district to the extent such setbacks do not preclude development of an ADU. (3) The side and rear setbacks are at least four feet. (4) The total interior floor area is not more than eight hundred (800) square feet. (5) The height is sixteen (16) feet or less.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Mill Valley",
-      "county": "Marin",
-      "zoneomics_city_name": "Mill Valley",
-      "zoneomics_city_id": 1508,
-      "zoneomics_last_updated": "2026-08-09",
-      "sample_zone_code_at_query_point": "C-D",
-      "ordinance_link": "https://www.zoneomics.com/code/mill-valley-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "designated",
-        "source": "code",
-        "citation": "MMC 20.90.030(A)(12) - primary frontage by driveway/home orientation; remaining street frontage is the side yard"
-      },
-      "residential_front_setback": {
-        "value_ft": 15,
-        "source": "code",
-        "citation": "MVMC § 20.16.040(C) (RS districts): exterior yards 15 ft",
-        "by_district": {
-          "RS": 15
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "mill-valley/sf-district-standards",
-        "note": "Mill Valley sets one exterior-yard number for all RS districts"
-      }
+    "notes": "Streamlined ADU section (65852.2(e) numbering). The yield is phrased 'to the extent such setbacks do not preclude development of an ADU' (not tied to 800 sf in words, but the unit is capped at 800 sf by (4)). Standard (non-streamlined) ADUs at 8.124.130(D) get the district front with no relief. 8.124.080 general requirements contain no placement or front rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/moraga/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Orinda",
+   "county": "Contra Costa",
+   "zoneomics_city_name": "Orinda",
+   "zoneomics_city_id": 3361,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://www.zoneomics.com/code/orinda-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "OMC 17.4.8 - shorter frontage is generally the front"
+   },
+   "residential_front_setback": {
+    "value_ft": 25,
+    "source": "code",
+    "citation": "OMC Schedule 17.4.2(A): RVL-E, RVL, RL-40, RL-20 25 ft; RL-15, RL-12, RL-10, RL-6 20 ft; RM 15 ft",
+    "by_district": {
+     "RVL-E": 25,
+     "RVL": 25,
+     "RL-40": 25,
+     "RL-20": 25,
+     "RL-15": 20,
+     "RL-12": 20,
+     "RL-10": 20,
+     "RL-6": 20,
+     "RM": 15
     },
-    {
-      "jurisdiction": "Sausalito",
-      "county": "Marin",
-      "zoneomics_city_name": "Sausalito",
-      "zoneomics_city_id": 1526,
-      "zoneomics_last_updated": "2026-08-09",
-      "sample_zone_code_at_query_point": "CR",
-      "ordinance_link": "https://www.zoneomics.com/code/sausalito-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "owner_elected",
-        "source": "code",
-        "citation": "SMC 10.88 - owner elects the front street line with Director concurrence"
-      },
-      "residential_front_setback": {
-        "value_ft": 0,
-        "source": "code",
-        "citation": "SMC § 10.22.040 Table 10.22-2: front 0 ft in R-1-6, R-1-8, R-1-20; note 8: 10 ft where designated on the zoning map (§ 10.40.070E.4 special setback lines)",
-        "by_district": {
-          "R-1-6": 0,
-          "R-1-8": 0,
-          "R-1-20": 0
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "sausalito/sf-district-standards",
-        "note": "the code really says 0 ft; check the zoning map for a 10 ft special setback line"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "orinda/sf-district-standards",
+    "note": "default = RL-20 (sample zone at the query point)"
+   },
+   "slug": "orinda",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "OMC 17.3.4(B)(3)(e); 17.3.4(C)(4)",
+    "quote": "[B.3 Detached, New Construction (Single-Family)—ADUs] ... e. The ADU is located at least four feet from the side and rear lot lines, is no greater than eight hundred (800) adjusted square feet in floor area, and has a height in compliance with OMC section 17.3.4.(C)(4)(c). || [C] All Other ADUs. Any ADU that does not meet the standards for streamlined ADUs in Subsection B shall meet the following development standards and use restrictions: ... 4. The ADU meets all other applicable requirements of this code that do not involve discretionary review including, but not limited to, building height, setback, water channel setback, ...",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Napa",
-      "county": "Napa",
-      "zoneomics_city_name": "Napa",
-      "zoneomics_city_id": 1933,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "RS-5",
-      "ordinance_link": "https://www.zoneomics.com/code/napa-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "NMC 17.06.030 - on a corner lot the front line is the shorter of any two adjacent street lot lines"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "NMC § 17.08.030 table: RS-10, RS-7, RS-5, RS-4, RM 20 ft; RS-40, RS-20 30 ft; block-average rule (note 3) may lower it",
-        "by_district": {
-          "RS-40": 30,
-          "RS-20": 30,
-          "RI-20": 30,
-          "RS-10": 20,
-          "RI-10": 20,
-          "RS-7": 20,
-          "RI-7": 20,
-          "RT-7": 20,
-          "RS-5": 20,
-          "RI-5": 20,
-          "RT-5": 20,
-          "RS-4": 20,
-          "RI-4": 20,
-          "RT-4": 20,
-          "RM": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "napa/sf-district-standards"
-      }
+    "notes": "Streamlined (66323) section lists side/rear, size, height only. The requirement to meet all other code setbacks (C.4) applies only to non-streamlined ADUs. The chapter never uses the word 'front'. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/orinda/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Fairfax",
+   "county": "Marin",
+   "zoneomics_city_name": "Fairfax",
+   "zoneomics_city_id": 1498,
+   "zoneomics_last_updated": "2026-08-09",
+   "ordinance_link": "https://www.zoneomics.com/code/fairfax-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "TC 17.010.110(B) (Ord. 885, 11-1-2023) - \"The front of a corner lot is the narrowest dimension of the lot with street frontage\"; this is the operative front declaration. 17.010.120(B) refers to a \"corner side yard\", confirming one front plus one street side. Street-side treatment: 17.040.020(D) gives all street frontage of any corner lot a 10 ft setback, which equals the 10 ft front yard setback in 17.040.020(A), so the numeric outcome is identical either way - this entry was previously labeled all_fronts on the strength of 17.040.020(D), but that is a setback rule, not a front declaration. Ch. 17.008 defines CORNER LOT as \"a lot in the junction of and fronting on two or more intersecting streets\" (locational, not operative) and never defines \"front lot line\"; 17.010.110(B) fills that gap. Caveat: 17.040.020 preamble is ambiguously drafted (\"no accessory structure or building...\") and per-district primary-dwelling setbacks were not traced."
+   },
+   "residential_front_setback": {
+    "value_ft": 10,
+    "source": "code",
+    "citation": "FTC § 17.076.070(A)(1) (RS-7.5): front + rear combined ≥ 30 ft, neither < 10 ft; § 17.080.070 (RS-6): combined ≥ 25 ft, neither < 6 ft",
+    "by_district": {
+     "RS-7.5": 10,
+     "RS-6": 6
     },
-    {
-      "jurisdiction": "Atherton",
-      "county": "San Mateo",
-      "zoneomics_city_name": "Atherton",
-      "zoneomics_city_id": 1485,
-      "zoneomics_last_updated": "2026-08-09",
-      "sample_zone_code_at_query_point": "R-1B",
-      "ordinance_link": "https://atherton.municipal.codes/Code/17",
-      "code_platform": "Municipal.codes (OpenGov)",
-      "front_rule": {
-        "rule": "address_street",
-        "source": "code",
-        "citation": "AMC 17.52.040(F)(7) - front designated by the address street on corner/double-frontage lots"
-      },
-      "residential_front_setback": {
-        "value_ft": 60,
-        "source": "code",
-        "citation": "AMC § 17.32.040(D)(1) (R-1A): 60 ft; lots of record before Ord. 146 (1946) under 200 ft deep: 30 % of depth, min 30 ft",
-        "by_district": {
-          "R-1A": 60,
-          "R-1B": 60
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "atherton/sf-district-standards"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "fairfax/sf-district-standards",
+    "note": "combined front+rear rule: the number is the front minimum, the rear absorbs the rest"
+   },
+   "slug": "fairfax",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 1200,
+    "citation": "FMC 17.048.010(E)(1)(b); (G)(3)(a)",
+    "quote": "[(E)(1)(b)] Limited detached on lot with single-family. One or two detached, new-construction ADU on a lot with a proposed or existing single-family dwelling (in addition to any JADU that might otherwise be established on the lot under division (E)(1) above), if the detached ADU satisfies each of the following limitations: 1. The side- and rear-yard setbacks are at least four feet. 2. The total floor area is 1,200 square feet or smaller (based on interior livable space). 3. The peak height above grade does not exceed the applicable height limit in division (F)(2)(a) through (c) below. || [(G)] Specific ADU requirements. The following requirements apply only to Class 2 ADUs approved under division (E)(2) above. This subsection does not apply to Class 1 ADUs or JADUs approved under division (E)(1) above. ... (3)(a) ADUs that are subject to this division (G) must conform to four-foot side and rear setbacks. ADUs that are subject to this division (G) must conform to ten-foot front setbacks.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Hillsborough",
-      "county": "San Mateo",
-      "zoneomics_city_name": "Hillsborough",
-      "zoneomics_city_id": 3892,
-      "zoneomics_last_updated": "2026-08-15",
-      "sample_zone_code_at_query_point": "RD-1",
-      "ordinance_link": "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO",
-      "code_platform": "Municode",
-      "front_rule": {
-        "rule": "all_fronts",
-        "source": "code",
-        "citation": "HMC 17.24.020(A) - 25 ft street-line setback on every street frontage; no front concept"
-      },
-      "residential_front_setback": {
-        "value_ft": 25,
-        "source": "code",
-        "citation": "HMC § 17.24.020(A): 25 ft street-line setback area; § 17.24.020(D): no dwelling within 50 ft of the right-of-way centerline",
-        "by_district": {},
-        "extracted": "2026-09-24",
-        "corpus_doc": "hillsborough/sf-district-standards",
-        "note": "Hillsborough sets setbacks by topic, one number for every lot"
-      }
+    "notes": "Class 1 (statutorily regulated, Gov. Code 66323) detached unit runs to 1,200 sf locally (larger than the 800 sf state threshold). Division (F) (general requirements for Class 1 and 2) contains height, sprinklers, rental, etc. but no setback language. The 10-ft front and the 800 sf yield in (G)(1)(c) apply only to Class 2. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/fairfax/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Mill Valley",
+   "county": "Marin",
+   "zoneomics_city_name": "Mill Valley",
+   "zoneomics_city_id": 1508,
+   "zoneomics_last_updated": "2026-08-09",
+   "ordinance_link": "https://www.zoneomics.com/code/mill-valley-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "designated",
+    "source": "code",
+    "citation": "MMC 20.90.030(A)(12) - primary frontage by driveway/home orientation; remaining street frontage is the side yard"
+   },
+   "residential_front_setback": {
+    "value_ft": 15,
+    "source": "code",
+    "citation": "MVMC § 20.16.040(C) (RS districts): exterior yards 15 ft",
+    "by_district": {
+     "RS": 15
     },
-    {
-      "jurisdiction": "Menlo Park",
-      "county": "San Mateo",
-      "zoneomics_city_name": "Menlo Park",
-      "zoneomics_city_id": 1507,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "RE",
-      "ordinance_link": "https://www.codepublishing.com/CA/MenloPark/html/MenloPark16/MenloPark16.html",
-      "code_platform": "Code Publishing",
-      "front_rule": {
-        "rule": "owner_elected",
-        "source": "code",
-        "citation": "MPMC 16.04.405 - owner may elect the front lot line on corner lots"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "MPMC §§ 16.10.030, 16.12.030, 16.14.030, 16.16.030, 16.17.030 (R-E, R-E-S, R-1-S, R-1-U, R-1-U (LM)): 20 ft front",
-        "by_district": {
-          "R-E": 20,
-          "R-E-S": 20,
-          "R-1-S": 20,
-          "R-1-S (FG)": 20,
-          "R-1-U": 20,
-          "R-1-U (LM)": 20,
-          "RE": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "menlo-park/sf-district-standards"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "mill-valley/sf-district-standards",
+    "note": "Mill Valley sets one exterior-yard number for all RS districts"
+   },
+   "slug": "mill-valley",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "MVMC 20.90.040(A)(1)(c); 20.90.050 and 20.90.050(A)(1)(a)-(b)",
+    "quote": "[20.90.040(A)(1)] As provided under Government Code Section 65852.2(e)(1), an owner shall not be required to submit an application for an ADU permit under subsection B below, and may instead seek building permit approval for the following types of units that are located within residential or mixeduse zones: ... c. New construction of detached ADUs meeting the requirements of Government Code Sections 65852.2(e)(1)(B) or 65852.2(e)(1)(D). || [20.90.050] Except for those ADUs approved under Section 20.90.040(A), an ADU shall comply with the following development standards. ... A.1. An ADU shall conform to all lot coverage, adjusted floor area, and setback regulations applicable to the zoning district in which the property is located, except in the following cases: a. ADUs or JADUs that are not required to obtain an ADU permit as provided under Section 20.90.040(A). b. Where the application of lot coverage, adjusted floor area, and setback violates Government Code Section 65852.2(c)(2)(C).",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Portola Valley",
-      "county": "San Mateo",
-      "zoneomics_city_name": "Portola Valley",
-      "zoneomics_city_id": 1515,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "R-E/3.5A/SD-2/D-R",
-      "ordinance_link": "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO",
-      "code_platform": "Municode",
-      "front_rule": {
-        "rule": "owner_elected",
-        "source": "code",
-        "citation": "PVMC 18.04.350 - owner may elect any street parcel line as front, with town planner concurrence; flag lots: line nearest and most nearly parallel to the street"
-      },
-      "residential_front_setback": {
-        "value_ft": 50,
-        "source": "code",
-        "citation": "PVMC § 18.48.010 Table 1: 1 A and larger combining districts 50 ft; 7.5 M, 15 M, 20 M 20 ft",
-        "by_district": {
-          "1A": 50,
-          "2A": 50,
-          "2.5A": 50,
-          "3.5A": 50,
-          "5A": 50,
-          "7.5A": 50,
-          "7.5M": 20,
-          "15M": 20,
-          "20M": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "portola-valley/sf-district-standards",
-        "note": "zone codes carry the combining district after the slash, e.g. R-E/3.5A"
-      }
+    "notes": "HARD CALL (silent-by-exemption). Chapter still cites pre-2025 numbering (65852.2(e)(1)(B) = today's 66323(a)(2), 800 sf). The exempt-unit clause states no local standards at all; 20.90.050 (district setbacks with a yield by reference to 65852.2(c)(2)(C), today's 66321(b)(3)) is expressly disapplied for those units twice. BUT 20.90.030(A)(12), in the general requirements that apply to all ADUs, says units qualifying for reduced rear/side setbacks under 65852.2 on double-frontage or corner lots 'shall maintain the exterior yard setback for the primary frontage' (the opposite/remaining frontage being treated as rear/side). So on corner and through lots the district front on the primary frontage does reach the state-track unit (district_applies there); on interior lots the chapter is silent. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/mill-valley/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Sausalito",
+   "county": "Marin",
+   "zoneomics_city_name": "Sausalito",
+   "zoneomics_city_id": 1526,
+   "zoneomics_last_updated": "2026-08-09",
+   "ordinance_link": "https://www.zoneomics.com/code/sausalito-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "owner_elected",
+    "source": "code",
+    "citation": "SMC 10.88 - owner elects the front street line with Director concurrence"
+   },
+   "residential_front_setback": {
+    "value_ft": 0,
+    "source": "code",
+    "citation": "SMC § 10.22.040 Table 10.22-2: front 0 ft in R-1-6, R-1-8, R-1-20; note 8: 10 ft where designated on the zoning map (§ 10.40.070E.4 special setback lines)",
+    "by_district": {
+     "R-1-6": 0,
+     "R-1-8": 0,
+     "R-1-20": 0
     },
-    {
-      "jurisdiction": "San Carlos",
-      "county": "San Mateo",
-      "zoneomics_city_name": "San Carlos",
-      "zoneomics_city_id": 1520,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "MU-DC-100",
-      "ordinance_link": "https://zoneomics.com/code/san-carlos-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "SCMC 18.41.020 - corner lot front = the shorter lot line abutting a street; flag lots: interior line nearest and most parallel to the access street"
-      },
-      "residential_front_setback": {
-        "value_ft": 15,
-        "source": "code",
-        "citation": "SCMC Table 18.04.030: RS-6 15 ft (1st story) / 19 ft (2nd story); RS-3 20 ft",
-        "by_district": {
-          "RS-6": 15,
-          "RS-3": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "san-carlos/sf-district-standards",
-        "note": "RS-6 second story 19 ft"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "sausalito/sf-district-standards",
+    "note": "the code really says 0 ft; check the zoning map for a 10 ft special setback line"
+   },
+   "slug": "sausalito",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "SMC § 10.44.080(E)(1)(b); 10.44.080(G)(3)(a)",
+    "quote": "[E.1.b] Limited Detached on Lot with Single-Family: One detached, new-construction ADU on a lot with a proposed or existing single-family dwelling, if the detached ADU satisfies each of the following limitations: i. The side- and rear-yard setbacks are at least four feet. ii. The total floor area is 800 square feet of livable space or smaller. iii. The peak height above grade does not exceed the applicable height limit in subsection F.2 of this section. || [G] Specific ADU Requirements. The following requirements apply only to Class 2 ADUs approved under subsection E.2 of this section. This subsection G does not apply to Class 1 ADUs or JADUs approved under subsection E.1 of this section. ... G.3.a ADUs that are subject to this subsection G must conform to four-foot side and rear setbacks, ADUs that are subject to this subsection G must conform to 10-foot front setbacks, subject to subsection G.1.c of this section.",
+    "placement_rule": {
+     "exists": true,
+     "quote": "Historic District Protections. Any attached or detached ADU that is within the City of Sausalito Historic District (-H overlay district) must be located entirely behind the rear-most exterior wall of the primary dwelling and directly behind the primary dwelling.",
+     "citation": "SMC § 10.44.080(G)(10)",
+     "exempted_by_notwithstanding": true
     },
-    {
-      "jurisdiction": "San Mateo",
-      "county": "San Mateo",
-      "zoneomics_city_name": "San Mateo",
-      "zoneomics_city_id": 1522,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "CBD",
-      "ordinance_link": "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27",
-      "code_platform": "City-hosted",
-      "front_rule": {
-        "rule": "owner_elected",
-        "source": "code",
-        "citation": "SMMC 27.04.300(a) - on a corner lot the owner may elect either street property line as the front; through lots: both street lines are fronts (27.04.275(d))"
-      },
-      "residential_front_setback": {
-        "value_ft": 15,
-        "source": "code",
-        "citation": "SMMC § 27.18.070(a): R1-B and R1-C 15 ft; R1-A 25 ft; garages 20 ft (b)",
-        "by_district": {
-          "R1-B": 15,
-          "R1-C": 15,
-          "R1-A": 25
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "san-mateo/sf-district-standards"
-      }
+    "notes": "Class 1 (66323) detached unit lists side/rear, size, height only; subsection F (all classes) has no setback clause. The 10-ft front with the 800 sf yield (G.1.c) is Class 2 only. Placement rule G.10 applies only inside the -H historic overlay and is within subsection G, which 'does not apply to Class 1 ADUs' (express disapplication rather than a literal 'notwithstanding').",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/sausalito/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Napa",
+   "county": "Napa",
+   "zoneomics_city_name": "Napa",
+   "zoneomics_city_id": 1933,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://www.zoneomics.com/code/napa-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "NMC 17.06.030 - on a corner lot the front line is the shorter of any two adjacent street lot lines"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "NMC § 17.08.030 table: RS-10, RS-7, RS-5, RS-4, RM 20 ft; RS-40, RS-20 30 ft; block-average rule (note 3) may lower it",
+    "by_district": {
+     "RS-40": 30,
+     "RS-20": 30,
+     "RI-20": 30,
+     "RS-10": 20,
+     "RI-10": 20,
+     "RS-7": 20,
+     "RI-7": 20,
+     "RT-7": 20,
+     "RS-5": 20,
+     "RI-5": 20,
+     "RT-5": 20,
+     "RS-4": 20,
+     "RI-4": 20,
+     "RT-4": 20,
+     "RM": 20
     },
-    {
-      "jurisdiction": "San Mateo County (unincorporated)",
-      "county": "San Mateo",
-      "zoneomics_city_name": "San Mateo County Unincorporated",
-      "zoneomics_city_id": 3893,
-      "zoneomics_last_updated": "2026-08-15",
-      "sample_zone_code_at_query_point": "R-1/S-73",
-      "ordinance_link": "https://www.zoneomics.com/code/san-mateo-county-unincorporated-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "County zoning Def. 80 - front lot line = the narrowest lot frontage"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "SMC Ord. Code S combining districts: §§ 8.158.050 (S-50), 8.166 (S-72), 8.170.050 (S-73), 8.182 (S-81), 8.190 (S-83), 8.202 (S-92), 8.204 (S-93), 8.240 (S-108): 20 ft; RH § 8.110: 20 ft",
-        "by_district": {
-          "S-50": 20,
-          "S-72": 20,
-          "S-81": 20,
-          "S-83": 20,
-          "S-92": 20,
-          "S-93": 20,
-          "S-108": 20,
-          "RH": 20,
-          "S-73": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "san-mateo-county/sf-district-standards",
-        "note": "R-1 itself (Ch. 8.16) sets no yards; the S district after the slash does"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "napa/sf-district-standards"
+   },
+   "slug": "napa",
+   "state_track_front": {
+    "rule": "local",
+    "value_ft": 0,
+    "value_rule": null,
+    "flags": [
+     "front_from_local_adu_chapter",
+     "front_local_grant_by_disapplication"
+    ],
+    "classification": "grant_local",
+    "threshold_sf": 800,
+    "citation": "NMC § 17.52.015(C)(4)(c)",
+    "quote": "[(C)(4)(b)] Except for conversions, a setback of four feet from the side and rear lot lines shall be required for each accessory dwelling unit or junior accessory dwelling unit. || [(C)(4)(c)] Except for conversions, accessory dwelling units shall comply with the front setback requirement of the underlying zoning district unless such setback would prevent the construction of an 800 square foot accessory dwelling unit in compliance with Government Code section 66323(a)(4) or any successor provisions. This subsection (C)(4)(c) does not apply to proposed accessory dwelling units described in and meeting the requirements of Government Code section 66323(a).",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Los Altos",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "Los Altos",
-      "zoneomics_city_id": 1505,
-      "zoneomics_last_updated": "2026-07-21",
-      "sample_zone_code_at_query_point": "R1-10",
-      "ordinance_link": "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO",
-      "code_platform": "Municode",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "LAMC 14.02.010 Lot line - corner lot front = shortest dimension fronting the street; either line allowed only if both remain conforming; flag lots: interior line nearest and most parallel to the access street"
-      },
-      "residential_front_setback": {
-        "value_ft": 25,
-        "source": "code",
-        "citation": "LAMC § 14.06.080 (R1-10) 25 ft; § 14.08.080 (R1-H) 30 ft; § 14.10.080 (R1-20) 30 ft; § 14.12.080 (R1-40) 50 ft",
-        "by_district": {
-          "R1-10": 25,
-          "R1-H": 30,
-          "R1-20": 30,
-          "R1-40": 50
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "los-altos/sf-district-standards"
-      }
+    "notes": "HARD CALL (grant by front-specific disapplication). The chapter's only front-setback clause (district front + 800 sf yield) is expressly declared not to apply to 66323(a) units, and nothing else in the chapter imposes a front on them, so the local text affirmatively removes the front requirement for the state-track unit. Classified grant_none because the disapplication is specific to the front-setback subsection (contrast Contra Costa / Mill Valley, where the whole standards section is disapplied and I classified silent). Same 'does not apply to 66323(a)' pattern used for coverage (C)(3). No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/napa/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Atherton",
+   "county": "San Mateo",
+   "zoneomics_city_name": "Atherton",
+   "zoneomics_city_id": 1485,
+   "zoneomics_last_updated": "2026-08-09",
+   "ordinance_link": "https://atherton.municipal.codes/Code/17",
+   "code_platform": "Municipal.codes (OpenGov)",
+   "front_rule": {
+    "rule": "address_street",
+    "source": "code",
+    "citation": "AMC 17.52.040(F)(7) - front designated by the address street on corner/double-frontage lots"
+   },
+   "residential_front_setback": {
+    "value_ft": 60,
+    "source": "code",
+    "citation": "AMC § 17.32.040(D)(1) (R-1A): 60 ft; lots of record before Ord. 146 (1946) under 200 ft deep: 30 % of depth, min 30 ft",
+    "by_district": {
+     "R-1A": 60,
+     "R-1B": 60
     },
-    {
-      "jurisdiction": "Los Altos Hills",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "Los Altos Hills",
-      "zoneomics_city_id": 8903,
-      "zoneomics_last_updated": "2026-07-13",
-      "sample_zone_code_at_query_point": "R-A",
-      "ordinance_link": "https://www.zoneomics.com/code/los-altos-hills-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "designated",
-        "source": "code",
-        "citation": "LAHMC 10-1.505(c)(2) - Planning Commission designates the 40-ft street on multi-street lots"
-      },
-      "residential_front_setback": {
-        "value_ft": 40,
-        "source": "code",
-        "citation": "LAHMC § 10-1.505(c)(1) (R-A): 40 ft from the street right-of-way or access easement",
-        "by_district": {
-          "R-A": 40
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "los-altos-hills/sf-district-standards",
-        "note": "measured from the right-of-way / easement line, not the lot line"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "atherton/sf-district-standards"
+   },
+   "slug": "atherton",
+   "state_track_front": {
+    "rule": "local",
+    "value_ft": 0,
+    "value_rule": null,
+    "flags": [
+     "front_from_local_adu_chapter"
+    ],
+    "classification": "grant_local",
+    "threshold_sf": 800,
+    "citation": "AMC 17.52.040(F)(2)",
+    "quote": "A newly constructed detached or attached ADU that is eight hundred square feet or less on a lot with an existing or proposed single-family dwelling unit must be located at least four feet from a side or rear property line. This type of ADU does not have a front yard setback.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Mountain View",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "Mountain View",
-      "zoneomics_city_id": 296,
-      "zoneomics_last_updated": "2026-07-21",
-      "sample_zone_code_at_query_point": "R2",
-      "ordinance_link": "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO",
-      "code_platform": "Municode",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "MVCC 36.60.27 - corner lot front = shortest frontage unless the owner designates the longer at time of development; through lots: both lines are fronts"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "MVCC § 36.10.25 R1 Zone Development Standards: 20 ft minimum for the first-floor wall",
-        "by_district": {
-          "R1": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "mountain-view/sf-district-standards"
-      }
+    "notes": "Unconditional. 17.52.040(F) opens 'Except as specified below, all ADUs and JADUs shall comply with the setback requirements of the zone'; (F)(2) is the carve-out. Same sentence repeated for detached ADUs on multifamily lots at (F)(6). (F)(8) only defines which yard is 'front' on corner/double-frontage lots. No placement rule; entrance-orientation rule in (G) applies only to ADUs >800 sf.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/atherton/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Hillsborough",
+   "county": "San Mateo",
+   "zoneomics_city_name": "Hillsborough",
+   "zoneomics_city_id": 3892,
+   "zoneomics_last_updated": "2026-08-15",
+   "ordinance_link": "https://library.municode.com/ca/hillsborough/codes/code_of_ordinances?nodeId=TIT17ZO",
+   "code_platform": "Municode",
+   "front_rule": {
+    "rule": "all_fronts",
+    "source": "code",
+    "citation": "HMC 17.24.020(A) - 25 ft street-line setback on every street frontage; no front concept"
+   },
+   "residential_front_setback": {
+    "value_ft": 25,
+    "source": "code",
+    "citation": "HMC § 17.24.020(A): 25 ft street-line setback area; § 17.24.020(D): no dwelling within 50 ft of the right-of-way centerline",
+    "by_district": {},
+    "extracted": "2026-09-24",
+    "corpus_doc": "hillsborough/sf-district-standards",
+    "note": "Hillsborough sets setbacks by topic, one number for every lot"
+   },
+   "slug": "hillsborough",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "HMC 17.52.020(D)(1)(b); 17.52.020(F)(2)(b)",
+    "quote": "[D.1.b] Limited Detached on Lot with Single-Family. One detached, new-construction ADU on a lot with a proposed or existing single-family dwelling, if the detached ADU satisfies each of the following limitations: (1) The side- and rear-yard setbacks are at least four feet. (2) The total floor area is eight hundred square feet of livable space or smaller. (3) The peak height above grade does not exceed the applicable height limit in subsection E.2. below. || [F] Class 2 ADU Requirements. The following requirements apply only to class 2 ADUs approved under subsection D.2. above. This subsection F. does not apply to class 1 ADUs or JADUs approved under subsection D.1. above. ... 2.b. Front. ADUs that are subject to this subsection F. must conform to twenty-foot front setbacks, notwithstanding subsection F.1.c. above.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Palo Alto",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "Palo Alto",
-      "zoneomics_city_id": 295,
-      "zoneomics_last_updated": "2026-07-21",
-      "sample_zone_code_at_query_point": "R-1",
-      "ordinance_link": "https://www.zoneomics.com/code/palo-alto-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "owner_elected",
-        "source": "code",
-        "citation": "PAMC 18.09.040(j)(4) corner-lot election (10 ft street side / 16 ft front)"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "PAMC § 18.12.040(e) (R-1): the greater of 20 ft or the block average when that average is 30 ft or more",
-        "by_district": {
-          "R-1": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "palo-alto/sf-district-standards",
-        "note": "contextual rule can raise it above 20"
-      }
+    "notes": "Class 1 (Gov. Code 66323) detached unit lists side/rear, size, height only. Subsection E (general requirements for all classes) has no setback clause. The 20-ft front in F.2.b applies only to Class 2 and is expressly NOT subject to the 800 sf yield in F.1.c ('notwithstanding subsection F.1.c'), i.e. Class 2 units get no front relief at all. No placement rule (F.8 landscape screening is Class 2 only).",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/hillsborough/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Menlo Park",
+   "county": "San Mateo",
+   "zoneomics_city_name": "Menlo Park",
+   "zoneomics_city_id": 1507,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://www.codepublishing.com/CA/MenloPark/html/MenloPark16/MenloPark16.html",
+   "code_platform": "Code Publishing",
+   "front_rule": {
+    "rule": "owner_elected",
+    "source": "code",
+    "citation": "MPMC 16.04.405 - owner may elect the front lot line on corner lots"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "MPMC §§ 16.10.030, 16.12.030, 16.14.030, 16.16.030, 16.17.030 (R-E, R-E-S, R-1-S, R-1-U, R-1-U (LM)): 20 ft front",
+    "by_district": {
+     "R-E": 20,
+     "R-E-S": 20,
+     "R-1-S": 20,
+     "R-1-S (FG)": 20,
+     "R-1-U": 20,
+     "R-1-U (LM)": 20,
+     "RE": 20
     },
-    {
-      "jurisdiction": "San Jose",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "San Jose",
-      "zoneomics_city_id": 148,
-      "zoneomics_last_updated": "2026-08-13",
-      "sample_zone_code_at_query_point": "CP",
-      "ordinance_link": "https://www.zoneomics.com/code/san-jose-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "SJMC 20.200.700 - \"Front lot line of a corner lot\" is the narrower lot line abutting a public or private right-of-way; \"Side corner lot line of a corner lot\" is the longer of the two. This is the default and it governs the ordinary corner lot. The entry was previously labeled all_fronts on the strength of 20.30.210(A), but that section is conditional (\"If a lot exceeds the defined dimensions of a corner lot\") and describes the exception, not the rule - see front_rule.overrides. 20.30.210(B) gives the director of planning final say on irregular or greater-than-four-sided lots, with a floor of one front and one rear property line.",
-        "overrides": [
-          {
-            "rule": "all_fronts",
-            "condition": "oversized_corner_lot",
-            "citation": "SJMC 20.200.670(A); restated at 20.30.210(A)",
-            "description": "A lot that exceeds the corner-lot dimension thresholds is not a corner lot and is deemed to have two front property lines. Thresholds: 120 ft in residential districts, 150 ft in commercial districts. BOTH street frontages must exceed the threshold; a lot exceeding on only one frontage remains an ordinary corner lot with a single (narrower) front.",
-            "thresholds_ft": {
-              "residential": 120,
-              "commercial": 150
-            }
-          },
-          {
-            "rule": "all_fronts",
-            "condition": "pedestrian_oriented_district",
-            "citation": "SJMC 20.200.670(B)",
-            "description": "In a pedestrian oriented zoning district a corner lot has a minimum of two front lot lines regardless of the dimensions of the lot. Applies notwithstanding 20.200.670(A), so it is not gated on lot size. zone_codes lists the districts: Ch. 20.75 regulates the MS main street districts (MS-G, MS-C), established in Table 20-20 of 20.10.060 and applicable only within the Alum Rock Neighborhood Business District (20.75.020(A)). Ambiguity not resolved: DC/DC-NT1 (downtown, Ch. 20.70) and CP \"Commercial Pedestrian\" (Ch. 20.40) are NOT treated as pedestrian oriented districts here, since 20.75.010 is the chapter that carries the label; revisit if the city applies 20.200.670(B) more broadly.",
-            "zone_codes": [
-              "MS-G",
-              "MS-C"
-            ]
-          }
-        ]
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "SJMC Table 20-50 (§ 20.30.200): R-1-8 and R-1-5 20 ft; R-1-2 and R-1-1 30 ft; R-1-RR 50 ft; R-2 15 ft",
-        "by_district": {
-          "R-1-8": 20,
-          "R-1-5": 20,
-          "R-1-2": 30,
-          "R-1-1": 30,
-          "R-1-RR": 50,
-          "R-2": 15
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "san-jose/sf-district-standards"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "menlo-park/sf-district-standards"
+   },
+   "slug": "menlo-park",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "MPMC 16.79.050(a)(2); 16.79.050(d)",
+    "quote": "[16.79.050 intro] 66323 Units need only comply with the development standards set forth in this subsection. ... (a)(2) One detached ADU. For a lot with an existing or proposed single-family dwelling, one detached, new construction ADU that meets all the following requirements: (A) Maximum Floor Area. The ADU shall not exceed 800 square feet of interior livable space. (B) Minimum Rear and Side Setbacks. Four feet. (C) Maximum Height: (i) 16 feet for a detached ADU on a lot with an existing or proposed single-family unit. (ii) 18 feet ... || [16.79.050(d)] No objective development or design standard shall be imposed on an ADU authorized by this section unless expressly authorized by Government Code Section 66323(b).",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Saratoga",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "Saratoga",
-      "zoneomics_city_id": 1525,
-      "zoneomics_last_updated": "2026-07-09",
-      "sample_zone_code_at_query_point": "R-1-20000",
-      "ordinance_link": "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE",
-      "code_platform": "Municode",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "SMC 15-06.430(a) - corner lot front = shortest dimension fronting the street; flag lots: interior line nearest the access street; Director assigns lines on irregular lots"
-      },
-      "residential_front_setback": {
-        "value_ft": 25,
-        "source": "code",
-        "citation": "SCC § 15-12.090(a)(1): R-1-10,000, R-1-12,500, R-1-15,000 25 ft; R-1-20,000, R-1-40,000 30 ft",
-        "by_district": {
-          "R-1-10,000": 25,
-          "R-1-12,500": 25,
-          "R-1-15,000": 25,
-          "R-1-20,000": 30,
-          "R-1-40,000": 30
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "saratoga/sf-district-standards"
-      }
+    "notes": "66323 Unit section lists size, side/rear, height only, and (d) bars imposing any other objective standard. The 'Front | N/A' cell at Table 16.79.060(1) is the JADU table, not this unit. The conditional-yield row ('Front setback per zoning district; setback must yield to the extent necessary to enable the construction of an 800-square-foot ADU with four-foot side- and rear-yard setbacks') is Table 16.79.070(1) for 66314 Units only. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/menlo-park/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Portola Valley",
+   "county": "San Mateo",
+   "zoneomics_city_name": "Portola Valley",
+   "zoneomics_city_id": 1515,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://library.municode.com/ca/portola_valley/codes/code_of_ordinances?nodeId=TIT18ZO",
+   "code_platform": "Municode",
+   "front_rule": {
+    "rule": "owner_elected",
+    "source": "code",
+    "citation": "PVMC 18.04.350 - owner may elect any street parcel line as front, with town planner concurrence; flag lots: line nearest and most nearly parallel to the street"
+   },
+   "residential_front_setback": {
+    "value_ft": 50,
+    "source": "code",
+    "citation": "PVMC § 18.48.010 Table 1: 1 A and larger combining districts 50 ft; 7.5 M, 15 M, 20 M 20 ft",
+    "by_district": {
+     "1A": 50,
+     "2A": 50,
+     "2.5A": 50,
+     "3.5A": 50,
+     "5A": 50,
+     "7.5A": 50,
+     "7.5M": 20,
+     "15M": 20,
+     "20M": 20
     },
-    {
-      "jurisdiction": "Sunnyvale",
-      "county": "Santa Clara",
-      "zoneomics_city_name": "Sunnyvale",
-      "zoneomics_city_id": 359,
-      "zoneomics_last_updated": "2026-08-21",
-      "sample_zone_code_at_query_point": "ECR",
-      "ordinance_link": "https://ecode360.com/42729480",
-      "code_platform": "eCode360 (General Code)",
-      "front_rule": {
-        "rule": "all_fronts",
-        "source": "code",
-        "citation": "SMC 19.12.260(1)(a) - front yard parallels \"the street or streets upon which the lot abuts\", so every street line of a corner lot is a front; 19.12.260(1)(b) - rear yard is opposite the narrower frontage, making the short frontage the primary front; 19.12.130(18) - lot width measured at the \"required front yard\", i.e. the one not reducible under 19.34.040; 19.34.040(b) - front yard on the longer street frontage reducible to 9 ft in R-0/R-1/R-1.5 (and duplex/SFR in R-2) where streets intersect at 60 degrees or more; Table 19.79.070 carries a separate \"Reducible front (longer street frontage of corner lots)\" row for ADUs"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "SMC Table 19.34.030: R-0 and R-1 front minimum 15 ft, average 20 ft; note 2: a single lot must meet the average, so 20 ft",
-        "by_district": {
-          "R-0": 20,
-          "R-1": 20,
-          "R-1.5": 20,
-          "R-1.7": 20,
-          "R-2": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "sunnyvale/sf-district-standards",
-        "note": "minimum 15 ft applies only inside a multi-lot development"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "portola-valley/sf-district-standards",
+    "note": "zone codes carry the combining district after the slash, e.g. R-E/3.5A"
+   },
+   "slug": "portola-valley",
+   "state_track_front": {
+    "rule": "local",
+    "value_ft": 0,
+    "value_rule": null,
+    "flags": [
+     "front_from_local_adu_chapter"
+    ],
+    "classification": "grant_local",
+    "threshold_sf": 800,
+    "citation": "PVMC 18.25.060(C)(6)(ii)(a)",
+    "quote": "[C.6.ii New Floor Area. ADUs created from new floor area are subject to the following setbacks:] a. Front Yard. Same as the underlying district, including required scenic corridor setbacks. No front setback is required for ADUs permitted per Government Code Section 66323. b. Side Yard. A minimum of four feet. c. Rear Yard. A minimum of four feet.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Healdsburg",
-      "county": "Sonoma",
-      "zoneomics_city_name": "Healdsburg",
-      "zoneomics_city_id": 6095,
-      "zoneomics_last_updated": "2026-07-10",
-      "sample_zone_code_at_query_point": "PR",
-      "ordinance_link": "https://www.zoneomics.com/code/healdsburg-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "HMC 20.28.310 - front = line separating the narrower street frontage of a corner lot from a street (verified from Nov 2024 archive; live eCode360 gated)"
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "HMC § 20.08.030 Table 3: R-1-6,000 20 ft; R-1-12,500 25 ft; R-1-3,500 10 ft (20 ft at a garage)",
-        "by_district": {
-          "R-1-6,000": 20,
-          "R-1-12,500": 25,
-          "R-1-3,500": 10
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "healdsburg/sf-district-standards"
-      }
+    "notes": "Unconditional for 66323 units (C.1.i.b: detached, new construction, ≤800 sf, 4-ft side/rear, chapter height). The conditional-yield sentence at C.1.ii ('front setbacks ... shall not be imposed if they preclude a unit authorized by Government Code Section 66321(b)(3)') applies only to ADUs that do NOT meet C.1.i, so this is not mixed. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/portola-valley/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "San Carlos",
+   "county": "San Mateo",
+   "zoneomics_city_name": "San Carlos",
+   "zoneomics_city_id": 1520,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://zoneomics.com/code/san-carlos-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "SCMC 18.41.020 - corner lot front = the shorter lot line abutting a street; flag lots: interior line nearest and most parallel to the access street"
+   },
+   "residential_front_setback": {
+    "value_ft": 15,
+    "source": "code",
+    "citation": "SCMC Table 18.04.030: RS-6 15 ft (1st story) / 19 ft (2nd story); RS-3 20 ft",
+    "by_district": {
+     "RS-6": 15,
+     "RS-3": 20
     },
-    {
-      "jurisdiction": "Windsor",
-      "county": "Sonoma",
-      "zoneomics_city_name": "Windsor",
-      "zoneomics_city_id": 6101,
-      "zoneomics_last_updated": "2026-07-10",
-      "sample_zone_code_at_query_point": "TC",
-      "ordinance_link": "https://www.zoneomics.com/code/windsor-CA",
-      "code_platform": "Zoneomics code viewer",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "Zoning Ord. 27.60.020 - corner-lot front = shortest frontage (Director decides ties); through lots: both street lines are fronts; flag-lot front setback Director-determined (27.20.070(C)(1))"
-      },
-      "residential_front_setback": {
-        "value_ft": 15,
-        "source": "code",
-        "citation": "WMC Table 17.10-02 (§ 17.10.040), new development minimum: SR 15 ft; ER 20 ft; RR 25 ft; VR and MDR 10 ft",
-        "by_district": {
-          "SR": 15,
-          "ER": 20,
-          "RR": 25,
-          "VR": 10,
-          "MDR": 10
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "windsor/sf-district-standards",
-        "note": "the table also sets a maximum front setback"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "san-carlos/sf-district-standards",
+    "note": "RS-6 second story 19 ft"
+   },
+   "slug": "san-carlos",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_mixed"
+    ],
+    "classification": "mixed",
+    "threshold_sf": 800,
+    "citation": "SCMC 18.23.210(F)(4)(b), (F)(4)(c), (F)(4)(e)(i), (F)(4)(e)(iii), Table 18.23.210(E)(4)",
+    "quote": "[UNCONDITIONAL] (F)(4)(b) Accessory dwelling units shall comply with lot coverage requirements, MFA, required front setbacks of the underlying zoning district, and natural state and open space requirements when applicable, as well as other applicable development standards, except that: ... and unless classified as a Statewide exemption ADU per subsection (F)(4)(c) of this section. | (F)(4)(e)(i) Detached accessory dwelling units must be set back a minimum of four (4) feet from rear and four (4) feet from the side property lines. Accessory dwelling units that are not classified as statewide exemption ADUs must meet the required front setback unless located within a legal, nonconforming structure. || [CONDITIONAL] (F)(4)(c) Statewide Exemption ADU. Notwithstanding the development standards set forth in subsection (F)(4)(b) of this section, if there is no alternative to constructing an accessory dwelling unit in accordance with the development standards listed in subsection (F)(4)(b) of this section, one (1) or more of these development standards may be waived only to the extent necessary to allow a Statewide exemption ADU of up to eight hundred (800) square feet with a maximum of sixteen (16) feet in height ..., with minimum four (4) foot side and four (4) foot rear yard setbacks. The front setback requirement may be reduced to the extent necessary so as not to preclude a Statewide exemption ADU and must not unduly constrain the creation of all types of accessory dwelling units. | Table 18.23.210(E)(4) Detached ADUs, Statewide Exemption column: Front | May be reduced to 0' if no other location is feasible",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Contra Costa County (unincorporated)",
-      "county": "Contra Costa",
-      "zoneomics_city_name": null,
-      "zoneomics_city_id": null,
-      "zoneomics_last_updated": null,
-      "sample_zone_code_at_query_point": "R-B -CE -S-2",
-      "ordinance_link": "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-12SE",
-      "code_platform": "Municode",
-      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
-      "front_rule": {
-        "rule": "all_fronts",
-        "source": "code",
-        "citation": "CCC Ord. Code 82-12.202 - on a corner lot the district setback requirements apply to ALL state highway, public road, and street frontages of the lot. District chapters then split the value: the 'principal frontage' gets the full front setback and the other a reduced one (84-4.1004 R-6: 20 ft principal / 15 ft other; Ch. 84-14 R-20: 25/20) - the second_front pattern, both frontages binding. CAVEAT: 'principal frontage' is not defined in Title 8 (82-4.250 presupposes it); in practice the address street. Through lots: no county provision found - 82-12.202's all-frontages language governs by its plain terms. Private roads: setbacks measured from easement edge for lots <40k sf (82-4.244). ADU (82-24.012): defers to the zone's yard requirements; Gov. Code 66321(b)(3) softens front for <=800 sf ADUs."
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "CCC Ord. Code § 84-4.1004 (R-6) 20 ft; R-7, R-10, R-12, R-15 follow it; § 84-14.1004 (R-20) 25 ft; R-40, R-65 follow R-20",
-        "by_district": {
-          "R-6": 20,
-          "R-7": 20,
-          "R-10": 20,
-          "R-12": 20,
-          "R-15": 20,
-          "R-20": 25,
-          "R-40": 25,
-          "R-65": 25
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "contra-costa-county/sf-district-standards"
-      }
+    "notes": "Genuinely mixed. Three sentences carve statewide-exemption ADUs out of the front setback unconditionally ('unless classified as a Statewide exemption ADU' in (F)(4)(b) and (e)(iii); 'ADUs that are not classified as statewide exemption ADUs must meet the required front setback' in (e)(i)), while (F)(4)(c) and both new-construction tables make the relief conditional ('only to the extent necessary', 'if no other location is feasible', applicant 'must also demonstrate that an ADU cannot be constructed in accordance with applicable development standards'). The 'Front | None | None' row is the conversion/same-footprint table, not new construction. (F)(5)(a) (ADUs over detached garages) also exempts statewide-exemption ADUs from the front; its cross-reference to 18.04.030(H) (detached garage in front half of lot) is a garage rule, not an ADU placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/san-carlos/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "San Mateo",
+   "county": "San Mateo",
+   "zoneomics_city_name": "San Mateo",
+   "zoneomics_city_id": 1522,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/code/27",
+   "code_platform": "City-hosted",
+   "front_rule": {
+    "rule": "owner_elected",
+    "source": "code",
+    "citation": "SMMC 27.04.300(a) - on a corner lot the owner may elect either street property line as the front; through lots: both street lines are fronts (27.04.275(d))"
+   },
+   "residential_front_setback": {
+    "value_ft": 15,
+    "source": "code",
+    "citation": "SMMC § 27.18.070(a): R1-B and R1-C 15 ft; R1-A 25 ft; garages 20 ft (b)",
+    "by_district": {
+     "R1-B": 15,
+     "R1-C": 15,
+     "R1-A": 25
     },
-    {
-      "jurisdiction": "Marin County (unincorporated)",
-      "county": "Marin",
-      "zoneomics_city_name": null,
-      "zoneomics_city_id": null,
-      "zoneomics_last_updated": null,
-      "sample_zone_code_at_query_point": "RSP-1",
-      "ordinance_link": "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTVIIIDECODE_CH22.130DE",
-      "code_platform": "Municode",
-      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
-      "front_rule": {
-        "rule": "address_street",
-        "source": "code",
-        "citation": "MCC 22.130.030 'Lot Line, Front' - on a corner lot, the line bounding the street to which the property is addressed and from which access is taken (same formulation in 22.20.090(B)(1)(b)). When address street and access street differ, the code literally makes both lines front lot lines - flag such corners. Through lots: both lot lines are front lot lines, no rear lot line (rear-setback carve-out for accessory structures: 20% of depth, max 25 ft). Irregular lots: Director determines the lines. Non-coastal Development Code (Title 22) only - the Coastal Zoning Code (Title 20, Ch. 20.130) has its own definitions, not reviewed. ADU (22.32.120(A), Category 1 <=800 sf): 4 ft side/rear, 'a front yard setback is not required'."
-      },
-      "residential_front_setback": {
-        "value_ft": 25,
-        "source": "code",
-        "citation": "MCC § 22.10.040 Table 2-5: RA, RR, RE, R1, R2 25 ft",
-        "by_district": {
-          "RA": 25,
-          "RR": 25,
-          "RE": 25,
-          "R1": 25,
-          "R2": 25
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "marin-county/sf-district-standards",
-        "note": "RSP/RMP planned districts: standards per Chapter 22.16"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "san-mateo/sf-district-standards"
+   },
+   "slug": "san-mateo",
+   "state_track_front": {
+    "rule": "local",
+    "value_ft": 0,
+    "value_rule": null,
+    "flags": [
+     "front_from_local_adu_chapter"
+    ],
+    "classification": "grant_local",
+    "threshold_sf": 800,
+    "citation": "SMMC 27.19.060(d)(3); 27.19.020(6)",
+    "quote": "[27.19.060(d)(3)] A minimum setback from the front lot line, as required in the lot's underlying zone district, shall be required for all New Construction ADUs not meeting the criteria set forth in subsection (1) above, including ADUs constructed above an existing garage. No setback is required for a State Exempt ADU. || [27.19.020(6)] \"State Exempt ADU\" means an accessory dwelling unit that is created pursuant to Government Code Section 66323.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Napa County (unincorporated)",
-      "county": "Napa",
-      "zoneomics_city_name": null,
-      "zoneomics_city_id": null,
-      "zoneomics_last_updated": null,
-      "sample_zone_code_at_query_point": "RS:B-5",
-      "ordinance_link": "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.190COLO",
-      "code_platform": "Municode",
-      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "NCC 18.08.190 'Corner lot' - the shortest street frontage constitutes the front of the lot, OR as designated by the director based on structure orientation, topography, other structures, and access location (a discretionary escape hatch on the geometric default; 18.08.650(A) gives the director the same role on irregular lots). Street side of a corner lot: min 10 ft (18.104.010 fn C). Front yard measured from the Ch. 18.112 road setback where the lot fronts a road (18.08.650(A)). Through lots: not addressed textually. ADU (18.104.180(C), through Ord. 1495 9-2024): front setback waived as needed to allow an 800 sf ADU with 4 ft side/rear."
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "NCC § 18.104.010 Schedule of zoning district regulations: RS 20 ft; RM 20 ft",
-        "by_district": {
-          "RS": 20,
-          "RM": 20
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "napa-county/sf-district-standards"
-      }
+    "notes": "Unconditional. The sentence literally reads 'No setback is required' (not 'no front setback'), but it sits inside the front-setback paragraph (d)(3) while (d)(2) separately requires 4-ft side/rear 'for all new ADU construction'; the multifamily twin at 27.19.070(e)(2) says it explicitly: 'No front setback is required for a New Construction Detached State Exempt ADU.' (d)(1) also waives all setbacks for a detached ADU in the rear one-third of an R1 lot that meets Chapter 27.70. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/san-mateo/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "San Mateo County (unincorporated)",
+   "county": "San Mateo",
+   "zoneomics_city_name": "San Mateo County Unincorporated",
+   "zoneomics_city_id": 3893,
+   "zoneomics_last_updated": "2026-08-15",
+   "ordinance_link": "https://www.zoneomics.com/code/san-mateo-county-unincorporated-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "County zoning Def. 80 - front lot line = the narrowest lot frontage"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "SMC Ord. Code S combining districts: §§ 8.158.050 (S-50), 8.166 (S-72), 8.170.050 (S-73), 8.182 (S-81), 8.190 (S-83), 8.202 (S-92), 8.204 (S-93), 8.240 (S-108): 20 ft; RH § 8.110: 20 ft",
+    "by_district": {
+     "S-50": 20,
+     "S-72": 20,
+     "S-81": 20,
+     "S-83": 20,
+     "S-92": 20,
+     "S-93": 20,
+     "S-108": 20,
+     "RH": 20,
+     "S-73": 20
     },
-    {
-      "jurisdiction": "Santa Clara County (unincorporated)",
-      "county": "Santa Clara",
-      "zoneomics_city_name": null,
-      "zoneomics_city_id": null,
-      "zoneomics_last_updated": null,
-      "sample_zone_code_at_query_point": "A1",
-      "ordinance_link": "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO",
-      "code_platform": "Municode",
-      "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
-      "front_rule": {
-        "rule": "shortest_frontage",
-        "source": "code",
-        "citation": "SCC Zoning Ordinance (County Code Title C, Appendix I) 1.30.030 'Lot lines' - the front lot line of a corner lot is normally the shorter of the two street-abutting lines, UNLESS the lot's depth-to-width orientation makes the longer line yield the larger building envelope (a geometric tiebreak, not owner election). Flag lots: front = line at the interior terminus of the access corridor (fee corridors >25 ft wide: the street frontage instead). Unusually configured lots: zoning administrator classifies. Through lots: no provision found. Setbacks measured to right-of-way edge / official plan line where applicable. ADU (4.10.015(C)(2),(D)(2)): same front yard as the primary residence; Gov. Code 66321(b)(3) softens front for <=800 sf."
-      },
-      "residential_front_setback": {
-        "value_ft": 25,
-        "source": "code",
-        "citation": "SCCZO § 2.30.030 Table 2.30-3: R1, R1E, R1S, R2 25 ft; RHS 30 ft; R3 20 ft; § 2.20.030 Table 2.20-3: A, AR, HS, RR 30 ft",
-        "by_district": {
-          "R1": 25,
-          "R1E": 25,
-          "R1S": 25,
-          "R2": 25,
-          "RHS": 30,
-          "R3": 20,
-          "A": 30,
-          "AR": 30,
-          "HS": 30,
-          "RR": 30
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "santa-clara-county/sf-district-standards"
-      }
+    "extracted": "2026-09-24",
+    "corpus_doc": "san-mateo-county/sf-district-standards",
+    "note": "R-1 itself (Ch. 8.16) sets no yards; the S district after the slash does"
+   },
+   "slug": "san-mateo-county",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": "min(district_front_ft, primary_front_distance_ft)",
+    "flags": [
+     "front_rule_needs_primary_footprint"
+    ],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "SMCC 8.392.050(4)(a)",
+    "quote": "Setbacks. Notwithstanding the required setbacks in the applicable district, minimum setbacks for accessory dwelling units shall be: a. Front Setbacks. With the exception of accessory dwelling units created entirely within the space of an existing structure, for all other accessory dwelling units regardless of height, the accessory dwelling unit may be located no closer to the front property line of the subject parcel than the lesser of: (1) The front setback required by the relevant zoning district, or (2) The distance from the front property line of the primary residence located or proposed to be located on that parcel. For purposes of this section, the primary residence includes attached garages. In cases where the application of the setbacks described in (1) and (2) would preclude the creation of an accessory dwelling unit of at was eight hundred (800) square feet with side and rear setbacks of at least four (4) feet, the accessory dwelling unit may be located within the front setback, but must be located as far as possible from the front property line.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
     },
-    {
-      "jurisdiction": "Sonoma County (unincorporated)",
-      "county": "Sonoma",
-      "zoneomics_city_name": null,
-      "zoneomics_city_id": null,
-      "zoneomics_last_updated": null,
-      "sample_zone_code_at_query_point": "RR B7",
-      "ordinance_link": "https://library.municode.com/ca/sonoma_county/codes/code_of_ordinances?nodeId=CH26SOCOZORE_ART04GL_S26-04-020DE",
-      "code_platform": "Municode",
-      "research_source": "county code research 2026-08-30 (web, verified against current post-reorganization code text); not from Zoneomics",
-      "front_rule": {
-        "rule": "owner_elected",
-        "source": "code",
-        "citation": "SCC 26-04-020 (Art. 04 Glossary) 'Lot Line, Front' - on a corner lot, 'either one or the other' of the two street lot lines (no geometric test and no designating official named - classic election formulation; staff may fix the choice at permit time). Interior AND through lots: EACH street lot line is a front lot line, and 26-88-040(a) bars encroachment on the required front yard on either street of a through lot (all_fronts behavior for through lots). Election is largely moot in magnitude: 26-08-040 residential tables set the street-side setback EQUAL to the front setback (30/30, 20/20, 15/15); it still matters for garage openings (26-16-060.C) and front-only averaging (26-16-060.E). Recorded setback/official plan lines supersede (26-88-040(d),(e); 26-88-050). ADU (26-88-060(3)(i)): front per base district unless it would preclude an 800 sf ADU with 4 ft side/rear."
-      },
-      "residential_front_setback": {
-        "value_ft": 20,
-        "source": "code",
-        "citation": "SCC § 26-08-040 table: R1, RR, R2 20 ft; AR 30 ft; R3 15 ft",
-        "by_district": {
-          "R1": 20,
-          "RR": 20,
-          "R2": 20,
-          "AR": 30,
-          "R3": 15
-        },
-        "extracted": "2026-09-24",
-        "corpus_doc": "sonoma-county/sf-district-standards"
+    "notes": "No separate 66323 section; 8.392.050 applies to all ADUs. ADU-specific front rule = lesser of district front or the primary residence's own distance from the front line, with an 800 sf yield that still requires the unit to sit 'as far as possible from the front property line'. ('at was' is a typo in the source for 'at least'.) An ADU atop/below an existing detached garage inside the front setback needs a CUP unless that would preclude an 800 sf unit. The file carries a second, coastal-zone copy of the chapter from ~line 580 with the same rule (8.392.050 coastal). No separate placement rule. | ENGINE SCOPE (Adi 2026-10-18): lot-specific local rule (value_rule) deferred until the primary footprint exists; zoning front + flag for now.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/san-mateo-county/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Los Altos",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "Los Altos",
+   "zoneomics_city_id": 1505,
+   "zoneomics_last_updated": "2026-07-21",
+   "ordinance_link": "https://library.municode.com/ca/los_altos/codes/code_of_ordinances?nodeId=TIT14ZO",
+   "code_platform": "Municode",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "LAMC 14.02.010 Lot line - corner lot front = shortest dimension fronting the street; either line allowed only if both remain conforming; flag lots: interior line nearest and most parallel to the access street"
+   },
+   "residential_front_setback": {
+    "value_ft": 25,
+    "source": "code",
+    "citation": "LAMC § 14.06.080 (R1-10) 25 ft; § 14.08.080 (R1-H) 30 ft; § 14.10.080 (R1-20) 30 ft; § 14.12.080 (R1-40) 50 ft",
+    "by_district": {
+     "R1-10": 25,
+     "R1-H": 30,
+     "R1-20": 30,
+     "R1-40": 50
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "los-altos/sf-district-standards"
+   },
+   "slug": "los-altos",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": null,
+    "citation": "LAMC 14.14.060 Table and Footnote 1",
+    "quote": "[Table 14.14.060, columns JADU | Attached ADU | Detached ADU] Minimum front setback | NA | Setback of underlying zoning district. (Footnote 1.) | Setback of underlying zoning district. (Footnote 1.) || [Footnote 1] Any proposed accessory dwelling shall conform to the front setback of the underlying zone unless it is demonstrated through a site plan that a physical preclusion exists and hinders the development of an accessory dwelling as allowed by this code.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "HARD CALL on wording. No separate 66323 section; one table governs all ADUs (detached max 1,200 sf), so the state-track unit takes the Detached ADU column. The 'NA' in the front row is the JADU column, not the detached unit. The yield is a 'physical preclusion' test shown on a site plan rather than the 800 sf shield wording; classified conditional_yield because the district front applies but must give way when it hinders an ADU. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/los-altos/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Los Altos Hills",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "Los Altos Hills",
+   "zoneomics_city_id": 8903,
+   "zoneomics_last_updated": "2026-07-13",
+   "ordinance_link": "https://www.zoneomics.com/code/los-altos-hills-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "designated",
+    "source": "code",
+    "citation": "LAHMC 10-1.505(c)(2) - Planning Commission designates the 40-ft street on multi-street lots"
+   },
+   "residential_front_setback": {
+    "value_ft": 40,
+    "source": "code",
+    "citation": "LAHMC § 10-1.505(c)(1) (R-A): 40 ft from the street right-of-way or access easement",
+    "by_district": {
+     "R-A": 40
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "los-altos-hills/sf-district-standards",
+    "note": "measured from the right-of-way / easement line, not the lot line"
+   },
+   "slug": "los-altos-hills",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": null,
+    "citation": "LAHMC § 10-1.1403(e)(1)(i)",
+    "quote": "The front yard setback, which is measured from the edge of the property lines adjacent to the primary public or private street right-of-way or access easement, shall be 40 feet. This requirement shall not be construed to prohibit the construction of an accessory dwelling unit that is in compliance with other applicable requirements of this article.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "HARD CALL on wording. No separate 66323 section (10-1.1403(a)(1) merely cross-references 66323(a)(1)-(2)); one 40-ft ADU front setback applies to all ADUs, with a savings clause that it 'shall not be construed to prohibit' an otherwise-compliant ADU. Not the 800 sf shield wording, but it is a yield clause, so conditional_yield rather than district_applies. 10-1.1403(b) 'Placement on the Lot' only triggers a site development permit for easements/slopes/creeks/hazard zones/heritage oaks; it is not a front-yard exclusion.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/los-altos-hills/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Mountain View",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "Mountain View",
+   "zoneomics_city_id": 296,
+   "zoneomics_last_updated": "2026-07-21",
+   "ordinance_link": "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH36ZO",
+   "code_platform": "Municode",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "MVCC 36.60.27 - corner lot front = shortest frontage unless the owner designates the longer at time of development; through lots: both lines are fronts"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "MVCC § 36.10.25 R1 Zone Development Standards: 20 ft minimum for the first-floor wall",
+    "by_district": {
+     "R1": 20
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "mountain-view/sf-district-standards"
+   },
+   "slug": "mountain-view",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "MVCC Sec. 36.12.80 (single-family ADU table); Sec. 36.12.95(b)(1)",
+    "quote": "[Sec. 36.12.80 table] Setbacks | Front | Consistent with requirements of the underlying zone. || [Sec. 36.12.95(b)(1)] An attached or detached accessory dwelling unit no more than eight hundred (800) square feet in size with heights consistent with this Division and minimum side and rear setbacks of four (4) feet shall be permitted regardless of any development standard that would prevent construction of the unit, including, but not limited to, limits on the front setback, lot coverage, floor area ratio, open space or detached accessory dwelling unit location.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "No separate 66323 section; the single-family table applies the district front to all ADUs and 36.12.95(b)(1) is the shield. The shield also expressly waives any 'detached accessory dwelling unit location' standard, so even if a placement rule existed it would yield. None found.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/mountain-view/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Palo Alto",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "Palo Alto",
+   "zoneomics_city_id": 295,
+   "zoneomics_last_updated": "2026-07-21",
+   "ordinance_link": "https://www.zoneomics.com/code/palo-alto-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "owner_elected",
+    "source": "code",
+    "citation": "PAMC 18.09.040(j)(4) corner-lot election (10 ft street side / 16 ft front)"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "PAMC § 18.12.040(e) (R-1): the greater of 20 ft or the block average when that average is 30 ft or more",
+    "by_district": {
+     "R-1": 20
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "palo-alto/sf-district-standards",
+    "note": "contextual rule can raise it above 20"
+   },
+   "slug": "palo-alto",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "PAMC 18.09.030(b) Table 1; 18.09.030(c)",
+    "quote": "[Table 1: Development Standards for Units Described in Government Code Section 66323, column 'New Construction of Detached ADU' (single-family)] Maximum size: 800 sf | Setbacks: 4 feet from side and rear lot lines | Maximum Height: 16 (vs. the multifamily detached column: '4 feet from side and rear lot lines; underlying zoning for front setback'). || [18.09.030(c)] Development standards stated elsewhere in this Section or Title 18, including standards related to FAR, lot coverage, and privacy, are not applicable to ADUs or JADUs that qualify for approval under this section.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "Silent, and pointedly so: the same Table 1 adds 'underlying zoning for front setback' to the multifamily detached (66323(a)(4)) column but not to the single-family detached (66323(a)(2)) column, and (c) disapplies all other Title 18 standards (which would include the district front) for 18.09.030 units. The corner-lot clause at 18.09.040(j)(4) (16-ft front / 10-ft street-side election; street-side may not preclude an 800 sf unit) sits in the local-standards section and does not govern 18.09.030 units. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/palo-alto/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "San Jose",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "San Jose",
+   "zoneomics_city_id": 148,
+   "zoneomics_last_updated": "2026-08-13",
+   "ordinance_link": "https://www.zoneomics.com/code/san-jose-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "SJMC 20.200.700 - \"Front lot line of a corner lot\" is the narrower lot line abutting a public or private right-of-way; \"Side corner lot line of a corner lot\" is the longer of the two. This is the default and it governs the ordinary corner lot. The entry was previously labeled all_fronts on the strength of 20.30.210(A), but that section is conditional (\"If a lot exceeds the defined dimensions of a corner lot\") and describes the exception, not the rule - see front_rule.overrides. 20.30.210(B) gives the director of planning final say on irregular or greater-than-four-sided lots, with a floor of one front and one rear property line.",
+    "overrides": [
+     {
+      "rule": "all_fronts",
+      "condition": "oversized_corner_lot",
+      "citation": "SJMC 20.200.670(A); restated at 20.30.210(A)",
+      "description": "A lot that exceeds the corner-lot dimension thresholds is not a corner lot and is deemed to have two front property lines. Thresholds: 120 ft in residential districts, 150 ft in commercial districts. BOTH street frontages must exceed the threshold; a lot exceeding on only one frontage remains an ordinary corner lot with a single (narrower) front.",
+      "thresholds_ft": {
+       "residential": 120,
+       "commercial": 150
       }
-    }
-  ],
-  "front_rule_note": "front_rule.rule = how the jurisdiction declares the FRONT of a multi-street lot: shortest_frontage | address_street | designated | owner_elected | all_fronts. source 'code' = verified in the municipal code (see citation). When a jurisdiction is not in this file, the engine defaults to address_street: the street named in the parcel's situs address is the front, falling back to shortest frontage when no street edge matches. Consumed by edge-labeling/edge-labeling.ts via its frontRule input (lookup by zoneomics_city_id, or by jurisdiction name for opendata-provider payloads (gaudi-api-port services/parcel_data/front_rules.py)). front_rule.overrides is optional: an ordered list of conditions under which a different rule applies, each with its own citation. Evaluate overrides before falling back to front_rule.rule. Absent the field, front_rule.rule applies unconditionally. If an override condition cannot be evaluated (e.g. zone info missing) and no other override applies, the engine falls back to the address_street default rather than the base rule, flagging front_rule_override_unevaluated for logs/debugging.",
-  "residential_front_setback_note": "residential_front_setback = the jurisdiction's front setback for housing, in feet, extracted 2026-09-24 from the corpus tier-3 documents (corpus/<slug>/sf-district-standards.txt). It is the FRONT value of a Gov. Code 66323(a)(2) state-track ADU (counsel, 2026-09-24: the statute sets side/rear only). value_ft = the base single-family district; by_district = the code table's number per district, matched against the parcel's zone code (punctuation/case ignored); citation = the code section; note = caveats."
+     },
+     {
+      "rule": "all_fronts",
+      "condition": "pedestrian_oriented_district",
+      "citation": "SJMC 20.200.670(B)",
+      "description": "In a pedestrian oriented zoning district a corner lot has a minimum of two front lot lines regardless of the dimensions of the lot. Applies notwithstanding 20.200.670(A), so it is not gated on lot size. zone_codes lists the districts: Ch. 20.75 regulates the MS main street districts (MS-G, MS-C), established in Table 20-20 of 20.10.060 and applicable only within the Alum Rock Neighborhood Business District (20.75.020(A)). Ambiguity not resolved: DC/DC-NT1 (downtown, Ch. 20.70) and CP \"Commercial Pedestrian\" (Ch. 20.40) are NOT treated as pedestrian oriented districts here, since 20.75.010 is the chapter that carries the label; revisit if the city applies 20.200.670(B) more broadly.",
+      "zone_codes": [
+       "MS-G",
+       "MS-C"
+      ]
+     }
+    ]
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "SJMC Table 20-50 (§ 20.30.200): R-1-8 and R-1-5 20 ft; R-1-2 and R-1-1 30 ft; R-1-RR 50 ft; R-2 15 ft",
+    "by_district": {
+     "R-1-8": 20,
+     "R-1-5": 20,
+     "R-1-2": 30,
+     "R-1-1": 30,
+     "R-1-RR": 50,
+     "R-2": 15
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "san-jose/sf-district-standards"
+   },
+   "slug": "san-jose",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "SJMC 20.80.176; 20.80.175(D)(3)(a)",
+    "quote": "[20.80.176 Streamlined approval] Pursuant to Section 66323 of the Government Code, or as amended, this Section provides for the streamlined and ministerial approval of State exempt Accessory Dwelling Units. This Section may be used instead of, but not in addition to, the Accessory Dwelling Units allowed pursuant to Section 66313 of the Government Code or Section 20.80.175 of the San José Municipal Code. || [20.80.175(D)(3)(a), local path] Front setback: Front setback of the zoning district, unless such setback prohibits an eight hundred (800) square foot Accessory Dwelling Unit.",
+    "placement_rule": {
+     "exists": true,
+     "quote": "A detached Accessory Dwelling shall be located in the rear yard of the lot of the One-Family Dwelling or shall be required to meet minimum setback requirements for an Accessory Building in accordance with Section 20.30.500, except that a new detached Accessory Dwelling Unit that maintains a minimum interior side setback of four (4) feet may be located at a distance of forty-five (45) feet from the front property line.",
+     "citation": "SJMC 20.80.175(D)(5)(b)",
+     "exempted_by_notwithstanding": true
+    },
+    "notes": "HARD CALL. The state-track path (20.80.176) is a one-paragraph pointer to Gov. Code 66323 with no local standards at all, used 'instead of' 20.80.175, so it is silent on front (and on everything else). If the applicant instead proceeds under 20.80.175, D.3.a is a textbook conditional_yield and D.5.b is a rear-yard / 45-ft-from-front placement rule (note D.3.b-c give 0-ft side/rear for one-story units in that path). exempted_by_notwithstanding=true reflects the 'instead of' language rather than a literal 'notwithstanding'.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/san-jose/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Saratoga",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "Saratoga",
+   "zoneomics_city_id": 1525,
+   "zoneomics_last_updated": "2026-07-09",
+   "ordinance_link": "https://library.municode.com/ca/saratoga/codes/code_of_ordinances?nodeId=CH15ZORE",
+   "code_platform": "Municode",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "SMC 15-06.430(a) - corner lot front = shortest dimension fronting the street; flag lots: interior line nearest the access street; Director assigns lines on irregular lots"
+   },
+   "residential_front_setback": {
+    "value_ft": 25,
+    "source": "code",
+    "citation": "SCC § 15-12.090(a)(1): R-1-10,000, R-1-12,500, R-1-15,000 25 ft; R-1-20,000, R-1-40,000 30 ft",
+    "by_district": {
+     "R-1-10,000": 25,
+     "R-1-12,500": 25,
+     "R-1-15,000": 25,
+     "R-1-20,000": 30,
+     "R-1-40,000": 30
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "saratoga/sf-district-standards"
+   },
+   "slug": "saratoga",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "SCC 15-56.025(a)(5); 15-56.025(a)(3)(a)(iii)",
+    "quote": "[(a)(5) Setbacks] Attached accessory dwelling units shall comply with the setbacks required for the primary dwelling unit. Detached accessory dwelling units shall have rear and side setbacks of no less than four feet. ... Front yard setback requirements of the underlying zoning district apply to accessory dwelling units except when it precludes the construction of one accessory dwelling unit of at least eight hundred square feet. || [(a)(3)(a)(iii)] In no case shall the above requirements in subsections (i) and (ii) prohibit the construction of one accessory dwelling of up to eight hundred square feet with minimum side and rear setbacks of four feet or located within the front setback.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "No separate 66323 section; 15-56.025(a) governs every newly constructed ADU. Straight shield wording. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/saratoga/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Sunnyvale",
+   "county": "Santa Clara",
+   "zoneomics_city_name": "Sunnyvale",
+   "zoneomics_city_id": 359,
+   "zoneomics_last_updated": "2026-08-21",
+   "ordinance_link": "https://ecode360.com/42729480",
+   "code_platform": "eCode360 (General Code)",
+   "front_rule": {
+    "rule": "all_fronts",
+    "source": "code",
+    "citation": "SMC 19.12.260(1)(a) - front yard parallels \"the street or streets upon which the lot abuts\", so every street line of a corner lot is a front; 19.12.260(1)(b) - rear yard is opposite the narrower frontage, making the short frontage the primary front; 19.12.130(18) - lot width measured at the \"required front yard\", i.e. the one not reducible under 19.34.040; 19.34.040(b) - front yard on the longer street frontage reducible to 9 ft in R-0/R-1/R-1.5 (and duplex/SFR in R-2) where streets intersect at 60 degrees or more; Table 19.79.070 carries a separate \"Reducible front (longer street frontage of corner lots)\" row for ADUs"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "SMC Table 19.34.030: R-0 and R-1 front minimum 15 ft, average 20 ft; note 2: a single lot must meet the average, so 20 ft",
+    "by_district": {
+     "R-0": 20,
+     "R-1": 20,
+     "R-1.5": 20,
+     "R-1.7": 20,
+     "R-2": 20
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "sunnyvale/sf-district-standards",
+    "note": "minimum 15 ft applies only inside a multi-lot development"
+   },
+   "slug": "sunnyvale",
+   "state_track_front": {
+    "rule": "local",
+    "value_ft": 0,
+    "value_rule": null,
+    "flags": [
+     "front_from_local_adu_chapter"
+    ],
+    "classification": "grant_local",
+    "threshold_sf": 800,
+    "citation": "SMC § 19.79.070 Table 19.79.070 ('Up to 800 sq. ft. area' column, Front row); § 19.79.040(w)(2); § 19.79.030 Table 19.79.030",
+    "quote": "[Table 19.79.070, header row] | | Up to 800 sq. ft. area^4 | Over 800 sq. ft. area^4,9 | Conversion ADU^4,5,6 | JADU^4,5 | ... | Front | n/a | Zoning setback^10 | n/a | n/a | ... | Side | 4 feet | 4 feet | n/a | n/a | | Rear | 4 feet | 4 feet | n/a | n/a | || [19.79.040(w)(2)] Front and Reducible Front Setbacks. Minimum zoning district front yard and reducible front yard (for corner lots) zoning setbacks are required for non-streamlined accessory dwelling units as defined in Section 19.79.030 of this chapter. || [Table 19.79.030] Streamlined ADUs | Attached or detached, new construction ADUs up to 800 sq. ft. area on lots with existing or proposed single-family dwelling | No planning permit; only a ministerial building permit | [Additional Zoning and Design Standards Requirements:] None",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "Unconditional. The 'n/a' is in the dedicated 'Up to 800 sq. ft. area' (streamlined) column, confirmed by the text rule in 19.79.040(w)(2) that front/reducible-front setbacks are required only for non-streamlined ADUs (>800 sf) and by Table 19.79.030 listing 'None' for additional zoning standards on streamlined units. Footnote 4 (recorded easements) and footnote 10 (definition of zoning setback) do not qualify it. No placement rule; the 5-ft separation and entrance-wall-plane rules are non-streamlined only.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/sunnyvale/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Healdsburg",
+   "county": "Sonoma",
+   "zoneomics_city_name": "Healdsburg",
+   "zoneomics_city_id": 6095,
+   "zoneomics_last_updated": "2026-07-10",
+   "ordinance_link": "https://www.zoneomics.com/code/healdsburg-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "HMC 20.28.310 - front = line separating the narrower street frontage of a corner lot from a street (verified from Nov 2024 archive; live eCode360 gated)"
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "HMC § 20.08.030 Table 3: R-1-6,000 20 ft; R-1-12,500 25 ft; R-1-3,500 10 ft (20 ft at a garage)",
+    "by_district": {
+     "R-1-6,000": 20,
+     "R-1-12,500": 25,
+     "R-1-3,500": 10
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "healdsburg/sf-district-standards"
+   },
+   "slug": "healdsburg",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_mixed"
+    ],
+    "classification": "mixed",
+    "threshold_sf": 850,
+    "citation": "HMC 20.20.010(C) Table 20 and Table 20a notes; 20.20.010(E)(2)",
+    "quote": "[Table 20a notes, subsection C] If any one of the standards set forth in Table 20a would preclude the construction of an 850 square foot, 16-foot-high accessory dwelling unit with four-foot side and rear setbacks, then that standard shall be waived. | If a proposed ADU is 800 square feet or less, it is exempt from front setback provisions. || [Table 20, Setbacks, Detached ADU column] Front | See Table 20a (Table 20a lists district front setbacks 20'/20'/25'/30' for R-1 zones). || [E] State-Mandated Units (Goverment Code Section 66323). Notwithstanding the requirements established in subsections (A) through (D) of this section, the city shall ministerially approve an application for a building permit within a residential or mixed-use zoning district to create any of the following. Applications which meet the standards of this subsection shall not be subject to any other development standards, but shall be subject to all applicable state laws, including the California Building Code. ... 2. One detached, new construction, accessory dwelling unit for a lot with a proposed or existing single-family dwelling. ... The accessory dwelling unit must have: a. A minimum of four-foot rear yard and side setbacks. b. A total floor area of not more than 850 square feet. c. A height limitation of 18 feet.",
+    "placement_rule": {
+     "exists": true,
+     "quote": "Placement. Detached and attached accessory dwelling units (and all associated outdoor living areas and accessory structures) shall comply with the front yard setback requirements of the zoning district in which the accessory dwelling unit is to be located, as shown in Table 20a. An attached or detached accessory dwelling unit shall not be placed between a required front yard setback from a public right-of-way and the primary dwelling unit.",
+     "citation": "HMC 20.20.010(D)(1)",
+     "exempted_by_notwithstanding": true
+    },
+    "notes": "HARD CALL. Three layers: (1) Table 20a note gives an UNCONDITIONAL front-setback exemption to any ADU ≤800 sf; (2) Table 20a note and Table 20 note 4 give a CONDITIONAL yield for an 850 sf / 16 ft unit; (3) the state-mandated section E.2 (850 sf, 18 ft) is itself silent on front but opens with 'Notwithstanding ... (A) through (D)' and 'shall not be subject to any other development standards'. Classified mixed because both an unconditional 'exempt' sentence and a conditional-yield clause reach the ≤800 sf unit. Threshold mismatch: the unconditional grant stops at 800 sf while the local state-mandated unit runs to 850 sf, so an 801-850 sf unit has only the conditional yield (or the E notwithstanding). Placement rule D.1 exists; E's notwithstanding exempts the state-mandated unit from it. Note the 'Front | N/A' cell in Table 20 is the JADU column, not the detached unit. | ENGINE SCOPE (Adi 2026-10-18): only grant_local chapters take the local value in FOR-1511; this mixed text stays on the zoning front with a flag until counsel reads it.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/healdsburg/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Windsor",
+   "county": "Sonoma",
+   "zoneomics_city_name": "Windsor",
+   "zoneomics_city_id": 6101,
+   "zoneomics_last_updated": "2026-07-10",
+   "ordinance_link": "https://www.zoneomics.com/code/windsor-CA",
+   "code_platform": "Zoneomics code viewer",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "Zoning Ord. 27.60.020 - corner-lot front = shortest frontage (Director decides ties); through lots: both street lines are fronts; flag-lot front setback Director-determined (27.20.070(C)(1))"
+   },
+   "residential_front_setback": {
+    "value_ft": 15,
+    "source": "code",
+    "citation": "WMC Table 17.10-02 (§ 17.10.040), new development minimum: SR 15 ft; ER 20 ft; RR 25 ft; VR and MDR 10 ft",
+    "by_district": {
+     "SR": 15,
+     "ER": 20,
+     "RR": 25,
+     "VR": 10,
+     "MDR": 10
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "windsor/sf-district-standards",
+    "note": "the table also sets a maximum front setback"
+   },
+   "slug": "windsor",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "WMC 17.82.050(C)(5); 17.82.050(L)",
+    "quote": "[C.5] New Detached Unit. A new detached accessory dwelling unit shall comply with the front setback of the underlying zoning district, unless it precludes development of an accessory dwelling unit that is at least eight hundred (800) square feet, with four-foot side and rear yard setbacks and complies with all other development standards of this section. A detached accessory dwelling unit shall be located a minimum of four (4) feet from the interior side, street side, and rear property lines. || [L] ADUs Compliant with Government Code Section 66323(a)(1)—(4). Notwithstanding anything herein to the contrary, the Town shall ministerially approve an application for a Building Permit to construct an ADU consistent with Government Code Section 66323(a)(1)—(4).",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "HARD CALL. C.5 is textbook shield wording for every new detached unit. But L is a blanket 'notwithstanding anything herein' savings clause for 66323(a) units, which arguably lifts C.5 (and every other local standard) off the state-track unit entirely, making it silent-by-exemption instead. Classified on the explicit front text. Also note Windsor is one of the few chapters that gives the state-track unit a 4-ft street-side setback in terms. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/windsor/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Contra Costa County (unincorporated)",
+   "county": "Contra Costa",
+   "zoneomics_city_name": null,
+   "zoneomics_city_id": null,
+   "zoneomics_last_updated": null,
+   "ordinance_link": "https://library.municode.com/ca/contra_costa_county/codes/ordinance_code?nodeId=TIT8ZO_DIV82GERE_CH82-12SE",
+   "code_platform": "Municode",
+   "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+   "front_rule": {
+    "rule": "all_fronts",
+    "source": "code",
+    "citation": "CCC Ord. Code 82-12.202 - on a corner lot the district setback requirements apply to ALL state highway, public road, and street frontages of the lot. District chapters then split the value: the 'principal frontage' gets the full front setback and the other a reduced one (84-4.1004 R-6: 20 ft principal / 15 ft other; Ch. 84-14 R-20: 25/20) - the second_front pattern, both frontages binding. CAVEAT: 'principal frontage' is not defined in Title 8 (82-4.250 presupposes it); in practice the address street. Through lots: no county provision found - 82-12.202's all-frontages language governs by its plain terms. Private roads: setbacks measured from easement edge for lots <40k sf (82-4.244). ADU (82-24.012): defers to the zone's yard requirements; Gov. Code 66321(b)(3) softens front for <=800 sf ADUs."
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "CCC Ord. Code § 84-4.1004 (R-6) 20 ft; R-7, R-10, R-12, R-15 follow it; § 84-14.1004 (R-20) 25 ft; R-40, R-65 follow R-20",
+    "by_district": {
+     "R-6": 20,
+     "R-7": 20,
+     "R-10": 20,
+     "R-12": 20,
+     "R-15": 20,
+     "R-20": 25,
+     "R-40": 25,
+     "R-65": 25
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "contra-costa-county/sf-district-standards"
+   },
+   "slug": "contra-costa-county",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [
+     "front_rule_silent"
+    ],
+    "classification": "silent",
+    "threshold_sf": 800,
+    "citation": "CCC Ord. Code 82-24.006(b)(2); 82-24.012(h)(1)",
+    "quote": "[82-24.006(b)] An application for a permit to establish any of the following types of accessory dwelling units in a residential or mixed-use zoning district is not subject to the location requirements specified in Section 82-24.010 or the development standards specified in Section 82-24.012 and will be approved ministerially without discretionary review or public hearing. ... (2) One detached, new construction, accessory dwelling unit on a lot with a proposed or existing single-family dwelling, if: the side and rear setbacks are a minimum of four feet; the detached accessory dwelling unit does not exceed eight hundred square feet in size; the detached accessory dwelling unit does not exceed the applicable height limitations specified in Government Code section 66321(b)(4); and the detached accessory dwelling unit meets all applicable building standards in Title 7 of this Code and all applicable sewage and water requirements. || [82-24.012(h)(1)] An accessory dwelling unit must comply with all requirements relating to yards (front setbacks, side, and rear) and building height that are generally applicable to residential construction in the zone in which the property is located, except as otherwise provided in this subsection (h).",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "HARD CALL (silent-by-exemption). The state-track unit section (82-24.006(b)(2)) lists side/rear, size and height only. The chapter's only front clause, 82-24.012(h)(1) (district yards apply, no 800 sf relief), is expressly disapplied for (b) units by the (b) lead-in. So no local front clause reaches the unit; functionally this behaves like a grant, but the text never affirmatively says 'no front setback'. 82-24.012(e) (exterior access on side/rear or not visible from street) is an entrance rule, also disapplied.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/contra-costa-county/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Marin County (unincorporated)",
+   "county": "Marin",
+   "zoneomics_city_name": null,
+   "zoneomics_city_id": null,
+   "zoneomics_last_updated": null,
+   "ordinance_link": "https://library.municode.com/ca/marin_county/codes/municipal_code?nodeId=TIT22DECO_ARTVIIIDECODE_CH22.130DE",
+   "code_platform": "Municode",
+   "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+   "front_rule": {
+    "rule": "address_street",
+    "source": "code",
+    "citation": "MCC 22.130.030 'Lot Line, Front' - on a corner lot, the line bounding the street to which the property is addressed and from which access is taken (same formulation in 22.20.090(B)(1)(b)). When address street and access street differ, the code literally makes both lines front lot lines - flag such corners. Through lots: both lot lines are front lot lines, no rear lot line (rear-setback carve-out for accessory structures: 20% of depth, max 25 ft). Irregular lots: Director determines the lines. Non-coastal Development Code (Title 22) only - the Coastal Zoning Code (Title 20, Ch. 20.130) has its own definitions, not reviewed. ADU (22.32.120(A), Category 1 <=800 sf): 4 ft side/rear, 'a front yard setback is not required'."
+   },
+   "residential_front_setback": {
+    "value_ft": 25,
+    "source": "code",
+    "citation": "MCC § 22.10.040 Table 2-5: RA, RR, RE, R1, R2 25 ft",
+    "by_district": {
+     "RA": 25,
+     "RR": 25,
+     "RE": 25,
+     "R1": 25,
+     "R2": 25
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "marin-county/sf-district-standards",
+    "note": "RSP/RMP planned districts: standards per Chapter 22.16"
+   },
+   "slug": "marin-county",
+   "state_track_front": {
+    "rule": "local",
+    "value_ft": 0,
+    "value_rule": null,
+    "flags": [
+     "front_from_local_adu_chapter"
+    ],
+    "classification": "grant_local",
+    "threshold_sf": 800,
+    "citation": "MCC 22.32.120(A)(1)(c)",
+    "quote": "The Accessory Dwelling Unit does not exceed a floor area of 800 square feet, and has minimum rear and side yard setbacks of four feet; a front yard setback is not required. A detached Accessory Dwelling Unit shall not exceed a height of 18 feet above grade except that two additional feet may be allowed to match the roof pitch of the primary dwelling.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "Unconditional. Category 1 (Statewide Exemption) unit. Same 'a front yard setback is not required' language for multifamily detached units at 22.32.120(A)(2)(a). Category 2 units (B.3) must comply with all district development standards and building envelopes. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/marin-county/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Napa County (unincorporated)",
+   "county": "Napa",
+   "zoneomics_city_name": null,
+   "zoneomics_city_id": null,
+   "zoneomics_last_updated": null,
+   "ordinance_link": "https://library.municode.com/ca/napa_county/codes/code_of_ordinances?nodeId=TIT18ZO_CH18.08DE_18.08.190COLO",
+   "code_platform": "Municode",
+   "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "NCC 18.08.190 'Corner lot' - the shortest street frontage constitutes the front of the lot, OR as designated by the director based on structure orientation, topography, other structures, and access location (a discretionary escape hatch on the geometric default; 18.08.650(A) gives the director the same role on irregular lots). Street side of a corner lot: min 10 ft (18.104.010 fn C). Front yard measured from the Ch. 18.112 road setback where the lot fronts a road (18.08.650(A)). Through lots: not addressed textually. ADU (18.104.180(C), through Ord. 1495 9-2024): front setback waived as needed to allow an 800 sf ADU with 4 ft side/rear."
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "NCC § 18.104.010 Schedule of zoning district regulations: RS 20 ft; RM 20 ft",
+    "by_district": {
+     "RS": 20,
+     "RM": 20
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "napa-county/sf-district-standards"
+   },
+   "slug": "napa-county",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "NCC 18.104.180(A)(4)(b); (B)(1)(a)-(b)",
+    "quote": "[A.4.b] One detached, new construction accessory dwelling unit on a legal lot with a proposed or existing single-family dwelling if the accessory dwelling unit provides four-foot side and rear yard setbacks; does not exceed eight hundred square feet in floor area, and does not exceed the height described in subsection A.4.b.i or ii, as applicable. || [B.1.a] ... Exempt accessory dwelling units described in subsection A.4 need only comply with the applicable provisions of this Section 18.104.180, building code requirements, and health and safety requirements, such as those applicable to private water and sewer service. || [B.1.b] Limits on lot coverage, front yard setback, floor area ratio, open space, and size must permit or shall be waived to allow an eight hundred square foot detached or attached accessory dwelling unit with four-foot side and rear yard setbacks, if the proposed accessory dwelling unit is in compliance with all other applicable development standards.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "HARD CALL. Subsection B ('Development Standards - All Accessory Dwelling Units') carries the shield wording in B.1.b, which reaches the exempt unit. But B.1.a says exempt units 'need only comply with the applicable provisions of this Section', and this Section contains no front setback of its own (B.5.c gives detached ADUs only a 4-ft side/rear), so the underlying-district front arguably never attaches to the exempt unit at all. Classified conditional_yield on the explicit front text; could be read as silent-by-exemption. Design standards in C (500-ft max distance from primary) apply only to non-exempt units and are not a front-yard exclusion. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/napa-county/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Santa Clara County (unincorporated)",
+   "county": "Santa Clara",
+   "zoneomics_city_name": null,
+   "zoneomics_city_id": null,
+   "zoneomics_last_updated": null,
+   "ordinance_link": "https://library.municode.com/ca/santa_clara_county/codes/code_of_ordinances?nodeId=TITCCODELAUS_APXIZO",
+   "code_platform": "Municode",
+   "research_source": "county code research 2026-08-30 (web, verified against code text); not from Zoneomics",
+   "front_rule": {
+    "rule": "shortest_frontage",
+    "source": "code",
+    "citation": "SCC Zoning Ordinance (County Code Title C, Appendix I) 1.30.030 'Lot lines' - the front lot line of a corner lot is normally the shorter of the two street-abutting lines, UNLESS the lot's depth-to-width orientation makes the longer line yield the larger building envelope (a geometric tiebreak, not owner election). Flag lots: front = line at the interior terminus of the access corridor (fee corridors >25 ft wide: the street frontage instead). Unusually configured lots: zoning administrator classifies. Through lots: no provision found. Setbacks measured to right-of-way edge / official plan line where applicable. ADU (4.10.015(C)(2),(D)(2)): same front yard as the primary residence; Gov. Code 66321(b)(3) softens front for <=800 sf."
+   },
+   "residential_front_setback": {
+    "value_ft": 25,
+    "source": "code",
+    "citation": "SCCZO § 2.30.030 Table 2.30-3: R1, R1E, R1S, R2 25 ft; RHS 30 ft; R3 20 ft; § 2.20.030 Table 2.20-3: A, AR, HS, RR 30 ft",
+    "by_district": {
+     "R1": 25,
+     "R1E": 25,
+     "R1S": 25,
+     "R2": 25,
+     "RHS": 30,
+     "R3": 20,
+     "A": 30,
+     "AR": 30,
+     "HS": 30,
+     "RR": 30
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "santa-clara-county/sf-district-standards"
+   },
+   "slug": "santa-clara-county",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "district_applies",
+    "threshold_sf": null,
+    "citation": "SCCC § 4.10.015(D)(2)",
+    "quote": "[D. Detached Accessory Dwelling Units ...] 1. Shall have a maximum floor area not exceeding 1,200 square feet. 2. Shall be setback at least four feet from side and rear lot lines, and shall be subject to the same front yard setback as the primary residence, with the exception of conversions as stated in Section 4.10.015(H).",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "No separate 66323 / state-exempt section and no distinct small-unit threshold (detached ADU up to 1,200 sf). Front = same as the primary residence (i.e. the district front), with no 800 sf relief anywhere in the chapter (the only 800 sf text is the attached-ADU size floor at C.1 and an -n1/-n2 floor-area exclusion). B.4 confirms ADUs are 'subject to all other applicable requirements of the Ordinance Code, including ... setbacks'. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/santa-clara-county/adu-ordinance.txt) · FOR-1511"
+   }
+  },
+  {
+   "jurisdiction": "Sonoma County (unincorporated)",
+   "county": "Sonoma",
+   "zoneomics_city_name": null,
+   "zoneomics_city_id": null,
+   "zoneomics_last_updated": null,
+   "ordinance_link": "https://library.municode.com/ca/sonoma_county/codes/code_of_ordinances?nodeId=CH26SOCOZORE_ART04GL_S26-04-020DE",
+   "code_platform": "Municode",
+   "research_source": "county code research 2026-08-30 (web, verified against current post-reorganization code text); not from Zoneomics",
+   "front_rule": {
+    "rule": "owner_elected",
+    "source": "code",
+    "citation": "SCC 26-04-020 (Art. 04 Glossary) 'Lot Line, Front' - on a corner lot, 'either one or the other' of the two street lot lines (no geometric test and no designating official named - classic election formulation; staff may fix the choice at permit time). Interior AND through lots: EACH street lot line is a front lot line, and 26-88-040(a) bars encroachment on the required front yard on either street of a through lot (all_fronts behavior for through lots). Election is largely moot in magnitude: 26-08-040 residential tables set the street-side setback EQUAL to the front setback (30/30, 20/20, 15/15); it still matters for garage openings (26-16-060.C) and front-only averaging (26-16-060.E). Recorded setback/official plan lines supersede (26-88-040(d),(e); 26-88-050). ADU (26-88-060(3)(i)): front per base district unless it would preclude an 800 sf ADU with 4 ft side/rear."
+   },
+   "residential_front_setback": {
+    "value_ft": 20,
+    "source": "code",
+    "citation": "SCC § 26-08-040 table: R1, RR, R2 20 ft; AR 30 ft; R3 15 ft",
+    "by_district": {
+     "R1": 20,
+     "RR": 20,
+     "R2": 20,
+     "AR": 30,
+     "R3": 15
+    },
+    "extracted": "2026-09-24",
+    "corpus_doc": "sonoma-county/sf-district-standards"
+   },
+   "slug": "sonoma-county",
+   "state_track_front": {
+    "rule": "district",
+    "value_ft": null,
+    "value_rule": null,
+    "flags": [],
+    "classification": "conditional_yield",
+    "threshold_sf": 800,
+    "citation": "Sonoma County Code Sec. 26-88-060(h)(3)(i)",
+    "quote": "[(h)(3) Location. ADUs shall be located subject to the following setbacks, and in conformance with any easements and building envelopes:] (i) Front Yard Setback: As established by the base zoning district, unless compliance with the setback would not permit an ADU of eight hundred (800) square feet, meeting applicable height standards, with four-foot side and rear yard setbacks. (ii) Side and Rear Yard Setbacks: Four (4) feet.",
+    "placement_rule": {
+     "exists": false,
+     "quote": null,
+     "citation": null,
+     "exempted_by_notwithstanding": null
+    },
+    "notes": "No separate 66323 section (chapter still cites 65852.2); (h)(3) applies to all ADUs. Straight shield wording. The 'in conformance with any easements and building envelopes' clause is a site-constraint, not a front-yard exclusion. No placement rule.",
+    "source": "ADU chapter read in full 2026-10-18 (corpus/sonoma-county/adu-ordinance.txt) · FOR-1511"
+   }
+  }
+ ]
 }

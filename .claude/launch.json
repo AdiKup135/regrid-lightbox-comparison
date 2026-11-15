@@ -2,6 +2,11 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "session-e-attach",
+      "url": "http://localhost:5180",
+      "port": 5180
+    },
+    {
       "name": "site-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
@@ -24,6 +29,19 @@
       ],
       "port": 8080,
       "autoPort": true
+    },
+    {
+      "name": "opendata-backend",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/Users/adi/Documents/formX/site/gaudi-api-port/app_poc.py"
+      ],
+      "port": 3004
+    },
+    {
+      "name": "renderMock-attach",
+      "url": "http://localhost:5190",
+      "port": 5190
     }
   ]
 }

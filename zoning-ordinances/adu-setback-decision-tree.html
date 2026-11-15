@@ -104,7 +104,7 @@
   <header>
     <div>
       <h1>ADU Setback Decision Tree</h1>
-      <div class="status">as of 2026-09-24 · Q1–Q2 assumed · Q3, Q4 decided · counsel answers on front / second front / measurement in · Q5, Q6 pending · Phase A prototyped in site repo · B, C next</div>
+      <div class="status">as of 2026-10-18 · Q1–Q2 assumed · Q3, Q3b (FOR-1511), Q4 decided · counsel answers on front / second front / measurement in · Q5, Q6 pending · Phase A prototyped in site repo · B, C next</div>
     </div>
     <div class="tabs" role="tablist" aria-label="Diagram version">
       <button id="tab-lean" role="tab" aria-selected="true" aria-controls="fig">Lean — decisions made</button>
@@ -135,6 +135,7 @@
         <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1421/setbacks-accounting-for-a-2nd-adu-on-the-lot">FOR-1421</a><span>No detached ADU exists on the lot yet, so the §66323(a)(2) entitlement is open. Manual yes/no, default no. Flag <code>existing_detached_adu_assumed_no</code>.</span></li>
         <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1422/setbacks-transit-proximity-walking-distance-refinement-for-the-18-ft">FOR-1422</a><span>Transit proximity is tested against the Caltrans HQ Transit Area half-mile <em>straight-line</em> buffers (existing stops only); the statute says walking distance. Flag <code>transit_straight_line_buffer</code>. Refinement: Google walking distance to the nearest HQ stops.</span></li>
         <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1418/setbacks-values-extraction">FOR-1418</a><span>Parent: values extraction. Full-ordinance corpus scrape (3 tiers) running in a separate session.</span></li>
+        <li><a class="chip issue" href="https://linear.app/form-tickets/issue/FOR-1511/zoning-setbacks-local-0-front-setback-for-state-track">FOR-1511</a><span>Q3b: where the local ADU chapter itself grants the ≤ 800 sf unit no front setback (6 of 28), the state track takes that value by right (0 ft in all six today; the engine reads the number, never assumes it). Silent chapters (10) keep the district front + flag, pending Hila. Full read of the 28 chapters (2026-10-18) folded into zoning_ordinance_links.json as the state_track_front block, quotes included.</span></li>
       </ul>
     </section>
     <section class="panel">
@@ -196,8 +197,10 @@
         lines: [['b', 'Q2 · Ordinance in effect?  →  ASSUMED YES'], ['', 'if the jurisdiction publishes an ADU ordinance, it is valid'], ['m', 'state law prevails per provision (Q2c, pending)']] },
       { id: 'q3', kind: 'decision', x: 230, y: 352, w: 320, h: 86,
         lines: [['b', 'Q3 · Does the unit fit §66323(a)(2)?'], ['', 'detached · new construction · first on the lot'], ['c', 'unit_size ≤ 800 sf'], ['c', 'unit_height_in_feet ≤ 16 ft (18 near transit)']] },
-      { id: 'st', kind: 'state', x: 40, y: 496, w: 320, h: 122,
-        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: the jurisdiction’s front setback for housing'], ['', 'street_side = side (4 ft) · all_fronts: 2nd frontage 4 ft'], ['m', 'no coverage, FAR, lot size or design standards']] },
+      { id: 'q3b', kind: 'decision', x: 40, y: 496, w: 320, h: 76,
+        lines: [['b', 'Q3b · Local front rule for this unit?'], ['', 'the ADU chapter’s own front rule for the ≤ 800 sf unit'], ['', '6 of 28 set one, all “no front setback” today — by right'], ['c', 'state_track_front · FOR-1511']] },
+      { id: 'st', kind: 'state', x: 40, y: 600, w: 320, h: 120,
+        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: the ADU chapter’s own value where it sets one (Q3b yes)'], ['', 'otherwise the city’s / county’s zoning front for housing (SFR)'], ['', 'street_side = side (4 ft) · all_fronts: 2nd frontage 4 ft'], ['m', 'no coverage, FAR, lot size or design standards']] },
       { id: 'lo', kind: 'local', x: 420, y: 496, w: 320, h: 88,
         lines: [['b', 'Local track · §66314  →  Phase B'], ['', 'ordinance values per edge, clamped (Q2c):'], ['m', 'side/rear ≤ 4 ft · height ≥ state floor · size ≥ 850/1,000']] },
       { id: 'q4', kind: 'decision', x: 420, y: 630, w: 320, h: 52,
@@ -216,7 +219,8 @@
       { from: 'q1', to: 'stop', side: true, label: 'no — not evaluated', dash: true },
       { from: 'q1', to: 'q2', label: 'assumed yes' },
       { from: 'q2', to: 'q3', label: 'assumed yes' },
-      { from: 'q3', to: 'st', label: 'yes' },
+      { from: 'q3', to: 'q3b', label: 'yes' },
+      { from: 'q3b', to: 'st', label: 'yes: ADU-chapter value · no: jurisdiction zoning front' },
       { from: 'q3', to: 'lo', label: 'no' },
       { from: 'lo', to: 'q4' },
       { from: 'q4', to: 'sh', label: 'yes' },
@@ -259,10 +263,12 @@
         lines: [['b', '≤ 16 ft → state track anywhere · 16–18 ft → iff inside a CA HQ Transit Area'], ['c', 'Caltrans/Cal-ITP layer · existing stops only · transit_straight_line_buffer · FOR-1422']] },
       { id: 'h2', kind: 'assume', x: 420, y: 520, w: 580, h: 56,
         lines: [['b', '> 18 ft → local track. The 20 ft roof-pitch allowance is NOT modelled'], ['c', 'humans adjust via a setback override field in the Gaudi UI'], ['m', 'transit lookup failed → only 16 ft granted, flag transit_lookup_failed']] },
-      { id: 'st', kind: 'state', x: 40, y: 640, w: 320, h: 122,
-        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: the jurisdiction’s front setback for housing'], ['', 'street_side = side (4 ft) · all_fronts: 2nd frontage 4 ft'], ['m', 'no coverage, FAR, lot size or design standards']] },
-      { id: 'stn', kind: 'plain', x: 40, y: 774, w: 320, h: 40,
-        lines: [['b', 'front value: residential_front_setback per jurisdiction (28 extracted)'], ['m', 'per-district table on the zone code · unknown city → flag, UI asks']] },
+      { id: 'q3b', kind: 'decision', x: 40, y: 640, w: 320, h: 76,
+        lines: [['b', 'Q3b · Local front rule for this unit?'], ['', 'the ADU chapter’s own front rule for the ≤ 800 sf unit'], ['', '6 of 28 set one, all “no front setback” today — by right'], ['c', 'state_track_front · FOR-1511']] },
+      { id: 'st', kind: 'state', x: 40, y: 744, w: 320, h: 120,
+        lines: [['b', 'State track · §66323(a)(2)  →  Phase A'], ['', 'side 4 ft · rear 4 ft'], ['', 'front: the ADU chapter’s own value where it sets one (Q3b yes)'], ['', 'otherwise the city’s / county’s zoning front for housing (SFR)'], ['', 'street_side = side (4 ft) · all_fronts: 2nd frontage 4 ft'], ['m', 'no coverage, FAR, lot size or design standards']] },
+      { id: 'stn', kind: 'plain', x: 40, y: 886, w: 320, h: 76,
+        lines: [['b', 'front: state_track_front, 28 chapters classified'], ['m', 'grant 6 · mixed 2 · conditional 9 · district 1'], ['m', 'silent 10 → district value + flag, pending Hila'], ['c', 'FOR-1511 · zoning_ordinance_links.json → state_track_front']] },
       { id: 'lo', kind: 'local', x: 420, y: 640, w: 320, h: 88,
         lines: [['b', 'Local track · §66314  →  Phase B'], ['', 'ordinance values per edge, clamped (Q2c):'], ['m', 'side/rear ≤ 4 ft · height ≥ state floor · size ≥ 850/1,000']] },
       { id: 'lon', kind: 'plain', x: 760, y: 640, w: 240, h: 88,
@@ -288,7 +294,8 @@
       { from: 'q2', to: 'q2n', side: true },
       { from: 'q2', to: 'q3', label: 'assumed yes' },
       { from: 'q3', to: 'h1', side: true },
-      { from: 'q3', to: 'st', label: 'yes' },
+      { from: 'q3', to: 'q3b', label: 'yes' },
+      { from: 'q3b', to: 'st', label: 'yes: ADU-chapter value · no: jurisdiction zoning front' },
       { from: 'q3', to: 'lo', label: 'no' },
       { from: 'lo', to: 'lon', side: true },
       { from: 'st', to: 'stn' },

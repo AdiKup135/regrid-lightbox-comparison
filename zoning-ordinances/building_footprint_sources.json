@@ -1,0 +1,535 @@
+{
+  "_about": "Open building-footprint polygon sources for the ADU setback engine's 28 jurisdictions (6 counties). Every record marked verified=true was exercised with a live request on 2026-10-18 from this machine; status + feature counts are recorded as returned. Records with verified=false were found in catalogs/search only. Mirrors the style of gaudi-api-port/services/parcel_data/county_registry.py: keyless ArcGIS REST /query layers, per-source quirks surfaced so the engine can flag them.",
+  "surveyed_on": "2026-10-18",
+  "query_convention": {
+    "arcgis_bbox": "{layer_url}/query?geometry={xmin},{ymin},{xmax},{ymax}&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "arcgis_point": "{layer_url}/query?geometry={lon},{lat}&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "arcgis_parcel_polygon": "POST {layer_url}/query with geometry=<esri polygon json of the parcel>&geometryType=esriGeometryPolygon&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&outSR=4326&f=geojson  -- preferred: returns every structure touching the lot in one call; clip each result to the parcel before picking the primary house.",
+    "notes": "All ArcGIS layers below report errors in-band with HTTP 200 (check payload.error), exactly like the parcel fabrics. Test bboxes are +/-0.001 deg (~100 m x ~90 m) around the test point."
+  },
+  "test_points": {
+    "Atherton":    {"lat": 37.4613, "lon": -122.1978, "bbox": "-122.1988,37.4603,-122.1968,37.4623"},
+    "Palo Alto":   {"lat": 37.4443, "lon": -122.1598, "bbox": "-122.1608,37.4433,-122.1588,37.4453"},
+    "Mill Valley": {"lat": 37.9060, "lon": -122.5450, "bbox": "-122.5460,37.9050,-122.5440,37.9070"},
+    "Lafayette":   {"lat": 37.8858, "lon": -122.1180, "bbox": "-122.1190,37.8848,-122.1170,37.8868"},
+    "Healdsburg":  {"lat": 38.6102, "lon": -122.8694, "bbox": "-122.8704,38.6092,-122.8684,38.6112"},
+    "Napa":        {"lat": 38.2975, "lon": -122.2869, "bbox": "-122.2879,38.2965,-122.2859,38.2985"},
+    "_extra_city_points_used": {
+      "Sunnyvale":  {"lat": 37.3688, "lon": -122.0363, "bbox": "-122.0373,37.3678,-122.0353,37.3698"},
+      "Menlo Park": {"lat": 37.4530, "lon": -122.1817, "bbox": "-122.1827,37.4520,-122.1807,37.4540"},
+      "San Mateo":  {"lat": 37.5630, "lon": -122.3255, "bbox": "-122.3265,37.5620,-122.3245,37.5640"},
+      "Saratoga":   {"lat": 37.2638, "lon": -122.0230, "bbox": "-122.0240,37.2628,-122.0220,37.2648"},
+      "Los Altos":  {"lat": 37.3852, "lon": -122.1141, "bbox": "-122.1151,37.3842,-122.1131,37.3862"}
+    }
+  },
+
+  "sources": [
+    {
+      "id": "smc_building_footprints",
+      "name": "San Mateo County - Building Footprints",
+      "level": "county",
+      "county_fips": "06081",
+      "covers": ["Atherton", "Hillsborough", "Menlo Park", "Portola Valley", "San Carlos", "San Mateo (city)", "San Mateo County unincorporated"],
+      "portal_url": "https://data-smcmaps.opendata.arcgis.com/ (ArcGIS Hub; also listed on https://www.smcgov.org/isd/gis-data-download)",
+      "endpoint_url": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Building_Footprints/FeatureServer/0",
+      "endpoint_kind": "arcgis_feature_server",
+      "download_urls": {
+        "shapefile": "https://gis-data-downloads.s3-us-west-1.amazonaws.com/BUILDING_FOOTPRINTS.zip",
+        "geojson": "https://gis-data-downloads.s3-us-west-1.amazonaws.com/BUILDING_FOOTPRINTS_GEOJSON.zip",
+        "fgdb": "https://gis-data-downloads.s3-us-west-1.amazonaws.com/BUILDING_FOOTPRINTS_FGDB.zip"
+      },
+      "format": "ArcGIS REST (f=geojson supported); daily S3 exports in SHP/GDB/KML/GeoJSON",
+      "license": "Not stated on the item (licenseInfo empty); published as county open data on the SMC Hub. Treat as county open data, attribution 'San Mateo County GIS'.",
+      "vintage": "Not documented on the service (description empty, LASTUPDATE null on all rows). Menlo Park's own service credits its county-sourced footprints to 'San Mateo County GIS (LiDAR) 2020', so the base capture is most likely the 2020 countywide LiDAR; the layer is edited continuously (dataLastEditDate 2026-10-18, exported daily per the download page).",
+      "last_updated": "2026-10-18 (service editingInfo.dataLastEditDate)",
+      "feature_count_total": 229298,
+      "attributes": {
+        "height": "BLDGHEIGHT (ft, populated; 15 in sample), BASEELEV, EAVEHEIGHT (null in sample)",
+        "stories": "FLOORCOUNT exists but count(FLOORCOUNT)=0 -> unpopulated",
+        "building_type": "FEATURECODE exists but every row is null",
+        "main_vs_accessory": "none",
+        "apn_or_address": "none (BUILDINGID null in sample)",
+        "other": "ROOFFORM/ROOFDIR (null), LASTEDITOR"
+      },
+      "query_example": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Building_Footprints/FeatureServer/0/query?geometry=-122.1988,37.4603,-122.1968,37.4623&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 40, "test_point": "Atherton", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "No main/accessory flag and no APN: pick the primary house by largest clipped-area polygon on the parcel.",
+        "LiDAR-derived outlines are roof extents (eaves), not wall lines - over-states the footprint by roughly the eave overhang.",
+        "Sibling layer 'Buildings' (https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Buildings/FeatureServer/0, static 2022-02-25 snapshot, metadata-only check) carries APN, OutBuild flag, BUILD_TYPE and assessor situs joined onto each footprint - useful as a one-time lookup for main-vs-outbuilding, but it is frozen at 2022.",
+        "Sibling 'Building_Footprint_Elevations' (2023-12-06) adds MIN_/MAX_/MEAN elevation; not needed."
+      ]
+    },
+
+    {
+      "id": "scc_building_outlines_2022",
+      "name": "Santa Clara County - Building Outlines (2022 LiDAR)",
+      "level": "county",
+      "county_fips": "06085",
+      "covers": ["Los Altos", "Los Altos Hills", "Mountain View", "Palo Alto", "San Jose", "Saratoga", "Sunnyvale", "Santa Clara County unincorporated"],
+      "portal_url": "https://sccgishub-sccplanning.hub.arcgis.com/ (SCCGIS Hub) and https://data.sccgov.org/",
+      "endpoint_url": "https://maps.santaclaracounty.gov/server/rest/services/basic/SCCBuildings/MapServer/0",
+      "endpoint_kind": "arcgis_map_server",
+      "alternates": {
+        "2020_lidar_hub_layer": "https://maps.santaclaracounty.gov/server/rest/services/opendata/SCCGISHUB/MapServer/40  (Buildings Footprints 2D, early-2020 LiDAR, maxRecordCount 5000; verified 200 / 29 features at Palo Alto)",
+        "2020_lidar_basic": "https://maps.santaclaracounty.gov/server/rest/services/basic/SCCBuildings2020/MapServer/0 (Building Outlines 2020; metadata only)"
+      },
+      "format": "ArcGIS REST MapServer layer (Map,Query,Data; f=geojson supported)",
+      "license": "County of Santa Clara open data; copyrightText 'County of Santa Clara; Sanborn Map Co.'",
+      "vintage": "LiDAR collected late 2022 (Sanborn, 0.35 m NPS, USGS base spec); 2D footprints from Class-6 building returns. Heights interpolated DSM-DEM.",
+      "last_updated": "2022 capture; service has no editingInfo (static deliverable)",
+      "attributes": {
+        "height": "Building_H (ft, rooftop above base), Base_Heigh (base elevation ft)",
+        "stories": "none",
+        "building_type": "Class exists but every row null",
+        "main_vs_accessory": "none",
+        "apn_or_address": "none"
+      },
+      "query_example": "https://maps.santaclaracounty.gov/server/rest/services/basic/SCCBuildings/MapServer/0/query?geometry=-122.1608,37.4433,-122.1588,37.4453&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 22, "test_point": "Palo Alto", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "Polygons are 'based on rooftop area, not building base area' (county metadata) - same eave caveat as SMC.",
+        "Same bbox returns 22 (2022 layer) vs 29 (2020 layer) features: the 2022 product appears to merge/suppress small structures more aggressively. If a detached garage is missing, cross-check the 2020 layer.",
+        "No main/accessory flag; use area-on-parcel heuristic."
+      ]
+    },
+
+    {
+      "id": "marin_building_footprints",
+      "name": "Marin County - Building Footprints (MarinMap)",
+      "level": "county",
+      "county_fips": "06041",
+      "covers": ["Fairfax", "Mill Valley", "Sausalito", "Marin County unincorporated"],
+      "portal_url": "https://gisopendata.marincounty.gov/ (also https://data.marincounty.gov/)",
+      "endpoint_url": "https://services6.arcgis.com/T8eS7sop5hLmgRRH/arcgis/rest/services/Building_Footprints/FeatureServer/0",
+      "endpoint_kind": "arcgis_feature_server",
+      "format": "ArcGIS REST (Query,Extract; f=geojson supported)",
+      "license": "County of Marin 'as is' disclaimer (no reuse restriction stated); open data item owner opendata_MarinCounty.",
+      "vintage": "Stereo-compiled from the 2004 orthophoto project (urban/suburban extent + 200 ft fringe); additions digitized from 2014 orthophoto, 2018 imagery and city 'Building Plan' sources (SourceCode/SourceDateYear per feature). Sample at Mill Valley: SourceCode 'Vargis_2004 10cm', SourceDateYear 2004.",
+      "last_updated": "2023-02-28 (service dataLastEditDate)",
+      "attributes": {
+        "height": "BaseElevationMinFeet / PeakElevationMaxFeet (null in sample)",
+        "stories": "none",
+        "building_type": "BuildingType coded domain: 1 General/Residential, 2 Government, 3 Medical, 4 Education, 5 Transportation, 6 Commercial, 7 Religious, 8 Recreation, 9 Cultural/Heritage, 10 Hospitality, 11 Airport, 12 Industrial, 13 CommunityCenter",
+        "main_vs_accessory": "none (garages are also type 1)",
+        "apn_or_address": "none",
+        "other": "SourceCode, SourceDateYear, BuildingName"
+      },
+      "query_example": "https://services6.arcgis.com/T8eS7sop5hLmgRRH/arcgis/rest/services/Building_Footprints/FeatureServer/0/query?geometry=-122.5460,37.9050,-122.5440,37.9070&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 68, "test_point": "Mill Valley", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "Oldest county source in the set (2004 base). Houses rebuilt/expanded after 2004-2014 may be wrong; use SourceDateYear to decide whether to prefer Overture/Microsoft for that parcel.",
+        "Stereo-compiled at the ground base, so these ARE wall footprints (not roof extents) - unlike the LiDAR counties.",
+        "Coverage limited to the urban/suburban mapping extent (fine for the three towns)."
+      ]
+    },
+
+    {
+      "id": "ccc_none",
+      "name": "Contra Costa County - no published building footprint layer",
+      "level": "county",
+      "county_fips": "06013",
+      "covers": ["Lafayette", "Moraga", "Orinda", "Contra Costa County unincorporated"],
+      "portal_url": "https://gis-cccounty.hub.arcgis.com/ (reachable; no footprint dataset found)",
+      "endpoint_url": null,
+      "endpoint_kind": null,
+      "format": null,
+      "license": null,
+      "vintage": null,
+      "last_updated": null,
+      "attributes": {},
+      "query_example": null,
+      "verified": {"ok": false, "http_status": null, "feature_count": null, "test_point": "Lafayette", "tested_on": "2026-10-18", "notes": "Enumerated https://gis.cccounty.us/arcgis/rest/services (folders _Authoritative, AUTHORATIVE/BASE_DATA_DCD_ArcPro, INTERNET/BASE_DATA_ArcPro, CCMAP, Hosted, RASTER...): address points, parcels, zoning, contours, 2019/2025 imagery - no buildings layer. ArcGIS Online catalog search for county-owned 'building footprints' returned 0 Contra Costa results; Lafayette/Moraga/Orinda returned 0."},
+      "quirks": [
+        "Use the global baseline here: Overture (verified 11 features at Lafayette, all sourced from Microsoft ML Buildings, every one with a height) or the Microsoft GlobalML tile for quadkey 023010212.",
+        "Older academic snapshots exist (DCD 'building outlines of schools' etc. via Berkeley GeoData) but nothing residential/countywide."
+      ]
+    },
+
+    {
+      "id": "sonoma_buildings",
+      "name": "Sonoma County - Buildings (BASEPublic)",
+      "level": "county",
+      "county_fips": "06097",
+      "covers": ["Healdsburg", "Windsor", "Sonoma County unincorporated"],
+      "portal_url": "https://gis-sonomacounty.hub.arcgis.com/",
+      "endpoint_url": "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Buildings/FeatureServer/0",
+      "endpoint_kind": "arcgis_feature_server",
+      "alternates": {"owts_copy": "https://socogis.sonomacounty.ca.gov/map/rest/services/OWTSPublic/Buildings/FeatureServer/0 (same data, same host as the parcel fabric already in county_registry)"},
+      "format": "ArcGIS REST (Query,Extract; f=geojson supported)",
+      "license": "County GIS public services (no license text on the layer); same terms as the Cities_GIS_Parcel_Base fabric the engine already uses.",
+      "vintage": "Countywide outlines originally from 2000 1-ft orthophotography; cities of Sonoma and Healdsburg added later; maintained since - item metadata says outlines were updated from the EagleView May-2025 orthophoto capture. Sample at Healdsburg last_edited_date 2025-11-04. Only structures >= 150 sq ft are captured.",
+      "last_updated": "2025-11 (per-feature last_edited_date; AGOL item modified 2025-03-21)",
+      "attributes": {
+        "height": "none",
+        "stories": "none",
+        "building_type": "PropType: Single Family Residence, Attached Unit Residence, Condominium Residence, Multiple Family Residence, Mobile Home, Out Building, Commercial, Industrial, Agriculture, Government, School, Park Building, Parking Structure, Solar Panel, ...",
+        "main_vs_accessory": "partial - PropType 'Out Building' marks accessory structures; the house is the 'Single Family Residence' polygon",
+        "apn_or_address": "none (Name only for named buildings)",
+        "other": "GovtType, last_edited_date"
+      },
+      "query_example": "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Buildings/FeatureServer/0/query?geometry=-122.8704,38.6092,-122.8684,38.6112&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 33, "test_point": "Healdsburg", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "Structures under 150 sq ft are absent (small sheds) - irrelevant for the primary house, relevant for separation checks.",
+        "Where 2000-era imagery was coarser than 1 ft/px the original capture was a point converted to a 36 sq ft square; those should have been replaced by the 2025 update but treat near-square ~36 sq ft polygons as placeholders.",
+        "PropType is null on many rows; fall back to the area heuristic when it is."
+      ]
+    },
+
+    {
+      "id": "napa_building_footprints",
+      "name": "Napa County - BuildingFootprint_Public",
+      "level": "county",
+      "county_fips": "06055",
+      "covers": ["Napa (city)", "Napa County unincorporated"],
+      "portal_url": "https://gis-napacounty.opendata.arcgis.com/ (also https://napacounty.hub.arcgis.com/)",
+      "endpoint_url": "https://services1.arcgis.com/Ko5rxt00spOfjMqj/arcgis/rest/services/BuildingFootprint_Public/FeatureServer/0",
+      "endpoint_kind": "arcgis_feature_server",
+      "alternates": {
+        "county_server_copy": "https://gis.napacounty.gov/arcgis/rest/services/Hosted/Building_Footprints_Public/FeatureServer/0 (metadata verified: same data, lastEditDate 2026-10-16, maxRecordCount 1000, supports Sync/Extract)",
+        "legacy_host": "https://gis.countyofnapa.org/... - TLS certificate expired; do not use"
+      },
+      "format": "ArcGIS REST (f=geojson supported)",
+      "license": "Open Data Commons Public Domain Dedication and License (PDDL) v1.0 - stated on the AGOL item.",
+      "vintage": "Maintained local-government footprint layer (ortho/aerial compiled; the 2014 public snapshot warned coverage was incomplete). Synced weekly to AGOL; sample feature last_edited_date 2022-06-08.",
+      "last_updated": "2026-10-16 (weekly sync)",
+      "attributes": {
+        "height": "BLDGHEIGHT present but 0 in sample (unpopulated)",
+        "stories": "NUMSTORIES present but 0 in sample (unpopulated)",
+        "building_type": "FEATURECODE: Addressed Building, Addressed Structure, Non-Addressed Building, Non-Addressed Structure, Non-Address Structure, Outbuilding, Water Tower (+ typo variants 'Addressed Buildicng', 'Outbuiclding', 'Outbuildng')",
+        "main_vs_accessory": "partial - 'Addressed Building' is the house; 'Outbuilding' / 'Non-Addressed *' are accessory",
+        "apn_or_address": "Parcel (APN; comma-separated list when a building spans parcels), Address (comma list), Municipality, Community",
+        "other": "Status (all 'Current')"
+      },
+      "query_example": "https://services1.arcgis.com/Ko5rxt00spOfjMqj/arcgis/rest/services/BuildingFootprint_Public/FeatureServer/0/query?geometry=-122.2879,38.2965,-122.2859,38.2985&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 14, "test_point": "Napa", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "FEATURECODE values contain typos - match with startswith('Addressed Building') / startswith('Outbuild') rather than equality.",
+        "Parcel field can hold several APNs; split on ', ' before matching to the subject parcel.",
+        "Height/stories columns exist but are zero-filled."
+      ]
+    },
+
+    {
+      "id": "palo_alto_roof_outline",
+      "name": "City of Palo Alto - Building Roof Outline",
+      "level": "city",
+      "county_fips": "06085",
+      "covers": ["Palo Alto"],
+      "portal_url": "https://palo-alto.maps.arcgis.com/ (ArcGIS Online org evmyRZRrsopdeog7; Open GIS program)",
+      "endpoint_url": "https://services6.arcgis.com/evmyRZRrsopdeog7/arcgis/rest/services/BuildingRoofOutLine/FeatureServer/0",
+      "endpoint_kind": "arcgis_feature_server",
+      "format": "ArcGIS REST (Query; f=geojson supported)",
+      "license": "Not stated on the service; City of Palo Alto Open GIS data (public).",
+      "vintage": "Heads-up digitized from city orthos (SOURCE values: Photo 1999/2001/2004/2006/2013, Accela permits, field obs...). Sample feature SOURCE 'Photo 2013', MODIFIEDDATE 2020-10-06. Service still edited (dataLastEditDate 2026-08-10).",
+      "last_updated": "2026-08-10",
+      "attributes": {
+        "height": "none",
+        "stories": "none",
+        "building_type": "BUILDINGCLASS: major | minor | null",
+        "main_vs_accessory": "yes (proxy) - BUILDINGCLASS 'major' = main building, 'minor' = accessory/garage/shed",
+        "apn_or_address": "none",
+        "other": "SOURCE, INPUTMETHOD, JURISDICTION (PA/...), CALCULATEDAREA (sq ft), OWNER/NAME for public buildings"
+      },
+      "query_example": "https://services6.arcgis.com/evmyRZRrsopdeog7/arcgis/rest/services/BuildingRoofOutLine/FeatureServer/0/query?geometry=-122.1608,37.4433,-122.1588,37.4453&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 27, "test_point": "Palo Alto", "tested_on": "2026-10-18", "max_record_count": 1000},
+      "quirks": [
+        "It is explicitly a ROOF outline (includes eaves) - subtract the eave overhang before measuring wall setbacks, or use the county LiDAR layer for geometry and this layer only for the major/minor flag.",
+        "Per-feature vintage varies widely (1993-2013 photos); check SOURCE/MODIFIEDDATE."
+      ]
+    },
+
+    {
+      "id": "sunnyvale_building_footprints",
+      "name": "City of Sunnyvale - Building Footprints",
+      "level": "city",
+      "county_fips": "06085",
+      "covers": ["Sunnyvale"],
+      "portal_url": "https://gis.sunnyvale.ca.gov/ (AGOL org IBwZaktrBtZuqQmg, item owner Vestra_CityofSunnyvale)",
+      "endpoint_url": "https://services.arcgis.com/IBwZaktrBtZuqQmg/arcgis/rest/services/Building_Footprints/FeatureServer/0",
+      "endpoint_kind": "arcgis_feature_server",
+      "format": "ArcGIS REST (Query; f=geojson supported)",
+      "license": "Not stated on the service (public item).",
+      "vintage": "Not documented; attributes (BLDG_HIGH/BLDG_LOW elevations) indicate a LiDAR/photogrammetric capture. Item created 2021-06-02; data last edited 2023-08-13.",
+      "last_updated": "2023-08-13",
+      "attributes": {
+        "height": "BLDG_HEIGH (ft), BLDG_HIGH/BLDG_LOW (elevations)",
+        "stories": "STORY",
+        "building_type": "BLDG_TYPE: Main, Dwelling, Accessory(<100), Accessory(100-700), Accessory(>700), Parking, Structure(<7), Merged APNs",
+        "main_vs_accessory": "yes - BLDG_TYPE 'Main' (or 'Dwelling'); Accessory(...) buckets by sq ft",
+        "apn_or_address": "APN, APNNUM, Address, SiteNumber, BuildingNumber, UNIT",
+        "other": "BLDG_AREA (sq ft), LEVEL_DESC"
+      },
+      "query_example": "https://services.arcgis.com/IBwZaktrBtZuqQmg/arcgis/rest/services/Building_Footprints/FeatureServer/0/query?geometry=-122.0373,37.3678,-122.0353,37.3698&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 12, "test_point": "Sunnyvale 37.3688,-122.0363", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "Richest schema in the survey (APN + Main/Accessory + stories + height). Prefer it over the county layer for Sunnyvale.",
+        "APN is stored without dashes (e.g. 20929054); normalize before joining to the county parcel fabric.",
+        "Published by a consultant account (Vestra); not an official hub item - re-check availability periodically."
+      ]
+    },
+
+    {
+      "id": "menlo_park_buildings",
+      "name": "City of Menlo Park - Buildings (GISWeb)",
+      "level": "city",
+      "county_fips": "06081",
+      "covers": ["Menlo Park"],
+      "portal_url": "https://gisweb.menlopark.gov/",
+      "endpoint_url": "https://gisweb.menlopark.gov/server/rest/services/GISWeb/Buildings/MapServer/3",
+      "endpoint_kind": "arcgis_map_server",
+      "format": "ArcGIS REST MapServer layer 3 'Buildings' (Map,Query,Data; f=geojson supported). Layer 0 is facility points - do not use.",
+      "license": "Not stated; city public map service.",
+      "vintage": "Mixed per service description: digitized from orthos ca. 2015, Belle Haven planimetric survey ca. 2000, San Mateo County GIS LiDAR 2020. Sample feature RevDate 2024-06-27.",
+      "last_updated": "2024-06 (per-feature RevDate; no service editingInfo)",
+      "attributes": {
+        "height": "none",
+        "stories": "Stories",
+        "building_type": "BldgType 1-4 (coded, no domain published) + BldgSubType free text (Garage, Carport, Apartment, Condo, Office, Church, School, ...)",
+        "main_vs_accessory": "partial - BldgSubType 'Garage'/'Carport' flags accessory; residential mains are usually null subtype",
+        "apn_or_address": "Address (populated), APN (null in sample)",
+        "other": "BldgID, BldgName, RevBy/RevDate"
+      },
+      "query_example": "https://gisweb.menlopark.gov/server/rest/services/GISWeb/Buildings/MapServer/3/query?geometry=-122.1827,37.4520,-122.1807,37.4540&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 27, "test_point": "Menlo Park 37.4530,-122.1817", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "Largely the same 2020 county LiDAR geometry with city edits; use it for Address/Stories/Garage tags, county layer for consistency.",
+        "BldgType codes are undocumented (values 1-4)."
+      ]
+    },
+
+    {
+      "id": "city_of_san_mateo_building_footprints",
+      "name": "City of San Mateo - Building_Footprints_Zoning (layer 26)",
+      "level": "city",
+      "county_fips": "06081",
+      "covers": ["San Mateo (city)"],
+      "portal_url": "AGOL org g26Y0m7OCdjU0ObA (item owner rpierce@cityofsanmateo.org_CityofSanMateo) - no public hub page found",
+      "endpoint_url": "https://services2.arcgis.com/g26Y0m7OCdjU0ObA/arcgis/rest/services/Building_Footprints_Zoning/FeatureServer/26",
+      "endpoint_kind": "arcgis_feature_server",
+      "format": "ArcGIS REST (Query,Extract; f=geojson supported). Only layer id 26 exists in the service.",
+      "license": "Not stated; staff-published item.",
+      "vintage": "Schema (BASE_ELEV/BUILDING_E/BUILDING_H) matches the county LiDAR footprint product; data last edited 2023-01-20, joined to zoning.",
+      "last_updated": "2023-01-20 (data); 2025-11-21 (schema)",
+      "attributes": {
+        "height": "BUILDING_H (ft), BUILDING_E, BASE_ELEV",
+        "stories": "SFP_NUM_BASEMENT_LEVELS (null in sample)",
+        "building_type": "none",
+        "main_vs_accessory": "none (SFE_GARAGE_ZC / SFADU_GARAGE columns exist but null in sample)",
+        "apn_or_address": "none",
+        "other": "ZONECLASS / ZONEDESC joined per footprint"
+      },
+      "query_example": "https://services2.arcgis.com/g26Y0m7OCdjU0ObA/arcgis/rest/services/Building_Footprints_Zoning/FeatureServer/26/query?geometry=-122.3265,37.5620,-122.3245,37.5640&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 27, "test_point": "San Mateo 37.5630,-122.3255", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": [
+        "Appears to be a working copy of the county footprints with zoning joined; prefer the county layer (newer, maintained). Keep only as a zoning cross-check."
+      ]
+    },
+
+    {
+      "id": "saratoga_buildings",
+      "name": "City of Saratoga - Buildings (2018 ortho outlines, countywide)",
+      "level": "city",
+      "county_fips": "06085",
+      "covers": ["Saratoga"],
+      "portal_url": "AGOL org rExmJXzTylAKURvh (item owner patrickk_Saratoga)",
+      "endpoint_url": "https://services3.arcgis.com/rExmJXzTylAKURvh/arcgis/rest/services/Building/FeatureServer/14",
+      "endpoint_kind": "arcgis_feature_server",
+      "format": "ArcGIS REST (Query; f=geojson supported). Only layer id 14 exists.",
+      "license": "Not stated.",
+      "vintage": "'Building outlines from 2018 digital orthophotography project. Countywide' - re-published Aug 2026 (water tanks at Montalvo added).",
+      "last_updated": "2026-08-21",
+      "attributes": {"height": "none", "stories": "none", "building_type": "none", "main_vs_accessory": "none", "apn_or_address": "none", "other": "Area, RmsErr, MaxErr (photogrammetric fit errors)"},
+      "query_example": "https://services3.arcgis.com/rExmJXzTylAKURvh/arcgis/rest/services/Building/FeatureServer/14/query?geometry=-122.0240,37.2628,-122.0220,37.2648&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 32, "test_point": "Saratoga 37.2638,-122.0230", "tested_on": "2026-10-18", "max_record_count": 2000},
+      "quirks": ["No attributes beyond geometry; county 2022 LiDAR layer is newer and adds height - use that, keep this as a cross-check of ortho (wall-ish) vs LiDAR (roof) extents."]
+    },
+
+    {
+      "id": "los_altos_2022_lidar_footprints",
+      "name": "City of Los Altos - Building_2022LiDAR_Footprints",
+      "level": "city",
+      "county_fips": "06085",
+      "covers": ["Los Altos"],
+      "portal_url": "https://map.losaltosca.gov/",
+      "endpoint_url": "https://map.losaltosca.gov/arcgis/rest/services/Public/Building_2022LiDAR_Footprints/MapServer/0",
+      "endpoint_kind": "arcgis_map_server",
+      "format": "ArcGIS REST MapServer (Map,Query,Data; f=geojson supported)",
+      "license": "Not stated; city public service.",
+      "vintage": "'Data extracted from SANBORN LiDAR remote flight' - the same 2022 countywide Sanborn LiDAR as the county layer.",
+      "last_updated": "2022 capture (no editingInfo)",
+      "attributes": {"height": "Building_H, Base_Heigh", "stories": "none", "building_type": "none", "main_vs_accessory": "none", "apn_or_address": "none"},
+      "query_example": "https://map.losaltosca.gov/arcgis/rest/services/Public/Building_2022LiDAR_Footprints/MapServer/0/query?geometry=-122.1151,37.3842,-122.1131,37.3862&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": true, "http_status": 200, "feature_count": 35, "test_point": "Los Altos 37.3852,-122.1141", "tested_on": "2026-10-18", "max_record_count": 1000},
+      "quirks": ["Redundant with the county 2022 layer; use county (one client, one host)."]
+    },
+
+    {
+      "id": "mountain_view_building_footprint",
+      "name": "City of Mountain View - Public/BuildingFootprint",
+      "level": "city",
+      "county_fips": "06085",
+      "covers": ["Mountain View"],
+      "portal_url": "https://maps.mountainview.gov/arcgis/rest/services/Public/ (host refused connections 2026-10-18)",
+      "endpoint_url": "https://maps.mountainview.gov/arcgis/rest/services/Public/BuildingFootprint/MapServer/0",
+      "endpoint_kind": "arcgis_map_server",
+      "format": "ArcGIS REST MapServer (per catalog)",
+      "license": "unknown",
+      "vintage": "Per the service's own description (search snippet): a 2D cartographic representation of buildings derived from indirect sources incl. aerial imagery; 'may not reflect current building footprints'.",
+      "last_updated": "unknown",
+      "attributes": {},
+      "query_example": "https://maps.mountainview.gov/arcgis/rest/services/Public/BuildingFootprint/MapServer/0/query?geometry=-122.0849,37.3851,-122.0829,37.3871&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "verified": {"ok": false, "http_status": null, "feature_count": null, "tested_on": "2026-10-18", "notes": "TCP connect to maps.mountainview.gov:443 timed out (curl, 90 s) and was refused via a second network path (ECONNREFUSED). Likely IP/geo-restricted. Not usable from a cloud host without confirmation."},
+      "quirks": ["Covered by the county 2022 LiDAR layer anyway."]
+    },
+
+    {
+      "id": "san_jose_building_footprints",
+      "name": "City of San Jose - OPN_OpenDataService building footprints",
+      "level": "city",
+      "county_fips": "06085",
+      "covers": ["San Jose"],
+      "portal_url": "https://data.sanjoseca.gov/ (reachable, HTTP 200); services on https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer",
+      "endpoint_url": "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/187",
+      "endpoint_kind": "arcgis_map_server",
+      "format": "ArcGIS REST MapServer (per catalog; layer id 187 taken from a search-result metadata link and NOT confirmed)",
+      "license": "City states its GIS data is public domain (work of a local agency under California law), provided 'as is'.",
+      "vintage": "Building footprints with height/elevation, 'generally from 2006' (OSM import notes); mixed State Plane zone 3 CRS in the shapefile exports.",
+      "last_updated": "unknown",
+      "attributes": {"height": "yes (per OSM import notes)", "main_vs_accessory": "unknown"},
+      "query_example": null,
+      "verified": {"ok": false, "http_status": null, "feature_count": null, "tested_on": "2026-10-18", "notes": "TCP connect to geo.sanjoseca.gov:443 timed out (curl, 90 s) and was refused via a second path (ECONNREFUSED). Not verified."},
+      "quirks": ["Use the county 2022 LiDAR layer (newer, verified). San Jose's 'rear yard' test needs geometry only."]
+    },
+
+    {
+      "id": "overture_buildings",
+      "name": "Overture Maps - buildings theme (type=building)",
+      "level": "global",
+      "covers": ["all 28 jurisdictions"],
+      "portal_url": "https://docs.overturemaps.org/guides/buildings/ ; release notes https://docs.overturemaps.org/blog/2026/09/23/release-notes/",
+      "endpoint_url": "s3://overturemaps-us-west-2/release/2026-09-23.0/theme=buildings/type=building/  (Azure mirror: https://overturemapswestus2.blob.core.windows.net/release/2026-09-23.0/theme=buildings/type=building/)",
+      "endpoint_kind": "s3_geoparquet_hive_partitioned",
+      "release": "2026-09-23.0 (verified: bucket listing shows part-00000.. ~530 MB zstd parquet files). A 2026-09-23.1 patch exists (GERS id fix for base + building_parts only). Previous: 2026-08-19.0. Overture ships monthly.",
+      "format": "GeoParquet (WKB geometry, bbox struct columns for predicate pushdown); CLI converts to GeoJSON/GeoJSONSeq/GeoParquet",
+      "license": "Theme-level ODbL (contains OpenStreetMap). Per attribution page the inputs are: OpenStreetMap (ODbL), Microsoft Global ML Building Footprints (listed as ODbL there), Google Open Buildings (CC BY 4.0), Esri Community Maps (CC BY 4.0), USGS 3DEP for heights. Required attribution: '(c) OpenStreetMap contributors. Available under the Open Database License.'",
+      "vintage": "Rolling: OSM features carry sources[].update_time (Atherton sample: 2015-11 to 2026-01); MS ML polygons carry no update_time (imagery 2014-2024).",
+      "last_updated": "2026-09-23",
+      "attributes": {
+        "height": "height (m) - present on 24/29 Atherton (OSM) features and 11/11 Lafayette (MS ML, USGS-3DEP-derived) features",
+        "stories": "num_floors (null in all 40 sampled)",
+        "building_type": "subtype / class (e.g. residential/house, garage, shed, detached...) - populated only where OSM tags exist: 2/29 at Atherton, 0/11 at Lafayette",
+        "main_vs_accessory": "only via class where present; otherwise none",
+        "apn_or_address": "none",
+        "other": "sources[] (dataset, record_id, update_time), has_parts, roof_shape, names, level, is_underground"
+      },
+      "query_example_cli": "pip install overturemaps && overturemaps download --bbox=-122.1988,37.4603,-122.1968,37.4623 -f geojson --type=building -o atherton_buildings.geojson",
+      "query_example_duckdb": "LOAD spatial; LOAD httpfs; SET s3_region='us-west-2'; SELECT id, subtype, class, height, num_floors, sources[1].dataset AS src, ST_AsText(geometry) FROM read_parquet('s3://overturemaps-us-west-2/release/2026-09-23.0/theme=buildings/type=building/*', filename=true, hive_partitioning=1) WHERE bbox.xmin > -122.1988 AND bbox.xmax < -122.1968 AND bbox.ymin > 37.4603 AND bbox.ymax < 37.4623;",
+      "verified": {
+        "ok": true,
+        "method": "duckdb 1.5.6 (httpfs+spatial) direct S3 read, anonymous",
+        "tests": [
+          {"test_point": "Atherton", "feature_count": 29, "elapsed_s": 185, "sources": {"OpenStreetMap": 29}, "with_height": 24, "with_class": 2},
+          {"test_point": "Lafayette", "feature_count": 11, "elapsed_s": 185, "sources": {"Microsoft ML Buildings": 11}, "with_height": 11, "with_class": 0}
+        ],
+        "tested_on": "2026-10-18"
+      },
+      "quirks": [
+        "Conflation rule: where OSM has a building, OSM wins and the MS ML polygon is dropped; elsewhere MS ML (or Google/Esri) fills in. So geometry provenance flips parcel by parcel - read sources[0].dataset.",
+        "House + attached garage: OSM mappers in the Peninsula typically trace the whole roof as ONE polygon (house and attached garage merged); detached garages are separate polygons. MS ML polygons are generalized orthogonalized roof blobs and can merge a house with a detached garage/carport when the roofs nearly touch, and can split one house under tree cover.",
+        "Not request-time friendly: a bbox scan straight from S3 took ~185 s per query from a laptop (full-partition metadata reads). Pre-extract the six-county bbox (-123.6,36.9,-121.2,38.9) once per release with the CLI or DuckDB into a local GeoParquet/PostGIS table and query that.",
+        "Use the .1 patch release path only if you need building_parts/base GERS ids; building geometry is identical."
+      ]
+    },
+
+    {
+      "id": "microsoft_global_ml_buildings",
+      "name": "Microsoft GlobalMLBuildingFootprints (2026-08-13 drop)",
+      "level": "global",
+      "covers": ["all 28 jurisdictions (RegionName=UnitedStates tiles)"],
+      "portal_url": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+      "endpoint_url": "https://bfppub.blob.core.windows.net/$web/2026-08-13/dataset-links.csv  (manifest: Location,QuadKey,Url,Size,UploadDate; 30,341 rows; 2,415 'UnitedStates' rows)",
+      "endpoint_kind": "static_tiles_geojsonl_csv_gz",
+      "tile_url_pattern": "https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=<L9 quadkey>/part-*.c000.csv.gz",
+      "tiles_for_test_points": {
+        "023010230": {"covers": ["Atherton", "Palo Alto"], "size": "91.5MB", "url": "https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=023010230/part-00091-110f5303-ff85-4c71-a2bf-c6070024fec8.c000.csv.gz"},
+        "023010203": {"covers": ["Mill Valley"], "size": "22.5MB"},
+        "023010212": {"covers": ["Lafayette"], "size": "64.3MB"},
+        "023010201": {"covers": ["Healdsburg"], "size": "20.9MB"},
+        "023010210": {"covers": ["Napa"], "size": "16.3MB"}
+      },
+      "format": "gzip'd newline-delimited GeoJSON features (one per line) per Bing level-9 quadkey; properties: height (m, -1 when unknown), confidence",
+      "license": "CDLA-Permissive-2.0 per the GitHub README (note: Planetary Computer's ms-buildings STAC collection labels the same data ODbL-1.0 - record both, cite the README).",
+      "vintage": "Bing imagery 2014-2024; most recent refresh uses Maxar/Vexcel 2020-2025. Drop date 2026-08-13.",
+      "last_updated": "2026-08-13",
+      "attributes": {"height": "height (m; -1 if not estimated)", "stories": "none", "building_type": "none", "main_vs_accessory": "none", "apn_or_address": "none", "other": "confidence"},
+      "query_example": "curl -sL 'https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=023010230/part-00091-110f5303-ff85-4c71-a2bf-c6070024fec8.c000.csv.gz' | gunzip | python3 -c \"import sys,json; from shapely.geometry import shape, box; b=box(-122.1988,37.4603,-122.1968,37.4623); print(sum(1 for l in sys.stdin if shape(json.loads(l)['geometry']).intersects(b)))\"  # quadkey(lat,lon,9) via Bing tile math",
+      "verified": {"ok": true, "http_status": 200, "method": "manifest downloaded (6.4 MB) + HEAD on the Atherton/Palo Alto tile (Content-Length 95,903,269)", "feature_count": null, "tested_on": "2026-10-18", "notes": "Tile contents not downloaded (92 MB); existence and public access verified. The old host minedbuildings.blob.core.windows.net now returns 409 PublicAccessNotPermitted - do not use URLs from older docs."},
+      "quirks": [
+        "No conflation with OSM: pure ML roof blobs. Adjacent roofs (house + attached garage, or house + nearly-touching detached garage) are frequently merged into one polygon; tree cover can split a house into fragments. ~1% false positives overall.",
+        "Whole level-9 tiles (16-92 MB each) must be fetched and filtered locally; 5 tiles cover the six test points, ~6-8 tiles cover the 6-county territory. Cache per tile.",
+        "This is the same geometry Overture uses outside OSM-covered areas (e.g. Lafayette), but without Overture's heights from 3DEP unless MS estimated them."
+      ]
+    },
+
+    {
+      "id": "microsoft_us_building_footprints_legacy",
+      "name": "Microsoft USBuildingFootprints v2 (legacy, California statewide)",
+      "level": "global",
+      "covers": ["all 28 jurisdictions"],
+      "portal_url": "https://github.com/microsoft/USBuildingFootprints",
+      "endpoint_url": "https://minedbuildings.z5.web.core.windows.net/legacy/usbuildings-v2/California.geojson.zip",
+      "endpoint_kind": "static_download",
+      "format": "GeoJSON (zip, 466 MB; 11,542,912 California polygons; geometry only, optional release/capture-date props)",
+      "license": "ODbL (per README)",
+      "vintage": "~73 M US footprints from 2019-2020 imagery, remainder ~2012 average; frozen.",
+      "last_updated": "2019-2020 (legacy)",
+      "attributes": {"height": "none", "stories": "none", "building_type": "none", "main_vs_accessory": "none"},
+      "query_example": "curl -L -o California.geojson.zip https://minedbuildings.z5.web.core.windows.net/legacy/usbuildings-v2/California.geojson.zip  # then clip to the 6-county bbox offline",
+      "verified": {"ok": true, "http_status": 200, "method": "HEAD (Content-Length 466,385,561)", "feature_count": null, "tested_on": "2026-10-18"},
+      "quirks": ["Superseded by GlobalML 2026-08-13 for the US; keep only as an offline fallback."]
+    }
+  ],
+
+  "jurisdictions": {
+    "Atherton":                         {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No town-published layer (AGOL search 0 hits)."},
+    "Hillsborough":                     {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No town-published layer."},
+    "Menlo Park":                       {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": "menlo_park_buildings",                 "fallback": ["overture_buildings"], "note": "City layer adds Address/Stories/Garage subtype; geometry largely the same 2020 LiDAR."},
+    "Portola Valley":                   {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No town-published layer."},
+    "San Carlos":                       {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No city-published layer (only an SJSU student height-limit layer)."},
+    "San Mateo (city)":                 {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": "city_of_san_mateo_building_footprints", "fallback": ["overture_buildings"], "note": "City copy is 2023 + zoning join; county is newer."},
+    "San Mateo County unincorporated":  {"county": "San Mateo",     "best": "smc_building_footprints",            "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"]},
+    "Los Altos":                        {"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": "los_altos_2022_lidar_footprints",      "fallback": ["overture_buildings"], "note": "City layer is the same Sanborn 2022 LiDAR."},
+    "Los Altos Hills":                  {"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No town-published layer."},
+    "Mountain View":                    {"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": "mountain_view_building_footprint",     "fallback": ["overture_buildings"], "note": "City host unreachable from here; county layer verified."},
+    "Palo Alto":                        {"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": "palo_alto_roof_outline",               "fallback": ["overture_buildings"], "note": "Use county geometry + city BUILDINGCLASS major/minor for the main-house pick."},
+    "San Jose":                         {"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": "san_jose_building_footprints",         "fallback": ["overture_buildings"], "note": "City host unreachable from here; county layer verified at Palo Alto (same countywide product)."},
+    "Saratoga":                         {"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": "saratoga_buildings",                   "fallback": ["overture_buildings"], "note": "City layer is 2018 ortho outlines, geometry only."},
+    "Sunnyvale":                        {"county": "Santa Clara",   "best": "sunnyvale_building_footprints",      "city_source": "sunnyvale_building_footprints",        "fallback": ["scc_building_outlines_2022", "overture_buildings"], "note": "City layer preferred: APN + Main/Accessory + stories + height."},
+    "Santa Clara County unincorporated":{"county": "Santa Clara",   "best": "scc_building_outlines_2022",         "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"]},
+    "Fairfax":                          {"county": "Marin",         "best": "marin_building_footprints",          "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No town layer; county has 'Fairfax Building Plan' source rows."},
+    "Mill Valley":                      {"county": "Marin",         "best": "marin_building_footprints",          "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No city layer; county has 'Mill Valley Building Plan' source rows."},
+    "Sausalito":                        {"county": "Marin",         "best": "marin_building_footprints",          "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No city layer; county has 'Sausalito Building Plan' source rows."},
+    "Marin County unincorporated":      {"county": "Marin",         "best": "marin_building_footprints",          "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"]},
+    "Lafayette":                        {"county": "Contra Costa",  "best": "overture_buildings",                 "city_source": null,                                   "fallback": ["microsoft_global_ml_buildings"], "note": "GAP: no county or city layer. Overture verified here (11 features, MS ML source, heights present)."},
+    "Moraga":                           {"county": "Contra Costa",  "best": "overture_buildings",                 "city_source": null,                                   "fallback": ["microsoft_global_ml_buildings"], "note": "GAP: no county or city layer."},
+    "Orinda":                           {"county": "Contra Costa",  "best": "overture_buildings",                 "city_source": null,                                   "fallback": ["microsoft_global_ml_buildings"], "note": "GAP: no county or city layer."},
+    "Contra Costa County unincorporated":{"county": "Contra Costa", "best": "overture_buildings",                 "city_source": null,                                   "fallback": ["microsoft_global_ml_buildings"], "note": "GAP: no county layer."},
+    "Healdsburg":                       {"county": "Sonoma",        "best": "sonoma_buildings",                   "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No city layer; county layer verified at Healdsburg (33 features)."},
+    "Windsor":                          {"county": "Sonoma",        "best": "sonoma_buildings",                   "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "No town layer."},
+    "Sonoma County unincorporated":     {"county": "Sonoma",        "best": "sonoma_buildings",                   "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"]},
+    "Napa (city)":                      {"county": "Napa",          "best": "napa_building_footprints",           "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"], "note": "County layer is co-maintained with City of Napa GIS (Municipality='Napa' rows)."},
+    "Napa County unincorporated":       {"county": "Napa",          "best": "napa_building_footprints",           "city_source": null,                                   "fallback": ["overture_buildings", "microsoft_global_ml_buildings"]}
+  },
+
+  "recommended_registry_extension": {
+    "_comment": "Add to each COUNTY_REGISTRY entry in county_registry.py; same keyless /query dialect the parcel client already speaks. primary_pick = how to choose the main house among polygons intersecting the parcel.",
+    "06081": {"building_layer_url": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Building_Footprints/FeatureServer/0", "height_field": "BLDGHEIGHT", "type_field": null, "primary_pick": "largest_clipped_area", "outline_kind": "roof_lidar", "vintage_flag": "building_vintage_undocumented_probably_2020_lidar"},
+    "06085": {"building_layer_url": "https://maps.santaclaracounty.gov/server/rest/services/basic/SCCBuildings/MapServer/0", "height_field": "Building_H", "type_field": null, "primary_pick": "largest_clipped_area", "outline_kind": "roof_lidar", "vintage_flag": "building_vintage_2022_lidar", "city_overrides": {"Sunnyvale": {"layer_url": "https://services.arcgis.com/IBwZaktrBtZuqQmg/arcgis/rest/services/Building_Footprints/FeatureServer/0", "type_field": "BLDG_TYPE", "main_values": ["Main", "Dwelling"], "apn_field": "APN"}, "Palo Alto": {"flag_layer_url": "https://services6.arcgis.com/evmyRZRrsopdeog7/arcgis/rest/services/BuildingRoofOutLine/FeatureServer/0", "type_field": "BUILDINGCLASS", "main_values": ["major"]}}},
+    "06041": {"building_layer_url": "https://services6.arcgis.com/T8eS7sop5hLmgRRH/arcgis/rest/services/Building_Footprints/FeatureServer/0", "height_field": null, "type_field": "BuildingType", "primary_pick": "largest_clipped_area", "outline_kind": "wall_stereo", "vintage_flag": "building_vintage_2004_2014", "vintage_field": "SourceDateYear"},
+    "06013": {"building_layer_url": null, "fallback": "overture_local_extract", "vintage_flag": "building_source_global_ml"},
+    "06097": {"building_layer_url": "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Buildings/FeatureServer/0", "height_field": null, "type_field": "PropType", "accessory_values": ["Out Building", "Solar Panel", "Parking Structure"], "primary_pick": "type_then_largest_clipped_area", "outline_kind": "ortho", "vintage_flag": "building_vintage_2025_ortho_min150sf"},
+    "06055": {"building_layer_url": "https://services1.arcgis.com/Ko5rxt00spOfjMqj/arcgis/rest/services/BuildingFootprint_Public/FeatureServer/0", "height_field": null, "type_field": "FEATURECODE", "main_prefix": "Addressed Building", "accessory_prefixes": ["Outbuild", "Non-Address"], "apn_field": "Parcel", "primary_pick": "type_then_largest_clipped_area", "outline_kind": "ortho", "vintage_flag": "building_vintage_maintained_weekly"}
+  }
+}
